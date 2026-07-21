@@ -1,5 +1,7 @@
 # 07 — Phoenix Watch (FCA enforcement × Companies House)
 
+> **★ CHOSEN BUILD (2026-07-21).** This is the demo we are building. See `HANDOFF.md` at repo root.
+
 > **AUDIT: verified 2026-07-21, by audit-2.** CH key in `.env.local` works. Full phoenix chain
 > re-tested live: `search/companies` → `/company/{num}/officers` → `/officers/{id}/appointments` all 200.
 > Example resolved on stage-quality data: "Blackmore Bond PLC" → num 10273135 (liquidation) → officer
