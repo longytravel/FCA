@@ -22,7 +22,10 @@ const twoDigit = (n: number) => n.toString().padStart(2, "0");
 export default function HowItWorks() {
   return (
     <main className="min-h-screen bg-paper">
-      <SiteNav activePage="how-it-works" />
+      <SiteNav
+        activePage="how-it-works"
+        breadcrumb={[{ label: "Home", href: "/" }, { label: "How it works" }]}
+      />
 
       {/* ── Hero ── */}
       <section className="relative overflow-hidden py-24 md:py-28 border-b border-rule">

@@ -10,7 +10,10 @@ export const metadata: Metadata = {
 export default function MethodPage() {
   return (
     <main className="min-h-screen bg-paper">
-      <SiteNav activePage="method" />
+      <SiteNav
+        activePage="method"
+        breadcrumb={[{ label: "Home", href: "/" }, { label: "The method" }]}
+      />
 
       {/* ── Hero ── */}
       <section className="relative py-24 md:py-28 border-b border-rule overflow-hidden">
@@ -126,7 +129,7 @@ export default function MethodPage() {
             <svg viewBox="0 0 720 120" className="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
-                  <path d="M0,0 L10,5 L0,10 z" fill="#173b4d" />
+                  <path d="M0,0 L10,5 L0,10 z" fill="#6c1d45" />
                 </marker>
               </defs>
               {[
@@ -136,10 +139,10 @@ export default function MethodPage() {
                 { x: 570, l1: "Insight", l2: "& clarity" },
               ].map((b, i) => (
                 <g key={i}>
-                  <rect x={b.x} y="30" width="150" height="60" rx="2" fill="#ffffff" stroke="#b9b3a9" />
-                  <text x={b.x + 75} y="58" textAnchor="middle" fill="#172431" style={{ fontFamily: "var(--font-sans)" }} fontSize="13" fontWeight="600">{b.l1}</text>
-                  <text x={b.x + 75} y="76" textAnchor="middle" fill="#172431" style={{ fontFamily: "var(--font-sans)" }} fontSize="13" fontWeight="600">{b.l2}</text>
-                  {i < 3 && <line x1={b.x + 155} y1="60" x2={b.x + 185} y2="60" stroke="#173b4d" strokeWidth="1.5" markerEnd="url(#arrow)" />}
+                  <rect x={b.x} y="30" width="150" height="60" rx="2" fill="#ffffff" stroke="#d2d2d4" />
+                  <text x={b.x + 75} y="58" textAnchor="middle" fill="#333333" style={{ fontFamily: "var(--font-sans)" }} fontSize="13" fontWeight="700">{b.l1}</text>
+                  <text x={b.x + 75} y="76" textAnchor="middle" fill="#333333" style={{ fontFamily: "var(--font-sans)" }} fontSize="13" fontWeight="700">{b.l2}</text>
+                  {i < 3 && <line x1={b.x + 155} y1="60" x2={b.x + 185} y2="60" stroke="#6c1d45" strokeWidth="1.5" markerEnd="url(#arrow)" />}
                 </g>
               ))}
             </svg>

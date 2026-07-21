@@ -1,30 +1,46 @@
 @import "tailwindcss";
 
 @theme {
-  /* ── Light, editorial regulator palette ──
-     Contrast comes from ink, typography, whitespace and hairline rules —
-     not effects. Deliberately NOT FCA brand colours. */
-  --color-paper: #f7f5f0;          /* page background — warm low-glare paper */
-  --color-paper-raised: #fcfbf8;   /* major sections, header/footer field */
-  --color-card: #ffffff;           /* cards and controls */
-  --color-rule: #ddd9d1;           /* 1px hairlines */
-  --color-rule-strong: #b9b3a9;    /* emphasis / active borders */
+  /* ── FCA design system ──
+     Colours, type and flat components extracted from fca.org.uk. The look is
+     deliberately institutional: white and panel-grey fields, mulberry primary,
+     Arial throughout, 1px rules, flat 0–2px corners. */
 
-  --color-ink: #172431;            /* primary text, institutional ink */
-  --color-ink-secondary: #52606b;  /* supporting copy */
-  --color-ink-muted: #7c858a;      /* eyebrows, metadata, labels */
+  /* Neutrals / fields */
+  --color-paper: #ffffff;          /* page background — white */
+  --color-paper-raised: #f0f0f1;   /* grey panel sections (FCA panel grey) */
+  --color-card: #ffffff;           /* white cards and controls */
+  --color-rule: #d2d2d4;           /* 1px hairlines */
+  --color-rule-strong: #b1b1b4;    /* emphasis / active borders */
 
-  --color-accent: #173b4d;         /* primary actions, nav state, key numerals */
-  --color-accent-hover: #0f2d3c;   /* hover / pressed */
-  --color-highlight: #876b2a;      /* sparse editorial emphasis, curated tags */
-  --color-highlight-tint: #f3eedc; /* highlight backgrounds */
+  /* Ink */
+  --color-ink: #333333;            /* headings + primary text */
+  --color-ink-secondary: #3f3f3f;  /* body copy (FCA body text) */
+  --color-ink-muted: #75767a;      /* eyebrows, metadata, labels */
 
-  --color-success: #2e6a52;        /* verified status */
-  --color-warning: #9a6816;        /* caution */
-  --color-danger: #923d3d;         /* critical, restrained claret */
+  /* Mulberry primary + secondary accents */
+  --color-accent: #6c1d45;         /* mulberry — nav, buttons, headings, numerals */
+  --color-accent-hover: #551537;   /* hover / pressed */
+  --color-highlight: #003c71;      /* navy — secondary editorial accent */
+  --color-highlight-tint: #e7eef4; /* navy tint background */
 
-  --font-sans: var(--font-inter), "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-display: var(--font-newsreader), Georgia, "Times New Roman", serif;
+  /* Status */
+  --color-success: #004851;        /* dark teal — verified status */
+  --color-warning: #8a5e00;        /* amber — caution */
+  --color-danger: #c02529;         /* coral-derived — critical */
+
+  /* FCA brand palette (available as bg-brand-* / text-brand-*) */
+  --color-brand-mulberry: #6c1d45;
+  --color-brand-navy: #003c71;
+  --color-brand-teal: #00bfb3;
+  --color-brand-yellow: #ffc72c;
+  --color-brand-coral: #ff585d;
+  --color-brand-midblue: #007fae;
+  --color-brand-darkteal: #004851;
+
+  /* Type — Arial everywhere; the flat institutional look IS the brand. */
+  --font-sans: Arial, "Helvetica Neue", Helvetica, "Segoe UI", Roboto, sans-serif;
+  --font-display: Arial, "Helvetica Neue", Helvetica, "Segoe UI", Roboto, sans-serif;
 }
 
 html {
@@ -33,23 +49,25 @@ html {
 
 body {
   background: var(--color-paper);
-  color: var(--color-ink);
+  color: var(--color-ink-secondary);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
 
-/* Serif display headings use sentence case, tight tracking. */
+/* Headings: bold Arial, sentence case, near-flat tracking.
+   Unlayered so this weight wins over utility weight classes (font-medium etc.). */
 .font-display {
   font-family: var(--font-display);
-  letter-spacing: -0.025em;
+  letter-spacing: -0.005em;
+  font-weight: 700;
 }
 
-/* Small-caps / letter-spaced eyebrow labels. */
+/* Uppercase letter-spaced eyebrow / label. */
 .eyebrow {
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -58,13 +76,23 @@ body {
   font-variant-numeric: tabular-nums lining-nums;
 }
 
-/* Optional near-imperceptible rule grid behind a hero. */
+/* Mulberry underline-on-hover link affordance (opt-in). */
+.fca-link {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+.fca-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Faint neutral rule grid behind heroes (kept subtle for the FCA look). */
 .paper-grid {
   background-image:
-    repeating-linear-gradient(to right, rgba(23, 36, 49, 0.035) 0 1px, transparent 1px 48px),
-    repeating-linear-gradient(to bottom, rgba(23, 36, 49, 0.035) 0 1px, transparent 1px 48px);
-  -webkit-mask-image: radial-gradient(ellipse at 50% 0%, black, transparent 78%);
-  mask-image: radial-gradient(ellipse at 50% 0%, black, transparent 78%);
+    repeating-linear-gradient(to right, rgba(51, 51, 51, 0.028) 0 1px, transparent 1px 48px),
+    repeating-linear-gradient(to bottom, rgba(51, 51, 51, 0.028) 0 1px, transparent 1px 48px);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 0%, black, transparent 80%);
+  mask-image: radial-gradient(ellipse at 50% 0%, black, transparent 80%);
 }
 
 /* Restrained entrance animation. */

@@ -250,10 +250,20 @@ function DemoCard({ demo }: { demo: Demo }) {
   const tier = tierOf(demo);
   return (
     <article className="group flex flex-col bg-card border border-rule rounded-[2px] p-7 transition-[border-color,transform] duration-150 hover:border-accent hover:-translate-y-px">
+      {demo.number === 7 && (
+        <a
+          href="/phoenix-watch"
+          className="mb-5 -mt-1 flex items-center gap-2 bg-accent text-white rounded-[2px] px-3 py-2.5 hover:bg-accent-hover transition-colors"
+        >
+          <span aria-hidden className="text-brand-yellow leading-none">★</span>
+          <span className="eyebrow">Being built live today</span>
+          <span className="ml-auto text-xs font-semibold whitespace-nowrap">Open &rarr;</span>
+        </a>
+      )}
       {demo.crossData && tier === "novel" && (
         <div
           className="mb-5 -mt-1 border-l-2 border-accent rounded-r-[2px] pl-3 pr-4 py-2.5"
-          style={{ backgroundColor: "rgba(23,59,77,0.06)" }}
+          style={{ backgroundColor: "rgba(0,60,113,0.06)" }}
         >
           <p className="eyebrow text-accent mb-1">
             Signal nobody is watching

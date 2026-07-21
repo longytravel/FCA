@@ -1,26 +1,14 @@
-import type { Metadata } from "next";
-import { Inter, Newsreader } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const newsreader = Newsreader({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  style: ["normal", "italic"],
-  variable: "--font-newsreader",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Vibe Coding at the FCA | Live-Built Regtech Demos",
   description:
     "A hands-on demonstration: working tools built live in hours from the UK's public data — joined to create insight nobody has. You choose what we build.",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#6c1d45",
 };
 
 export default function RootLayout({
@@ -29,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${newsreader.variable}`}>
-      <body className="antialiased bg-paper text-ink overflow-x-clip">
+    <html lang="en">
+      <body className="antialiased bg-paper text-ink-secondary overflow-x-clip">
         {children}
       </body>
     </html>
