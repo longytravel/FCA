@@ -39,23 +39,26 @@ export function isActiveStatus(status?: string): boolean {
   return !!status && /active|open/i.test(status);
 }
 
-/** A phoenix signal: an active company that rose from the linked network
- *  (explicit tag from the resolver, or an active linked co with an incorporation date). */
-export function isPhoenixSignal(node: PNode): boolean {
+const ONE_MONTH = 30 * 24 * 3600 * 1000;
+
+/** A phoenix signal — exactly what the legend promises: an active linked company
+ *  incorporated on/after the investigated firm's failure date. Without a known
+ *  failure date, any dated active linked company qualifies (best available). */
+export function isPhoenixSignal(node: PNode, failureMs?: number | null): boolean {
   if (node.type !== "company") return false;
   if (node.tags?.includes("phoenix-signal")) return true;
-  return (
-    isActiveStatus(node.status) &&
-    !!node.tags?.includes("linked") &&
-    !!node.incorporated_on
-  );
+  if (!isActiveStatus(node.status) || !node.tags?.includes("linked") || !node.incorporated_on)
+    return false;
+  if (failureMs == null) return true;
+  const inc = new Date(node.incorporated_on).getTime();
+  return !isNaN(inc) && inc >= failureMs - ONE_MONTH;
 }
 
-export function nodeColor(node: PNode): string {
+export function nodeColor(node: PNode, failureMs?: number | null): string {
   if (node.type === "officer") return FCA.officer;
   if (node.tags?.includes("phoenix-seed") || node.tags?.includes("fined-seed"))
     return FCA.mulberry;
-  if (isPhoenixSignal(node)) return FCA.phoenix;
+  if (isPhoenixSignal(node, failureMs)) return FCA.phoenix;
   if (isDissolvedStatus(node.status)) return FCA.dissolved;
   return FCA.company;
 }

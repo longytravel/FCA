@@ -41,6 +41,7 @@ export default function GraphStage({
   focusId,
   focusNonce,
   present,
+  failureMs,
   onNodeClick,
 }: {
   graph: PhoenixGraph;
@@ -49,6 +50,8 @@ export default function GraphStage({
   focusId?: string | null;
   focusNonce?: number;
   present?: boolean;
+  /** When the investigated firm failed/was fined — red requires incorporation on/after this. */
+  failureMs?: number | null;
   onNodeClick: (node: PNode) => void;
 }) {
   const wrapRef = useRef<HTMLDivElement | null>(null);
@@ -145,7 +148,7 @@ export default function GraphStage({
   const paintNode = (node: FNode, ctx: CanvasRenderingContext2D, scale: number) => {
     const x = node.x ?? 0;
     const y = node.y ?? 0;
-    const color = nodeColor(node);
+    const color = nodeColor(node, failureMs);
     const isSel = node.id === selectedId;
     const isHot = node.id === activeId;
 
@@ -188,7 +191,7 @@ export default function GraphStage({
       if (!nodeVisible(n)) continue;
       const isSel = n.id === selectedId || n.id === activeId;
       const seed = seedOf(n);
-      const phx = nodeColor(n) === FCA.phoenix;
+      const phx = nodeColor(n, failureMs) === FCA.phoenix;
       const appear = nodeAppear.get(n.id) ?? 0;
       const recent = timelineDate != null && appear > 0 && appear >= timelineDate - RECENT_MS;
       let pri = -1;
@@ -208,7 +211,7 @@ export default function GraphStage({
     for (const { n, pri } of cand) {
       const isSel = n.id === selectedId || n.id === activeId;
       const seed = seedOf(n);
-      const phx = nodeColor(n) === FCA.phoenix;
+      const phx = nodeColor(n, failureMs) === FCA.phoenix;
       let raw = n.name;
       if (n.type === "officer" && !isSel && pri >= 3) raw = raw.split(",")[0];
       const label = raw.length > 28 ? raw.slice(0, 27) + "…" : raw;

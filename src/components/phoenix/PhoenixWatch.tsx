@@ -117,6 +117,27 @@ export default function PhoenixWatch() {
     return marks;
   }, [displayedGraph]);
 
+  // When did the investigated firm "fail"? Earliest of its dissolution date and
+  // any matching FCA fine — the reference point for the red phoenix colouring.
+  const failureMs = useMemo(() => {
+    if (!focusFirm) return null;
+    const seed = graph.nodes.find((n) => n.id === focusFirm.id);
+    const candidates: number[] = [];
+    if (seed?.dissolved_on) {
+      const d = new Date(seed.dissolved_on).getTime();
+      if (!isNaN(d)) candidates.push(d);
+    }
+    const u = focusFirm.name.toUpperCase();
+    for (const f of fines as { firm: string; date: string }[]) {
+      const fu = f.firm.toUpperCase();
+      if (fu.includes(u) || u.includes(fu)) {
+        const ms = parseDate(f.date);
+        if (ms != null) candidates.push(ms);
+      }
+    }
+    return candidates.length ? Math.min(...candidates) : null;
+  }, [graph, focusFirm]);
+
   // Headline stats for the focused case — the one-line story above the graph.
   const caseStats = useMemo(() => {
     const id = focusFirm?.id;
@@ -133,9 +154,19 @@ export default function PhoenixWatch() {
       if (officerIds.has(e.target) && e.source !== id) linked.add(e.source);
     }
     const linkedNodes = graph.nodes.filter((n) => n.type === "company" && linked.has(n.id));
-    const active = linkedNodes.filter((n) => (n.status ?? "").toLowerCase().includes("active")).length;
-    return { directors: officers.length, linked: linkedNodes.length, active };
-  }, [graph, focusFirm]);
+    const activeNodes = linkedNodes.filter((n) => (n.status ?? "").toLowerCase().includes("active"));
+    const MONTH = 30 * 24 * 3600 * 1000;
+    const startedAfter =
+      failureMs == null
+        ? null
+        : activeNodes.filter((n) => {
+            if (!n.incorporated_on) return false;
+            const inc = new Date(n.incorporated_on).getTime();
+            return !isNaN(inc) && inc >= failureMs - MONTH;
+          }).length;
+    const unchecked = linkedNodes.filter((n) => n.status == null).length;
+    return { directors: officers.length, linked: linkedNodes.length, active: activeNodes.length, startedAfter, unchecked };
+  }, [graph, focusFirm, failureMs]);
 
   const resolveFirm = useCallback(
     async (companyNumber: string, name: string) => {
@@ -271,6 +302,7 @@ export default function PhoenixWatch() {
           {resolveBanner}
           <GraphStage
             graph={focusFirm ? displayedGraph : graph}
+            failureMs={failureMs}
             timelineDate={timelineDate}
             selectedId={selectedNode?.id}
             focusId={focusId}
@@ -448,7 +480,19 @@ export default function PhoenixWatch() {
                 <span>
                   <b>{caseStats.linked}</b> other companies where they reappear
                 </span>
-                <span className="font-bold text-[#ff585d]">{caseStats.active} still active today</span>
+                <span>
+                  <b>{caseStats.active}</b> confirmed still trading
+                </span>
+                {caseStats.startedAfter != null ? (
+                  <span className="font-bold text-[#e4002b]">
+                    {caseStats.startedAfter} started after the failure — the red squares
+                  </span>
+                ) : null}
+                {caseStats.unchecked > 0 ? (
+                  <span className="text-[#75767a]">
+                    {caseStats.unchecked} not yet checked (rate-limited)
+                  </span>
+                ) : null}
               </div>
             ) : null}
 
@@ -463,6 +507,7 @@ export default function PhoenixWatch() {
                   {resolveBanner}
                   <GraphStage
                     graph={displayedGraph}
+                    failureMs={failureMs}
                     timelineDate={timelineDate}
                     selectedId={selectedNode?.id}
                     focusId={focusId}
