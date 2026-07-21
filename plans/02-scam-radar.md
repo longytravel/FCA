@@ -1,68 +1,60 @@
 # Scam Radar — Live FCA Warning List Dashboard
+`AUDIT: verified 2026-07-21, by audit-1`
 
 ## Pitch
-A live "Scam Radar" that streams the FCA's newest unauthorised-firm and clone-scam
-warnings as they're published, with a search box that answers "is this firm a scam?"
-in one keystroke — plus trend charts showing scam types (crypto, clone, loan-fee)
-surging in real time. It turns a buried government table into a dashboard that feels
-like a live threat feed.
+A live "Scam Radar" that streams the FCA's newest unauthorised-firm and clone warnings as they publish,
+with a one-keystroke "is this firm a scam?" search over 999 harvested warnings, trend charts of scam types
+surging, and a Claude-written **daily threat briefing** that reads the feed and tells you what's spiking.
+A buried government table turned into a live threat console — with an AI analyst on top.
 
-## Data sources (all VERIFIED working today, no auth)
+## Data sources — VERIFIED LIVE TODAY (2026-07-21, no auth)
 
-| Source | URL | Access | Status |
-|---|---|---|---|
-| **Warnings RSS (hero, live)** | `https://www.fca.org.uk/news/warnings/rss.xml` | GET, returns `application/rss+xml`, 20 newest warnings | ✅ 200, fresh (items dated today, multiple per day) |
-| **Full Warning List (search corpus)** | `https://www.fca.org.uk/consumers/warning-list-unauthorised-firms?page=N` | GET server-rendered HTML `<table>`, 25 rows/page, columns Name / Date added / Date updated | ✅ 200, ~731 pages ≈ **18,000+ records**, scrapeable |
-| FS Register API (optional enrich) | `https://register.fca.org.uk/services/V0.1/...` | JSON, but requires free API key + `X-Auth-Email`/`X-Auth-Key` headers | ⚠️ 403 without key — signup not instant, **skip for demo** |
+| Source | URL | Status |
+|---|---|---|
+| **Warnings RSS (hero, live)** | `https://www.fca.org.uk/news/warnings/rss.xml` | ✅ 200, `application/rss+xml`, 20 newest items, dated today |
+| **Full Warning List (corpus)** | `https://www.fca.org.uk/consumers/warning-list-unauthorised-firms?page=N` | ✅ 200, server-rendered HTML table, ~731 pages ≈ 18k records |
+| FS Register API (enrich) | `register.fca.org.uk/services/V0.1/...` | ✅ keyed & working (see plan 01) — **optional** stretch enrich |
 
-Notes verified live:
-- RSS titles look like `wealthfinez.com (new)`, `stonehavenmarkets.com (new)` — mostly
-  scam domain names, `(new)` / `(updated)` suffix = perfect for a ticker + type tagging.
-- Warning List register (`register.fca.org.uk/s/`) is a Salesforce JS app — do NOT scrape it.
-  Use the fca.org.uk consumer page instead (server-rendered, no JS needed).
-- ScamSmart (`fca.org.uk/scamsmart`) is guidance content only — no structured data feed. Skip.
+**Pre-harvested & ready in `data/` (confirmed):**
+- `data/warnings-sample.json` — **999 rows**, fields `name, dateAdded, dateUpdated`
+  (e.g. `wealthfinez.com (new)`, dated `20/07/2026` — fresh). This is the search + chart corpus. **Ship it.**
+- `data/warnings-latest.xml` — 20 RSS items for the live ticker.
+- Note: `register.fca.org.uk/s/` is a Salesforce JS app — do NOT scrape. ScamSmart = guidance only, skip.
 
-## 2-hour build plan (Next.js App Router + Vercel)
+## Stack
+Existing Next.js 15 scaffold (reuse). `fast-xml-parser` for RSS, `recharts` for charts, `@anthropic-ai/sdk`
+for the briefing. **Missing deps — install first:** `npm i fast-xml-parser recharts @anthropic-ai/sdk`.
+Corpus is static JSON → search + charts never depend on the network.
 
-**0:00–0:20 — Scaffold + data layer**
-- `npx create-next-app scam-radar` (TS, Tailwind, App Router).
-- `lib/rss.ts`: server fetch RSS, parse with `fast-xml-parser`, map to
-  `{name, link, date, kind: new|updated}`. Cache 5 min (`next: {revalidate:300}`).
-
-**0:20–0:50 — Build the search corpus**
-- `scripts/scrape.ts`: loop pages 0–150 of the Warning List (~3,750 firms is plenty
-  for a demo), extract `<tbody>` rows (name from `<th>`, two `<td>` dates), write
-  `public/warnings.json`. Run once at build; ship static. (Full 731 pages if time.)
-- Tag `kind` from the name/domain: `.com/.live/.pro` → likely clone/broker scam;
-  keywords `capital|markets|fx|crypto|invest|loan` → category buckets.
-
-**0:50–1:20 — UI (the wow)**
-- Hero: **live ticker** of RSS newest 20, auto-refresh every 30s, red pulse on new.
-- **Search bar**: instant client-side filter over `warnings.json` — type a firm/domain,
-  get "⚠️ On the FCA Warning List — added DD/MM/YYYY" or "✓ Not on the list (still verify)".
-- **Trend chart** (Recharts): warnings-per-month bar/area from the corpus dates, +
-  a category donut (clone vs crypto vs loan-fee vs other).
-- Big stat cards: total warnings, added this week (from RSS dates), top TLD.
-
-**1:20–1:45 — Polish + deploy**
-- Dark "threat console" theme, monospace domains, red/amber accents.
-- `vercel deploy`. Verify RSS revalidation works on prod.
-
-**1:45–2:00 — Buffer / demo rehearsal.**
+## 2-hour build plan
+- **0:00–0:15 — Setup.** Reuse scaffold; `npm i fast-xml-parser recharts @anthropic-ai/sdk`; add
+  `ANTHROPIC_API_KEY`. Copy `data/warnings-sample.json` → `public/data/`. Confirm it loads.
+- **0:15–0:35 — Data layer.** `lib/warnings.ts`: load corpus; derive `kind` (`(new)`/`(updated)` from name)
+  and `category` by keyword (`capital|markets|fx|crypto|invest|loan` → buckets; TLD `.com/.live/.pro`).
+  `lib/rss.ts`: server fetch RSS (`next:{revalidate:300}`), fall back to `warnings-latest.xml` if fetch fails.
+- **0:35–1:00 — WOW (c) the console UI.** Hero **live ticker** of RSS 20, auto-refresh 30s, red pulse on new.
+  **Search bar**: instant client filter over 999 rows → "⚠ On the FCA Warning List — added DD/MM/YYYY" or
+  "✓ Not listed (still verify)". Dark "threat console" theme, monospace domains, red/amber accents.
+- **1:00–1:25 — WOW (c) charts (Recharts).** Warnings-per-month area chart from `dateAdded`; category donut
+  (clone vs crypto vs loan-fee vs other); stat cards: total 999, added this week, top TLD.
+- **1:25–1:50 — WOW (b) AI Threat Briefing.** `/api/briefing`: send category counts + this-week deltas +
+  10 newest names to Claude (`claude-fable-5`) → 3-sentence analyst briefing ("Clone-broker domains dominate
+  this week's new listings; crypto-investment scams are the fastest-growing category…"). Render in a
+  "Today's Read" panel, refresh button. **Pre-generate a static version at build as the live fallback.**
+- **1:50–2:00 — Deploy + rehearse.** `vercel --prod`; verify RSS revalidation on prod.
 
 ## Risks & fallbacks
-- **RSS format shifts / rate limit** → corpus JSON alone still powers search + charts;
-  ticker degrades gracefully to "latest from snapshot".
-- **Scrape too slow live** → pre-run `scrape.ts` before the session; commit `warnings.json`.
-  Never scrape during the demo.
-- **CORS** → all fetches are server-side (Next route handlers / RSC), so no browser CORS.
-- **Legal/tone** → data is public FCA consumer data; add footer "Source: FCA. Always
-  verify at fca.org.uk — absence from list ≠ safe." Avoid implying we clear firms.
-- **Register API** → explicitly out of scope; mention as "v2 enrichment" if asked.
+- **RSS shifts / rate-limited** → ticker degrades to `warnings-latest.xml` snapshot; search + charts unaffected.
+- **Claude API fails live** → briefing falls back to the build-time pre-generated text (still on screen).
+- **Never scrape during demo** → 999-row corpus is pre-harvested and committed.
+- **CORS** → all fetches server-side (route handlers / RSC).
+- **Legal/tone** → footer "Source: FCA. Absence from list ≠ safe — always verify at fca.org.uk." Never imply
+  we clear firms.
 
-## Demo script (90 sec)
-1. "This is the FCA's live scam feed." — point at ticker, a warning ticks in.
-2. Type a scam domain from the ticker into search → instant red "On the Warning List".
+## Demo script (~90 sec)
+1. "The FCA's live scam feed." — ticker ticks a warning in.
+2. Type a scam domain from the ticker → instant red "On the Warning List".
 3. Type a made-up firm → "Not listed — but verify, scammers rename daily."
-4. Scroll to trend chart → "Clone-broker scams spiked this month, here's the shape."
-5. "Built in 2 hours on live government data — this could ship to consumers tomorrow."
+4. Trend chart → "Clone-broker scams spiked this month, here's the shape."
+5. **"Today's Read" panel — Claude's threat briefing** summarising the surge in plain English.
+6. "Built in 2 hours on live government data — this could ship to consumers tomorrow."

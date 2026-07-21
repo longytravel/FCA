@@ -1,34 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  /* ── Neutral fintech / regtech palette ──
-     Deliberately NOT FCA brand colours. Deep slate/navy canvas with an
-     electric-teal primary accent and an electric-blue secondary. */
-  --color-ink: #070b16;          /* page background — near-black navy */
-  --color-ink-2: #0b1220;        /* raised sections */
-  --color-panel: #0f1a2e;        /* cards */
-  --color-panel-2: #142138;      /* card hover / inset */
-  --color-line: #1e2c47;         /* hairline borders */
-  --color-line-2: #2a3b5c;       /* stronger borders */
+  /* ── Light, editorial regulator palette ──
+     Contrast comes from ink, typography, whitespace and hairline rules —
+     not effects. Deliberately NOT FCA brand colours. */
+  --color-paper: #f7f5f0;          /* page background — warm low-glare paper */
+  --color-paper-raised: #fcfbf8;   /* major sections, header/footer field */
+  --color-card: #ffffff;           /* cards and controls */
+  --color-rule: #ddd9d1;           /* 1px hairlines */
+  --color-rule-strong: #b9b3a9;    /* emphasis / active borders */
 
-  --color-teal: #2dd4bf;         /* primary accent */
-  --color-teal-bright: #5eead4;
-  --color-teal-dim: #0f766e;
-  --color-blue: #3b82f6;         /* secondary accent */
-  --color-blue-bright: #60a5fa;
-  --color-violet: #8b5cf6;       /* tertiary accent */
+  --color-ink: #172431;            /* primary text, institutional ink */
+  --color-ink-secondary: #52606b;  /* supporting copy */
+  --color-ink-muted: #7c858a;      /* eyebrows, metadata, labels */
 
-  --color-text: #e6edf7;         /* primary text */
-  --color-text-soft: #b4c2d8;    /* secondary text */
-  --color-muted: #8497b3;        /* muted labels */
-  --color-muted-dark: #5b6b87;
+  --color-accent: #173b4d;         /* primary actions, nav state, key numerals */
+  --color-accent-hover: #0f2d3c;   /* hover / pressed */
+  --color-highlight: #876b2a;      /* sparse editorial emphasis, curated tags */
+  --color-highlight-tint: #f3eedc; /* highlight backgrounds */
 
-  --color-green: #34d399;
-  --color-amber: #fbbf24;
-  --color-red: #f87171;
+  --color-success: #2e6a52;        /* verified status */
+  --color-warning: #9a6816;        /* caution */
+  --color-danger: #923d3d;         /* critical, restrained claret */
 
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --font-sans: var(--font-inter), "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: var(--font-newsreader), Georgia, "Times New Roman", serif;
 }
 
 html {
@@ -36,33 +32,50 @@ html {
 }
 
 body {
-  background: var(--color-ink);
-  color: var(--color-text);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Subtle entrance animations */
+/* Serif display headings use sentence case, tight tracking. */
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
+}
+
+/* Small-caps / letter-spaced eyebrow labels. */
+.eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+/* Tabular lining figures for stats, option numbers, dates. */
+.tnum {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* Optional near-imperceptible rule grid behind a hero. */
+.paper-grid {
+  background-image:
+    repeating-linear-gradient(to right, rgba(23, 36, 49, 0.035) 0 1px, transparent 1px 48px),
+    repeating-linear-gradient(to bottom, rgba(23, 36, 49, 0.035) 0 1px, transparent 1px 48px);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 0%, black, transparent 78%);
+  mask-image: radial-gradient(ellipse at 50% 0%, black, transparent 78%);
+}
+
+/* Restrained entrance animation. */
 @keyframes fade-in {
-  from { opacity: 0; transform: translateY(14px); }
+  from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.35; }
-}
-
 .animate-fade-in {
   animation: fade-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
-.delay-1 { animation-delay: 0.08s; opacity: 0; }
-.delay-2 { animation-delay: 0.16s; opacity: 0; }
-.delay-3 { animation-delay: 0.24s; opacity: 0; }
-.delay-4 { animation-delay: 0.32s; opacity: 0; }
-.delay-5 { animation-delay: 0.40s; opacity: 0; }
-
-/* Accent text gradient used on hero words */
-.text-gradient {
-  background: linear-gradient(100deg, var(--color-teal-bright), var(--color-blue-bright));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
+.delay-1 { animation-delay: 0.07s; opacity: 0; }
+.delay-2 { animation-delay: 0.14s; opacity: 0; }
+.delay-3 { animation-delay: 0.21s; opacity: 0; }
+.delay-4 { animation-delay: 0.28s; opacity: 0; }

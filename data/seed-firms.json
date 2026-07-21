@@ -1,0 +1,322 @@
+[
+  {
+    "fcaName": "Barclays Bank Plc",
+    "source": "fine",
+    "amount": 284432000,
+    "chName": "BARCLAYS BANK PLC",
+    "companyNumber": "01026167",
+    "companyStatus": "active",
+    "matchConfidence": "high",
+    "simScore": 1,
+    "postcode": "E14 5HP"
+  },
+  {
+    "fcaName": "National Westminster Bank Plc",
+    "source": "fine",
+    "amount": 264772619,
+    "chName": "NATIONAL WESTMINSTER BANK PLC",
+    "companyNumber": "NF002362",
+    "companyStatus": "closed-on",
+    "matchConfidence": "high",
+    "simScore": 1,
+    "postcode": null
+  },
+  {
+    "fcaName": "UBS AG",
+    "source": "fine",
+    "amount": 233814000,
+    "chName": "UBS AG",
+    "companyNumber": "FC021146",
+    "companyStatus": "active",
+    "matchConfidence": "high",
+    "simScore": 1,
+    "postcode": null
+  },
+  {
+    "fcaName": "Deutsche Bank AG",
+    "source": "fine",
+    "amount": 226800000,
+    "chName": "DEUTSCHE BANK AG LONDON",
+    "companyNumber": "BR000005",
+    "companyStatus": "open",
+    "matchConfidence": "high",
+    "simScore": 0.67,
+    "postcode": "EC2Y 9DB"
+  },
+  {
+    "fcaName": "Citibank N.A.",
+    "source": "fine",
+    "amount": 225575000,
+    "chName": "CITIBANK N.A",
+    "companyNumber": "FC001835",
+    "companyStatus": "active",
+    "matchConfidence": "high",
+    "simScore": 1,
+    "postcode": null
+  },
+  {
+    "fcaName": "JPMorgan Chase Bank",
+    "source": "fine",
+    "amount": 222166000,
+    "chName": "JPMORGAN CHASE BANK, NATIONAL ASSOCIATION",
+    "companyNumber": "OE032355",
+    "companyStatus": "registered",
+    "matchConfidence": "medium",
+    "simScore": 0.5,
+    "postcode": "OH 43240"
+  },
+  {
+    "fcaName": "The Royal Bank of Scotland Plc",
+    "source": "fine",
+    "amount": 217000000,
+    "chName": "THE ROYAL BANK OF SCOTLAND GROUP LIMITED",
+    "companyNumber": "01691920",
+    "companyStatus": "active",
+    "matchConfidence": "high",
+    "simScore": 1,
+    "postcode": "EC2M 4AA"
+  },
+  {
+    "fcaName": "HSBC Bank Plc",
+    "source": "fine",
+    "amount": 216363000,
+    "chName": "HSBC BANK PLC",
+    "companyNumber": "00014259",
+    "companyStatus": "active",
+    "matchConfidence": "high",
+    "simScore": 1,
+    "postcode": "E14 5HQ"
+  },
+  {
+    "fcaName": "Credit Suisse International, Credit Suisse Securities (Europe) Ltd, and Credit Suisse AG",
+    "source": "fine",
+    "amount": 147190200,
+    "chName": "CREDIT SUISSE SECURITIES (EUROPE) LIMITED",
+    "companyNumber": "00891554",
+    "companyStatus": "active",
+    "matchConfidence": "high",
+    "simScore": 0.67,
+    "postcode": "EC2M 2QS"
+  },
+  {
+    "fcaName": "JP Morgan Chase Bank NA",
+    "source": "fine",
+    "amount": 137610000,
+    "chName": "J.P. MORGAN CHASE INTERNATIONAL FINANCING LIMITED",
+    "companyNumber": "04072779",
+    "companyStatus": "dissolved",
+    "matchConfidence": "low",
+    "simScore": 0.25,
+    "postcode": "EC4M 7AU"
+  },
+  {
+    "fcaName": "The Bank of New York Mellon London Branch & The Bank of New York Mellon International Limited",
+    "source": "fine",
+    "amount": 126000000,
+    "chName": "THE BANK OF NEW YORK MELLON (INTERNATIONAL) LIMITED",
+    "companyNumber": "03236121",
+    "companyStatus": "active",
+    "matchConfidence": "high",
+    "simScore": 0.71,
+    "postcode": "EC4V 4LA"
+  },
+  {
+    "fcaName": "Lloyds Bank plc, Bank of Scotland plc and Black Horse Limited (together Lloyds Banking Group \"LBG\")",
+    "source": "fine",
+    "amount": 117430600,
+    "chName": "LLOYDS BANKING GROUP PLC",
+    "companyNumber": "SC095000",
+    "companyStatus": "active",
+    "matchConfidence": "low",
+    "simScore": 0.25,
+    "postcode": "EH1 1YZ"
+  },
+  {
+    "fcaName": "Santander UK Plc",
+    "source": "fine",
+    "amount": 107793300,
+    "chName": "SANTANDER UK PLC",
+    "companyNumber": "02294747",
+    "companyStatus": "active",
+    "matchConfidence": "high",
+    "simScore": 1,
+    "postcode": "NW1 3AN"
+  },
+  {
+    "fcaName": "Coöperatieve Centrale Raiffeisen-Boerenleenbank B.A. (Rabobank)",
+    "source": "fine",
+    "amount": 105000000,
+    "chName": "COÖPERATIEVE RABOBANK U.A.",
+    "companyNumber": "FC011780",
+    "companyStatus": "active",
+    "matchConfidence": "medium",
+    "simScore": 0.38,
+    "postcode": null
+  },
+  {
+    "fcaName": "Lloyds Bank plc and Bank of Scotland plc",
+    "source": "fine",
+    "amount": 105000000,
+    "chName": "BANK OF SCOTLAND PLC",
+    "companyNumber": "SC327000",
+    "companyStatus": "active",
+    "matchConfidence": "high",
+    "simScore": 0.67,
+    "postcode": "EH1 1YZ"
+  },
+  {
+    "fcaName": "Standard Chartered Bank",
+    "source": "fine",
+    "amount": 102163200,
+    "chName": "STANDARD CHARTERED BANK",
+    "companyNumber": "ZC000018",
+    "companyStatus": "active",
+    "matchConfidence": "high",
+    "simScore": 1,
+    "postcode": "EC2V 5DD"
+  },
+  {
+    "fcaName": "Lloyds Bank General Insurance Limited, St Andrew’s Insurance Plc, Lloyds Bank Insurance Services Limited and Halifax General Insurance Services Limited",
+    "source": "fine",
+    "amount": 90688400,
+    "chName": "LLOYDS BANK GENERAL INSURANCE LIMITED",
+    "companyNumber": "00204373",
+    "companyStatus": "active",
+    "matchConfidence": "low",
+    "simScore": 0.33,
+    "postcode": "EC2V 7HN"
+  },
+  {
+    "fcaName": "Stewart Owen Ford",
+    "source": "fine",
+    "amount": 76000000,
+    "chName": "OWEN STEWART HAIR LIMITED",
+    "companyNumber": "04511870",
+    "companyStatus": "active",
+    "matchConfidence": "medium",
+    "simScore": 0.5,
+    "postcode": "AL4 8SB"
+  },
+  {
+    "fcaName": "Lloyds Bank Plc, Bank of Scotland Plc and The Mortgage Business Plc",
+    "source": "fine",
+    "amount": 64046800,
+    "chName": "LLOYDS BANK COMMERCIAL FINANCE SCOTLAND LIMITED",
+    "companyNumber": "SC093252",
+    "companyStatus": "active",
+    "matchConfidence": "low",
+    "simScore": 0.33,
+    "postcode": "G2 4QR"
+  },
+  {
+    "fcaName": "Goldman Sachs International",
+    "source": "fine",
+    "amount": 48308400,
+    "chName": "GOLDMAN SACHS INTERNATIONAL",
+    "companyNumber": "02263951",
+    "companyStatus": "active",
+    "matchConfidence": "high",
+    "simScore": 1,
+    "postcode": "EC4A 4AU"
+  },
+  {
+    "fcaName": "Bank of Scotland plc",
+    "source": "fine",
+    "amount": 45500000,
+    "chName": "BANK OF SCOTLAND PLC",
+    "companyNumber": "SC327000",
+    "companyStatus": "active",
+    "matchConfidence": "high",
+    "simScore": 1,
+    "postcode": "EH1 1YZ"
+  },
+  {
+    "fcaName": "Nationwide Building Society",
+    "source": "fine",
+    "amount": 44078500,
+    "chName": "NATIONWIDE BUILDING LIMITED",
+    "companyNumber": "12859680",
+    "companyStatus": "active",
+    "matchConfidence": "high",
+    "simScore": 0.67,
+    "postcode": "GU47 0RT"
+  },
+  {
+    "fcaName": "Royal Bank of Scotland Plc, National Westminster Bank Plc and Ulster Bank Ltd",
+    "source": "fine",
+    "amount": 42000000,
+    "chName": "THE ROYAL BANK OF SCOTLAND GROUP LIMITED",
+    "companyNumber": "01691920",
+    "companyStatus": "active",
+    "matchConfidence": "medium",
+    "simScore": 0.5,
+    "postcode": "EC2M 4AA"
+  },
+  {
+    "fcaName": "Commerzbank AG",
+    "source": "fine",
+    "amount": 37805400,
+    "chName": "COMMERZBANK FINANCE LIMITED",
+    "companyNumber": "00551334",
+    "companyStatus": "active",
+    "matchConfidence": "medium",
+    "simScore": 0.5,
+    "postcode": "EC2V 7PG"
+  },
+  {
+    "fcaName": "Blackmore Bond PLC",
+    "source": "phoenix-demo",
+    "chName": "BLACKMORE BOND PLC",
+    "companyNumber": "10273135",
+    "companyStatus": "liquidation",
+    "matchConfidence": "high",
+    "simScore": 1,
+    "postcode": "SE1 9SG"
+  },
+  {
+    "fcaName": "London Capital & Finance",
+    "source": "phoenix-demo",
+    "chName": "LONDON CAPITAL & FINANCE PLC",
+    "companyNumber": "08140312",
+    "companyStatus": "administration",
+    "matchConfidence": "high",
+    "simScore": 1,
+    "postcode": "EC2V 7BG"
+  },
+  {
+    "fcaName": "Basset & Gold",
+    "source": "phoenix-demo",
+    "chName": "BASSET & GOLD PLC",
+    "companyNumber": "05433451",
+    "companyStatus": "dissolved",
+    "matchConfidence": "high",
+    "simScore": 1,
+    "postcode": "EC1N 2LL"
+  },
+  {
+    "fcaName": "sigmatrapartners.live (new)",
+    "source": "warning-list",
+    "chName": null,
+    "companyNumber": null,
+    "matchConfidence": "none",
+    "postcode": null
+  },
+  {
+    "fcaName": "xannis.live (new)",
+    "source": "warning-list",
+    "chName": null,
+    "companyNumber": null,
+    "matchConfidence": "none",
+    "postcode": null
+  },
+  {
+    "fcaName": "CFX Stock Trading (new)",
+    "source": "warning-list",
+    "chName": "CFX TRADING LTD",
+    "companyNumber": "11101313",
+    "companyStatus": "dissolved",
+    "matchConfidence": "medium",
+    "simScore": 0.5,
+    "postcode": "B1 3NJ"
+  }
+]

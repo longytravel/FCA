@@ -1,0 +1,1034 @@
+{
+ "generated": "2026-07-21T07:10:54.231Z",
+ "source": "FCA Warning List names x RDAP (Verisign/PIR direct)",
+ "count": 120,
+ "resolvedWithRegDate": 93,
+ "results": [
+  {
+   "domain": "wealthfinez.com",
+   "name": "wealthfinez.com (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "com",
+   "regDate": "2026-07-11T12:19:34Z",
+   "registrar": "Gransy, s.r.o.",
+   "daysRegToWarn": 8
+  },
+  {
+   "domain": "netfxassets.org",
+   "name": "netfxassets.org (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "org",
+   "regDate": "2026-07-10T08:12:24.916Z",
+   "registrar": "Dynadot Inc",
+   "daysRegToWarn": 10
+  },
+  {
+   "domain": "atb.primerdroidscripts.pro",
+   "name": "atb.primerdroidscripts.pro (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "pro",
+   "rdapStatus": 400
+  },
+  {
+   "domain": "stonehavenmarkets.com",
+   "name": "stonehavenmarkets.com (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "com",
+   "regDate": "2026-01-27T08:19:10Z",
+   "registrar": "Dynadot Inc",
+   "daysRegToWarn": 174
+  },
+  {
+   "domain": "sigmatrapartners.live",
+   "name": "sigmatrapartners.live (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "live",
+   "regDate": "2026-07-13T13:14:59.605Z",
+   "registrar": "Spaceship, Inc.",
+   "daysRegToWarn": 6
+  },
+  {
+   "domain": "globalstocksvest.com",
+   "name": "www.globalstocksvest.com (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "com",
+   "regDate": "2026-02-17T00:33:43Z",
+   "registrar": "TuringSign Inc. d/b/a Cosmotown",
+   "daysRegToWarn": 153
+  },
+  {
+   "domain": "fxlivecrypto-option.net",
+   "name": "fxlivecrypto-option.net (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "net",
+   "regDate": "2022-10-08T07:25:53Z",
+   "registrar": "HOSTINGER operations, UAB",
+   "daysRegToWarn": 1381
+  },
+  {
+   "domain": "xannis.live",
+   "name": "xannis.live (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "live",
+   "regDate": "2026-05-27T13:08:27.026Z",
+   "registrar": "Global Domain Group LLC",
+   "daysRegToWarn": 53
+  },
+  {
+   "domain": "stravonltd.com",
+   "name": "www.stravonltd.com (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "com",
+   "regDate": "2026-02-24T07:53:39Z",
+   "registrar": "NameCheap, Inc.",
+   "daysRegToWarn": 146
+  },
+  {
+   "domain": "emperorfinancial.net",
+   "name": "www.emperorfinancial.net (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "net",
+   "regDate": "2025-12-17T12:36:12Z",
+   "registrar": "Global Domain Group LLC",
+   "daysRegToWarn": 214
+  },
+  {
+   "domain": "sinvestmenttrades.com",
+   "name": "www.sinvestmenttrades.com (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "com",
+   "regDate": "2025-03-28T18:39:27Z",
+   "registrar": "Sav.com, LLC",
+   "daysRegToWarn": 478
+  },
+  {
+   "domain": "aureliusledger.com",
+   "name": "aureliusledger.com (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "com",
+   "regDate": "2025-12-18T16:51:10Z",
+   "registrar": "Hosting Concepts B.V. d/b/a Registrar.eu",
+   "daysRegToWarn": 213
+  },
+  {
+   "domain": "trustsafeassurance.org",
+   "name": "trustsafeassurance.org (updated)",
+   "dateAdded": "20/07/2026",
+   "tld": "org",
+   "regDate": "2026-03-29T10:14:07.519Z",
+   "registrar": "TuringSign Inc. d/b/a Cosmotown",
+   "daysRegToWarn": 113
+  },
+  {
+   "domain": "globalwealthcorporation.com",
+   "name": "globalwealthcorporation.com (updated)",
+   "dateAdded": "20/07/2026",
+   "tld": "com",
+   "regDate": "2024-12-21T12:06:29Z",
+   "registrar": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+   "daysRegToWarn": 575
+  },
+  {
+   "domain": "gateinsure.co.uk",
+   "name": "Gate Insure/gateinsure.co.uk (clone of FCA Authorised firm) (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "uk",
+   "regDate": "2026-03-23T02:11:12.229188Z",
+   "registrar": "Namecheap, Inc.",
+   "daysRegToWarn": 119
+  },
+  {
+   "domain": "qua.courexpresst.com",
+   "name": "Remendy Invest / qua.courexpresst.com (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "com",
+   "rdapStatus": 404
+  },
+  {
+   "domain": "tenvixplus.live",
+   "name": "tenvixplus.live (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "live",
+   "regDate": "2025-09-11T12:35:37.327Z",
+   "registrar": "NameSilo, LLC",
+   "daysRegToWarn": 311
+  },
+  {
+   "domain": "mail.alturafinance.live",
+   "name": "Altura Finance / mail.alturafinance.live (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "live",
+   "rdapStatus": 400
+  },
+  {
+   "domain": "apexpromarkets.net",
+   "name": "apexpromarkets.net (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "net",
+   "regDate": "2026-05-14T23:01:19Z",
+   "registrar": "Spaceship, Inc.",
+   "daysRegToWarn": 66
+  },
+  {
+   "domain": "7startradeoptions.com",
+   "name": "7startradeoptions.com (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "com",
+   "regDate": "2025-10-29T17:06:45Z",
+   "registrar": "Tucows Domains Inc.",
+   "daysRegToWarn": 263
+  },
+  {
+   "domain": "coincryptime.imfsupportservice.org",
+   "name": "Cryptime / coincryptime.imfsupportservice.org (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "org",
+   "rdapStatus": 400
+  },
+  {
+   "domain": "zeniumecglobal.com",
+   "name": "www.zeniumecglobal.com (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "com",
+   "regDate": "2025-07-03T11:46:58Z",
+   "registrar": "NameCheap, Inc.",
+   "daysRegToWarn": 382
+  },
+  {
+   "domain": "escovest.com",
+   "name": "escovest.com (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "com",
+   "regDate": "2025-09-06T21:18:27Z",
+   "registrar": "Ultahost, Inc.",
+   "daysRegToWarn": 316
+  },
+  {
+   "domain": "metatrustcapital.com",
+   "name": "www.metatrustcapital.com (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "com",
+   "regDate": "2025-09-09T18:21:10Z",
+   "registrar": "Global Domain Group LLC",
+   "daysRegToWarn": 313
+  },
+  {
+   "domain": "app.varonsavinglogin.online",
+   "name": "Orbit55 / app.varonsavinglogin.online (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "online",
+   "regDate": "2025-08-18T23:09:52.000Z",
+   "registrar": "Upperlink Limited",
+   "daysRegToWarn": 335
+  },
+  {
+   "domain": "calcivisltd.com",
+   "name": "www.calcivisltd.com (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "com",
+   "regDate": "2026-02-03T14:44:32Z",
+   "registrar": "TuringSign Inc. d/b/a Cosmotown",
+   "daysRegToWarn": 166
+  },
+  {
+   "domain": "poly-global.org",
+   "name": "Poly-Globals / Poly-Globals Investments / poly-global.org (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "org",
+   "regDate": "2026-02-02T06:55:47.096Z",
+   "registrar": "GO54 LIMITED",
+   "daysRegToWarn": 168
+  },
+  {
+   "domain": "quantummai.org",
+   "name": "QUANTUMMAI INVESTMENTS / quantummai.org (new)",
+   "dateAdded": "20/07/2026",
+   "tld": "org",
+   "regDate": "2026-03-05T09:09:45.626Z",
+   "registrar": "TuringSign Inc. d/b/a Cosmotown",
+   "daysRegToWarn": 137
+  },
+  {
+   "domain": "m2recoveries.com",
+   "name": "m2recoveries.com / m2recovered.com / cryptoassetrecover.org / Reverse Funds (Clone of FCA Authorised Firm) (updated)",
+   "dateAdded": "26/03/2024",
+   "tld": "com",
+   "rdapStatus": 404
+  },
+  {
+   "domain": "sourceddevelopmentgroup.com",
+   "name": "Sourced Development Group / www.sourceddevelopmentgroup.com (new)",
+   "dateAdded": "17/07/2026",
+   "tld": "com",
+   "regDate": "2020-01-22T17:40:43Z",
+   "registrar": "Tucows Domains Inc.",
+   "daysRegToWarn": 2367
+  },
+  {
+   "domain": "palamonpartners.com",
+   "name": "palamonpartners.com (Clone of FCA Authorised firm) (new)",
+   "dateAdded": "17/07/2026",
+   "tld": "com",
+   "regDate": "2026-06-02T14:57:37Z",
+   "registrar": "NameCheap, Inc.",
+   "daysRegToWarn": 44
+  },
+  {
+   "domain": "galidix.com",
+   "name": "Galidix / www.galidix.com (updated)",
+   "dateAdded": "15/07/2026",
+   "tld": "com",
+   "regDate": "2025-08-07T08:14:13Z",
+   "registrar": "Internet Domain Service BS Corp",
+   "daysRegToWarn": 342
+  },
+  {
+   "domain": "walletts.uk",
+   "name": "Walletts Connect / www.walletts.uk (new)",
+   "dateAdded": "15/07/2026",
+   "tld": "uk",
+   "regDate": "2020-07-21T16:39:15Z",
+   "registrar": "Namecheap, Inc.",
+   "daysRegToWarn": 2184
+  },
+  {
+   "domain": "9mc.org",
+   "name": "9M AI / 9MX / www.9mc.org / www.9mc.ai (new)",
+   "dateAdded": "15/07/2026",
+   "tld": "org",
+   "regDate": "2025-04-25T04:09:29.288Z",
+   "registrar": "GoDaddy.com, LLC",
+   "daysRegToWarn": 446
+  },
+  {
+   "domain": "b-investor.com",
+   "name": "B-Investor / ExpertB LTD / Expert-B / https://b-investor.com/ (updated)",
+   "dateAdded": "06/01/2025",
+   "tld": "com",
+   "regDate": "2023-03-08T18:47:38Z",
+   "registrar": "Porkbun LLC",
+   "daysRegToWarn": 669
+  },
+  {
+   "domain": "debtmanagementplans.uk.com",
+   "name": "debtmanagementplans.uk.com (new)",
+   "dateAdded": "15/07/2026",
+   "tld": "com",
+   "rdapStatus": 404
+  },
+  {
+   "domain": "franklinnationalreserve.com",
+   "name": "www.franklinnationalreserve.com (new)",
+   "dateAdded": "14/07/2026",
+   "tld": "com",
+   "regDate": "2025-11-27T21:50:55Z",
+   "registrar": "Dynadot Inc",
+   "daysRegToWarn": 228
+  },
+  {
+   "domain": "kryptoassetrecovery.com",
+   "name": "kryptoassetrecovery.com (new)",
+   "dateAdded": "14/07/2026",
+   "tld": "com",
+   "regDate": "2023-11-27T21:49:47Z",
+   "registrar": "NameCheap, Inc.",
+   "daysRegToWarn": 959
+  },
+  {
+   "domain": "quantanorth.com",
+   "name": "Quanta North/quantanorth.com (clone of FCA authorised firm) (updated)",
+   "dateAdded": "26/06/2026",
+   "tld": "com",
+   "regDate": "2025-06-12T11:44:33Z",
+   "registrar": "NameCheap, Inc.",
+   "daysRegToWarn": 379
+  },
+  {
+   "domain": "mmercera.info",
+   "name": "MA-Management / Mercer Advisor Management / mmercera.info (new)",
+   "dateAdded": "14/07/2026",
+   "tld": "info",
+   "regDate": "2026-06-02T12:11:38.232Z",
+   "registrar": "Tucows Domains Inc.",
+   "daysRegToWarn": 41
+  },
+  {
+   "domain": "smartinvestment-solution.org",
+   "name": "https://smartinvestment-solution.org/ (updated)",
+   "dateAdded": "02/04/2026",
+   "tld": "org",
+   "regDate": "2025-11-05T09:19:02.918Z",
+   "registrar": "NameCheap, Inc.",
+   "daysRegToWarn": 148
+  },
+  {
+   "domain": "duxtonrozequinox.cc",
+   "name": "duxtonrozequinox.cc (new)",
+   "dateAdded": "13/07/2026",
+   "tld": "cc",
+   "regDate": "2025-11-07T18:39:21Z",
+   "registrar": "Global Domain Group LLC",
+   "daysRegToWarn": 247
+  },
+  {
+   "domain": "xetraloxitech.net",
+   "name": "Xetraloxi Tech / xetraloxitech.net (new)",
+   "dateAdded": "13/07/2026",
+   "tld": "net",
+   "regDate": "2026-05-13T11:30:34Z",
+   "registrar": "OwnRegistrar, Inc.",
+   "daysRegToWarn": 61
+  },
+  {
+   "domain": "bluecloudrecovery.com",
+   "name": "BlueCloud Recovery/bluecloudrecovery.com (clone of FCA registered firm) (new)",
+   "dateAdded": "10/07/2026",
+   "tld": "com",
+   "regDate": "2026-01-08T12:12:46Z",
+   "registrar": "Hosting Concepts B.V. d/b/a Registrar.eu",
+   "daysRegToWarn": 182
+  },
+  {
+   "domain": "marginaltrading.net",
+   "name": "marginaltrading.net (new)",
+   "dateAdded": "09/07/2026",
+   "tld": "net",
+   "regDate": "2026-01-13T11:57:12Z",
+   "registrar": "Global Domain Group LLC",
+   "daysRegToWarn": 177
+  },
+  {
+   "domain": "sbinvestmentfund.org",
+   "name": "sbinvestmentfund.org/sbinvestmentfund.co (clone of FCA approved fund) (updated)",
+   "dateAdded": "11/06/2026",
+   "tld": "org",
+   "regDate": "2026-03-05T15:03:24.789Z",
+   "registrar": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+   "daysRegToWarn": 97
+  },
+  {
+   "domain": "algebriscapital.com",
+   "name": "algebriscapital.com (clone of FCA authorised firm) (new)",
+   "dateAdded": "07/07/2026",
+   "tld": "com",
+   "regDate": "2026-03-10T18:31:37Z",
+   "registrar": "NameSilo, LLC",
+   "daysRegToWarn": 118
+  },
+  {
+   "domain": "globaltradeexpresslimited.com",
+   "name": "globaltradeexpresslimited.com (updated)",
+   "dateAdded": "06/01/2023",
+   "tld": "com",
+   "rdapStatus": 404
+  },
+  {
+   "domain": "assetstb.org",
+   "name": "ASSET BANK OF SCOTLAND / assetstb.org (new)",
+   "dateAdded": "06/07/2026",
+   "tld": "org",
+   "regDate": "2026-03-03T20:14:53.974Z",
+   "registrar": "Dynadot Inc",
+   "daysRegToWarn": 124
+  },
+  {
+   "domain": "anubisglobex.com",
+   "name": "anubisglobex.com (updated)",
+   "dateAdded": "01/07/2026",
+   "tld": "com",
+   "regDate": "2025-09-09T17:40:24Z",
+   "registrar": "Hosting Concepts B.V. d/b/a Registrar.eu",
+   "daysRegToWarn": 294
+  },
+  {
+   "domain": "swizzgreenassets.com",
+   "name": "Swizzgreenassets / swizzgreenassets.com (updated)",
+   "dateAdded": "03/07/2026",
+   "tld": "com",
+   "regDate": "2026-01-01T20:25:46Z",
+   "registrar": "Dynadot Inc",
+   "daysRegToWarn": 182
+  },
+  {
+   "domain": "blackswan-trading.com",
+   "name": "Blackswan Trading/blackswan-trading.com (clone of FCA registered firm) (new)",
+   "dateAdded": "03/07/2026",
+   "tld": "com",
+   "regDate": "2025-12-16T15:09:21Z",
+   "registrar": "NameCheap, Inc.",
+   "daysRegToWarn": 198
+  },
+  {
+   "domain": "genesis-arbit.com",
+   "name": "Genisis Arbit / genesis-arbit.com (new)",
+   "dateAdded": "03/07/2026",
+   "tld": "com",
+   "regDate": "2026-06-12T09:35:22Z",
+   "registrar": "NameSilo, LLC",
+   "daysRegToWarn": 21
+  },
+  {
+   "domain": "-hellosafe.co.uk",
+   "name": "HelloSafe -hellosafe.co.uk (new)",
+   "dateAdded": "03/07/2026",
+   "tld": "uk",
+   "rdapStatus": 404
+  },
+  {
+   "domain": "express-exchangeuk.com",
+   "name": "Express Exchange / express-exchangeuk.com (new)",
+   "dateAdded": "03/07/2026",
+   "tld": "com",
+   "regDate": "2025-06-06T21:58:40Z",
+   "registrar": "Dynadot Inc",
+   "daysRegToWarn": 391
+  },
+  {
+   "domain": "gifxpartnersltd.com",
+   "name": "Gifx Partner Limited / gifxpartnersltd.com (new)",
+   "dateAdded": "03/07/2026",
+   "tld": "com",
+   "regDate": "2024-08-03T19:29:14Z",
+   "registrar": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+   "daysRegToWarn": 698
+  },
+  {
+   "domain": "philitradingltd.pythonanywhere.com",
+   "name": "philitradingltd.pythonanywhere.com (updated)",
+   "dateAdded": "01/07/2026",
+   "tld": "com",
+   "rdapStatus": 404
+  },
+  {
+   "domain": "pivlex.com",
+   "name": "Pivlex / pivlex.com (new)",
+   "dateAdded": "01/07/2026",
+   "tld": "com",
+   "regDate": "2023-08-14T19:31:49Z",
+   "registrar": "GoDaddy.com, LLC",
+   "daysRegToWarn": 1051
+  },
+  {
+   "domain": "majesticea.com",
+   "name": "Majesticea / majesticea.com (new)",
+   "dateAdded": "01/07/2026",
+   "tld": "com",
+   "regDate": "2023-04-08T14:58:44Z",
+   "registrar": "GoDaddy.com, LLC",
+   "daysRegToWarn": 1179
+  },
+  {
+   "domain": "fxgenix.com",
+   "name": "FXgenix / fxgenix.com (new)",
+   "dateAdded": "01/07/2026",
+   "tld": "com",
+   "regDate": "2024-07-03T12:13:06Z",
+   "registrar": "GoDaddy.com, LLC",
+   "daysRegToWarn": 727
+  },
+  {
+   "domain": "fxeasybot.com",
+   "name": "FxEasyBot / fxeasybot.com (new)",
+   "dateAdded": "01/07/2026",
+   "tld": "com",
+   "regDate": "2024-08-14T18:21:25Z",
+   "registrar": "GoDaddy.com, LLC",
+   "daysRegToWarn": 685
+  },
+  {
+   "domain": "crestalum.org",
+   "name": "www.crestalum.org (new)",
+   "dateAdded": "29/06/2026",
+   "tld": "org",
+   "regDate": "2025-06-05T20:59:27.506Z",
+   "registrar": "NameSilo, LLC",
+   "daysRegToWarn": 388
+  },
+  {
+   "domain": "wealthgaf.info",
+   "name": "Wealth Gaf / https://wealthgaf.info/ (new)",
+   "dateAdded": "29/06/2026",
+   "tld": "info",
+   "regDate": "2026-03-19T13:02:20.746Z",
+   "registrar": "Tucows Domains Inc.",
+   "daysRegToWarn": 101
+  },
+  {
+   "domain": "rockpointpartners.com",
+   "name": "Rock Point Partners / https://rockpointpartners.com/ (new)",
+   "dateAdded": "29/06/2026",
+   "tld": "com",
+   "regDate": "2025-12-07T19:15:33Z",
+   "registrar": "GoDaddy.com, LLC",
+   "daysRegToWarn": 203
+  },
+  {
+   "domain": "yoforex.org",
+   "name": "YoForex / https://yoforex.org/ (new)",
+   "dateAdded": "29/06/2026",
+   "tld": "org",
+   "regDate": "2023-08-18T12:22:30.403Z",
+   "registrar": "Ultahost, Inc.",
+   "daysRegToWarn": 1045
+  },
+  {
+   "domain": "gigapips.com",
+   "name": "Gigapips / gigapips.com (new)",
+   "dateAdded": "26/06/2026",
+   "tld": "com",
+   "regDate": "2024-05-10T14:04:25Z",
+   "registrar": "GoDaddy.com, LLC",
+   "daysRegToWarn": 776
+  },
+  {
+   "domain": "fxprobot.com",
+   "name": "FXprobot / fxprobot.com (new)",
+   "dateAdded": "26/06/2026",
+   "tld": "com",
+   "regDate": "2024-05-07T13:14:50Z",
+   "registrar": "GoDaddy.com, LLC",
+   "daysRegToWarn": 779
+  },
+  {
+   "domain": "ubtcreditunion.com",
+   "name": "www.ubtcreditunion.com (new)",
+   "dateAdded": "26/06/2026",
+   "tld": "com",
+   "regDate": "2025-09-05T00:43:14Z",
+   "registrar": "Global Domain Group LLC",
+   "daysRegToWarn": 294
+  },
+  {
+   "domain": "mudrexcapitalfx.com",
+   "name": "Mudrexcapitalfx / mudrexcapitalfx.com (new)",
+   "dateAdded": "26/06/2026",
+   "tld": "com",
+   "regDate": "2026-05-27T10:05:11Z",
+   "registrar": "Tucows Domains Inc.",
+   "daysRegToWarn": 30
+  },
+  {
+   "domain": "nexdiltd.net",
+   "name": "Nexdiltd.net (Clone of FCA Registered Firm) (new)",
+   "dateAdded": "26/06/2026",
+   "tld": "net",
+   "regDate": "2025-10-30T11:20:48Z",
+   "registrar": "Internet Domain Service BS Corp",
+   "daysRegToWarn": 239
+  },
+  {
+   "domain": "getfixglobal.net",
+   "name": "GetFix Global / getfixglobal.net (new)",
+   "dateAdded": "26/06/2026",
+   "tld": "net",
+   "regDate": "2026-03-30T08:52:06Z",
+   "registrar": "OwnRegistrar, Inc.",
+   "daysRegToWarn": 88
+  },
+  {
+   "domain": "app.tbgrouplimited.com",
+   "name": "app.tbgrouplimited.com (new)",
+   "dateAdded": "26/06/2026",
+   "tld": "com",
+   "rdapStatus": 404
+  },
+  {
+   "domain": "uk-bbh.com",
+   "name": "uk-bbh.com / bbh-fixedincome.com (clone of FCA authorised firm) (updated)",
+   "dateAdded": "22/04/2026",
+   "tld": "com",
+   "regDate": "2026-02-09T11:36:39Z",
+   "registrar": "Ultahost, Inc.",
+   "daysRegToWarn": 72
+  },
+  {
+   "domain": "spreadex-uk.com",
+   "name": "spreadex-uk.com (clone of FCA authorised firm) (new)",
+   "dateAdded": "25/06/2026",
+   "tld": "com",
+   "regDate": "2026-02-11T13:28:39Z",
+   "registrar": "Internet Domain Service BS Corp",
+   "daysRegToWarn": 133
+  },
+  {
+   "domain": "valleyfinance.online",
+   "name": "valleyfinance.online (Clone of FCA authorised firm) (updated)",
+   "dateAdded": "23/06/2026",
+   "tld": "online",
+   "regDate": "2026-05-09T15:59:38.942Z",
+   "registrar": "HOSTINGER operations, UAB",
+   "daysRegToWarn": 44
+  },
+  {
+   "domain": "rineplex.com",
+   "name": "Rineplex / rineplex.com / rineplex.co (updated)",
+   "dateAdded": "25/11/2025",
+   "tld": "com",
+   "regDate": "2025-05-07T10:10:52Z",
+   "registrar": "GoDaddy.com, LLC",
+   "daysRegToWarn": 202
+  },
+  {
+   "domain": "greatclaims.co.uk",
+   "name": "Great Claims Ltd / https://greatclaims.co.uk/ (new)",
+   "dateAdded": "24/06/2026",
+   "tld": "uk",
+   "regDate": "2022-06-16T19:58:01Z",
+   "registrar": "Ionos SE",
+   "daysRegToWarn": 1468
+  },
+  {
+   "domain": "crystalfinanceuk.online",
+   "name": "Crystal Finance Ltd / crystalfinanceuk.online / https://crystalukfinance.online (updated)",
+   "dateAdded": "01/08/2025",
+   "tld": "online",
+   "regDate": "2025-05-06T17:50:20.000Z",
+   "registrar": "HOSTINGER operations, UAB",
+   "daysRegToWarn": 86
+  },
+  {
+   "domain": "whitechurchnetwork.net",
+   "name": "whitechurchnetwork.net (Clone of FCA authorised firm) (new)",
+   "dateAdded": "23/06/2026",
+   "tld": "net",
+   "regDate": "2024-03-01T12:45:46Z",
+   "registrar": "NameCheap, Inc.",
+   "daysRegToWarn": 843
+  },
+  {
+   "domain": "pcprefunds4u.co.uk",
+   "name": "PCP Refunds 4U Ltd / https://pcprefunds4u.co.uk/ (new)",
+   "dateAdded": "19/06/2026",
+   "tld": "uk",
+   "regDate": "2024-04-22T12:53:57.260662Z",
+   "registrar": "Enix Ltd",
+   "daysRegToWarn": 787
+  },
+  {
+   "domain": "capital-trustblank.online",
+   "name": "capital-trustblank.online (new)",
+   "dateAdded": "19/06/2026",
+   "tld": "online",
+   "regDate": "2025-06-18T21:33:41.000Z",
+   "registrar": "HOSTINGER operations, UAB",
+   "daysRegToWarn": 365
+  },
+  {
+   "domain": "forexobot.com",
+   "name": "Forexobot / forexobot.com (updated)",
+   "dateAdded": "19/06/2026",
+   "tld": "com",
+   "regDate": "2024-04-04T13:58:59Z",
+   "registrar": "GoDaddy.com, LLC",
+   "daysRegToWarn": 805
+  },
+  {
+   "domain": "rushpips.com",
+   "name": "Rushpips / rushpips.com (updated)",
+   "dateAdded": "19/06/2026",
+   "tld": "com",
+   "regDate": "2024-03-07T13:28:32Z",
+   "registrar": "GoDaddy.com, LLC",
+   "daysRegToWarn": 833
+  },
+  {
+   "domain": "mgmassociates.co.uk",
+   "name": "MGM & Associates Ltd / https://www.mgmassociates.co.uk/ (new)",
+   "dateAdded": "19/06/2026",
+   "tld": "uk",
+   "regDate": "2025-04-30T11:06:00.86327Z",
+   "registrar": "Tucows Inc t/a Tucows",
+   "daysRegToWarn": 415
+  },
+  {
+   "domain": "fxcglobal.net",
+   "name": "Fxcglobal / fxcglobal.net (new)",
+   "dateAdded": "19/06/2026",
+   "tld": "net",
+   "regDate": "2025-12-30T17:54:02Z",
+   "registrar": "NameCheap, Inc.",
+   "daysRegToWarn": 170
+  },
+  {
+   "domain": "asadministration.uk",
+   "name": "AS Administration / asadministration.uk / asadministrationuk.com (updated)",
+   "dateAdded": "18/06/2026",
+   "tld": "uk",
+   "regDate": "2026-01-12T18:53:20.783901Z",
+   "registrar": "Register.com Inc t/a Network Solutions",
+   "daysRegToWarn": 156
+  },
+  {
+   "domain": "nationalserviceplc.com",
+   "name": "www.nationalserviceplc.com (updated)",
+   "dateAdded": "18/06/2026",
+   "tld": "com",
+   "regDate": "2025-03-15T14:56:22Z",
+   "registrar": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+   "daysRegToWarn": 459
+  },
+  {
+   "domain": "crownunionbank.com",
+   "name": "www.crownunionbank.com (new)",
+   "dateAdded": "18/06/2026",
+   "tld": "com",
+   "regDate": "2025-09-29T08:37:23Z",
+   "registrar": "Global Domain Group LLC",
+   "daysRegToWarn": 262
+  },
+  {
+   "domain": "vg-investments.com",
+   "name": "vg-investments.com / vanguardinvestmentsuk.com (Clone of FCA authorised firm) (new)",
+   "dateAdded": "17/06/2026",
+   "tld": "com",
+   "regDate": "2026-05-11T13:55:36Z",
+   "registrar": "Global Domain Group LLC",
+   "daysRegToWarn": 36
+  },
+  {
+   "domain": "profitinvext.com",
+   "name": "Profitinvest (www.profitinvext.com) (new)",
+   "dateAdded": "16/06/2026",
+   "tld": "com",
+   "regDate": "2025-10-06T13:23:45Z",
+   "registrar": "Dynadot Inc",
+   "daysRegToWarn": 252
+  },
+  {
+   "domain": "theclaimsgroup.co.uk",
+   "name": "Theclaimsgroup.co.uk (new)",
+   "dateAdded": "16/06/2026",
+   "tld": "uk",
+   "regDate": "2024-03-14T11:47:00.539823Z",
+   "registrar": "GoDaddy.com, LLC.",
+   "daysRegToWarn": 824
+  },
+  {
+   "domain": "erion.biz",
+   "name": "Erion Group (erion.biz / eriongroupe.com) (new)",
+   "dateAdded": "16/06/2026",
+   "tld": "biz",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "assetplusflimited.com",
+   "name": "assetplusflimited.com/assetplusfinancial.limited / assetpluss.site (clone of FCA registered firm) (updated)",
+   "dateAdded": "10/04/2026",
+   "tld": "com",
+   "regDate": "2025-10-20T18:05:48Z",
+   "registrar": "NameCheap, Inc.",
+   "daysRegToWarn": 171
+  },
+  {
+   "domain": "desirewealthmanagementltd.uk",
+   "name": "desirewealthmanagementltd.uk / desirewealthmanagementuk.org/ desirewealthmanagement.com (clone of FCA authorised firm) (new)",
+   "dateAdded": "15/06/2026",
+   "tld": "uk",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "claim.spacepay.co.uk",
+   "name": "https://claim.spacepay.co.uk/ (updated)",
+   "dateAdded": "02/04/2026",
+   "tld": "uk",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "lumetixcomp.org",
+   "name": "lumetixcomp.org (new)",
+   "dateAdded": "11/06/2026",
+   "tld": "org",
+   "regDate": "2026-02-04T14:17:14.031Z",
+   "registrar": "Dynadot Inc",
+   "daysRegToWarn": 126
+  },
+  {
+   "domain": "gmrcapitalglobal.co.uk",
+   "name": "GMR Capital Global / gmrcapitalglobal.co.uk (updated)",
+   "dateAdded": "02/12/2025",
+   "tld": "uk",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "lpdcapital.co.uk",
+   "name": "lpdcapital.co.uk (Clone of FCA registered firm) (new)",
+   "dateAdded": "09/06/2026",
+   "tld": "uk",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "hsilinvestments.net",
+   "name": "hsilinvestments.net (new)",
+   "dateAdded": "09/06/2026",
+   "tld": "net",
+   "regDate": "2026-01-18T19:15:17Z",
+   "registrar": "HOSTINGER operations, UAB",
+   "daysRegToWarn": 141
+  },
+  {
+   "domain": "swiftdebthelp.co.uk",
+   "name": "swiftdebthelp.co.uk (new)",
+   "dateAdded": "09/06/2026",
+   "tld": "uk",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "fundourselves.uk",
+   "name": "fundourselves.uk (Clone of FCA authorised firm) (updated)",
+   "dateAdded": "26/05/2026",
+   "tld": "uk",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "domesticcareandrepair.co.uk",
+   "name": "Domestic Care and Repair Ltd / domesticcareandrepair.co.uk (new)",
+   "dateAdded": "05/06/2026",
+   "tld": "uk",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "privatemarketunlock.uk",
+   "name": "www.privatemarketunlock.uk (new)",
+   "dateAdded": "05/06/2026",
+   "tld": "uk",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "certifiedcryptoexpert.net",
+   "name": "certifiedcryptoexpert.net / lawfinancialservices.com / adviceoffice.net / currencycertified.com (Clone of FCA Authorised Appointed Representative) (updated)",
+   "dateAdded": "06/06/2024",
+   "tld": "net",
+   "regDate": "2023-11-02T16:00:21Z",
+   "registrar": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+   "daysRegToWarn": 216
+  },
+  {
+   "domain": "assureassetltd.com",
+   "name": "Assure Asset / assureassetltd.com (new)",
+   "dateAdded": "04/06/2026",
+   "tld": "com",
+   "regDate": "2025-02-14T03:33:05Z",
+   "registrar": "Dynadot Inc",
+   "daysRegToWarn": 475
+  },
+  {
+   "domain": "greenleefinancial.co.uk",
+   "name": "Greenlee Financial / greenleefinancial.co.uk (updated)",
+   "dateAdded": "21/01/2026",
+   "tld": "uk",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "tradevision365.com",
+   "name": "TradeVision365 / www.tradevision365.com (updated)",
+   "dateAdded": "13/02/2024",
+   "tld": "com",
+   "rdapStatus": 404
+  },
+  {
+   "domain": "olylim.com",
+   "name": "Olylim.com (new)",
+   "dateAdded": "02/06/2026",
+   "tld": "com",
+   "regDate": "2025-12-19T12:25:47Z",
+   "registrar": "NameCheap, Inc.",
+   "daysRegToWarn": 164
+  },
+  {
+   "domain": "newosti.trade",
+   "name": "www.newosti.trade (new)",
+   "dateAdded": "02/06/2026",
+   "tld": "trade",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "cp-group.cc",
+   "name": "cp-group.cc (Clone of FCA registered firm) (new)",
+   "dateAdded": "02/06/2026",
+   "tld": "cc",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "citi-markets.com",
+   "name": "citi-markets.com (Clone of FCA authorised firm) (updated)",
+   "dateAdded": "13/04/2026",
+   "tld": "com",
+   "regDate": "2026-01-14T17:32:37Z",
+   "registrar": "NameSilo, LLC",
+   "daysRegToWarn": 88
+  },
+  {
+   "domain": "cityequities.co.uk",
+   "name": "City Equities / cityequities.co.uk (Clone of previously authorised firm) (updated)",
+   "dateAdded": "20/02/2026",
+   "tld": "uk",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "thgcapitalsavings.com",
+   "name": "The Hinton Group / thgcapitalsavings.com / mybestbuysavings (updated)",
+   "dateAdded": "27/08/2024",
+   "tld": "com",
+   "regDate": "2023-03-29T14:55:59Z",
+   "registrar": "IONOS SE",
+   "daysRegToWarn": 516
+  },
+  {
+   "domain": "capital-bltd.com",
+   "name": "capital-bltd.com (Clone of FCA registered firm) (new)",
+   "dateAdded": "28/05/2026",
+   "tld": "com",
+   "regDate": "2025-11-24T18:07:59Z",
+   "registrar": "NameCheap, Inc.",
+   "daysRegToWarn": 184
+  },
+  {
+   "domain": "berkshire-wealthuk.com",
+   "name": "berkshire-wealthuk.com (clone of FCA firms) (updated)",
+   "dateAdded": "10/03/2025",
+   "tld": "com",
+   "rdapStatus": 404
+  },
+  {
+   "domain": "invictait.vip",
+   "name": "Invictait.vip (Clone of FCA authorised firm) (new)",
+   "dateAdded": "28/05/2026",
+   "tld": "vip",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "icapitalmarket.net",
+   "name": "ICMARKET/www.icapitalmarket.net (new)",
+   "dateAdded": "26/05/2026",
+   "tld": "net",
+   "regDate": "2026-01-29T23:08:16Z",
+   "registrar": "Ultahost, Inc.",
+   "daysRegToWarn": 116
+  },
+  {
+   "domain": "investcapitalworld.com",
+   "name": "Investcapitalworld.com (updated)",
+   "dateAdded": "13/05/2026",
+   "tld": "com",
+   "regDate": "2024-09-16T13:50:26Z",
+   "registrar": "Name SRS AB",
+   "daysRegToWarn": 603
+  },
+  {
+   "domain": "moneyhelpline.co.uk",
+   "name": "Money Helpline Ltd / http://moneyhelpline.co.uk (new)",
+   "dateAdded": "22/05/2026",
+   "tld": "uk",
+   "rdapStatus": 429
+  },
+  {
+   "domain": "profit.com",
+   "name": "Profit.com / Darqube (new)",
+   "dateAdded": "21/05/2026",
+   "tld": "com",
+   "regDate": "1997-05-20T04:00:00Z",
+   "registrar": "GoDaddy.com, LLC",
+   "daysRegToWarn": 10593
+  }
+ ]
+}

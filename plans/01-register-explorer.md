@@ -1,52 +1,70 @@
 # FCA Register Explorer — Live Vibe-Coding Build Plan
+`AUDIT: verified 2026-07-21, by audit-1`
 
 ## Pitch
-A search-first web app over the FCA Financial Services Register: type any firm name and instantly see its authorisation status, permissions, key people and disciplinary history — then ask a chatbot "Is this firm allowed to give investment advice?" and get a plain-English answer grounded in live Register data. It turns the FCA's own public register into a conversational "is this firm legit?" checker in front of the people who run it.
+Search the FCA Financial Services Register live: type any firm name and instantly see
+authorisation status, permissions, and key people — then let Claude auto-write a plain-English
+**"Firm Briefing"** and answer "Is this firm allowed to give investment advice?" grounded in the
+live JSON it just pulled. The FCA's own register, made conversational, in front of the people who run it.
 
-## Data source — VERIFIED LIVE
+## Data source — VERIFIED LIVE & KEYED (2026-07-21)
 - **API base:** `https://register.fca.org.uk/services/V0.1/`
-- **Access method:** Free API key. Two request headers required: `X-Auth-Email` (your registration email) + `X-Auth-Key` (key from your dev profile).
-- **Signup:** https://register.fca.org.uk/Developer/s/registernewuser — free, key is available instantly from your profile after registering (no approval wait).
-- **VERIFIED STATUS:** ✅ Endpoints tested live today — `GET /Firm/122702` and `/Search?q=barclays&type=firm` both return HTTP 403 `{"Success":"false", ... "Missing Headers."}`, confirming the endpoints exist and only need the two auth headers. Once headers are added they return JSON.
-- **Rate limit:** 50 requests / 10 seconds. Fine for demo; no SLA (free service).
+- **Auth:** two headers — `X-Auth-Email` + `X-Auth-Key`. **The working key is already in `.env.local`**
+  as `FCA_API_EMAIL` / `FCA_API_KEY` (bonus `COMPANIES_HOUSE_API_KEY` also present). **No signup needed** —
+  this removes plan risk R1 entirely.
+- **RE-TESTED LIVE TODAY, all HTTP 200 JSON:**
+  - `GET /Firm/122702` → 200, "Ok. Firm Found" (Barclays)
+  - `GET /Search?q=barclays&type=firm` → 200, total_count 103 (disambiguation works)
+  - `GET /Firm/122702/Permissions` → 200, 42 permissions (paginated 20/page, `Next` link)
+  - `GET /Firm/122702/Individuals` → 200 (⚠ total_count is large/historical — paginated; do NOT enumerate all)
+- **Rate limit:** 50 req / 10s. Fine for demo.
 
-### Key endpoints (all under the base + auth headers)
-- `Search?q={query}&type=firm` — firm name search → returns FRN + status
-- `Firm/{FRN}` — core record: name, status (Authorised/EEA/etc.), companies house no.
-- `Firm/{FRN}/Names` — trading names
-- `Firm/{FRN}/Permissions` — regulated activities (the "what are they allowed to do")
-- `Firm/{FRN}/Individuals` — approved persons at the firm
-- `Firm/{FRN}/Address` · `Firm/{FRN}/Requirements` · `Firm/{FRN}/DisciplinaryHistory`
-- `Individuals/{IRN}` + `Individuals/{IRN}/CF` (controlled functions)
-- `Search?q=...&type=individual` and `type=fund` also supported
+### Key endpoints (base + auth headers)
+- `Search?q={query}&type=firm|individual|fund` — name search → FRN + status
+- `Firm/{FRN}` · `Firm/{FRN}/Names` · `Firm/{FRN}/Permissions` · `Firm/{FRN}/Individuals`
+- `Firm/{FRN}/Address` · `Firm/{FRN}/DisciplinaryHistory`
+- All responses wrap payload in `Data[]` with a `Status`/`Message` envelope — unwrap `Data`.
 
 ## Stack
-Next.js (App Router) on Vercel. Server-side API routes proxy the FCA API (keeps `X-Auth-Key` server-only, avoids CORS). Tailwind for UI. Anthropic `claude-sonnet-5` (or `claude-fable-5`) for the chatbot with tool-use calling the same proxy routes. No database — live calls only.
+Existing Next.js 15 App Router scaffold (already present — reuse `app/`, do NOT `create-next-app`).
+Server API routes proxy the FCA API (keeps key server-only, avoids CORS). Tailwind (installed).
+Chatbot + briefing via `@anthropic-ai/sdk`, model `claude-fable-5`. No DB — live calls, in-memory cache.
+**Missing deps — install first:** `npm i @anthropic-ai/sdk` (recharts optional for a permissions viz).
 
 ## 2-Hour Build Plan
-- **0:00–0:15** Register for API key; `npx create-next-app`; add `FCA_EMAIL`, `FCA_KEY`, `ANTHROPIC_API_KEY` to `.env.local`. Smoke-test one authed `curl` from a route.
-- **0:15–0:35** `lib/fca.ts` — typed fetch wrapper injecting both headers + base URL; helpers `searchFirms()`, `getFirm(frn)`, `getPermissions(frn)`, `getIndividuals(frn)`.
-- **0:35–1:00** Search page: input box → `/api/search` route → results list (name, FRN, status badge green/amber/red).
-- **1:00–1:25** Firm detail view: status header + tabs/cards for Permissions, People, Disciplinary. Clean, scannable.
-- **1:25–1:50** Chatbot panel: `/api/chat` route runs Claude with tool-use (`search_firm`, `get_firm_permissions`). Claude answers "can firm X do Y?" grounded in returned JSON, citing FRN + status.
-- **1:50–2:00** Deploy to Vercel (env vars set), final demo run-through.
+- **0:00–0:10 — Setup.** Confirm `.env.local` keys load; `npm i @anthropic-ai/sdk`; add `ANTHROPIC_API_KEY`.
+  Smoke-test one authed fetch from a route handler (Barclays 122702) — must return 200 before building.
+- **0:10–0:30 — `lib/fca.ts`.** Typed fetch wrapper injecting both headers + base; unwraps `Data`.
+  Helpers: `searchFirms()`, `getFirm()`, `getPermissions()`, `getIndividuals()`. In-memory `Map` cache by FRN.
+- **0:30–0:55 — Search + firm detail.** `/api/search` route → results list (name, FRN, status badge
+  green Authorised / amber / red Cancelled). Click → detail: status header + Permissions and People cards.
+- **0:55–1:20 — WOW (b) AI Firm Briefing.** `/api/briefing` route: feed the firm's live JSON (status +
+  permissions + people count) to Claude → 3-sentence plain-English briefing ("Barclays is authorised, holds
+  42 permissions including accepting deposits and advising on investments…"). Render at top of detail card,
+  streamed. **This is the headline wow** — insight text nobody has seen over this data.
+- **1:20–1:45 — WOW (a) Chatbot with tool-use.** `/api/chat` runs Claude with tools `search_firm`,
+  `get_firm_permissions`. Answers "can firm X do Y?" citing FRN + status. Force tool-use; no free-form facts.
+- **1:45–2:00 — Deploy to Vercel** (env vars set), rehearse the 3 demo beats below.
 
 ## Risks & Fallbacks
-- **R1: Signup friction / key not instant.** Mitigation: register FIRST thing (or the night before). Fallback: pre-fetch & cache JSON for 3–4 well-known firms (Barclays FRN 122702, Monzo, Revolut) into `/fixtures`, serve from those so the demo never depends on live calls.
-- **R2: Rate limit (50/10s) during rapid demo clicks.** Add a 200ms debounce + in-memory cache per FRN. Fallback fixtures cover this too.
-- **R3: API slow / down (no SLA).** Fixtures fallback; wrap calls in try/catch with a "showing cached data" banner.
-- **R4: Chatbot hallucinating status.** Force tool-use only; system prompt: "Only state facts returned by tools; always cite FRN + status; if unknown, say so."
-- **R5: CORS.** Avoided — all FCA calls go through Next.js server routes, never the browser.
+- **R1 (signup) — ELIMINATED:** key already works.
+- **R2 Rate limit on rapid clicks:** 200ms debounce + per-FRN cache. Pre-cache 3 firms (Barclays 122702,
+  and two from a live search) into `fixtures/` as a hard fallback.
+- **R3 API slow/down (no SLA):** wrap calls in try/catch → serve fixtures with a "cached" banner.
+- **R4 Claude API fails live:** briefing + chat degrade to a **pre-generated static briefing** for the 3
+  demo firms (bake JSON at build). App still fully works showing live register data without AI.
+- **R5 Chatbot hallucination:** tool-use only; system prompt "state only tool-returned facts, always cite
+  FRN + status, say 'unknown' otherwise." Render citations from stored JSON, never model-invented.
+- **R6 Individuals huge count:** page 1 only (20); show "18k+ approved persons on record", never enumerate.
 
-## Demo Script (approx 5 min)
-1. "This is the FCA's own public Register data, live." Type **"Barclays"** → results appear with FRN + green Authorised badge.
-2. Click Barclays → show Permissions and approved People pulled live.
-3. Search a firm that's **not authorised / has cancelled status** → red badge. "This is exactly the scam-check a consumer needs."
-4. Ask the chatbot: **"Can this firm give investment advice?"** → Claude calls the permissions tool and answers in plain English, citing the FRN.
-5. Ask **"Find firms called Revolut and tell me which is the authorised one"** → shows disambiguation from live search.
-6. Close: "Built in 2 hours on your own public API — this is the consumer-facing register experience, made conversational."
+## Demo Script (~5 min)
+1. "This is the FCA's own live Register." Type **Barclays** → FRN + green Authorised badge.
+2. Click through → **Claude's Firm Briefing writes itself** at the top; scroll Permissions + People.
+3. Search a **cancelled/unauthorised** firm → red badge. "Exactly the scam-check a consumer needs."
+4. Ask the chatbot **"Can this firm give investment advice?"** → tool-use answer citing the FRN.
+5. **"Find firms called Revolut and tell me which is authorised"** → live disambiguation.
+6. Close: "Built in 2 hours on your own public API — the register, made conversational."
 
 ## Sources
 - [FCA Financial Services Register](https://www.fca.org.uk/firms/financial-services-register)
-- [Developer signup](https://register.fca.org.uk/Developer/s/registernewuser)
 - [fsrapiclient (endpoint reference)](https://github.com/sr-murthy/fsrapiclient)

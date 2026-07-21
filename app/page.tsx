@@ -2,40 +2,9 @@ import { GlowField, SiteNav, SiteFooter } from "@/src/components/ui";
 
 /**
  * Build options for the live session. Sourced from the plans in /plans.
- * Adding a new option = append one object here (accents cycle automatically).
- * `accent` holds full literal Tailwind classes so the v4 JIT always emits them.
+ * Adding a new option = append one object here. The card styling is uniform and
+ * editorial — no per-card accent colours.
  */
-type Accent = {
-  bar: string;
-  chip: string;
-  hook: string;
-  stat: string;
-  hoverBorder: string;
-};
-
-const TEAL: Accent = {
-  bar: "bg-teal",
-  chip: "bg-teal text-ink",
-  hook: "text-teal",
-  stat: "text-teal",
-  hoverBorder: "hover:border-teal/60",
-};
-const BLUE: Accent = {
-  bar: "bg-blue",
-  chip: "bg-blue text-ink",
-  hook: "text-blue-bright",
-  stat: "text-blue-bright",
-  hoverBorder: "hover:border-blue/60",
-};
-const VIOLET: Accent = {
-  bar: "bg-violet",
-  chip: "bg-violet text-white",
-  hook: "text-violet",
-  stat: "text-violet",
-  hoverBorder: "hover:border-violet/60",
-};
-const ACCENTS = [TEAL, BLUE, VIOLET];
-
 type Demo = {
   number: number;
   title: string;
@@ -43,6 +12,12 @@ type Demo = {
   description: string;
   stats: { value: string; label: string }[];
   feature?: string;
+  /**
+   * Set on cards that join FCA data with an external public source. Presence of
+   * this field floats the card into the "Cross-data" group at the top of the
+   * #choose section — a new 11-/12- plan just needs this field to appear there.
+   */
+  crossData?: { sources: string[] };
 };
 
 const demos: Demo[] = [
@@ -130,6 +105,7 @@ const demos: Demo[] = [
       { value: "Network", label: "director graph" },
     ],
     feature: "Most novel",
+    crossData: { sources: ["Companies House officer records"] },
   },
   {
     number: 8,
@@ -142,6 +118,7 @@ const demos: Demo[] = [
       { value: "OFSI", label: "sanctions screening" },
       { value: "£0", label: "in paid APIs" },
     ],
+    crossData: { sources: ["OFSI sanctions list", "ONS deprivation"] },
   },
   {
     number: 9,
@@ -155,6 +132,7 @@ const demos: Demo[] = [
       { value: "AI", label: "per-region briefing" },
     ],
     feature: "Most visual",
+    crossData: { sources: ["ONS deprivation (IMD)"] },
   },
   {
     number: 10,
@@ -167,50 +145,133 @@ const demos: Demo[] = [
       { value: "BoE + FCA", label: "data joined" },
       { value: "AI", label: "scrub-synced narration" },
     ],
+    crossData: { sources: ["Bank of England base rate"] },
+  },
+  {
+    number: 11,
+    title: "Born Yesterday",
+    hook: "How old is a scam website when the regulator blocklists it?",
+    description:
+      "Joins the FCA Warning List's scam-site names with live domain-registration records from RDAP (the WHOIS successor) to reveal a signal the FCA's own data can't: the gap between a domain's registration date and the day the FCA warned about it. Four in ten warned scam domains were registered within the last six months — the freshest just six days old — while a long tail of aged, respectable-looking domains points to legitimate names repurposed for fraud.",
+    stats: [
+      { value: "216 days", label: "median reg-to-warning" },
+      { value: "41%", label: "under 6 months old" },
+      { value: "6 days", label: "freshest scam domain" },
+    ],
+    crossData: { sources: ["RDAP domain-registration records"] },
+  },
+  {
+    number: 12,
+    title: "Fined, Then Folded",
+    hook: "Of the firms and people the FCA fined, who later went insolvent?",
+    description:
+      "Joins FCA enforcement notices with The Gazette — the UK's statutory record of insolvency — to surface the sanctioned firms and individuals that later formally collapsed, the trail where redress money evaporates. A confidence-scored, pre-curated watchlist: one FCA-sanctioned individual maps to seven insolvency notices under his exact name, each row linking back to both public sources so every claim is checkable.",
+    stats: [
+      { value: "300", label: "FCA fines cross-checked" },
+      { value: "7", label: "notices, one sanctioned name" },
+      { value: "Gazette", label: "statutory insolvency record" },
+    ],
+    crossData: { sources: ["The Gazette insolvency notices"] },
   },
 ];
 
+const twoDigit = (n: number) => n.toString().padStart(2, "0");
+
+function DemoCard({ demo }: { demo: Demo }) {
+  return (
+    <article className="group flex flex-col bg-card border border-rule rounded-[2px] p-7 transition-[border-color,transform] duration-150 hover:border-accent hover:-translate-y-px">
+      {demo.crossData && (
+        <div className="mb-5 -mt-1 border-l-2 border-highlight bg-highlight-tint rounded-r-[2px] pl-3 pr-4 py-2.5">
+          <p className="eyebrow text-highlight mb-1">
+            Cross-data &mdash; joins external sources for novel insight
+          </p>
+          <p className="text-ink-secondary text-xs leading-snug">
+            FCA data joined with{" "}
+            <strong className="text-ink font-semibold">
+              {demo.crossData.sources.join(" · ")}
+            </strong>
+            .
+          </p>
+        </div>
+      )}
+
+      <div className="flex items-baseline justify-between gap-4 mb-4">
+        <span className="font-display text-2xl text-ink-muted tnum leading-none">
+          {twoDigit(demo.number)}
+        </span>
+        {demo.feature && (
+          <span className="eyebrow text-highlight border-l-2 border-highlight pl-2">
+            Editor&apos;s note &mdash; {demo.feature}
+          </span>
+        )}
+      </div>
+
+      <h3 className="font-display text-[26px] font-medium text-ink leading-tight mb-3">
+        {demo.title}
+      </h3>
+      <p className="text-ink font-medium text-[15px] leading-snug mb-3">
+        {demo.hook}
+      </p>
+      <p className="text-ink-secondary text-sm leading-relaxed">
+        {demo.description}
+      </p>
+
+      <div className="mt-6 pt-5 border-t border-rule flex flex-wrap gap-x-8 gap-y-4">
+        {demo.stats.map((stat, i) => (
+          <div key={i}>
+            <div className="text-ink font-semibold text-lg tnum leading-none">
+              {stat.value}
+            </div>
+            <div className="eyebrow text-ink-muted mt-1.5">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+
+      <p className="eyebrow text-success border-l border-success pl-2 mt-5">
+        Public data &middot; verified 21 Jul
+      </p>
+    </article>
+  );
+}
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-ink">
+    <main className="min-h-screen bg-paper">
       <SiteNav activePage="home" />
 
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden min-h-[88vh] flex items-center border-b border-line">
-        <GlowField intensity="medium" />
-
-        <div className="relative max-w-6xl mx-auto px-6 py-24">
-          <p className="inline-flex items-center gap-2 text-teal text-xs font-bold uppercase tracking-[0.2em] mb-8 animate-fade-in">
-            <span className="w-2 h-2 rounded-full bg-teal" style={{ animation: "pulse-dot 1.6s ease-in-out infinite" }} />
+      <section className="relative overflow-hidden border-b border-rule">
+        <GlowField />
+        <div className="relative max-w-[1240px] mx-auto px-5 md:px-8 py-24 md:py-32">
+          <p className="eyebrow text-ink-muted mb-8 animate-fade-in">
             Live session &mdash; demo day at the FCA
           </p>
 
-          <h1 className="text-5xl md:text-7xl font-black text-text leading-[1.05] mb-6 animate-fade-in delay-1">
-            What if you could build
-            <br />
-            <span className="text-gradient">a working regulatory tool</span>
-            <br />
+          <h1 className="font-display text-[clamp(48px,6vw,80px)] font-medium text-ink leading-[0.98] mb-8 max-w-[13ch] animate-fade-in delay-1">
+            What if you could build{" "}
+            <span className="italic text-accent">a working regulatory tool</span>{" "}
             in hours?
           </h1>
 
-          <p className="text-lg md:text-xl text-text-soft leading-relaxed mb-10 max-w-2xl animate-fade-in delay-3">
-            <strong className="text-text">Vibe coding</strong> is a new way to build software:
-            describe what you need in plain English and an AI builds it &mdash; live, on screen.
-            No procurement. No vendor lock-in. Today, everything is built from{" "}
-            <strong className="text-text">100% public FCA data</strong> &mdash; nothing touches
-            internal systems.
+          <p className="text-lg md:text-xl text-ink-secondary leading-relaxed mb-10 max-w-[62ch] animate-fade-in delay-2">
+            <strong className="text-ink font-semibold">Vibe coding</strong> is a new way
+            to build software: describe what you need in plain English and an AI builds it
+            &mdash; live, on screen. No procurement. No vendor lock-in. Today, everything is
+            built from{" "}
+            <strong className="text-ink font-semibold">100% public FCA data</strong> &mdash;
+            nothing touches internal systems.
           </p>
 
-          <div className="flex flex-wrap gap-4 animate-fade-in delay-4">
+          <div className="flex flex-wrap gap-4 animate-fade-in delay-3">
             <a
               href="#choose"
-              className="bg-teal hover:bg-teal-bright text-ink font-bold px-8 py-4 rounded-full transition-all hover:scale-[1.03]"
+              className="eyebrow bg-accent hover:bg-accent-hover text-paper-raised px-6 py-3.5 rounded-[2px] transition-colors"
             >
               See what we can build today
             </a>
             <a
               href="/how-it-works"
-              className="bg-white/5 hover:bg-white/10 text-text font-semibold px-8 py-4 rounded-full border border-line-2 transition-all"
+              className="eyebrow text-ink border border-rule-strong hover:border-accent hover:text-accent px-6 py-3.5 rounded-[2px] transition-colors"
             >
               How does this work?
             </a>
@@ -219,45 +280,46 @@ export default function Home() {
       </section>
 
       {/* ── What is vibe coding ── */}
-      <section className="bg-ink py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+      <section className="bg-paper py-24 md:py-28">
+        <div className="max-w-[1240px] mx-auto px-5 md:px-8">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
             <div>
-              <h2 className="text-3xl font-black text-text mb-6">What is vibe coding?</h2>
-              <p className="text-text-soft leading-relaxed mb-4">
+              <p className="eyebrow text-ink-muted mb-4">The idea</p>
+              <h2 className="font-display text-[clamp(30px,3vw,42px)] font-medium text-ink leading-tight mb-6">
+                What is vibe coding?
+              </h2>
+              <p className="text-ink-secondary leading-relaxed mb-4">
                 Vibe coding is building software by{" "}
-                <strong className="text-text">describing what you want in natural language</strong>{" "}
-                and letting AI write the code. You don&apos;t need to be a programmer. You need to
-                understand the problem you&apos;re trying to solve.
+                <strong className="text-ink font-semibold">describing what you want in
+                natural language</strong>{" "}
+                and letting AI write the code. You don&apos;t need to be a programmer. You
+                need to understand the problem you&apos;re trying to solve.
               </p>
-              <p className="text-text-soft leading-relaxed mb-4">
-                Combined with <strong className="text-text">BMAD</strong> (an AI-native agile
-                method), we go from a blank page to a deployed, working prototype in hours &mdash;
-                not months.
+              <p className="text-ink-secondary leading-relaxed mb-4">
+                Combined with <strong className="text-ink font-semibold">BMAD</strong> (an
+                AI-native agile method), we go from a blank page to a deployed, working
+                prototype in hours &mdash; not months.
               </p>
-              <p className="text-text-soft leading-relaxed">
-                Today we demonstrate this live. You choose an idea, and we start building it &mdash;
-                right here, with you watching.
+              <p className="text-ink-secondary leading-relaxed">
+                Today we demonstrate this live. You choose an idea, and we start building it
+                &mdash; right here, with you watching.
               </p>
             </div>
 
-            <div className="space-y-4">
+            <div className="divide-y divide-rule border-y border-rule">
               {[
-                { num: "1", title: "You describe the problem", desc: "In plain English. No specifications, no technical jargon.", dot: "bg-teal" },
-                { num: "2", title: "AI agents research and design", desc: "Specialist AI agents gather public data, analyse requirements, and design the solution.", dot: "bg-blue" },
-                { num: "3", title: "Working software appears in minutes", desc: "Real, deployable code — not a mockup. Built live, on the web.", dot: "bg-violet" },
-                { num: "4", title: "Iterate in real time", desc: "Don't like something? Say so. The AI adjusts immediately.", dot: "bg-teal" },
+                { num: "1", title: "You describe the problem", desc: "In plain English. No specifications, no technical jargon." },
+                { num: "2", title: "AI agents research and design", desc: "Specialist AI agents gather public data, analyse requirements, and design the solution." },
+                { num: "3", title: "Working software appears in minutes", desc: "Real, deployable code — not a mockup. Built live, on the web." },
+                { num: "4", title: "Iterate in real time", desc: "Don't like something? Say so. The AI adjusts immediately." },
               ].map((step) => (
-                <div
-                  key={step.num}
-                  className="flex gap-4 p-5 rounded-xl bg-panel border border-line hover:border-line-2 transition-colors"
-                >
-                  <div className={`${step.dot} text-ink w-10 h-10 rounded-lg flex items-center justify-center text-sm font-black flex-shrink-0`}>
-                    {step.num}
-                  </div>
+                <div key={step.num} className="flex gap-6 py-6">
+                  <span className="font-display text-2xl text-accent tnum leading-none flex-shrink-0 w-8">
+                    {twoDigit(Number(step.num))}
+                  </span>
                   <div>
-                    <h3 className="font-bold text-text text-sm">{step.title}</h3>
-                    <p className="text-muted text-sm mt-1">{step.desc}</p>
+                    <h3 className="font-semibold text-ink text-base">{step.title}</h3>
+                    <p className="text-ink-secondary text-sm mt-1.5 leading-relaxed">{step.desc}</p>
                   </div>
                 </div>
               ))}
@@ -267,29 +329,32 @@ export default function Home() {
       </section>
 
       {/* ── How today works ── */}
-      <section className="bg-ink-2 py-20 border-y border-line">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <h2 className="text-3xl font-black text-text mb-4">How today works</h2>
-            <p className="text-text-soft">
-              This is a hands-on demonstration, not a sales pitch. We&apos;ve already gathered
-              real public FCA data &mdash; the register, warning lists, enforcement notices,
-              complaints returns and the news feed &mdash; and verified every source this morning.
+      <section className="bg-paper-raised py-24 md:py-28 border-y border-rule">
+        <div className="max-w-[1240px] mx-auto px-5 md:px-8">
+          <div className="max-w-3xl mb-16">
+            <p className="eyebrow text-ink-muted mb-4">How today works</p>
+            <h2 className="font-display text-[clamp(30px,3vw,42px)] font-medium text-ink leading-tight mb-5">
+              A hands-on demonstration, not a sales pitch.
+            </h2>
+            <p className="text-ink-secondary text-lg leading-relaxed">
+              We&apos;ve already gathered real public FCA data &mdash; the register, warning
+              lists, enforcement notices, complaints returns and the news feed &mdash; and
+              verified every source this morning.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { step: "1", title: "Choose an idea", desc: "Pick one of the pre-researched options below — or suggest your own. The data is ready to go.", dot: "bg-teal" },
-              { step: "2", title: "Watch us build", desc: "We build a working prototype live, talking through every decision as we go.", dot: "bg-blue" },
-              { step: "3", title: "Shape the result", desc: "Give feedback as we build. Different chart? Different cut of the data? Just say the word.", dot: "bg-violet" },
+              { step: "1", title: "Choose an idea", desc: "Pick one of the pre-researched options below — or suggest your own. The data is ready to go." },
+              { step: "2", title: "Watch us build", desc: "We build a working prototype live, talking through every decision as we go." },
+              { step: "3", title: "Shape the result", desc: "Give feedback as we build. Different chart? Different cut of the data? Just say the word." },
             ].map((s) => (
-              <div key={s.step} className="bg-panel rounded-xl p-8 border border-line">
-                <div className={`${s.dot} text-ink w-12 h-12 rounded-lg flex items-center justify-center text-xl font-black mb-4`}>
-                  {s.step}
-                </div>
-                <h3 className="text-text font-bold text-lg mb-2">{s.title}</h3>
-                <p className="text-muted text-sm leading-relaxed">{s.desc}</p>
+              <div key={s.step} className="bg-card border border-rule rounded-[2px] p-7">
+                <span className="font-display text-3xl text-accent tnum leading-none block mb-5">
+                  {twoDigit(Number(s.step))}
+                </span>
+                <h3 className="text-ink font-semibold text-lg mb-2">{s.title}</h3>
+                <p className="text-ink-secondary text-sm leading-relaxed">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -297,113 +362,82 @@ export default function Home() {
       </section>
 
       {/* ── Choose your demo ── */}
-      <section id="choose" className="bg-ink py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <p className="text-teal text-xs font-bold uppercase tracking-[0.2em] mb-3">#choose</p>
-            <h2 className="text-3xl md:text-4xl font-black text-text mb-4">What shall we build?</h2>
-            <p className="text-text-soft">
-              Each option is backed by real, publicly available FCA data we&apos;ve already
-              gathered and verified. Every one is buildable live in about two hours. Pick the one
-              most useful to your team &mdash; or suggest something different.
+      <section id="choose" className="bg-paper py-24 md:py-28">
+        <div className="max-w-[1240px] mx-auto px-5 md:px-8">
+          <div className="max-w-3xl mb-16">
+            <p className="eyebrow text-ink-muted mb-4">The options</p>
+            <h2 className="font-display text-[clamp(30px,3vw,42px)] font-medium text-ink leading-tight mb-5">
+              What shall we build?
+            </h2>
+            <p className="text-ink-secondary text-lg leading-relaxed">
+              Every option is backed by real, publicly available data we&apos;ve already
+              gathered and verified &mdash; and the strongest ideas go{" "}
+              <strong className="text-ink font-semibold">beyond the FCA&apos;s own tables</strong>,
+              joining them with other public sources like Companies House, OFSI, ONS, the Bank
+              of England, RDAP and The Gazette. That cross-referencing is where the novel
+              insight comes from. Each is buildable live in about two hours &mdash; pick the one
+              most useful to your team, or suggest something different.
             </p>
           </div>
 
-          <div className="grid gap-5">
-            {demos.map((demo) => {
-              const accent = ACCENTS[(demo.number - 1) % ACCENTS.length];
-              return (
-                <div
-                  key={demo.number}
-                  className={`group bg-panel rounded-xl border overflow-hidden transition-all hover:shadow-xl hover:shadow-black/30 ${
-                    demo.feature ? "border-teal/40 shadow-lg shadow-teal/5" : "border-line"
-                  } ${accent.hoverBorder}`}
-                >
-                  <div className="flex flex-col md:flex-row">
-                    <div className={`md:w-1.5 w-full h-1 md:h-auto flex-shrink-0 ${accent.bar}`} />
+          {/* Cross-data ideas lead */}
+          <div className="mb-8 pb-3 border-b border-rule-strong flex items-baseline justify-between gap-4 flex-wrap">
+            <h3 className="font-display text-2xl font-medium text-ink">Cross-data ideas</h3>
+            <p className="eyebrow text-highlight">FCA data joined with external public sources</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6 mb-20">
+            {demos
+              .filter((d) => d.crossData)
+              .map((demo) => (
+                <DemoCard key={demo.number} demo={demo} />
+              ))}
+          </div>
 
-                    <div className="flex-1 p-6 md:p-8">
-                      <div className="flex items-start justify-between gap-6">
-                        <div className="flex-1">
-                          <div className="flex items-center gap-3 mb-3 flex-wrap">
-                            <span className={`w-8 h-8 rounded-lg flex items-center justify-center text-sm font-black ${accent.chip}`}>
-                              {demo.number}
-                            </span>
-                            <h3 className="text-lg font-black text-text">{demo.title}</h3>
-                            {demo.feature && (
-                              <span className="inline-flex items-center gap-1 bg-gradient-to-r from-teal to-blue text-ink text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full">
-                                ★ {demo.feature}
-                              </span>
-                            )}
-                            <span className="inline-flex items-center gap-1.5 bg-green/10 text-green text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full border border-green/20">
-                              <span className="w-1.5 h-1.5 rounded-full bg-green" style={{ animation: "pulse-dot 1.6s ease-in-out infinite" }} />
-                              Public data · verified 21 Jul
-                            </span>
-                          </div>
-                          <p className={`font-semibold text-sm mb-2 ${accent.hook}`}>{demo.hook}</p>
-                          <p className="text-muted text-sm leading-relaxed max-w-2xl">{demo.description}</p>
-                        </div>
-
-                        <div className="hidden md:flex gap-6 flex-shrink-0">
-                          {demo.stats.map((stat, i) => (
-                            <div key={i} className="text-center">
-                              <div className={`text-2xl font-black whitespace-nowrap ${accent.stat}`}>{stat.value}</div>
-                              <div className="text-[11px] text-muted-dark uppercase tracking-wider mt-1 max-w-[110px]">{stat.label}</div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-
-                      <div className="flex flex-wrap gap-x-6 gap-y-2 mt-4 md:hidden">
-                        {demo.stats.map((stat, i) => (
-                          <div key={i}>
-                            <span className={`font-black ${accent.stat}`}>{stat.value}</span>
-                            <span className="text-muted-dark text-xs ml-1.5">{stat.label}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+          {/* Single-source FCA tools */}
+          <div className="mb-8 pb-3 border-b border-rule-strong flex items-baseline justify-between gap-4 flex-wrap">
+            <h3 className="font-display text-2xl font-medium text-ink">Single-source FCA tools</h3>
+            <p className="eyebrow text-ink-muted">Built on one FCA public dataset</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {demos
+              .filter((d) => !d.crossData)
+              .map((demo) => (
+                <DemoCard key={demo.number} demo={demo} />
+              ))}
 
             {/* Bring your own idea */}
-            <div className="group bg-ink-2 rounded-xl border-2 border-dashed border-line-2 overflow-hidden hover:border-teal/50 transition-all">
-              <div className="p-8 text-center">
-                <div className="w-14 h-14 rounded-lg bg-teal/10 flex items-center justify-center mx-auto mb-4">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="w-7 h-7 text-teal">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-black text-text mb-2">Got a different idea?</h3>
-                <p className="text-muted text-sm max-w-lg mx-auto">
-                  These are starting points. If there&apos;s a supervision question you can&apos;t
-                  answer quickly, a public dataset you want to make sense of, or a manual task worth
-                  automating &mdash; tell us and we&apos;ll build it live.
-                </p>
-              </div>
-            </div>
+            <article className="md:col-span-2 bg-paper-raised border border-dashed border-rule-strong rounded-[2px] p-10 text-center">
+              <p className="eyebrow text-ink-muted mb-4">Or</p>
+              <h3 className="font-display text-[26px] font-medium text-ink mb-3">
+                Got a different idea?
+              </h3>
+              <p className="text-ink-secondary text-sm max-w-xl mx-auto leading-relaxed">
+                These are starting points. If there&apos;s a supervision question you
+                can&apos;t answer quickly, a public dataset you want to make sense of, or a
+                manual task worth automating &mdash; tell us and we&apos;ll build it live.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
       {/* ── Data principles ── */}
-      <section className="bg-ink-2 py-16 border-y border-line">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-6">
+      <section className="bg-paper-raised py-20 border-y border-rule">
+        <div className="max-w-[1240px] mx-auto px-5 md:px-8">
+          <p className="eyebrow text-ink-muted mb-10">Principles</p>
+          <div className="grid md:grid-cols-4 gap-x-8 gap-y-10">
             {[
               { title: "Public data only", desc: "Every dataset is publicly available. No internal FCA systems accessed, ever." },
               { title: "Respectful collection", desc: "All data gathered respecting robots.txt, rate limits, and published API terms." },
               { title: "Insight, not surveillance", desc: "Tools built for supervision and consumer protection — not monitoring individuals." },
               { title: "Yours to keep", desc: "Everything we build is standard open-source code. The code, data and deployment are yours." },
             ].map((p, i) => (
-              <div key={p.title} className="p-6 rounded-xl bg-panel border border-line">
-                <div className={`w-9 h-9 rounded-lg mb-3 flex items-center justify-center font-black text-ink ${["bg-teal", "bg-blue", "bg-violet", "bg-green"][i]}`}>
-                  {i + 1}
-                </div>
-                <h3 className="font-bold text-text text-sm mb-2">{p.title}</h3>
-                <p className="text-muted text-xs leading-relaxed">{p.desc}</p>
+              <div key={p.title} className="border-t border-rule-strong pt-5">
+                <span className="font-display text-2xl text-accent tnum leading-none block mb-4">
+                  {twoDigit(i + 1)}
+                </span>
+                <h3 className="font-semibold text-ink text-sm mb-2">{p.title}</h3>
+                <p className="text-ink-secondary text-xs leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
@@ -411,24 +445,20 @@ export default function Home() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="relative overflow-hidden bg-ink py-20">
-        <GlowField intensity="soft" />
-        <div className="max-w-4xl mx-auto px-6 text-center relative">
-          <h2 className="text-2xl md:text-3xl font-black text-text mb-4">
+      <section className="bg-paper py-24 md:py-28">
+        <div className="max-w-3xl mx-auto px-5 md:px-8 text-center">
+          <h2 className="font-display text-[clamp(30px,3vw,42px)] font-medium text-ink leading-tight mb-5">
             Want to understand the technology behind this?
           </h2>
-          <p className="text-text-soft mb-8 max-w-2xl mx-auto">
-            See the BMAD method, the specialist AI agents, and how a non-technical team can build
-            production-grade tools over public data &mdash; in hours, not months.
+          <p className="text-ink-secondary text-lg mb-9 max-w-2xl mx-auto leading-relaxed">
+            See the BMAD method, the specialist AI agents, and how a non-technical team can
+            build production-grade tools over public data &mdash; in hours, not months.
           </p>
           <a
             href="/how-it-works"
-            className="inline-flex items-center gap-2 bg-teal hover:bg-teal-bright text-ink font-bold px-8 py-4 rounded-full transition-all hover:scale-[1.03]"
+            className="eyebrow inline-block bg-accent hover:bg-accent-hover text-paper-raised px-6 py-3.5 rounded-[2px] transition-colors"
           >
             How It Works
-            <svg viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-              <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
-            </svg>
           </a>
         </div>
       </section>

@@ -17,25 +17,22 @@ const bmadSteps = [
   { phase: "Validate", title: "Test and refine", desc: "Murat validates quality, you review the result, and we iterate. Changes that take weeks in traditional delivery happen in minutes.", duration: "Continuous", output: "Tested, production-ready tool" },
 ];
 
-const agentDot = ["bg-teal", "bg-blue", "bg-violet", "bg-teal", "bg-blue", "bg-violet", "bg-teal"];
-const agentText = ["text-teal", "text-blue-bright", "text-violet", "text-teal", "text-blue-bright", "text-violet", "text-teal"];
+const twoDigit = (n: number) => n.toString().padStart(2, "0");
 
 export default function HowItWorks() {
   return (
-    <main className="min-h-screen bg-ink">
+    <main className="min-h-screen bg-paper">
       <SiteNav activePage="how-it-works" />
 
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden py-20 border-b border-line">
-        <GlowField intensity="medium" />
-        <div className="max-w-6xl mx-auto px-6 relative">
-          <p className="text-teal text-xs font-bold uppercase tracking-[0.2em] mb-4">Behind the scenes</p>
-          <h1 className="text-4xl md:text-6xl font-black text-text leading-tight mb-4">
-            The method, the tools,
-            <br />
-            <span className="text-gradient">the team.</span>
+      <section className="relative overflow-hidden py-24 md:py-28 border-b border-rule">
+        <GlowField />
+        <div className="max-w-[1240px] mx-auto px-5 md:px-8 relative">
+          <p className="eyebrow text-ink-muted mb-6">Behind the scenes</p>
+          <h1 className="font-display text-[clamp(40px,4.5vw,60px)] font-medium text-ink leading-[1.02] mb-6 max-w-[15ch]">
+            The method, the tools, the team.
           </h1>
-          <p className="text-lg md:text-xl text-text-soft max-w-2xl leading-relaxed">
+          <p className="text-lg md:text-xl text-ink-secondary max-w-[62ch] leading-relaxed">
             A reference guide to everything powering today&apos;s session &mdash; and how a
             regulator could use these approaches to build its own tools over public data.
           </p>
@@ -43,58 +40,60 @@ export default function HowItWorks() {
       </section>
 
       {/* ── What is BMAD ── */}
-      <section className="bg-ink py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-start">
+      <section className="bg-paper py-24 md:py-28">
+        <div className="max-w-[1240px] mx-auto px-5 md:px-8">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
             <div>
-              <h2 className="text-3xl font-black text-text mb-6">BMAD: AI-native agile</h2>
-              <p className="text-text-soft leading-relaxed mb-4">
-                <strong className="text-text">BMAD</strong> is a method designed specifically for
-                AI-assisted development. It takes the best of agile software delivery and adapts it
-                for a world where AI agents do the heavy lifting.
+              <p className="eyebrow text-ink-muted mb-4">The method</p>
+              <h2 className="font-display text-[clamp(30px,3vw,42px)] font-medium text-ink leading-tight mb-6">
+                BMAD: AI-native agile
+              </h2>
+              <p className="text-ink-secondary leading-relaxed mb-4">
+                <strong className="text-ink font-semibold">BMAD</strong> is a method designed
+                specifically for AI-assisted development. It takes the best of agile software
+                delivery and adapts it for a world where AI agents do the heavy lifting.
               </p>
-              <p className="text-text-soft leading-relaxed mb-4">
+              <p className="text-ink-secondary leading-relaxed mb-4">
                 Instead of one developer working alone, BMAD uses a{" "}
-                <strong className="text-text">team of specialist AI agents</strong> &mdash; each with
-                deep expertise. An analyst researches. An architect designs. A developer builds. A
-                tester validates. Like a real software team, but at AI speed.
+                <strong className="text-ink font-semibold">team of specialist AI agents</strong>{" "}
+                &mdash; each with deep expertise. An analyst researches. An architect designs.
+                A developer builds. A tester validates. Like a real software team, but at AI
+                speed.
               </p>
-              <p className="text-text-soft leading-relaxed mb-6">
-                The human stays in control throughout. You make the decisions, set priorities, and
-                approve direction. The AI handles execution.
+              <p className="text-ink-secondary leading-relaxed mb-8">
+                The human stays in control throughout. You make the decisions, set priorities,
+                and approve direction. The AI handles execution.
               </p>
 
-              <div className="bg-panel border border-line rounded-xl p-6">
-                <h3 className="font-bold text-text text-sm mb-3">Why not just ask a chatbot?</h3>
-                <p className="text-muted text-sm leading-relaxed">
+              <div className="bg-card border border-rule rounded-[2px] p-6">
+                <h3 className="font-semibold text-ink text-sm mb-3">Why not just ask a chatbot?</h3>
+                <p className="text-ink-secondary text-sm leading-relaxed">
                   General AI chat can answer questions, but it can&apos;t build and deploy real
                   software. BMAD gives the AI{" "}
-                  <strong className="text-text-soft">structure, memory and specialisation</strong>.
-                  Each agent has deep expertise, follows a proven process, and produces real,
-                  production-grade output &mdash; not just suggestions.
+                  <strong className="text-ink font-semibold">structure, memory and
+                  specialisation</strong>. Each agent has deep expertise, follows a proven
+                  process, and produces real, production-grade output &mdash; not just
+                  suggestions.
                 </p>
               </div>
             </div>
 
             <div>
-              <h3 className="font-bold text-text mb-6">The BMAD process</h3>
-              <div className="space-y-6">
+              <p className="eyebrow text-ink-muted mb-6">The BMAD process</p>
+              <div className="divide-y divide-rule border-y border-rule">
                 {bmadSteps.map((step, i) => (
-                  <div key={i} className="relative pl-8 border-l-2 border-line">
-                    <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-teal border-2 border-ink" />
-                    <div className="bg-panel rounded-xl p-5 border border-line">
-                      <div className="flex items-center gap-3 mb-2">
-                        <span className="text-teal font-black text-xs uppercase tracking-widest">{step.phase}</span>
-                        <span className="text-muted-dark text-xs">~{step.duration}</span>
+                  <div key={i} className="flex gap-6 py-6">
+                    <span className="font-display text-2xl text-accent tnum leading-none flex-shrink-0 w-8">
+                      {twoDigit(i + 1)}
+                    </span>
+                    <div>
+                      <div className="flex items-baseline gap-3 mb-1.5 flex-wrap">
+                        <span className="eyebrow text-accent">{step.phase}</span>
+                        <span className="text-ink-muted text-xs tnum">~{step.duration}</span>
                       </div>
-                      <h4 className="font-bold text-text mb-1">{step.title}</h4>
-                      <p className="text-muted text-sm leading-relaxed mb-2">{step.desc}</p>
-                      <div className="flex items-center gap-2">
-                        <svg className="w-4 h-4 text-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        <span className="text-green text-xs font-semibold">{step.output}</span>
-                      </div>
+                      <h4 className="font-semibold text-ink mb-1.5">{step.title}</h4>
+                      <p className="text-ink-secondary text-sm leading-relaxed mb-2">{step.desc}</p>
+                      <p className="text-success text-xs font-semibold">{step.output}</p>
                     </div>
                   </div>
                 ))}
@@ -105,32 +104,34 @@ export default function HowItWorks() {
       </section>
 
       {/* ── The AI Team ── */}
-      <section className="relative overflow-hidden bg-ink-2 py-20 border-y border-line">
-        <GlowField intensity="soft" />
-        <div className="max-w-6xl mx-auto px-6 relative">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl font-black text-text mb-4">Meet your agents</h2>
-            <p className="text-text-soft max-w-2xl mx-auto">
-              Each agent is a specialist with deep domain expertise. They work together, coordinated
-              by the BMAD method, with you as the decision-maker.
+      <section className="bg-paper-raised py-24 md:py-28 border-y border-rule">
+        <div className="max-w-[1240px] mx-auto px-5 md:px-8">
+          <div className="max-w-3xl mb-16">
+            <p className="eyebrow text-ink-muted mb-4">The team</p>
+            <h2 className="font-display text-[clamp(30px,3vw,42px)] font-medium text-ink leading-tight mb-5">
+              Meet your agents
+            </h2>
+            <p className="text-ink-secondary text-lg leading-relaxed">
+              Each agent is a specialist with deep domain expertise. They work together,
+              coordinated by the BMAD method, with you as the decision-maker.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {agents.map((agent, idx) => (
-              <div key={agent.name} className="bg-panel border border-line rounded-xl p-6 hover:border-line-2 transition-all">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className={`w-10 h-10 rounded-lg ${agentDot[idx]} flex items-center justify-center`}>
-                    <span className="text-ink font-black text-lg">{agent.name[0]}</span>
-                  </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {agents.map((agent) => (
+              <div key={agent.name} className="bg-card border border-rule rounded-[2px] p-6">
+                <div className="flex items-baseline gap-3 mb-4">
+                  <span className="font-display text-3xl text-accent leading-none">
+                    {agent.name[0]}
+                  </span>
                   <div>
-                    <h3 className="text-text font-bold">{agent.name}</h3>
-                    <p className={`${agentText[idx]} text-xs font-semibold`}>{agent.role}</p>
+                    <h3 className="text-ink font-semibold">{agent.name}</h3>
+                    <p className="eyebrow text-ink-muted mt-1">{agent.role}</p>
                   </div>
                 </div>
-                <p className="text-muted text-sm leading-relaxed mb-3">{agent.desc}</p>
-                <p className="text-muted-dark text-xs">
-                  <strong className="text-muted">Skills:</strong> {agent.skills}
+                <p className="text-ink-secondary text-sm leading-relaxed mb-4">{agent.desc}</p>
+                <p className="text-ink-muted text-xs leading-relaxed border-t border-rule pt-3">
+                  <strong className="text-ink-secondary font-semibold">Skills:</strong> {agent.skills}
                 </p>
               </div>
             ))}
@@ -139,55 +140,57 @@ export default function HowItWorks() {
       </section>
 
       {/* ── Claude Code ── */}
-      <section className="bg-ink py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+      <section className="bg-paper py-24 md:py-28">
+        <div className="max-w-[1240px] mx-auto px-5 md:px-8">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
             <div>
-              <h2 className="text-3xl font-black text-text mb-6">Claude Code</h2>
-              <p className="text-text-soft leading-relaxed mb-4">
-                <strong className="text-text">Claude Code</strong> is Anthropic&apos;s AI coding
-                tool. It powers the BMAD agents &mdash; a professional-grade AI that reads codebases,
-                writes production code, runs tests, deploys applications, and works with external
-                APIs.
+              <p className="eyebrow text-ink-muted mb-4">The engine</p>
+              <h2 className="font-display text-[clamp(30px,3vw,42px)] font-medium text-ink leading-tight mb-6">
+                Claude Code
+              </h2>
+              <p className="text-ink-secondary leading-relaxed mb-4">
+                <strong className="text-ink font-semibold">Claude Code</strong> is
+                Anthropic&apos;s AI coding tool. It powers the BMAD agents &mdash; a
+                professional-grade AI that reads codebases, writes production code, runs tests,
+                deploys applications, and works with external APIs.
               </p>
-              <p className="text-text-soft leading-relaxed mb-4">
-                Unlike simple chat AI, Claude Code operates directly in the development environment.
-                It reads files, writes code, runs commands, and manages deployments. It&apos;s the
-                difference between an advisor and a doer.
+              <p className="text-ink-secondary leading-relaxed mb-4">
+                Unlike simple chat AI, Claude Code operates directly in the development
+                environment. It reads files, writes code, runs commands, and manages
+                deployments. It&apos;s the difference between an advisor and a doer.
               </p>
-              <p className="text-text-soft leading-relaxed">
-                Combined with BMAD&apos;s agent skills, Claude Code becomes a full delivery team. Each
-                agent runs inside Claude Code with specialist instructions, tools and expertise.
+              <p className="text-ink-secondary leading-relaxed">
+                Combined with BMAD&apos;s agent skills, Claude Code becomes a full delivery
+                team. Each agent runs inside Claude Code with specialist instructions, tools
+                and expertise.
               </p>
             </div>
 
-            <div className="space-y-4">
-              <div className="bg-panel border border-line rounded-xl p-6">
-                <h3 className="text-teal font-bold text-sm mb-4">What does it cost?</h3>
-                <div className="space-y-3">
+            <div className="space-y-6">
+              <div className="bg-card border border-rule rounded-[2px] p-6">
+                <h3 className="eyebrow text-ink-muted mb-5">What does it cost?</h3>
+                <div>
                   {[
                     { item: "Claude Code subscription", cost: "~$100/month", free: false },
                     { item: "BMAD method", cost: "Free & open source", free: true },
                     { item: "Vercel deployment", cost: "Free tier available", free: true },
                     { item: "Public data APIs (FCA register, RSS)", cost: "Free", free: true },
                   ].map((row, i) => (
-                    <div key={i} className={`flex justify-between items-center ${i < 3 ? "border-b border-line pb-3" : ""}`}>
-                      <span className="text-text-soft text-sm">{row.item}</span>
-                      <span className={`font-bold ${row.free ? "text-green" : "text-text"}`}>{row.cost}</span>
+                    <div key={i} className="flex justify-between items-center gap-4 py-3 border-b border-rule last:border-b-0">
+                      <span className="text-ink-secondary text-sm">{row.item}</span>
+                      <span className={`font-semibold text-sm tnum ${row.free ? "text-success" : "text-ink"}`}>{row.cost}</span>
                     </div>
                   ))}
                 </div>
-                <div className="mt-4 pt-4 border-t border-line">
-                  <p className="text-muted-dark text-xs">
-                    That&apos;s the cost of the tools &mdash; not the expertise. The value is knowing
-                    what to ask for and how to shape the output.
-                  </p>
-                </div>
+                <p className="text-ink-muted text-xs mt-4 pt-4 border-t border-rule leading-relaxed">
+                  That&apos;s the cost of the tools &mdash; not the expertise. The value is
+                  knowing what to ask for and how to shape the output.
+                </p>
               </div>
 
-              <div className="bg-panel border border-line rounded-xl p-6">
-                <h3 className="font-bold text-text text-sm mb-2">No vendor lock-in</h3>
-                <p className="text-muted text-sm leading-relaxed">
+              <div className="bg-card border border-rule rounded-[2px] p-6">
+                <h3 className="font-semibold text-ink text-sm mb-2">No vendor lock-in</h3>
+                <p className="text-ink-secondary text-sm leading-relaxed">
                   Everything produces standard, open-source code. You own it completely &mdash;
                   modify it, host it anywhere, hand it to any developer. Nothing proprietary.
                 </p>
@@ -198,17 +201,20 @@ export default function HowItWorks() {
       </section>
 
       {/* ── Traditional vs Vibe ── */}
-      <section className="bg-ink-2 py-20 border-y border-line">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl font-black text-text mb-4">Traditional delivery vs. vibe coding</h2>
+      <section className="bg-paper-raised py-24 md:py-28 border-y border-rule">
+        <div className="max-w-[1240px] mx-auto px-5 md:px-8">
+          <div className="max-w-3xl mb-16">
+            <p className="eyebrow text-ink-muted mb-4">The comparison</p>
+            <h2 className="font-display text-[clamp(30px,3vw,42px)] font-medium text-ink leading-tight">
+              Traditional delivery vs. vibe coding
+            </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6">
             {/* Traditional */}
-            <div className="bg-panel rounded-xl p-8 border border-line">
-              <h3 className="font-black text-muted text-lg mb-6">Traditional approach</h3>
-              <div className="space-y-4">
+            <div className="bg-card rounded-[2px] p-8 border border-rule">
+              <h3 className="eyebrow text-ink-muted mb-6">Traditional approach</h3>
+              <ol className="divide-y divide-rule border-y border-rule">
                 {[
                   "Write a brief and go to procurement",
                   "Select a supplier (weeks to months)",
@@ -219,30 +225,28 @@ export default function HowItWorks() {
                   "Deployment and training",
                   "Change requests cost time and money",
                 ].map((step, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full bg-line-2 flex items-center justify-center flex-shrink-0">
-                      <span className="text-muted text-xs font-bold">{i + 1}</span>
-                    </div>
-                    <span className="text-muted text-sm">{step}</span>
-                  </div>
+                  <li key={i} className="flex items-center gap-4 py-3">
+                    <span className="text-ink-muted text-xs font-semibold tnum w-5 flex-shrink-0">{twoDigit(i + 1)}</span>
+                    <span className="text-ink-secondary text-sm">{step}</span>
+                  </li>
                 ))}
-                <div className="pt-4 mt-4 border-t border-line">
-                  <div className="flex items-center gap-2">
-                    <span className="text-muted-dark text-sm font-bold">Typical timeline:</span>
-                    <span className="text-red font-black">3&ndash;12 months</span>
-                  </div>
-                  <div className="flex items-center gap-2 mt-1">
-                    <span className="text-muted-dark text-sm font-bold">Typical cost:</span>
-                    <span className="text-red font-black">&pound;50,000&ndash;&pound;500,000+</span>
-                  </div>
+              </ol>
+              <div className="pt-5 mt-1 space-y-1.5">
+                <div className="flex items-baseline gap-2">
+                  <span className="eyebrow text-ink-muted">Typical timeline</span>
+                  <span className="text-danger font-semibold tnum">3&ndash;12 months</span>
+                </div>
+                <div className="flex items-baseline gap-2">
+                  <span className="eyebrow text-ink-muted">Typical cost</span>
+                  <span className="text-danger font-semibold tnum">&pound;50,000&ndash;&pound;500,000+</span>
                 </div>
               </div>
             </div>
 
             {/* Vibe coding */}
-            <div className="bg-panel rounded-xl p-8 border-2 border-teal">
-              <h3 className="font-black text-teal text-lg mb-6">Vibe coding with BMAD</h3>
-              <div className="space-y-4">
+            <div className="bg-card rounded-[2px] p-8 border border-rule-strong">
+              <h3 className="eyebrow text-accent mb-6">Vibe coding with BMAD</h3>
+              <ol className="divide-y divide-rule border-y border-rule">
                 {[
                   { text: "Describe what you need in plain English", time: "5 min" },
                   { text: "AI analyst researches and gathers public data", time: "30 min" },
@@ -253,27 +257,20 @@ export default function HowItWorks() {
                   { text: "Changes are instant — just ask", time: "minutes" },
                   { text: "Scale up when you're ready", time: "your pace" },
                 ].map((step, i) => (
-                  <div key={i} className="flex items-center justify-between gap-3">
-                    <div className="flex items-center gap-3">
-                      <div className="w-6 h-6 rounded-full bg-teal/15 flex items-center justify-center flex-shrink-0">
-                        <svg className="w-3.5 h-3.5 text-teal" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <span className="text-text text-sm font-medium">{step.text}</span>
-                    </div>
-                    <span className="text-teal text-xs font-bold flex-shrink-0">{step.time}</span>
-                  </div>
+                  <li key={i} className="flex items-center justify-between gap-4 py-3">
+                    <span className="text-ink text-sm font-medium">{step.text}</span>
+                    <span className="text-accent text-xs font-semibold tnum flex-shrink-0">{step.time}</span>
+                  </li>
                 ))}
-                <div className="pt-4 mt-4 border-t border-line">
-                  <div className="flex items-center gap-2">
-                    <span className="text-muted-dark text-sm font-bold">Typical timeline:</span>
-                    <span className="text-green font-black">Hours to days</span>
-                  </div>
-                  <div className="flex items-center gap-2 mt-1">
-                    <span className="text-muted-dark text-sm font-bold">Typical cost:</span>
-                    <span className="text-green font-black">~$100/month subscription</span>
-                  </div>
+              </ol>
+              <div className="pt-5 mt-1 space-y-1.5">
+                <div className="flex items-baseline gap-2">
+                  <span className="eyebrow text-ink-muted">Typical timeline</span>
+                  <span className="text-success font-semibold">Hours to days</span>
+                </div>
+                <div className="flex items-baseline gap-2">
+                  <span className="eyebrow text-ink-muted">Typical cost</span>
+                  <span className="text-success font-semibold tnum">~$100/month subscription</span>
                 </div>
               </div>
             </div>
@@ -282,17 +279,20 @@ export default function HowItWorks() {
       </section>
 
       {/* ── What you could do ── */}
-      <section className="bg-ink py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <h2 className="text-3xl font-black text-text mb-4">What could the FCA do with this?</h2>
-            <p className="text-text-soft max-w-2xl mx-auto">
-              Today&apos;s demo is just the start. With vibe-coding capability in-house, teams could
-              build tools whenever a need arises &mdash; no procurement, no waiting.
+      <section className="bg-paper py-24 md:py-28">
+        <div className="max-w-[1240px] mx-auto px-5 md:px-8">
+          <div className="max-w-3xl mb-16">
+            <p className="eyebrow text-ink-muted mb-4">The potential</p>
+            <h2 className="font-display text-[clamp(30px,3vw,42px)] font-medium text-ink leading-tight mb-5">
+              What could the FCA do with this?
+            </h2>
+            <p className="text-ink-secondary text-lg leading-relaxed">
+              Today&apos;s demo is just the start. With vibe-coding capability in-house, teams
+              could build tools whenever a need arises &mdash; no procurement, no waiting.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-x-8 gap-y-10">
             {[
               { title: "Supervision tooling", desc: "Turn public firm data, warning lists and complaints returns into dashboards a supervisor can explore in seconds." },
               { title: "Rapid prototyping", desc: "Got a new idea? Build a working prototype in an afternoon to test whether it's worth pursuing at all." },
@@ -300,10 +300,11 @@ export default function HowItWorks() {
               { title: "Internal tools", desc: "The small tools that never justify procurement — trackers, reporting views, evidence packs, triage aids." },
               { title: "Horizon scanning", desc: "AI feeds that read every public communication and surface the themes heating up across the market." },
               { title: "Upskilling teams", desc: "Vibe coding isn't just for developers. Any analyst who can describe a problem clearly can learn to build." },
-            ].map((item) => (
-              <div key={item.title} className="bg-panel rounded-xl p-6 border border-line hover:border-line-2 transition-all">
-                <h3 className="font-bold text-text mb-2">{item.title}</h3>
-                <p className="text-muted text-sm leading-relaxed">{item.desc}</p>
+            ].map((item, i) => (
+              <div key={item.title} className="border-t border-rule-strong pt-5">
+                <span className="font-display text-xl text-accent tnum leading-none block mb-4">{twoDigit(i + 1)}</span>
+                <h3 className="font-semibold text-ink mb-2">{item.title}</h3>
+                <p className="text-ink-secondary text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -311,21 +312,19 @@ export default function HowItWorks() {
       </section>
 
       {/* ── CTA ── */}
-      <section className="relative overflow-hidden bg-ink-2 py-20 border-t border-line">
-        <GlowField intensity="soft" />
-        <div className="max-w-4xl mx-auto px-6 text-center relative">
-          <h2 className="text-2xl md:text-3xl font-black text-text mb-4">Ready to see it in action?</h2>
-          <p className="text-text-soft mb-8 max-w-2xl mx-auto">
+      <section className="bg-paper-raised py-24 md:py-28 border-t border-rule">
+        <div className="max-w-3xl mx-auto px-5 md:px-8 text-center">
+          <h2 className="font-display text-[clamp(30px,3vw,42px)] font-medium text-ink leading-tight mb-5">
+            Ready to see it in action?
+          </h2>
+          <p className="text-ink-secondary text-lg mb-9 max-w-2xl mx-auto leading-relaxed">
             Head back to the session page and pick an option to build today.
           </p>
           <a
             href="/#choose"
-            className="inline-flex items-center gap-2 bg-teal hover:bg-teal-bright text-ink font-bold px-8 py-4 rounded-full transition-all hover:scale-[1.03]"
+            className="eyebrow inline-block bg-accent hover:bg-accent-hover text-paper-raised px-6 py-3.5 rounded-[2px] transition-colors"
           >
             Choose what to build
-            <svg viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-              <path fillRule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clipRule="evenodd" />
-            </svg>
           </a>
         </div>
       </section>

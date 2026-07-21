@@ -1,0 +1,146 @@
+[
+  {
+    "section": "PRIN 1.1",
+    "ref": "PRIN 1.1.1",
+    "type": "G",
+    "text": "The Principles (see PRIN 2) apply in whole or in part to every firm. The application of the Principles is modified for firms conducting MiFID business and Annex II benchmark administrators. PRIN 3 (Rules about application) specifies to whom, to what and where the Principles apply."
+  },
+  {
+    "section": "PRIN 1.1",
+    "ref": "PRIN 1.1.2",
+    "type": "G",
+    "text": "The Principles are a general statement of the fundamental obligations of firms and the other persons to whom they apply under the regulatory system. They derive their authority from the FCA’s rule-making powers as set out in the Act, including as applied by the Payment Services Regulations and the Electronic Money Regulations, and reflect the statutory objectives."
+  },
+  {
+    "section": "PRIN 1.1",
+    "ref": "PRIN 1.1.4",
+    "type": "G",
+    "text": "In substance, the Principles express the main dimensions of the \"fit and proper\" standard set for firms in threshold condition 5 (Suitability), although they do not derive their authority from that standard or exhaust its implications. Being ready, willing and organised to abide by the Principles is therefore a critical factor in applications for Part 4A permission, and breaching the Principles may call into question whether a firm with Part 4A permission is still fit and proper."
+  },
+  {
+    "section": "PRIN 1.1",
+    "ref": "PRIN 1.1.5",
+    "type": "G",
+    "text": "Principles 3 (Management and control), 4 (Financial prudence) and (in so far as it relates to disclosing to the FCA ) 11 (Relations with regulators) take into account the activities of members of a firm'sgroup. Compliance by another person to whom the Principles apply with Principles 3, 4 and 11 can also be affected by the activities of other persons who are members of their group. This does not mean that, for example, inadequacy of a group member's risk management systems or resources will automatically lead to a firm contravening Principle 3 or 4. Rather, the potential impact of a group member's activities (and, for example, risk management systems operating on a group basis) will be relevant in determining the adequacy of the firm's risk management systems or resources respectively."
+  },
+  {
+    "section": "PRIN 1.1",
+    "ref": "PRIN 1.1.6",
+    "type": "G",
+    "text": "As set out in PRIN 3.3 (Where?), Principles 1 (Integrity), 2 (Skill, care and diligence) and 3 (Management and control) apply to world-wide activities in a prudential context. Principle 5 (Market conduct) applies to world-wide activities which might have a negative effect on confidence in the UK financial system. In considering whether to take regulatory action under these Principles in relation to activities carried on outside the United Kingdom, the FCA will take into account the standards expected in the market in which the firm or other person to whom the Principles apply is operating. Principle 11 (Relations with regulators) applies to world-wide activities; in considering whether to take regulatory action under Principle 11 in relation to cooperation with an overseas regulator, the FCA will have regard to the extent of, and limits to, the duties owed by the firm or other person to that regulator. (Principle 4 (Financial prudence) also applies to world-wide activities.)"
+  },
+  {
+    "section": "PRIN 1.1",
+    "ref": "PRIN 1.1.7",
+    "type": "G",
+    "text": "Breaching a Principle makes a firm or other person to whom the Principles apply liable to disciplinary sanctions. In determining whether a Principle has been breached it is necessary to look to the standard of conduct required by the Principle in question. Under each of the Principles the onus will be on the FCA to show that a firm or other person has been at fault in some way. What constitutes \"fault\" varies between different Principles. Under Principle 1 (Integrity), for example, the FCA would need to demonstrate a lack of integrity in the conduct of a firm's or other person’s business. Under Principle 2 (Skill, care and diligence) a firm or other person would be in breach if it was shown to have failed to act with due skill, care and diligence in the conduct of its business. Similarly, under Principle 3 (Management and control) a firm or other person would not be in breach simply because it failed to control or prevent unforeseeable risks; but a breach would occur if the firm or other person had failed to take reasonable care to organise and control its affairs responsibly or effectively."
+  },
+  {
+    "section": "PRIN 1.2",
+    "ref": "PRIN 1.2.1",
+    "type": "G",
+    "text": "Principles 6 (Customers' interests), 7 (Communications with clients), 8 (Conflicts of interest), 9 (Customers: relationships of trust), 10 (Clients’ assets) and 12 (Consumer Duty) impose requirements on firms expressly in relation to their clients or customers. These requirements depend, in part, on the characteristics of the client or customer concerned. This is because what is \"due regard\" (in Principles 6 and 7), \"fairly\" (in Principles 6 and 8), \"clear, fair and not misleading\" (in Principle 7), \"reasonable care\" (in Principle 9), “adequate” (in Principle 10) or “good outcomes” (in Principle 12) will, of course, depend on those characteristics."
+  },
+  {
+    "section": "PRIN 1.2",
+    "ref": "PRIN 1.2.6",
+    "type": "G",
+    "text": "If the person with or for whom the firm is carrying on an activity is acting through an agent, the ability of the firm to treat the agent as its client under COBS 2.4.3 R (Agent as client) will not be available. For example, if a general insurer is effecting a general insurance contract through a general insurance broker who is acting as agent for a disclosed policyholder, the policyholder will be a client of the firm and the firm must comply with the Principles accordingly."
+  },
+  {
+    "section": "PRIN 2.1",
+    "ref": "PRIN 2.1.1",
+    "type": "R",
+    "text": "1 Integrity\tA firm must conduct its business with integrity.\n2 Skill, care and diligence\tA firm must conduct its business with due skill, care and diligence.\n3 Management and control\tA firm   must take reasonable care to organise and control its affairs responsibly and effectively, with adequate risk management systems.\n4 Financial prudence\tA firm   must maintain adequate financial resources.\n5 Market conduct\tA firm   must observe proper standards of market conduct.\n6 Customers' interests\tA firm must pay due regard to the interests of its customers and treat them fairly.\n7 Communications with clients\tA firm   must pay due regard to the information needs of its clients, and communicate information to them in a way which is clear, fair and not misleading.\n8 Conflicts of interest\tA firm must manage conflicts of interest fairly, both between itself and its customers and between a customer and another client.\n9 Customers: relationships of trust\tA firm must take reasonable care to ensure the suitability of its advice and discretionary decisions for any customer who is entitled to rely upon its judgment.\n10 Clients' assets\tA firm   must arrange adequate protection for clients' assets when it is responsible for them.\n11 Relations with regulators\tA firm must deal with its regulators in an open and cooperative way, and must disclose to the FCA appropriately anything relating to the firm of which that regulator would reasonably expect notice.\n12 Consumer Duty\tA firm must act to deliver good outcomes for retail customers."
+  },
+  {
+    "section": "PRIN 3.1",
+    "ref": "PRIN 3.1.1",
+    "type": "R",
+    "text": "PRIN applies to every firm, except that it does not apply to a firm in relation to its carrying on of auction regulation bidding."
+  },
+  {
+    "section": "PRIN 3.1",
+    "ref": "PRIN 3.1.6",
+    "type": "R",
+    "text": "A firm will not be subject to a Principle or PRIN 2A to the extent that it would be contrary to the requirements of an EU measure passed or made before IP completion day, to the extent that those requirements continue to have effect after IP completion day under the EUWA."
+  },
+  {
+    "section": "PRIN 3.1",
+    "ref": "PRIN 3.1.8",
+    "type": "G",
+    "text": "The Principles will not apply to the extent that they purport to impose an obligation which is inconsistent with requirements which implemented the Payment Services Directive, the Consumer Credit Directive or the Electronic Money Directive. For example, there may be circumstances in which the Consumer Duty may be limited by the conduct of business obligations derived from the Payment Services Directive and the Electronic Money Directive and applicable to payment service providers and electronic money issuers (see Parts 6 and 7 of the Payment Services Regulations and Part 5 of the Electronic Money Regulations) or derived from the Consumer Credit Directive (see, for example, the information requirements in the Consumer Credit (Disclosure of Information) Regulations 2010 (SI 2010/1013))."
+  },
+  {
+    "section": "PRIN 3.2",
+    "ref": "PRIN 3.2.1A",
+    "type": "R",
+    "text": "PRIN (other than the Consumer Duty) applies with respect to the carrying on of:\n\n(1)\n\n regulated activities;\n\n(2)\n\n activities that constitute dealing in investments as principal, disregarding the exclusion in article 15 of the Regulated Activities Order (Absence of holding out etc);\n\n(3)\n\n ancillary activities in relation to designated investment business, home finance activity, regulated funeral plan activity, credit-related regulated activity, insurance distribution activity, regulated pensions dashboard activity and accepting deposits; and\n\n(4)\n\n activities directly arising from insurance risk transformation."
+  },
+  {
+    "section": "PRIN 3.2",
+    "ref": "PRIN 3.2.6",
+    "type": "R",
+    "text": "(1)\n\n The Consumer Duty applies to a firm’sretail market business, including in respect of existing products and closed products.\n\n(2)\n\n(a)\n\n Subject to (b), the Consumer Duty applies to a firm with respect to the communication or approval of a financial promotion (see PRIN 3.2.2R), but only if the financial promotion is addressed to, or disseminated in such a way that it is likely to be received by, a retail customer.\n\n(b)\n\n The Consumer Duty does not apply to the communication or approval of a financial promotion to the extent that the financial promotion relates to an activity that is excluded from the definition of retail market business by virtue of limbs (1) to (6) of that definition.\n\n(3)\n\n If the firm is a credit union, and except insofar as the Consumer Duty applies by virtue of (2), then the Consumer Duty does not apply to the following activities:\n\n(a)\n\n payment services and activities connected to the provision of payment services, except where the activity is an ancillary activity in relation to a regulated activity other than issuing electronic money; and\n\n(b)\n\n activities connected to or ancillary activities in relation to issuing electronic money, but only insofar as the activity is not an ancillary activity in relation to another regulated activity."
+  },
+  {
+    "section": "PRIN 3.2",
+    "ref": "PRIN 3.2.10",
+    "type": "R",
+    "text": "Principles 6 and 7 do not apply to a firm’s activities to the extent that the Consumer Duty applies."
+  },
+  {
+    "section": "PRIN 3.3",
+    "ref": "PRIN 3.3.1",
+    "type": "R",
+    "text": "Principle\tTerritorial application\nPrinciples 1, 2 and 3\tin a prudential context, apply with respect to activities wherever they are carried on; otherwise, apply with respect to activities carried on from an establishment maintained by the firm (or its appointed representative) in the United Kingdom, or in respect of regulated claims management activities, apply with respect to activity carried on in Great Britain, even if the establishment from which it is carried on is not located in the UK (see PERG 2.4A), unless another applicable rule or onshored regulation which is relevant to the activity has a wider territorial scope, in which case the Principle applies with that wider scope in relation to the activity described in that rule or onshored regulation.\nPrinciple4\tapplies with respect to activities wherever they are carried on.\nPrinciple 5\tif the activities have, or might reasonably be regarded as likely to have, a negative effect on confidence in the UK financial system, applies with respect to activities wherever they are carried on; otherwise, applies with respect to activities carried on from an establishment maintained by the firm(or its appointed representative) in the United Kingdom, or in respect of regulated claims management activities, applies with respect to activity carried on in Great Britain, even if the establishment from which it is carried on is not located in the UK (see PERG 2.4A).\nPrinciples 6, 7, 8, 9 and 10\tPrinciple 8, in a prudential context, applies with respect to activities wherever they are carried on; otherwise these Principles apply with respect to activities carried on from an establishment maintained by the firm (or its appointed representative) in the United Kingdom, or in respect of regulated claims management activities, apply with respect to activity carried on in Great Britain, even if the establishment from which it is carried on is not located in the UK (see PERG 2.4A), unless another applicable rule or onshored regulation which is relevant to the activity has a wider territorial scope, in which case the Principle applies with that wider scope in relation to the activity described in that rule or onshored regulation.\nPrinciple 11\tapplies with respect to activities wherever they are carried on.\nThe Consumer Duty\tapplies with respect to activities carried on with retail customers located in the United Kingdom unless another applicable rule or onshored regulation which is relevant to the activity has a different territorial scope, in which case the Consumer Duty applies with that scope in relation to the activity described in that rule or onshored legislation."
+  },
+  {
+    "section": "PRIN 3.3",
+    "ref": "PRIN 3.3.3",
+    "type": "R",
+    "text": "PRIN 3.3.1R applies to electronic money institutions, payment institutions and registered account information service providers as if the references to a firm were references to a person within that description, and references to an appointed representative were to an agent of such a person within the meaning of the Payment Services Regulations."
+  },
+  {
+    "section": "PRIN 3.4",
+    "ref": "PRIN 3.4.1R",
+    "type": "R",
+    "text": "PRIN 3.4.1R, PRIN 3.4.2R and PRIN 1 Annex 1 do not apply with respect to:\n\n(1) \n\ncredit-related regulated activities; or\n\n(2) \n\nregulated claims management activities; or\n\n(3) \n\nregulated funeral plan activities; or\n\n(4) \n\npayment services; or\n\n(4A) \n\nregulated pensions dashboard activity; or\n\n(5) \n\nthe issuing of electronic money (where not a regulated activity)."
+  },
+  {
+    "section": "PRIN 3.4",
+    "ref": "PRIN 3.4.3A",
+    "type": "R",
+    "text": "(1)\n\n Paragraph (2) applies in relation to an individual who:\n\n(a)\n\n has provided, or is to provide, a guarantee or an indemnity (or both) in relation to a regulated credit agreement, a regulated consumer hire agreement or a P2P agreement; and\n\n(b)\n\n is not the borrower or the hirer.\n\n(2)\n\n If the individual is not a customer, they are to be treated as if they were a customer for the purposes of Principles 6 and 7 and as if they were a retail customer for the purposes of the Consumer Duty.\n\n(3)\n\n For the purposes of this rule, a guarantee does not include a legal or equitable mortgage or a pledge."
+  },
+  {
+    "section": "PRIN 3.4",
+    "ref": "PRIN 3.4.4",
+    "type": "R",
+    "text": "A contravention of the rules in PRIN does not give rise to a right of action by a private person under section 138D of the Act (and each of those rules is specified under section 138D(3) of the Act as a provision giving rise to no such right of action)."
+  },
+  {
+    "section": "PRIN 3.4",
+    "ref": "PRIN 3.4.5",
+    "type": "R",
+    "text": "Where Principle 11 refers to regulators, this means, in addition to the FCA, other regulators with recognised jurisdiction in relation to regulated activities, payment services and electronic money whether in the United Kingdom or abroad."
+  },
+  {
+    "section": "PRIN 4.1",
+    "ref": "PRIN 4.1.1",
+    "type": "G",
+    "text": "PRIN 3.1.6 R gives effect to the provisions of the EUWA concerning the continuing application of the principle of the supremacy of EU law. It ensures that the Principles and PRIN 2A do not impose obligations upon firms which are inconsistent with a relevant EU measure. If a Principle or PRIN 2A does purport to impose such an obligation PRIN 3.1.6 R disapplies that Principle or provision of PRIN 2A, but only to the extent necessary to ensure compatibility with the relevant EU measure. This disapplication has practical effect only for certain matters covered by MiFID, which are explained in this section."
+  },
+  {
+    "section": "PRIN 4.1",
+    "ref": "PRIN 4.1.2",
+    "type": "G",
+    "text": "Under PRIN 3.3.1 R, the territorial application of a number of Principles and PRIN 2A to a UK MiFID investment firm is extended to the extent that another applicable rule or onshored regulation which is relevant to an activity has a wider territorial scope."
+  },
+  {
+    "section": "PRIN 4.1",
+    "ref": "PRIN 4.1.4",
+    "type": "G",
+    "text": "(1) \n\nCertain requirements derived from MiFID are disapplied for:\n\n(a) \n\neligible counterparty business;\n\n(b) \n\ntransactions concluded under the rules governing a multilateral trading facility between its members or participants or between the multilateral trading facility and its members or participants in relation to the use of the multilateral trading facility;\n\n(c) \n\ntransactions concluded on a regulated market between its members or participants.\n\n(2) \n\nUnder PRIN 3.1.6 R, these disapplications may affect Principles 1, 2, 6, 9, 12 and PRIN 2A. PRIN 3.1.6 R applies only to the extent that the application of a Principle or PRIN 2A would be contrary to the UK's obligations under a relevant EU measure in respect of a particular transaction or matter. In line with MiFID, these limitations relating to eligible counterparty business and transactions under the rules of a multilateral trading facility or on a regulated market only apply in relation to a firm's conduct of business obligations to its clients derived from MiFID. They do not limit the application of those Principles or PRIN 2A in relation to other matters, such as client asset protections, systems and controls, prudential requirements and market integrity. Further information about these limitations is contained in COBS 1 Annex 1.\n\n(3) \n\nPrinciples 3, 4, 5, 7, 8, 10 and 11 are not limited in this way."
+  }
+]

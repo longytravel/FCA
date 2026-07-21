@@ -1,60 +1,64 @@
 # Enforcement Insights — FCA Fines Dashboard
+`AUDIT: verified 2026-07-21, by audit-1`
 
 ## Pitch
-An interactive dashboard of every FCA fine from 2013–2025 that turns a scattered set of static tables into a living picture of enforcement: total penalties by year, biggest fines, sector and breach-type breakdowns, and a searchable, filterable ledger of every notice. In two hours we go from public data on fca.org.uk to a shareable web app the FCA's own teams can explore live.
+An interactive dashboard of every FCA fine 2013–2025: total penalties by year, biggest fines, sector and
+breach-type breakdowns, and a searchable ledger of every notice deep-linked to its Final Notice — plus a
+Claude **"Ask the enforcement data"** box and an AI-written **year-in-review insight** for whatever the user
+filters to. Thirteen scattered tables become a living, conversational picture of enforcement.
 
-## Data sources (VERIFIED fetchable — plain server-rendered HTML, no JS)
+## Data sources — VERIFIED (2026-07-21)
 Scheme: `https://www.fca.org.uk/news/news-stories/{YEAR}-fines`
+- Re-tested live: `2025-fines` ✅ 200 (176 KB HTML table), `2013-fines` ✅ 200 (182 KB). Range **2013–2025 = 13 years**.
+- Pre-2013 lives on legacy FSA archive (different scheme) — out of scope, mention as fast-follow.
 
-| Year | URL | Status |
-|------|-----|--------|
-| 2025 | .../2025-fines | ✅ 200, table (total £124.2m) |
-| 2024 | .../2024-fines | ✅ 200, table (total £176.0m) |
-| 2023 | .../2023-fines | ✅ 200, table (total £53.4m) |
-| 2013 | .../2013-fines | ✅ 200, table (total £474.3m) |
-| 2011, 2012, 2010, 2005 | — | ❌ 404 (scheme starts 2013) |
+**Pre-harvested & ready — `data/fines.json` (confirmed):**
+- **300 records**, fields: `year, firm, date, amount, reason, noticeUrl, isCourtFine`.
+- `amount` already parsed to int; `date` is `DD/MM/YYYY`; `noticeUrl` links the Final Notice/press release.
+- ⚠ Plan's old field name `sourceUrl` → actual is **`noticeUrl`**. `sector`/`breachType` are NOT in the
+  file yet — derive them at load time by keyword-tagging `reason` (dictionary below). **App reads this static
+  JSON, never scrapes at runtime.**
 
-**Confirmed range: 2013–2025 = 13 years**, all same URL pattern, all fetched successfully via HTTP GET.
-Pre-2013 fines live on legacy FSA archive pages under a different scheme — **out of scope** for the demo (mention as a stretch/fallback).
-
-### Table structure (consistent across years)
-Columns: **Firm or individual fined** | **Date** | **Amount** | **Reason** (2013 header reads "Reasoning").
-- Amount: `£1,377,968` style strings → strip `£`/commas → int. Watch for **"Court fine:"** prefixes (2025) — flag/exclude from FCA-imposed totals.
-- Firm cell: anchor linking to a **Final Notice PDF** (`/publication/final-notices/{slug}-{year}.pdf`) for recent years, or a press release / `/your-fca/documents/...` for older years. Capture href as `sourceUrl`.
-- Reason: free text but richly structured — contains **sector** ("retail bank sector", "pensions", "investment bank", "issuer") and **breach type** (PRIN 3, APER, COCON, Market Abuse Regulation, LIBOR, listing rules, SYSC, financial crime). Parse via keyword tagging.
-- Each page states an authoritative **year total** — use to validate our sum.
-
-## Scrape approach (pre-build, before demo)
-1. Node script fetches all 13 URLs (`2013`–`2025`).
-2. Parse with **cheerio**: select the fines `<table>`, iterate rows, extract 4 cells + first anchor href.
-3. Normalise: `{ year, firm, date (ISO), amount (int), reason, sourceUrl, isCourtFine }`.
-4. Tag `sector` and `breachType` by keyword-matching the reason text (dictionary of ~15 patterns → categories; default "Other").
-5. Reconcile our per-year sum against the page-stated total; log deltas.
-6. Write `public/data/fines.json` (single file, ~13yrs × ~30 rows ≈ 400 records, small). **Commit the JSON** — app reads static, never scrapes at runtime.
-
-## 2-hour build plan (Next.js + Vercel, pre-scraped JSON)
-- **0:00–0:25** Scrape script → `fines.json`. Eyeball totals vs page totals.
-- **0:25–0:40** `create-next-app` (App Router, TS, Tailwind), Recharts. Load JSON in a client component / `page.tsx`.
-- **0:40–1:05** Hero KPIs: total fined all-time, biggest single fine, count of notices, worst year. Bar chart: total £ by year.
-- **1:05–1:30** Breakdown charts: fines by sector (bar), by breach type (donut). Both driven off the tags.
-- **1:30–1:55** Searchable/filterable table: text search on firm+reason, filters for year/sector, sort by amount, row links to Final Notice PDF. "Top 10 biggest fines" leaderboard.
-- **1:55–2:00** Deploy to Vercel, smoke-test live URL.
+### Tagging (do at load, in-memory)
+- **Sector** keywords: `retail bank|pensions|investment bank|issuer|insurance|consumer credit|asset management`.
+- **Breach** keywords: `PRIN|APER|COCON|market abuse|LIBOR|listing rule|SYSC|financial crime|money laundering`.
+- Default bucket "Other". Charts are labelled "indicative".
+- `isCourtFine=true` → exclude from headline FCA-imposed total, show with an asterisk.
 
 ## Stack
-Next.js 15 (App Router) · TypeScript · Tailwind · Recharts · cheerio (build-time only) · Vercel. All data static JSON — zero runtime dependency on fca.org.uk, so the live site can't break mid-demo.
+Existing Next.js 15 scaffold (reuse — no `create-next-app`). `recharts` for charts, `@anthropic-ai/sdk` for
+the AI layer. **Missing deps — install first:** `npm i recharts @anthropic-ai/sdk`. All data static JSON —
+zero runtime dependency on fca.org.uk, so the live site can't break mid-demo.
+
+## 2-hour build plan
+- **0:00–0:15 — Setup.** Reuse scaffold; `npm i recharts @anthropic-ai/sdk`; add `ANTHROPIC_API_KEY`.
+  Copy `data/fines.json` → `public/data/`. Sanity-check: sum by year, eyeball 2013 ≈ £474m spike.
+- **0:15–0:35 — Load + tag.** `lib/fines.ts`: import JSON, add `sector`/`breachType` tags, helpers for
+  year totals, top-10, sector/breach aggregates.
+- **0:35–1:00 — WOW (c) hero + charts.** KPI cards: total fined since 2013, biggest single fine (click →
+  `noticeUrl`), notice count, worst year. **Recharts** bar of total £ by year (2013 LIBOR spike reads instantly).
+- **1:00–1:25 — WOW (c) breakdowns + ledger.** Sector bar + breach donut (off the tags). Searchable table:
+  text search on firm+reason, year/sector filters, sort by amount, rows deep-link to the Final Notice PDF.
+- **1:25–1:50 — WOW (a)+(b) the AI layer.** `/api/chat`: Claude (`claude-fable-5`) answers questions over a
+  compact JSON summary of the 300 rows stuffed in context ("Which year had the most financial-crime fines?").
+  Plus `/api/insight`: whenever the user filters (e.g. year=2013), Claude writes a 2-sentence takeaway for
+  that slice. **Both pre-generate a static fallback for the demo filters/questions at build.**
+- **1:50–2:00 — Deploy** to Vercel, smoke-test live URL.
 
 ## Risks & fallbacks
-- **Reason-text tagging is fuzzy** → keep an "Other" bucket; don't over-promise precision. Sector/breach charts are "indicative".
-- **Court fines / non-FCA penalties** (2025) skew totals → flag `isCourtFine`, exclude from headline total, note asterisk.
-- **Multi-firm rows** (e.g. 2013 Lloyds TSB + Bank of Scotland share one row) → acceptable to treat as one record for demo.
-- **Site changes / offline during demo** → mitigated: data is pre-scraped and committed; nothing fetched live.
-- **Time overrun** → cut donut chart and sector filter first; KPIs + year bar chart + searchable table is a complete, impressive MVP on their own.
-- **Pre-2013 data requested** → state it's on the legacy FSA archive (different scheme) and a fast-follow, not blocking.
+- **Tagging is fuzzy** → "Other" bucket; charts labelled "indicative", never precise.
+- **Court/non-FCA fines skew totals** → `isCourtFine` excluded from headline, asterisk note.
+- **Multi-firm rows** (2013 Lloyds TSB + BoS share a row) → treat as one record; acceptable for demo.
+- **Claude API fails live** → chat + insight fall back to build-time pre-generated answers for the demo
+  questions; dashboard + charts + table are fully functional without AI (complete MVP on their own).
+- **Site offline during demo** → data pre-harvested and committed; nothing fetched live.
+- **Time overrun** → cut donut + AI insight first; KPIs + year bar + searchable table is a strong MVP.
 
 ## Demo script (the "vibe")
-1. "This is 13 years of every FCA fine — data that's on your own site but locked in 13 separate tables." Open the live dashboard.
-2. Hit the headline: total £ imposed since 2013, biggest ever fine — click through to its Final Notice PDF.
-3. "Which years were the toughest?" — point at the year bar chart (2013 LIBOR era spikes).
-4. "Which sectors, which breaches?" — sector + breach donut.
-5. Live search: type "financial crime" or "Barclays" — table filters instantly, each row deep-links to the notice.
-6. Close: "Built in two hours, entirely from public data — this is the kind of self-service insight layer we can put over any FCA dataset."
+1. "13 years of every FCA fine — on your own site, but locked in 13 tables." Open the dashboard.
+2. Headline: total £ since 2013, biggest ever — click through to its Final Notice.
+3. Year bar chart → "2013 LIBOR era spikes."
+4. Sector + breach donut → "Which sectors, which breaches."
+5. Live search "financial crime" or "Barclays" → table filters, each row deep-links to the notice.
+6. **Ask Claude "which year was toughest on financial crime?"** → grounded answer over the data.
+7. Close: "Two hours, entirely public data — a self-service insight layer over any FCA dataset."
