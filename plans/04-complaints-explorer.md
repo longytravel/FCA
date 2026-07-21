@@ -28,12 +28,23 @@ Existing Next.js 15 scaffold (reuse). **`xlsx` (SheetJS) parses OFFLINE at build
 runtime. `recharts` charts, `@anthropic-ai/sdk` for AI. **Missing deps — install first:**
 `npm i -D xlsx` and `npm i recharts @anthropic-ai/sdk`.
 
+## Pre-baked fixtures (READY — 2026-07-21, by fallback-prep)
+The riskiest ingest step is **already done** — SheetJS parse + join is committed:
+- `data/fixtures/complaints-firms.json` — **219 firms**, one record each, flattened per firm × product group.
+  Joins 5 sheets on Firm Name: `Opened`, `Closed`, `Percentage within 3 days`, `Percentage after 3 days, within` (the 8-week
+  bucket), `Percentage upheld`. Shape: `{firmName, group, jointReporting, reportingPeriod, products:{<group>:{opened,closed,within3dPct,after3dWithin8wkPct,upheldPct}}, total:{...}}`.
+  Product groups: Banking and credit cards · Decumulation & pensions · Home finance · Insurance & pure protection · Investments. Sorted by total opened (NatWest, Lloyds, Barclays, HSBC lead).
+- `data/fixtures/complaints-trends.json` — aggregate time series from `aggregate-complaints-2025-h2.xlsx`
+  (`Product Group`, `Firm Type`, `Product Specific` sheets), **10 semesters 2021 H1→2025 H2**: `byProductGroup` (5),
+  `byFirmType` (8), `byProductSpecific` (55). Keys are the source `Variable type - Variable` labels (opened, upheld, closed buckets, redress, provision).
+
+Static-import these two files directly — the `scripts/ingest.mjs` step below is now optional (only needed to re-bake if the XLSX is revised). Skip it for the demo.
+
 ## 2-hour build plan
-- **0:00–0:25 — Ingest & flatten (the riskiest step, do first).** `scripts/ingest.mjs`: read the 3 local
-  XLSX with SheetJS. Join `Opened`/`Closed`/`Percentage upheld`/`Percentage within 3 days` on Firm Name →
-  one record per firm × product `{opened, closed, upheld%, closed3day%, closed8wk%}`. Emit
-  `public/data/firms.json` + `public/data/aggregate.json` (from `Product Group` sheet). **Commit both JSONs
-  so the demo never parses live.** Watch merged-header rows — skip until the header row with "Firm Name".
+- **0:00–0:25 — Ingest & flatten — PRE-BAKED, SKIP FOR DEMO.** Fixtures above already contain the flattened
+  join. (For reference / re-bake only: `scripts/ingest.mjs` reads the 3 local XLSX with SheetJS, joins
+  `Opened`/`Closed`/`Percentage upheld`/`Percentage within 3 days`/`Percentage after 3 days, within` on Firm Name,
+  emits the same JSON. Watch merged-header rows — skip until the header row with "Firm Name".)
 - **0:25–0:35 — Setup.** `npm i` deps; add `ANTHROPIC_API_KEY`; static-import the JSON (no DB, no API for data).
 - **0:35–1:00 — Firm lookup.** Client fuzzy search over `firms.json`. Select firm → card grid, one per
   product: opened count, uphold %, closure-speed bars. Headline: total complaints + weighted uphold rate.
@@ -46,8 +57,8 @@ runtime. `recharts` charts, `@anthropic-ai/sdk` for AI. **Missing deps — insta
 - **1:50–2:00 — Deploy.** `vercel --prod`. Static JSON → instant, offline-safe.
 
 ## Risks & fallbacks
-- **XLSX parse quirks (merged headers, footnotes)** → commit generated JSON; demo never parses live. This is
-  the #1 stage risk — run `ingest.mjs` and eyeball the JSON well before the demo.
+- **XLSX parse quirks (merged headers, footnotes)** → **NEUTRALISED:** JSON is pre-baked and verified in
+  `data/fixtures/` (219 firms, 10 semesters). Demo never parses XLSX. No live `ingest.mjs` run required.
 - **FCA↔FOS name matching is fuzzy** → drop the FOS join, keep FCA-only (still complete). FOS is stretch.
 - **Claude API fails live** → briefing + chat fall back to build-time pre-generated text; explorer + tables +
   chart fully work without AI.

@@ -1,0 +1,403 @@
+{
+  "series": "IUDBEDR",
+  "description": "BoE Bank Rate (monthly, end-of-month) vs FCA warning-list additions per month",
+  "generated": "2026-07-21",
+  "months": [
+    {
+      "month": "2020-01",
+      "bankRate": 0.75,
+      "warningCount": 0
+    },
+    {
+      "month": "2020-02",
+      "bankRate": 0.75,
+      "warningCount": 2
+    },
+    {
+      "month": "2020-03",
+      "bankRate": 0.1,
+      "warningCount": 0
+    },
+    {
+      "month": "2020-04",
+      "bankRate": 0.1,
+      "warningCount": 0
+    },
+    {
+      "month": "2020-05",
+      "bankRate": 0.1,
+      "warningCount": 1
+    },
+    {
+      "month": "2020-06",
+      "bankRate": 0.1,
+      "warningCount": 1
+    },
+    {
+      "month": "2020-07",
+      "bankRate": 0.1,
+      "warningCount": 0
+    },
+    {
+      "month": "2020-08",
+      "bankRate": 0.1,
+      "warningCount": 0
+    },
+    {
+      "month": "2020-09",
+      "bankRate": 0.1,
+      "warningCount": 0
+    },
+    {
+      "month": "2020-10",
+      "bankRate": 0.1,
+      "warningCount": 0
+    },
+    {
+      "month": "2020-11",
+      "bankRate": 0.1,
+      "warningCount": 1
+    },
+    {
+      "month": "2020-12",
+      "bankRate": 0.1,
+      "warningCount": 0
+    },
+    {
+      "month": "2021-01",
+      "bankRate": 0.1,
+      "warningCount": 0
+    },
+    {
+      "month": "2021-02",
+      "bankRate": 0.1,
+      "warningCount": 0
+    },
+    {
+      "month": "2021-03",
+      "bankRate": 0.1,
+      "warningCount": 0
+    },
+    {
+      "month": "2021-04",
+      "bankRate": 0.1,
+      "warningCount": 2
+    },
+    {
+      "month": "2021-05",
+      "bankRate": 0.1,
+      "warningCount": 1
+    },
+    {
+      "month": "2021-06",
+      "bankRate": 0.1,
+      "warningCount": 1
+    },
+    {
+      "month": "2021-07",
+      "bankRate": 0.1,
+      "warningCount": 0
+    },
+    {
+      "month": "2021-08",
+      "bankRate": 0.1,
+      "warningCount": 0
+    },
+    {
+      "month": "2021-09",
+      "bankRate": 0.1,
+      "warningCount": 1
+    },
+    {
+      "month": "2021-10",
+      "bankRate": 0.1,
+      "warningCount": 0
+    },
+    {
+      "month": "2021-11",
+      "bankRate": 0.1,
+      "warningCount": 0
+    },
+    {
+      "month": "2021-12",
+      "bankRate": 0.25,
+      "warningCount": 0
+    },
+    {
+      "month": "2022-01",
+      "bankRate": 0.25,
+      "warningCount": 0
+    },
+    {
+      "month": "2022-02",
+      "bankRate": 0.5,
+      "warningCount": 1
+    },
+    {
+      "month": "2022-03",
+      "bankRate": 0.75,
+      "warningCount": 0
+    },
+    {
+      "month": "2022-04",
+      "bankRate": 0.75,
+      "warningCount": 0
+    },
+    {
+      "month": "2022-05",
+      "bankRate": 1,
+      "warningCount": 0
+    },
+    {
+      "month": "2022-06",
+      "bankRate": 1.25,
+      "warningCount": 0
+    },
+    {
+      "month": "2022-07",
+      "bankRate": 1.25,
+      "warningCount": 1
+    },
+    {
+      "month": "2022-08",
+      "bankRate": 1.75,
+      "warningCount": 0
+    },
+    {
+      "month": "2022-09",
+      "bankRate": 2.25,
+      "warningCount": 0
+    },
+    {
+      "month": "2022-10",
+      "bankRate": 2.25,
+      "warningCount": 1
+    },
+    {
+      "month": "2022-11",
+      "bankRate": 3,
+      "warningCount": 1
+    },
+    {
+      "month": "2022-12",
+      "bankRate": 3.5,
+      "warningCount": 0
+    },
+    {
+      "month": "2023-01",
+      "bankRate": 3.5,
+      "warningCount": 1
+    },
+    {
+      "month": "2023-02",
+      "bankRate": 4,
+      "warningCount": 2
+    },
+    {
+      "month": "2023-03",
+      "bankRate": 4.25,
+      "warningCount": 3
+    },
+    {
+      "month": "2023-04",
+      "bankRate": 4.25,
+      "warningCount": 0
+    },
+    {
+      "month": "2023-05",
+      "bankRate": 4.5,
+      "warningCount": 1
+    },
+    {
+      "month": "2023-06",
+      "bankRate": 5,
+      "warningCount": 1
+    },
+    {
+      "month": "2023-07",
+      "bankRate": 5,
+      "warningCount": 0
+    },
+    {
+      "month": "2023-08",
+      "bankRate": 5.25,
+      "warningCount": 1
+    },
+    {
+      "month": "2023-09",
+      "bankRate": 5.25,
+      "warningCount": 0
+    },
+    {
+      "month": "2023-10",
+      "bankRate": 5.25,
+      "warningCount": 1
+    },
+    {
+      "month": "2023-11",
+      "bankRate": 5.25,
+      "warningCount": 0
+    },
+    {
+      "month": "2023-12",
+      "bankRate": 5.25,
+      "warningCount": 0
+    },
+    {
+      "month": "2024-01",
+      "bankRate": 5.25,
+      "warningCount": 4
+    },
+    {
+      "month": "2024-02",
+      "bankRate": 5.25,
+      "warningCount": 2
+    },
+    {
+      "month": "2024-03",
+      "bankRate": 5.25,
+      "warningCount": 1
+    },
+    {
+      "month": "2024-04",
+      "bankRate": 5.25,
+      "warningCount": 0
+    },
+    {
+      "month": "2024-05",
+      "bankRate": 5.25,
+      "warningCount": 1
+    },
+    {
+      "month": "2024-06",
+      "bankRate": 5.25,
+      "warningCount": 2
+    },
+    {
+      "month": "2024-07",
+      "bankRate": 5.25,
+      "warningCount": 0
+    },
+    {
+      "month": "2024-08",
+      "bankRate": 5,
+      "warningCount": 2
+    },
+    {
+      "month": "2024-09",
+      "bankRate": 5,
+      "warningCount": 0
+    },
+    {
+      "month": "2024-10",
+      "bankRate": 5,
+      "warningCount": 9
+    },
+    {
+      "month": "2024-11",
+      "bankRate": 4.75,
+      "warningCount": 1
+    },
+    {
+      "month": "2024-12",
+      "bankRate": 4.75,
+      "warningCount": 3
+    },
+    {
+      "month": "2025-01",
+      "bankRate": 4.75,
+      "warningCount": 3
+    },
+    {
+      "month": "2025-02",
+      "bankRate": 4.5,
+      "warningCount": 1
+    },
+    {
+      "month": "2025-03",
+      "bankRate": 4.5,
+      "warningCount": 1
+    },
+    {
+      "month": "2025-04",
+      "bankRate": 4.5,
+      "warningCount": 4
+    },
+    {
+      "month": "2025-05",
+      "bankRate": 4.25,
+      "warningCount": 3
+    },
+    {
+      "month": "2025-06",
+      "bankRate": 4.25,
+      "warningCount": 5
+    },
+    {
+      "month": "2025-07",
+      "bankRate": 4.25,
+      "warningCount": 1
+    },
+    {
+      "month": "2025-08",
+      "bankRate": 4,
+      "warningCount": 3
+    },
+    {
+      "month": "2025-09",
+      "bankRate": 4,
+      "warningCount": 2
+    },
+    {
+      "month": "2025-10",
+      "bankRate": 4,
+      "warningCount": 4
+    },
+    {
+      "month": "2025-11",
+      "bankRate": 4,
+      "warningCount": 11
+    },
+    {
+      "month": "2025-12",
+      "bankRate": 3.75,
+      "warningCount": 8
+    },
+    {
+      "month": "2026-01",
+      "bankRate": 3.75,
+      "warningCount": 22
+    },
+    {
+      "month": "2026-02",
+      "bankRate": 3.75,
+      "warningCount": 153
+    },
+    {
+      "month": "2026-03",
+      "bankRate": 3.75,
+      "warningCount": 256
+    },
+    {
+      "month": "2026-04",
+      "bankRate": 3.75,
+      "warningCount": 146
+    },
+    {
+      "month": "2026-05",
+      "bankRate": 3.75,
+      "warningCount": 118
+    },
+    {
+      "month": "2026-06",
+      "bankRate": 3.75,
+      "warningCount": 113
+    },
+    {
+      "month": "2026-07",
+      "bankRate": 3.75,
+      "warningCount": 95
+    }
+  ],
+  "complaintsJoined": false
+}

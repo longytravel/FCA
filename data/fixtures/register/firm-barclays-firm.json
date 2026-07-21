@@ -1,0 +1,44 @@
+{
+  "Status": "FSR-API-02-01-00",
+  "ResultInfo": {
+    "page": "1",
+    "per_page": "1",
+    "total_count": "1"
+  },
+  "Message": "Ok. Firm Found",
+  "Data": [
+    {
+      "Name": "https://register.fca.org.uk/services/V0.1/Firm/122702/Names",
+      "Individuals": "https://register.fca.org.uk/services/V0.1/Firm/122702/Individuals",
+      "Requirements": "https://register.fca.org.uk/services/V0.1/Firm/122702/Requirements",
+      "Permission": "https://register.fca.org.uk/services/V0.1/Firm/122702/Permissions",
+      "Passport": "https://register.fca.org.uk/services/V0.1/Firm/122702/Passports",
+      "Regulators": "https://register.fca.org.uk/services/V0.1/Firm/122702/Regulators",
+      "Appointed Representative": "https://register.fca.org.uk/services/V0.1/Firm/122702/AR",
+      "Address": "https://register.fca.org.uk/services/V0.1/Firm/122702/Address",
+      "Waivers": "https://register.fca.org.uk/services/V0.1/Firm/122702/Waivers",
+      "Exclusions": "https://register.fca.org.uk/services/V0.1/Firm/122702/Exclusions",
+      "DisciplinaryHistory": "https://register.fca.org.uk/services/V0.1/Firm/122702/DisciplinaryHistory",
+      "System Timestamp": "21/07/2026 07:20",
+      "Exceptional Info Details": [],
+      "Status Effective Date": "01/12/2001",
+      "E-Money Agent Status": "",
+      "PSD / EMD Effective Date": "",
+      "Client Money Permission": "Control but not hold client money",
+      "Sub Status Effective from": "",
+      "Sub-Status": "",
+      "Mutual Society Number": "",
+      "Companies House Number": "01026167",
+      "MLRs Status Effective Date": "",
+      "MLRs Status": "",
+      "E-Money Agent Effective Date": "",
+      "PSD Agent Effective date": "",
+      "PSD Agent Status": "",
+      "PSD / EMD Status": "PSD2 Excluded",
+      "Status": "See full details",
+      "Business Type": "Regulated",
+      "Organisation Name": "Barclays Bank Plc",
+      "FRN": "122702"
+    }
+  ]
+}

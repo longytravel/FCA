@@ -1,0 +1,253 @@
+{
+  "Status": "FSR-API-02-03-00",
+  "ResultInfo": {
+    "page": "1",
+    "per_page": "20",
+    "total_count": "17"
+  },
+  "Message": "Ok. Firm permission found",
+  "Data": {
+    "Agreeing to carry on a regulated activity": [
+      {
+        "Limitation Not Found": [
+          "Valid limitation not present"
+        ]
+      }
+    ],
+    "Providing Targeted Support": [
+      {
+        "Customer Type": [
+          "Retail (Investment)"
+        ]
+      },
+      {
+        "Investment Type": [
+          "Unit",
+          "Share",
+          "Rights to or interests in investments (Security)",
+          "Debenture",
+          "Government and public security"
+        ]
+      }
+    ],
+    "Dealing in investments as principal": [
+      {
+        "Customer Type": [
+          "Professional",
+          "Eligible Counterparty"
+        ]
+      },
+      {
+        "Investment Type": [
+          "Contract for Differences (excluding a spread bet and, a rolling spot forex contract and a binary bet)",
+          "Future (excluding a commodity future and a rolling spot forex contract)",
+          "Option (excluding a commodity option and an option on a commodity future)",
+          "Rolling spot forex contract",
+          "Rights to or interests in investments (Contractually Based Investments)"
+        ]
+      },
+      {
+        "Limitation": [
+          "Investment activity in \"rights to or interests in investments (contractually based)\" is limited to investment types granted for this activity.",
+          "The firm, in carrying out this regulated activity, is limited to entering into transactions in a manner which, if the firm was an unauthorised person, would come within article 16 of the RAO."
+        ]
+      }
+    ],
+    "Advising on investments (except on Pension Transfers and Pension Opt Outs)": [
+      {
+        "Customer Type": [
+          "Retail (Investment)"
+        ]
+      },
+      {
+        "Investment Type": [
+          "Government and public security",
+          "Share",
+          "Unit",
+          "Rights to or interests in investments (Security)"
+        ]
+      }
+    ],
+    "Arranging safeguarding and administration of assets": [
+      {
+        "Customer Type": [
+          "Retail (Investment)"
+        ]
+      },
+      {
+        "Investment Type": [
+          "Government and public security",
+          "Personal pension scheme",
+          "Share",
+          "Unit",
+          "Rights to or interests in investments (Security)",
+          "Stakeholder pension scheme",
+          "Debenture"
+        ]
+      }
+    ],
+    "Providing Credit Information Services": [
+      {
+        "Limitation Not Found": [
+          "Valid limitation not present"
+        ]
+      }
+    ],
+    "Exercising/having right to exercise lender's rights and duties under a regulated credit agreement (excluding high-cost short-term credit, bill of sale agreement, and home collected credit agreement)": [
+      {
+        "Limitation Not Found": [
+          "Valid limitation not present"
+        ]
+      }
+    ],
+    "Entering into regulated credit agreement as Lender (Excluding high-cost short-term credit, bill of sale agreement, and home collected credit agreement)": [
+      {
+        "Limitation Not Found": [
+          "Valid limitation not present"
+        ]
+      }
+    ],
+    "Debt-counselling": [
+      {
+        "Limitation": [
+          "Limited to debt counselling excluding giving advice about debt management plans. In this limitation “debt management plans” is defined as: “a non-statutory agreement between a customer and one or more of the customer's lenders the aim of which is to discharge or liquidate the customer's debts, by making regular payments to a third party which administers the plan and distributes the money to the lenders”."
+        ]
+      }
+    ],
+    "Credit Broking": [
+      {
+        "Limitation Not Found": [
+          "Valid limitation not present"
+        ]
+      }
+    ],
+    "Making arrangements with a view to regulated mortgage contracts": [
+      {
+        "Customer Type": [
+          "Customer"
+        ]
+      },
+      {
+        "Investment Type": [
+          "Regulated mortgage contract"
+        ]
+      }
+    ],
+    "Arranging (bringing about) regulated mortgage contracts": [
+      {
+        "Customer Type": [
+          "Customer"
+        ]
+      },
+      {
+        "Investment Type": [
+          "Regulated mortgage contract"
+        ]
+      }
+    ],
+    "Making arrangements with a view to transactions in investments": [
+      {
+        "Customer Type": [
+          "Commercial",
+          "Retail (Investment)",
+          "Retail (Non-Investment Insurance)"
+        ]
+      },
+      {
+        "Investment Type": [
+          "Life Policy",
+          "Non-investment insurance contracts",
+          "Rights to or interests in investments",
+          "Rights to or interests in investments (Contractually Based Investments)",
+          "Rights to or interests in investments (Security)",
+          "Government and public security",
+          "Share",
+          "Stakeholder pension scheme",
+          "Unit",
+          "Personal pension scheme",
+          "Debenture"
+        ]
+      }
+    ],
+    "Dealing in investments as agent": [
+      {
+        "Customer Type": [
+          "Retail (Non-Investment Insurance)",
+          "Commercial"
+        ]
+      },
+      {
+        "Investment Type": [
+          "Non-investment insurance contracts"
+        ]
+      },
+      {
+        "Customer Type": [
+          "Retail (Investment)"
+        ]
+      },
+      {
+        "Investment Type": [
+          "Government and public security",
+          "Personal pension scheme",
+          "Share",
+          "Unit",
+          "Rights to or interests in investments (Security)",
+          "Stakeholder pension scheme",
+          "Debenture"
+        ]
+      }
+    ],
+    "Assisting in the administration and performance of a contract of insurance": [
+      {
+        "Customer Type": [
+          "Commercial",
+          "Retail (Non-Investment Insurance)"
+        ]
+      },
+      {
+        "Investment Type": [
+          "Non-investment insurance contracts"
+        ]
+      }
+    ],
+    "Arranging (bringing about) deals in investments": [
+      {
+        "Customer Type": [
+          "Commercial",
+          "Retail (Investment)",
+          "Retail (Non-Investment Insurance)"
+        ]
+      },
+      {
+        "Investment Type": [
+          "Life Policy",
+          "Government and public security",
+          "Non-investment insurance contracts",
+          "Personal pension scheme",
+          "Rights to or interests in investments",
+          "Rights to or interests in investments (Contractually Based Investments)",
+          "Rights to or interests in investments (Security)",
+          "Share",
+          "Stakeholder pension scheme",
+          "Unit",
+          "Debenture"
+        ]
+      }
+    ],
+    "Accepting Deposits": [
+      {
+        "Customer Type": [
+          "Retail (Investment)",
+          "Professional",
+          "Eligible Counterparty"
+        ]
+      },
+      {
+        "Investment Type": [
+          "Deposit"
+        ]
+      }
+    ]
+  }
+}

@@ -158,7 +158,7 @@ const demos: Demo[] = [
       { value: "41%", label: "under 6 months old" },
       { value: "6 days", label: "freshest scam domain" },
     ],
-    crossData: { sources: ["RDAP domain-registration records"] },
+    crossData: { sources: ["RDAP domain registry"] },
   },
   {
     number: 12,

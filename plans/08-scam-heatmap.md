@@ -3,6 +3,12 @@
 > **AUDIT: verified 2026-07-21, by audit-2.** All endpoints re-tested live (200): CH API (key works),
 > postcodes.io, OFSI ConList.csv, ONS. No-key map path confirmed (react-leaflet + OpenStreetMap tiles).
 > `data/fines.json` = 300 fined firms. **Wow layer upgraded — was zero-AI; now AI briefing + chatbot + map.**
+>
+> **PRE-BAKED FIXTURE (2026-07-21, data-prep): `data/fixtures/geo-points.json`** — 22 fined firms already
+> geocoded (postcodes.io) from `data/seed-firms.json`. Each: `{name, companyNumber, lat, lon, region,
+> amount, source}`. Regions: London, South East, East of England, West Midlands, Scotland. This is the map
+> pin layer — **load it directly; the live CH→postcodes geocode below is now "if time permits" only.**
+> (OFSI sanctions cross-check is a separate live/seeded step — fixture does not include it.)
 
 ## Pitch
 A single UK map that turns disconnected public datasets into one picture of financial harm: FCA fined
@@ -30,9 +36,10 @@ needs no token. Static UK GeoJSON basemap bundled as offline fallback (see risks
 
 ## 2-hour build (Next.js + Vercel)
 1. **0:00–0:15** `create-next-app` + deploy. Env: `COMPANIES_HOUSE_API_KEY`, `ANTHROPIC_API_KEY`.
-2. **0:15–0:45** Build script → `public/points.json`: ~40 fined firms from `data/fines.json` → CH
-   `search` + `/company/{num}` → registered-office postcode → postcodes.io (bulk) → lat/long + region.
-   **Pre-cache; live app reads JSON only.**
+2. **0:15–0:45 (DONE — use fixture).** Copy `data/fixtures/geo-points.json` → `public/points.json` (22
+   geocoded fined firms, lat/long + region + fine £ already resolved). *If time permits:* re-run the live
+   build script (fined firms → CH `search` + `/company/{num}` → registered-office postcode → postcodes.io
+   bulk) to add more pins beyond the 22.
 3. **0:45–1:05** Parse OFSI CSV once (server script): extract sanctioned names → fuzzy-match (e.g.
    `string-similarity`) against CH officer names of the fined firms → flag matches. Store hits in `points.json`.
    Expect few/none — a near-match still sells "we screen this automatically." Seed one demo match if truly zero.
@@ -45,7 +52,7 @@ needs no token. Static UK GeoJSON basemap bundled as offline fallback (see risks
 - **Chatbot/AI fails live** → pre-computed region briefs baked into `points.json`; the brief card renders from cache. Chat degrades to static brief.
 - **Warning-List clone firms lack a registered office** → use the ~300 real *fined* firms as the geocoded layer; Warning List = a separate count stat, not pins.
 - **OFSI matches are rare** → frame as "automated screening pipeline"; the wow is the join + map, not a guaranteed hit. Pre-scan; seed a demo name if zero.
-- **API key / rate limits** → pre-cache everything to `points.json`; live demo is 100% static reads.
+- **API key / rate limits** → geocoded pins pre-baked to `data/fixtures/geo-points.json`; live demo is 100% static reads, zero CH/postcodes calls on stage.
 - **Tile loading on venue wifi** → bundle a static UK region GeoJSON basemap (<500KB) as offline fallback; pins still plot on it.
 
 ## Demo script (90 sec)

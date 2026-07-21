@@ -46,13 +46,21 @@ Chatbot + briefing via `@anthropic-ai/sdk`, model `claude-fable-5`. No DB — li
   `get_firm_permissions`. Answers "can firm X do Y?" citing FRN + status. Force tool-use; no free-form facts.
 - **1:45–2:00 — Deploy to Vercel** (env vars set), rehearse the 3 demo beats below.
 
+## Pre-baked fixtures (READY — 2026-07-21, by fallback-prep)
+Full authenticated API responses for the 3 demo firms are committed under `data/fixtures/register/`
+(all HTTP 200, `Data[]` envelope intact — same shape `lib/fca.ts` unwraps). Wire the try/catch fallback and
+the "cached" banner directly to these; no live pre-caching step needed at build.
+- **Barclays Bank Plc — FRN 122702:** `firm-barclays-firm.json` · `-permissions.json` · `-individuals.json` (page 1, 20 rows) · `-disciplinaryhistory.json` (10 rows)
+- **Monzo Bank Limited — FRN 730427:** `firm-monzo-firm.json` · `-permissions.json` · `-individuals.json` (20 rows) · `-disciplinaryhistory.json`
+- **Revolut Ltd — FRN 900562:** `firm-revolut-firm.json` · `-permissions.json` · `-individuals.json` (valid 200, empty — an EMI with no approved persons) · `-disciplinaryhistory.json` (empty)
+- **Search fixtures:** `search-barclays.json` (20 rows, total 103) · `search-monzo.json` (4 rows — Monzo Bank is FRN 730427) · `search-revolut.json` (20 rows; the authorised Revolut Ltd is FRN 900562, buried under decoys — good disambiguation demo).
+
 ## Risks & Fallbacks
 - **R1 (signup) — ELIMINATED:** key already works.
-- **R2 Rate limit on rapid clicks:** 200ms debounce + per-FRN cache. Pre-cache 3 firms (Barclays 122702,
-  and two from a live search) into `fixtures/` as a hard fallback.
-- **R3 API slow/down (no SLA):** wrap calls in try/catch → serve fixtures with a "cached" banner.
+- **R2 Rate limit on rapid clicks:** 200ms debounce + per-FRN cache. Hard fallback is pre-baked — see above.
+- **R3 API slow/down (no SLA):** wrap calls in try/catch → serve `data/fixtures/register/*.json` with a "cached" banner.
 - **R4 Claude API fails live:** briefing + chat degrade to a **pre-generated static briefing** for the 3
-  demo firms (bake JSON at build). App still fully works showing live register data without AI.
+  demo firms (bake JSON at build). App still fully works showing register data (live or fixtures) without AI.
 - **R5 Chatbot hallucination:** tool-use only; system prompt "state only tool-returned facts, always cite
   FRN + status, say 'unknown' otherwise." Render citations from stored JSON, never model-invented.
 - **R6 Individuals huge count:** page 1 only (20); show "18k+ approved persons on record", never enumerate.

@@ -1,0 +1,39 @@
+{
+  "Status": "FSR-API-04-01-00",
+  "ResultInfo": {
+    "page": "1",
+    "per_page": "20",
+    "total_count": "4"
+  },
+  "Message": "Ok. Search successful",
+  "Data": [
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/962763",
+      "Status": "No Longer Registered as a PSD Agent",
+      "Reference Number": "962763",
+      "Type of business or Individual": "Payment services firm",
+      "Name": "Monzo Closet Ltd (Postcode: E1 2DW)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/578003",
+      "Status": "No Longer Registered as a PSD Agent",
+      "Reference Number": "578003",
+      "Type of business or Individual": "Payment services firm",
+      "Name": "Giovanni Monzo (Postcode: 84 100)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/714187",
+      "Status": "Authorised",
+      "Reference Number": "714187",
+      "Type of business or Individual": "Firm",
+      "Name": "Hey Habito Ltd (Postcode: EC2A 2AG)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/730427",
+      "Status": "Authorised",
+      "Reference Number": "730427",
+      "Type of business or Individual": "Firm",
+      "Name": "MONZO BANK LIMITED (Postcode: EC2A 2AG)"
+    }
+  ]
+}

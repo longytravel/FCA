@@ -1,0 +1,152 @@
+{
+  "Status": "FSR-API-04-01-00",
+  "ResultInfo": {
+    "Next": "https://register.fca.org.uk/services/V0.1/Search?q=revolut&type=firm&pgnp=2",
+    "page": "1",
+    "per_page": "20",
+    "total_count": "86"
+  },
+  "Message": "Ok. Search successful",
+  "Data": [
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/801786",
+      "Status": "Authorised",
+      "Reference Number": "801786",
+      "Type of business or Individual": "Firm",
+      "Name": "Connection Flooring Limited (Postcode: DL14 6WA)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/803738",
+      "Status": "No longer authorised",
+      "Reference Number": "803738",
+      "Type of business or Individual": "Firm",
+      "Name": "RV 17 Limited (Postcode: CF38 2BZ)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/805621",
+      "Status": "Appointed representative - introducer",
+      "Reference Number": "805621",
+      "Type of business or Individual": "Firm",
+      "Name": "Revolution Scooters Warrington Ltd (Postcode: WA1 3NU)"
+    },
+    {
+      "URL": null,
+      "Status": "Unauthorised",
+      "Reference Number": "",
+      "Type of business or Individual": "Unauthorised firm",
+      "Name": "Revolution Variable Systems (RVS) (Postcode: EC2A 1RS)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/809677",
+      "Status": "No longer registered as an Appointed Representative",
+      "Reference Number": "809677",
+      "Type of business or Individual": "Firm",
+      "Name": "Thomas's Cycle Relolution (Postcode: IP3 8ND)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/811552",
+      "Status": "No longer authorised",
+      "Reference Number": "811552",
+      "Type of business or Individual": "Firm",
+      "Name": "Booth Revolution Ltd (Postcode: HG4 1NS)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/820902",
+      "Status": "No longer authorised",
+      "Reference Number": "820902",
+      "Type of business or Individual": "Firm",
+      "Name": "Pin Feather Trading Limited (Postcode: SO51 7JF)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/832790",
+      "Status": "No longer registered as an Appointed Representative",
+      "Reference Number": "832790",
+      "Type of business or Individual": "Firm",
+      "Name": "Revolut Trading Ltd (Postcode: E14 4HD)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/833790",
+      "Status": "No longer authorised",
+      "Reference Number": "833790",
+      "Type of business or Individual": "Firm",
+      "Name": "Revolut Bank UAB"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/841555",
+      "Status": "No longer registered as an Appointed Representative",
+      "Reference Number": "841555",
+      "Type of business or Individual": "Firm",
+      "Name": "REVOLUTION FINANCE BROKERS LIMITED (Postcode: CM13 3FR)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/910580",
+      "Status": "No longer registered under Money Laundering Regulations",
+      "Reference Number": "910580",
+      "Type of business or Individual": "Firm",
+      "Name": "Revolut Travel Ltd (Postcode: E14 4HD)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/845069",
+      "Status": "No longer registered as an Appointed Representative",
+      "Reference Number": "845069",
+      "Type of business or Individual": "Firm",
+      "Name": "Direct Insurance London Market Limited (Postcode: CM12 9AH)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/846155",
+      "Status": "Authorised",
+      "Reference Number": "846155",
+      "Type of business or Individual": "Firm",
+      "Name": "Revolution Finance Brokers Limited (Postcode: IG11 0HZ)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/912687",
+      "Status": "Authorised",
+      "Reference Number": "912687",
+      "Type of business or Individual": "Firm",
+      "Name": "iRevolution Extra Limited (Postcode: SK1 1RX)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/913790",
+      "Status": "No longer registered as an Appointed Representative",
+      "Reference Number": "913790",
+      "Type of business or Individual": "Firm",
+      "Name": "Skinny Revolution Ltd (Postcode: M27 6DB)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/915957",
+      "Status": "No longer authorised",
+      "Reference Number": "915957",
+      "Type of business or Individual": "Firm",
+      "Name": "Dalex Systems Ltd (Postcode: EH25 9RE)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/916480",
+      "Status": "Authorised",
+      "Reference Number": "916480",
+      "Type of business or Individual": "Firm",
+      "Name": "Policy Link Limited (Postcode: SR5 2TZ)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/917065",
+      "Status": "Appointed representative",
+      "Reference Number": "917065",
+      "Type of business or Individual": "Firm",
+      "Name": "Revolution Wealth Management Limited (Postcode: IP12 2PQ)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/919910",
+      "Status": "No longer registered as an Appointed Representative",
+      "Reference Number": "919910",
+      "Type of business or Individual": "Firm",
+      "Name": "Keratin Specialist Club Limited (Postcode: S1 2BJ)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/921748",
+      "Status": "No longer registered as an Appointed Representative",
+      "Reference Number": "921748",
+      "Type of business or Individual": "Firm",
+      "Name": "Kitchen Revolutions Ltd (Postcode: SW20 8DR)"
+    }
+  ]
+}

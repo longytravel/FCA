@@ -1,0 +1,2766 @@
+{
+  "generated": "2026-07-21",
+  "description": "Phoenix Watch graph: FCA phoenix/fined firms + their officers + officers other appointments (CH). Ready for react-force-graph.",
+  "phoenixSeeds": [
+    "10273135",
+    "08140312",
+    "05433451"
+  ],
+  "finedSeeds": [
+    "01026167",
+    "NF002362",
+    "FC021146",
+    "BR000005",
+    "FC001835"
+  ],
+  "nodes": [
+    {
+      "id": "10273135",
+      "type": "company",
+      "name": "BLACKMORE BOND PLC",
+      "status": "liquidation",
+      "incorporated_on": "2016-07-12",
+      "dissolved_on": null,
+      "tags": [
+        "phoenix-seed"
+      ]
+    },
+    {
+      "id": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "type": "officer",
+      "name": "WEST, Kenneth Reginald",
+      "tags": []
+    },
+    {
+      "id": "05528312",
+      "type": "company",
+      "name": "ALTAIR FINANCIAL SERVICES INTERNATIONAL PLC",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "11633071",
+      "type": "company",
+      "name": "CANNA GROW BIOSCIENCES LIMITED",
+      "status": "liquidation",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "11972196",
+      "type": "company",
+      "name": "BLACKMORE INTERNATIONAL (KOREA) LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "11893101",
+      "type": "company",
+      "name": "BLACKMORE INTERNATIONAL LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "10010474",
+      "type": "company",
+      "name": "BLACKMORE GROUP LTD",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06931031",
+      "type": "company",
+      "name": "KW WEALTH GROUP LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "03109469",
+      "type": "company",
+      "name": "KW TRADING SERVICES LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06931664",
+      "type": "company",
+      "name": "KW INVESTMENT MANAGEMENT LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "01265376",
+      "type": "company",
+      "name": "KW WEALTH PLANNING LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "07147846",
+      "type": "company",
+      "name": "HERMES CAPITAL UK LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "09156493",
+      "type": "company",
+      "name": "CANNONCO PLC",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "01304989",
+      "type": "company",
+      "name": "RBAG LEGACY UK LTD",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "03662363",
+      "type": "company",
+      "name": "RBAG HOLDINGS UK LTD",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "03457951",
+      "type": "company",
+      "name": "SAVOY ASSET MANAGEMENT LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "05406945",
+      "type": "company",
+      "name": "ASHCOURT ROWAN LIMITED",
+      "status": "liquidation",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06529067",
+      "type": "company",
+      "name": "06529067 LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "03592269",
+      "type": "company",
+      "name": "COGNISCO LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "04620957",
+      "type": "company",
+      "name": "CREATE ONLINE LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "04499238",
+      "type": "company",
+      "name": "ASHCOURT HOLDINGS LIMITED",
+      "status": "liquidation",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "04196006",
+      "type": "company",
+      "name": "HUME CAPITAL INVESTMENTS LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "04195976",
+      "type": "company",
+      "name": "SOUTH RIVER ASSET MANAGEMENT LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "04467441",
+      "type": "company",
+      "name": "EPIC INVESTMENT PARTNERS (UK) LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "type": "officer",
+      "name": "NUNN, Phillip Andrew",
+      "tags": []
+    },
+    {
+      "id": "12230550",
+      "type": "company",
+      "name": "BLACKMORE BRIERCLIFFE LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "11866517",
+      "type": "company",
+      "name": "BLACKMORE CAPITAL LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "11802847",
+      "type": "company",
+      "name": "CHESHIRE GARDENING AND MAINTENANCE LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "11730422",
+      "type": "company",
+      "name": "CHURCH BARTON MANAGEMENT LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "11665548",
+      "type": "company",
+      "name": "ALSTON BANK MANAGEMENT COMPANY LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "11567402",
+      "type": "company",
+      "name": "BLACKMORE REAL ESTATE SECURITIES LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "11473024",
+      "type": "company",
+      "name": "BLACKMORE (WEYBRIDGE) LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "11343430",
+      "type": "company",
+      "name": "FORTITUDO (STAINES) LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "09848217",
+      "type": "company",
+      "name": "BLACKMORE PRIVATE CLIENT LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "09781878",
+      "type": "company",
+      "name": "BLACKMORE SPV 1 LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "09535362",
+      "type": "company",
+      "name": "BLACKMORE ESTATES LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "09231187",
+      "type": "company",
+      "name": "PENSIONS & LIFE UK LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "08428454",
+      "type": "company",
+      "name": "IT'S YOUR PENSION LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "OC377660",
+      "type": "company",
+      "name": "NUNN MCCREESH LLP",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "11694252",
+      "type": "company",
+      "name": "WEALTH CHAIN CLUB LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "11284347",
+      "type": "company",
+      "name": "BLACKMORE ASSET MANAGEMENT LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "10783267",
+      "type": "company",
+      "name": "WEALTH CHAIN LTD",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "10025191",
+      "type": "company",
+      "name": "BLACKMORE ESTATES ECO LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "KAslEfgHo5NTJZdSBFq4nzybHCI",
+      "type": "officer",
+      "name": "MCCREESH, Patrick Michael",
+      "tags": []
+    },
+    {
+      "id": "10520501",
+      "type": "company",
+      "name": "BLACKMORE LONGRIDGE LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "10211182",
+      "type": "company",
+      "name": "BLACKMORE SPV 2 LTD",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "10010393",
+      "type": "company",
+      "name": "BLACKMORE GROUP SERVICES LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "08140312",
+      "type": "company",
+      "name": "LONDON CAPITAL & FINANCE PLC",
+      "status": "administration",
+      "incorporated_on": "2012-07-12",
+      "dissolved_on": null,
+      "tags": [
+        "phoenix-seed"
+      ]
+    },
+    {
+      "id": "nbA7Huwl8yXeIxGxEgT3F1jFFfI",
+      "type": "officer",
+      "name": "SAYERS, Paul Anthony",
+      "tags": []
+    },
+    {
+      "id": "11055513",
+      "type": "company",
+      "name": "COUNTRYWIDE FINANCIAL MANAGMENT LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "07148306",
+      "type": "company",
+      "name": "GML SUSTAINABILITY LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "OC378206",
+      "type": "company",
+      "name": "CREDIT & INVESTIGATIONS SERVICES LLP",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "15269879",
+      "type": "company",
+      "name": "MAPLE LEAF GLAZING LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "13509330",
+      "type": "company",
+      "name": "CLARITY WINDOWS DOORS & CONSERVATORIES LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "02207817",
+      "type": "company",
+      "name": "SOUTHERN COUNTIES FINANCE HOUSE LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "08218244",
+      "type": "company",
+      "name": "LVO LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "08215935",
+      "type": "company",
+      "name": "LAKEVIEW COUNTRY CLUB (CORNWALL) LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "rocn8m3lZLmU9v74xIg2UmhjR-4",
+      "type": "officer",
+      "name": "SAYERS, Paul",
+      "tags": []
+    },
+    {
+      "id": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "type": "officer",
+      "name": "PEACOCK, Michael",
+      "tags": []
+    },
+    {
+      "id": "12199031",
+      "type": "company",
+      "name": "CYC MANAGEMENT LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "16462065",
+      "type": "company",
+      "name": "DSM COMMODITIES LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "16167043",
+      "type": "company",
+      "name": "GREEN COMMODITIES LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "16086947",
+      "type": "company",
+      "name": "GREEN ELECTRICITY CONSULTANCY LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "08348520",
+      "type": "company",
+      "name": "GREEN ELECTRICITY LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "08296048",
+      "type": "company",
+      "name": "QUESTRISK MANAGEMENT SERVICES LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06940811",
+      "type": "company",
+      "name": "J W MANAGEMENT CONSULTANTS LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "07487646",
+      "type": "company",
+      "name": "APEX OVERSEAS LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "07437749",
+      "type": "company",
+      "name": "QUESTRISK SERVICES LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06735348",
+      "type": "company",
+      "name": "ADFIRE SERVICES LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06693339",
+      "type": "company",
+      "name": "QUESTRISK LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06135577",
+      "type": "company",
+      "name": "ELI EXPO LOGISTICS LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "02666222",
+      "type": "company",
+      "name": "EXPO LOGISTICS INTERNATIONAL LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "09607476",
+      "type": "company",
+      "name": "WATERSIDE ESCAPES LIMITED",
+      "status": "receivership",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "08422800",
+      "type": "company",
+      "name": "CV RESORTS LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "08615500",
+      "type": "company",
+      "name": "EL CUPEY LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "05433451",
+      "type": "company",
+      "name": "BASSET & GOLD PLC",
+      "status": "dissolved",
+      "incorporated_on": "2005-04-22",
+      "dissolved_on": "2022-06-11",
+      "tags": [
+        "phoenix-seed"
+      ]
+    },
+    {
+      "id": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "type": "officer",
+      "name": "SDG REGISTRARS LIMITED",
+      "tags": []
+    },
+    {
+      "id": "NI070068",
+      "type": "company",
+      "name": "BAILOUTBOOTH LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06510443",
+      "type": "company",
+      "name": "NORMAN LEYS (GRANTHAM) LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06509907",
+      "type": "company",
+      "name": "WORLDMILL LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06509896",
+      "type": "company",
+      "name": "FLUTE INVESTMENTS LTD.",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06509916",
+      "type": "company",
+      "name": "PEASEBLOSSOM LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06509898",
+      "type": "company",
+      "name": "CHEM RESIST HOLDINGS LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06509903",
+      "type": "company",
+      "name": "QUESTFIELD LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06509893",
+      "type": "company",
+      "name": "UNIDAYS LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06509193",
+      "type": "company",
+      "name": "ICER EUROPE LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06510161",
+      "type": "company",
+      "name": "M FINN CONSULTANCY LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06509882",
+      "type": "company",
+      "name": "THE WAREHOUSE (SE1) LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06510115",
+      "type": "company",
+      "name": "SIMPSON BACON & COMPANY WELLS LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06509914",
+      "type": "company",
+      "name": "360 ONLINE LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06509816",
+      "type": "company",
+      "name": "N T S GROUP LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06510514",
+      "type": "company",
+      "name": "CUSTOMER CARE CLINIC LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06509228",
+      "type": "company",
+      "name": "ICER BRANDS SERVICES LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06508028",
+      "type": "company",
+      "name": "BESPOKE DESIGN STUDIO LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06508728",
+      "type": "company",
+      "name": "THE BIG FISH BAND LTD",
+      "status": "converted-closed",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06509050",
+      "type": "company",
+      "name": "ROCON SERVICES LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06508832",
+      "type": "company",
+      "name": "CHARTHAM HOUSE LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06509098",
+      "type": "company",
+      "name": "TEBRAX HOLDINGS LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06508059",
+      "type": "company",
+      "name": "SUN & STONE LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06507337",
+      "type": "company",
+      "name": "GRIMSDALES PAYROLL BUREAU LTD",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06507419",
+      "type": "company",
+      "name": "ROSHKAM LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06507707",
+      "type": "company",
+      "name": "NELSON TRADING (UK) LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06506176",
+      "type": "company",
+      "name": "ANDREW BUCKLER LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06507798",
+      "type": "company",
+      "name": "TURNHAM GREEN CAFE LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06504852",
+      "type": "company",
+      "name": "38 WINDSOR ROAD MANAGEMENT COMPANY LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06505110",
+      "type": "company",
+      "name": "MIRRORSAVE LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06505112",
+      "type": "company",
+      "name": "PLANNING BLOG LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06505145",
+      "type": "company",
+      "name": "SALTCOATE TRADE WINDOWS LIMITED",
+      "status": "liquidation",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06505098",
+      "type": "company",
+      "name": "PROUDWAY INVESTMENTS LIMITED",
+      "status": "liquidation",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06504306",
+      "type": "company",
+      "name": "CINEMATIC FINANCE LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06504287",
+      "type": "company",
+      "name": "CROWN MARKET LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06504219",
+      "type": "company",
+      "name": "TAYLOR CHILTERN DEVELOPMENTS LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06503140",
+      "type": "company",
+      "name": "KATE SHEPHERD ASSOCIATES LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06502892",
+      "type": "company",
+      "name": "LEVANTE RESTAURANT LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06502327",
+      "type": "company",
+      "name": "UPSTAIRS (UK) LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06502974",
+      "type": "company",
+      "name": "RUGBY CAPITAL LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06503365",
+      "type": "company",
+      "name": "YOUTHBUILD 2010 LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06502929",
+      "type": "company",
+      "name": "VERY NEARLY ALMOST LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06500752",
+      "type": "company",
+      "name": "ELLENBOROUGH PARK LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06502232",
+      "type": "company",
+      "name": "LILY FARM DEVELOPMENTS LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06500847",
+      "type": "company",
+      "name": "COMMUNITY INCENTIVE CLUB LIMITED",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06501978",
+      "type": "company",
+      "name": "MANOR WAY FINANCE LTD",
+      "status": "active",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06501293",
+      "type": "company",
+      "name": "CAFE COPIA HENLEY LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06500943",
+      "type": "company",
+      "name": "JAIDY ENTERTAINMENT LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06500781",
+      "type": "company",
+      "name": "RECYCLE CHUTES UK LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06502127",
+      "type": "company",
+      "name": "PICK N STYX UK LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "06500856",
+      "type": "company",
+      "name": "SHARPEN GLASS LIMITED",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "kjFhk3k8nZC4w_nefOp3nMAlrSU",
+      "type": "officer",
+      "name": "SORDO, Dror Israel",
+      "tags": []
+    },
+    {
+      "id": "lDl5KY5Al1na3CEfXXgNdcwMHNU",
+      "type": "officer",
+      "name": "SMITH, Daniel",
+      "tags": []
+    },
+    {
+      "id": "10418483",
+      "type": "company",
+      "name": "BASSET GOLD LTD",
+      "status": "dissolved",
+      "incorporated_on": null,
+      "dissolved_on": null,
+      "tags": [
+        "linked"
+      ]
+    },
+    {
+      "id": "01026167",
+      "type": "company",
+      "name": "BARCLAYS BANK PLC",
+      "status": "active",
+      "incorporated_on": "1971-10-04",
+      "dissolved_on": null,
+      "tags": [
+        "fined-seed"
+      ]
+    },
+    {
+      "id": "c_VL8Q1GCTzPLfLX0NkPePkq7qs",
+      "type": "officer",
+      "name": "ELLWOOD, Hannah Elisabeth, Ms.",
+      "tags": []
+    },
+    {
+      "id": "5YHPSQz57V-AgaZYEy7DE8PwvnQ",
+      "type": "officer",
+      "name": "BERRY, Robert",
+      "tags": []
+    },
+    {
+      "id": "GE0R5FokbQF1MhVHtrcI-ic36v8",
+      "type": "officer",
+      "name": "CROSS, Angela Anna",
+      "tags": []
+    },
+    {
+      "id": "o73EXqBmd8wVANFKetrH0zsKloo",
+      "type": "officer",
+      "name": "FITZPATRICK, Dawn",
+      "tags": []
+    },
+    {
+      "id": "WfRuoXgowLlyYzRO9cqoSeOarS8",
+      "type": "officer",
+      "name": "HIGGINS, Nigel Paul",
+      "tags": []
+    },
+    {
+      "id": "j5MElTgkCOqmY-NjOq9Bc_2TmYw",
+      "type": "officer",
+      "name": "MACK, Mary Tabb",
+      "tags": []
+    },
+    {
+      "id": "NF002362",
+      "type": "company",
+      "name": "NATIONAL WESTMINSTER BANK PLC",
+      "status": "converted-closed",
+      "incorporated_on": "1981-02-12",
+      "dissolved_on": "2012-04-16",
+      "tags": [
+        "fined-seed"
+      ]
+    },
+    {
+      "id": "A7UdPkA-5kW93WlFzhxz3NJVvsE",
+      "type": "officer",
+      "name": "POVEY, George John",
+      "tags": []
+    },
+    {
+      "id": "aU2DxPLdAWGr5AhdiZc-MrhN7_M",
+      "type": "officer",
+      "name": "STAPLES, Graham",
+      "tags": []
+    },
+    {
+      "id": "J18mXSM4WHz7Ms7st0guroWwJRM",
+      "type": "officer",
+      "name": "ANGUS, Michael Richardson, Sir",
+      "tags": []
+    },
+    {
+      "id": "pS0ew-wmVzcGaxELFhpPfR-gWjs",
+      "type": "officer",
+      "name": "BANHAM, John Michael Middlecott, Sir",
+      "tags": []
+    },
+    {
+      "id": "Ivc5wCDm264qF9xW0vAZMXTJvXA",
+      "type": "officer",
+      "name": "BUTLER, Richard",
+      "tags": []
+    },
+    {
+      "id": "slCCVyO1MJtwzZ7JaK2jgIinC0I",
+      "type": "officer",
+      "name": "GOELTZ, Richard Karl",
+      "tags": []
+    },
+    {
+      "id": "FC021146",
+      "type": "company",
+      "name": "UBS AG",
+      "status": "active",
+      "incorporated_on": "1998-06-12",
+      "dissolved_on": null,
+      "tags": [
+        "fined-seed"
+      ]
+    },
+    {
+      "id": "rVfORus19eWfFPch_7RJC7JQ8vA",
+      "type": "officer",
+      "name": "SCHOCH, Michael",
+      "tags": []
+    },
+    {
+      "id": "AMxQcK5-rBRnFvNjOnbFvpqoCJk",
+      "type": "officer",
+      "name": "ANDERSON, Jeremy David Bruce",
+      "tags": []
+    },
+    {
+      "id": "WThdhvBt0FaGYRPqwzA7P6_ZiKY",
+      "type": "officer",
+      "name": "CARSTENS CARSTENS, Agustin Guillermo",
+      "tags": []
+    },
+    {
+      "id": "vWPadP6BRmD4Pa4e55EEVMc48XU",
+      "type": "officer",
+      "name": "FIRMENICH, Patrick Roger",
+      "tags": []
+    },
+    {
+      "id": "OyenlkU0B9NoXqzw6eTq5kPbLWg",
+      "type": "officer",
+      "name": "HU, Fred Zuliu",
+      "tags": []
+    },
+    {
+      "id": "exZWwteBRrFa-n3rD0IDsh9q03k",
+      "type": "officer",
+      "name": "HUGHES, Mark Richard",
+      "tags": []
+    },
+    {
+      "id": "BR000005",
+      "type": "company",
+      "name": "DEUTSCHE BANK AG LONDON",
+      "status": "open",
+      "incorporated_on": "1993-01-01",
+      "dissolved_on": null,
+      "tags": [
+        "fined-seed"
+      ]
+    },
+    {
+      "id": "FC001835",
+      "type": "company",
+      "name": "CITIBANK N.A",
+      "status": "active",
+      "incorporated_on": "1920-06-04",
+      "dissolved_on": null,
+      "tags": [
+        "fined-seed"
+      ]
+    },
+    {
+      "id": "5sK3L4SzsrHURfeiaNcZoQf3aKY",
+      "type": "officer",
+      "name": "MESHEL, Adam",
+      "tags": []
+    },
+    {
+      "id": "YfJCBcpls8xfXlzie_gMlQAHWL8",
+      "type": "officer",
+      "name": "COLE, Titilope",
+      "tags": []
+    },
+    {
+      "id": "lg8Rg_oF1uDI7jvXnYXphNyMP5Q",
+      "type": "officer",
+      "name": "COSTELLO, Ellen Marie",
+      "tags": []
+    },
+    {
+      "id": "p5SnzBibe4iSOF4h9Rml8aymE1E",
+      "type": "officer",
+      "name": "DAILEY, Grace",
+      "tags": []
+    },
+    {
+      "id": "htKCtgSI2ayvxIZUD2LYGRc4sYY",
+      "type": "officer",
+      "name": "FRASER, Jane",
+      "tags": []
+    },
+    {
+      "id": "NGuugp6T4cBV6lmdx-17k0sbRKg",
+      "type": "officer",
+      "name": "GARG, Sunil",
+      "tags": []
+    }
+  ],
+  "edges": [
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "10273135",
+      "role": "director",
+      "appointed_on": "2017-11-01",
+      "resigned_on": "2019-09-01"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "05528312",
+      "role": "director",
+      "appointed_on": "2007-07-03",
+      "resigned_on": null
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "11633071",
+      "role": "director",
+      "appointed_on": "2019-06-01",
+      "resigned_on": "2021-01-12"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "11972196",
+      "role": "director",
+      "appointed_on": "2019-05-01",
+      "resigned_on": "2019-12-31"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "11893101",
+      "role": "director",
+      "appointed_on": "2019-04-30",
+      "resigned_on": "2019-12-31"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "10010474",
+      "role": "director",
+      "appointed_on": "2017-11-01",
+      "resigned_on": "2019-12-31"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "06931031",
+      "role": "director",
+      "appointed_on": "2014-04-17",
+      "resigned_on": "2019-11-22"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "03109469",
+      "role": "director",
+      "appointed_on": "2014-04-29",
+      "resigned_on": "2019-04-15"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "06931664",
+      "role": "director",
+      "appointed_on": "2014-04-17",
+      "resigned_on": "2019-04-15"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "01265376",
+      "role": "director",
+      "appointed_on": "2014-04-17",
+      "resigned_on": "2019-04-15"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "10010474",
+      "role": "director",
+      "appointed_on": "2016-11-01",
+      "resigned_on": "2016-11-01"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "07147846",
+      "role": "director",
+      "appointed_on": "2010-03-30",
+      "resigned_on": "2016-05-26"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "09156493",
+      "role": "director",
+      "appointed_on": "2014-07-31",
+      "resigned_on": "2016-03-15"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "01304989",
+      "role": "director",
+      "appointed_on": "2009-10-27",
+      "resigned_on": "2014-12-01"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "03662363",
+      "role": "director",
+      "appointed_on": "2009-07-15",
+      "resigned_on": "2014-12-01"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "03457951",
+      "role": "director",
+      "appointed_on": "2006-04-10",
+      "resigned_on": "2012-12-31"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "05406945",
+      "role": "director",
+      "appointed_on": "2005-07-19",
+      "resigned_on": "2012-12-31"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "06529067",
+      "role": "director",
+      "appointed_on": "2008-03-19",
+      "resigned_on": "2009-05-21"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "03592269",
+      "role": "director",
+      "appointed_on": "2000-09-11",
+      "resigned_on": "2009-05-21"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "04620957",
+      "role": "director",
+      "appointed_on": "2005-10-27",
+      "resigned_on": "2008-07-14"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "04499238",
+      "role": "director",
+      "appointed_on": "2005-11-07",
+      "resigned_on": "2008-03-24"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "04196006",
+      "role": "director",
+      "appointed_on": "2007-01-19",
+      "resigned_on": "2008-02-18"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "04195976",
+      "role": "director",
+      "appointed_on": "2007-01-14",
+      "resigned_on": "2008-02-18"
+    },
+    {
+      "source": "IopWaTw0DUxKWgSo1fCE84o3Pg4",
+      "target": "04467441",
+      "role": "director",
+      "appointed_on": "2007-01-19",
+      "resigned_on": "2007-09-28"
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "10273135",
+      "role": "director",
+      "appointed_on": "2016-07-12",
+      "resigned_on": "2022-03-22"
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "12230550",
+      "role": "director",
+      "appointed_on": "2019-09-27",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "11972196",
+      "role": "director",
+      "appointed_on": "2019-05-01",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "11866517",
+      "role": "director",
+      "appointed_on": "2019-03-07",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "11802847",
+      "role": "director",
+      "appointed_on": "2019-02-01",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "11730422",
+      "role": "director",
+      "appointed_on": "2018-12-17",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "11665548",
+      "role": "director",
+      "appointed_on": "2018-11-07",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "11567402",
+      "role": "director",
+      "appointed_on": "2018-09-13",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "11473024",
+      "role": "director",
+      "appointed_on": "2018-07-19",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "11343430",
+      "role": "director",
+      "appointed_on": "2018-05-03",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "09848217",
+      "role": "director",
+      "appointed_on": "2015-10-29",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "09781878",
+      "role": "director",
+      "appointed_on": "2015-09-17",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "09535362",
+      "role": "director",
+      "appointed_on": "2015-04-10",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "09231187",
+      "role": "director",
+      "appointed_on": "2014-09-23",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "08428454",
+      "role": "director",
+      "appointed_on": "2013-03-04",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "OC377660",
+      "role": "llp-designated-member",
+      "appointed_on": "2012-08-14",
+      "resigned_on": null
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "11893101",
+      "role": "director",
+      "appointed_on": "2019-03-20",
+      "resigned_on": "2022-03-22"
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "11694252",
+      "role": "director",
+      "appointed_on": "2018-11-23",
+      "resigned_on": "2022-03-22"
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "11284347",
+      "role": "director",
+      "appointed_on": "2018-03-29",
+      "resigned_on": "2022-03-22"
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "10783267",
+      "role": "director",
+      "appointed_on": "2017-05-22",
+      "resigned_on": "2022-03-22"
+    },
+    {
+      "source": "aGB_oWIKcn6R9_ER1jOMPwAhPoI",
+      "target": "10025191",
+      "role": "director",
+      "appointed_on": "2016-02-25",
+      "resigned_on": "2022-03-22"
+    },
+    {
+      "source": "KAslEfgHo5NTJZdSBFq4nzybHCI",
+      "target": "10273135",
+      "role": "director",
+      "appointed_on": "2016-07-12",
+      "resigned_on": "2022-12-12"
+    },
+    {
+      "source": "KAslEfgHo5NTJZdSBFq4nzybHCI",
+      "target": "10010474",
+      "role": "director",
+      "appointed_on": "2016-02-17",
+      "resigned_on": null
+    },
+    {
+      "source": "KAslEfgHo5NTJZdSBFq4nzybHCI",
+      "target": "09848217",
+      "role": "director",
+      "appointed_on": "2015-10-29",
+      "resigned_on": null
+    },
+    {
+      "source": "KAslEfgHo5NTJZdSBFq4nzybHCI",
+      "target": "09535362",
+      "role": "director",
+      "appointed_on": "2015-04-10",
+      "resigned_on": null
+    },
+    {
+      "source": "KAslEfgHo5NTJZdSBFq4nzybHCI",
+      "target": "09231187",
+      "role": "director",
+      "appointed_on": "2014-09-23",
+      "resigned_on": null
+    },
+    {
+      "source": "KAslEfgHo5NTJZdSBFq4nzybHCI",
+      "target": "08428454",
+      "role": "director",
+      "appointed_on": "2013-03-04",
+      "resigned_on": null
+    },
+    {
+      "source": "KAslEfgHo5NTJZdSBFq4nzybHCI",
+      "target": "OC377660",
+      "role": "llp-designated-member",
+      "appointed_on": "2012-08-14",
+      "resigned_on": null
+    },
+    {
+      "source": "KAslEfgHo5NTJZdSBFq4nzybHCI",
+      "target": "10520501",
+      "role": "director",
+      "appointed_on": "2017-09-14",
+      "resigned_on": "2022-12-12"
+    },
+    {
+      "source": "KAslEfgHo5NTJZdSBFq4nzybHCI",
+      "target": "10211182",
+      "role": "director",
+      "appointed_on": "2016-06-02",
+      "resigned_on": "2022-12-12"
+    },
+    {
+      "source": "KAslEfgHo5NTJZdSBFq4nzybHCI",
+      "target": "10025191",
+      "role": "director",
+      "appointed_on": "2016-02-25",
+      "resigned_on": "2022-12-12"
+    },
+    {
+      "source": "KAslEfgHo5NTJZdSBFq4nzybHCI",
+      "target": "10010393",
+      "role": "director",
+      "appointed_on": "2016-02-17",
+      "resigned_on": "2022-12-12"
+    },
+    {
+      "source": "KAslEfgHo5NTJZdSBFq4nzybHCI",
+      "target": "09781878",
+      "role": "director",
+      "appointed_on": "2015-09-17",
+      "resigned_on": "2022-12-12"
+    },
+    {
+      "source": "KAslEfgHo5NTJZdSBFq4nzybHCI",
+      "target": "10520501",
+      "role": "director",
+      "appointed_on": "2016-12-12",
+      "resigned_on": "2016-12-14"
+    },
+    {
+      "source": "nbA7Huwl8yXeIxGxEgT3F1jFFfI",
+      "target": "08140312",
+      "role": "director",
+      "appointed_on": "2012-07-12",
+      "resigned_on": "2013-08-15"
+    },
+    {
+      "source": "nbA7Huwl8yXeIxGxEgT3F1jFFfI",
+      "target": "11055513",
+      "role": "director",
+      "appointed_on": "2017-11-09",
+      "resigned_on": null
+    },
+    {
+      "source": "nbA7Huwl8yXeIxGxEgT3F1jFFfI",
+      "target": "07148306",
+      "role": "director",
+      "appointed_on": "2014-10-20",
+      "resigned_on": null
+    },
+    {
+      "source": "nbA7Huwl8yXeIxGxEgT3F1jFFfI",
+      "target": "OC378206",
+      "role": "llp-designated-member",
+      "appointed_on": "2012-09-06",
+      "resigned_on": null
+    },
+    {
+      "source": "nbA7Huwl8yXeIxGxEgT3F1jFFfI",
+      "target": "15269879",
+      "role": "director",
+      "appointed_on": "2023-11-08",
+      "resigned_on": "2025-10-09"
+    },
+    {
+      "source": "nbA7Huwl8yXeIxGxEgT3F1jFFfI",
+      "target": "13509330",
+      "role": "director",
+      "appointed_on": "2021-07-20",
+      "resigned_on": "2022-08-22"
+    },
+    {
+      "source": "nbA7Huwl8yXeIxGxEgT3F1jFFfI",
+      "target": "02207817",
+      "role": "director",
+      "appointed_on": null,
+      "resigned_on": "2013-09-01"
+    },
+    {
+      "source": "nbA7Huwl8yXeIxGxEgT3F1jFFfI",
+      "target": "08218244",
+      "role": "director",
+      "appointed_on": "2012-09-18",
+      "resigned_on": "2013-05-15"
+    },
+    {
+      "source": "nbA7Huwl8yXeIxGxEgT3F1jFFfI",
+      "target": "08215935",
+      "role": "director",
+      "appointed_on": "2012-09-14",
+      "resigned_on": "2013-05-15"
+    },
+    {
+      "source": "rocn8m3lZLmU9v74xIg2UmhjR-4",
+      "target": "08140312",
+      "role": "director",
+      "appointed_on": "2013-09-05",
+      "resigned_on": "2015-08-10"
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "08140312",
+      "role": "director",
+      "appointed_on": "2012-07-12",
+      "resigned_on": "2013-08-15"
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "12199031",
+      "role": "director",
+      "appointed_on": "2026-04-02",
+      "resigned_on": null
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "16462065",
+      "role": "director",
+      "appointed_on": "2025-05-20",
+      "resigned_on": null
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "16167043",
+      "role": "director",
+      "appointed_on": "2025-01-06",
+      "resigned_on": null
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "16086947",
+      "role": "director",
+      "appointed_on": "2024-11-18",
+      "resigned_on": null
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "08348520",
+      "role": "director",
+      "appointed_on": "2013-01-07",
+      "resigned_on": null
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "08296048",
+      "role": "director",
+      "appointed_on": "2012-11-16",
+      "resigned_on": null
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "06940811",
+      "role": "director",
+      "appointed_on": "2011-11-18",
+      "resigned_on": null
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "07487646",
+      "role": "director",
+      "appointed_on": "2011-01-11",
+      "resigned_on": null
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "07437749",
+      "role": "director",
+      "appointed_on": "2010-11-12",
+      "resigned_on": null
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "06735348",
+      "role": "secretary",
+      "appointed_on": "2009-04-01",
+      "resigned_on": null
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "06735348",
+      "role": "director",
+      "appointed_on": "2009-04-01",
+      "resigned_on": null
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "06693339",
+      "role": "director",
+      "appointed_on": "2008-12-01",
+      "resigned_on": null
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "06135577",
+      "role": "director",
+      "appointed_on": "2007-03-06",
+      "resigned_on": null
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "02666222",
+      "role": "director",
+      "appointed_on": "1998-08-24",
+      "resigned_on": null
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "09607476",
+      "role": "director",
+      "appointed_on": "2019-04-18",
+      "resigned_on": "2019-05-29"
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "08422800",
+      "role": "director",
+      "appointed_on": "2013-02-27",
+      "resigned_on": "2015-01-23"
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "08615500",
+      "role": "director",
+      "appointed_on": "2014-01-21",
+      "resigned_on": "2014-10-14"
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "08218244",
+      "role": "director",
+      "appointed_on": "2012-12-12",
+      "resigned_on": "2013-03-22"
+    },
+    {
+      "source": "l7MhCRe5qCDEWmQbozMCNOosjIs",
+      "target": "08215935",
+      "role": "director",
+      "appointed_on": "2012-12-12",
+      "resigned_on": "2013-03-22"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "05433451",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2005-04-22",
+      "resigned_on": "2015-08-17"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "NI070068",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-08-04",
+      "resigned_on": null
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06510443",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-02-20"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06509907",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-02-26"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06509896",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-02-26"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06509916",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-02-26"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06509898",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-04-09"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06509903",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-05-01"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06509893",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-03-17"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06509193",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-02-20"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06510161",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-02-20"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06509882",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-05-16"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06510115",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-02-20"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06509914",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-03-11"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06509816",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-02-20"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06510514",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-02-20"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06509228",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-20",
+      "resigned_on": "2008-02-20"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06508028",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-19",
+      "resigned_on": "2008-02-19"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06508728",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-19",
+      "resigned_on": "2008-02-19"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06509050",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-19",
+      "resigned_on": "2008-02-19"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06508832",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-19",
+      "resigned_on": "2008-02-19"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06509098",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-19",
+      "resigned_on": "2008-02-19"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06508059",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-19",
+      "resigned_on": "2008-02-19"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06507337",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-18",
+      "resigned_on": "2008-02-18"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06507419",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-18",
+      "resigned_on": "2008-02-18"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06507707",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-18",
+      "resigned_on": "2008-02-18"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06506176",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-18",
+      "resigned_on": "2008-02-18"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06507798",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-18",
+      "resigned_on": "2008-02-18"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06504852",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-15",
+      "resigned_on": "2008-02-15"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06505110",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-15",
+      "resigned_on": "2008-04-07"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06505112",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-15",
+      "resigned_on": "2008-02-15"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06505145",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-15",
+      "resigned_on": "2008-02-15"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06505098",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-15",
+      "resigned_on": "2008-02-26"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06504306",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-14",
+      "resigned_on": "2008-02-14"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06504287",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-14",
+      "resigned_on": "2008-02-14"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06504219",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-14",
+      "resigned_on": "2008-02-14"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06503140",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-13",
+      "resigned_on": "2008-02-13"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06502892",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-13",
+      "resigned_on": "2008-02-13"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06502327",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-13",
+      "resigned_on": "2008-02-13"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06502974",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-13",
+      "resigned_on": "2008-02-13"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06503365",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-13",
+      "resigned_on": "2008-02-13"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06502929",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-13",
+      "resigned_on": "2008-02-13"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06500752",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-12",
+      "resigned_on": "2008-02-12"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06502232",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-12",
+      "resigned_on": "2008-02-12"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06500847",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-12",
+      "resigned_on": "2008-02-12"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06501978",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-12",
+      "resigned_on": "2008-03-19"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06501293",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-12",
+      "resigned_on": "2008-09-09"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06500943",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-12",
+      "resigned_on": "2008-02-12"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06500781",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-12",
+      "resigned_on": "2008-02-12"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06502127",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-12",
+      "resigned_on": "2008-02-12"
+    },
+    {
+      "source": "gC8nSYuAaf2UAkS6Wzz2O9jKI5g",
+      "target": "06500856",
+      "role": "corporate-nominee-director",
+      "appointed_on": "2008-02-12",
+      "resigned_on": "2008-02-12"
+    },
+    {
+      "source": "kjFhk3k8nZC4w_nefOp3nMAlrSU",
+      "target": "05433451",
+      "role": "director",
+      "appointed_on": "2015-08-17",
+      "resigned_on": "2018-03-01"
+    },
+    {
+      "source": "lDl5KY5Al1na3CEfXXgNdcwMHNU",
+      "target": "05433451",
+      "role": "director",
+      "appointed_on": "2016-12-30",
+      "resigned_on": "2019-10-31"
+    },
+    {
+      "source": "lDl5KY5Al1na3CEfXXgNdcwMHNU",
+      "target": "10418483",
+      "role": "director",
+      "appointed_on": "2017-07-24",
+      "resigned_on": "2019-10-31"
+    },
+    {
+      "source": "c_VL8Q1GCTzPLfLX0NkPePkq7qs",
+      "target": "01026167",
+      "role": "secretary",
+      "appointed_on": "2023-02-15",
+      "resigned_on": null
+    },
+    {
+      "source": "5YHPSQz57V-AgaZYEy7DE8PwvnQ",
+      "target": "01026167",
+      "role": "director",
+      "appointed_on": "2022-02-08",
+      "resigned_on": null
+    },
+    {
+      "source": "GE0R5FokbQF1MhVHtrcI-ic36v8",
+      "target": "01026167",
+      "role": "director",
+      "appointed_on": "2022-04-23",
+      "resigned_on": null
+    },
+    {
+      "source": "o73EXqBmd8wVANFKetrH0zsKloo",
+      "target": "01026167",
+      "role": "director",
+      "appointed_on": "2019-09-25",
+      "resigned_on": null
+    },
+    {
+      "source": "WfRuoXgowLlyYzRO9cqoSeOarS8",
+      "target": "01026167",
+      "role": "director",
+      "appointed_on": "2019-03-01",
+      "resigned_on": null
+    },
+    {
+      "source": "j5MElTgkCOqmY-NjOq9Bc_2TmYw",
+      "target": "01026167",
+      "role": "director",
+      "appointed_on": "2025-06-01",
+      "resigned_on": null
+    },
+    {
+      "source": "A7UdPkA-5kW93WlFzhxz3NJVvsE",
+      "target": "NF002362",
+      "role": "secretary",
+      "appointed_on": "1981-02-12",
+      "resigned_on": null
+    },
+    {
+      "source": "aU2DxPLdAWGr5AhdiZc-MrhN7_M",
+      "target": "NF002362",
+      "role": "secretary",
+      "appointed_on": "1981-02-12",
+      "resigned_on": null
+    },
+    {
+      "source": "J18mXSM4WHz7Ms7st0guroWwJRM",
+      "target": "NF002362",
+      "role": "director",
+      "appointed_on": "1981-02-12",
+      "resigned_on": null
+    },
+    {
+      "source": "pS0ew-wmVzcGaxELFhpPfR-gWjs",
+      "target": "NF002362",
+      "role": "director",
+      "appointed_on": "1981-02-12",
+      "resigned_on": null
+    },
+    {
+      "source": "Ivc5wCDm264qF9xW0vAZMXTJvXA",
+      "target": "NF002362",
+      "role": "director",
+      "appointed_on": "1981-02-12",
+      "resigned_on": null
+    },
+    {
+      "source": "slCCVyO1MJtwzZ7JaK2jgIinC0I",
+      "target": "NF002362",
+      "role": "director",
+      "appointed_on": "1981-02-12",
+      "resigned_on": null
+    },
+    {
+      "source": "rVfORus19eWfFPch_7RJC7JQ8vA",
+      "target": "FC021146",
+      "role": "secretary",
+      "appointed_on": "2025-07-01",
+      "resigned_on": null
+    },
+    {
+      "source": "AMxQcK5-rBRnFvNjOnbFvpqoCJk",
+      "target": "FC021146",
+      "role": "director",
+      "appointed_on": "2018-04-26",
+      "resigned_on": null
+    },
+    {
+      "source": "WThdhvBt0FaGYRPqwzA7P6_ZiKY",
+      "target": "FC021146",
+      "role": "director",
+      "appointed_on": "2026-04-14",
+      "resigned_on": null
+    },
+    {
+      "source": "vWPadP6BRmD4Pa4e55EEVMc48XU",
+      "target": "FC021146",
+      "role": "director",
+      "appointed_on": "2021-04-07",
+      "resigned_on": null
+    },
+    {
+      "source": "OyenlkU0B9NoXqzw6eTq5kPbLWg",
+      "target": "FC021146",
+      "role": "director",
+      "appointed_on": "2018-04-26",
+      "resigned_on": null
+    },
+    {
+      "source": "exZWwteBRrFa-n3rD0IDsh9q03k",
+      "target": "FC021146",
+      "role": "director",
+      "appointed_on": "2020-04-29",
+      "resigned_on": null
+    },
+    {
+      "source": "5sK3L4SzsrHURfeiaNcZoQf3aKY",
+      "target": "FC001835",
+      "role": "secretary",
+      "appointed_on": "2022-06-15",
+      "resigned_on": null
+    },
+    {
+      "source": "YfJCBcpls8xfXlzie_gMlQAHWL8",
+      "target": "FC001835",
+      "role": "director",
+      "appointed_on": "2025-02-03",
+      "resigned_on": null
+    },
+    {
+      "source": "lg8Rg_oF1uDI7jvXnYXphNyMP5Q",
+      "target": "FC001835",
+      "role": "director",
+      "appointed_on": "2024-04-30",
+      "resigned_on": null
+    },
+    {
+      "source": "p5SnzBibe4iSOF4h9Rml8aymE1E",
+      "target": "FC001835",
+      "role": "director",
+      "appointed_on": "2020-10-20",
+      "resigned_on": null
+    },
+    {
+      "source": "htKCtgSI2ayvxIZUD2LYGRc4sYY",
+      "target": "FC001835",
+      "role": "director",
+      "appointed_on": "2020-10-22",
+      "resigned_on": null
+    },
+    {
+      "source": "NGuugp6T4cBV6lmdx-17k0sbRKg",
+      "target": "FC001835",
+      "role": "director",
+      "appointed_on": "2021-02-26",
+      "resigned_on": null
+    }
+  ]
+}

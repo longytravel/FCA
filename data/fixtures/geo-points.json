@@ -1,0 +1,200 @@
+[
+  {
+    "name": "Barclays Bank Plc",
+    "companyNumber": "01026167",
+    "lat": 51.504924,
+    "lon": -0.014381,
+    "region": "London",
+    "amount": 284432000,
+    "source": "fine"
+  },
+  {
+    "name": "Deutsche Bank AG",
+    "companyNumber": "BR000005",
+    "lat": 51.51837,
+    "lon": -0.089168,
+    "region": "London",
+    "amount": 226800000,
+    "source": "fine"
+  },
+  {
+    "name": "The Royal Bank of Scotland Plc",
+    "companyNumber": "01691920",
+    "lat": 51.519375,
+    "lon": -0.078589,
+    "region": "London",
+    "amount": 217000000,
+    "source": "fine"
+  },
+  {
+    "name": "HSBC Bank Plc",
+    "companyNumber": "00014259",
+    "lat": 51.505532,
+    "lon": -0.017395,
+    "region": "London",
+    "amount": 216363000,
+    "source": "fine"
+  },
+  {
+    "name": "Credit Suisse International, Credit Suisse Securities (Europe) Ltd, and Credit Suisse AG",
+    "companyNumber": "00891554",
+    "lat": 51.518838,
+    "lon": -0.083137,
+    "region": "London",
+    "amount": 147190200,
+    "source": "fine"
+  },
+  {
+    "name": "JP Morgan Chase Bank NA",
+    "companyNumber": "04072779",
+    "lat": 51.514899,
+    "lon": -0.102515,
+    "region": "London",
+    "amount": 137610000,
+    "source": "fine"
+  },
+  {
+    "name": "The Bank of New York Mellon London Branch & The Bank of New York Mellon International Limited",
+    "companyNumber": "03236121",
+    "lat": 51.512291,
+    "lon": -0.102494,
+    "region": "London",
+    "amount": 126000000,
+    "source": "fine"
+  },
+  {
+    "name": "Lloyds Bank plc, Bank of Scotland plc and Black Horse Limited (together Lloyds Banking Group \"LBG\")",
+    "companyNumber": "SC095000",
+    "lat": 55.950328,
+    "lon": -3.193018,
+    "region": "Scotland",
+    "amount": 117430600,
+    "source": "fine"
+  },
+  {
+    "name": "Santander UK Plc",
+    "companyNumber": "02294747",
+    "lat": 51.524889,
+    "lon": -0.140057,
+    "region": "London",
+    "amount": 107793300,
+    "source": "fine"
+  },
+  {
+    "name": "Lloyds Bank plc and Bank of Scotland plc",
+    "companyNumber": "SC327000",
+    "lat": 55.950328,
+    "lon": -3.193018,
+    "region": "Scotland",
+    "amount": 105000000,
+    "source": "fine"
+  },
+  {
+    "name": "Standard Chartered Bank",
+    "companyNumber": "ZC000018",
+    "lat": 51.516787,
+    "lon": -0.090834,
+    "region": "London",
+    "amount": 102163200,
+    "source": "fine"
+  },
+  {
+    "name": "Lloyds Bank General Insurance Limited, St Andrew’s Insurance Plc, Lloyds Bank Insurance Services Limited and Halifax General Insurance Services Limited",
+    "companyNumber": "00204373",
+    "lat": 51.516262,
+    "lon": -0.095569,
+    "region": "London",
+    "amount": 90688400,
+    "source": "fine"
+  },
+  {
+    "name": "Stewart Owen Ford",
+    "companyNumber": "04511870",
+    "lat": 51.813801,
+    "lon": -0.291978,
+    "region": "East of England",
+    "amount": 76000000,
+    "source": "fine"
+  },
+  {
+    "name": "Goldman Sachs International",
+    "companyNumber": "02263951",
+    "lat": 51.516378,
+    "lon": -0.106086,
+    "region": "London",
+    "amount": 48308400,
+    "source": "fine"
+  },
+  {
+    "name": "Bank of Scotland plc",
+    "companyNumber": "SC327000",
+    "lat": 55.950328,
+    "lon": -3.193018,
+    "region": "Scotland",
+    "amount": 45500000,
+    "source": "fine"
+  },
+  {
+    "name": "Nationwide Building Society",
+    "companyNumber": "12859680",
+    "lat": 51.344566,
+    "lon": -0.784592,
+    "region": "South East",
+    "amount": 44078500,
+    "source": "fine"
+  },
+  {
+    "name": "Royal Bank of Scotland Plc, National Westminster Bank Plc and Ulster Bank Ltd",
+    "companyNumber": "01691920",
+    "lat": 51.519375,
+    "lon": -0.078589,
+    "region": "London",
+    "amount": 42000000,
+    "source": "fine"
+  },
+  {
+    "name": "Commerzbank AG",
+    "companyNumber": "00551334",
+    "lat": 51.515104,
+    "lon": -0.092951,
+    "region": "London",
+    "amount": 37805400,
+    "source": "fine"
+  },
+  {
+    "name": "Blackmore Bond PLC",
+    "companyNumber": "10273135",
+    "lat": 51.504963,
+    "lon": -0.087625,
+    "region": "London",
+    "amount": 0,
+    "source": "phoenix-demo"
+  },
+  {
+    "name": "London Capital & Finance",
+    "companyNumber": "08140312",
+    "lat": 51.515954,
+    "lon": -0.094933,
+    "region": "London",
+    "amount": 0,
+    "source": "phoenix-demo"
+  },
+  {
+    "name": "Basset & Gold",
+    "companyNumber": "05433451",
+    "lat": 51.517937,
+    "lon": -0.110749,
+    "region": "London",
+    "amount": 0,
+    "source": "phoenix-demo"
+  },
+  {
+    "name": "CFX Stock Trading (new)",
+    "companyNumber": "11101313",
+    "lat": 52.48611,
+    "lon": -1.909651,
+    "region": "West Midlands",
+    "amount": 0,
+    "source": "warning-list"
+  }
+]

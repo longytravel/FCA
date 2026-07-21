@@ -5,6 +5,12 @@
 > no-key (react-leaflet + OSM). **Note:** `data/fines.json` (300 firms) has NO postcode/FRN — geocode via
 > the CH registered-office path (same as plan 08), which is proven. Wow layer already lands AI briefing +
 > interactive map; **chatbot added as the third**.
+>
+> **PRE-BAKED FIXTURE (2026-07-21, data-prep): `data/fixtures/geo-points.json`** — 22 fined firms geocoded
+> (postcodes.io) with `{name, companyNumber, lat, lon, region, amount, source}` across London, South East,
+> East of England, West Midlands, Scotland. This is the geocoded harm layer — **load it directly; the live
+> CH→postcodes geocode below is now "if time permits" only.** Join ONS/IMD deprivation on `region` at
+> build time (deprivation data is a separate static CSV, not in this fixture).
 
 ## Pitch
 An interactive live map of the UK where every FCA-flagged scam firm and every enforcement fine is
@@ -31,9 +37,10 @@ Reddit and Google Trends were tested and REJECTED (Reddit JSON 403 from datacent
 
 ## 2-hour build plan (Next.js on Vercel + Claude API)
 1. **0:00–0:20 Scaffold.** `create-next-app` (App Router, TS, Tailwind). Deploy empty. Env: `COMPANIES_HOUSE_API_KEY`, `ANTHROPIC_API_KEY`.
-2. **0:20–0:50 Data pipeline (build-time script).** Fined firms → CH registered-office postcode → bulk
-   postcodes.io → lat/lon + admin_district + region. Join IMD decile by LSOA. Cache to `public/geo.json`
-   so the demo never hits a cold API on stage.
+2. **0:20–0:50 Data pipeline (DONE — use fixture).** Copy `data/fixtures/geo-points.json` → `public/geo.json`
+   (22 fined firms already geocoded to lat/lon + region). Join IMD/deprivation decile by `region` at build
+   time. *If time permits:* re-run the live pipeline (fined firms → CH registered-office postcode → bulk
+   postcodes.io) to add more firms and finer LSOA/admin_district granularity.
 3. **0:50–1:20 Map UI.** `react-leaflet` (OSM tiles, no key) + a UK region GeoJSON (static, <500KB).
    Colour each region by harm count; markers per fine; toggle overlay = deprivation decile.
 4. **1:20–1:45 AI layer.** `/api/briefing` → Claude (`claude-fable-5`) with the region's firm list +
@@ -43,7 +50,7 @@ Reddit and Google Trends were tested and REJECTED (Reddit JSON 403 from datacent
 
 ## Risks / fallbacks
 - **Claude/chatbot fails live** → pre-warm + cache briefings for the 3 demo regions in `geo.json`; the panel renders from cache, chat degrades to those static briefs.
-- **postcodes.io rate limit / down** → pre-cached `public/geo.json` built before demo. Primary safety net.
+- **postcodes.io rate limit / down** → pre-baked `data/fixtures/geo-points.json` (built 2026-07-21) → `public/geo.json`. Primary safety net; no live geocode on stage.
 - **fines.json has no postcode/FRN** → geocode strictly via the CH path above (proven); Register API only for the handful with known FRN.
 - **Warning List addresses sparse** → many scam entries lack a UK postcode; show a "location unknown" bucket honestly; lean on fined firms for the map layer.
 - **GeoJSON too heavy** → simplify to 9 English regions + nations, not LAD; ship <500KB.

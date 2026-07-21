@@ -1,0 +1,44 @@
+{
+  "Status": "FSR-API-02-01-00",
+  "ResultInfo": {
+    "page": "1",
+    "per_page": "1",
+    "total_count": "1"
+  },
+  "Message": "Ok. Firm Found",
+  "Data": [
+    {
+      "Name": "https://register.fca.org.uk/services/V0.1/Firm/900562/Names",
+      "Individuals": "https://register.fca.org.uk/services/V0.1/Firm/900562/Individuals",
+      "Requirements": "https://register.fca.org.uk/services/V0.1/Firm/900562/Requirements",
+      "Permission": "https://register.fca.org.uk/services/V0.1/Firm/900562/Permissions",
+      "Passport": "https://register.fca.org.uk/services/V0.1/Firm/900562/Passports",
+      "Regulators": "https://register.fca.org.uk/services/V0.1/Firm/900562/Regulators",
+      "Appointed Representative": "https://register.fca.org.uk/services/V0.1/Firm/900562/AR",
+      "Address": "https://register.fca.org.uk/services/V0.1/Firm/900562/Address",
+      "Waivers": "https://register.fca.org.uk/services/V0.1/Firm/900562/Waivers",
+      "Exclusions": "https://register.fca.org.uk/services/V0.1/Firm/900562/Exclusions",
+      "DisciplinaryHistory": "https://register.fca.org.uk/services/V0.1/Firm/900562/DisciplinaryHistory",
+      "System Timestamp": "21/07/2026 07:20",
+      "Exceptional Info Details": [],
+      "Status Effective Date": "11/05/2018",
+      "E-Money Agent Status": "",
+      "PSD / EMD Effective Date": "11/05/2018",
+      "Client Money Permission": "",
+      "Sub Status Effective from": "",
+      "Sub-Status": "",
+      "Mutual Society Number": "",
+      "Companies House Number": "08804411",
+      "MLRs Status Effective Date": "26/09/2022",
+      "MLRs Status": "MLRs Registered",
+      "E-Money Agent Effective Date": "",
+      "PSD Agent Effective date": "",
+      "PSD Agent Status": "",
+      "PSD / EMD Status": "Authorised Electronic Money Institution",
+      "Status": "Registered",
+      "Business Type": "EMD",
+      "Organisation Name": "Revolut Ltd",
+      "FRN": "900562"
+    }
+  ]
+}

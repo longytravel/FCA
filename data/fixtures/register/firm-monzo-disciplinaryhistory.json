@@ -1,0 +1,17 @@
+{
+  "Status": "FSR-API-02-11-00",
+  "ResultInfo": {
+    "page": "1",
+    "per_page": "10",
+    "total_count": "1"
+  },
+  "Message": "Ok. Disciplinary history information found",
+  "Data": [
+    {
+      "TypeofDescription": "A final notice has been issued in relation to Monzo because it breached Principle 3 in failing to take reasonable care to organise and control its systems and controls for managing the risk of financial crime (in particular in connection with customer onboarding) responsibly and effectively during the Pre VREQ Period. Monzo also contravened relevant requirements imposed upon it (under section 55L(5)(a) of the Act) during the Relevant VREQ Period. https://www.fca.org.uk/publication/final-notices/monzo-bank-limited.pdf",
+      "TypeofAction": "Fines",
+      "EnforcementType": "FSMA",
+      "ActionEffectiveFrom": "07/07/2025"
+    }
+  ]
+}

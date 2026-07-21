@@ -1,0 +1,152 @@
+{
+  "Status": "FSR-API-04-01-00",
+  "ResultInfo": {
+    "Next": "https://register.fca.org.uk/services/V0.1/Search?q=barclays&type=firm&pgnp=2",
+    "page": "1",
+    "per_page": "20",
+    "total_count": "103"
+  },
+  "Message": "Ok. Search successful",
+  "Data": [
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/951709",
+      "Status": "Registered",
+      "Reference Number": "951709",
+      "Type of business or Individual": "Firm",
+      "Name": "PEAC Business Finance Limited (Postcode: RG12 1YQ)"
+    },
+    {
+      "URL": null,
+      "Status": "Unauthorised",
+      "Reference Number": "",
+      "Type of business or Individual": "Unauthorised firm",
+      "Name": "Barclays Capital (clone of FCA authorised firm) (Postcode: N/A)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/967130",
+      "Status": "Authorised",
+      "Reference Number": "967130",
+      "Type of business or Individual": "Firm",
+      "Name": "Dignity Funerals Limited (Postcode: B73 6AP)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/967452",
+      "Status": "No longer registered as an Appointed Representative",
+      "Reference Number": "967452",
+      "Type of business or Individual": "Firm",
+      "Name": "Barclays Bathrooms Ltd (Postcode: EH22 1DS)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/977974",
+      "Status": "No longer authorised",
+      "Reference Number": "977974",
+      "Type of business or Individual": "Firm",
+      "Name": "Barclays OCIO Services Limited (Postcode: E14 5HP)"
+    },
+    {
+      "URL": null,
+      "Status": "Unauthorised",
+      "Reference Number": "",
+      "Type of business or Individual": "Unauthorised firm",
+      "Name": "Barclays Wealth Management / Barclays Wealth / www.wealth-management-services.com (Clone of FCA Authorised firms) (Postcode: N/A)"
+    },
+    {
+      "URL": null,
+      "Status": "Unauthorised",
+      "Reference Number": "",
+      "Type of business or Individual": "Unauthorised firm",
+      "Name": "eu-barclays.com / international-barclays.com / intl-barclays.com (Clone of FCA Authorised firm) (Postcode: N/A)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/1038392",
+      "Status": "No longer registered as an Appointed Representative",
+      "Reference Number": "1038392",
+      "Type of business or Individual": "Firm",
+      "Name": "ASHBURY LLOYD GROUP LTD (Postcode: GU15 3HL)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/485855",
+      "Status": "No longer authorised",
+      "Reference Number": "485855",
+      "Type of business or Individual": "Firm",
+      "Name": "Barclays Courtage"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/485856",
+      "Status": "No longer authorised",
+      "Reference Number": "485856",
+      "Type of business or Individual": "Firm",
+      "Name": "Barclays Patrimoine"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/482551",
+      "Status": "No longer authorised",
+      "Reference Number": "482551",
+      "Type of business or Individual": "Firm",
+      "Name": "Barclays Capital (Postcode: E14 4BB)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/113942",
+      "Status": "Authorised",
+      "Reference Number": "113942",
+      "Type of business or Individual": "Firm",
+      "Name": "Gain Capital UK Limited (Postcode: EC2Y 5ET)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/122702",
+      "Status": "Authorised",
+      "Reference Number": "122702",
+      "Type of business or Individual": "Firm",
+      "Name": "Barclays Bank Plc (Postcode: E14 5HP)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/124247",
+      "Status": "No longer authorised",
+      "Reference Number": "124247",
+      "Type of business or Individual": "Firm",
+      "Name": "Barclays Stockbrokers Limited (Postcode: G2 4LH)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/124366",
+      "Status": "Authorised",
+      "Reference Number": "124366",
+      "Type of business or Individual": "Firm",
+      "Name": "Equistone Partners Europe Limited (Postcode: EC4M 7AW)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/124368",
+      "Status": "No longer authorised",
+      "Reference Number": "124368",
+      "Type of business or Individual": "Firm",
+      "Name": "Barclays Private Bank Limited (Postcode: E14 5HP)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/124431",
+      "Status": "Authorised",
+      "Reference Number": "124431",
+      "Type of business or Individual": "Firm",
+      "Name": "Barclays Capital Securities Limited (Postcode: E14 5HP)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/119184",
+      "Status": "Authorised",
+      "Reference Number": "119184",
+      "Type of business or Individual": "Firm",
+      "Name": "Zedra Trust Company (UK) Limited (Postcode: WA16 8GS)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/119186",
+      "Status": "Authorised",
+      "Reference Number": "119186",
+      "Type of business or Individual": "Firm",
+      "Name": "BlackRock Advisors (UK) Limited (Postcode: EC2N 2DL)"
+    },
+    {
+      "URL": "https://register.fca.org.uk/services/V0.1/Firm/148467",
+      "Status": "No longer authorised",
+      "Reference Number": "148467",
+      "Type of business or Individual": "Firm",
+      "Name": "Cater Allen International Limited (Postcode: NW1 3AN)"
+    }
+  ]
+}

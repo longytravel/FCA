@@ -39,9 +39,12 @@ client-side, no per-type feed needed.
 ## 2-hour build plan (Next.js on Vercel + Claude API)
 **T+0:00 — Scaffold (15m)** — `create-next-app` (App Router, TS, Tailwind). Env: `ANTHROPIC_API_KEY`.
 
-**T+0:15 — Ingest route (20m)** — `app/api/pulse/route.ts`: fetch RSS, parse `<item>` (title, link,
-description, pubDate, category) with `fast-xml-parser`. Normalise → `{title,url,date,type,text}[]`.
-Cache to a JSON file so the heatmap has ≥20 items.
+**T+0:15 — Ingest route (20m) — SNAPSHOT PRE-BAKED.** `data/fixtures/pulse-items.json` already holds
+**59 normalised items** (20 from the master RSS + 39 deduped from the publications search listing), fields
+`{title, link, category[], pubDate, description, source}`, **17 categories** (News stories, Press Releases,
+Statements, Blogs, Speeches, Data, Final/Decision notices, Consultation papers, Correspondence, etc.).
+Static-import it so the feed + heatmap load instantly. `app/api/pulse/route.ts` (fetch RSS via
+`fast-xml-parser`, same normalise shape) becomes the optional **live-refresh** button, not a build blocker.
 
 **T+0:35 — Claude enrichment (25m)** — model `claude-fable-5` (or `claude-haiku-4-5` for batch speed).
 One batched call: per item return `{summary (1 sentence), themes[] from fixed taxonomy}`. Taxonomy =
@@ -61,9 +64,10 @@ cards with type badge + source link; (3) hero "This quarter" narrative; (4) chat
 ## Risks / fallbacks
 - **Chatbot/API fails live** → ship 3 pre-computed Q&A answers keyed to buttons ("Crypto?", "Consumer Duty?",
   "This quarter?"); the "chat" degrades to instant canned insight cards. Demo never dead-airs.
-- **RSS shape changes / blocked** → committed `data/items.json` snapshot as fallback; demo works offline.
+- **RSS shape changes / blocked** → **READY:** committed `data/fixtures/pulse-items.json` (59 items) is the
+  offline snapshot; demo works with zero network.
 - **Claude latency on batch** → pre-compute enrichment at build time (static JSON); live refresh becomes a "nice to have" button.
-- **Thin history (20 items)** → seed cache earlier by paging publications; or scope heatmap to "last 6 weeks" so 20 items looks dense.
+- **Thin history (20 items)** → **SOLVED:** publications listing already paged into the snapshot → 59 items for a dense heatmap.
 - **PDF-only content** (Dear CEO letters) → use listing title + date; skip PDF parsing (out of scope for 2h).
 
 ## Demo script (5 min)

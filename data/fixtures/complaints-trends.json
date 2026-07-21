@@ -1,0 +1,4296 @@
+{
+  "meta": {
+    "source": "aggregate-complaints-2025-h2.xlsx",
+    "sheetsUsed": [
+      "Product Group",
+      "Firm Type",
+      "Product Specific"
+    ],
+    "semesters": [
+      "2021 H1",
+      "2021 H2",
+      "2022 H1",
+      "2022 H2",
+      "2023 H1",
+      "2023 H2",
+      "2024 H1",
+      "2024 H2",
+      "2025 H1",
+      "2025 H2"
+    ],
+    "note": "Long-format time series pivoted per dimension x semester. Keys are the source Variable type - Variable labels.",
+    "generated": "2026-07-21T07:21:44.014Z"
+  },
+  "byProductGroup": {
+    "Banking and credit cards": [
+      {
+        "semester": "2021 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 359099,
+        "Complaints closed - Complaints closed > 8 weeks": 51832,
+        "Complaints closed - Complaints closed within 3 days": 503364,
+        "Complaints opened - Total": 902299,
+        "Complaints upheld - Total complaints upheld": 501400,
+        "Provision - Provision (at reporting period end date)": 345157047,
+        "Redress paid - Total redress paid for complaints not upheld": 11831332,
+        "Redress paid - Total redress paid for upheld complaints": 115098873
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 390388,
+        "Complaints closed - Complaints closed > 8 weeks": 30476,
+        "Complaints closed - Complaints closed within 3 days": 465947,
+        "Complaints opened - Total": 878796,
+        "Complaints upheld - Total complaints upheld": 489480,
+        "Provision - Provision (at reporting period end date)": 351014835,
+        "Redress paid - Total redress paid for complaints not upheld": 14378511,
+        "Redress paid - Total redress paid for upheld complaints": 93508349
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 362155,
+        "Complaints closed - Complaints closed > 8 weeks": 24466,
+        "Complaints closed - Complaints closed within 3 days": 476322,
+        "Complaints opened - Total": 870995,
+        "Complaints upheld - Total complaints upheld": 493845,
+        "Provision - Provision (at reporting period end date)": 359962605,
+        "Redress paid - Total redress paid for complaints not upheld": 19662527,
+        "Redress paid - Total redress paid for upheld complaints": 97025525
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 368610,
+        "Complaints closed - Complaints closed > 8 weeks": 30266,
+        "Complaints closed - Complaints closed within 3 days": 424830,
+        "Complaints opened - Total": 824501,
+        "Complaints upheld - Total complaints upheld": 483227,
+        "Provision - Provision (at reporting period end date)": 362289185,
+        "Redress paid - Total redress paid for complaints not upheld": 16445884,
+        "Redress paid - Total redress paid for upheld complaints": 88389982
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 367109,
+        "Complaints closed - Complaints closed > 8 weeks": 41339,
+        "Complaints closed - Complaints closed within 3 days": 443842,
+        "Complaints opened - Total": 847498,
+        "Complaints upheld - Total complaints upheld": 504569,
+        "Provision - Provision (at reporting period end date)": 372283052,
+        "Redress paid - Total redress paid for complaints not upheld": 13677706,
+        "Redress paid - Total redress paid for upheld complaints": 96424604
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 417983,
+        "Complaints closed - Complaints closed > 8 weeks": 35426,
+        "Complaints closed - Complaints closed within 3 days": 472763,
+        "Complaints opened - Total": 941685,
+        "Complaints upheld - Total complaints upheld": 513445,
+        "Provision - Provision (at reporting period end date)": 410446187,
+        "Redress paid - Total redress paid for complaints not upheld": 16236915,
+        "Redress paid - Total redress paid for upheld complaints": 89136543
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 408136,
+        "Complaints closed - Complaints closed > 8 weeks": 50302,
+        "Complaints closed - Complaints closed within 3 days": 403381,
+        "Complaints opened - Total": 851027,
+        "Complaints upheld - Total complaints upheld": 477001,
+        "Provision - Provision (at reporting period end date)": 382732452,
+        "Redress paid - Total redress paid for complaints not upheld": 16114778,
+        "Redress paid - Total redress paid for upheld complaints": 90212596
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 400083,
+        "Complaints closed - Complaints closed > 8 weeks": 32611,
+        "Complaints closed - Complaints closed within 3 days": 408317,
+        "Complaints opened - Total": 839577,
+        "Complaints upheld - Total complaints upheld": 461575,
+        "Provision - Provision (at reporting period end date)": 391683898,
+        "Redress paid - Total redress paid for complaints not upheld": 15784117,
+        "Redress paid - Total redress paid for upheld complaints": 91728862
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 396674,
+        "Complaints closed - Complaints closed > 8 weeks": 46923,
+        "Complaints closed - Complaints closed within 3 days": 447050,
+        "Complaints opened - Total": 899910,
+        "Complaints upheld - Total complaints upheld": 517891,
+        "Provision - Provision (at reporting period end date)": 397017407,
+        "Redress paid - Total redress paid for complaints not upheld": 16771612,
+        "Redress paid - Total redress paid for upheld complaints": 101920590
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 386726,
+        "Complaints closed - Complaints closed > 8 weeks": 51477,
+        "Complaints closed - Complaints closed within 3 days": 402499,
+        "Complaints opened - Total": 857757,
+        "Complaints upheld - Total complaints upheld": 456578,
+        "Provision - Provision (at reporting period end date)": 418553878,
+        "Redress paid - Total redress paid for complaints not upheld": 18656834,
+        "Redress paid - Total redress paid for upheld complaints": 98011102
+      }
+    ],
+    "Decumulation & pensions": [
+      {
+        "semester": "2021 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 40938,
+        "Complaints closed - Complaints closed > 8 weeks": 11040,
+        "Complaints closed - Complaints closed within 3 days": 17934,
+        "Complaints opened - Total": 74474,
+        "Complaints upheld - Total complaints upheld": 46715,
+        "Provision - Intermediation (within the reporting period)": 392673,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 162611,
+        "Provision - Provision (at reporting period end date)": 47784620,
+        "Redress paid - Total redress paid for complaints not upheld": 2219517,
+        "Redress paid - Total redress paid for upheld complaints": 32185962
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 37174,
+        "Complaints closed - Complaints closed > 8 weeks": 10505,
+        "Complaints closed - Complaints closed within 3 days": 14999,
+        "Complaints opened - Total": 62464,
+        "Complaints upheld - Total complaints upheld": 43674,
+        "Provision - Intermediation (within the reporting period)": 4495847,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 140566,
+        "Provision - Provision (at reporting period end date)": 50235938,
+        "Redress paid - Total redress paid for complaints not upheld": 3237071,
+        "Redress paid - Total redress paid for upheld complaints": 33828988
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 39830,
+        "Complaints closed - Complaints closed > 8 weeks": 7172,
+        "Complaints closed - Complaints closed within 3 days": 17921,
+        "Complaints opened - Total": 70201,
+        "Complaints upheld - Total complaints upheld": 42559,
+        "Provision - Intermediation (within the reporting period)": 333638,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 144082,
+        "Provision - Provision (at reporting period end date)": 51245889,
+        "Redress paid - Total redress paid for complaints not upheld": 3008898,
+        "Redress paid - Total redress paid for upheld complaints": 28969329
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 43047,
+        "Complaints closed - Complaints closed > 8 weeks": 10221,
+        "Complaints closed - Complaints closed within 3 days": 19141,
+        "Complaints opened - Total": 73069,
+        "Complaints upheld - Total complaints upheld": 46163,
+        "Provision - Intermediation (within the reporting period)": 1215739,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 122046,
+        "Provision - Provision (at reporting period end date)": 52064017,
+        "Redress paid - Total redress paid for complaints not upheld": 3129500,
+        "Redress paid - Total redress paid for upheld complaints": 25760738
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 46416,
+        "Complaints closed - Complaints closed > 8 weeks": 17797,
+        "Complaints closed - Complaints closed within 3 days": 19127,
+        "Complaints opened - Total": 88101,
+        "Complaints upheld - Total complaints upheld": 54239,
+        "Provision - Intermediation (within the reporting period)": 566283,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 127159,
+        "Provision - Provision (at reporting period end date)": 51091320,
+        "Redress paid - Total redress paid for complaints not upheld": 2818672,
+        "Redress paid - Total redress paid for upheld complaints": 25159153
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 48327,
+        "Complaints closed - Complaints closed > 8 weeks": 16362,
+        "Complaints closed - Complaints closed within 3 days": 20624,
+        "Complaints opened - Total": 86908,
+        "Complaints upheld - Total complaints upheld": 56256,
+        "Provision - Intermediation (within the reporting period)": 535198,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 103859,
+        "Provision - Provision (at reporting period end date)": 56409534,
+        "Redress paid - Total redress paid for complaints not upheld": 5037548,
+        "Redress paid - Total redress paid for upheld complaints": 31687105
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 49877,
+        "Complaints closed - Complaints closed > 8 weeks": 15686,
+        "Complaints closed - Complaints closed within 3 days": 21582,
+        "Complaints opened - Total": 93044,
+        "Complaints upheld - Total complaints upheld": 57291,
+        "Provision - Intermediation (within the reporting period)": 299319,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 146753,
+        "Provision - Provision (at reporting period end date)": 51363986,
+        "Redress paid - Total redress paid for complaints not upheld": 3786610,
+        "Redress paid - Total redress paid for upheld complaints": 36578661
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 54984,
+        "Complaints closed - Complaints closed > 8 weeks": 18036,
+        "Complaints closed - Complaints closed within 3 days": 19994,
+        "Complaints opened - Total": 89173,
+        "Complaints upheld - Total complaints upheld": 63590,
+        "Provision - Intermediation (within the reporting period)": 709500,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 134521,
+        "Provision - Provision (at reporting period end date)": 51490400,
+        "Redress paid - Total redress paid for complaints not upheld": 4489717,
+        "Redress paid - Total redress paid for upheld complaints": 36539338
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 60504,
+        "Complaints closed - Complaints closed > 8 weeks": 16166,
+        "Complaints closed - Complaints closed within 3 days": 19366,
+        "Complaints opened - Total": 94035,
+        "Complaints upheld - Total complaints upheld": 64825,
+        "Provision - Intermediation (within the reporting period)": 195793,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 159967,
+        "Provision - Provision (at reporting period end date)": 51583368,
+        "Redress paid - Total redress paid for complaints not upheld": 6139814,
+        "Redress paid - Total redress paid for upheld complaints": 38949617
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 57986,
+        "Complaints closed - Complaints closed > 8 weeks": 11616,
+        "Complaints closed - Complaints closed within 3 days": 19179,
+        "Complaints opened - Total": 87844,
+        "Complaints upheld - Total complaints upheld": 60880,
+        "Provision - Intermediation (within the reporting period)": 239837,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 141737,
+        "Provision - Provision (at reporting period end date)": 52479979,
+        "Redress paid - Total redress paid for complaints not upheld": 3755036,
+        "Redress paid - Total redress paid for upheld complaints": 34636479
+      }
+    ],
+    "Home finance": [
+      {
+        "semester": "2021 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 58532,
+        "Complaints closed - Complaints closed > 8 weeks": 6552,
+        "Complaints closed - Complaints closed within 3 days": 43610,
+        "Complaints opened - Total": 104643,
+        "Complaints upheld - Total complaints upheld": 60963,
+        "Provision - Intermediation (within the reporting period)": 417723,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales": 1106529,
+        "Provision - Provision (at reporting period end date)": 2150367267,
+        "Redress paid - Total redress paid for complaints not upheld": 1417460,
+        "Redress paid - Total redress paid for upheld complaints": 14467018
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 53147,
+        "Complaints closed - Complaints closed > 8 weeks": 4445,
+        "Complaints closed - Complaints closed within 3 days": 33753,
+        "Complaints opened - Total": 90525,
+        "Complaints upheld - Total complaints upheld": 52963,
+        "Provision - Intermediation (within the reporting period)": 4634647,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales": 1065044,
+        "Provision - Provision (at reporting period end date)": 3145363405,
+        "Redress paid - Total redress paid for complaints not upheld": 1150690,
+        "Redress paid - Total redress paid for upheld complaints": 12499902
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 50408,
+        "Complaints closed - Complaints closed > 8 weeks": 3953,
+        "Complaints closed - Complaints closed within 3 days": 30836,
+        "Complaints opened - Total": 88615,
+        "Complaints upheld - Total complaints upheld": 49548,
+        "Provision - Intermediation (within the reporting period)": 3237345,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales": 7841505,
+        "Provision - Provision (at reporting period end date)": 416925386,
+        "Redress paid - Total redress paid for complaints not upheld": 1094390,
+        "Redress paid - Total redress paid for upheld complaints": 10444763
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 58144,
+        "Complaints closed - Complaints closed > 8 weeks": 9819,
+        "Complaints closed - Complaints closed within 3 days": 28913,
+        "Complaints opened - Total": 101381,
+        "Complaints upheld - Total complaints upheld": 57574,
+        "Provision - Intermediation (within the reporting period)": 2866136,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales": 1096082,
+        "Provision - Provision (at reporting period end date)": 284477587,
+        "Redress paid - Total redress paid for complaints not upheld": 1328581,
+        "Redress paid - Total redress paid for upheld complaints": 12997467
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 51790,
+        "Complaints closed - Complaints closed > 8 weeks": 13323,
+        "Complaints closed - Complaints closed within 3 days": 30326,
+        "Complaints opened - Total": 91511,
+        "Complaints upheld - Total complaints upheld": 55349,
+        "Provision - Intermediation (within the reporting period)": 74245190,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales": 114067,
+        "Provision - Provision (at reporting period end date)": 14475328,
+        "Redress paid - Total redress paid for complaints not upheld": 1520465,
+        "Redress paid - Total redress paid for upheld complaints": 12890649
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 57471,
+        "Complaints closed - Complaints closed > 8 weeks": 6946,
+        "Complaints closed - Complaints closed within 3 days": 31232,
+        "Complaints opened - Total": 94881,
+        "Complaints upheld - Total complaints upheld": 52978,
+        "Provision - Intermediation (within the reporting period)": 3868689,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales": 107084,
+        "Provision - Provision (at reporting period end date)": 13046771,
+        "Redress paid - Total redress paid for complaints not upheld": 1592341,
+        "Redress paid - Total redress paid for upheld complaints": 12150419
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 54565,
+        "Complaints closed - Complaints closed > 8 weeks": 6304,
+        "Complaints closed - Complaints closed within 3 days": 32978,
+        "Complaints opened - Total": 93234,
+        "Complaints upheld - Total complaints upheld": 51886,
+        "Provision - Intermediation (within the reporting period)": 4188297,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales": 95017,
+        "Provision - Provision (at reporting period end date)": 17449756,
+        "Redress paid - Total redress paid for complaints not upheld": 1209914,
+        "Redress paid - Total redress paid for upheld complaints": 11072420
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 48033,
+        "Complaints closed - Complaints closed > 8 weeks": 5503,
+        "Complaints closed - Complaints closed within 3 days": 31798,
+        "Complaints opened - Total": 83936,
+        "Complaints upheld - Total complaints upheld": 47097,
+        "Provision - Intermediation (within the reporting period)": 1366579,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales": 90885,
+        "Provision - Provision (at reporting period end date)": 31738216,
+        "Redress paid - Total redress paid for complaints not upheld": 1408297,
+        "Redress paid - Total redress paid for upheld complaints": 11810988
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 45915,
+        "Complaints closed - Complaints closed > 8 weeks": 3503,
+        "Complaints closed - Complaints closed within 3 days": 29929,
+        "Complaints opened - Total": 78616,
+        "Complaints upheld - Total complaints upheld": 43754,
+        "Provision - Intermediation (within the reporting period)": 1422865,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales": 105055,
+        "Provision - Provision (at reporting period end date)": 12343775,
+        "Redress paid - Total redress paid for complaints not upheld": 1454519,
+        "Redress paid - Total redress paid for upheld complaints": 11253564
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 46943,
+        "Complaints closed - Complaints closed > 8 weeks": 3042,
+        "Complaints closed - Complaints closed within 3 days": 26445,
+        "Complaints opened - Total": 75658,
+        "Complaints upheld - Total complaints upheld": 42076,
+        "Provision - Intermediation (within the reporting period)": 1318348,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales": 127685,
+        "Provision - Provision (at reporting period end date)": 13934008,
+        "Redress paid - Total redress paid for complaints not upheld": 1220266,
+        "Redress paid - Total redress paid for upheld complaints": 10753957
+      }
+    ],
+    "Insurance & pure protection": [
+      {
+        "semester": "2021 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 368932,
+        "Complaints closed - Complaints closed > 8 weeks": 186418,
+        "Complaints closed - Complaints closed within 3 days": 447009,
+        "Complaints opened - Total": 887139,
+        "Complaints upheld - Total complaints upheld": 628375,
+        "Provision - Intermediation (within the reporting period)": 44159012,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 31735668,
+        "Provision - Provision (at reporting period end date)": 299265074,
+        "Redress paid - Total redress paid for complaints not upheld": 27294624,
+        "Redress paid - Total redress paid for upheld complaints": 342237759
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 340426,
+        "Complaints closed - Complaints closed > 8 weeks": 65379,
+        "Complaints closed - Complaints closed within 3 days": 403196,
+        "Complaints opened - Total": 799200,
+        "Complaints upheld - Total complaints upheld": 505070,
+        "Provision - Intermediation (within the reporting period)": 33481121,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 44881290,
+        "Provision - Provision (at reporting period end date)": 312397904,
+        "Redress paid - Total redress paid for complaints not upheld": 15781022,
+        "Redress paid - Total redress paid for upheld complaints": 97889017
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 350253,
+        "Complaints closed - Complaints closed > 8 weeks": 58831,
+        "Complaints closed - Complaints closed within 3 days": 435982,
+        "Complaints opened - Total": 842974,
+        "Complaints upheld - Total complaints upheld": 556900,
+        "Provision - Intermediation (within the reporting period)": 42021349,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 57962189,
+        "Provision - Provision (at reporting period end date)": 339772170,
+        "Redress paid - Total redress paid for complaints not upheld": 10423825,
+        "Redress paid - Total redress paid for upheld complaints": 116813969
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 340807,
+        "Complaints closed - Complaints closed > 8 weeks": 48171,
+        "Complaints closed - Complaints closed within 3 days": 331980,
+        "Complaints opened - Total": 754108,
+        "Complaints upheld - Total complaints upheld": 449054,
+        "Provision - Intermediation (within the reporting period)": 37913138,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 58479287,
+        "Provision - Provision (at reporting period end date)": 334275632,
+        "Redress paid - Total redress paid for complaints not upheld": 6822967,
+        "Redress paid - Total redress paid for upheld complaints": 58017252
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 389072,
+        "Complaints closed - Complaints closed > 8 weeks": 66207,
+        "Complaints closed - Complaints closed within 3 days": 355784,
+        "Complaints opened - Total": 799004,
+        "Complaints upheld - Total complaints upheld": 507410,
+        "Provision - Intermediation (within the reporting period)": 41660722,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 48518282,
+        "Provision - Provision (at reporting period end date)": 335084485,
+        "Redress paid - Total redress paid for complaints not upheld": 5845927,
+        "Redress paid - Total redress paid for upheld complaints": 56528969
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 356592,
+        "Complaints closed - Complaints closed > 8 weeks": 47151,
+        "Complaints closed - Complaints closed within 3 days": 338537,
+        "Complaints opened - Total": 754194,
+        "Complaints upheld - Total complaints upheld": 432263,
+        "Provision - Intermediation (within the reporting period)": 40187495,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 49861563,
+        "Provision - Provision (at reporting period end date)": 331357846,
+        "Redress paid - Total redress paid for complaints not upheld": 13652976,
+        "Redress paid - Total redress paid for upheld complaints": 53733324
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 379200,
+        "Complaints closed - Complaints closed > 8 weeks": 48312,
+        "Complaints closed - Complaints closed within 3 days": 337666,
+        "Complaints opened - Total": 764532,
+        "Complaints upheld - Total complaints upheld": 439575,
+        "Provision - Intermediation (within the reporting period)": 40086583,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 50747615,
+        "Provision - Provision (at reporting period end date)": 308311446,
+        "Redress paid - Total redress paid for complaints not upheld": 6754274,
+        "Redress paid - Total redress paid for upheld complaints": 55514338
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 353033,
+        "Complaints closed - Complaints closed > 8 weeks": 29485,
+        "Complaints closed - Complaints closed within 3 days": 324620,
+        "Complaints opened - Total": 718738,
+        "Complaints upheld - Total complaints upheld": 404945,
+        "Provision - Intermediation (within the reporting period)": 43594668,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 43749618,
+        "Provision - Provision (at reporting period end date)": 305813504,
+        "Redress paid - Total redress paid for complaints not upheld": 4365997,
+        "Redress paid - Total redress paid for upheld complaints": 50107333
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 347969,
+        "Complaints closed - Complaints closed > 8 weeks": 31690,
+        "Complaints closed - Complaints closed within 3 days": 316736,
+        "Complaints opened - Total": 697635,
+        "Complaints upheld - Total complaints upheld": 395809,
+        "Provision - Intermediation (within the reporting period)": 48365854,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 53724807,
+        "Provision - Provision (at reporting period end date)": 317641419,
+        "Redress paid - Total redress paid for complaints not upheld": 6600988,
+        "Redress paid - Total redress paid for upheld complaints": 78778696
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 325293,
+        "Complaints closed - Complaints closed > 8 weeks": 24209,
+        "Complaints closed - Complaints closed within 3 days": 308705,
+        "Complaints opened - Total": 665370,
+        "Complaints upheld - Total complaints upheld": 366614,
+        "Provision - Intermediation (within the reporting period)": 43412288,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of policies sold": 58737510,
+        "Provision - Provision (at reporting period end date)": 317334374,
+        "Redress paid - Total redress paid for complaints not upheld": 4696678,
+        "Redress paid - Total redress paid for upheld complaints": 44824558
+      }
+    ],
+    "Investments": [
+      {
+        "semester": "2021 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 43951,
+        "Complaints closed - Complaints closed > 8 weeks": 9130,
+        "Complaints closed - Complaints closed within 3 days": 18220,
+        "Complaints opened - Total": 74724,
+        "Complaints upheld - Total complaints upheld": 34704,
+        "Provision - Intermediation (within the reporting period)": 143353592,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales or equivalent transactions": 122790699,
+        "Provision - Provision (at reporting period end date)": 56038225,
+        "Redress paid - Total redress paid for complaints not upheld": 2123577,
+        "Redress paid - Total redress paid for upheld complaints": 18895079
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 33888,
+        "Complaints closed - Complaints closed > 8 weeks": 8709,
+        "Complaints closed - Complaints closed within 3 days": 13724,
+        "Complaints opened - Total": 53239,
+        "Complaints upheld - Total complaints upheld": 31079,
+        "Provision - Intermediation (within the reporting period)": 214457331,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales or equivalent transactions": 723050,
+        "Provision - Provision (at reporting period end date)": 207750015,
+        "Redress paid - Total redress paid for complaints not upheld": 6900478,
+        "Redress paid - Total redress paid for upheld complaints": 15756474
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 32937,
+        "Complaints closed - Complaints closed > 8 weeks": 6114,
+        "Complaints closed - Complaints closed within 3 days": 14699,
+        "Complaints opened - Total": 53926,
+        "Complaints upheld - Total complaints upheld": 28597,
+        "Provision - Intermediation (within the reporting period)": 246045565,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales or equivalent transactions": 1524403,
+        "Provision - Provision (at reporting period end date)": 54433553,
+        "Redress paid - Total redress paid for complaints not upheld": 1674907,
+        "Redress paid - Total redress paid for upheld complaints": 15506064
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 29907,
+        "Complaints closed - Complaints closed > 8 weeks": 5060,
+        "Complaints closed - Complaints closed within 3 days": 13577,
+        "Complaints opened - Total": 48676,
+        "Complaints upheld - Total complaints upheld": 26042,
+        "Provision - Intermediation (within the reporting period)": 259769564,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales or equivalent transactions": 630513,
+        "Provision - Provision (at reporting period end date)": 620607015,
+        "Redress paid - Total redress paid for complaints not upheld": 1927842,
+        "Redress paid - Total redress paid for upheld complaints": 13559311
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 35411,
+        "Complaints closed - Complaints closed > 8 weeks": 6438,
+        "Complaints closed - Complaints closed within 3 days": 13825,
+        "Complaints opened - Total": 59417,
+        "Complaints upheld - Total complaints upheld": 30875,
+        "Provision - Intermediation (within the reporting period)": 295173174,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales or equivalent transactions": 1276462,
+        "Provision - Provision (at reporting period end date)": 50595912,
+        "Redress paid - Total redress paid for complaints not upheld": 1703987,
+        "Redress paid - Total redress paid for upheld complaints": 19929032
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 37654,
+        "Complaints closed - Complaints closed > 8 weeks": 6606,
+        "Complaints closed - Complaints closed within 3 days": 14726,
+        "Complaints opened - Total": 61535,
+        "Complaints upheld - Total complaints upheld": 32916,
+        "Provision - Intermediation (within the reporting period)": 180541717,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales or equivalent transactions": 768501,
+        "Provision - Provision (at reporting period end date)": 49270540,
+        "Redress paid - Total redress paid for complaints not upheld": 2783859,
+        "Redress paid - Total redress paid for upheld complaints": 35045191
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 36672,
+        "Complaints closed - Complaints closed > 8 weeks": 9126,
+        "Complaints closed - Complaints closed within 3 days": 14312,
+        "Complaints opened - Total": 62829,
+        "Complaints upheld - Total complaints upheld": 33821,
+        "Provision - Intermediation (within the reporting period)": 1911685493,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales or equivalent transactions": 49392418,
+        "Provision - Provision (at reporting period end date)": 142718822,
+        "Redress paid - Total redress paid for complaints not upheld": 1996941,
+        "Redress paid - Total redress paid for upheld complaints": 19939057
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 36196,
+        "Complaints closed - Complaints closed > 8 weeks": 8716,
+        "Complaints closed - Complaints closed within 3 days": 11993,
+        "Complaints opened - Total": 52973,
+        "Complaints upheld - Total complaints upheld": 32715,
+        "Provision - Intermediation (within the reporting period)": 141137566,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales or equivalent transactions": 37605099,
+        "Provision - Provision (at reporting period end date)": 57089322,
+        "Redress paid - Total redress paid for complaints not upheld": 926901,
+        "Redress paid - Total redress paid for upheld complaints": 18704287
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 38490,
+        "Complaints closed - Complaints closed > 8 weeks": 8905,
+        "Complaints closed - Complaints closed within 3 days": 13986,
+        "Complaints opened - Total": 58305,
+        "Complaints upheld - Total complaints upheld": 33410,
+        "Provision - Intermediation (within the reporting period)": 159092424,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales or equivalent transactions": 44867393,
+        "Provision - Provision (at reporting period end date)": 54516871,
+        "Redress paid - Total redress paid for complaints not upheld": 1033468,
+        "Redress paid - Total redress paid for upheld complaints": 20748995
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 37677,
+        "Complaints closed - Complaints closed > 8 weeks": 5284,
+        "Complaints closed - Complaints closed within 3 days": 13551,
+        "Complaints opened - Total": 54280,
+        "Complaints upheld - Total complaints upheld": 29550,
+        "Provision - Intermediation (within the reporting period)": 2328342998,
+        "Provision - Intermediation (within the reporting period)\r\nNumber of sales or equivalent transactions": 164540909,
+        "Provision - Provision (at reporting period end date)": 847105755,
+        "Redress paid - Total redress paid for complaints not upheld": 1745478,
+        "Redress paid - Total redress paid for upheld complaints": 17490196
+      }
+    ]
+  },
+  "byFirmType": {
+    "Bank and Building society": [
+      {
+        "semester": "2021 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 382096,
+        "Complaints closed - Complaints closed > 8 weeks": 134799,
+        "Complaints closed - Complaints closed within 3 days": 523400,
+        "Complaints opened - Total": 952409,
+        "Complaints upheld - Total complaints upheld": 573300,
+        "Redress paid - Total redress paid for complaints not upheld": 31169741,
+        "Redress paid - Total redress paid for upheld complaints": 326650959
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 396991,
+        "Complaints closed - Complaints closed > 8 weeks": 62406,
+        "Complaints closed - Complaints closed within 3 days": 474353,
+        "Complaints opened - Total": 895497,
+        "Complaints upheld - Total complaints upheld": 528938,
+        "Redress paid - Total redress paid for complaints not upheld": 31539940,
+        "Redress paid - Total redress paid for upheld complaints": 158350456
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 354731,
+        "Complaints closed - Complaints closed > 8 weeks": 32877,
+        "Complaints closed - Complaints closed within 3 days": 479781,
+        "Complaints opened - Total": 873162,
+        "Complaints upheld - Total complaints upheld": 512139,
+        "Redress paid - Total redress paid for complaints not upheld": 26962911,
+        "Redress paid - Total redress paid for upheld complaints": 131035682
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 367784,
+        "Complaints closed - Complaints closed > 8 weeks": 38886,
+        "Complaints closed - Complaints closed within 3 days": 426454,
+        "Complaints opened - Total": 833961,
+        "Complaints upheld - Total complaints upheld": 503240,
+        "Redress paid - Total redress paid for complaints not upheld": 20746564,
+        "Redress paid - Total redress paid for upheld complaints": 114202868
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 356432,
+        "Complaints closed - Complaints closed > 8 weeks": 51440,
+        "Complaints closed - Complaints closed within 3 days": 446144,
+        "Complaints opened - Total": 842101,
+        "Complaints upheld - Total complaints upheld": 522076,
+        "Redress paid - Total redress paid for complaints not upheld": 16168979,
+        "Redress paid - Total redress paid for upheld complaints": 111553706
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 390555,
+        "Complaints closed - Complaints closed > 8 weeks": 33170,
+        "Complaints closed - Complaints closed within 3 days": 425710,
+        "Complaints opened - Total": 855823,
+        "Complaints upheld - Total complaints upheld": 517078,
+        "Redress paid - Total redress paid for complaints not upheld": 25752655,
+        "Redress paid - Total redress paid for upheld complaints": 106061815
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 391518,
+        "Complaints closed - Complaints closed > 8 weeks": 31159,
+        "Complaints closed - Complaints closed within 3 days": 408139,
+        "Complaints opened - Total": 822063,
+        "Complaints upheld - Total complaints upheld": 492843,
+        "Redress paid - Total redress paid for complaints not upheld": 16948501,
+        "Redress paid - Total redress paid for upheld complaints": 99235014
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 364923,
+        "Complaints closed - Complaints closed > 8 weeks": 33430,
+        "Complaints closed - Complaints closed within 3 days": 409764,
+        "Complaints opened - Total": 809856,
+        "Complaints upheld - Total complaints upheld": 471061,
+        "Redress paid - Total redress paid for complaints not upheld": 16500053,
+        "Redress paid - Total redress paid for upheld complaints": 98634085
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 372562,
+        "Complaints closed - Complaints closed > 8 weeks": 48382,
+        "Complaints closed - Complaints closed within 3 days": 455853,
+        "Complaints opened - Total": 877744,
+        "Complaints upheld - Total complaints upheld": 532429,
+        "Redress paid - Total redress paid for complaints not upheld": 16009445,
+        "Redress paid - Total redress paid for upheld complaints": 112474563
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 363851,
+        "Complaints closed - Complaints closed > 8 weeks": 52409,
+        "Complaints closed - Complaints closed within 3 days": 402738,
+        "Complaints opened - Total": 829515,
+        "Complaints upheld - Total complaints upheld": 464459,
+        "Redress paid - Total redress paid for complaints not upheld": 18898794,
+        "Redress paid - Total redress paid for upheld complaints": 107245444
+      }
+    ],
+    "General insurance Intermediary": [
+      {
+        "semester": "2021 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 165946,
+        "Complaints closed - Complaints closed > 8 weeks": 24775,
+        "Complaints closed - Complaints closed within 3 days": 256206,
+        "Complaints opened - Total": 446032,
+        "Complaints upheld - Total complaints upheld": 321393,
+        "Redress paid - Total redress paid for complaints not upheld": 1731392,
+        "Redress paid - Total redress paid for upheld complaints": 18314109
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 150086,
+        "Complaints closed - Complaints closed > 8 weeks": 9939,
+        "Complaints closed - Complaints closed within 3 days": 225931,
+        "Complaints opened - Total": 399919,
+        "Complaints upheld - Total complaints upheld": 259996,
+        "Redress paid - Total redress paid for complaints not upheld": 1374916,
+        "Redress paid - Total redress paid for upheld complaints": 14817892
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 153392,
+        "Complaints closed - Complaints closed > 8 weeks": 21793,
+        "Complaints closed - Complaints closed within 3 days": 250841,
+        "Complaints opened - Total": 426586,
+        "Complaints upheld - Total complaints upheld": 305623,
+        "Redress paid - Total redress paid for complaints not upheld": 1326230,
+        "Redress paid - Total redress paid for upheld complaints": 14350532
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 149374,
+        "Complaints closed - Complaints closed > 8 weeks": 17751,
+        "Complaints closed - Complaints closed within 3 days": 156763,
+        "Complaints opened - Total": 349426,
+        "Complaints upheld - Total complaints upheld": 204482,
+        "Redress paid - Total redress paid for complaints not upheld": 1382463,
+        "Redress paid - Total redress paid for upheld complaints": 12214230
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 170546,
+        "Complaints closed - Complaints closed > 8 weeks": 33162,
+        "Complaints closed - Complaints closed within 3 days": 167443,
+        "Complaints opened - Total": 356749,
+        "Complaints upheld - Total complaints upheld": 235517,
+        "Redress paid - Total redress paid for complaints not upheld": 1577134,
+        "Redress paid - Total redress paid for upheld complaints": 16881251
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 170152,
+        "Complaints closed - Complaints closed > 8 weeks": 13674,
+        "Complaints closed - Complaints closed within 3 days": 172938,
+        "Complaints opened - Total": 355334,
+        "Complaints upheld - Total complaints upheld": 207884,
+        "Redress paid - Total redress paid for complaints not upheld": 1852405,
+        "Redress paid - Total redress paid for upheld complaints": 15672460
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 168302,
+        "Complaints closed - Complaints closed > 8 weeks": 10359,
+        "Complaints closed - Complaints closed within 3 days": 183102,
+        "Complaints opened - Total": 361791,
+        "Complaints upheld - Total complaints upheld": 205175,
+        "Redress paid - Total redress paid for complaints not upheld": 2065764,
+        "Redress paid - Total redress paid for upheld complaints": 16920140
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 161706,
+        "Complaints closed - Complaints closed > 8 weeks": 7565,
+        "Complaints closed - Complaints closed within 3 days": 176871,
+        "Complaints opened - Total": 360733,
+        "Complaints upheld - Total complaints upheld": 195932,
+        "Redress paid - Total redress paid for complaints not upheld": 1993165,
+        "Redress paid - Total redress paid for upheld complaints": 16510082
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 153128,
+        "Complaints closed - Complaints closed > 8 weeks": 11178,
+        "Complaints closed - Complaints closed within 3 days": 163114,
+        "Complaints opened - Total": 330948,
+        "Complaints upheld - Total complaints upheld": 185988,
+        "Redress paid - Total redress paid for complaints not upheld": 2117133,
+        "Redress paid - Total redress paid for upheld complaints": 18183240
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 140325,
+        "Complaints closed - Complaints closed > 8 weeks": 9539,
+        "Complaints closed - Complaints closed within 3 days": 160135,
+        "Complaints opened - Total": 314767,
+        "Complaints upheld - Total complaints upheld": 172595,
+        "Redress paid - Total redress paid for complaints not upheld": 2247519,
+        "Redress paid - Total redress paid for upheld complaints": 17321305
+      }
+    ],
+    "Investment management": [
+      {
+        "semester": "2021 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 20071,
+        "Complaints closed - Complaints closed > 8 weeks": 4864,
+        "Complaints closed - Complaints closed within 3 days": 8353,
+        "Complaints opened - Total": 38893,
+        "Complaints upheld - Total complaints upheld": 14562,
+        "Redress paid - Total redress paid for complaints not upheld": 551952,
+        "Redress paid - Total redress paid for upheld complaints": 5174992
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 14621,
+        "Complaints closed - Complaints closed > 8 weeks": 6315,
+        "Complaints closed - Complaints closed within 3 days": 6483,
+        "Complaints opened - Total": 24815,
+        "Complaints upheld - Total complaints upheld": 14285,
+        "Redress paid - Total redress paid for complaints not upheld": 353218,
+        "Redress paid - Total redress paid for upheld complaints": 5238837
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 15096,
+        "Complaints closed - Complaints closed > 8 weeks": 2817,
+        "Complaints closed - Complaints closed within 3 days": 6668,
+        "Complaints opened - Total": 23218,
+        "Complaints upheld - Total complaints upheld": 11439,
+        "Redress paid - Total redress paid for complaints not upheld": 1063946,
+        "Redress paid - Total redress paid for upheld complaints": 4847582
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 12586,
+        "Complaints closed - Complaints closed > 8 weeks": 1327,
+        "Complaints closed - Complaints closed within 3 days": 6049,
+        "Complaints opened - Total": 20596,
+        "Complaints upheld - Total complaints upheld": 9577,
+        "Redress paid - Total redress paid for complaints not upheld": 548164,
+        "Redress paid - Total redress paid for upheld complaints": 4276774
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 17930,
+        "Complaints closed - Complaints closed > 8 weeks": 1944,
+        "Complaints closed - Complaints closed within 3 days": 6412,
+        "Complaints opened - Total": 27983,
+        "Complaints upheld - Total complaints upheld": 12399,
+        "Redress paid - Total redress paid for complaints not upheld": 576620,
+        "Redress paid - Total redress paid for upheld complaints": 9055310
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 19449,
+        "Complaints closed - Complaints closed > 8 weeks": 2397,
+        "Complaints closed - Complaints closed within 3 days": 6143,
+        "Complaints opened - Total": 28925,
+        "Complaints upheld - Total complaints upheld": 14594,
+        "Redress paid - Total redress paid for complaints not upheld": 947146,
+        "Redress paid - Total redress paid for upheld complaints": 21554833
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 20912,
+        "Complaints closed - Complaints closed > 8 weeks": 3989,
+        "Complaints closed - Complaints closed within 3 days": 6121,
+        "Complaints opened - Total": 31136,
+        "Complaints upheld - Total complaints upheld": 16546,
+        "Redress paid - Total redress paid for complaints not upheld": 680547,
+        "Redress paid - Total redress paid for upheld complaints": 8787442
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 21435,
+        "Complaints closed - Complaints closed > 8 weeks": 2455,
+        "Complaints closed - Complaints closed within 3 days": 5744,
+        "Complaints opened - Total": 29926,
+        "Complaints upheld - Total complaints upheld": 16010,
+        "Redress paid - Total redress paid for complaints not upheld": 379412,
+        "Redress paid - Total redress paid for upheld complaints": 5756446
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 22806,
+        "Complaints closed - Complaints closed > 8 weeks": 3818,
+        "Complaints closed - Complaints closed within 3 days": 7922,
+        "Complaints opened - Total": 34763,
+        "Complaints upheld - Total complaints upheld": 17701,
+        "Redress paid - Total redress paid for complaints not upheld": 1383245,
+        "Redress paid - Total redress paid for upheld complaints": 7344216
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 25465,
+        "Complaints closed - Complaints closed > 8 weeks": 2770,
+        "Complaints closed - Complaints closed within 3 days": 8217,
+        "Complaints opened - Total": 37548,
+        "Complaints upheld - Total complaints upheld": 17872,
+        "Redress paid - Total redress paid for complaints not upheld": 1199438,
+        "Redress paid - Total redress paid for upheld complaints": 9346381
+      }
+    ],
+    "Life insurer": [
+      {
+        "semester": "2021 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 53944,
+        "Complaints closed - Complaints closed > 8 weeks": 12780,
+        "Complaints closed - Complaints closed within 3 days": 27408,
+        "Complaints opened - Total": 97332,
+        "Complaints upheld - Total complaints upheld": 61645,
+        "Redress paid - Total redress paid for complaints not upheld": 1026781,
+        "Redress paid - Total redress paid for upheld complaints": 26357985
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 48754,
+        "Complaints closed - Complaints closed > 8 weeks": 10857,
+        "Complaints closed - Complaints closed within 3 days": 23962,
+        "Complaints opened - Total": 83675,
+        "Complaints upheld - Total complaints upheld": 56690,
+        "Redress paid - Total redress paid for complaints not upheld": 1475345,
+        "Redress paid - Total redress paid for upheld complaints": 24357656
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 49422,
+        "Complaints closed - Complaints closed > 8 weeks": 8377,
+        "Complaints closed - Complaints closed within 3 days": 27376,
+        "Complaints opened - Total": 91157,
+        "Complaints upheld - Total complaints upheld": 56569,
+        "Redress paid - Total redress paid for complaints not upheld": 1548056,
+        "Redress paid - Total redress paid for upheld complaints": 22873431
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 52632,
+        "Complaints closed - Complaints closed > 8 weeks": 12160,
+        "Complaints closed - Complaints closed within 3 days": 25919,
+        "Complaints opened - Total": 90062,
+        "Complaints upheld - Total complaints upheld": 60670,
+        "Redress paid - Total redress paid for complaints not upheld": 759369,
+        "Redress paid - Total redress paid for upheld complaints": 22511575
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 57552,
+        "Complaints closed - Complaints closed > 8 weeks": 19183,
+        "Complaints closed - Complaints closed within 3 days": 26606,
+        "Complaints opened - Total": 107587,
+        "Complaints upheld - Total complaints upheld": 70169,
+        "Redress paid - Total redress paid for complaints not upheld": 831837,
+        "Redress paid - Total redress paid for upheld complaints": 23280391
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 62600,
+        "Complaints closed - Complaints closed > 8 weeks": 15934,
+        "Complaints closed - Complaints closed within 3 days": 25675,
+        "Complaints opened - Total": 101345,
+        "Complaints upheld - Total complaints upheld": 71201,
+        "Redress paid - Total redress paid for complaints not upheld": 1782085,
+        "Redress paid - Total redress paid for upheld complaints": 28133331
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 60747,
+        "Complaints closed - Complaints closed > 8 weeks": 12585,
+        "Complaints closed - Complaints closed within 3 days": 29351,
+        "Complaints opened - Total": 104465,
+        "Complaints upheld - Total complaints upheld": 69307,
+        "Redress paid - Total redress paid for complaints not upheld": 2313961,
+        "Redress paid - Total redress paid for upheld complaints": 28807232
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 64166,
+        "Complaints closed - Complaints closed > 8 weeks": 12446,
+        "Complaints closed - Complaints closed within 3 days": 27032,
+        "Complaints opened - Total": 103351,
+        "Complaints upheld - Total complaints upheld": 71452,
+        "Redress paid - Total redress paid for complaints not upheld": 3297235,
+        "Redress paid - Total redress paid for upheld complaints": 26946648
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 67216,
+        "Complaints closed - Complaints closed > 8 weeks": 10493,
+        "Complaints closed - Complaints closed within 3 days": 27597,
+        "Complaints opened - Total": 106805,
+        "Complaints upheld - Total complaints upheld": 71674,
+        "Redress paid - Total redress paid for complaints not upheld": 4323539,
+        "Redress paid - Total redress paid for upheld complaints": 24582922
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 65395,
+        "Complaints closed - Complaints closed > 8 weeks": 10110,
+        "Complaints closed - Complaints closed within 3 days": 26827,
+        "Complaints opened - Total": 101744,
+        "Complaints upheld - Total complaints upheld": 70312,
+        "Redress paid - Total redress paid for complaints not upheld": 2333227,
+        "Redress paid - Total redress paid for upheld complaints": 22793852
+      }
+    ],
+    "Mortgage business": [
+      {
+        "semester": "2021 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 11205,
+        "Complaints closed - Complaints closed > 8 weeks": 986,
+        "Complaints closed - Complaints closed within 3 days": 3466,
+        "Complaints opened - Total": 15877,
+        "Complaints upheld - Total complaints upheld": 6318,
+        "Redress paid - Total redress paid for complaints not upheld": 268161,
+        "Redress paid - Total redress paid for upheld complaints": 3530703
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 10705,
+        "Complaints closed - Complaints closed > 8 weeks": 1220,
+        "Complaints closed - Complaints closed within 3 days": 2800,
+        "Complaints opened - Total": 14554,
+        "Complaints upheld - Total complaints upheld": 5786,
+        "Redress paid - Total redress paid for complaints not upheld": 291437,
+        "Redress paid - Total redress paid for upheld complaints": 1829633
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 11276,
+        "Complaints closed - Complaints closed > 8 weeks": 970,
+        "Complaints closed - Complaints closed within 3 days": 2659,
+        "Complaints opened - Total": 15812,
+        "Complaints upheld - Total complaints upheld": 6298,
+        "Redress paid - Total redress paid for complaints not upheld": 256286,
+        "Redress paid - Total redress paid for upheld complaints": 2653293
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 12894,
+        "Complaints closed - Complaints closed > 8 weeks": 1651,
+        "Complaints closed - Complaints closed within 3 days": 2756,
+        "Complaints opened - Total": 18016,
+        "Complaints upheld - Total complaints upheld": 7659,
+        "Redress paid - Total redress paid for complaints not upheld": 288622,
+        "Redress paid - Total redress paid for upheld complaints": 3460500
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 12566,
+        "Complaints closed - Complaints closed > 8 weeks": 1764,
+        "Complaints closed - Complaints closed within 3 days": 2497,
+        "Complaints opened - Total": 16859,
+        "Complaints upheld - Total complaints upheld": 7357,
+        "Redress paid - Total redress paid for complaints not upheld": 274311,
+        "Redress paid - Total redress paid for upheld complaints": 2634698
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 15002,
+        "Complaints closed - Complaints closed > 8 weeks": 1450,
+        "Complaints closed - Complaints closed within 3 days": 2723,
+        "Complaints opened - Total": 19700,
+        "Complaints upheld - Total complaints upheld": 8259,
+        "Redress paid - Total redress paid for complaints not upheld": 428481,
+        "Redress paid - Total redress paid for upheld complaints": 2724158
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 13167,
+        "Complaints closed - Complaints closed > 8 weeks": 1554,
+        "Complaints closed - Complaints closed within 3 days": 3474,
+        "Complaints opened - Total": 17674,
+        "Complaints upheld - Total complaints upheld": 7823,
+        "Redress paid - Total redress paid for complaints not upheld": 346672,
+        "Redress paid - Total redress paid for upheld complaints": 3014460
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 12049,
+        "Complaints closed - Complaints closed > 8 weeks": 1764,
+        "Complaints closed - Complaints closed within 3 days": 3482,
+        "Complaints opened - Total": 16496,
+        "Complaints upheld - Total complaints upheld": 7012,
+        "Redress paid - Total redress paid for complaints not upheld": 410261,
+        "Redress paid - Total redress paid for upheld complaints": 2611642
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 10866,
+        "Complaints closed - Complaints closed > 8 weeks": 610,
+        "Complaints closed - Complaints closed within 3 days": 3781,
+        "Complaints opened - Total": 15709,
+        "Complaints upheld - Total complaints upheld": 6349,
+        "Redress paid - Total redress paid for complaints not upheld": 332406,
+        "Redress paid - Total redress paid for upheld complaints": 1867947
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 11737,
+        "Complaints closed - Complaints closed > 8 weeks": 715,
+        "Complaints closed - Complaints closed within 3 days": 3281,
+        "Complaints opened - Total": 16130,
+        "Complaints upheld - Total complaints upheld": 6480,
+        "Redress paid - Total redress paid for complaints not upheld": 338623,
+        "Redress paid - Total redress paid for upheld complaints": 1825755
+      }
+    ],
+    "Other": [
+      {
+        "semester": "2021 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 233772,
+        "Complaints closed - Complaints closed > 8 weeks": 85871,
+        "Complaints closed - Complaints closed within 3 days": 210129,
+        "Complaints opened - Total": 485430,
+        "Complaints upheld - Total complaints upheld": 293040,
+        "Redress paid - Total redress paid for complaints not upheld": 8282896,
+        "Redress paid - Total redress paid for upheld complaints": 134815476
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 230480,
+        "Complaints closed - Complaints closed > 8 weeks": 27885,
+        "Complaints closed - Complaints closed within 3 days": 197336,
+        "Complaints opened - Total": 460543,
+        "Complaints upheld - Total complaints upheld": 254769,
+        "Redress paid - Total redress paid for complaints not upheld": 3689577,
+        "Redress paid - Total redress paid for upheld complaints": 36727385
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 248100,
+        "Complaints closed - Complaints closed > 8 weeks": 32844,
+        "Complaints closed - Complaints closed within 3 days": 207593,
+        "Complaints opened - Total": 490773,
+        "Complaints upheld - Total complaints upheld": 277453,
+        "Redress paid - Total redress paid for complaints not upheld": 3258016,
+        "Redress paid - Total redress paid for upheld complaints": 84045694
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 241335,
+        "Complaints closed - Complaints closed > 8 weeks": 30598,
+        "Complaints closed - Complaints closed within 3 days": 199579,
+        "Complaints opened - Total": 482212,
+        "Complaints upheld - Total complaints upheld": 274298,
+        "Redress paid - Total redress paid for complaints not upheld": 2657286,
+        "Redress paid - Total redress paid for upheld complaints": 31291671
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 271001,
+        "Complaints closed - Complaints closed > 8 weeks": 34931,
+        "Complaints closed - Complaints closed within 3 days": 212927,
+        "Complaints opened - Total": 524505,
+        "Complaints upheld - Total complaints upheld": 301914,
+        "Redress paid - Total redress paid for complaints not upheld": 2987067,
+        "Redress paid - Total redress paid for upheld complaints": 36585808
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 256175,
+        "Complaints closed - Complaints closed > 8 weeks": 41659,
+        "Complaints closed - Complaints closed within 3 days": 243533,
+        "Complaints opened - Total": 563515,
+        "Complaints upheld - Total complaints upheld": 264633,
+        "Redress paid - Total redress paid for complaints not upheld": 3098448,
+        "Redress paid - Total redress paid for upheld complaints": 34347676
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 269737,
+        "Complaints closed - Complaints closed > 8 weeks": 63195,
+        "Complaints closed - Complaints closed within 3 days": 178641,
+        "Complaints opened - Total": 506204,
+        "Complaints upheld - Total complaints upheld": 262678,
+        "Redress paid - Total redress paid for complaints not upheld": 4041608,
+        "Redress paid - Total redress paid for upheld complaints": 40848564
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 263288,
+        "Complaints closed - Complaints closed > 8 weeks": 24839,
+        "Complaints closed - Complaints closed within 3 days": 172867,
+        "Complaints opened - Total": 452098,
+        "Complaints upheld - Total complaints upheld": 239945,
+        "Redress paid - Total redress paid for complaints not upheld": 2560753,
+        "Redress paid - Total redress paid for upheld complaints": 37503233
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 256613,
+        "Complaints closed - Complaints closed > 8 weeks": 22052,
+        "Complaints closed - Complaints closed within 3 days": 167609,
+        "Complaints opened - Total": 450004,
+        "Complaints upheld - Total complaints upheld": 233109,
+        "Redress paid - Total redress paid for complaints not upheld": 6197675,
+        "Redress paid - Total redress paid for upheld complaints": 62399199
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 240155,
+        "Complaints closed - Complaints closed > 8 weeks": 15237,
+        "Complaints closed - Complaints closed within 3 days": 168025,
+        "Complaints opened - Total": 430418,
+        "Complaints upheld - Total complaints upheld": 218255,
+        "Redress paid - Total redress paid for complaints not upheld": 3301397,
+        "Redress paid - Total redress paid for upheld complaints": 28078588
+      }
+    ],
+    "Personal Investment": [
+      {
+        "semester": "2021 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 3635,
+        "Complaints closed - Complaints closed > 8 weeks": 860,
+        "Complaints closed - Complaints closed within 3 days": 471,
+        "Complaints opened - Total": 5782,
+        "Complaints upheld - Total complaints upheld": 1688,
+        "Redress paid - Total redress paid for complaints not upheld": 1681429,
+        "Redress paid - Total redress paid for upheld complaints": 7900656
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 2909,
+        "Complaints closed - Complaints closed > 8 weeks": 876,
+        "Complaints closed - Complaints closed within 3 days": 378,
+        "Complaints opened - Total": 4237,
+        "Complaints upheld - Total complaints upheld": 1586,
+        "Redress paid - Total redress paid for complaints not upheld": 2645790,
+        "Redress paid - Total redress paid for upheld complaints": 12007661
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 2959,
+        "Complaints closed - Complaints closed > 8 weeks": 815,
+        "Complaints closed - Complaints closed within 3 days": 481,
+        "Complaints opened - Total": 4808,
+        "Complaints upheld - Total complaints upheld": 1750,
+        "Redress paid - Total redress paid for complaints not upheld": 1381064,
+        "Redress paid - Total redress paid for upheld complaints": 8853650
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 3345,
+        "Complaints closed - Complaints closed > 8 weeks": 1138,
+        "Complaints closed - Complaints closed within 3 days": 477,
+        "Complaints opened - Total": 6346,
+        "Complaints upheld - Total complaints upheld": 1947,
+        "Redress paid - Total redress paid for complaints not upheld": 2889378,
+        "Redress paid - Total redress paid for upheld complaints": 10622258
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 3227,
+        "Complaints closed - Complaints closed > 8 weeks": 2661,
+        "Complaints closed - Complaints closed within 3 days": 418,
+        "Complaints opened - Total": 8670,
+        "Complaints upheld - Total complaints upheld": 2875,
+        "Redress paid - Total redress paid for complaints not upheld": 3001270,
+        "Redress paid - Total redress paid for upheld complaints": 10845532
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 3567,
+        "Complaints closed - Complaints closed > 8 weeks": 4192,
+        "Complaints closed - Complaints closed within 3 days": 448,
+        "Complaints opened - Total": 13270,
+        "Complaints upheld - Total complaints upheld": 3977,
+        "Redress paid - Total redress paid for complaints not upheld": 5386935,
+        "Redress paid - Total redress paid for upheld complaints": 12930544
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 3612,
+        "Complaints closed - Complaints closed > 8 weeks": 6870,
+        "Complaints closed - Complaints closed within 3 days": 528,
+        "Complaints opened - Total": 20253,
+        "Complaints upheld - Total complaints upheld": 5043,
+        "Redress paid - Total redress paid for complaints not upheld": 3240286,
+        "Redress paid - Total redress paid for upheld complaints": 15252905
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 4278,
+        "Complaints closed - Complaints closed > 8 weeks": 11822,
+        "Complaints closed - Complaints closed within 3 days": 555,
+        "Complaints opened - Total": 10956,
+        "Complaints upheld - Total complaints upheld": 8353,
+        "Redress paid - Total redress paid for complaints not upheld": 1639609,
+        "Redress paid - Total redress paid for upheld complaints": 19957869
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 5839,
+        "Complaints closed - Complaints closed > 8 weeks": 10637,
+        "Complaints closed - Complaints closed within 3 days": 639,
+        "Complaints opened - Total": 11371,
+        "Complaints upheld - Total complaints upheld": 8291,
+        "Redress paid - Total redress paid for complaints not upheld": 1471397,
+        "Redress paid - Total redress paid for upheld complaints": 24049359
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 6945,
+        "Complaints closed - Complaints closed > 8 weeks": 4816,
+        "Complaints closed - Complaints closed within 3 days": 545,
+        "Complaints opened - Total": 9359,
+        "Complaints upheld - Total complaints upheld": 5366,
+        "Redress paid - Total redress paid for complaints not upheld": 1580111,
+        "Redress paid - Total redress paid for upheld complaints": 17797752
+      }
+    ],
+    "Securities and futures": [
+      {
+        "semester": "2021 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 783,
+        "Complaints closed - Complaints closed > 8 weeks": 37,
+        "Complaints closed - Complaints closed within 3 days": 704,
+        "Complaints opened - Total": 1524,
+        "Complaints upheld - Total complaints upheld": 211,
+        "Redress paid - Total redress paid for complaints not upheld": 174158,
+        "Redress paid - Total redress paid for upheld complaints": 139811
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 477,
+        "Complaints closed - Complaints closed > 8 weeks": 16,
+        "Complaints closed - Complaints closed within 3 days": 376,
+        "Complaints opened - Total": 984,
+        "Complaints upheld - Total complaints upheld": 216,
+        "Redress paid - Total redress paid for complaints not upheld": 77549,
+        "Redress paid - Total redress paid for upheld complaints": 153210
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 607,
+        "Complaints closed - Complaints closed > 8 weeks": 43,
+        "Complaints closed - Complaints closed within 3 days": 361,
+        "Complaints opened - Total": 1195,
+        "Complaints upheld - Total complaints upheld": 178,
+        "Redress paid - Total redress paid for complaints not upheld": 68038,
+        "Redress paid - Total redress paid for upheld complaints": 99786
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 565,
+        "Complaints closed - Complaints closed > 8 weeks": 26,
+        "Complaints closed - Complaints closed within 3 days": 444,
+        "Complaints opened - Total": 1116,
+        "Complaints upheld - Total complaints upheld": 187,
+        "Redress paid - Total redress paid for complaints not upheld": 382928,
+        "Redress paid - Total redress paid for upheld complaints": 144874
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 544,
+        "Complaints closed - Complaints closed > 8 weeks": 19,
+        "Complaints closed - Complaints closed within 3 days": 457,
+        "Complaints opened - Total": 1077,
+        "Complaints upheld - Total complaints upheld": 135,
+        "Redress paid - Total redress paid for complaints not upheld": 149539,
+        "Redress paid - Total redress paid for upheld complaints": 95711
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 527,
+        "Complaints closed - Complaints closed > 8 weeks": 15,
+        "Complaints closed - Complaints closed within 3 days": 712,
+        "Complaints opened - Total": 1291,
+        "Complaints upheld - Total complaints upheld": 232,
+        "Redress paid - Total redress paid for complaints not upheld": 55484,
+        "Redress paid - Total redress paid for upheld complaints": 327765
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 455,
+        "Complaints closed - Complaints closed > 8 weeks": 19,
+        "Complaints closed - Complaints closed within 3 days": 563,
+        "Complaints opened - Total": 1080,
+        "Complaints upheld - Total complaints upheld": 159,
+        "Redress paid - Total redress paid for complaints not upheld": 225178,
+        "Redress paid - Total redress paid for upheld complaints": 451315
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 484,
+        "Complaints closed - Complaints closed > 8 weeks": 30,
+        "Complaints closed - Complaints closed within 3 days": 407,
+        "Complaints opened - Total": 981,
+        "Complaints upheld - Total complaints upheld": 157,
+        "Redress paid - Total redress paid for complaints not upheld": 194541,
+        "Redress paid - Total redress paid for upheld complaints": 970803
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 522,
+        "Complaints closed - Complaints closed > 8 weeks": 17,
+        "Complaints closed - Complaints closed within 3 days": 552,
+        "Complaints opened - Total": 1157,
+        "Complaints upheld - Total complaints upheld": 148,
+        "Redress paid - Total redress paid for complaints not upheld": 165561,
+        "Redress paid - Total redress paid for upheld complaints": 750016
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints closed - Complaints closed > 3 days but within 8 weeks": 752,
+        "Complaints closed - Complaints closed > 8 weeks": 32,
+        "Complaints closed - Complaints closed within 3 days": 611,
+        "Complaints opened - Total": 1428,
+        "Complaints upheld - Total complaints upheld": 359,
+        "Redress paid - Total redress paid for complaints not upheld": 175183,
+        "Redress paid - Total redress paid for upheld complaints": 1307215
+      }
+    ]
+  },
+  "byProductSpecific": {
+    "Credit cards": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 215597,
+        "Provision": 52265765
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 194183,
+        "Provision": 53114624
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 199359,
+        "Provision": 54274046
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 188200,
+        "Provision": 54130275
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 201925,
+        "Provision": 55919973
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 232757,
+        "Provision": 59445392
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 222529,
+        "Provision": 57692273
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 217160,
+        "Provision": 57749991
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 211903,
+        "Provision": 59442664
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 218456,
+        "Provision": 61029672
+      }
+    ],
+    "Current accounts": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 503135,
+        "Provision": 107799767
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 526609,
+        "Provision": 109014716
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 528850,
+        "Provision": 111791588
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 500371,
+        "Provision": 115867985
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 509924,
+        "Provision": 119285586
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 515502,
+        "Provision": 122305364
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 492289,
+        "Provision": 125016171
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 491172,
+        "Provision": 127428893
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 541493,
+        "Provision": 130931874
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 492149,
+        "Provision": 132229980
+      }
+    ],
+    "Other banking - Please provide details below": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 35324,
+        "Provision": 5650611
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 33062,
+        "Provision": 11050004
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 30784,
+        "Provision": 11768578
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 28197,
+        "Provision": 12021865
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 28159,
+        "Provision": 11391536
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 73419,
+        "Provision": 39316333
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 22151,
+        "Provision": 5621512
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 21404,
+        "Provision": 5702709
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 24463,
+        "Provision": 4680945
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 23166,
+        "Provision": 6588866
+      }
+    ],
+    "Overdrafts": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 21414,
+        "Provision": 46023628
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 15457,
+        "Provision": 46905885
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 14648,
+        "Provision": 46850594
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 12182,
+        "Provision": 47646850
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 9387,
+        "Provision": 48159038
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 15369,
+        "Provision": 48573781
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 15586,
+        "Provision": 49081096
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 13290,
+        "Provision": 49847598
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 16188,
+        "Provision": 49038126
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 26456,
+        "Provision": 50590527
+      }
+    ],
+    "Packaged accounts": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 72225,
+        "Provision": 7589107
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 57217,
+        "Provision": 7320823
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 45935,
+        "Provision": 6377051
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 26178,
+        "Provision": 7403669
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 12788,
+        "Provision": 7324338
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 13461,
+        "Provision": 7404469
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 15080,
+        "Provision": 7475760
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 15959,
+        "Provision": 7607406
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 15944,
+        "Provision": 7838830
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 15065,
+        "Provision": 8199468
+      }
+    ],
+    "Savings (including ISAs)": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 54604,
+        "Provision": 119431396
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 52268,
+        "Provision": 117095882
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 51419,
+        "Provision": 122253735
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 69373,
+        "Provision": 118424462
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 85315,
+        "Provision": 123115002
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 91177,
+        "Provision": 125983131
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 83392,
+        "Provision": 128946679
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 80592,
+        "Provision": 131113260
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 89919,
+        "Provision": 136973865
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 82465,
+        "Provision": 143020598
+      }
+    ],
+    "Total banking and credit cards": [
+      {
+        "semester": "2021 H1",
+        "Provision": 6396773
+      },
+      {
+        "semester": "2021 H2",
+        "Provision": 6512901
+      },
+      {
+        "semester": "2022 H1",
+        "Provision": 6647013
+      },
+      {
+        "semester": "2022 H2",
+        "Provision": 6794079
+      },
+      {
+        "semester": "2023 H1",
+        "Provision": 7087579
+      },
+      {
+        "semester": "2023 H2",
+        "Provision": 7417717
+      },
+      {
+        "semester": "2024 H1",
+        "Provision": 8898961
+      },
+      {
+        "semester": "2024 H2",
+        "Provision": 12234041
+      },
+      {
+        "semester": "2025 H1",
+        "Provision": 8111103
+      },
+      {
+        "semester": "2025 H2",
+        "Provision": 16894767
+      }
+    ],
+    "Annuities (including enhanced and impaired)": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 5337,
+        "Provision": 6068354
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 4500,
+        "Provision": 6441184
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 4978,
+        "Provision": 6001689
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 6494,
+        "Provision": 6405483
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 8711,
+        "Provision": 6334383
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 8523,
+        "Provision": 6722568
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 9009,
+        "Provision": 6181695
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 7500,
+        "Provision": 6388616
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 7968,
+        "Provision": 6707167
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 7684,
+        "Provision": 6650816
+      }
+    ],
+    "Decumulation packaged multi products": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 12,
+        "Provision": 0
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 45,
+        "Provision": 0
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 25,
+        "Provision": 0
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 1,
+        "Provision": 0
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 0,
+        "Provision": 0
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 2,
+        "Provision": 0
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 0,
+        "Provision": 0
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 501,
+        "Provision": 0
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 434,
+        "Provision": 0
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 520,
+        "Provision": 408116
+      }
+    ],
+    "Drawdown and UFPLS": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 4840,
+        "Provision": 815222
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 4495,
+        "Provision": 840604
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 5012,
+        "Provision": 928426
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 5075,
+        "Provision": 911031
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 6326,
+        "Provision": 972699
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 7008,
+        "Provision": 1024823
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 9037,
+        "Provision": 1126898
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 8232,
+        "Provision": 1144833
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 6751,
+        "Provision": 983966
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 7506,
+        "Provision": 1256954
+      }
+    ],
+    "Non-workplace personal pensions  (e.g. SIPPs, SHPs, PPPs)": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 43379,
+        "Provision": 13643569
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 36702,
+        "Provision": 13647281
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 38629,
+        "Provision": 12873911
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 38543,
+        "Provision": 12874642
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 47536,
+        "Provision": 13271548
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 45997,
+        "Provision": 15507500
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 50831,
+        "Provision": 12610901
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 49383,
+        "Provision": 13110242
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 52395,
+        "Provision": 13240691
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 49094,
+        "Provision": 12966679
+      }
+    ],
+    "Other decumulation": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 35,
+        "Provision": 0
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 23,
+        "Provision": 0
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 21,
+        "Provision": 0
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 57,
+        "Provision": 0
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 77,
+        "Provision": 0
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 51,
+        "Provision": 0
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 29,
+        "Provision": 0
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 33,
+        "Provision": 0
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 61,
+        "Provision": 0
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 49,
+        "Provision": 332
+      }
+    ],
+    "Other pensions": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 269,
+        "Provision": 512088
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 309,
+        "Provision": 640731
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 320,
+        "Provision": 559161
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 270,
+        "Provision": 545143
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 367,
+        "Provision": 541848
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 339,
+        "Provision": 520964
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 286,
+        "Provision": 520587
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 537,
+        "Provision": 501190
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 481,
+        "Provision": 500775
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 196,
+        "Provision": 483857
+      }
+    ],
+    "Pensions packaged multi products": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 18,
+        "Provision": 0
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 16,
+        "Provision": 0
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 20,
+        "Provision": 0
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 10,
+        "Provision": 0
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 19,
+        "Provision": 6
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 26,
+        "Provision": 0
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 22,
+        "Provision": 0
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 41,
+        "Provision": 0
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 41,
+        "Provision": 0
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 30,
+        "Provision": 0
+      }
+    ],
+    "Third way products (e.g. investment linked, variable, fixed term)": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 72,
+        "Provision": 18559
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 75,
+        "Provision": 18028
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 74,
+        "Provision": 17465
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 92,
+        "Provision": 40711
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 94,
+        "Provision": 40077
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 91,
+        "Provision": 29827
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 75,
+        "Provision": 15467
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 67,
+        "Provision": 15102
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 67,
+        "Provision": 204068
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 48,
+        "Provision": 15268
+      }
+    ],
+    "Total decumulation & pensions": [
+      {
+        "semester": "2021 H1",
+        "Provision": 4165006
+      },
+      {
+        "semester": "2021 H2",
+        "Provision": 9554868
+      },
+      {
+        "semester": "2022 H1",
+        "Provision": 7609962
+      },
+      {
+        "semester": "2022 H2",
+        "Provision": 6357153
+      },
+      {
+        "semester": "2023 H1",
+        "Provision": 3721834
+      },
+      {
+        "semester": "2023 H2",
+        "Provision": 4466350
+      },
+      {
+        "semester": "2024 H1",
+        "Provision": 3880841
+      },
+      {
+        "semester": "2024 H2",
+        "Provision": 5098533
+      },
+      {
+        "semester": "2025 H1",
+        "Provision": 6559758
+      },
+      {
+        "semester": "2025 H2",
+        "Provision": 7046587
+      }
+    ],
+    "Trust based pensions (e.g. Occupational and DB)": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 5532,
+        "Provision": 9387451
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 4393,
+        "Provision": 9619614
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 7201,
+        "Provision": 10180648
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 8814,
+        "Provision": 10208676
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 8494,
+        "Provision": 10471270
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 7122,
+        "Provision": 11329829
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 7414,
+        "Provision": 10432737
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 6466,
+        "Provision": 9552489
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 8977,
+        "Provision": 9683479
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 5201,
+        "Provision": 9869184
+      }
+    ],
+    "Workplace personal pensions (e.g. SIPPs, SHPs, PPPs)": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 14980,
+        "Provision": 13729655
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 11906,
+        "Provision": 14110041
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 13921,
+        "Provision": 13552347
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 13713,
+        "Provision": 16058963
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 16477,
+        "Provision": 16431097
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 17749,
+        "Provision": 17446730
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 16341,
+        "Provision": 17040932
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 16413,
+        "Provision": 16523416
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 16860,
+        "Provision": 14059224
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 17516,
+        "Provision": 14163760
+      }
+    ],
+    "Equity release": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 2344,
+        "Provision": 162121
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 2411,
+        "Provision": 156793
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 2699,
+        "Provision": 151659
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 2674,
+        "Provision": 151580
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 2085,
+        "Provision": 147648
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 1929,
+        "Provision": 142660
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 2201,
+        "Provision": 140794
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 2328,
+        "Provision": 136066
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 2111,
+        "Provision": 132536
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 1969,
+        "Provision": 126933
+      }
+    ],
+    "Impaired credit": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 724,
+        "Provision": 43440
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 656,
+        "Provision": 46230
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 559,
+        "Provision": 35307
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 592,
+        "Provision": 37622
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 581,
+        "Provision": 35361
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 714,
+        "Provision": 39252
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 633,
+        "Provision": 33059
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 561,
+        "Provision": 29443
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 564,
+        "Provision": 36604
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 409,
+        "Provision": 29719
+      }
+    ],
+    "Other regulated home finance products": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 80848,
+        "Provision": 10493575
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 69697,
+        "Provision": 10435151
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 68234,
+        "Provision": 15346051
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 78427,
+        "Provision": 10432374
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 70136,
+        "Provision": 9353781
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 70393,
+        "Provision": 9287575
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 70619,
+        "Provision": 9160607
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 63670,
+        "Provision": 9112144
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 60395,
+        "Provision": 9184230
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 58073,
+        "Provision": 9119088
+      }
+    ],
+    "Other unregulated home finance products": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 18282,
+        "Provision": 2577119
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 15548,
+        "Provision": 2650768
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 15016,
+        "Provision": 4258125
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 17438,
+        "Provision": 2601154
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 16718,
+        "Provision": 2506611
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 19147,
+        "Provision": 2212754
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 16759,
+        "Provision": 2113139
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 14738,
+        "Provision": 2067964
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 12128,
+        "Provision": 2185697
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 12110,
+        "Provision": 1925706
+      }
+    ],
+    "Second and subsequent charge": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 2445,
+        "Provision": 38981
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 2213,
+        "Provision": 45426
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 2107,
+        "Provision": 41245
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 2250,
+        "Provision": 41022
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 1991,
+        "Provision": 36461
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 2698,
+        "Provision": 62621
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 3022,
+        "Provision": 62002
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 2639,
+        "Provision": 60350
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 3418,
+        "Provision": 57534
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 3097,
+        "Provision": 59574
+      }
+    ],
+    "Total home finance": [
+      {
+        "semester": "2021 H1",
+        "Provision": 2138576283
+      },
+      {
+        "semester": "2021 H2",
+        "Provision": 3137728728
+      },
+      {
+        "semester": "2022 H1",
+        "Provision": 408171849
+      },
+      {
+        "semester": "2022 H2",
+        "Provision": 275176053
+      },
+      {
+        "semester": "2023 H1",
+        "Provision": 76754723
+      },
+      {
+        "semester": "2023 H2",
+        "Provision": 5277682
+      },
+      {
+        "semester": "2024 H1",
+        "Provision": 10223469
+      },
+      {
+        "semester": "2024 H2",
+        "Provision": 21789713
+      },
+      {
+        "semester": "2025 H1",
+        "Provision": 2275094
+      },
+      {
+        "semester": "2025 H2",
+        "Provision": 4119021
+      }
+    ],
+    "Assistance": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 30754,
+        "Provision": 18061568
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 29078,
+        "Provision": 23586813
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 26428,
+        "Provision": 22711856
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 29091,
+        "Provision": 9159963
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 27518,
+        "Provision": 7708937
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 26632,
+        "Provision": 9137981
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 18125,
+        "Provision": 8831900
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 20370,
+        "Provision": 7473420
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 18236,
+        "Provision": 8667292
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 18313,
+        "Provision": 15361858
+      }
+    ],
+    "General insurance packaged multi products": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 10052,
+        "Provision": 9857749
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 9083,
+        "Provision": 15027301
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 23796,
+        "Provision": 9456220
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 26764,
+        "Provision": 8367869
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 19727,
+        "Provision": 11374474
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 19337,
+        "Provision": 11498178
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 14866,
+        "Provision": 12217412
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 12203,
+        "Provision": 7453739
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 13003,
+        "Provision": 8490921
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 10707,
+        "Provision": 6853769
+      }
+    ],
+    "Income protection and other accident, sickness and unemployment": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 4083,
+        "Provision": 5727980
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 3216,
+        "Provision": 6331400
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 3393,
+        "Provision": 8939923
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 3192,
+        "Provision": 9895657
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 3724,
+        "Provision": 8973749
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 3733,
+        "Provision": 9821003
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 4108,
+        "Provision": 2659685
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 4528,
+        "Provision": 2190813
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 4670,
+        "Provision": 2896097
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 5122,
+        "Provision": 2602314
+      }
+    ],
+    "Medical/health": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 83494,
+        "Provision": 10702825
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 69749,
+        "Provision": 8158088
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 76789,
+        "Provision": 8408323
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 79351,
+        "Provision": 7325114
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 85316,
+        "Provision": 9312040
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 80293,
+        "Provision": 9326721
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 95886,
+        "Provision": 9403118
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 77075,
+        "Provision": 10182308
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 76182,
+        "Provision": 10390913
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 70619,
+        "Provision": 10371424
+      }
+    ],
+    "Motor & transport": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 200206,
+        "Provision": 64496501
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 218048,
+        "Provision": 70562030
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 244941,
+        "Provision": 79107681
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 237803,
+        "Provision": 71195247
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 277080,
+        "Provision": 71456939
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 281252,
+        "Provision": 69412849
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 276795,
+        "Provision": 70248202
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 254788,
+        "Provision": 67154323
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 234015,
+        "Provision": 65601176
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 215708,
+        "Provision": 68775009
+      }
+    ],
+    "Other general insurance": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 298590,
+        "Provision": 54948026
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 252365,
+        "Provision": 62129654
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 252795,
+        "Provision": 78075484
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 156153,
+        "Provision": 75042004
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 150771,
+        "Provision": 68025943
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 118981,
+        "Provision": 78010523
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 118599,
+        "Provision": 66220255
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 123916,
+        "Provision": 74339283
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 113789,
+        "Provision": 75078149
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 111903,
+        "Provision": 82189784
+      }
+    ],
+    "Other pure protection": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 1059,
+        "Provision": 713595
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 944,
+        "Provision": 763431
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 840,
+        "Provision": 911864
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 7685,
+        "Provision": 870785
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 602,
+        "Provision": 880852
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 381,
+        "Provision": 894411
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 466,
+        "Provision": 4453954
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 440,
+        "Provision": 977721
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 544,
+        "Provision": 6035335
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 798,
+        "Provision": 1472960
+      }
+    ],
+    "Payment protection insurance": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 56624,
+        "Provision": 23879115
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 16378,
+        "Provision": 23644263
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 6687,
+        "Provision": 17529642
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 3622,
+        "Provision": 16913278
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 3287,
+        "Provision": 16850740
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 2012,
+        "Provision": 16743917
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 882,
+        "Provision": 9424899
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 558,
+        "Provision": 9374368
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 603,
+        "Provision": 9219406
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 551,
+        "Provision": 9138280
+      }
+    ],
+    "Pet": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 23088,
+        "Provision": 3965158
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 21192,
+        "Provision": 4316116
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 22028,
+        "Provision": 4564996
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 23468,
+        "Provision": 4635083
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 27847,
+        "Provision": 4712843
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 26984,
+        "Provision": 5239967
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 28019,
+        "Provision": 5104123
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 27748,
+        "Provision": 4834709
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 23764,
+        "Provision": 4721947
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 22902,
+        "Provision": 5141074
+      }
+    ],
+    "Property": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 90431,
+        "Provision": 35965002
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 86501,
+        "Provision": 37123530
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 94638,
+        "Provision": 39691043
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 86259,
+        "Provision": 39849375
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 92677,
+        "Provision": 39365148
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 91978,
+        "Provision": 41340919
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 100431,
+        "Provision": 40937514
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 91892,
+        "Provision": 37441017
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 94186,
+        "Provision": 43981979
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 88851,
+        "Provision": 41275219
+      }
+    ],
+    "Protection packaged multi products": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 331,
+        "Provision": 6449
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 363,
+        "Provision": 8524
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 487,
+        "Provision": 42859
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 827,
+        "Provision": 1538244
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 887,
+        "Provision": 1681559
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 509,
+        "Provision": 470293
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 554,
+        "Provision": 458540
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 788,
+        "Provision": 450132
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 797,
+        "Provision": 467635
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 1171,
+        "Provision": 504214
+      }
+    ],
+    "Total insurance & pure protection": [
+      {
+        "semester": "2021 H1",
+        "Provision": 85791206
+      },
+      {
+        "semester": "2021 H2",
+        "Provision": 80023649
+      },
+      {
+        "semester": "2022 H1",
+        "Provision": 105213495
+      },
+      {
+        "semester": "2022 H2",
+        "Provision": 93700673
+      },
+      {
+        "semester": "2023 H1",
+        "Provision": 101939810
+      },
+      {
+        "semester": "2023 H2",
+        "Provision": 83777203
+      },
+      {
+        "semester": "2024 H1",
+        "Provision": 90998401
+      },
+      {
+        "semester": "2024 H2",
+        "Provision": 100082407
+      },
+      {
+        "semester": "2025 H1",
+        "Provision": 105949917
+      },
+      {
+        "semester": "2025 H2",
+        "Provision": 94518045
+      }
+    ],
+    "Travel": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 17080,
+        "Provision": 16403285
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 16178,
+        "Provision": 14267163
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 22386,
+        "Provision": 22475560
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 31989,
+        "Provision": 49946562
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 32589,
+        "Provision": 35220085
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 34669,
+        "Provision": 39106044
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 27551,
+        "Provision": 31493433
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 29280,
+        "Provision": 25892807
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 27813,
+        "Provision": 28829004
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 33199,
+        "Provision": 30991456
+      }
+    ],
+    "Warranty": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 44330,
+        "Provision": 24241159
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 52091,
+        "Provision": 19902441
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 44077,
+        "Provision": 18025326
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 42995,
+        "Provision": 15228194
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 49885,
+        "Provision": 19662539
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 43760,
+        "Provision": 17816052
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 53576,
+        "Provision": 18786953
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 51530,
+        "Provision": 20282823
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 65083,
+        "Provision": 21137778
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 61571,
+        "Provision": 22289898
+      }
+    ],
+    "Whole of life/term assurance/critical illness": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 27017,
+        "Provision": 20400136
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 24014,
+        "Provision": 24915912
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 23689,
+        "Provision": 24601436
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 24909,
+        "Provision": 27000009
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 27094,
+        "Provision": 28097831
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 23673,
+        "Provision": 28810843
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 24674,
+        "Provision": 27907255
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 23622,
+        "Provision": 25027920
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 24950,
+        "Provision": 28264531
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 23955,
+        "Provision": 27998868
+      }
+    ],
+    "Crowdfunding / Peer to Peer": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 1968,
+        "Provision": 59179
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 609,
+        "Provision": 37362
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 602,
+        "Provision": 0
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 562,
+        "Provision": 3783
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 457,
+        "Provision": 5327
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 301,
+        "Provision": 18857
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 292,
+        "Provision": 5590
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 306,
+        "Provision": 8669
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 319,
+        "Provision": 0
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 268,
+        "Provision": 0
+      }
+    ],
+    "Discretionary management services": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 1163,
+        "Provision": 352977
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 1030,
+        "Provision": 304674
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 1029,
+        "Provision": 305113
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 1089,
+        "Provision": 231346
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 1175,
+        "Provision": 223301
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 2161,
+        "Provision": 222748
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 1404,
+        "Provision": 495192
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 1269,
+        "Provision": 405180
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 1187,
+        "Provision": 440171
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 951,
+        "Provision": 49590536
+      }
+    ],
+    "Endowments": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 5090,
+        "Provision": 3042522
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 3995,
+        "Provision": 1698946
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 4188,
+        "Provision": 1553583
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 3603,
+        "Provision": 1495574
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 3484,
+        "Provision": 2406584
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 3164,
+        "Provision": 2225605
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 3046,
+        "Provision": 2046645
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 2562,
+        "Provision": 1879831
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 2318,
+        "Provision": 1688691
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 1789,
+        "Provision": 1542250
+      }
+    ],
+    "ETPs": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 1785,
+        "Provision": 57254264
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 382,
+        "Provision": 0
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 326,
+        "Provision": 2935
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 216,
+        "Provision": 2226
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 205,
+        "Provision": 1398
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 327,
+        "Provision": 1743
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 303,
+        "Provision": 2635
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 389,
+        "Provision": 4251
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 464,
+        "Provision": 0
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 605,
+        "Provision": 51060232
+      }
+    ],
+    "FX/CFD/Spreadbetting": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 1584,
+        "Provision": 14551900
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 1095,
+        "Provision": 64316
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 1358,
+        "Provision": 91739
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 1175,
+        "Provision": 91805
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 1190,
+        "Provision": 58931
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 1302,
+        "Provision": 57110
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 1153,
+        "Provision": 346143
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 1052,
+        "Provision": 696648
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 1184,
+        "Provision": 765807
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 1331,
+        "Provision": 15015918
+      }
+    ],
+    "Investment bonds ": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 8758,
+        "Provision": 2493508
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 7258,
+        "Provision": 2508890
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 7603,
+        "Provision": 2370740
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 8199,
+        "Provision": 2465879
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 11053,
+        "Provision": 2404520
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 11292,
+        "Provision": 2300668
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 10965,
+        "Provision": 2102657
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 10056,
+        "Provision": 2274405
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 9513,
+        "Provision": 2254416
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 8918,
+        "Provision": 1964117
+      }
+    ],
+    "Investment packaged multi products": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 19,
+        "Provision": 2239
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 29,
+        "Provision": 4153
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 48,
+        "Provision": 1124
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 71,
+        "Provision": 1141
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 80,
+        "Provision": 12118
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 75,
+        "Provision": 12384
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 73,
+        "Provision": 12512
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 115,
+        "Provision": 19217
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 98,
+        "Provision": 130692
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 71,
+        "Provision": 16805
+      }
+    ],
+    "Investment trusts": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 456,
+        "Provision": 1663
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 657,
+        "Provision": 1780
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 543,
+        "Provision": 1757
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 725,
+        "Provision": 110292
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 815,
+        "Provision": 105575
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 1344,
+        "Provision": 104216
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 508,
+        "Provision": 973096
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 415,
+        "Provision": 38
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 444,
+        "Provision": 63
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 353,
+        "Provision": 855
+      }
+    ],
+    "ISAs (where investment held)": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 21923,
+        "Provision": 9436190
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 17959,
+        "Provision": 7601669
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 18198,
+        "Provision": 7765629
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 15988,
+        "Provision": 7833886
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 19868,
+        "Provision": 8033244
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 21170,
+        "Provision": 9480725
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 22737,
+        "Provision": 10404551
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 18483,
+        "Provision": 9657963
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 22022,
+        "Provision": 11589499
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 18462,
+        "Provision": 11299587
+      }
+    ],
+    "Non-discretionary management services": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 1714,
+        "Provision": 3821535
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 1034,
+        "Provision": 3904028
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 885,
+        "Provision": 2180600
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 813,
+        "Provision": 3811497
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 974,
+        "Provision": 5756910
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 727,
+        "Provision": 2251763
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 903,
+        "Provision": 2862005
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 854,
+        "Provision": 2554077
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 938,
+        "Provision": 2688550
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 937,
+        "Provision": 1810055
+      }
+    ],
+    "Other investment products/funds": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 8650,
+        "Provision": 37178004
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 6672,
+        "Provision": 10826514
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 8536,
+        "Provision": 10723173
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 6989,
+        "Provision": 10000634
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 7791,
+        "Provision": 10273383
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 7095,
+        "Provision": 10390256
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 7528,
+        "Provision": 34336752
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 6620,
+        "Provision": 29428668
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 7910,
+        "Provision": 33080819
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 7862,
+        "Provision": 36361281
+      }
+    ],
+    "Platforms": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 15830,
+        "Provision": 31235230
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 7778,
+        "Provision": 5380065
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 5928,
+        "Provision": 3604573
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 5055,
+        "Provision": 5545740
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 7524,
+        "Provision": 2923341
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 7845,
+        "Provision": 4876363
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 9103,
+        "Provision": 29474639
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 6405,
+        "Provision": 27379710
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 7980,
+        "Provision": 29050889
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 8845,
+        "Provision": 32653946
+      }
+    ],
+    "Structured products": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 448,
+        "Provision": 34895
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 205,
+        "Provision": 28198
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 198,
+        "Provision": 24198
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 219,
+        "Provision": 12722
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 163,
+        "Provision": 10497
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 107,
+        "Provision": 63299
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 131,
+        "Provision": 6492
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 152,
+        "Provision": 7017
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 94,
+        "Provision": 8157
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 235,
+        "Provision": 8318
+      }
+    ],
+    "Total investments": [
+      {
+        "semester": "2021 H1",
+        "Provision": 159796678
+      },
+      {
+        "semester": "2021 H2",
+        "Provision": 387579348
+      },
+      {
+        "semester": "2022 H1",
+        "Provision": 270646285
+      },
+      {
+        "semester": "2022 H2",
+        "Provision": 846771587
+      },
+      {
+        "semester": "2023 H1",
+        "Provision": 312153131
+      },
+      {
+        "semester": "2023 H2",
+        "Provision": 196006396
+      },
+      {
+        "semester": "2024 H1",
+        "Provision": 2018916520
+      },
+      {
+        "semester": "2024 H2",
+        "Provision": 160115181
+      },
+      {
+        "semester": "2025 H1",
+        "Provision": 175400026
+      },
+      {
+        "semester": "2025 H2",
+        "Provision": 3137344954
+      }
+    ],
+    "UCITS": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 146,
+        "Provision": 61132
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 147,
+        "Provision": 64233
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 191,
+        "Provision": 83623
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 180,
+        "Provision": 86896
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 219,
+        "Provision": 89986
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 188,
+        "Provision": 89820
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 187,
+        "Provision": 8622
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 209,
+        "Provision": 105398
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 246,
+        "Provision": 110954
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 252,
+        "Provision": 119242
+      }
+    ],
+    "Unit trusts/OEICs": [
+      {
+        "semester": "2021 H1",
+        "Complaints opened": 5190,
+        "Provision": 2860600
+      },
+      {
+        "semester": "2021 H2",
+        "Complaints opened": 4389,
+        "Provision": 2926220
+      },
+      {
+        "semester": "2022 H1",
+        "Complaints opened": 4293,
+        "Provision": 2648449
+      },
+      {
+        "semester": "2022 H2",
+        "Complaints opened": 3792,
+        "Provision": 2542084
+      },
+      {
+        "semester": "2023 H1",
+        "Complaints opened": 4419,
+        "Provision": 2587302
+      },
+      {
+        "semester": "2023 H2",
+        "Complaints opened": 4437,
+        "Provision": 2478805
+      },
+      {
+        "semester": "2024 H1",
+        "Complaints opened": 4496,
+        "Provision": 1802682
+      },
+      {
+        "semester": "2024 H2",
+        "Complaints opened": 4086,
+        "Provision": 1295734
+      },
+      {
+        "semester": "2025 H1",
+        "Complaints opened": 3588,
+        "Provision": 1267954
+      },
+      {
+        "semester": "2025 H2",
+        "Complaints opened": 3401,
+        "Provision": 1201566
+      }
+    ]
+  }
+}

@@ -4,6 +4,14 @@
 > header `DATE,IUDBEDR`, 1654 daily rows 2020→now. ONS beta search 200. Complaints pre-harvested in
 > `data/complaints/` (`aggregate-complaints-2025-h2.xlsx`, firm-level, FOS quarterly). Wow layer already
 > lands AI narration + interactive timeline; **chatbot added as the third**. Lowest live-demo risk of the set.
+>
+> **PRE-BAKED FIXTURE (2026-07-21, data-prep): `data/fixtures/rate-timeline.json`** — BoE Bank Rate
+> (series IUDBEDR) already fetched and aligned monthly, Jan 2020 → Jul 2026 (79 months). Shape:
+> `{series, description, generated, complaintsJoined, months:[{month:"YYYY-MM", bankRate, warningCount}]}`.
+> Bank rate spans 0.1%→5.25%; warning counts per month derived from `data/warnings-sample.json` dateAdded
+> (47 months with warnings, peak 256/mo). `complaintsJoined:false` — the complaints half-yearly join was
+> skipped (`data/fixtures/complaints-trends.json` absent at bake time); layer complaints in later if that
+> file lands. **Load this directly; the live BoE fetch below is now "if time permits" only.**
 
 ## Pitch
 Scrub a single timeline from 2020 to today and watch the Bank of England base rate climb while FCA
@@ -30,9 +38,10 @@ This idea deliberately uses only rock-solid CSV/XLSX endpoints — zero live-dem
 
 ## 2-hour build plan (Next.js on Vercel + Claude API)
 1. **0:00–0:15 Scaffold + deploy** empty Next.js (App Router, TS, Tailwind). Env: `ANTHROPIC_API_KEY`.
-2. **0:15–0:40 Ingest.** Build script fetches BoE CSV → `public/rate.json`; parse the pre-harvested
-   complaints XLSX (SheetJS) into per-half-year totals by product category → `public/complaints.json`.
-   Cache everything to `public/` so the stage demo is offline-safe.
+2. **0:15–0:40 Ingest (DONE — use fixture).** Copy `data/fixtures/rate-timeline.json` → `public/rate.json`
+   (BoE Bank Rate + monthly warning counts, 2020→Jul 2026, already aligned). *If time permits:* parse the
+   pre-harvested complaints XLSX (SheetJS) into per-half-year totals → `public/complaints.json` and join on
+   `month`, and/or re-fetch the live BoE CSV to extend the series. Everything cached to `public/` = offline-safe.
 3. **0:40–1:15 Timeline chart.** `recharts` composed chart: base-rate line (right axis) + stacked complaint
    bars by category (left axis) + warning-count line. Draggable time brush / play button animates 2020→now.
 4. **1:15–1:45 AI layer.** `/api/narrate?from=&to=` → Claude (`claude-fable-5`) gets the rate move +
@@ -44,7 +53,7 @@ This idea deliberately uses only rock-solid CSV/XLSX endpoints — zero live-dem
 - **Claude/chatbot fails live** → pre-compute captions for 3 default windows (2020 base, 2022 hikes, peak→now) and bake them in; scrub caption + chat both degrade to these. Chart still animates and tells the story alone.
 - **Correlation ≠ causation** → frame as "timeline / association"; let Claude hedge; do not over-claim.
 - **Complaints XLSX schema drift** → pinned to the pre-harvested H2-2025 file; pre-parse to JSON before demo.
-- **BoE endpoint slow on stage** → pre-cached `public/rate.json` is the safety net.
+- **BoE endpoint slow on stage** → pre-baked `data/fixtures/rate-timeline.json` (built 2026-07-21) → `public/rate.json` is the safety net; no live BoE fetch needed on stage.
 - **Category mismatch across periods** → map to a fixed 5-category taxonomy in the build step.
 
 ## Demo script (2 min)

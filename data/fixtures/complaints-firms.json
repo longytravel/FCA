@@ -1,0 +1,6305 @@
+{
+  "meta": {
+    "source": "firm-level-complaints-2025-h2.xlsx",
+    "sheetsJoined": [
+      "Opened",
+      "Closed",
+      "Percentage within 3 days",
+      "Percentage after 3 days, within",
+      "Percentage upheld"
+    ],
+    "joinKey": "Firm Name x Product Group",
+    "productGroups": [
+      "Banking and credit cards",
+      "Decumulation & pensions",
+      "Home finance",
+      "Insurance & pure protection",
+      "Investments"
+    ],
+    "metricKeys": {
+      "opened": "complaints opened",
+      "closed": "complaints closed",
+      "within3dPct": "% closed within 3 days",
+      "after3dWithin8wkPct": "% closed after 3 days within 8 weeks",
+      "upheldPct": "% upheld"
+    },
+    "firmCount": 219,
+    "generated": "2026-07-21T07:21:15.759Z"
+  },
+  "firms": [
+    {
+      "firmName": "NATIONAL WESTMINSTER BANK PUBLIC LIMITED COMPANY",
+      "group": "NATWEST GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 90819,
+          "closed": 84602,
+          "within3dPct": 0.4633,
+          "after3dWithin8wkPct": 0.3598,
+          "upheldPct": 0.5733
+        },
+        "Decumulation & pensions": {
+          "opened": 41,
+          "closed": 45,
+          "within3dPct": 0.0222,
+          "after3dWithin8wkPct": 0.5333,
+          "upheldPct": 0.6
+        },
+        "Home finance": {
+          "opened": 6123,
+          "closed": 6063,
+          "within3dPct": 0.5956,
+          "after3dWithin8wkPct": 0.3069,
+          "upheldPct": 0.5501
+        },
+        "Insurance & pure protection": {
+          "opened": 77,
+          "closed": 81,
+          "within3dPct": 0.0988,
+          "after3dWithin8wkPct": 0.7778,
+          "upheldPct": 0.0864
+        },
+        "Investments": {
+          "opened": 451,
+          "closed": 394,
+          "within3dPct": 0.0152,
+          "after3dWithin8wkPct": 0.7614,
+          "upheldPct": 0.7411
+        }
+      },
+      "total": {
+        "opened": 97511,
+        "closed": 91185,
+        "within3dPct": 0.4697,
+        "after3dWithin8wkPct": 0.3585,
+        "upheldPct": 0.5721
+      }
+    },
+    {
+      "firmName": "Lloyds Bank PLC",
+      "group": "LLOYDS BANKING GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 87894,
+          "closed": 82768,
+          "within3dPct": 0.5493,
+          "after3dWithin8wkPct": 0.2994,
+          "upheldPct": 0.6879
+        },
+        "Decumulation & pensions": {
+          "opened": 50,
+          "closed": 46,
+          "within3dPct": 0.0435,
+          "after3dWithin8wkPct": 0.6739,
+          "upheldPct": 0.3696
+        },
+        "Home finance": {
+          "opened": 2575,
+          "closed": 2509,
+          "within3dPct": 0.346,
+          "after3dWithin8wkPct": 0.6034,
+          "upheldPct": 0.6329
+        },
+        "Insurance & pure protection": {
+          "opened": 293,
+          "closed": 305,
+          "within3dPct": 0.3049,
+          "after3dWithin8wkPct": 0.6525,
+          "upheldPct": 0.177
+        },
+        "Investments": {
+          "opened": 25,
+          "closed": 31,
+          "within3dPct": 0.2581,
+          "after3dWithin8wkPct": 0.6774,
+          "upheldPct": 0.5806
+        }
+      },
+      "total": {
+        "opened": 90837,
+        "closed": 85659,
+        "within3dPct": 0.5421,
+        "after3dWithin8wkPct": 0.3099,
+        "upheldPct": 0.6843
+      }
+    },
+    {
+      "firmName": "Barclays Bank UK PLC",
+      "group": "BARCLAYS GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 80470,
+          "closed": 81076,
+          "within3dPct": 0.5644,
+          "after3dWithin8wkPct": 0.4248,
+          "upheldPct": 0.5977
+        },
+        "Decumulation & pensions": {
+          "opened": 1,
+          "closed": 1,
+          "within3dPct": 1,
+          "after3dWithin8wkPct": 0,
+          "upheldPct": 0
+        },
+        "Home finance": {
+          "opened": 5356,
+          "closed": 5721,
+          "within3dPct": 0.4513,
+          "after3dWithin8wkPct": 0.5293,
+          "upheldPct": 0.7502
+        },
+        "Insurance & pure protection": {
+          "opened": 148,
+          "closed": 151,
+          "within3dPct": 0.3841,
+          "after3dWithin8wkPct": 0.5166,
+          "upheldPct": 0.2053
+        },
+        "Investments": {
+          "opened": 21,
+          "closed": 23,
+          "within3dPct": 0.2609,
+          "after3dWithin8wkPct": 0.5652,
+          "upheldPct": 0.6957
+        }
+      },
+      "total": {
+        "opened": 85996,
+        "closed": 86972,
+        "within3dPct": 0.5565,
+        "after3dWithin8wkPct": 0.4319,
+        "upheldPct": 0.607
+      }
+    },
+    {
+      "firmName": "HSBC UK Bank Plc",
+      "group": "HSBC GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 75064,
+          "closed": 75510,
+          "within3dPct": 0.6443,
+          "after3dWithin8wkPct": 0.3491,
+          "upheldPct": 0.5814
+        },
+        "Decumulation & pensions": {
+          "opened": 66,
+          "closed": 65,
+          "within3dPct": 0.0462,
+          "after3dWithin8wkPct": 0.5692,
+          "upheldPct": 0.5692
+        },
+        "Home finance": {
+          "opened": 5047,
+          "closed": 5227,
+          "within3dPct": 0.2522,
+          "after3dWithin8wkPct": 0.6732,
+          "upheldPct": 0.6302
+        },
+        "Insurance & pure protection": {
+          "opened": 417,
+          "closed": 450,
+          "within3dPct": 0.1844,
+          "after3dWithin8wkPct": 0.7756,
+          "upheldPct": 0.5533
+        },
+        "Investments": {
+          "opened": 909,
+          "closed": 951,
+          "within3dPct": 0.1441,
+          "after3dWithin8wkPct": 0.8118,
+          "upheldPct": 0.6309
+        }
+      },
+      "total": {
+        "opened": 81503,
+        "closed": 82203,
+        "within3dPct": 0.6106,
+        "after3dWithin8wkPct": 0.3776,
+        "upheldPct": 0.5849
+      }
+    },
+    {
+      "firmName": "Bank of Scotland plc",
+      "group": "LLOYDS BANKING GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 67071,
+          "closed": 64931,
+          "within3dPct": 0.5744,
+          "after3dWithin8wkPct": 0.2707,
+          "upheldPct": 0.7015
+        },
+        "Decumulation & pensions": {
+          "opened": 13,
+          "closed": 10,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 0.6,
+          "upheldPct": 0.3
+        },
+        "Home finance": {
+          "opened": 12223,
+          "closed": 11834,
+          "within3dPct": 0.3852,
+          "after3dWithin8wkPct": 0.5777,
+          "upheldPct": 0.5735
+        },
+        "Insurance & pure protection": {
+          "opened": 171,
+          "closed": 172,
+          "within3dPct": 0.2965,
+          "after3dWithin8wkPct": 0.6686,
+          "upheldPct": 0.2384
+        },
+        "Investments": {
+          "opened": 30,
+          "closed": 30,
+          "within3dPct": 0.1,
+          "after3dWithin8wkPct": 0.6333,
+          "upheldPct": 0.3
+        }
+      },
+      "total": {
+        "opened": 79508,
+        "closed": 76977,
+        "within3dPct": 0.5444,
+        "after3dWithin8wkPct": 0.319,
+        "upheldPct": 0.6806
+      }
+    },
+    {
+      "firmName": "Nationwide Building Society",
+      "group": "NATIONWIDE BUILDING SOCIETY",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 63947,
+          "closed": 65216,
+          "within3dPct": 0.5127,
+          "after3dWithin8wkPct": 0.4841,
+          "upheldPct": 0.5241
+        },
+        "Decumulation & pensions": {
+          "opened": 2,
+          "closed": 3,
+          "within3dPct": 0.3333,
+          "after3dWithin8wkPct": 0.6667,
+          "upheldPct": null
+        },
+        "Home finance": {
+          "opened": 5263,
+          "closed": 5410,
+          "within3dPct": 0.3124,
+          "after3dWithin8wkPct": 0.6828,
+          "upheldPct": 0.5242
+        },
+        "Insurance & pure protection": {
+          "opened": 132,
+          "closed": 140,
+          "within3dPct": 0.3429,
+          "after3dWithin8wkPct": 0.6571,
+          "upheldPct": 0.35
+        },
+        "Investments": {
+          "opened": 44,
+          "closed": 49,
+          "within3dPct": 0.102,
+          "after3dWithin8wkPct": 0.8776,
+          "upheldPct": 0.6122
+        }
+      },
+      "total": {
+        "opened": 69388,
+        "closed": 70818,
+        "within3dPct": 0.4968,
+        "after3dWithin8wkPct": 0.4999,
+        "upheldPct": 0.5238
+      }
+    },
+    {
+      "firmName": "Santander UK Plc",
+      "group": "SANTANDER UK GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 60432,
+          "closed": 62482,
+          "within3dPct": 0.5278,
+          "after3dWithin8wkPct": 0.4374,
+          "upheldPct": 0.451
+        },
+        "Decumulation & pensions": {
+          "opened": 16,
+          "closed": 21,
+          "within3dPct": 0.0476,
+          "after3dWithin8wkPct": 0.7619,
+          "upheldPct": 0.4286
+        },
+        "Home finance": {
+          "opened": 4106,
+          "closed": 4262,
+          "within3dPct": 0.519,
+          "after3dWithin8wkPct": 0.4786,
+          "upheldPct": 0.6462
+        },
+        "Insurance & pure protection": {
+          "opened": 95,
+          "closed": 106,
+          "within3dPct": 0.3396,
+          "after3dWithin8wkPct": 0.566,
+          "upheldPct": 0.2075
+        },
+        "Investments": {
+          "opened": 92,
+          "closed": 92,
+          "within3dPct": 0.3261,
+          "after3dWithin8wkPct": 0.6196,
+          "upheldPct": 0.5109
+        }
+      },
+      "total": {
+        "opened": 64741,
+        "closed": 66963,
+        "within3dPct": 0.5266,
+        "after3dWithin8wkPct": 0.4406,
+        "upheldPct": 0.4631
+      }
+    },
+    {
+      "firmName": "EUI Limited",
+      "group": "ADMIRAL GROUP PLC",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 60221,
+          "closed": 60383,
+          "within3dPct": 0.4757,
+          "after3dWithin8wkPct": 0.4601,
+          "upheldPct": 0.6386
+        }
+      },
+      "total": {
+        "opened": 60221,
+        "closed": 60383,
+        "within3dPct": 0.4757,
+        "after3dWithin8wkPct": 0.4601,
+        "upheldPct": 0.6386
+      }
+    },
+    {
+      "firmName": "Domestic & General Insurance Plc",
+      "group": "DOMESTIC & GENERAL GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 56025,
+          "closed": 55887,
+          "within3dPct": 0.7495,
+          "after3dWithin8wkPct": 0.2392,
+          "upheldPct": 0.5222
+        }
+      },
+      "total": {
+        "opened": 56025,
+        "closed": 55887,
+        "within3dPct": 0.7495,
+        "after3dWithin8wkPct": 0.2392,
+        "upheldPct": 0.5222
+      }
+    },
+    {
+      "firmName": "Aviva Insurance Limited",
+      "group": "AVIVA PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 49795,
+          "closed": 50156,
+          "within3dPct": 0.4349,
+          "after3dWithin8wkPct": 0.5418,
+          "upheldPct": 0.5627
+        }
+      },
+      "total": {
+        "opened": 49795,
+        "closed": 50156,
+        "within3dPct": 0.4349,
+        "after3dWithin8wkPct": 0.5418,
+        "upheldPct": 0.5627
+      }
+    },
+    {
+      "firmName": "Monzo Bank Ltd",
+      "group": "MONZO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 49247,
+          "closed": 45276,
+          "within3dPct": 0.0916,
+          "after3dWithin8wkPct": 0.847,
+          "upheldPct": 0.2994
+        },
+        "Decumulation & pensions": {
+          "opened": 46,
+          "closed": 46,
+          "within3dPct": 0.0217,
+          "after3dWithin8wkPct": 0.6304,
+          "upheldPct": 0.2826
+        },
+        "Insurance & pure protection": {
+          "opened": 26,
+          "closed": 19,
+          "within3dPct": 0.1579,
+          "after3dWithin8wkPct": 0.7895,
+          "upheldPct": 0.6842
+        },
+        "Investments": {
+          "opened": 251,
+          "closed": 211,
+          "within3dPct": 0.0616,
+          "after3dWithin8wkPct": 0.8341,
+          "upheldPct": 0.4455
+        }
+      },
+      "total": {
+        "opened": 49570,
+        "closed": 45552,
+        "within3dPct": 0.0915,
+        "after3dWithin8wkPct": 0.8467,
+        "upheldPct": 0.3002
+      }
+    },
+    {
+      "firmName": "British Gas Services Limited",
+      "group": "BRITISH GAS",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 49016,
+          "closed": 47157,
+          "within3dPct": 0.6879,
+          "after3dWithin8wkPct": 0.275,
+          "upheldPct": 0.9307
+        }
+      },
+      "total": {
+        "opened": 49016,
+        "closed": 47157,
+        "within3dPct": 0.6879,
+        "after3dWithin8wkPct": 0.275,
+        "upheldPct": 0.9307
+      }
+    },
+    {
+      "firmName": "U K Insurance Limited",
+      "group": "DIRECT LINE GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 37282,
+          "closed": 37663,
+          "within3dPct": 0.4741,
+          "after3dWithin8wkPct": 0.491,
+          "upheldPct": 0.6744
+        }
+      },
+      "total": {
+        "opened": 37282,
+        "closed": 37663,
+        "within3dPct": 0.4741,
+        "after3dWithin8wkPct": 0.491,
+        "upheldPct": 0.6744
+      }
+    },
+    {
+      "firmName": "Clydesdale Bank Plc",
+      "group": "NATIONWIDE BUILDING SOCIETY",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 31993,
+          "closed": 32307,
+          "within3dPct": 0.5082,
+          "after3dWithin8wkPct": 0.4753,
+          "upheldPct": 0.6406
+        },
+        "Decumulation & pensions": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Home finance": {
+          "opened": 2174,
+          "closed": 2186,
+          "within3dPct": 0.151,
+          "after3dWithin8wkPct": 0.796,
+          "upheldPct": 0.6473
+        },
+        "Insurance & pure protection": {
+          "opened": 15,
+          "closed": 20,
+          "within3dPct": 0.3,
+          "after3dWithin8wkPct": 0.5,
+          "upheldPct": 0.55
+        },
+        "Investments": {
+          "opened": 3,
+          "closed": 2,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 0.5
+        }
+      },
+      "total": {
+        "opened": 34185,
+        "closed": 34515,
+        "within3dPct": 0.4855,
+        "after3dWithin8wkPct": 0.4957,
+        "upheldPct": 0.641
+      }
+    },
+    {
+      "firmName": "TSB Bank plc",
+      "group": "BANCO DE SABADELL SA",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 32154,
+          "closed": 31877,
+          "within3dPct": 0.5922,
+          "after3dWithin8wkPct": 0.4057,
+          "upheldPct": 0.5234
+        },
+        "Home finance": {
+          "opened": 1523,
+          "closed": 1524,
+          "within3dPct": 0.5807,
+          "after3dWithin8wkPct": 0.4068,
+          "upheldPct": 0.5328
+        },
+        "Insurance & pure protection": {
+          "opened": 28,
+          "closed": 29,
+          "within3dPct": 0.7241,
+          "after3dWithin8wkPct": 0.2759,
+          "upheldPct": 0.4828
+        }
+      },
+      "total": {
+        "opened": 33705,
+        "closed": 33430,
+        "within3dPct": 0.5918,
+        "after3dWithin8wkPct": 0.4056,
+        "upheldPct": 0.5238
+      }
+    },
+    {
+      "firmName": "Capital One (Europe) plc",
+      "group": "CAPITAL ONE FINANCIAL CORPORATION",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 30573,
+          "closed": 30522,
+          "within3dPct": 0.2137,
+          "after3dWithin8wkPct": 0.7751,
+          "upheldPct": 0.3429
+        },
+        "Insurance & pure protection": {
+          "opened": 20,
+          "closed": 27,
+          "within3dPct": 0.0741,
+          "after3dWithin8wkPct": 0.5926,
+          "upheldPct": 0.1481
+        }
+      },
+      "total": {
+        "opened": 30593,
+        "closed": 30549,
+        "within3dPct": 0.2136,
+        "after3dWithin8wkPct": 0.775,
+        "upheldPct": 0.3428
+      }
+    },
+    {
+      "firmName": "BUPA Insurance Services Limited",
+      "group": "BUPA GROUP",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 28091,
+          "closed": 27518,
+          "within3dPct": 0.5812,
+          "after3dWithin8wkPct": 0.4162,
+          "upheldPct": 0.5713
+        }
+      },
+      "total": {
+        "opened": 28091,
+        "closed": 27518,
+        "within3dPct": 0.5812,
+        "after3dWithin8wkPct": 0.4162,
+        "upheldPct": 0.5713
+      }
+    },
+    {
+      "firmName": "Aviva Life Services UK Limited",
+      "group": "AVIVA PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 17892,
+          "closed": 17930,
+          "within3dPct": 0.2642,
+          "after3dWithin8wkPct": 0.659,
+          "upheldPct": 0.6841
+        },
+        "Home finance": {
+          "opened": 730,
+          "closed": 757,
+          "within3dPct": 0.1572,
+          "after3dWithin8wkPct": 0.745,
+          "upheldPct": 0.4016
+        },
+        "Insurance & pure protection": {
+          "opened": 4523,
+          "closed": 4360,
+          "within3dPct": 0.2255,
+          "after3dWithin8wkPct": 0.6693,
+          "upheldPct": 0.5883
+        },
+        "Investments": {
+          "opened": 2986,
+          "closed": 2955,
+          "within3dPct": 0.2345,
+          "after3dWithin8wkPct": 0.5834,
+          "upheldPct": 0.7668
+        }
+      },
+      "total": {
+        "opened": 26131,
+        "closed": 26002,
+        "within3dPct": 0.2512,
+        "after3dWithin8wkPct": 0.6546,
+        "upheldPct": 0.6692
+      }
+    },
+    {
+      "firmName": "The Royal Bank of Scotland Plc",
+      "group": "NATWEST GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 18544,
+          "closed": 18093,
+          "within3dPct": 0.4656,
+          "after3dWithin8wkPct": 0.3443,
+          "upheldPct": 0.5909
+        },
+        "Decumulation & pensions": {
+          "opened": 6,
+          "closed": 5,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 0,
+          "upheldPct": 1
+        },
+        "Home finance": {
+          "opened": 1206,
+          "closed": 1215,
+          "within3dPct": 0.4905,
+          "after3dWithin8wkPct": 0.3992,
+          "upheldPct": 0.5021
+        },
+        "Insurance & pure protection": {
+          "opened": 26,
+          "closed": 27,
+          "within3dPct": 0.1111,
+          "after3dWithin8wkPct": 0.7037,
+          "upheldPct": 0.037
+        },
+        "Investments": {
+          "opened": 102,
+          "closed": 93,
+          "within3dPct": 0.0108,
+          "after3dWithin8wkPct": 0.7097,
+          "upheldPct": 0.6989
+        }
+      },
+      "total": {
+        "opened": 19884,
+        "closed": 19433,
+        "within3dPct": 0.4644,
+        "after3dWithin8wkPct": 0.3499,
+        "upheldPct": 0.5852
+      }
+    },
+    {
+      "firmName": "Hastings Insurance Services Limited",
+      "group": "HASTINGS GROUP",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 19781,
+          "closed": 19003,
+          "within3dPct": 0.285,
+          "after3dWithin8wkPct": 0.6858,
+          "upheldPct": 0.5204
+        }
+      },
+      "total": {
+        "opened": 19781,
+        "closed": 19003,
+        "within3dPct": 0.285,
+        "after3dWithin8wkPct": 0.6858,
+        "upheldPct": 0.5204
+      }
+    },
+    {
+      "firmName": "AXA PPP Healthcare Limited",
+      "group": "AXA GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 19555,
+          "closed": 20666,
+          "within3dPct": 0.5099,
+          "after3dWithin8wkPct": 0.4749,
+          "upheldPct": 0.546
+        }
+      },
+      "total": {
+        "opened": 19555,
+        "closed": 20666,
+        "within3dPct": 0.5099,
+        "after3dWithin8wkPct": 0.4749,
+        "upheldPct": 0.546
+      }
+    },
+    {
+      "firmName": "Vanquis Bank Limited",
+      "group": "VANQUIS BANKING GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 18304,
+          "closed": 19927,
+          "within3dPct": 0.3179,
+          "after3dWithin8wkPct": 0.6602,
+          "upheldPct": 0.2994
+        }
+      },
+      "total": {
+        "opened": 18304,
+        "closed": 19927,
+        "within3dPct": 0.3179,
+        "after3dWithin8wkPct": 0.6602,
+        "upheldPct": 0.2994
+      }
+    },
+    {
+      "firmName": "Starling Bank Limited",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 17323,
+          "closed": 17629,
+          "within3dPct": 0.199,
+          "after3dWithin8wkPct": 0.7986,
+          "upheldPct": 0.4099
+        }
+      },
+      "total": {
+        "opened": 17323,
+        "closed": 17629,
+        "within3dPct": 0.199,
+        "after3dWithin8wkPct": 0.7986,
+        "upheldPct": 0.4099
+      }
+    },
+    {
+      "firmName": "Phoenix Life Limited",
+      "group": "PHOENIX GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 12980,
+          "closed": 12443,
+          "within3dPct": 0.3496,
+          "after3dWithin8wkPct": 0.5647,
+          "upheldPct": 0.7861
+        },
+        "Home finance": {
+          "opened": 7,
+          "closed": 7,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 0.4286
+        },
+        "Insurance & pure protection": {
+          "opened": 3303,
+          "closed": 3322,
+          "within3dPct": 0.3317,
+          "after3dWithin8wkPct": 0.5972,
+          "upheldPct": 0.7336
+        },
+        "Investments": {
+          "opened": 796,
+          "closed": 810,
+          "within3dPct": 0.2543,
+          "after3dWithin8wkPct": 0.6185,
+          "upheldPct": 0.8025
+        }
+      },
+      "total": {
+        "opened": 17086,
+        "closed": 16582,
+        "within3dPct": 0.3412,
+        "after3dWithin8wkPct": 0.574,
+        "upheldPct": 0.7762
+      }
+    },
+    {
+      "firmName": "AXA Insurance UK Plc",
+      "group": "AXA GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 16052,
+          "closed": 16159,
+          "within3dPct": 0.3117,
+          "after3dWithin8wkPct": 0.6344,
+          "upheldPct": 0.5871
+        }
+      },
+      "total": {
+        "opened": 16052,
+        "closed": 16159,
+        "within3dPct": 0.3117,
+        "after3dWithin8wkPct": 0.6344,
+        "upheldPct": 0.5871
+      }
+    },
+    {
+      "firmName": "AMERICAN EXPRESS SERVICES EUROPE LIMITED",
+      "group": "AMERICAN EXPRESS",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 14708,
+          "closed": 14248,
+          "within3dPct": 0.1829,
+          "after3dWithin8wkPct": 0.81,
+          "upheldPct": 0.3326
+        },
+        "Insurance & pure protection": {
+          "opened": 106,
+          "closed": 78,
+          "within3dPct": 0.0128,
+          "after3dWithin8wkPct": 0.9359,
+          "upheldPct": 0.0897
+        }
+      },
+      "total": {
+        "opened": 14814,
+        "closed": 14326,
+        "within3dPct": 0.182,
+        "after3dWithin8wkPct": 0.8107,
+        "upheldPct": 0.3313
+      }
+    },
+    {
+      "firmName": "Liverpool Victoria Insurance Company Limited",
+      "group": "ALLIANZ GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 12025,
+          "closed": 11028,
+          "within3dPct": 0.3611,
+          "after3dWithin8wkPct": 0.4816,
+          "upheldPct": 0.5586
+        }
+      },
+      "total": {
+        "opened": 12025,
+        "closed": 11028,
+        "within3dPct": 0.3611,
+        "after3dWithin8wkPct": 0.4816,
+        "upheldPct": 0.5586
+      }
+    },
+    {
+      "firmName": "BISL Limited",
+      "group": "MARKERSTUDY GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 11577,
+          "closed": 11307,
+          "within3dPct": 0.68,
+          "after3dWithin8wkPct": 0.3137,
+          "upheldPct": 0.4572
+        }
+      },
+      "total": {
+        "opened": 11577,
+        "closed": 11307,
+        "within3dPct": 0.68,
+        "after3dWithin8wkPct": 0.3137,
+        "upheldPct": 0.4572
+      }
+    },
+    {
+      "firmName": "esure Insurance Limited",
+      "group": "ESURE GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 11352,
+          "closed": 11394,
+          "within3dPct": 0.4454,
+          "after3dWithin8wkPct": 0.5062,
+          "upheldPct": 0.7024
+        }
+      },
+      "total": {
+        "opened": 11352,
+        "closed": 11394,
+        "within3dPct": 0.4454,
+        "after3dWithin8wkPct": 0.5062,
+        "upheldPct": 0.7024
+      }
+    },
+    {
+      "firmName": "Metro Bank PLC",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 11111,
+          "closed": 11236,
+          "within3dPct": 0.4219,
+          "after3dWithin8wkPct": 0.5762,
+          "upheldPct": 0.5082
+        },
+        "Home finance": {
+          "opened": 133,
+          "closed": 145,
+          "within3dPct": 0.4207,
+          "after3dWithin8wkPct": 0.5724,
+          "upheldPct": 0.7517
+        }
+      },
+      "total": {
+        "opened": 11244,
+        "closed": 11381,
+        "within3dPct": 0.4218,
+        "after3dWithin8wkPct": 0.5761,
+        "upheldPct": 0.5113
+      }
+    },
+    {
+      "firmName": "CREATION CONSUMER FINANCE LIMITED",
+      "group": "BNP PARIBAS GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 10537,
+          "closed": 3740,
+          "within3dPct": 0.0866,
+          "after3dWithin8wkPct": 0.8131,
+          "upheldPct": 0.4112
+        }
+      },
+      "total": {
+        "opened": 10537,
+        "closed": 3740,
+        "within3dPct": 0.0866,
+        "after3dWithin8wkPct": 0.8131,
+        "upheldPct": 0.4112
+      }
+    },
+    {
+      "firmName": "Barclays Bank Plc",
+      "group": "BARCLAYS GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 9293,
+          "closed": 10097,
+          "within3dPct": 0.6906,
+          "after3dWithin8wkPct": 0.2216,
+          "upheldPct": 0.6019
+        },
+        "Decumulation & pensions": {
+          "opened": 66,
+          "closed": 67,
+          "within3dPct": 0.2687,
+          "after3dWithin8wkPct": 0.6866,
+          "upheldPct": 0.6567
+        },
+        "Home finance": {
+          "opened": 1,
+          "closed": 1,
+          "within3dPct": null,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 1
+        },
+        "Insurance & pure protection": {
+          "opened": 1,
+          "closed": 1,
+          "within3dPct": null,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 1
+        },
+        "Investments": {
+          "opened": 1055,
+          "closed": 1189,
+          "within3dPct": 0.2548,
+          "after3dWithin8wkPct": 0.6468,
+          "upheldPct": 0.6686
+        }
+      },
+      "total": {
+        "opened": 10416,
+        "closed": 11355,
+        "within3dPct": 0.6424,
+        "after3dWithin8wkPct": 0.269,
+        "upheldPct": 0.6092
+      }
+    },
+    {
+      "firmName": "Vitality Corporate Services Limited",
+      "group": "DISCOVERY LIMITED",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 10197,
+          "closed": 10580,
+          "within3dPct": 0.4549,
+          "after3dWithin8wkPct": 0.4954,
+          "upheldPct": 0.5077
+        }
+      },
+      "total": {
+        "opened": 10197,
+        "closed": 10580,
+        "within3dPct": 0.4549,
+        "after3dWithin8wkPct": 0.4954,
+        "upheldPct": 0.5077
+      }
+    },
+    {
+      "firmName": "The Prudential Assurance Company Limited",
+      "group": "M&G PLC",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 6508,
+          "closed": 6617,
+          "within3dPct": 0.1232,
+          "after3dWithin8wkPct": 0.7859,
+          "upheldPct": 0.8443
+        },
+        "Home finance": {
+          "opened": 34,
+          "closed": 40,
+          "within3dPct": 0.1,
+          "after3dWithin8wkPct": 0.35,
+          "upheldPct": 0.325
+        },
+        "Insurance & pure protection": {
+          "opened": 750,
+          "closed": 785,
+          "within3dPct": 0.1274,
+          "after3dWithin8wkPct": 0.7618,
+          "upheldPct": 0.893
+        },
+        "Investments": {
+          "opened": 2600,
+          "closed": 2721,
+          "within3dPct": 0.1959,
+          "after3dWithin8wkPct": 0.7211,
+          "upheldPct": 0.8897
+        }
+      },
+      "total": {
+        "opened": 9892,
+        "closed": 10163,
+        "within3dPct": 0.1429,
+        "after3dWithin8wkPct": 0.7649,
+        "upheldPct": 0.8582
+      }
+    },
+    {
+      "firmName": "THE CO-OPERATIVE BANK P.L.C.",
+      "group": "COVENTRY BUILDING SOCIETY",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 8554,
+          "closed": 8443,
+          "within3dPct": 0.6756,
+          "after3dWithin8wkPct": 0.3096,
+          "upheldPct": 0.657
+        },
+        "Decumulation & pensions": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Home finance": {
+          "opened": 1067,
+          "closed": 1128,
+          "within3dPct": 0.4122,
+          "after3dWithin8wkPct": 0.5833,
+          "upheldPct": 0.5762
+        },
+        "Insurance & pure protection": {
+          "opened": 1,
+          "closed": 2,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 0
+        },
+        "Investments": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        }
+      },
+      "total": {
+        "opened": 9622,
+        "closed": 9573,
+        "within3dPct": 0.6444,
+        "after3dWithin8wkPct": 0.342,
+        "upheldPct": 0.6473
+      }
+    },
+    {
+      "firmName": "RAC FINANCIAL SERVICES LIMITED",
+      "group": "RAC GROUP",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 9491,
+          "closed": 9410,
+          "within3dPct": 0.608,
+          "after3dWithin8wkPct": 0.3894,
+          "upheldPct": 0.2643
+        }
+      },
+      "total": {
+        "opened": 9491,
+        "closed": 9410,
+        "within3dPct": 0.608,
+        "after3dWithin8wkPct": 0.3894,
+        "upheldPct": 0.2643
+      }
+    },
+    {
+      "firmName": "First Central Insurance Management Limited",
+      "group": "FIRST CENTRAL GROUP LIMITED",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 8797,
+          "closed": 8965,
+          "within3dPct": 0.555,
+          "after3dWithin8wkPct": 0.4231,
+          "upheldPct": 0.4236
+        }
+      },
+      "total": {
+        "opened": 8797,
+        "closed": 8965,
+        "within3dPct": 0.555,
+        "after3dWithin8wkPct": 0.4231,
+        "upheldPct": 0.4236
+      }
+    },
+    {
+      "firmName": "MBNA Limited",
+      "group": "LLOYDS BANKING GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 8774,
+          "closed": 8731,
+          "within3dPct": 0.6099,
+          "after3dWithin8wkPct": 0.3366,
+          "upheldPct": 0.5404
+        },
+        "Decumulation & pensions": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Home finance": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 22,
+          "closed": 22,
+          "within3dPct": 0.0909,
+          "after3dWithin8wkPct": 0.2273,
+          "upheldPct": 0.0909
+        },
+        "Investments": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        }
+      },
+      "total": {
+        "opened": 8796,
+        "closed": 8753,
+        "within3dPct": 0.6086,
+        "after3dWithin8wkPct": 0.3363,
+        "upheldPct": 0.5392
+      }
+    },
+    {
+      "firmName": "Atlanta Insurance Intermediaries Limited",
+      "group": "MARKERSTUDY GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 8517,
+          "closed": 8470,
+          "within3dPct": 0.7627,
+          "after3dWithin8wkPct": 0.2351,
+          "upheldPct": 0.4365
+        }
+      },
+      "total": {
+        "opened": 8517,
+        "closed": 8470,
+        "within3dPct": 0.7627,
+        "after3dWithin8wkPct": 0.2351,
+        "upheldPct": 0.4365
+      }
+    },
+    {
+      "firmName": "Royal London Mutual Insurance Society, Limited (THE)",
+      "group": "ROYAL LONDON GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 5817,
+          "closed": 6081,
+          "within3dPct": 0.2541,
+          "after3dWithin8wkPct": 0.6468,
+          "upheldPct": 0.6736
+        },
+        "Insurance & pure protection": {
+          "opened": 2362,
+          "closed": 2400,
+          "within3dPct": 0.2958,
+          "after3dWithin8wkPct": 0.6525,
+          "upheldPct": 0.5138
+        },
+        "Investments": {
+          "opened": 235,
+          "closed": 224,
+          "within3dPct": 0.308,
+          "after3dWithin8wkPct": 0.6473,
+          "upheldPct": 0.7143
+        }
+      },
+      "total": {
+        "opened": 8414,
+        "closed": 8705,
+        "within3dPct": 0.267,
+        "after3dWithin8wkPct": 0.6484,
+        "upheldPct": 0.6306
+      }
+    },
+    {
+      "firmName": "J.P. Morgan Europe Limited",
+      "group": "JPMORGAN CHASE & CO",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 8343,
+          "closed": 8472,
+          "within3dPct": 0.3415,
+          "after3dWithin8wkPct": 0.6576,
+          "upheldPct": 0.4754
+        }
+      },
+      "total": {
+        "opened": 8343,
+        "closed": 8472,
+        "within3dPct": 0.3415,
+        "after3dWithin8wkPct": 0.6576,
+        "upheldPct": 0.4754
+      }
+    },
+    {
+      "firmName": "Inter Partner Assistance SA",
+      "group": "AXA GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 8125,
+          "closed": 7377,
+          "within3dPct": 0.2586,
+          "after3dWithin8wkPct": 0.7176,
+          "upheldPct": 0.741
+        }
+      },
+      "total": {
+        "opened": 8125,
+        "closed": 7377,
+        "within3dPct": 0.2586,
+        "after3dWithin8wkPct": 0.7176,
+        "upheldPct": 0.741
+      }
+    },
+    {
+      "firmName": "SCOTTISH WIDOWS LIMITED",
+      "group": "LLOYDS BANKING GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Decumulation & pensions": {
+          "opened": 5592,
+          "closed": 5551,
+          "within3dPct": 0.2162,
+          "after3dWithin8wkPct": 0.7152,
+          "upheldPct": 0.8487
+        },
+        "Home finance": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 1007,
+          "closed": 977,
+          "within3dPct": 0.261,
+          "after3dWithin8wkPct": 0.6878,
+          "upheldPct": 0.6888
+        },
+        "Investments": {
+          "opened": 1163,
+          "closed": 1158,
+          "within3dPct": 0.2858,
+          "after3dWithin8wkPct": 0.6399,
+          "upheldPct": 0.8834
+        }
+      },
+      "total": {
+        "opened": 7762,
+        "closed": 7686,
+        "within3dPct": 0.2324,
+        "after3dWithin8wkPct": 0.7004,
+        "upheldPct": 0.8336
+      }
+    },
+    {
+      "firmName": "Saga Services Limited",
+      "group": "SAGA PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-02-01 to 2025-07-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 7519,
+          "closed": 7375,
+          "within3dPct": 0.7413,
+          "after3dWithin8wkPct": 0.2489,
+          "upheldPct": 0.5243
+        }
+      },
+      "total": {
+        "opened": 7519,
+        "closed": 7375,
+        "within3dPct": 0.7413,
+        "after3dWithin8wkPct": 0.2489,
+        "upheldPct": 0.5243
+      }
+    },
+    {
+      "firmName": "Hargreaves Lansdown Asset Management Limited",
+      "group": "HARGREAVES LANSDOWN LIMITED",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 2262,
+          "closed": 2010,
+          "within3dPct": 0.201,
+          "after3dWithin8wkPct": 0.7791,
+          "upheldPct": 0.5592
+        },
+        "Investments": {
+          "opened": 4759,
+          "closed": 4789,
+          "within3dPct": 0.285,
+          "after3dWithin8wkPct": 0.682,
+          "upheldPct": 0.4375
+        }
+      },
+      "total": {
+        "opened": 7021,
+        "closed": 6799,
+        "within3dPct": 0.2602,
+        "after3dWithin8wkPct": 0.7107,
+        "upheldPct": 0.4735
+      }
+    },
+    {
+      "firmName": "Assurant General Insurance Limited",
+      "group": "ASSURANT INC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 6731,
+          "closed": 6825,
+          "within3dPct": 0.65,
+          "after3dWithin8wkPct": 0.3408,
+          "upheldPct": 0.4607
+        }
+      },
+      "total": {
+        "opened": 6731,
+        "closed": 6825,
+        "within3dPct": 0.65,
+        "after3dWithin8wkPct": 0.3408,
+        "upheldPct": 0.4607
+      }
+    },
+    {
+      "firmName": "Automobile Association Insurance Services Limited",
+      "group": "AUTOMOBILE ASSOCIATION (AA)",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-02-01 to 2025-07-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 6657,
+          "closed": 6486,
+          "within3dPct": 0.5681,
+          "after3dWithin8wkPct": 0.3791,
+          "upheldPct": 0.4172
+        }
+      },
+      "total": {
+        "opened": 6657,
+        "closed": 6486,
+        "within3dPct": 0.5681,
+        "after3dWithin8wkPct": 0.3791,
+        "upheldPct": 0.4172
+      }
+    },
+    {
+      "firmName": "Zopa Bank Limited",
+      "group": "ZOPA GROUP LIMITED",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 6387,
+          "closed": 6533,
+          "within3dPct": 0.4032,
+          "after3dWithin8wkPct": 0.5953,
+          "upheldPct": 0.4183
+        },
+        "Investments": {
+          "opened": 4,
+          "closed": 4,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 1
+        }
+      },
+      "total": {
+        "opened": 6391,
+        "closed": 6537,
+        "within3dPct": 0.4029,
+        "after3dWithin8wkPct": 0.5955,
+        "upheldPct": 0.4187
+      }
+    },
+    {
+      "firmName": "INTACT INSURANCE UK LIMITED",
+      "group": "INTACT FINANCIAL CORPORATION",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 5765,
+          "closed": 6049,
+          "within3dPct": 0.3606,
+          "after3dWithin8wkPct": 0.5561,
+          "upheldPct": 0.5646
+        }
+      },
+      "total": {
+        "opened": 5765,
+        "closed": 6049,
+        "within3dPct": 0.3606,
+        "after3dWithin8wkPct": 0.5561,
+        "upheldPct": 0.5646
+      }
+    },
+    {
+      "firmName": "Lloyds Bank General Insurance Limited",
+      "group": "LLOYDS BANKING GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Decumulation & pensions": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Home finance": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 5683,
+          "closed": 5680,
+          "within3dPct": 0.2586,
+          "after3dWithin8wkPct": 0.6688,
+          "upheldPct": 0.7824
+        },
+        "Investments": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        }
+      },
+      "total": {
+        "opened": 5683,
+        "closed": 5680,
+        "within3dPct": 0.2586,
+        "after3dWithin8wkPct": 0.6688,
+        "upheldPct": 0.7824
+      }
+    },
+    {
+      "firmName": "Society of Lloyd's",
+      "group": "SOCIETY OF LLOYD'S",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 5669,
+          "closed": 5756,
+          "within3dPct": 0.2637,
+          "after3dWithin8wkPct": 0.7088,
+          "upheldPct": 0.3978
+        }
+      },
+      "total": {
+        "opened": 5669,
+        "closed": 5756,
+        "within3dPct": 0.2637,
+        "after3dWithin8wkPct": 0.7088,
+        "upheldPct": 0.3978
+      }
+    },
+    {
+      "firmName": "Scottish Equitable Plc",
+      "group": "AEGON N.V.",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Decumulation & pensions": {
+          "opened": 5241,
+          "closed": 6212,
+          "within3dPct": 0.1433,
+          "after3dWithin8wkPct": 0.4955,
+          "upheldPct": 0.6553
+        },
+        "Home finance": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 11,
+          "closed": 15,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 0.4667,
+          "upheldPct": 0.8
+        },
+        "Investments": {
+          "opened": 168,
+          "closed": 244,
+          "within3dPct": 0.0574,
+          "after3dWithin8wkPct": 0.4303,
+          "upheldPct": 0.8811
+        }
+      },
+      "total": {
+        "opened": 5420,
+        "closed": 6471,
+        "within3dPct": 0.1397,
+        "after3dWithin8wkPct": 0.493,
+        "upheldPct": 0.6642
+      }
+    },
+    {
+      "firmName": "MARKS AND SPENCER FINANCIAL SERVICES PLC",
+      "group": "HSBC GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 5169,
+          "closed": 5234,
+          "within3dPct": 0.8489,
+          "after3dWithin8wkPct": 0.1496,
+          "upheldPct": 0.6842
+        },
+        "Decumulation & pensions": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Home finance": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 95,
+          "closed": 100,
+          "within3dPct": 0.66,
+          "after3dWithin8wkPct": 0.34,
+          "upheldPct": 0.67
+        },
+        "Investments": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        }
+      },
+      "total": {
+        "opened": 5264,
+        "closed": 5334,
+        "within3dPct": 0.8453,
+        "after3dWithin8wkPct": 0.1532,
+        "upheldPct": 0.6839
+      }
+    },
+    {
+      "firmName": "The National Farmers' Union Mutual Insurance Society Limited",
+      "group": "NO GROUP",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 74,
+          "closed": 76,
+          "within3dPct": 0.0132,
+          "after3dWithin8wkPct": 0.9868,
+          "upheldPct": 0.5658
+        },
+        "Insurance & pure protection": {
+          "opened": 4939,
+          "closed": 4864,
+          "within3dPct": 0.3863,
+          "after3dWithin8wkPct": 0.5724,
+          "upheldPct": 0.626
+        },
+        "Investments": {
+          "opened": 63,
+          "closed": 60,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 0.5
+        }
+      },
+      "total": {
+        "opened": 5076,
+        "closed": 5000,
+        "within3dPct": 0.376,
+        "after3dWithin8wkPct": 0.5838,
+        "upheldPct": 0.6236
+      }
+    },
+    {
+      "firmName": "MUNICH RE DIGITAL PARTNERS LIMITED",
+      "group": "MUNICH RE",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 5012,
+          "closed": 5303,
+          "within3dPct": 0.6528,
+          "after3dWithin8wkPct": 0.3138,
+          "upheldPct": 0.1082
+        }
+      },
+      "total": {
+        "opened": 5012,
+        "closed": 5303,
+        "within3dPct": 0.6528,
+        "after3dWithin8wkPct": 0.3138,
+        "upheldPct": 0.1082
+      }
+    },
+    {
+      "firmName": "Tesco Personal Finance Limited",
+      "group": "TESCO BANK",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-03-01 to 2025-08-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 4861,
+          "closed": 4894,
+          "within3dPct": 0.4563,
+          "after3dWithin8wkPct": 0.5435,
+          "upheldPct": 0.3752
+        }
+      },
+      "total": {
+        "opened": 4861,
+        "closed": 4894,
+        "within3dPct": 0.4563,
+        "after3dWithin8wkPct": 0.5435,
+        "upheldPct": 0.3752
+      }
+    },
+    {
+      "firmName": "Skipton Building Society",
+      "group": "SKIPTON BUILDING SOCIETY",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 3820,
+          "closed": 3936,
+          "within3dPct": 0.5371,
+          "after3dWithin8wkPct": 0.4573,
+          "upheldPct": 0.7185
+        },
+        "Decumulation & pensions": {
+          "opened": 51,
+          "closed": 52,
+          "within3dPct": 0.0769,
+          "after3dWithin8wkPct": 0.9231,
+          "upheldPct": 0.7885
+        },
+        "Home finance": {
+          "opened": 704,
+          "closed": 670,
+          "within3dPct": 0.4627,
+          "after3dWithin8wkPct": 0.5313,
+          "upheldPct": 0.7731
+        },
+        "Investments": {
+          "opened": 66,
+          "closed": 66,
+          "within3dPct": 0.1515,
+          "after3dWithin8wkPct": 0.8485,
+          "upheldPct": 0.7879
+        }
+      },
+      "total": {
+        "opened": 4641,
+        "closed": 4724,
+        "within3dPct": 0.5161,
+        "after3dWithin8wkPct": 0.4784,
+        "upheldPct": 0.728
+      }
+    },
+    {
+      "firmName": "ERGO TRAVEL INSURANCE SERVICES LTD",
+      "group": "MUNICH RE",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 4524,
+          "closed": 4190,
+          "within3dPct": 0.1449,
+          "after3dWithin8wkPct": 0.7821,
+          "upheldPct": 0.6239
+        }
+      },
+      "total": {
+        "opened": 4524,
+        "closed": 4190,
+        "within3dPct": 0.1449,
+        "after3dWithin8wkPct": 0.7821,
+        "upheldPct": 0.6239
+      }
+    },
+    {
+      "firmName": "ReAssure Limited",
+      "group": "PHOENIX GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 3410,
+          "closed": 3256,
+          "within3dPct": 0.3553,
+          "after3dWithin8wkPct": 0.4936,
+          "upheldPct": 0.8123
+        },
+        "Home finance": {
+          "opened": 0,
+          "closed": null,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 557,
+          "closed": 533,
+          "within3dPct": 0.3865,
+          "after3dWithin8wkPct": 0.4522,
+          "upheldPct": 0.6773
+        },
+        "Investments": {
+          "opened": 496,
+          "closed": 474,
+          "within3dPct": 0.4662,
+          "after3dWithin8wkPct": 0.4494,
+          "upheldPct": 0.8207
+        }
+      },
+      "total": {
+        "opened": 4463,
+        "closed": 4263,
+        "within3dPct": 0.3716,
+        "after3dWithin8wkPct": 0.4835,
+        "upheldPct": 0.7964
+      }
+    },
+    {
+      "firmName": "Chubb European Group SE",
+      "group": "CHUBB LIMITED",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 4417,
+          "closed": 4458,
+          "within3dPct": 0.1759,
+          "after3dWithin8wkPct": 0.7815,
+          "upheldPct": 0.6427
+        }
+      },
+      "total": {
+        "opened": 4417,
+        "closed": 4458,
+        "within3dPct": 0.1759,
+        "after3dWithin8wkPct": 0.7815,
+        "upheldPct": 0.6427
+      }
+    },
+    {
+      "firmName": "Legal and General Assurance Society Limited",
+      "group": "LEGAL & GENERAL GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 1519,
+          "closed": 1519,
+          "within3dPct": 0.1488,
+          "after3dWithin8wkPct": 0.8413,
+          "upheldPct": 0.7531
+        },
+        "Insurance & pure protection": {
+          "opened": 2895,
+          "closed": 2963,
+          "within3dPct": 0.4448,
+          "after3dWithin8wkPct": 0.5285,
+          "upheldPct": 0.3925
+        }
+      },
+      "total": {
+        "opened": 4414,
+        "closed": 4482,
+        "within3dPct": 0.3445,
+        "after3dWithin8wkPct": 0.6345,
+        "upheldPct": 0.5147
+      }
+    },
+    {
+      "firmName": "Ageas Insurance Limited",
+      "group": "AGEAS SA-NV",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 4403,
+          "closed": 4463,
+          "within3dPct": 0.2911,
+          "after3dWithin8wkPct": 0.6458,
+          "upheldPct": 0.5416
+        }
+      },
+      "total": {
+        "opened": 4403,
+        "closed": 4463,
+        "within3dPct": 0.2911,
+        "after3dWithin8wkPct": 0.6458,
+        "upheldPct": 0.5416
+      }
+    },
+    {
+      "firmName": "Accredited Insurance (Europe) Ltd",
+      "group": "ACCREDITED GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 4337,
+          "closed": 4046,
+          "within3dPct": 0.2405,
+          "after3dWithin8wkPct": 0.74,
+          "upheldPct": 0.3764
+        }
+      },
+      "total": {
+        "opened": 4337,
+        "closed": 4046,
+        "within3dPct": 0.2405,
+        "after3dWithin8wkPct": 0.74,
+        "upheldPct": 0.3764
+      }
+    },
+    {
+      "firmName": "Marshmallow Financial Services Ltd",
+      "group": "NO GROUP",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 4208,
+          "closed": 4462,
+          "within3dPct": 0.1629,
+          "after3dWithin8wkPct": 0.7768,
+          "upheldPct": 0.5677
+        }
+      },
+      "total": {
+        "opened": 4208,
+        "closed": 4462,
+        "within3dPct": 0.1629,
+        "after3dWithin8wkPct": 0.7768,
+        "upheldPct": 0.5677
+      }
+    },
+    {
+      "firmName": "Coventry Building Society",
+      "group": "COVENTRY BUILDING SOCIETY",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 3403,
+          "closed": 3485,
+          "within3dPct": 0.606,
+          "after3dWithin8wkPct": 0.3937,
+          "upheldPct": 0.5954
+        },
+        "Home finance": {
+          "opened": 740,
+          "closed": 764,
+          "within3dPct": 0.5288,
+          "after3dWithin8wkPct": 0.4699,
+          "upheldPct": 0.6832
+        },
+        "Insurance & pure protection": {
+          "opened": 1,
+          "closed": 1,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 1
+        },
+        "Investments": {
+          "opened": 1,
+          "closed": 1,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 0
+        }
+      },
+      "total": {
+        "opened": 4145,
+        "closed": 4251,
+        "within3dPct": 0.5919,
+        "after3dWithin8wkPct": 0.4077,
+        "upheldPct": 0.6112
+      }
+    },
+    {
+      "firmName": "Tradex Insurance Company PLC",
+      "group": "SATURN HOLDINGS PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 3950,
+          "closed": 3993,
+          "within3dPct": 0.4343,
+          "after3dWithin8wkPct": 0.5284,
+          "upheldPct": 0.6228
+        }
+      },
+      "total": {
+        "opened": 3950,
+        "closed": 3993,
+        "within3dPct": 0.4343,
+        "after3dWithin8wkPct": 0.5284,
+        "upheldPct": 0.6228
+      }
+    },
+    {
+      "firmName": "Home Retail Group Card Services Limited",
+      "group": "J SAINSBURY PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-03-01 to 2025-08-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 3824,
+          "closed": 3888,
+          "within3dPct": 0.3629,
+          "after3dWithin8wkPct": 0.6314,
+          "upheldPct": 0.3485
+        }
+      },
+      "total": {
+        "opened": 3824,
+        "closed": 3888,
+        "within3dPct": 0.3629,
+        "after3dWithin8wkPct": 0.6314,
+        "upheldPct": 0.3485
+      }
+    },
+    {
+      "firmName": "Fortegra Europe Insurance Company Ltd",
+      "group": "TIPTREE INC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 3792,
+          "closed": 3119,
+          "within3dPct": 0.1943,
+          "after3dWithin8wkPct": 0.7637,
+          "upheldPct": 0.5611
+        }
+      },
+      "total": {
+        "opened": 3792,
+        "closed": 3119,
+        "within3dPct": 0.1943,
+        "after3dWithin8wkPct": 0.7637,
+        "upheldPct": 0.5611
+      }
+    },
+    {
+      "firmName": "St. James's Place Wealth Management Plc",
+      "group": "ST. JAMES'S PLACE PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 0,
+          "closed": 1,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 0,
+          "upheldPct": 1
+        },
+        "Decumulation & pensions": {
+          "opened": 2020,
+          "closed": 3663,
+          "within3dPct": 0.0085,
+          "after3dWithin8wkPct": 0.4267,
+          "upheldPct": 0.4382
+        },
+        "Home finance": {
+          "opened": 13,
+          "closed": 27,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 0.2222,
+          "upheldPct": 0.1852
+        },
+        "Insurance & pure protection": {
+          "opened": 95,
+          "closed": 222,
+          "within3dPct": 0.0045,
+          "after3dWithin8wkPct": 0.2568,
+          "upheldPct": 0.1126
+        },
+        "Investments": {
+          "opened": 1597,
+          "closed": 3030,
+          "within3dPct": 0.0033,
+          "after3dWithin8wkPct": 0.3726,
+          "upheldPct": 0.4855
+        }
+      },
+      "total": {
+        "opened": 3725,
+        "closed": 6943,
+        "within3dPct": 0.006,
+        "after3dWithin8wkPct": 0.3968,
+        "upheldPct": 0.4475
+      }
+    },
+    {
+      "firmName": "Qmetric Group Limited",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 3696,
+          "closed": 3413,
+          "within3dPct": 0.2699,
+          "after3dWithin8wkPct": 0.7263,
+          "upheldPct": 0.368
+        }
+      },
+      "total": {
+        "opened": 3696,
+        "closed": 3413,
+        "within3dPct": 0.2699,
+        "after3dWithin8wkPct": 0.7263,
+        "upheldPct": 0.368
+      }
+    },
+    {
+      "firmName": "ANIMAL FRIENDS INSURANCE SERVICES LIMITED",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 3482,
+          "closed": 3575,
+          "within3dPct": 0.2078,
+          "after3dWithin8wkPct": 0.791,
+          "upheldPct": 0.5631
+        }
+      },
+      "total": {
+        "opened": 3482,
+        "closed": 3575,
+        "within3dPct": 0.2078,
+        "after3dWithin8wkPct": 0.791,
+        "upheldPct": 0.5631
+      }
+    },
+    {
+      "firmName": "Zurich Insurance Company Ltd",
+      "group": "ZURICH INSURANCE GROUP LIMITED",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 3407,
+          "closed": 3211,
+          "within3dPct": 0.0909,
+          "after3dWithin8wkPct": 0.7362,
+          "upheldPct": 0.5979
+        }
+      },
+      "total": {
+        "opened": 3407,
+        "closed": 3211,
+        "within3dPct": 0.0909,
+        "after3dWithin8wkPct": 0.7362,
+        "upheldPct": 0.5979
+      }
+    },
+    {
+      "firmName": "Pinnacle Insurance Limited",
+      "group": "BNP PARIBAS GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 3405,
+          "closed": 3241,
+          "within3dPct": 0.681,
+          "after3dWithin8wkPct": 0.3187,
+          "upheldPct": 0.3807
+        }
+      },
+      "total": {
+        "opened": 3405,
+        "closed": 3241,
+        "within3dPct": 0.681,
+        "after3dWithin8wkPct": 0.3187,
+        "upheldPct": 0.3807
+      }
+    },
+    {
+      "firmName": "ClearBank Limited",
+      "group": "CLEARBANK GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 3339,
+          "closed": 3523,
+          "within3dPct": 0.4224,
+          "after3dWithin8wkPct": 0.5768,
+          "upheldPct": 0.5711
+        }
+      },
+      "total": {
+        "opened": 3339,
+        "closed": 3523,
+        "within3dPct": 0.4224,
+        "after3dWithin8wkPct": 0.5768,
+        "upheldPct": 0.5711
+      }
+    },
+    {
+      "firmName": "Howserv Limited",
+      "group": "STAYSURE HOLDINGS LTD",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 3281,
+          "closed": 3281,
+          "within3dPct": 0.3191,
+          "after3dWithin8wkPct": 0.6742,
+          "upheldPct": 0.4368
+        }
+      },
+      "total": {
+        "opened": 3281,
+        "closed": 3281,
+        "within3dPct": 0.3191,
+        "after3dWithin8wkPct": 0.6742,
+        "upheldPct": 0.4368
+      }
+    },
+    {
+      "firmName": "Topaz Finance Limited",
+      "group": "COMPUTERSHARE LIMITED",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Home finance": {
+          "opened": 3173,
+          "closed": 2978,
+          "within3dPct": 0.2965,
+          "after3dWithin8wkPct": 0.679,
+          "upheldPct": 0.3741
+        }
+      },
+      "total": {
+        "opened": 3173,
+        "closed": 2978,
+        "within3dPct": 0.2965,
+        "after3dWithin8wkPct": 0.679,
+        "upheldPct": 0.3741
+      }
+    },
+    {
+      "firmName": "AWP Assistance UK Ltd",
+      "group": "ALLIANZ GROUP",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 3144,
+          "closed": 2981,
+          "within3dPct": 0.1546,
+          "after3dWithin8wkPct": 0.8407,
+          "upheldPct": 0.797
+        }
+      },
+      "total": {
+        "opened": 3144,
+        "closed": 2981,
+        "within3dPct": 0.1546,
+        "after3dWithin8wkPct": 0.8407,
+        "upheldPct": 0.797
+      }
+    },
+    {
+      "firmName": "ManyPets Ltd",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 3134,
+          "closed": 3383,
+          "within3dPct": 0.0653,
+          "after3dWithin8wkPct": 0.9146,
+          "upheldPct": 0.7198
+        }
+      },
+      "total": {
+        "opened": 3134,
+        "closed": 3383,
+        "within3dPct": 0.0653,
+        "after3dWithin8wkPct": 0.9146,
+        "upheldPct": 0.7198
+      }
+    },
+    {
+      "firmName": "One Call Insurance Services Limited",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 2980,
+          "closed": 2960,
+          "within3dPct": 0.6757,
+          "after3dWithin8wkPct": 0.323,
+          "upheldPct": 0.202
+        }
+      },
+      "total": {
+        "opened": 2980,
+        "closed": 2960,
+        "within3dPct": 0.6757,
+        "after3dWithin8wkPct": 0.323,
+        "upheldPct": 0.202
+      }
+    },
+    {
+      "firmName": "ARAG Legal Expenses Insurance Company Limited",
+      "group": "ARAG PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 2976,
+          "closed": 2728,
+          "within3dPct": 0.2427,
+          "after3dWithin8wkPct": 0.7115,
+          "upheldPct": 0.5326
+        }
+      },
+      "total": {
+        "opened": 2976,
+        "closed": 2728,
+        "within3dPct": 0.2427,
+        "after3dWithin8wkPct": 0.7115,
+        "upheldPct": 0.5326
+      }
+    },
+    {
+      "firmName": "Allianz Insurance Plc",
+      "group": "ALLIANZ GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 2908,
+          "closed": 2889,
+          "within3dPct": 0.2288,
+          "after3dWithin8wkPct": 0.7549,
+          "upheldPct": 0.5725
+        }
+      },
+      "total": {
+        "opened": 2908,
+        "closed": 2889,
+        "within3dPct": 0.2288,
+        "after3dWithin8wkPct": 0.7549,
+        "upheldPct": 0.5725
+      }
+    },
+    {
+      "firmName": "Zurich Assurance Ltd",
+      "group": "ZURICH INSURANCE GROUP LIMITED",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Decumulation & pensions": {
+          "opened": 764,
+          "closed": 777,
+          "within3dPct": 0.2625,
+          "after3dWithin8wkPct": 0.7143,
+          "upheldPct": 0.381
+        },
+        "Home finance": {
+          "opened": 3,
+          "closed": 3,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 0
+        },
+        "Insurance & pure protection": {
+          "opened": 1851,
+          "closed": 1842,
+          "within3dPct": 0.2264,
+          "after3dWithin8wkPct": 0.7622,
+          "upheldPct": 0.4696
+        },
+        "Investments": {
+          "opened": 278,
+          "closed": 293,
+          "within3dPct": 0.1741,
+          "after3dWithin8wkPct": 0.8157,
+          "upheldPct": 0.4812
+        }
+      },
+      "total": {
+        "opened": 2896,
+        "closed": 2915,
+        "within3dPct": 0.2305,
+        "after3dWithin8wkPct": 0.7551,
+        "upheldPct": 0.4467
+      }
+    },
+    {
+      "firmName": "Equiniti Financial Services Limited",
+      "group": "EQUINITI GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 11,
+          "closed": 11,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 0.2727
+        },
+        "Investments": {
+          "opened": 2864,
+          "closed": 2814,
+          "within3dPct": 0.3831,
+          "after3dWithin8wkPct": 0.6155,
+          "upheldPct": 0.3539
+        }
+      },
+      "total": {
+        "opened": 2875,
+        "closed": 2825,
+        "within3dPct": 0.3816,
+        "after3dWithin8wkPct": 0.617,
+        "upheldPct": 0.3536
+      }
+    },
+    {
+      "firmName": "Astrenska Insurance Limited",
+      "group": "COLLINSON GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-05-01 to 2025-10-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 2862,
+          "closed": 2483,
+          "within3dPct": 0.1599,
+          "after3dWithin8wkPct": 0.8099,
+          "upheldPct": 0.561
+        }
+      },
+      "total": {
+        "opened": 2862,
+        "closed": 2483,
+        "within3dPct": 0.1599,
+        "after3dWithin8wkPct": 0.8099,
+        "upheldPct": 0.561
+      }
+    },
+    {
+      "firmName": "Telefonica Seguros y Reaseguros Compania Aseguradora S.A.U.",
+      "group": "TELEFONICA SA",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 2771,
+          "closed": 2803,
+          "within3dPct": 0.2323,
+          "after3dWithin8wkPct": 0.7631,
+          "upheldPct": 0.5737
+        }
+      },
+      "total": {
+        "opened": 2771,
+        "closed": 2803,
+        "within3dPct": 0.2323,
+        "after3dWithin8wkPct": 0.7631,
+        "upheldPct": 0.5737
+      }
+    },
+    {
+      "firmName": "Interactive Investor Services Limited",
+      "group": "ABERDEEN GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 265,
+          "closed": 229,
+          "within3dPct": 0.0873,
+          "after3dWithin8wkPct": 0.8603,
+          "upheldPct": 0.5371
+        },
+        "Investments": {
+          "opened": 2491,
+          "closed": 2334,
+          "within3dPct": 0.2716,
+          "after3dWithin8wkPct": 0.7048,
+          "upheldPct": 0.4794
+        }
+      },
+      "total": {
+        "opened": 2756,
+        "closed": 2563,
+        "within3dPct": 0.2552,
+        "after3dWithin8wkPct": 0.7187,
+        "upheldPct": 0.4846
+      }
+    },
+    {
+      "firmName": "People's Administration Services Limited",
+      "group": "PEOPLE'S PARTNERSHIP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 2731,
+          "closed": 2731,
+          "within3dPct": 0.138,
+          "after3dWithin8wkPct": 0.8268,
+          "upheldPct": 0.5002
+        }
+      },
+      "total": {
+        "opened": 2731,
+        "closed": 2731,
+        "within3dPct": 0.138,
+        "after3dWithin8wkPct": 0.8268,
+        "upheldPct": 0.5002
+      }
+    },
+    {
+      "firmName": "Tesco Underwriting Limited",
+      "group": "TESCO BANK",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-03-01 to 2025-08-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 2672,
+          "closed": 2664,
+          "within3dPct": 0.2815,
+          "after3dWithin8wkPct": 0.5893,
+          "upheldPct": 0.4989
+        }
+      },
+      "total": {
+        "opened": 2672,
+        "closed": 2664,
+        "within3dPct": 0.2815,
+        "after3dWithin8wkPct": 0.5893,
+        "upheldPct": 0.4989
+      }
+    },
+    {
+      "firmName": "CAROLE NASH INSURANCE CONSULTANTS LIMITED",
+      "group": "MARKERSTUDY GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 2650,
+          "closed": 2669,
+          "within3dPct": 0.7497,
+          "after3dWithin8wkPct": 0.2499,
+          "upheldPct": 0.4402
+        }
+      },
+      "total": {
+        "opened": 2650,
+        "closed": 2669,
+        "within3dPct": 0.7497,
+        "after3dWithin8wkPct": 0.2499,
+        "upheldPct": 0.4402
+      }
+    },
+    {
+      "firmName": "Leeds Building Society",
+      "group": "LEEDS BUILDING SOCIETY",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 1735,
+          "closed": 1778,
+          "within3dPct": 0.6609,
+          "after3dWithin8wkPct": 0.3391,
+          "upheldPct": 0.7171
+        },
+        "Home finance": {
+          "opened": 910,
+          "closed": 930,
+          "within3dPct": 0.471,
+          "after3dWithin8wkPct": 0.5247,
+          "upheldPct": 0.6032
+        }
+      },
+      "total": {
+        "opened": 2645,
+        "closed": 2708,
+        "within3dPct": 0.5956,
+        "after3dWithin8wkPct": 0.4029,
+        "upheldPct": 0.678
+      }
+    },
+    {
+      "firmName": "Bank of Ireland (UK) Plc",
+      "group": "BANK OF IRELAND GROUP",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 1734,
+          "closed": 1785,
+          "within3dPct": 0.5064,
+          "after3dWithin8wkPct": 0.4667,
+          "upheldPct": 0.4448
+        },
+        "Home finance": {
+          "opened": 881,
+          "closed": 959,
+          "within3dPct": 0.2909,
+          "after3dWithin8wkPct": 0.6382,
+          "upheldPct": 0.3003
+        },
+        "Insurance & pure protection": {
+          "opened": 26,
+          "closed": 23,
+          "within3dPct": null,
+          "after3dWithin8wkPct": 0.8696,
+          "upheldPct": null
+        },
+        "Investments": {
+          "opened": 2,
+          "closed": 2,
+          "within3dPct": 0.5,
+          "after3dWithin8wkPct": 0.5,
+          "upheldPct": null
+        }
+      },
+      "total": {
+        "opened": 2643,
+        "closed": 2769,
+        "within3dPct": 0.4276,
+        "after3dWithin8wkPct": 0.5294,
+        "upheldPct": 0.3908
+      }
+    },
+    {
+      "firmName": "Adrian Flux Insurance Services Group",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 2518,
+          "closed": 2500,
+          "within3dPct": 0.94,
+          "after3dWithin8wkPct": 0.0584,
+          "upheldPct": 0.214
+        }
+      },
+      "total": {
+        "opened": 2518,
+        "closed": 2500,
+        "within3dPct": 0.94,
+        "after3dWithin8wkPct": 0.0584,
+        "upheldPct": 0.214
+      }
+    },
+    {
+      "firmName": "Covea Insurance plc",
+      "group": "COVEA GROUP",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 2497,
+          "closed": 2545,
+          "within3dPct": 0.1792,
+          "after3dWithin8wkPct": 0.7591,
+          "upheldPct": 0.4927
+        }
+      },
+      "total": {
+        "opened": 2497,
+        "closed": 2545,
+        "within3dPct": 0.1792,
+        "after3dWithin8wkPct": 0.7591,
+        "upheldPct": 0.4927
+      }
+    },
+    {
+      "firmName": "Yorkshire Building Society",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 1832,
+          "closed": 1876,
+          "within3dPct": 0.3678,
+          "after3dWithin8wkPct": 0.629,
+          "upheldPct": 0.7377
+        },
+        "Home finance": {
+          "opened": 532,
+          "closed": 540,
+          "within3dPct": 0.1889,
+          "after3dWithin8wkPct": 0.7944,
+          "upheldPct": 0.7426
+        },
+        "Insurance & pure protection": {
+          "opened": 9,
+          "closed": 7,
+          "within3dPct": 0.5714,
+          "after3dWithin8wkPct": 0.4286,
+          "upheldPct": 0.2857
+        },
+        "Investments": {
+          "opened": 1,
+          "closed": 1,
+          "within3dPct": null,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": null
+        }
+      },
+      "total": {
+        "opened": 2374,
+        "closed": 2424,
+        "within3dPct": 0.3284,
+        "after3dWithin8wkPct": 0.6654,
+        "upheldPct": 0.7372
+      }
+    },
+    {
+      "firmName": "Homeserve Membership Limited",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 2358,
+          "closed": 2317,
+          "within3dPct": 0.8097,
+          "after3dWithin8wkPct": 0.1847,
+          "upheldPct": 0.2572
+        }
+      },
+      "total": {
+        "opened": 2358,
+        "closed": 2317,
+        "within3dPct": 0.8097,
+        "after3dWithin8wkPct": 0.1847,
+        "upheldPct": 0.2572
+      }
+    },
+    {
+      "firmName": "OneSavings Bank Plc",
+      "group": "OSB GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 1331,
+          "closed": 1480,
+          "within3dPct": 0.2676,
+          "after3dWithin8wkPct": 0.7027,
+          "upheldPct": 0.6797
+        },
+        "Home finance": {
+          "opened": 961,
+          "closed": 1084,
+          "within3dPct": 0.1697,
+          "after3dWithin8wkPct": 0.7703,
+          "upheldPct": 0.4917
+        }
+      },
+      "total": {
+        "opened": 2292,
+        "closed": 2564,
+        "within3dPct": 0.2262,
+        "after3dWithin8wkPct": 0.7313,
+        "upheldPct": 0.6002
+      }
+    },
+    {
+      "firmName": "Trading 212 UK Limited",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 513,
+          "closed": 538,
+          "within3dPct": 0.2546,
+          "after3dWithin8wkPct": 0.7454,
+          "upheldPct": 0.145
+        },
+        "Investments": {
+          "opened": 1691,
+          "closed": 1680,
+          "within3dPct": 0.2554,
+          "after3dWithin8wkPct": 0.7435,
+          "upheldPct": 0.0946
+        }
+      },
+      "total": {
+        "opened": 2204,
+        "closed": 2218,
+        "within3dPct": 0.2552,
+        "after3dWithin8wkPct": 0.7439,
+        "upheldPct": 0.1069
+      }
+    },
+    {
+      "firmName": "Utility Warehouse Limited",
+      "group": "TELECOM PLUS PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 2188,
+          "closed": 2016,
+          "within3dPct": 0.7951,
+          "after3dWithin8wkPct": 0.0699,
+          "upheldPct": 0.3155
+        }
+      },
+      "total": {
+        "opened": 2188,
+        "closed": 2016,
+        "within3dPct": 0.7951,
+        "after3dWithin8wkPct": 0.0699,
+        "upheldPct": 0.3155
+      }
+    },
+    {
+      "firmName": "Simplyhealth Access",
+      "group": "SIMPLYHEALTH GROUP LIMITED",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 2101,
+          "closed": 2116,
+          "within3dPct": 0.301,
+          "after3dWithin8wkPct": 0.698,
+          "upheldPct": 0.2911
+        }
+      },
+      "total": {
+        "opened": 2101,
+        "closed": 2116,
+        "within3dPct": 0.301,
+        "after3dWithin8wkPct": 0.698,
+        "upheldPct": 0.2911
+      }
+    },
+    {
+      "firmName": "AWP P&C S.A.",
+      "group": "ALLIANZ GROUP",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 2042,
+          "closed": 1919,
+          "within3dPct": 0.1073,
+          "after3dWithin8wkPct": 0.8749,
+          "upheldPct": 0.3585
+        }
+      },
+      "total": {
+        "opened": 2042,
+        "closed": 1919,
+        "within3dPct": 0.1073,
+        "after3dWithin8wkPct": 0.8749,
+        "upheldPct": 0.3585
+      }
+    },
+    {
+      "firmName": "Financial Administration Services Limited",
+      "group": "FIDELITY INTERNATIONAL GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 720,
+          "closed": 566,
+          "within3dPct": 0.1696,
+          "after3dWithin8wkPct": 0.6555,
+          "upheldPct": 0.5618
+        },
+        "Investments": {
+          "opened": 1308,
+          "closed": 1032,
+          "within3dPct": 0.1444,
+          "after3dWithin8wkPct": 0.7161,
+          "upheldPct": 0.5145
+        }
+      },
+      "total": {
+        "opened": 2028,
+        "closed": 1598,
+        "within3dPct": 0.1533,
+        "after3dWithin8wkPct": 0.6946,
+        "upheldPct": 0.5313
+      }
+    },
+    {
+      "firmName": "AmTrust Specialty Limited",
+      "group": "AMTRUST INTERNATIONAL",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1976,
+          "closed": 1994,
+          "within3dPct": 0.0863,
+          "after3dWithin8wkPct": 0.8325,
+          "upheldPct": 0.5025
+        }
+      },
+      "total": {
+        "opened": 1976,
+        "closed": 1994,
+        "within3dPct": 0.0863,
+        "after3dWithin8wkPct": 0.8325,
+        "upheldPct": 0.5025
+      }
+    },
+    {
+      "firmName": "OVO HOME SERVICES LTD",
+      "group": "OVO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1953,
+          "closed": 1573,
+          "within3dPct": 0.0668,
+          "after3dWithin8wkPct": 0.9154,
+          "upheldPct": 0.7559
+        }
+      },
+      "total": {
+        "opened": 1953,
+        "closed": 1573,
+        "within3dPct": 0.0668,
+        "after3dWithin8wkPct": 0.9154,
+        "upheldPct": 0.7559
+      }
+    },
+    {
+      "firmName": "Coutts & Company",
+      "group": "NATWEST GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 1603,
+          "closed": 1612,
+          "within3dPct": 0.4138,
+          "after3dWithin8wkPct": 0.5806,
+          "upheldPct": 0.4404
+        },
+        "Decumulation & pensions": {
+          "opened": 23,
+          "closed": 20,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 0.75,
+          "upheldPct": 0.9
+        },
+        "Home finance": {
+          "opened": 107,
+          "closed": 103,
+          "within3dPct": 0.1553,
+          "after3dWithin8wkPct": 0.7767,
+          "upheldPct": 0.5728
+        },
+        "Insurance & pure protection": {
+          "opened": 13,
+          "closed": 13,
+          "within3dPct": 0.2308,
+          "after3dWithin8wkPct": 0.6923,
+          "upheldPct": 0.2308
+        },
+        "Investments": {
+          "opened": 99,
+          "closed": 101,
+          "within3dPct": 0.1386,
+          "after3dWithin8wkPct": 0.703,
+          "upheldPct": 0.7327
+        }
+      },
+      "total": {
+        "opened": 1845,
+        "closed": 1849,
+        "within3dPct": 0.3786,
+        "after3dWithin8wkPct": 0.6009,
+        "upheldPct": 0.4673
+      }
+    },
+    {
+      "firmName": "Acromas Insurance Company Limited",
+      "group": "SAGA PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-02-01 to 2025-07-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1840,
+          "closed": 1781,
+          "within3dPct": 0.3307,
+          "after3dWithin8wkPct": 0.6513,
+          "upheldPct": 0.4975
+        }
+      },
+      "total": {
+        "opened": 1840,
+        "closed": 1781,
+        "within3dPct": 0.3307,
+        "after3dWithin8wkPct": 0.6513,
+        "upheldPct": 0.4975
+      }
+    },
+    {
+      "firmName": "Charter Court Financial Services Limited",
+      "group": "CHARTER COURT FINANCIAL SERVICES GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 753,
+          "closed": 717,
+          "within3dPct": 0.3989,
+          "after3dWithin8wkPct": 0.5997,
+          "upheldPct": 0.5258
+        },
+        "Home finance": {
+          "opened": 1081,
+          "closed": 1191,
+          "within3dPct": 0.2527,
+          "after3dWithin8wkPct": 0.738,
+          "upheldPct": 0.3862
+        }
+      },
+      "total": {
+        "opened": 1834,
+        "closed": 1908,
+        "within3dPct": 0.3077,
+        "after3dWithin8wkPct": 0.6861,
+        "upheldPct": 0.4387
+      }
+    },
+    {
+      "firmName": "Liverpool Victoria Financial Services Limited",
+      "group": "LIVERPOOL VICTORIA GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 421,
+          "closed": 426,
+          "within3dPct": 0.5258,
+          "after3dWithin8wkPct": 0.4577,
+          "upheldPct": 0.8333
+        },
+        "Insurance & pure protection": {
+          "opened": 1248,
+          "closed": 1252,
+          "within3dPct": 0.5911,
+          "after3dWithin8wkPct": 0.3954,
+          "upheldPct": 0.5815
+        },
+        "Investments": {
+          "opened": 159,
+          "closed": 172,
+          "within3dPct": 0.4535,
+          "after3dWithin8wkPct": 0.5116,
+          "upheldPct": 0.8314
+        }
+      },
+      "total": {
+        "opened": 1828,
+        "closed": 1850,
+        "within3dPct": 0.5632,
+        "after3dWithin8wkPct": 0.4205,
+        "upheldPct": 0.6627
+      }
+    },
+    {
+      "firmName": "AXA Insurance Designated Activity Company",
+      "group": "AXA GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1817,
+          "closed": 1842,
+          "within3dPct": 0.8447,
+          "after3dWithin8wkPct": 0.1216,
+          "upheldPct": 0.5684
+        }
+      },
+      "total": {
+        "opened": 1817,
+        "closed": 1842,
+        "within3dPct": 0.8447,
+        "after3dWithin8wkPct": 0.1216,
+        "upheldPct": 0.5684
+      }
+    },
+    {
+      "firmName": "U.S. Bank Europe DAC",
+      "group": "U.S. BANCORP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 1747,
+          "closed": 1816,
+          "within3dPct": 0.2296,
+          "after3dWithin8wkPct": 0.7665,
+          "upheldPct": 0.1525
+        }
+      },
+      "total": {
+        "opened": 1747,
+        "closed": 1816,
+        "within3dPct": 0.2296,
+        "after3dWithin8wkPct": 0.7665,
+        "upheldPct": 0.1525
+      }
+    },
+    {
+      "firmName": "VANGUARD ASSET MANAGEMENT, LTD.",
+      "group": "THE VANGUARD GROUP, INC.",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 569,
+          "closed": 596,
+          "within3dPct": 0.0805,
+          "after3dWithin8wkPct": 0.6946,
+          "upheldPct": 0.6309
+        },
+        "Investments": {
+          "opened": 1075,
+          "closed": 1128,
+          "within3dPct": 0.203,
+          "after3dWithin8wkPct": 0.6578,
+          "upheldPct": 0.4982
+        }
+      },
+      "total": {
+        "opened": 1644,
+        "closed": 1724,
+        "within3dPct": 0.1607,
+        "after3dWithin8wkPct": 0.6705,
+        "upheldPct": 0.5441
+      }
+    },
+    {
+      "firmName": "Sainsbury's Bank Plc",
+      "group": "J SAINSBURY PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-03-01 to 2025-08-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 1108,
+          "closed": 1301,
+          "within3dPct": 0.3505,
+          "after3dWithin8wkPct": 0.6303,
+          "upheldPct": 0.5058
+        },
+        "Insurance & pure protection": {
+          "opened": 494,
+          "closed": 527,
+          "within3dPct": 0.0854,
+          "after3dWithin8wkPct": 0.907,
+          "upheldPct": 0.4516
+        }
+      },
+      "total": {
+        "opened": 1602,
+        "closed": 1828,
+        "within3dPct": 0.2741,
+        "after3dWithin8wkPct": 0.7101,
+        "upheldPct": 0.4902
+      }
+    },
+    {
+      "firmName": "Asurion Europe Limited",
+      "group": "ASURION",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1566,
+          "closed": 1571,
+          "within3dPct": 0.38,
+          "after3dWithin8wkPct": 0.62,
+          "upheldPct": 0.1719
+        }
+      },
+      "total": {
+        "opened": 1566,
+        "closed": 1571,
+        "within3dPct": 0.38,
+        "after3dWithin8wkPct": 0.62,
+        "upheldPct": 0.1719
+      }
+    },
+    {
+      "firmName": "Aioi Nissay Dowa Insurance UK Limited",
+      "group": "AIOI NISSAY DOWA EUROPE LIMITED",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1554,
+          "closed": 1497,
+          "within3dPct": 0.2692,
+          "after3dWithin8wkPct": 0.7188,
+          "upheldPct": 0.4676
+        }
+      },
+      "total": {
+        "opened": 1554,
+        "closed": 1497,
+        "within3dPct": 0.2692,
+        "after3dWithin8wkPct": 0.7188,
+        "upheldPct": 0.4676
+      }
+    },
+    {
+      "firmName": "Zempler Bank Limited",
+      "group": "ACCESS BANK PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 1519,
+          "closed": 1538,
+          "within3dPct": 0.2627,
+          "after3dWithin8wkPct": 0.7373,
+          "upheldPct": 0.4298
+        }
+      },
+      "total": {
+        "opened": 1519,
+        "closed": 1538,
+        "within3dPct": 0.2627,
+        "after3dWithin8wkPct": 0.7373,
+        "upheldPct": 0.4298
+      }
+    },
+    {
+      "firmName": "AJ Bell Securities Limited",
+      "group": "AJ BELL GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 44,
+          "closed": 44,
+          "within3dPct": 0.5,
+          "after3dWithin8wkPct": 0.5,
+          "upheldPct": 0.6818
+        },
+        "Decumulation & pensions": {
+          "opened": 316,
+          "closed": 303,
+          "within3dPct": 0.3432,
+          "after3dWithin8wkPct": 0.6568,
+          "upheldPct": 0.4818
+        },
+        "Investments": {
+          "opened": 1140,
+          "closed": 1127,
+          "within3dPct": 0.3744,
+          "after3dWithin8wkPct": 0.6247,
+          "upheldPct": 0.5102
+        }
+      },
+      "total": {
+        "opened": 1500,
+        "closed": 1474,
+        "within3dPct": 0.3718,
+        "after3dWithin8wkPct": 0.6275,
+        "upheldPct": 0.5095
+      }
+    },
+    {
+      "firmName": "The Mortgage Works (UK) Plc",
+      "group": "NATIONWIDE BUILDING SOCIETY",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Home finance": {
+          "opened": 1481,
+          "closed": 1522,
+          "within3dPct": 0.2339,
+          "after3dWithin8wkPct": 0.7635,
+          "upheldPct": 0.525
+        }
+      },
+      "total": {
+        "opened": 1481,
+        "closed": 1522,
+        "within3dPct": 0.2339,
+        "after3dWithin8wkPct": 0.7635,
+        "upheldPct": 0.525
+      }
+    },
+    {
+      "firmName": "Somerset Bridge Insurance Services Limited",
+      "group": "SOMERSET BRIDGE GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1472,
+          "closed": 1472,
+          "within3dPct": 0.6943,
+          "after3dWithin8wkPct": 0.3057,
+          "upheldPct": 0.3689
+        }
+      },
+      "total": {
+        "opened": 1472,
+        "closed": 1472,
+        "within3dPct": 0.6943,
+        "after3dWithin8wkPct": 0.3057,
+        "upheldPct": 0.3689
+      }
+    },
+    {
+      "firmName": "Northern Bank Limited",
+      "group": "DANSKE BANK A/S",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 1361,
+          "closed": 1369,
+          "within3dPct": 0.4018,
+          "after3dWithin8wkPct": 0.5982,
+          "upheldPct": 0.3594
+        },
+        "Decumulation & pensions": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Home finance": {
+          "opened": 85,
+          "closed": 86,
+          "within3dPct": 0.1977,
+          "after3dWithin8wkPct": 0.8023,
+          "upheldPct": 0.4419
+        },
+        "Insurance & pure protection": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Investments": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        }
+      },
+      "total": {
+        "opened": 1446,
+        "closed": 1455,
+        "within3dPct": 0.3897,
+        "after3dWithin8wkPct": 0.6103,
+        "upheldPct": 0.3643
+      }
+    },
+    {
+      "firmName": "Aldermore Bank Plc",
+      "group": "FIRSTRAND LIMITED",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 754,
+          "closed": 706,
+          "within3dPct": 0.5085,
+          "after3dWithin8wkPct": 0.4802,
+          "upheldPct": 0.7082
+        },
+        "Home finance": {
+          "opened": 691,
+          "closed": 656,
+          "within3dPct": 0.2607,
+          "after3dWithin8wkPct": 0.718,
+          "upheldPct": 0.7058
+        }
+      },
+      "total": {
+        "opened": 1445,
+        "closed": 1362,
+        "within3dPct": 0.3891,
+        "after3dWithin8wkPct": 0.5947,
+        "upheldPct": 0.707
+      }
+    },
+    {
+      "firmName": "RBS Collective Investment Funds Limited",
+      "group": "NATWEST GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Investments": {
+          "opened": 1342,
+          "closed": 1434,
+          "within3dPct": 0.4881,
+          "after3dWithin8wkPct": 0.4916,
+          "upheldPct": 0.2399
+        }
+      },
+      "total": {
+        "opened": 1342,
+        "closed": 1434,
+        "within3dPct": 0.4881,
+        "after3dWithin8wkPct": 0.4916,
+        "upheldPct": 0.2399
+      }
+    },
+    {
+      "firmName": "Shawbrook Bank Limited",
+      "group": "SHAWBROOK GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 882,
+          "closed": 945,
+          "within3dPct": 0.3958,
+          "after3dWithin8wkPct": 0.5831,
+          "upheldPct": 0.5968
+        },
+        "Home finance": {
+          "opened": 398,
+          "closed": 400,
+          "within3dPct": 0.13,
+          "after3dWithin8wkPct": 0.83,
+          "upheldPct": 0.5625
+        }
+      },
+      "total": {
+        "opened": 1280,
+        "closed": 1345,
+        "within3dPct": 0.3167,
+        "after3dWithin8wkPct": 0.6565,
+        "upheldPct": 0.5866
+      }
+    },
+    {
+      "firmName": "INSURANCE FACTORY LIMITED",
+      "group": "MARKERSTUDY GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1266,
+          "closed": 1292,
+          "within3dPct": 0.5155,
+          "after3dWithin8wkPct": 0.483,
+          "upheldPct": 0.4025
+        }
+      },
+      "total": {
+        "opened": 1266,
+        "closed": 1292,
+        "within3dPct": 0.5155,
+        "after3dWithin8wkPct": 0.483,
+        "upheldPct": 0.4025
+      }
+    },
+    {
+      "firmName": "Xbridge Limited",
+      "group": "THE TRAVELERS COMPANIES, INC.",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1240,
+          "closed": 1319,
+          "within3dPct": 0.113,
+          "after3dWithin8wkPct": 0.8772,
+          "upheldPct": 0.3958
+        }
+      },
+      "total": {
+        "opened": 1240,
+        "closed": 1319,
+        "within3dPct": 0.113,
+        "after3dWithin8wkPct": 0.8772,
+        "upheldPct": 0.3958
+      }
+    },
+    {
+      "firmName": "Aviva Health UK Limited",
+      "group": "AVIVA PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1236,
+          "closed": 1276,
+          "within3dPct": 0.4937,
+          "after3dWithin8wkPct": 0.4749,
+          "upheldPct": 0.2704
+        }
+      },
+      "total": {
+        "opened": 1236,
+        "closed": 1276,
+        "within3dPct": 0.4937,
+        "after3dWithin8wkPct": 0.4749,
+        "upheldPct": 0.2704
+      }
+    },
+    {
+      "firmName": "EBS Pensions Limited",
+      "group": "LLOYDS BANKING GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Decumulation & pensions": {
+          "opened": 1176,
+          "closed": 776,
+          "within3dPct": 0.0064,
+          "after3dWithin8wkPct": 0.4008,
+          "upheldPct": 0.9317
+        },
+        "Home finance": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Investments": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        }
+      },
+      "total": {
+        "opened": 1176,
+        "closed": 776,
+        "within3dPct": 0.0064,
+        "after3dWithin8wkPct": 0.4008,
+        "upheldPct": 0.9317
+      }
+    },
+    {
+      "firmName": "J.P. MORGAN PERSONAL INVESTING LIMITED",
+      "group": "JPMORGAN CHASE & CO",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 278,
+          "closed": 278,
+          "within3dPct": 0.1223,
+          "after3dWithin8wkPct": 0.8669,
+          "upheldPct": 0.7086
+        },
+        "Investments": {
+          "opened": 848,
+          "closed": 848,
+          "within3dPct": 0.3455,
+          "after3dWithin8wkPct": 0.6509,
+          "upheldPct": 0.5731
+        }
+      },
+      "total": {
+        "opened": 1126,
+        "closed": 1126,
+        "within3dPct": 0.2904,
+        "after3dWithin8wkPct": 0.7043,
+        "upheldPct": 0.6066
+      }
+    },
+    {
+      "firmName": "MetLife Europe d.a.c.",
+      "group": "METLIFE, INC.",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1126,
+          "closed": 1064,
+          "within3dPct": 0.0705,
+          "after3dWithin8wkPct": 0.765,
+          "upheldPct": 0.5695
+        }
+      },
+      "total": {
+        "opened": 1126,
+        "closed": 1064,
+        "within3dPct": 0.0705,
+        "after3dWithin8wkPct": 0.765,
+        "upheldPct": 0.5695
+      }
+    },
+    {
+      "firmName": "Interactive Brokers (U.K.) Limited",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Investments": {
+          "opened": 1116,
+          "closed": 1159,
+          "within3dPct": 0.0656,
+          "after3dWithin8wkPct": 0.8033,
+          "upheldPct": 0.107
+        }
+      },
+      "total": {
+        "opened": 1116,
+        "closed": 1159,
+        "within3dPct": 0.0656,
+        "after3dWithin8wkPct": 0.8033,
+        "upheldPct": 0.107
+      }
+    },
+    {
+      "firmName": "Extracover Limited",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1114,
+          "closed": 1104,
+          "within3dPct": 0.4067,
+          "after3dWithin8wkPct": 0.5933,
+          "upheldPct": 0.2889
+        }
+      },
+      "total": {
+        "opened": 1114,
+        "closed": 1104,
+        "within3dPct": 0.4067,
+        "after3dWithin8wkPct": 0.5933,
+        "upheldPct": 0.2889
+      }
+    },
+    {
+      "firmName": "Avantia Insurance Limited",
+      "group": "AVANTIA GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1100,
+          "closed": 1089,
+          "within3dPct": 0.7971,
+          "after3dWithin8wkPct": 0.202,
+          "upheldPct": 0.3893
+        }
+      },
+      "total": {
+        "opened": 1100,
+        "closed": 1089,
+        "within3dPct": 0.7971,
+        "after3dWithin8wkPct": 0.202,
+        "upheldPct": 0.3893
+      }
+    },
+    {
+      "firmName": "Quilter Life & Pensions Limited",
+      "group": "QUILTER GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 853,
+          "closed": 820,
+          "within3dPct": 0.011,
+          "after3dWithin8wkPct": 0.989,
+          "upheldPct": 0.6756
+        },
+        "Investments": {
+          "opened": 223,
+          "closed": 188,
+          "within3dPct": 0.0106,
+          "after3dWithin8wkPct": 0.984,
+          "upheldPct": 0.7074
+        }
+      },
+      "total": {
+        "opened": 1076,
+        "closed": 1008,
+        "within3dPct": 0.0109,
+        "after3dWithin8wkPct": 0.9881,
+        "upheldPct": 0.6815
+      }
+    },
+    {
+      "firmName": "Starr International (Europe) Limited",
+      "group": "STARR INTERNATIONAL COMPANY, INC.",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1075,
+          "closed": 1083,
+          "within3dPct": 0.2327,
+          "after3dWithin8wkPct": 0.7636,
+          "upheldPct": 0.4414
+        }
+      },
+      "total": {
+        "opened": 1075,
+        "closed": 1083,
+        "within3dPct": 0.2327,
+        "after3dWithin8wkPct": 0.7636,
+        "upheldPct": 0.4414
+      }
+    },
+    {
+      "firmName": "CAF BANK LIMITED",
+      "group": "CHARITIES AID FOUNDATION",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-05-01 to 2025-10-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 1060,
+          "closed": 1049,
+          "within3dPct": 0.0744,
+          "after3dWithin8wkPct": 0.918,
+          "upheldPct": 0.9018
+        }
+      },
+      "total": {
+        "opened": 1060,
+        "closed": 1049,
+        "within3dPct": 0.0744,
+        "after3dWithin8wkPct": 0.918,
+        "upheldPct": 0.9018
+      }
+    },
+    {
+      "firmName": "Principality Building Society",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 673,
+          "closed": 693,
+          "within3dPct": 0.5527,
+          "after3dWithin8wkPct": 0.443,
+          "upheldPct": 0.5988
+        },
+        "Home finance": {
+          "opened": 384,
+          "closed": 397,
+          "within3dPct": 0.4458,
+          "after3dWithin8wkPct": 0.5416,
+          "upheldPct": 0.4509
+        },
+        "Insurance & pure protection": {
+          "opened": 2,
+          "closed": 2,
+          "within3dPct": 1,
+          "after3dWithin8wkPct": 0,
+          "upheldPct": 0
+        },
+        "Investments": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        }
+      },
+      "total": {
+        "opened": 1059,
+        "closed": 1092,
+        "within3dPct": 0.5147,
+        "after3dWithin8wkPct": 0.478,
+        "upheldPct": 0.544
+      }
+    },
+    {
+      "firmName": "AJ Bell Management Limited",
+      "group": "AJ BELL GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 1051,
+          "closed": 1043,
+          "within3dPct": 0.3739,
+          "after3dWithin8wkPct": 0.6242,
+          "upheldPct": 0.534
+        }
+      },
+      "total": {
+        "opened": 1051,
+        "closed": 1043,
+        "within3dPct": 0.3739,
+        "after3dWithin8wkPct": 0.6242,
+        "upheldPct": 0.534
+      }
+    },
+    {
+      "firmName": "Exeter Friendly Society Limited",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1050,
+          "closed": 1050,
+          "within3dPct": 0.8629,
+          "after3dWithin8wkPct": 0.1352,
+          "upheldPct": 0.1581
+        }
+      },
+      "total": {
+        "opened": 1050,
+        "closed": 1050,
+        "within3dPct": 0.8629,
+        "after3dWithin8wkPct": 0.1352,
+        "upheldPct": 0.1581
+      }
+    },
+    {
+      "firmName": "True Potential Wealth Management LLP",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 917,
+          "closed": 854,
+          "within3dPct": 0.0199,
+          "after3dWithin8wkPct": 0.8747,
+          "upheldPct": 0.1581
+        },
+        "Home finance": {
+          "opened": 1,
+          "closed": 1,
+          "within3dPct": null,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 3,
+          "closed": 2,
+          "within3dPct": null,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": null
+        },
+        "Investments": {
+          "opened": 121,
+          "closed": 124,
+          "within3dPct": 0.0081,
+          "after3dWithin8wkPct": 0.8548,
+          "upheldPct": 0.25
+        }
+      },
+      "total": {
+        "opened": 1042,
+        "closed": 981,
+        "within3dPct": 0.0183,
+        "after3dWithin8wkPct": 0.8726,
+        "upheldPct": 0.1692
+      }
+    },
+    {
+      "firmName": "Kensington Mortgage Company Limited",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Home finance": {
+          "opened": 1029,
+          "closed": 1047,
+          "within3dPct": 0.2779,
+          "after3dWithin8wkPct": 0.7173,
+          "upheldPct": 0.2932
+        }
+      },
+      "total": {
+        "opened": 1029,
+        "closed": 1047,
+        "within3dPct": 0.2779,
+        "after3dWithin8wkPct": 0.7173,
+        "upheldPct": 0.2932
+      }
+    },
+    {
+      "firmName": "Casualty & General Insurance Company (Europe) Ltd",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 1027,
+          "closed": 907,
+          "within3dPct": 0.0849,
+          "after3dWithin8wkPct": 0.7828,
+          "upheldPct": 0.3859
+        }
+      },
+      "total": {
+        "opened": 1027,
+        "closed": 907,
+        "within3dPct": 0.0849,
+        "after3dWithin8wkPct": 0.7828,
+        "upheldPct": 0.3859
+      }
+    },
+    {
+      "firmName": "Paragon Bank Plc",
+      "group": "PARAGON BANKING GROUP PLC",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 772,
+          "closed": 774,
+          "within3dPct": 0.2597,
+          "after3dWithin8wkPct": 0.7326,
+          "upheldPct": 0.5336
+        },
+        "Home finance": {
+          "opened": 230,
+          "closed": 249,
+          "within3dPct": 0.2691,
+          "after3dWithin8wkPct": 0.6787,
+          "upheldPct": 0.5462
+        },
+        "Insurance & pure protection": {
+          "opened": 1,
+          "closed": null,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        }
+      },
+      "total": {
+        "opened": 1003,
+        "closed": 1023,
+        "within3dPct": 0.262,
+        "after3dWithin8wkPct": 0.7195,
+        "upheldPct": 0.5367
+      }
+    },
+    {
+      "firmName": "Scottish Friendly Assurance Society Limited",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 268,
+          "closed": 326,
+          "within3dPct": 0.0491,
+          "after3dWithin8wkPct": 0.9233,
+          "upheldPct": 0.7914
+        },
+        "Insurance & pure protection": {
+          "opened": 353,
+          "closed": 343,
+          "within3dPct": 0.1108,
+          "after3dWithin8wkPct": 0.7143,
+          "upheldPct": 0.5569
+        },
+        "Investments": {
+          "opened": 364,
+          "closed": 399,
+          "within3dPct": 0.1454,
+          "after3dWithin8wkPct": 0.8471,
+          "upheldPct": 0.7469
+        }
+      },
+      "total": {
+        "opened": 985,
+        "closed": 1068,
+        "within3dPct": 0.1049,
+        "after3dWithin8wkPct": 0.8277,
+        "upheldPct": 0.6994
+      }
+    },
+    {
+      "firmName": "Arthur J. Gallagher Insurance Brokers Limited",
+      "group": "GALLAGHER GROUP",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 977,
+          "closed": 1004,
+          "within3dPct": 0.3317,
+          "after3dWithin8wkPct": 0.6474,
+          "upheldPct": 0.6195
+        }
+      },
+      "total": {
+        "opened": 977,
+        "closed": 1004,
+        "within3dPct": 0.3317,
+        "after3dWithin8wkPct": 0.6474,
+        "upheldPct": 0.6195
+      }
+    },
+    {
+      "firmName": "HELVETIA GLOBAL SOLUTIONS LTD",
+      "group": "HELVETIA GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 965,
+          "closed": 967,
+          "within3dPct": 0.0879,
+          "after3dWithin8wkPct": 0.8966,
+          "upheldPct": 0.5109
+        }
+      },
+      "total": {
+        "opened": 965,
+        "closed": 967,
+        "within3dPct": 0.0879,
+        "after3dWithin8wkPct": 0.8966,
+        "upheldPct": 0.5109
+      }
+    },
+    {
+      "firmName": "I Go 4 Ltd.",
+      "group": "MARKERSTUDY GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 958,
+          "closed": 946,
+          "within3dPct": 0.5412,
+          "after3dWithin8wkPct": 0.4556,
+          "upheldPct": 0.4683
+        }
+      },
+      "total": {
+        "opened": 958,
+        "closed": 946,
+        "within3dPct": 0.5412,
+        "after3dWithin8wkPct": 0.4556,
+        "upheldPct": 0.4683
+      }
+    },
+    {
+      "firmName": "AMERICAN INTERNATIONAL GROUP UK LIMITED",
+      "group": "AMERICAN INTERNATIONAL GROUP, INC. (AIG)",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 955,
+          "closed": 929,
+          "within3dPct": 0.1808,
+          "after3dWithin8wkPct": 0.8105,
+          "upheldPct": 0.5318
+        }
+      },
+      "total": {
+        "opened": 955,
+        "closed": 929,
+        "within3dPct": 0.1808,
+        "after3dWithin8wkPct": 0.8105,
+        "upheldPct": 0.5318
+      }
+    },
+    {
+      "firmName": "Accord Mortgages Limited",
+      "group": "YORKSHIRE BUILDING SOCIETY",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 14,
+          "closed": 12,
+          "within3dPct": 0.1667,
+          "after3dWithin8wkPct": 0.8333,
+          "upheldPct": 0.8333
+        },
+        "Home finance": {
+          "opened": 936,
+          "closed": 899,
+          "within3dPct": 0.2125,
+          "after3dWithin8wkPct": 0.7675,
+          "upheldPct": 0.6363
+        }
+      },
+      "total": {
+        "opened": 950,
+        "closed": 911,
+        "within3dPct": 0.2119,
+        "after3dWithin8wkPct": 0.7684,
+        "upheldPct": 0.6389
+      }
+    },
+    {
+      "firmName": "QBE UK Limited",
+      "group": "QBE INSURANCE GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 910,
+          "closed": 847,
+          "within3dPct": 0.0472,
+          "after3dWithin8wkPct": 0.7367,
+          "upheldPct": 0.4061
+        }
+      },
+      "total": {
+        "opened": 910,
+        "closed": 847,
+        "within3dPct": 0.0472,
+        "after3dWithin8wkPct": 0.7367,
+        "upheldPct": 0.4061
+      }
+    },
+    {
+      "firmName": "Ageas Retail Limited",
+      "group": "AGEAS SA-NV",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 909,
+          "closed": 888,
+          "within3dPct": 0.4887,
+          "after3dWithin8wkPct": 0.5079,
+          "upheldPct": 0.5113
+        }
+      },
+      "total": {
+        "opened": 909,
+        "closed": 888,
+        "within3dPct": 0.4887,
+        "after3dWithin8wkPct": 0.5079,
+        "upheldPct": 0.5113
+      }
+    },
+    {
+      "firmName": "Family Equity Plan Limited",
+      "group": "FAMILY ASSURANCE FRIENDLY SOCIETY LTD",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 416,
+          "closed": 429,
+          "within3dPct": 0.5338,
+          "after3dWithin8wkPct": 0.4662,
+          "upheldPct": 0.3403
+        },
+        "Investments": {
+          "opened": 492,
+          "closed": 509,
+          "within3dPct": 0.4244,
+          "after3dWithin8wkPct": 0.5697,
+          "upheldPct": 0.4676
+        }
+      },
+      "total": {
+        "opened": 908,
+        "closed": 938,
+        "within3dPct": 0.4744,
+        "after3dWithin8wkPct": 0.5224,
+        "upheldPct": 0.4094
+      }
+    },
+    {
+      "firmName": "Phoenix Life CA Limited",
+      "group": "PHOENIX GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 578,
+          "closed": 531,
+          "within3dPct": 0.2015,
+          "after3dWithin8wkPct": 0.6836,
+          "upheldPct": 0.6158
+        },
+        "Insurance & pure protection": {
+          "opened": 269,
+          "closed": 347,
+          "within3dPct": 0.1066,
+          "after3dWithin8wkPct": 0.5908,
+          "upheldPct": 0.5418
+        },
+        "Investments": {
+          "opened": 45,
+          "closed": 44,
+          "within3dPct": 0.2955,
+          "after3dWithin8wkPct": 0.5455,
+          "upheldPct": 0.6591
+        }
+      },
+      "total": {
+        "opened": 892,
+        "closed": 922,
+        "within3dPct": 0.1703,
+        "after3dWithin8wkPct": 0.6421,
+        "upheldPct": 0.59
+      }
+    },
+    {
+      "firmName": "Ikano Bank AB (publ)",
+      "group": "INGKA GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 879,
+          "closed": 926,
+          "within3dPct": 0.1933,
+          "after3dWithin8wkPct": 0.7797,
+          "upheldPct": 0.4287
+        }
+      },
+      "total": {
+        "opened": 879,
+        "closed": 926,
+        "within3dPct": 0.1933,
+        "after3dWithin8wkPct": 0.7797,
+        "upheldPct": 0.4287
+      }
+    },
+    {
+      "firmName": "Car Care Plan Limited",
+      "group": "NO GROUP",
+      "jointReporting": "yes",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 876,
+          "closed": 891,
+          "within3dPct": 0.4927,
+          "after3dWithin8wkPct": 0.5073,
+          "upheldPct": 0.2334
+        }
+      },
+      "total": {
+        "opened": 876,
+        "closed": 891,
+        "within3dPct": 0.4927,
+        "after3dWithin8wkPct": 0.5073,
+        "upheldPct": 0.2334
+      }
+    },
+    {
+      "firmName": "ST. JAMES'S PLACE UK PLC",
+      "group": "ST. JAMES'S PLACE PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 601,
+          "closed": 571,
+          "within3dPct": 0.0175,
+          "after3dWithin8wkPct": 0.9457,
+          "upheldPct": 0.6357
+        },
+        "Insurance & pure protection": {
+          "opened": 3,
+          "closed": 4,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 0.75,
+          "upheldPct": 0
+        },
+        "Investments": {
+          "opened": 236,
+          "closed": 232,
+          "within3dPct": 0.0129,
+          "after3dWithin8wkPct": 0.9095,
+          "upheldPct": 0.6121
+        }
+      },
+      "total": {
+        "opened": 840,
+        "closed": 807,
+        "within3dPct": 0.0161,
+        "after3dWithin8wkPct": 0.9343,
+        "upheldPct": 0.6258
+      }
+    },
+    {
+      "firmName": "Kroo Bank Ltd",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 820,
+          "closed": 820,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 0.9915,
+          "upheldPct": 0.2927
+        }
+      },
+      "total": {
+        "opened": 820,
+        "closed": 820,
+        "within3dPct": 0,
+        "after3dWithin8wkPct": 0.9915,
+        "upheldPct": 0.2927
+      }
+    },
+    {
+      "firmName": "Countrywide Assured Plc",
+      "group": "CHESNARA PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 462,
+          "closed": 399,
+          "within3dPct": 0.416,
+          "after3dWithin8wkPct": 0.391,
+          "upheldPct": 0.4361
+        },
+        "Insurance & pure protection": {
+          "opened": 253,
+          "closed": 243,
+          "within3dPct": 0.1481,
+          "after3dWithin8wkPct": 0.6626,
+          "upheldPct": 0.3704
+        },
+        "Investments": {
+          "opened": 72,
+          "closed": 60,
+          "within3dPct": 0.05,
+          "after3dWithin8wkPct": 0.7667,
+          "upheldPct": 0.65
+        }
+      },
+      "total": {
+        "opened": 787,
+        "closed": 702,
+        "within3dPct": 0.292,
+        "after3dWithin8wkPct": 0.5171,
+        "upheldPct": 0.4316
+      }
+    },
+    {
+      "firmName": "M & G Securities Limited",
+      "group": "M&G PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Investments": {
+          "opened": 786,
+          "closed": 781,
+          "within3dPct": 0.3355,
+          "after3dWithin8wkPct": 0.6376,
+          "upheldPct": 0.484
+        }
+      },
+      "total": {
+        "opened": 786,
+        "closed": 781,
+        "within3dPct": 0.3355,
+        "after3dWithin8wkPct": 0.6376,
+        "upheldPct": 0.484
+      }
+    },
+    {
+      "firmName": "Cofunds Limited",
+      "group": "AEGON N.V.",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Decumulation & pensions": {
+          "opened": 87,
+          "closed": 72,
+          "within3dPct": 0.2639,
+          "after3dWithin8wkPct": 0.7361,
+          "upheldPct": 0.5
+        },
+        "Home finance": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Investments": {
+          "opened": 685,
+          "closed": 693,
+          "within3dPct": 0.1342,
+          "after3dWithin8wkPct": 0.8543,
+          "upheldPct": 0.518
+        }
+      },
+      "total": {
+        "opened": 772,
+        "closed": 765,
+        "within3dPct": 0.1464,
+        "after3dWithin8wkPct": 0.8431,
+        "upheldPct": 0.5163
+      }
+    },
+    {
+      "firmName": "One Sure Insurance Limited",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 770,
+          "closed": 765,
+          "within3dPct": 0.8614,
+          "after3dWithin8wkPct": 0.1386,
+          "upheldPct": 0.2902
+        }
+      },
+      "total": {
+        "opened": 770,
+        "closed": 765,
+        "within3dPct": 0.8614,
+        "after3dWithin8wkPct": 0.1386,
+        "upheldPct": 0.2902
+      }
+    },
+    {
+      "firmName": "ACORN INSURANCE AND FINANCIAL SERVICES LIMITED",
+      "group": "ACORN GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 766,
+          "closed": 741,
+          "within3dPct": 0.4278,
+          "after3dWithin8wkPct": 0.5709,
+          "upheldPct": 0.4723
+        }
+      },
+      "total": {
+        "opened": 766,
+        "closed": 741,
+        "within3dPct": 0.4278,
+        "after3dWithin8wkPct": 0.5709,
+        "upheldPct": 0.4723
+      }
+    },
+    {
+      "firmName": "JAMES HAY ADMINISTRATION COMPANY LIMITED",
+      "group": "JAMES HAY PARTNERSHIP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 764,
+          "closed": 732,
+          "within3dPct": 0.0902,
+          "after3dWithin8wkPct": 0.8046,
+          "upheldPct": 0.6831
+        }
+      },
+      "total": {
+        "opened": 764,
+        "closed": 732,
+        "within3dPct": 0.0902,
+        "after3dWithin8wkPct": 0.8046,
+        "upheldPct": 0.6831
+      }
+    },
+    {
+      "firmName": "Aviva Protection UK Limited",
+      "group": "AVIVA PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 760,
+          "closed": 698,
+          "within3dPct": 0.1275,
+          "after3dWithin8wkPct": 0.7264,
+          "upheldPct": 0.4986
+        }
+      },
+      "total": {
+        "opened": 760,
+        "closed": 698,
+        "within3dPct": 0.1275,
+        "after3dWithin8wkPct": 0.7264,
+        "upheldPct": 0.4986
+      }
+    },
+    {
+      "firmName": "Embark Investment Services Limited",
+      "group": "LLOYDS BANKING GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Decumulation & pensions": {
+          "opened": 419,
+          "closed": 429,
+          "within3dPct": 0.4336,
+          "after3dWithin8wkPct": 0.5408,
+          "upheldPct": 0.7622
+        },
+        "Home finance": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Investments": {
+          "opened": 340,
+          "closed": 331,
+          "within3dPct": 0.3867,
+          "after3dWithin8wkPct": 0.5468,
+          "upheldPct": 0.6828
+        }
+      },
+      "total": {
+        "opened": 759,
+        "closed": 760,
+        "within3dPct": 0.4132,
+        "after3dWithin8wkPct": 0.5434,
+        "upheldPct": 0.7276
+      }
+    },
+    {
+      "firmName": "Elderbridge Limited",
+      "group": "TECH MAHINDRA LIMITED",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Home finance": {
+          "opened": 758,
+          "closed": 781,
+          "within3dPct": 0.0487,
+          "after3dWithin8wkPct": 0.8079,
+          "upheldPct": 0.5109
+        }
+      },
+      "total": {
+        "opened": 758,
+        "closed": 781,
+        "within3dPct": 0.0487,
+        "after3dWithin8wkPct": 0.8079,
+        "upheldPct": 0.5109
+      }
+    },
+    {
+      "firmName": "National House-Building Council",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 745,
+          "closed": 772,
+          "within3dPct": 0.0427,
+          "after3dWithin8wkPct": 0.9573,
+          "upheldPct": 0.4391
+        }
+      },
+      "total": {
+        "opened": 745,
+        "closed": 772,
+        "within3dPct": 0.0427,
+        "after3dWithin8wkPct": 0.9573,
+        "upheldPct": 0.4391
+      }
+    },
+    {
+      "firmName": "Wesleyan Assurance Society",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 440,
+          "closed": 466,
+          "within3dPct": 0.2747,
+          "after3dWithin8wkPct": 0.6845,
+          "upheldPct": 0.8927
+        },
+        "Insurance & pure protection": {
+          "opened": 87,
+          "closed": 92,
+          "within3dPct": 0.337,
+          "after3dWithin8wkPct": 0.6196,
+          "upheldPct": 0.8696
+        },
+        "Investments": {
+          "opened": 217,
+          "closed": 219,
+          "within3dPct": 0.3425,
+          "after3dWithin8wkPct": 0.6393,
+          "upheldPct": 0.9315
+        }
+      },
+      "total": {
+        "opened": 744,
+        "closed": 777,
+        "within3dPct": 0.3012,
+        "after3dWithin8wkPct": 0.6641,
+        "upheldPct": 0.9009
+      }
+    },
+    {
+      "firmName": "Castelan Limited",
+      "group": "CASTELAN GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 742,
+          "closed": 745,
+          "within3dPct": 0.2631,
+          "after3dWithin8wkPct": 0.6738,
+          "upheldPct": 0.4577
+        }
+      },
+      "total": {
+        "opened": 742,
+        "closed": 745,
+        "within3dPct": 0.2631,
+        "after3dWithin8wkPct": 0.6738,
+        "upheldPct": 0.4577
+      }
+    },
+    {
+      "firmName": "Embark Services Limited",
+      "group": "LLOYDS BANKING GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Decumulation & pensions": {
+          "opened": 730,
+          "closed": 432,
+          "within3dPct": 0.0139,
+          "after3dWithin8wkPct": 0.3403,
+          "upheldPct": 0.9167
+        },
+        "Home finance": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Investments": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        }
+      },
+      "total": {
+        "opened": 730,
+        "closed": 432,
+        "within3dPct": 0.0139,
+        "after3dWithin8wkPct": 0.3403,
+        "upheldPct": 0.9167
+      }
+    },
+    {
+      "firmName": "CALL ASSIST LIMITED",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-05-01 to 2025-10-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 724,
+          "closed": 732,
+          "within3dPct": 0.2459,
+          "after3dWithin8wkPct": 0.7514,
+          "upheldPct": 0.3784
+        }
+      },
+      "total": {
+        "opened": 724,
+        "closed": 732,
+        "within3dPct": 0.2459,
+        "after3dWithin8wkPct": 0.7514,
+        "upheldPct": 0.3784
+      }
+    },
+    {
+      "firmName": "Pepper (UK) Limited",
+      "group": "PEPPER GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Home finance": {
+          "opened": 723,
+          "closed": 718,
+          "within3dPct": 0.1713,
+          "after3dWithin8wkPct": 0.8078,
+          "upheldPct": 0.4234
+        }
+      },
+      "total": {
+        "opened": 723,
+        "closed": 718,
+        "within3dPct": 0.1713,
+        "after3dWithin8wkPct": 0.8078,
+        "upheldPct": 0.4234
+      }
+    },
+    {
+      "firmName": "Newcastle Building Society",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 485,
+          "closed": 472,
+          "within3dPct": 0.5911,
+          "after3dWithin8wkPct": 0.4089,
+          "upheldPct": 0.6165
+        },
+        "Decumulation & pensions": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Home finance": {
+          "opened": 222,
+          "closed": 219,
+          "within3dPct": 0.6986,
+          "after3dWithin8wkPct": 0.3014,
+          "upheldPct": 0.3607
+        },
+        "Insurance & pure protection": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Investments": {
+          "opened": 6,
+          "closed": 6,
+          "within3dPct": 1,
+          "after3dWithin8wkPct": 0,
+          "upheldPct": 0.8333
+        }
+      },
+      "total": {
+        "opened": 713,
+        "closed": 697,
+        "within3dPct": 0.6284,
+        "after3dWithin8wkPct": 0.3716,
+        "upheldPct": 0.538
+      }
+    },
+    {
+      "firmName": "Hood Travel Limited",
+      "group": "HOOD GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 711,
+          "closed": 814,
+          "within3dPct": 0.3808,
+          "after3dWithin8wkPct": 0.6081,
+          "upheldPct": 0.172
+        }
+      },
+      "total": {
+        "opened": 711,
+        "closed": 814,
+        "within3dPct": 0.3808,
+        "after3dWithin8wkPct": 0.6081,
+        "upheldPct": 0.172
+      }
+    },
+    {
+      "firmName": "Cynergy Bank Plc",
+      "group": "CYNERGY CAPITAL LTD",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 695,
+          "closed": 568,
+          "within3dPct": 0.0229,
+          "after3dWithin8wkPct": 0.9736,
+          "upheldPct": 0.8011
+        },
+        "Home finance": {
+          "opened": 6,
+          "closed": 6,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 0.8333,
+          "upheldPct": 0.6667
+        }
+      },
+      "total": {
+        "opened": 701,
+        "closed": 574,
+        "within3dPct": 0.0226,
+        "after3dWithin8wkPct": 0.9721,
+        "upheldPct": 0.7997
+      }
+    },
+    {
+      "firmName": "UK Mortgage Lending Ltd",
+      "group": "PEPPER GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Home finance": {
+          "opened": 682,
+          "closed": 643,
+          "within3dPct": 0.3421,
+          "after3dWithin8wkPct": 0.6439,
+          "upheldPct": 0.5163
+        }
+      },
+      "total": {
+        "opened": 682,
+        "closed": 643,
+        "within3dPct": 0.3421,
+        "after3dWithin8wkPct": 0.6439,
+        "upheldPct": 0.5163
+      }
+    },
+    {
+      "firmName": "HBOS Investment Fund Managers Limited",
+      "group": "LLOYDS BANKING GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Decumulation & pensions": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Home finance": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Investments": {
+          "opened": 673,
+          "closed": 659,
+          "within3dPct": 0.349,
+          "after3dWithin8wkPct": 0.607,
+          "upheldPct": 0.8619
+        }
+      },
+      "total": {
+        "opened": 673,
+        "closed": 659,
+        "within3dPct": 0.349,
+        "after3dWithin8wkPct": 0.607,
+        "upheldPct": 0.8619
+      }
+    },
+    {
+      "firmName": "ReAssure Life Limited",
+      "group": "PHOENIX GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 166,
+          "closed": 156,
+          "within3dPct": 0.2564,
+          "after3dWithin8wkPct": 0.6731,
+          "upheldPct": 0.8526
+        },
+        "Insurance & pure protection": {
+          "opened": 315,
+          "closed": 310,
+          "within3dPct": 0.3194,
+          "after3dWithin8wkPct": 0.571,
+          "upheldPct": 0.8839
+        },
+        "Investments": {
+          "opened": 182,
+          "closed": 159,
+          "within3dPct": 0.4088,
+          "after3dWithin8wkPct": 0.5283,
+          "upheldPct": 0.8428
+        }
+      },
+      "total": {
+        "opened": 663,
+        "closed": 625,
+        "within3dPct": 0.3264,
+        "after3dWithin8wkPct": 0.5856,
+        "upheldPct": 0.8656
+      }
+    },
+    {
+      "firmName": "Advisory Insurance Brokers Limited",
+      "group": "ARDONAGH GROUP LIMITED",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 651,
+          "closed": 671,
+          "within3dPct": 0.1684,
+          "after3dWithin8wkPct": 0.766,
+          "upheldPct": 0.6542
+        }
+      },
+      "total": {
+        "opened": 651,
+        "closed": 671,
+        "within3dPct": 0.1684,
+        "after3dWithin8wkPct": 0.766,
+        "upheldPct": 0.6542
+      }
+    },
+    {
+      "firmName": "Antares Insurance Company Limited",
+      "group": "QIC CAPITAL LLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 650,
+          "closed": 594,
+          "within3dPct": 0.2222,
+          "after3dWithin8wkPct": 0.7677,
+          "upheldPct": 0.5152
+        }
+      },
+      "total": {
+        "opened": 650,
+        "closed": 594,
+        "within3dPct": 0.2222,
+        "after3dWithin8wkPct": 0.7677,
+        "upheldPct": 0.5152
+      }
+    },
+    {
+      "firmName": "LONDON & COUNTRY MORTGAGES LIMITED",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Home finance": {
+          "opened": 597,
+          "closed": 605,
+          "within3dPct": 0.1818,
+          "after3dWithin8wkPct": 0.8165,
+          "upheldPct": 0.6413
+        },
+        "Insurance & pure protection": {
+          "opened": 47,
+          "closed": 46,
+          "within3dPct": 0.1304,
+          "after3dWithin8wkPct": 0.8478,
+          "upheldPct": 0.587
+        }
+      },
+      "total": {
+        "opened": 644,
+        "closed": 651,
+        "within3dPct": 0.1782,
+        "after3dWithin8wkPct": 0.8187,
+        "upheldPct": 0.6375
+      }
+    },
+    {
+      "firmName": "Sabre Insurance Company Limited",
+      "group": "SABRE INSURANCE GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 644,
+          "closed": 631,
+          "within3dPct": 0.5198,
+          "after3dWithin8wkPct": 0.4802,
+          "upheldPct": 0.3423
+        }
+      },
+      "total": {
+        "opened": 644,
+        "closed": 631,
+        "within3dPct": 0.5198,
+        "after3dWithin8wkPct": 0.4802,
+        "upheldPct": 0.3423
+      }
+    },
+    {
+      "firmName": "Acm Ulr Limited",
+      "group": "MARKERSTUDY GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 636,
+          "closed": 669,
+          "within3dPct": 0.1958,
+          "after3dWithin8wkPct": 0.7608,
+          "upheldPct": 0.5845
+        }
+      },
+      "total": {
+        "opened": 636,
+        "closed": 669,
+        "within3dPct": 0.1958,
+        "after3dWithin8wkPct": 0.7608,
+        "upheldPct": 0.5845
+      }
+    },
+    {
+      "firmName": "Swift 1st Limited",
+      "group": "SWIFT GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Home finance": {
+          "opened": 636,
+          "closed": 642,
+          "within3dPct": 0.4626,
+          "after3dWithin8wkPct": 0.5374,
+          "upheldPct": 0.148
+        }
+      },
+      "total": {
+        "opened": 636,
+        "closed": 642,
+        "within3dPct": 0.4626,
+        "after3dWithin8wkPct": 0.5374,
+        "upheldPct": 0.148
+      }
+    },
+    {
+      "firmName": "USAY BUSINESS LTD",
+      "group": "ARDONAGH GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 629,
+          "closed": 607,
+          "within3dPct": 0.0824,
+          "after3dWithin8wkPct": 0.9094,
+          "upheldPct": 0.1944
+        }
+      },
+      "total": {
+        "opened": 629,
+        "closed": 607,
+        "within3dPct": 0.0824,
+        "after3dWithin8wkPct": 0.9094,
+        "upheldPct": 0.1944
+      }
+    },
+    {
+      "firmName": "OCTOPUS MONEY UNIT TRUST MANAGERS LIMITED",
+      "group": "OCTOPUS MONEY",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 241,
+          "closed": 249,
+          "within3dPct": 0.1325,
+          "after3dWithin8wkPct": 0.8675,
+          "upheldPct": 0.8474
+        },
+        "Investments": {
+          "opened": 381,
+          "closed": 403,
+          "within3dPct": 0.1538,
+          "after3dWithin8wkPct": 0.8437,
+          "upheldPct": 0.8238
+        }
+      },
+      "total": {
+        "opened": 622,
+        "closed": 652,
+        "within3dPct": 0.1457,
+        "after3dWithin8wkPct": 0.8528,
+        "upheldPct": 0.8328
+      }
+    },
+    {
+      "firmName": "Eversure Limited",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-05-01 to 2025-10-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 612,
+          "closed": 662,
+          "within3dPct": 0.281,
+          "after3dWithin8wkPct": 0.7009,
+          "upheldPct": 0.1193
+        }
+      },
+      "total": {
+        "opened": 612,
+        "closed": 662,
+        "within3dPct": 0.281,
+        "after3dWithin8wkPct": 0.7009,
+        "upheldPct": 0.1193
+      }
+    },
+    {
+      "firmName": "Highway Insurance Company Limited",
+      "group": "ALLIANZ GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 611,
+          "closed": 613,
+          "within3dPct": 0.2561,
+          "after3dWithin8wkPct": 0.571,
+          "upheldPct": 0.4731
+        }
+      },
+      "total": {
+        "opened": 611,
+        "closed": 613,
+        "within3dPct": 0.2561,
+        "after3dWithin8wkPct": 0.571,
+        "upheldPct": 0.4731
+      }
+    },
+    {
+      "firmName": "Connells Limited",
+      "group": "SKIPTON BUILDING SOCIETY",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Home finance": {
+          "opened": 478,
+          "closed": 485,
+          "within3dPct": 0.0392,
+          "after3dWithin8wkPct": 0.9464,
+          "upheldPct": 0.4639
+        },
+        "Insurance & pure protection": {
+          "opened": 130,
+          "closed": 130,
+          "within3dPct": 0.0615,
+          "after3dWithin8wkPct": 0.9385,
+          "upheldPct": 0.2846
+        }
+      },
+      "total": {
+        "opened": 608,
+        "closed": 615,
+        "within3dPct": 0.0439,
+        "after3dWithin8wkPct": 0.9447,
+        "upheldPct": 0.426
+      }
+    },
+    {
+      "firmName": "REASSURED LIMITED",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-02-01 to 2025-07-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 604,
+          "closed": 608,
+          "within3dPct": 0.648,
+          "after3dWithin8wkPct": 0.3438,
+          "upheldPct": 0.4178
+        }
+      },
+      "total": {
+        "opened": 604,
+        "closed": 608,
+        "within3dPct": 0.648,
+        "after3dWithin8wkPct": 0.3438,
+        "upheldPct": 0.4178
+      }
+    },
+    {
+      "firmName": "Lexham Insurance Consultants Limited",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 583,
+          "closed": 605,
+          "within3dPct": 0.1686,
+          "after3dWithin8wkPct": 0.8182,
+          "upheldPct": 0.3289
+        }
+      },
+      "total": {
+        "opened": 583,
+        "closed": 605,
+        "within3dPct": 0.1686,
+        "after3dWithin8wkPct": 0.8182,
+        "upheldPct": 0.3289
+      }
+    },
+    {
+      "firmName": "Evolution Insurance Company Limited",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 582,
+          "closed": 579,
+          "within3dPct": 0.3869,
+          "after3dWithin8wkPct": 0.5423,
+          "upheldPct": 0.266
+        }
+      },
+      "total": {
+        "opened": 582,
+        "closed": 579,
+        "within3dPct": 0.3869,
+        "after3dWithin8wkPct": 0.5423,
+        "upheldPct": 0.266
+      }
+    },
+    {
+      "firmName": "QUILTER FINANCIAL SERVICES LIMITED",
+      "group": "QUILTER GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 287,
+          "closed": 355,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 0.3493
+        },
+        "Home finance": {
+          "opened": 12,
+          "closed": 2,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 0
+        },
+        "Insurance & pure protection": {
+          "opened": 20,
+          "closed": 9,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 0.4444
+        },
+        "Investments": {
+          "opened": 261,
+          "closed": 273,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 0.5128
+        }
+      },
+      "total": {
+        "opened": 580,
+        "closed": 639,
+        "within3dPct": 0,
+        "after3dWithin8wkPct": 1,
+        "upheldPct": 0.4194
+      }
+    },
+    {
+      "firmName": "Complete Cover Group Ltd",
+      "group": "COMPLETE COVER GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 560,
+          "closed": 594,
+          "within3dPct": 0.4815,
+          "after3dWithin8wkPct": 0.5185,
+          "upheldPct": 0.4192
+        }
+      },
+      "total": {
+        "opened": 560,
+        "closed": 594,
+        "within3dPct": 0.4815,
+        "after3dWithin8wkPct": 0.5185,
+        "upheldPct": 0.4192
+      }
+    },
+    {
+      "firmName": "Rothesay Life Plc",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 553,
+          "closed": 569,
+          "within3dPct": 0.2004,
+          "after3dWithin8wkPct": 0.7979,
+          "upheldPct": 0.2496
+        }
+      },
+      "total": {
+        "opened": 553,
+        "closed": 569,
+        "within3dPct": 0.2004,
+        "after3dWithin8wkPct": 0.7979,
+        "upheldPct": 0.2496
+      }
+    },
+    {
+      "firmName": "UBS AG",
+      "group": "UBS GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 66,
+          "closed": 70,
+          "within3dPct": 0.2286,
+          "after3dWithin8wkPct": 0.7571,
+          "upheldPct": 0.4571
+        },
+        "Decumulation & pensions": {
+          "opened": 6,
+          "closed": 6,
+          "within3dPct": 0.3333,
+          "after3dWithin8wkPct": 0.6667,
+          "upheldPct": 0.3333
+        },
+        "Home finance": {
+          "opened": 14,
+          "closed": 10,
+          "within3dPct": 0.1,
+          "after3dWithin8wkPct": 0.8,
+          "upheldPct": 0
+        },
+        "Investments": {
+          "opened": 462,
+          "closed": 475,
+          "within3dPct": 0.5684,
+          "after3dWithin8wkPct": 0.4168,
+          "upheldPct": 0.6779
+        }
+      },
+      "total": {
+        "opened": 548,
+        "closed": 561,
+        "within3dPct": 0.5152,
+        "after3dWithin8wkPct": 0.4688,
+        "upheldPct": 0.6346
+      }
+    },
+    {
+      "firmName": "Canada Life Limited",
+      "group": "CANADA LIFE",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 324,
+          "closed": 288,
+          "within3dPct": 0.1319,
+          "after3dWithin8wkPct": 0.8229,
+          "upheldPct": 0.7813
+        },
+        "Insurance & pure protection": {
+          "opened": 183,
+          "closed": 184,
+          "within3dPct": 0.2826,
+          "after3dWithin8wkPct": 0.6196,
+          "upheldPct": 0.5815
+        },
+        "Investments": {
+          "opened": 39,
+          "closed": 42,
+          "within3dPct": 0.3095,
+          "after3dWithin8wkPct": 0.6667,
+          "upheldPct": 0.5
+        }
+      },
+      "total": {
+        "opened": 546,
+        "closed": 514,
+        "within3dPct": 0.2004,
+        "after3dWithin8wkPct": 0.7374,
+        "upheldPct": 0.6868
+      }
+    },
+    {
+      "firmName": "Forester Life Limited",
+      "group": "FORSTERS FINANCIAL",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 20,
+          "closed": 21,
+          "within3dPct": 0.381,
+          "after3dWithin8wkPct": 0.5714,
+          "upheldPct": 0.4286
+        },
+        "Insurance & pure protection": {
+          "opened": 42,
+          "closed": 36,
+          "within3dPct": 0.3611,
+          "after3dWithin8wkPct": 0.6389,
+          "upheldPct": 0.3056
+        },
+        "Investments": {
+          "opened": 482,
+          "closed": 506,
+          "within3dPct": 0.4447,
+          "after3dWithin8wkPct": 0.5435,
+          "upheldPct": 0.3854
+        }
+      },
+      "total": {
+        "opened": 544,
+        "closed": 563,
+        "within3dPct": 0.4369,
+        "after3dWithin8wkPct": 0.5506,
+        "upheldPct": 0.3819
+      }
+    },
+    {
+      "firmName": "Millennium Insurance Company Limited",
+      "group": "DSA GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 542,
+          "closed": 551,
+          "within3dPct": 0.265,
+          "after3dWithin8wkPct": 0.7114,
+          "upheldPct": 0.5045
+        }
+      },
+      "total": {
+        "opened": 542,
+        "closed": 551,
+        "within3dPct": 0.265,
+        "after3dWithin8wkPct": 0.7114,
+        "upheldPct": 0.5045
+      }
+    },
+    {
+      "firmName": "Halifax Share Dealing Limited",
+      "group": "LLOYDS BANKING GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Decumulation & pensions": {
+          "opened": 41,
+          "closed": 46,
+          "within3dPct": 0.4565,
+          "after3dWithin8wkPct": 0.5,
+          "upheldPct": 0.5652
+        },
+        "Home finance": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Investments": {
+          "opened": 500,
+          "closed": 561,
+          "within3dPct": 0.6043,
+          "after3dWithin8wkPct": 0.3476,
+          "upheldPct": 0.4991
+        }
+      },
+      "total": {
+        "opened": 541,
+        "closed": 607,
+        "within3dPct": 0.5931,
+        "after3dWithin8wkPct": 0.3591,
+        "upheldPct": 0.5041
+      }
+    },
+    {
+      "firmName": "FIL Life Insurance Limited",
+      "group": "FIDELITY INTERNATIONAL GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Decumulation & pensions": {
+          "opened": 517,
+          "closed": 492,
+          "within3dPct": 0.2154,
+          "after3dWithin8wkPct": 0.6728,
+          "upheldPct": 0.4614
+        }
+      },
+      "total": {
+        "opened": 517,
+        "closed": 492,
+        "within3dPct": 0.2154,
+        "after3dWithin8wkPct": 0.6728,
+        "upheldPct": 0.4614
+      }
+    },
+    {
+      "firmName": "Quilter Investment Platform Limited",
+      "group": "QUILTER GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Investments": {
+          "opened": 516,
+          "closed": 498,
+          "within3dPct": 0.006,
+          "after3dWithin8wkPct": 0.994,
+          "upheldPct": 0.6908
+        }
+      },
+      "total": {
+        "opened": 516,
+        "closed": 498,
+        "within3dPct": 0.006,
+        "after3dWithin8wkPct": 0.994,
+        "upheldPct": 0.6908
+      }
+    },
+    {
+      "firmName": "Ascent Performance Group Limited",
+      "group": "not on previous list",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-05-01 to 2025-10-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 68,
+          "closed": 72,
+          "within3dPct": 0.0833,
+          "after3dWithin8wkPct": 0.9167,
+          "upheldPct": 0.2778
+        },
+        "Home finance": {
+          "opened": 446,
+          "closed": 471,
+          "within3dPct": 0.104,
+          "after3dWithin8wkPct": 0.896,
+          "upheldPct": 0.3057
+        }
+      },
+      "total": {
+        "opened": 514,
+        "closed": 543,
+        "within3dPct": 0.1013,
+        "after3dWithin8wkPct": 0.8987,
+        "upheldPct": 0.302
+      }
+    },
+    {
+      "firmName": "West Bay Insurance Plc",
+      "group": "QIC CAPITAL LLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 507,
+          "closed": 547,
+          "within3dPct": 0.3144,
+          "after3dWithin8wkPct": 0.5722,
+          "upheldPct": 0.6673
+        }
+      },
+      "total": {
+        "opened": 507,
+        "closed": 547,
+        "within3dPct": 0.3144,
+        "after3dWithin8wkPct": 0.5722,
+        "upheldPct": 0.6673
+      }
+    },
+    {
+      "firmName": "ETORO (UK) LIMITED",
+      "group": "ETORO GROUP LTD",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Investments": {
+          "opened": 504,
+          "closed": 514,
+          "within3dPct": 0.5856,
+          "after3dWithin8wkPct": 0.3949,
+          "upheldPct": 0.0331
+        }
+      },
+      "total": {
+        "opened": 504,
+        "closed": 514,
+        "within3dPct": 0.5856,
+        "after3dWithin8wkPct": 0.3949,
+        "upheldPct": 0.0331
+      }
+    },
+    {
+      "firmName": "Close Brothers Limited",
+      "group": "CLOSE BROTHERS GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-02-01 to 2025-07-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 377,
+          "closed": 381,
+          "within3dPct": 0.3071,
+          "after3dWithin8wkPct": 0.685,
+          "upheldPct": 0
+        },
+        "Insurance & pure protection": {
+          "opened": 5,
+          "closed": 5,
+          "within3dPct": 0.8,
+          "after3dWithin8wkPct": 0.2,
+          "upheldPct": 0.6
+        }
+      },
+      "total": {
+        "opened": 382,
+        "closed": 386,
+        "within3dPct": 0.3135,
+        "after3dWithin8wkPct": 0.6788,
+        "upheldPct": 0.0078
+      }
+    },
+    {
+      "firmName": "SECURE TRUST BANK PUBLIC LIMITED COMPANY",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 315,
+          "closed": 290,
+          "within3dPct": 0.0793,
+          "after3dWithin8wkPct": 0.9103,
+          "upheldPct": 0.3448
+        },
+        "Home finance": {
+          "opened": null,
+          "closed": 1,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": 1
+        }
+      },
+      "total": {
+        "opened": 315,
+        "closed": 291,
+        "within3dPct": 0.079,
+        "after3dWithin8wkPct": 0.9072,
+        "upheldPct": 0.3471
+      }
+    },
+    {
+      "firmName": "Telefonica UK Limited",
+      "group": "VIRGIN MEDIA O2 JOINT VENTURE",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 314,
+          "closed": 287,
+          "within3dPct": 0.4878,
+          "after3dWithin8wkPct": 0.4948,
+          "upheldPct": 0.8188
+        }
+      },
+      "total": {
+        "opened": 314,
+        "closed": 287,
+        "within3dPct": 0.4878,
+        "after3dWithin8wkPct": 0.4948,
+        "upheldPct": 0.8188
+      }
+    },
+    {
+      "firmName": "Vodafone Limited",
+      "group": "VODAFONETHREE HOLDINGS LIMITED",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 252,
+          "closed": 253,
+          "within3dPct": 0.6126,
+          "after3dWithin8wkPct": 0.3874,
+          "upheldPct": 0.5494
+        }
+      },
+      "total": {
+        "opened": 252,
+        "closed": 253,
+        "within3dPct": 0.6126,
+        "after3dWithin8wkPct": 0.3874,
+        "upheldPct": 0.5494
+      }
+    },
+    {
+      "firmName": "Carfinance247 Limited",
+      "group": "247 MONEY GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 199,
+          "closed": 208,
+          "within3dPct": 0.0913,
+          "after3dWithin8wkPct": 0.9038,
+          "upheldPct": 0.3462
+        }
+      },
+      "total": {
+        "opened": 199,
+        "closed": 208,
+        "within3dPct": 0.0913,
+        "after3dWithin8wkPct": 0.9038,
+        "upheldPct": 0.3462
+      }
+    },
+    {
+      "firmName": "FCE Bank Plc",
+      "group": "FORD MOTOR CO",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Banking and credit cards": {
+          "opened": 154,
+          "closed": 169,
+          "within3dPct": 0.497,
+          "after3dWithin8wkPct": 0.503,
+          "upheldPct": 0.5562
+        },
+        "Decumulation & pensions": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Home finance": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Investments": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        }
+      },
+      "total": {
+        "opened": 154,
+        "closed": 169,
+        "within3dPct": 0.497,
+        "after3dWithin8wkPct": 0.503,
+        "upheldPct": 0.5562
+      }
+    },
+    {
+      "firmName": "Shop Direct Finance Company Limited",
+      "group": "THE VERY GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 87,
+          "closed": 100,
+          "within3dPct": 0.01,
+          "after3dWithin8wkPct": 0.98,
+          "upheldPct": 0.31
+        }
+      },
+      "total": {
+        "opened": 87,
+        "closed": 100,
+        "within3dPct": 0.01,
+        "after3dWithin8wkPct": 0.98,
+        "upheldPct": 0.31
+      }
+    },
+    {
+      "firmName": "Cabot Credit Management Group Limited",
+      "group": "ENCORE CAPITAL GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Home finance": {
+          "opened": 35,
+          "closed": 44,
+          "within3dPct": 0.1818,
+          "after3dWithin8wkPct": 0.7045,
+          "upheldPct": 0.5227
+        }
+      },
+      "total": {
+        "opened": 35,
+        "closed": 44,
+        "within3dPct": 0.1818,
+        "after3dWithin8wkPct": 0.7045,
+        "upheldPct": 0.5227
+      }
+    },
+    {
+      "firmName": "LeasePlan UK Limited",
+      "group": "SOCIETY GENERALE GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 23,
+          "closed": 21,
+          "within3dPct": 0.1429,
+          "after3dWithin8wkPct": 0.619,
+          "upheldPct": 0.7619
+        }
+      },
+      "total": {
+        "opened": 23,
+        "closed": 21,
+        "within3dPct": 0.1429,
+        "after3dWithin8wkPct": 0.619,
+        "upheldPct": 0.7619
+      }
+    },
+    {
+      "firmName": "MotoNovo Finance Limited",
+      "group": "FIRSTRAND LIMITED",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 18,
+          "closed": 18,
+          "within3dPct": 0.0556,
+          "after3dWithin8wkPct": 0.8333,
+          "upheldPct": 0
+        }
+      },
+      "total": {
+        "opened": 18,
+        "closed": 18,
+        "within3dPct": 0.0556,
+        "after3dWithin8wkPct": 0.8333,
+        "upheldPct": 0
+      }
+    },
+    {
+      "firmName": "Admiral Financial Services Limited",
+      "group": "ADMIRAL GROUP PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Home finance": {
+          "opened": 16,
+          "closed": 14,
+          "within3dPct": 0.4286,
+          "after3dWithin8wkPct": 0.5714,
+          "upheldPct": 0.8571
+        }
+      },
+      "total": {
+        "opened": 16,
+        "closed": 14,
+        "within3dPct": 0.4286,
+        "after3dWithin8wkPct": 0.5714,
+        "upheldPct": 0.8571
+      }
+    },
+    {
+      "firmName": "FirstRand Bank Limited",
+      "group": "FIRSTRAND LIMITED",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 16,
+          "closed": 18,
+          "within3dPct": 0.1111,
+          "after3dWithin8wkPct": 0.6111,
+          "upheldPct": 0
+        }
+      },
+      "total": {
+        "opened": 16,
+        "closed": 18,
+        "within3dPct": 0.1111,
+        "after3dWithin8wkPct": 0.6111,
+        "upheldPct": 0
+      }
+    },
+    {
+      "firmName": "Volkswagen Financial Services (UK) Limited",
+      "group": "VOLKSWAGEN AG",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 15,
+          "closed": 22,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 0.0455,
+          "upheldPct": 0
+        }
+      },
+      "total": {
+        "opened": 15,
+        "closed": 22,
+        "within3dPct": 0,
+        "after3dWithin8wkPct": 0.0455,
+        "upheldPct": 0
+      }
+    },
+    {
+      "firmName": "Funding Circle Ltd",
+      "group": "NO GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Investments": {
+          "opened": 13,
+          "closed": 13,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 0.9231,
+          "upheldPct": 0.5385
+        }
+      },
+      "total": {
+        "opened": 13,
+        "closed": 13,
+        "within3dPct": 0,
+        "after3dWithin8wkPct": 0.9231,
+        "upheldPct": 0.5385
+      }
+    },
+    {
+      "firmName": "Link Financial Outsourcing Limited",
+      "group": "LINK FINANCIAL GROUP",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Home finance": {
+          "opened": 10,
+          "closed": 10,
+          "within3dPct": null,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": null
+        }
+      },
+      "total": {
+        "opened": 10,
+        "closed": 10,
+        "within3dPct": null,
+        "after3dWithin8wkPct": 1,
+        "upheldPct": null
+      }
+    },
+    {
+      "firmName": "Experian Limited",
+      "group": "EXPERIAN PLC",
+      "jointReporting": "no",
+      "reportingPeriod": "2025-04-01 to 2025-09-30",
+      "products": {
+        "Home finance": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        },
+        "Insurance & pure protection": {
+          "opened": 1,
+          "closed": 1,
+          "within3dPct": 0,
+          "after3dWithin8wkPct": 1,
+          "upheldPct": 0
+        }
+      },
+      "total": {
+        "opened": 1,
+        "closed": 1,
+        "within3dPct": 0,
+        "after3dWithin8wkPct": 1,
+        "upheldPct": 0
+      }
+    },
+    {
+      "firmName": "Carmoola Limited",
+      "group": "NO GROUP",
+      "jointReporting": null,
+      "reportingPeriod": "2025-07-01 to 2025-12-31",
+      "products": {
+        "Insurance & pure protection": {
+          "opened": 0,
+          "closed": 0,
+          "within3dPct": null,
+          "after3dWithin8wkPct": null,
+          "upheldPct": null
+        }
+      },
+      "total": {
+        "opened": 0,
+        "closed": 0,
+        "within3dPct": null,
+        "after3dWithin8wkPct": 0,
+        "upheldPct": null
+      }
+    }
+  ]
+}
