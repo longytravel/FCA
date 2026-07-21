@@ -45,10 +45,6 @@ export default function PhoenixWatch() {
     if (searchParams.get("present") === "1") setPresent(true);
   }, [searchParams]);
 
-  // Auto-open Case 1 once the fixture has painted, so a first-time visitor lands
-  // on a working investigation (live resolve + streaming briefing), not an empty tool.
-  const autoLoaded = useRef(false);
-
   // load instant-paint fixture (agent C copies it to public/phoenix-graph.json)
   useEffect(() => {
     let cancelled = false;
@@ -70,25 +66,44 @@ export default function PhoenixWatch() {
     };
   }, []);
 
-  // Kick off Case 1 automatically on first visit (after the fixture paints).
-  useEffect(() => {
-    if (autoLoaded.current) return;
-    if (fixtureState !== "ready" && fixtureState !== "empty") return;
-    autoLoaded.current = true;
-    if (!focusFirm) {
-      const c = CASES[0];
-      if (c) resolveFirm(c.number, c.name);
+  // Only the chosen firm's connected network is displayed — other cases' clusters
+  // stay hidden so the map reads as one story.
+  const displayedGraph = useMemo(() => {
+    if (!focusFirm) return emptyGraph();
+    const keep = new Set<string>([focusFirm.id]);
+    let grew = true;
+    while (grew) {
+      grew = false;
+      for (const e of graph.edges) {
+        const s = keep.has(e.source);
+        const t = keep.has(e.target);
+        if (s !== t) {
+          keep.add(e.source);
+          keep.add(e.target);
+          grew = true;
+        }
+      }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [fixtureState]);
+    return {
+      nodes: graph.nodes.filter((n) => keep.has(n.id)),
+      edges: graph.edges.filter((e) => keep.has(e.source) && keep.has(e.target)),
+    };
+  }, [graph, focusFirm]);
 
-  const { min: tlMin, max: tlMax } = useMemo(() => computeAppearance(graph), [graph]);
+  // Don't brief until the firm's records are actually in the graph — briefing on a
+  // stale graph produces "we hold no records" while the resolve is still running.
+  const briefingFocusId =
+    !resolving && focusFirm && graph.nodes.some((n) => n.id === focusFirm.id)
+      ? focusFirm.id
+      : null;
+
+  const { min: tlMin, max: tlMax } = useMemo(() => computeAppearance(displayedGraph), [displayedGraph]);
   useEffect(() => {
     setTlValue((v) => (v === 0 ? tlMax : v));
   }, [tlMax]);
 
   const fineMarks: FineMark[] = useMemo(() => {
-    const names = graph.nodes.map((n) => n.name.toUpperCase());
+    const names = displayedGraph.nodes.map((n) => n.name.toUpperCase());
     const marks: FineMark[] = [];
     for (const f of fines as { firm: string; date: string; amount: number }[]) {
       const u = f.firm.toUpperCase();
@@ -100,7 +115,7 @@ export default function PhoenixWatch() {
       if (marks.length >= 14) break;
     }
     return marks;
-  }, [graph]);
+  }, [displayedGraph]);
 
   // Headline stats for the focused case — the one-line story above the graph.
   const caseStats = useMemo(() => {
@@ -246,7 +261,7 @@ export default function PhoenixWatch() {
         <div className="relative flex-1">
           {resolveBanner}
           <GraphStage
-            graph={graph}
+            graph={focusFirm ? displayedGraph : graph}
             timelineDate={timelineDate}
             selectedId={selectedNode?.id}
             focusId={focusId}
@@ -277,15 +292,24 @@ export default function PhoenixWatch() {
   }
 
   // ---- Standard page ----
+  const backToStart = () => {
+    resolveAbort.current?.abort();
+    setFocusFirm(null);
+    setSelectedNode(null);
+    setFocusId(null);
+    setResolveError(null);
+    setResolving(false);
+  };
+
   return (
     <div style={{ fontFamily: "Arial, Helvetica, sans-serif" }} className="text-[#3f3f3f]">
       {/* Hero */}
       <section className="border-b border-[#d2d2d4] bg-[#f0f0f1]">
-        <div className="mx-auto max-w-6xl px-4 py-6">
+        <div className="mx-auto max-w-[1560px] px-4 py-6 md:px-8">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
               <h1 className="text-2xl font-bold text-[#6c1d45]">Phoenix Watch</h1>
-              <p className="mt-1 max-w-2xl text-[15px] leading-relaxed text-[#3f3f3f]">
+              <p className="mt-1 max-w-3xl text-[15px] leading-relaxed text-[#3f3f3f]">
                 The FCA fines a firm. The firm quietly dissolves. Its directors start again behind
                 brand-new companies. Phoenix Watch finds them — using nothing but public records.
               </p>
@@ -307,109 +331,174 @@ export default function PhoenixWatch() {
               </button>
             </div>
           </div>
-          <div className="mt-4 max-w-2xl">
-            <SearchBar onSelect={resolveFirm} busy={resolving} />
-          </div>
-          {/* How to read it — a real sequence, so the numbering carries meaning */}
-          <ol className="mt-4 grid max-w-4xl grid-cols-1 gap-2 text-[13px] text-[#3f3f3f] sm:grid-cols-3">
-            {[
-              ["Pick a case", "or search any UK firm — we pull its records live from Companies House."],
-              ["Read the map", "each square is a company, each circle a director. Red squares are new companies a director started after the failure — still trading today."],
-              ["Interrogate", "click anything for the evidence, ask Claude questions, or generate a case dossier."],
-            ].map(([t, d], i) => (
-              <li key={t} className="border border-[#d2d2d4] bg-white px-3 py-2">
-                <span className="font-bold text-[#6c1d45]">
-                  {i + 1}. {t}
-                </span>{" "}
-                <span className="text-[#75767a]">{d}</span>
-              </li>
-            ))}
-          </ol>
         </div>
       </section>
 
-      <div className="mx-auto max-w-6xl px-4 py-5">
-        {fixtureState === "empty" ? (
-          <p className="mb-3 border border-[#d2d2d4] bg-white px-3 py-2 text-[13px] text-[#75767a]">
-            Instant-paint fixture not found — search a firm above or pick a case to build the network
-            live from Companies House.
-          </p>
-        ) : null}
-
-        {/* Case banner — the story in one line */}
-        {focusFirm && caseStats ? (
-          <div className="mb-4 flex flex-wrap items-baseline gap-x-6 gap-y-1 border border-[#d2d2d4] border-l-4 border-l-[#6c1d45] bg-white px-4 py-3 text-[14px]">
-            <span className="text-[16px] font-bold text-[#6c1d45]">{focusFirm.name}</span>
-            <span>
-              <b>{caseStats.directors}</b> directors traced
-            </span>
-            <span>
-              <b>{caseStats.linked}</b> other companies where they reappear
-            </span>
-            <span className="font-bold text-[#ff585d]">{caseStats.active} still active today</span>
-          </div>
-        ) : null}
-
-        {/* Graph + detail */}
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1fr_360px]">
-          <div className="flex flex-col border border-[#d2d2d4] bg-white">
-            <div className="flex items-center justify-between border-b border-[#d2d2d4] bg-[#f0f0f1] px-4 py-2">
-              <h2 className="text-sm font-bold text-[#6c1d45]">The network — who rose again</h2>
-              <Legend />
-            </div>
-            <div className="relative h-[540px]">
-              {resolveBanner}
-              {fixtureState === "loading" ? (
-                <div className="flex h-full items-center justify-center text-[13px] text-[#75767a]">
-                  Loading network…
-                </div>
-              ) : (
-                <GraphStage
-                  graph={graph}
-                  timelineDate={timelineDate}
-                  selectedId={selectedNode?.id}
-                  focusId={focusId}
-                  focusNonce={focusNonce}
-                  onNodeClick={onNodeClick}
-                />
-              )}
-            </div>
-            <TimelineScrubber
-              min={tlMin}
-              max={tlMax}
-              value={tlValue}
-              active={tlActive}
-              playing={tlPlaying}
-              fineMarks={fineMarks}
-              onChange={setTlValue}
-              onTogglePlay={togglePlay}
-              onToggleActive={toggleActive}
-            />
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <BriefingPanel graph={graph} focusId={focusFirm?.id ?? null} focusName={focusFirm?.name ?? null} />
-            {selectedNode ? (
-              <div className="max-h-[480px] overflow-auto border border-[#d2d2d4] bg-white">
-                <NodeDetailPanel node={selectedNode} onClose={() => setSelectedNode(null)} onDossier={setDossierNode} />
+      <div className="mx-auto max-w-[1560px] px-4 py-5 md:px-8">
+        {!focusFirm ? (
+          <>
+            {/* STEP 1 — nothing loads until the user chooses */}
+            <section className="border border-[#d2d2d4] bg-white">
+              <div className="border-b border-[#d2d2d4] bg-[#6c1d45] px-4 py-3">
+                <h2 className="text-[15px] font-bold text-white">Step 1 of 3 — choose a firm to investigate</h2>
+                <p className="text-[12px] text-white/75">
+                  Start with one of the three headline failures, or search any UK firm. Its network
+                  is built in front of you from live Companies House records.
+                </p>
               </div>
-            ) : (
-              <p className="border border-dashed border-[#d2d2d4] bg-white px-3 py-3 text-[13px] text-[#75767a]">
-                <b className="text-[#3f3f3f]">Tip:</b> click any square (company) or circle
-                (director) in the map — its Companies House record and the working behind its risk
-                score appear here.
-              </p>
-            )}
-          </div>
-        </div>
+              <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-3">
+                {CASES.map((c, i) => (
+                  <button
+                    key={c.number}
+                    onClick={() => resolveFirm(c.number, c.name)}
+                    disabled={resolving}
+                    className="group flex flex-col border border-[#d2d2d4] bg-white p-4 text-left hover:border-[#6c1d45] disabled:opacity-60"
+                  >
+                    <span className="text-[11px] font-bold uppercase tracking-wide text-[#75767a]">
+                      Case {i + 1}
+                    </span>
+                    <span className="mt-1 text-[17px] font-bold leading-snug text-[#6c1d45]">{c.name}</span>
+                    <span className="mt-1 flex-1 text-[13px] leading-relaxed text-[#3f3f3f]">{c.blurb}</span>
+                    <span className="mt-3 inline-block self-start bg-[#6c1d45] px-3 py-1.5 text-[13px] font-bold text-white group-hover:bg-[#59183a]">
+                      {resolving && focusFirm ? "Working…" : "Investigate →"}
+                    </span>
+                  </button>
+                ))}
+              </div>
+              <div className="border-t border-[#d2d2d4] p-4">
+                <p className="mb-2 text-[13px] font-bold text-[#3f3f3f]">Or investigate any UK firm:</p>
+                <div className="max-w-2xl">
+                  <SearchBar onSelect={resolveFirm} busy={resolving} hideCases />
+                </div>
+              </div>
+            </section>
 
-        {/* Chat + sweep */}
-        <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
-          <div className="h-[460px]">
-            <ChatDock graph={graph} onGraphMerge={onGraphMerge} />
-          </div>
-          <SweepTable onLoadFirm={resolveFirm} />
-        </div>
+            {/* Browse route in — the sweep */}
+            <div className="mt-4">
+              <SweepTable onLoadFirm={resolveFirm} />
+            </div>
+
+            {/* What's behind this — provenance and scope, in plain English */}
+            <section className="mt-4 border border-[#d2d2d4] bg-white">
+              <div className="border-b border-[#d2d2d4] bg-[#f0f0f1] px-4 py-2">
+                <h2 className="text-sm font-bold text-[#6c1d45]">What&apos;s behind this</h2>
+              </div>
+              <div className="grid grid-cols-1 gap-4 p-4 text-[13px] leading-relaxed md:grid-cols-4">
+                <div>
+                  <b className="text-[#6c1d45]">The fines.</b> Every fine the FCA published between
+                  2013 and 2025 — 300 of them, harvested from fca.org.uk. The complete public list,
+                  not a hand-picked sample.
+                </div>
+                <div>
+                  <b className="text-[#6c1d45]">The companies and directors.</b> Pulled live from
+                  Companies House&apos;s public register at the moment you ask — nothing is
+                  pre-baked or stale.
+                </div>
+                <div>
+                  <b className="text-[#6c1d45]">The risk score.</b> A transparent indicator built
+                  from timing, shared addresses, shared industry and co-directors — the working is
+                  always shown. It says &ldquo;look here first&rdquo;, not &ldquo;guilty&rdquo;.
+                </div>
+                <div>
+                  <b className="text-[#6c1d45]">Where it could go.</b> The same approach extends to
+                  the FCA Warning List, insolvency notices, daily new incorporations — and from a
+                  one-off sweep to continuous monitoring with alerts.
+                </div>
+              </div>
+            </section>
+          </>
+        ) : (
+          <>
+            {/* Progress bar — you are here */}
+            <div className="mb-4 flex flex-wrap items-center gap-2 text-[13px]">
+              <button
+                onClick={backToStart}
+                className="border border-[#6c1d45] bg-white px-3 py-1.5 font-bold text-[#6c1d45] hover:bg-[#6c1d45] hover:text-white"
+              >
+                ← Choose another firm
+              </button>
+              <span className="border border-[#d2d2d4] bg-white px-3 py-1.5">
+                <b className="text-[#2E6A52]">✓ 1</b> · {focusFirm.name}
+              </span>
+              <span className="border border-[#d2d2d4] bg-white px-3 py-1.5">
+                <b className="text-[#6c1d45]">2</b> · Read the map — <span className="text-[#ff585d] font-bold">red</span> = started
+                after the failure, still active. Drag the dots around.
+              </span>
+              <span className="border border-[#d2d2d4] bg-white px-3 py-1.5">
+                <b className="text-[#6c1d45]">3</b> · Interrogate — click anything, ask Claude below, or generate the dossier
+              </span>
+            </div>
+
+            {/* Case banner — the story in one line */}
+            {caseStats ? (
+              <div className="mb-4 flex flex-wrap items-baseline gap-x-6 gap-y-1 border border-[#d2d2d4] border-l-4 border-l-[#6c1d45] bg-white px-4 py-3 text-[14px]">
+                <span className="text-[16px] font-bold text-[#6c1d45]">{focusFirm.name}</span>
+                <span>
+                  <b>{caseStats.directors}</b> directors traced
+                </span>
+                <span>
+                  <b>{caseStats.linked}</b> other companies where they reappear
+                </span>
+                <span className="font-bold text-[#ff585d]">{caseStats.active} still active today</span>
+              </div>
+            ) : null}
+
+            {/* Graph + detail */}
+            <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1fr_400px]">
+              <div className="flex flex-col border border-[#d2d2d4] bg-white">
+                <div className="flex items-center justify-between border-b border-[#d2d2d4] bg-[#f0f0f1] px-4 py-2">
+                  <h2 className="text-sm font-bold text-[#6c1d45]">The network — who rose again</h2>
+                  <Legend />
+                </div>
+                <div className="relative h-[600px]">
+                  {resolveBanner}
+                  <GraphStage
+                    graph={displayedGraph}
+                    timelineDate={timelineDate}
+                    selectedId={selectedNode?.id}
+                    focusId={focusId}
+                    focusNonce={focusNonce}
+                    onNodeClick={onNodeClick}
+                  />
+                </div>
+                <TimelineScrubber
+                  min={tlMin}
+                  max={tlMax}
+                  value={tlValue}
+                  active={tlActive}
+                  playing={tlPlaying}
+                  fineMarks={fineMarks}
+                  onChange={setTlValue}
+                  onTogglePlay={togglePlay}
+                  onToggleActive={toggleActive}
+                />
+              </div>
+
+              <div className="flex flex-col gap-4">
+                <BriefingPanel graph={graph} focusId={briefingFocusId} focusName={focusFirm.name} />
+                {selectedNode ? (
+                  <div className="max-h-[480px] overflow-auto border border-[#d2d2d4] bg-white">
+                    <NodeDetailPanel node={selectedNode} onClose={() => setSelectedNode(null)} onDossier={setDossierNode} />
+                  </div>
+                ) : (
+                  <p className="border border-dashed border-[#d2d2d4] bg-white px-3 py-3 text-[13px] text-[#75767a]">
+                    <b className="text-[#3f3f3f]">Tip:</b> click any square (company) or circle
+                    (director) in the map — its Companies House record and the working behind its risk
+                    score appear here.
+                  </p>
+                )}
+              </div>
+            </div>
+
+            {/* Chat + sweep */}
+            <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
+              <div className="h-[460px]">
+                <ChatDock graph={graph} onGraphMerge={onGraphMerge} />
+              </div>
+              <SweepTable onLoadFirm={resolveFirm} />
+            </div>
+          </>
+        )}
       </div>
 
       <DossierModal graph={graph} node={dossierNode} onClose={() => setDossierNode(null)} />

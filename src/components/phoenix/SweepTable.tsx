@@ -134,7 +134,7 @@ export default function SweepTable({
       {/* fines-by-year context chart (always available) */}
       <div className="border-b border-[#d2d2d4] px-4 py-2">
         <p className="mb-1 text-[11px] font-bold uppercase tracking-wide text-[#75767a]">
-          FCA fines by year (£m) — 300-firm base set
+          All 300 FCA fines published 2013–2025, by year (£m) — the complete public list, not a sample
         </p>
         <div className="h-24 w-full">
           <ResponsiveContainer width="100%" height="100%">

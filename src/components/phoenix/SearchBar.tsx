@@ -14,9 +14,11 @@ type CHResult = {
 export default function SearchBar({
   onSelect,
   busy,
+  hideCases,
 }: {
   onSelect: (companyNumber: string, name: string) => void;
   busy?: boolean;
+  hideCases?: boolean;
 }) {
   const [q, setQ] = useState("");
   const [results, setResults] = useState<CHResult[]>([]);
@@ -175,7 +177,7 @@ export default function SearchBar({
         ) : null}
       </div>
 
-      <div className="mt-2 flex flex-wrap items-center gap-2">
+      <div className={hideCases ? "hidden" : "mt-2 flex flex-wrap items-center gap-2"}>
         <span className="text-[12px] text-[#75767a]">Jump to a case:</span>
         {CASES.map((c, i) => (
           <button
