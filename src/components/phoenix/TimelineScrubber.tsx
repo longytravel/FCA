@@ -28,8 +28,8 @@ export default function TimelineScrubber({
 }) {
   const raf = useRef<number | null>(null);
   const last = useRef<number>(0);
-  // Playback speed: 1 = full span in ~12s. Slow is the stage-friendly setting.
-  const [speed, setSpeed] = useState(1);
+  // Playback speed factor (1 = full span in ~12s). Slow ≈ 80s — narration pace.
+  const [speed, setSpeed] = useState(0.5);
 
   // Advance the scrubber while playing (~ full span in 12s at normal speed).
   useEffect(() => {
@@ -81,7 +81,7 @@ export default function TimelineScrubber({
           {playing ? "❚❚ Pause" : "▶ Play"}
         </button>
         <span className="flex items-stretch border border-[#d2d2d4]" role="group" aria-label="Playback speed">
-          {([["Slow", 0.35], ["Normal", 1], ["Fast", 2]] as [string, number][]).map(([label, s]) => (
+          {([["Slow", 0.15], ["Normal", 0.5], ["Fast", 1]] as [string, number][]).map(([label, s]) => (
             <button
               key={label}
               onClick={() => setSpeed(s)}
