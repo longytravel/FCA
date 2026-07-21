@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Neutral fintech / regtech palette ──
+     Deliberately NOT FCA brand colours. Deep slate/navy canvas with an
+     electric-teal primary accent and an electric-blue secondary. */
+  --color-ink: #070b16;          /* page background — near-black navy */
+  --color-ink-2: #0b1220;        /* raised sections */
+  --color-panel: #0f1a2e;        /* cards */
+  --color-panel-2: #142138;      /* card hover / inset */
+  --color-line: #1e2c47;         /* hairline borders */
+  --color-line-2: #2a3b5c;       /* stronger borders */
+
+  --color-teal: #2dd4bf;         /* primary accent */
+  --color-teal-bright: #5eead4;
+  --color-teal-dim: #0f766e;
+  --color-blue: #3b82f6;         /* secondary accent */
+  --color-blue-bright: #60a5fa;
+  --color-violet: #8b5cf6;       /* tertiary accent */
+
+  --color-text: #e6edf7;         /* primary text */
+  --color-text-soft: #b4c2d8;    /* secondary text */
+  --color-muted: #8497b3;        /* muted labels */
+  --color-muted-dark: #5b6b87;
+
+  --color-green: #34d399;
+  --color-amber: #fbbf24;
+  --color-red: #f87171;
+
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-text);
+}
+
+/* Subtle entrance animations */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.delay-1 { animation-delay: 0.08s; opacity: 0; }
+.delay-2 { animation-delay: 0.16s; opacity: 0; }
+.delay-3 { animation-delay: 0.24s; opacity: 0; }
+.delay-4 { animation-delay: 0.32s; opacity: 0; }
+.delay-5 { animation-delay: 0.40s; opacity: 0; }
+
+/* Accent text gradient used on hero words */
+.text-gradient {
+  background: linear-gradient(100deg, var(--color-teal-bright), var(--color-blue-bright));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

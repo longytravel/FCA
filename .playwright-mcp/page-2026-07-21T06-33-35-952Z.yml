@@ -1,0 +1,5 @@
+- generic [active] [ref=f11e1]:
+  - generic:
+    - alert "Loading" [ref=f11e2]:
+      - progressbar [ref=f11e4]
+    - text:                               

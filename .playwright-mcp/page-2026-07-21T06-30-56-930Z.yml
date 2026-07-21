@@ -1,0 +1,891 @@
+- generic [ref=f2e8]:
+  - navigation [ref=f2e9] [cursor=pointer]: Skip to Main Content
+  - banner [ref=f2e11]:
+    - paragraph [ref=f2e12]:
+      - generic [ref=f2e13]:
+        - text: This is the new version of the new FCA Handbook website. Help us improve it by
+        - link "giving your feedback" [ref=f2e14] [cursor=pointer]:
+          - /url: https://www.onlinesurveys.fca.org.uk/jfe/form/SV_eKFKfPBp8LqfFpc
+        - text: .
+    - button "Close" [ref=f2e15] [cursor=pointer]:
+      - generic [ref=f2e16]: 
+  - generic [ref=f2e17]:
+    - complementary [ref=f2e18]:
+      - generic [ref=f2e19]:
+        - button "Close" [ref=f2e20] [cursor=pointer]:
+          - generic [ref=f2e21]: 
+        - list [ref=f2e22]:
+          - listitem [ref=f2e23]:
+            - link "Home" [ref=f2e24] [cursor=pointer]:
+              - /url: /home
+          - listitem [ref=f2e31]:
+            - link "Latest News " [ref=f2e32] [cursor=pointer]:
+              - /url: /latest-news
+              - generic [ref=f2e38]: Latest News
+              - generic [ref=f2e39]: 
+          - listitem [ref=f2e40]:
+            - link "FCA Handbook " [ref=f2e41] [cursor=pointer]:
+              - /url: /handbook
+              - generic [ref=f2e46]: FCA Handbook
+              - generic [ref=f2e47]: 
+            - list [ref=f2e50]:
+              - listitem [ref=f2e51]:
+                - generic [ref=f2e53]:
+                  - generic [ref=f2e54]:
+                    - generic [ref=f2e57] [cursor=pointer]:
+                      - checkbox "Select Timeline"
+                    - generic [ref=f2e59]: Select Timeline
+                  - button "information" [ref=f2e60] [cursor=pointer]:
+                    - generic [ref=f2e61]: 
+              - listitem [ref=f2e62]:
+                - generic [ref=f2e63] [cursor=pointer]: Track Changes
+              - listitem [ref=f2e71]:
+                - generic [ref=f2e72] [cursor=pointer]: View Chapter as PDF
+              - listitem [ref=f2e79]:
+                - generic [ref=f2e80] [cursor=pointer]: View Sourcebook as PDF
+              - listitem [ref=f2e87]:
+                - generic [ref=f2e88] [cursor=pointer]: View Section as PDF
+          - listitem [ref=f2e95]:
+            - link "Glossary " [ref=f2e96] [cursor=pointer]:
+              - /url: /glossary
+              - generic [ref=f2e102]: Glossary
+              - generic [ref=f2e103]: 
+            - text: 
+          - listitem [ref=f2e104]:
+            - complementary [ref=f2e105] [cursor=pointer]:
+              - generic [ref=f2e115]: Instruments
+              - generic [ref=f2e116]: 
+          - listitem [ref=f2e117]:
+            - link "Forms " [ref=f2e118] [cursor=pointer]:
+              - /url: /forms
+              - generic [ref=f2e124]: Forms
+              - generic [ref=f2e125]: 
+          - listitem [ref=f2e126]:
+            - link "Technical Standards " [ref=f2e127] [cursor=pointer]:
+              - /url: /technical-standards
+              - generic [ref=f2e133]: Technical Standards
+              - generic [ref=f2e134]: 
+            - text: 
+          - listitem [ref=f2e135]:
+            - link "Level 3 Materials " [ref=f2e136] [cursor=pointer]:
+              - /url: /l3materials
+              - generic [ref=f2e143]: Level 3 Materials
+              - generic [ref=f2e144]: 
+          - listitem [ref=f2e145]:
+            - link "Advanced Search" [ref=f2e146] [cursor=pointer]:
+              - /url: /advsearch
+          - listitem [ref=f2e153]:
+            - link "User Guides " [ref=f2e154] [cursor=pointer]:
+              - /url: /guides
+              - generic [ref=f2e161]: User Guides
+              - generic [ref=f2e162]: 
+          - listitem [ref=f2e163]:
+            - link "Handbook Archive " [ref=f2e164] [cursor=pointer]:
+              - /url: /archive
+              - generic [ref=f2e172]: Handbook Archive
+              - generic [ref=f2e173]: 
+          - listitem: 
+          - text: 
+    - main [ref=f2e174]:
+      - generic [ref=f2e177]:
+        - generic [ref=f2e178]:
+          - button "hamburger menu" [ref=f2e179] [cursor=pointer]:
+            - generic [ref=f2e180]: 
+          - link [ref=f2e182] [cursor=pointer]:
+            - /url: \
+            - img "Financial Conduct Authority" [ref=f2e183]
+        - generic [ref=f2e184]:
+          - list [ref=f2e185]:
+            - listitem [ref=f2e186]:
+              - link "FCA Website" [ref=f2e187] [cursor=pointer]:
+                - /url: https://www.fca.org.uk/
+            - listitem [ref=f2e188]:
+              - link "Useful Links" [ref=f2e189] [cursor=pointer]:
+                - /url: /guides/useful-links
+            - listitem [ref=f2e190]:
+              - link "Advanced Search" [ref=f2e191] [cursor=pointer]
+            - listitem [ref=f2e192]:
+              - link "Help" [ref=f2e193] [cursor=pointer]:
+                - /url: /guides/faq
+            - listitem [ref=f2e194]:
+              - link "FCA Handbook in print" [ref=f2e195] [cursor=pointer]:
+                - /url: https://finreg-e.com/fca-handbook-print-and-subscription-service/
+          - generic [ref=f2e196]:
+            - list [ref=f2e197]:
+              - listitem [ref=f2e198]:
+                - link "Sign Up / Sign In" [ref=f2e199] [cursor=pointer]
+            - text: 
+      - generic [ref=f2e203]:
+        - generic [ref=f2e204]:
+          - generic [ref=f2e205]:
+            - generic [ref=f2e206]:
+              - textbox "searchbar" [ref=f2e207]:
+                - /placeholder: Search FCA Handbook
+              - generic [ref=f2e208]: 
+            - generic [ref=f2e209]:
+              - button "Search" [disabled]
+              - button "Clear Search" [disabled]: Clear
+          - generic [ref=f2e211]:
+            - link "Home" [ref=f2e212] [cursor=pointer]:
+              - /url: /home
+            - generic [ref=f2e217] [cursor=pointer]: FCA Handbook
+            - generic [ref=f2e222]: PRIN
+            - link "PRIN 2A" [ref=f2e227] [cursor=pointer]:
+              - /url: /handbook/prin2a
+            - generic [ref=f2e232]: PRIN 2A.1 Application and purpose
+          - generic [ref=f2e233]:
+            - toolbar [ref=f2e234]:
+              - generic [ref=f2e235]:
+                - generic [ref=f2e236]:
+                  - button "Add to favorite" [disabled]:
+                    - generic: 
+                - heading "PRIN 2A.1 Application and purpose" [level=1] [ref=f2e237]
+            - generic [ref=f2e238]:
+              - button "previous" [ref=f2e239] [cursor=pointer]:
+                - generic [ref=f2e240]: 
+              - button "next" [ref=f2e241] [cursor=pointer]:
+                - generic [ref=f2e242]: 
+        - generic [ref=f2e243]:
+          - text: 
+          - generic [ref=f2e244]:
+            - generic [ref=f2e245]: 
+            - generic [ref=f2e246]: You are viewing PRIN 2A.1 Application and purpose as of 21/07/2026. PRIN 2A.1 Application and purpose was last updated on 26/06/2026.
+            - generic [ref=f2e247]:
+              - generic [ref=f2e248]:
+                - generic [ref=f2e251] [cursor=pointer]:
+                  - checkbox "Guidance" [checked]
+                - generic [ref=f2e256]: Guidance
+              - generic [ref=f2e257]:
+                - generic [ref=f2e260] [cursor=pointer]:
+                  - checkbox "Rules" [checked]
+                - generic [ref=f2e265]: Rules
+              - generic [ref=f2e266]:
+                - generic [ref=f2e269] [cursor=pointer]:
+                  - checkbox "Deleted"
+                - generic [ref=f2e271]: Deleted
+              - generic [ref=f2e272]:
+                - generic [ref=f2e275] [cursor=pointer]:
+                  - checkbox "Related resources"
+                - generic [ref=f2e277]: Related resources
+        - generic [ref=f2e278]:
+          - generic [ref=f2e283]:
+            - heading "PRIN 2A.1 Application and purpose" [level=2] [ref=f2e284]
+            - generic [ref=f2e286]:
+              - heading "Application" [level=3] [ref=f2e287]
+              - generic [ref=f2e291]:
+                - generic [ref=f2e292]:
+                  - generic [ref=f2e293]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e294]: PRIN 2A.1.3
+                  - generic [ref=f2e295]: 26/06/2026
+                  - generic [ref=f2e296]: G
+                - paragraph [ref=f2e302]:
+                  - text: The application of the
+                  - link "Consumer Duty" [ref=f2e303] [cursor=pointer]:
+                    - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                  - text: is set out in
+                  - link "PRIN 3" [ref=f2e304] [cursor=pointer]:
+                    - /url: /handbook/prin3
+                  - text: ", including"
+                  - link "PRIN 3.2.6R" [ref=f2e305] [cursor=pointer]:
+                    - /url: /handbook/prin3/prin3s2#p43935
+                  - text: to
+                  - link "PRIN 3.2.12G" [ref=f2e306] [cursor=pointer]:
+                    - /url: /handbook/prin3/prin3s2#p43936
+                  - text: . The
+                  - link "Consumer Duty" [ref=f2e307] [cursor=pointer]:
+                    - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                  - text: applies in relation to a
+                  - link "firm’s" [ref=f2e308] [cursor=pointer]:
+                    - /url: /glossary/G430
+                  - link "retail market business" [ref=f2e309] [cursor=pointer]:
+                    - /url: /glossary/G3596r
+                  - text: or where the
+                  - link "firm" [ref=f2e310] [cursor=pointer]:
+                    - /url: /glossary/G430
+                  - link "communicates" [ref=f2e311] [cursor=pointer]:
+                    - /url: /glossary/G186
+                  - text: or
+                  - link "approves" [ref=f2e312] [cursor=pointer]:
+                    - /url: /glossary/G55
+                  - link "financial promotions" [ref=f2e313] [cursor=pointer]:
+                    - /url: /glossary/G421
+                  - text: which are addressed to, or disseminated in such a way that they are likely to be received by, a
+                  - link "retail customer" [ref=f2e314] [cursor=pointer]:
+                    - /url: /glossary/G1327
+                  - text: . To the extent that the
+                  - link "Consumer Duty" [ref=f2e315] [cursor=pointer]:
+                    - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                  - text: applies,
+                  - link "Principles" [ref=f2e316] [cursor=pointer]:
+                    - /url: /glossary/G910
+                  - text: 6 and 7 do not apply.
+              - generic [ref=f2e320]:
+                - generic [ref=f2e321]:
+                  - generic [ref=f2e322]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e323]: PRIN 2A.1.4
+                  - generic [ref=f2e324]: 26/06/2026
+                  - generic [ref=f2e325]: G
+                - paragraph [ref=f2e331]:
+                  - text: The definition of a
+                  - link "product" [ref=f2e332] [cursor=pointer]:
+                    - /url: /glossary/G3556p
+                  - text: for the purposes of the
+                  - link "Consumer Duty" [ref=f2e333] [cursor=pointer]:
+                    - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                  - text: includes both products and services.
+              - generic [ref=f2e337]:
+                - generic [ref=f2e338]:
+                  - generic [ref=f2e339]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e340]: PRIN 2A.1.5
+                  - generic [ref=f2e341]: 26/06/2026
+                  - generic [ref=f2e342]: G
+                - paragraph [ref=f2e348]:
+                  - text: The definition of a
+                  - link "retail customer" [ref=f2e349] [cursor=pointer]:
+                    - /url: /glossary/G1327
+                  - text: for the purposes of the
+                  - link "Consumer Duty" [ref=f2e350] [cursor=pointer]:
+                    - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                  - text: includes a prospective customer.
+              - generic [ref=f2e354]:
+                - generic [ref=f2e355]:
+                  - generic [ref=f2e356]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e357]: PRIN 2A.1.6
+                  - generic [ref=f2e358]: 26/06/2026
+                  - generic [ref=f2e359]: G
+                - paragraph [ref=f2e365]:
+                  - text: The
+                  - link "rules" [ref=f2e366] [cursor=pointer]:
+                    - /url: /glossary/G1036
+                  - text: in the
+                  - link "Consumer Duty" [ref=f2e367] [cursor=pointer]:
+                    - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                  - text: are to be interpreted in accordance with the standard that could reasonably be expected of a prudent
+                  - link "firm" [ref=f2e368] [cursor=pointer]:
+                    - /url: /glossary/G430
+                  - text: carrying on the same activity in relation to the same
+                  - link "product" [ref=f2e369] [cursor=pointer]:
+                    - /url: /glossary/G3556p
+                  - text: and taking appropriate account of the needs and characteristics of
+                  - link "retail customers" [ref=f2e370] [cursor=pointer]:
+                    - /url: /glossary/G1327
+                  - text: as set out in
+                  - link "PRIN 2A.7.1R" [ref=f2e371] [cursor=pointer]:
+                    - /url: /handbook/prin2a/prin2as7#p43896
+                  - text: . Further guidance about what can reasonably be expected and the needs and characteristics of
+                  - link "retail customers" [ref=f2e372] [cursor=pointer]:
+                    - /url: /glossary/G1327
+                  - text: is set out at
+                  - link "PRIN 2A.7.2G" [ref=f2e373] [cursor=pointer]:
+                    - /url: /handbook/prin2a/prin2as7#p43895
+                  - text: to
+                  - link "PRIN 2A.7.5G" [ref=f2e374] [cursor=pointer]:
+                    - /url: /handbook/prin2a/prin2as7#p43894
+                  - text: .
+              - generic [ref=f2e378]:
+                - generic [ref=f2e379]:
+                  - generic [ref=f2e380]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e381]: PRIN 2A.1.7
+                  - generic [ref=f2e382]: 31/07/2023
+                  - generic [ref=f2e383]: R
+                - paragraph [ref=f2e389]:
+                  - text: References in this chapter (including those within Glossary definitions used in this chapter) to
+                  - link "regulated activities" [ref=f2e390] [cursor=pointer]:
+                    - /url: /glossary/G974
+                  - text: include
+                  - link "payment services" [ref=f2e391] [cursor=pointer]:
+                    - /url: /glossary/G2617
+                  - text: and issuing
+                  - link "electronic money" [ref=f2e392] [cursor=pointer]:
+                    - /url: /glossary/G346
+                  - text: (whether or not the activity of
+                  - link "issuing electronic money" [ref=f2e393] [cursor=pointer]:
+                    - /url: /glossary/G2845
+                  - text: specified in
+                  - link "article 9B" [ref=f2e394] [cursor=pointer]:
+                    - /url: /glossary/G73
+                  - text: of the
+                  - link "Regulated Activities Order" [ref=f2e395] [cursor=pointer]:
+                    - /url: /glossary/G973
+                  - text: ); and unless otherwise stated are to be taken to include activities connected to the provision of
+                  - link "payment services" [ref=f2e396] [cursor=pointer]:
+                    - /url: /glossary/G2617
+                  - text: and to the issuing of
+                  - link "electronic money" [ref=f2e397] [cursor=pointer]:
+                    - /url: /glossary/G346
+                  - text: (whether or not the activity of
+                  - link "issuing electronic money" [ref=f2e398] [cursor=pointer]:
+                    - /url: /glossary/G2845
+                  - text: specified in
+                  - link "article 9B" [ref=f2e399] [cursor=pointer]:
+                    - /url: /glossary/G73
+                  - text: of the
+                  - link "Regulated Activities Order" [ref=f2e400] [cursor=pointer]:
+                    - /url: /glossary/G973
+                  - text: ).
+            - generic [ref=f2e402]:
+              - heading "Purpose" [level=3] [ref=f2e403]
+              - generic [ref=f2e407]:
+                - generic [ref=f2e408]:
+                  - generic [ref=f2e409]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e410]: PRIN 2A.1.8
+                  - generic [ref=f2e411]: 26/06/2026
+                  - generic [ref=f2e412]: G
+                - paragraph [ref=f2e418]:
+                  - text: The
+                  - link "Consumer Duty" [ref=f2e419] [cursor=pointer]:
+                    - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                  - text: reflects a general expectation by the
+                  - link "FCA" [ref=f2e420] [cursor=pointer]:
+                    - /url: /glossary/G2974
+                  - text: that
+                  - link "firms" [ref=f2e421] [cursor=pointer]:
+                    - /url: /glossary/G430
+                  - text: should conduct their business to a standard which ensures an appropriate level of protection for
+                  - link "retail customers" [ref=f2e422] [cursor=pointer]:
+                    - /url: /glossary/G1327
+                  - text: .
+              - generic [ref=f2e426]:
+                - generic [ref=f2e427]:
+                  - generic [ref=f2e428]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e429]: PRIN 2A.1.9
+                  - generic [ref=f2e430]: 31/07/2023
+                  - generic [ref=f2e431]: G
+                - generic [ref=f2e436]:
+                  - paragraph [ref=f2e437]:
+                    - text: While recognising the general principle that
+                    - link "consumers" [ref=f2e438] [cursor=pointer]:
+                      - /url: /glossary/G210
+                    - text: should take responsibility for their decisions, having regard to the other factors set out in s.1C of the
+                    - link "Act" [ref=f2e439] [cursor=pointer]:
+                      - /url: /glossary/G10
+                    - text: ", it is appropriate to require a high level of protection for"
+                    - link "retail customers" [ref=f2e440] [cursor=pointer]:
+                      - /url: /glossary/G1327
+                    - text: "for reasons including:"
+                  - list [ref=f2e441]:
+                    - listitem [ref=f2e442]:
+                      - text: (1)
+                      - paragraph [ref=f2e443]:
+                        - text: that they typically face a weak bargaining position in their relationships with
+                        - link "firms" [ref=f2e444] [cursor=pointer]:
+                          - /url: /glossary/G430
+                        - text: ;
+                    - listitem [ref=f2e445]:
+                      - text: (2)
+                      - paragraph [ref=f2e446]: that they are susceptible to cognitive and behavioural biases;
+                    - listitem [ref=f2e447]:
+                      - text: (3)
+                      - paragraph [ref=f2e448]:
+                        - text: that they may lack experience or expertise in relation to
+                        - link "products" [ref=f2e449] [cursor=pointer]:
+                          - /url: /glossary/G3556p
+                        - text: offered through
+                        - link "retail market business" [ref=f2e450] [cursor=pointer]:
+                          - /url: /glossary/G3596r
+                        - text: ; and
+                    - listitem [ref=f2e451]:
+                      - text: (4)
+                      - paragraph [ref=f2e452]:
+                        - text: that there are frequently information asymmetries involved in
+                        - link "retail market business" [ref=f2e453] [cursor=pointer]:
+                          - /url: /glossary/G3596r
+                        - text: .
+              - generic [ref=f2e457]:
+                - generic [ref=f2e458]:
+                  - generic [ref=f2e459]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e460]: PRIN 2A.1.10
+                  - generic [ref=f2e461]: 26/06/2026
+                  - generic [ref=f2e462]: G
+                - list [ref=f2e468]:
+                  - listitem [ref=f2e469]:
+                    - paragraph [ref=f2e470]: (1)
+                    - paragraph [ref=f2e471]:
+                      - text: The cross-cutting obligations at
+                      - link "PRIN 2A.2" [ref=f2e472] [cursor=pointer]:
+                        - /url: /handbook/prin2a/prin2as2
+                      - text: set out the overarching conduct which
+                      - link "firms" [ref=f2e473] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: must demonstrate when they act to deliver good outcomes for
+                      - link "retail customers" [ref=f2e474] [cursor=pointer]:
+                        - /url: /glossary/G1327
+                      - text: .
+                  - listitem [ref=f2e475]:
+                    - paragraph [ref=f2e476]: (2)
+                    - paragraph [ref=f2e477]:
+                      - text: The main elements of
+                      - link "firms’" [ref=f2e478] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: conduct obligations under the
+                      - link "Consumer Duty" [ref=f2e479] [cursor=pointer]:
+                        - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                      - text: are set out in
+                      - link "PRIN 2A.3" [ref=f2e480] [cursor=pointer]:
+                        - /url: /handbook/prin2a/prin2as3
+                      - text: to
+                      - link "PRIN 2A.11" [ref=f2e481] [cursor=pointer]:
+                        - /url: /handbook/prin2a/prin2as11
+                      - text: .
+                  - listitem [ref=f2e482]:
+                    - paragraph [ref=f2e483]: (3)
+                    - paragraph [ref=f2e484]:
+                      - text: The
+                      - link "retail customer" [ref=f2e485] [cursor=pointer]:
+                        - /url: /glossary/G1327
+                      - text: outcome
+                      - link "rules" [ref=f2e486] [cursor=pointer]:
+                        - /url: /glossary/G1036
+                      - text: and
+                      - link "guidance" [ref=f2e487] [cursor=pointer]:
+                        - /url: /glossary/G494
+                      - text: at
+                      - link "PRIN 2A.3" [ref=f2e488] [cursor=pointer]:
+                        - /url: /handbook/prin2a/prin2as3
+                      - text: to
+                      - link "PRIN 2A.6" [ref=f2e489] [cursor=pointer]:
+                        - /url: /handbook/prin2a/prin2as6
+                      - text: set out
+                      - link "firms’" [ref=f2e490] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: key obligations in relation to product governance, price and value, consumer understanding and supporting consumers.
+                  - listitem [ref=f2e491]:
+                    - paragraph [ref=f2e492]: (4)
+                    - paragraph [ref=f2e493]:
+                      - text: There are particular provisions concerning
+                      - link "closed products" [ref=f2e494] [cursor=pointer]:
+                        - /url: /glossary/G3674c
+                      - text: and
+                      - link "existing products" [ref=f2e495] [cursor=pointer]:
+                        - /url: /glossary/G93560e
+                      - text: distributed to retail customers before 31 July 2023 in
+                      - link "PRIN 2A.3" [ref=f2e496] [cursor=pointer]:
+                        - /url: /handbook/prin2a/prin2as3
+                      - text: and
+                      - link "PRIN 2A.4" [ref=f2e497] [cursor=pointer]:
+                        - /url: /handbook/prin2a/prin2as4
+                      - text: .
+              - generic [ref=f2e501]:
+                - generic [ref=f2e502]:
+                  - generic [ref=f2e503]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e504]: PRIN 2A.1.11
+                  - generic [ref=f2e505]: 26/06/2026
+                  - generic [ref=f2e506]: G
+                - paragraph [ref=f2e512]:
+                  - text: The
+                  - link "Consumer Duty" [ref=f2e513] [cursor=pointer]:
+                    - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                  - text: does not change the nature of a
+                  - link "firm’s" [ref=f2e514] [cursor=pointer]:
+                    - /url: /glossary/G430
+                  - text: relationship with any given
+                  - link "retail customer" [ref=f2e515] [cursor=pointer]:
+                    - /url: /glossary/G1327
+                  - text: . In particular, it does not create a fiduciary relationship where one would not otherwise exist nor require a
+                  - link "firm" [ref=f2e516] [cursor=pointer]:
+                    - /url: /glossary/G430
+                  - text: to provide advice or carry out any other
+                  - link "regulated activity" [ref=f2e517] [cursor=pointer]:
+                    - /url: /glossary/G974
+                  - text: where it would not otherwise have done so.
+              - generic [ref=f2e521]:
+                - generic [ref=f2e522]:
+                  - generic [ref=f2e523]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e524]: PRIN 2A.1.12
+                  - generic [ref=f2e525]: 26/06/2026
+                  - generic [ref=f2e526]: G
+                - paragraph [ref=f2e532]:
+                  - text: The
+                  - link "FCA" [ref=f2e533] [cursor=pointer]:
+                    - /url: /glossary/G2974
+                  - text: has issued guidance on the
+                  - link "Consumer Duty" [ref=f2e534] [cursor=pointer]:
+                    - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                  - text: in
+                  - link "FG22/5" [ref=f2e535] [cursor=pointer]:
+                    - /url: https://www.fca.org.uk/publication/finalised-guidance/fg22-5.pdf
+                  - text: ", which"
+                  - link "firms" [ref=f2e536] [cursor=pointer]:
+                    - /url: /glossary/G430
+                  - text: should read as a guide to the
+                  - link "FCA’s" [ref=f2e537] [cursor=pointer]:
+                    - /url: /glossary/G2974
+                  - text: view as to how the
+                  - link "Consumer Duty" [ref=f2e538] [cursor=pointer]:
+                    - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                  - text: might be complied with.
+            - generic [ref=f2e540]:
+              - heading "Guidance on responsibilities of firms in a product’s distribution chain" [level=3] [ref=f2e541]
+              - generic [ref=f2e545]:
+                - generic [ref=f2e546]:
+                  - generic [ref=f2e547]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e548]: PRIN 2A.1.13
+                  - generic [ref=f2e549]: 26/06/2026
+                  - generic [ref=f2e550]: G
+                - list [ref=f2e556]:
+                  - listitem [ref=f2e557]:
+                    - paragraph [ref=f2e558]: (1)
+                    - paragraph [ref=f2e559]:
+                      - text: The
+                      - link "Consumer Duty" [ref=f2e560] [cursor=pointer]:
+                        - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                      - text: imposes obligations on
+                      - link "firms" [ref=f2e561] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: towards
+                      - link "retail customers" [ref=f2e562] [cursor=pointer]:
+                        - /url: /glossary/G1327
+                      - text: of
+                      - link "products" [ref=f2e563] [cursor=pointer]:
+                        - /url: /glossary/G3556p
+                      - text: irrespective of whether the customer is a
+                      - link "client" [ref=f2e564] [cursor=pointer]:
+                        - /url: /glossary/G156
+                      - text: of the
+                      - link "firm" [ref=f2e565] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: .
+                  - listitem [ref=f2e566]:
+                    - paragraph [ref=f2e567]: (2)
+                    - paragraph [ref=f2e568]:
+                      - text: This extended application aims to ensure the effectiveness of obligations under the
+                      - link "Consumer Duty" [ref=f2e569] [cursor=pointer]:
+                        - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                      - text: which may properly relate to activities which determine or materially influence
+                      - link "retail customer" [ref=f2e570] [cursor=pointer]:
+                        - /url: /glossary/G1327
+                      - text: outcomes carried out by a
+                      - link "firm" [ref=f2e571] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: with whom the
+                      - link "retail customer" [ref=f2e572] [cursor=pointer]:
+                        - /url: /glossary/G1327
+                      - text: is not in a
+                      - link "client relationship" [ref=f2e573] [cursor=pointer]:
+                        - /url: /glossary/G156
+                      - text: .
+                  - listitem [ref=f2e574]:
+                    - paragraph [ref=f2e575]: (3)
+                    - paragraph [ref=f2e576]:
+                      - text: A
+                      - link "firm’s" [ref=f2e577] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: role in the distribution chain may mean it is unable to determine or materially influence
+                      - link "retail customer" [ref=f2e578] [cursor=pointer]:
+                        - /url: /glossary/G1327
+                      - text: outcomes in connection with the
+                      - link "product" [ref=f2e579] [cursor=pointer]:
+                        - /url: /glossary/G3556p
+                      - text: . If so, the
+                      - link "firm" [ref=f2e580] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: may not be subject to any obligation under the
+                      - link "Consumer Duty" [ref=f2e581] [cursor=pointer]:
+                        - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                      - text: .
+              - generic [ref=f2e585]:
+                - generic [ref=f2e586]:
+                  - generic [ref=f2e587]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e588]: PRIN 2A.1.14
+                  - generic [ref=f2e589]: 31/07/2023
+                  - generic [ref=f2e590]: G
+                - paragraph [ref=f2e596]:
+                  - text: Obligations on
+                  - link "firms" [ref=f2e597] [cursor=pointer]:
+                    - /url: /glossary/G430
+                  - text: in the distribution chain of a
+                  - link "product" [ref=f2e598] [cursor=pointer]:
+                    - /url: /glossary/G3556p
+                  - text: must be interpreted reasonably, in a manner that reflects the
+                  - link "firm’s" [ref=f2e599] [cursor=pointer]:
+                    - /url: /glossary/G430
+                  - text: role in that distribution chain and the degree to which it can determine or materially influence
+                  - link "retail customer" [ref=f2e600] [cursor=pointer]:
+                    - /url: /glossary/G1327
+                  - text: outcomes.
+              - generic [ref=f2e604]:
+                - generic [ref=f2e605]:
+                  - generic [ref=f2e606]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e607]: PRIN 2A.1.15
+                  - generic [ref=f2e608]: 26/06/2026
+                  - generic [ref=f2e609]: G
+                - paragraph [ref=f2e615]:
+                  - text: The extent of a
+                  - link "firm’s" [ref=f2e616] [cursor=pointer]:
+                    - /url: /glossary/G430
+                  - text: responsibilities under the
+                  - link "Consumer Duty" [ref=f2e617] [cursor=pointer]:
+                    - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                  - text: in any one case will turn on the substance of the
+                  - link "firm’s" [ref=f2e618] [cursor=pointer]:
+                    - /url: /glossary/G430
+                  - text: role in the arrangements relating to the
+                  - link "product" [ref=f2e619] [cursor=pointer]:
+                    - /url: /glossary/G3556p
+                  - text: . A
+                  - link "firm" [ref=f2e620] [cursor=pointer]:
+                    - /url: /glossary/G430
+                  - text: which determines or has a material influence over retail customer outcomes is accountable notwithstanding that the
+                  - link "retail customer" [ref=f2e621] [cursor=pointer]:
+                    - /url: /glossary/G1327
+                  - text: may not be its
+                  - link "client" [ref=f2e622] [cursor=pointer]:
+                    - /url: /glossary/G156
+                  - text: due to the indirect nature of their relationship.
+              - generic [ref=f2e626]:
+                - generic [ref=f2e627]:
+                  - generic [ref=f2e628]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e629]: PRIN 2A.1.15A
+                  - generic [ref=f2e630]: 26/06/2026
+                  - generic [ref=f2e631]: G
+                - paragraph [ref=f2e637]:
+                  - text: For example, where a
+                  - link "firm’s" [ref=f2e638] [cursor=pointer]:
+                    - /url: /glossary/G430
+                  - text: sole activity that is subject to obligations under the
+                  - link "Consumer Duty" [ref=f2e639] [cursor=pointer]:
+                    - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                  - text: is
+                  - link "communicating" [ref=f2e640] [cursor=pointer]:
+                    - /url: /glossary/G186
+                  - text: or
+                  - link "approving" [ref=f2e641] [cursor=pointer]:
+                    - /url: /glossary/G55
+                  - text: a
+                  - link "financial promotion" [ref=f2e642] [cursor=pointer]:
+                    - /url: /glossary/G421
+                  - text: ", the rules and guidance in"
+                  - link "PRIN 2A.3" [ref=f2e643] [cursor=pointer]:
+                    - /url: /handbook/prin2a/prin2as3
+                  - text: (products and services),
+                  - link "PRIN 2A.4" [ref=f2e644] [cursor=pointer]:
+                    - /url: /handbook/prin2a/prin2as4
+                  - text: (price and value),
+                  - link "PRIN 2A.6" [ref=f2e645] [cursor=pointer]:
+                    - /url: /handbook/prin2a/prin2as6
+                  - text: (customer support) and
+                  - link "PRIN 2A.11" [ref=f2e646] [cursor=pointer]:
+                    - /url: /handbook/prin2a/prin2as11
+                  - text: (sale and purchase of product books) are likely to have limited relevance.
+            - generic [ref=f2e648]:
+              - heading "Relevance of guidance about Principles 6 and 7" [level=3] [ref=f2e649]
+              - generic [ref=f2e653]:
+                - generic [ref=f2e654]:
+                  - generic [ref=f2e655]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e656]: PRIN 2A.1.16
+                  - generic [ref=f2e657]: 31/07/2023
+                  - generic [ref=f2e658]: G
+                - paragraph [ref=f2e664]:
+                  - text: Given the high-level nature and breadth of application of the
+                  - link "Principles" [ref=f2e665] [cursor=pointer]:
+                    - /url: /glossary/G910
+                  - text: ", guidance about a"
+                  - link "Principle" [ref=f2e666] [cursor=pointer]:
+                    - /url: /glossary/G910
+                  - text: cannot exhaustively cover its implications (see also
+                  - link "PRIN 1.1.9G" [ref=f2e669] [cursor=pointer]:
+                    - /url: /handbook/prin1/prin1s1#p7
+                  - text: ).
+              - generic [ref=f2e673]:
+                - generic [ref=f2e674]:
+                  - generic [ref=f2e675]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e676]: PRIN 2A.1.17
+                  - generic [ref=f2e677]: 26/06/2026
+                  - generic [ref=f2e678]: G
+                - list [ref=f2e684]:
+                  - listitem [ref=f2e685]:
+                    - paragraph [ref=f2e686]: (1)
+                    - paragraph [ref=f2e687]:
+                      - text: In general terms, the
+                      - link "Consumer Duty" [ref=f2e688] [cursor=pointer]:
+                        - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                      - text: imposes a higher and more exacting standard of conduct in relation to a
+                      - link "firm’s" [ref=f2e689] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: activities relative to what
+                      - link "Principles" [ref=f2e690] [cursor=pointer]:
+                        - /url: /glossary/G910
+                      - text: 6 or 7 would have otherwise required. The
+                      - link "Consumer Duty" [ref=f2e691] [cursor=pointer]:
+                        - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                      - text: also has a broader application in relation to a
+                      - link "firm’s" [ref=f2e692] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: activities relative to
+                      - link "Principles" [ref=f2e693] [cursor=pointer]:
+                        - /url: /glossary/G910
+                      - text: 6 and 7, with a greater focus on consumer protection outcomes for
+                      - link "retail customers" [ref=f2e694] [cursor=pointer]:
+                        - /url: /glossary/G1327
+                      - text: ", including where those"
+                      - link "retail customers" [ref=f2e695] [cursor=pointer]:
+                        - /url: /glossary/G1327
+                      - text: do not stand in a
+                      - link "client" [ref=f2e696] [cursor=pointer]:
+                        - /url: /glossary/G156
+                      - text: relationship with that
+                      - link "firm" [ref=f2e697] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: in the distribution chain.
+                  - listitem [ref=f2e698]:
+                    - paragraph [ref=f2e699]: (2)
+                    - paragraph [ref=f2e700]:
+                      - text: While existing, formal guidance on
+                      - link "Principles" [ref=f2e701] [cursor=pointer]:
+                        - /url: /glossary/G910
+                      - text: 6 and 7 will remain relevant to
+                      - link "firms" [ref=f2e702] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: in considering their obligations under the
+                      - link "Consumer Duty" [ref=f2e703] [cursor=pointer]:
+                        - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                      - text: ","
+                      - link "firms" [ref=f2e704] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: should also take due account of the inherent limits of such guidance in light of the factors in (1). See also
+                      - link "PRIN 2A.1.3G" [ref=f2e705] [cursor=pointer]:
+                        - /url: /handbook/prin2a/prin2as1#p43761
+                      - text: .
+                  - listitem [ref=f2e706]:
+                    - paragraph [ref=f2e707]: (3)
+                    - paragraph [ref=f2e708]:
+                      - text: To the extent that a
+                      - link "firm" [ref=f2e709] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: is not acting in accordance with existing guidance on
+                      - link "Principles" [ref=f2e710] [cursor=pointer]:
+                        - /url: /glossary/G910
+                      - text: 6 and 7 and the behaviour would amount to a breach of
+                      - link "Principle" [ref=f2e711] [cursor=pointer]:
+                        - /url: /glossary/G910
+                      - text: 6 or 7 in the event that they had continued to apply, the behaviour is likely to amount to a breach of the
+                      - link "Consumer Duty" [ref=f2e712] [cursor=pointer]:
+                        - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                      - text: .
+                  - listitem [ref=f2e713]:
+                    - paragraph [ref=f2e714]: (4)
+                    - paragraph [ref=f2e715]:
+                      - text: Where a
+                      - link "firm" [ref=f2e716] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: is acting in accordance with guidance on
+                      - link "Principles" [ref=f2e717] [cursor=pointer]:
+                        - /url: /glossary/G910
+                      - text: 6 and 7 that should not be relied on alone in considering how to comply with the
+                      - link "Consumer Duty" [ref=f2e718] [cursor=pointer]:
+                        - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                      - text: .
+                      - link "Firms" [ref=f2e719] [cursor=pointer]:
+                        - /url: /glossary/G430
+                      - text: also need to consider all their obligations not only under the
+                      - link "Principles" [ref=f2e720] [cursor=pointer]:
+                        - /url: /glossary/G910
+                      - text: ", but under any other applicable law, including other"
+                      - link "FCA" [ref=f2e721] [cursor=pointer]:
+                        - /url: /glossary/G2974
+                      - link "rules" [ref=f2e722] [cursor=pointer]:
+                        - /url: /glossary/G1036
+                      - text: .
+              - generic [ref=f2e726]:
+                - generic [ref=f2e727]:
+                  - generic [ref=f2e728]:
+                    - button "Add to favorite" [disabled]:
+                      - generic: 
+                  - generic [ref=f2e729]: PRIN 2A.1.18
+                  - generic [ref=f2e730]: 26/06/2026
+                  - generic [ref=f2e731]: G
+                - paragraph [ref=f2e737]:
+                  - text: The effect of
+                  - link "PRIN 3.2.10R" [ref=f2e738] [cursor=pointer]:
+                    - /url: /handbook/prin3/prin3s2#p43937
+                  - text: is that the application of
+                  - link "Principles" [ref=f2e739] [cursor=pointer]:
+                    - /url: /glossary/G910
+                  - text: 6 and 7 is unchanged with respect to a firm’s activities insofar as they are not subject to the
+                  - link "Consumer Duty" [ref=f2e740] [cursor=pointer]:
+                    - /url: /glossary/Ga5e58c934169cb18b83d618d07935c53
+                  - text: .
+          - generic [ref=f2e741]:
+            - button "previous" [ref=f2e742] [cursor=pointer]:
+              - generic [ref=f2e743]: 
+              - text: Previous
+            - button "next" [ref=f2e744] [cursor=pointer]:
+              - text: Next
+              - generic [ref=f2e745]: 
+  - contentinfo [ref=f2e747]:
+    - generic [ref=f2e750]:
+      - list [ref=f2e752]:
+        - listitem [ref=f2e753]:
+          - link "Accessibility" [ref=f2e754] [cursor=pointer]:
+            - /url: /footer-widget/accessibility
+        - listitem [ref=f2e755]:
+          - link "Terms & Conditions" [ref=f2e756] [cursor=pointer]:
+            - /url: /footer-widget/terms-and-conditions
+        - listitem [ref=f2e757]:
+          - link "Privacy Policy" [ref=f2e758] [cursor=pointer]:
+            - /url: /footer-widget/privacy-policy
+        - listitem [ref=f2e759]:
+          - link "Legal Information" [ref=f2e760] [cursor=pointer]:
+            - /url: /footer-widget/legal-information
+        - listitem [ref=f2e761]:
+          - link "Sitemap" [ref=f2e762] [cursor=pointer]
+      - generic [ref=f2e763]:
+        - heading "Social" [level=2] [ref=f2e764]
+        - list [ref=f2e765]:
+          - listitem [ref=f2e766]:
+            - link "LinkedIn" [ref=f2e767] [cursor=pointer]:
+              - /url: http://linkedin.com/company/financial-conduct-authority
+          - listitem [ref=f2e769]:
+            - link "RSS Feed" [ref=f2e770] [cursor=pointer]:
+              - /url: https://www.fca.org.uk/news/rss.xml
+          - listitem [ref=f2e772]:
+            - link "Twitter" [ref=f2e773] [cursor=pointer]:
+              - /url: https://x.com/thefca
+      - generic [ref=f2e775]:
+        - heading "Contact" [level=2] [ref=f2e776]
+        - paragraph [ref=f2e777]: FCA Head Office 12 Endeavour Square London E20 1JN
+        - link "Contact us" [ref=f2e778] [cursor=pointer]
+        - link "Is there anything wrong with this page?" [ref=f2e779] [cursor=pointer]:
+          - /url: /whats-wrong
+    - generic [ref=f2e781]:
+      - paragraph [ref=f2e782]: Copyright © 2026 FCA. All rights reserved.
+      - button " Back to top" [ref=f2e783] [cursor=pointer]:
+        - generic [ref=f2e784]: 
+        - generic "Back to top" [ref=f2e786]
+      - paragraph [ref=f2e787]: Company no. 01920623
+    - paragraph [ref=f2e789]:
+      - text: Designed and Maintained by FinregE Limited |
+      - link "https://finreg-e.com" [ref=f2e790] [cursor=pointer]:
+        - /url: https://finreg-e.com
