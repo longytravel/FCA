@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T13:59:41.686Z",
+  "generatedAt": "2026-07-21T14:06:01.782Z",
   "processedFirms": [
     "jltspecialty",
     "westwoodindependentfinancialplanners",
@@ -80,7 +80,56 @@
     "cathayinternationalholding",
     "erickachisiu",
     "standardlifeassurance",
-    "bankofscotland"
+    "bankofscotland",
+    "rraphaelsons",
+    "linearinvestments",
+    "standardcharteredbank",
+    "goldmansachsinternational",
+    "hargreavehale",
+    "charlesschwab",
+    "ljfinancialplanning",
+    "tfsicap",
+    "moneybarn",
+    "hallhanleyhhl",
+    "nationalwestminsterbank",
+    "sunrisebrokers",
+    "crosfillarcherclaims",
+    "sapiencapital",
+    "tsbbank",
+    "metrobank",
+    "pembrokeshiremortgagecentre",
+    "gatehousebank",
+    "sigmabroking",
+    "citigroupglobalmarkets",
+    "tjmpartnershipformerlyknownasneovisionglobalcapitalinliquidation",
+    "ghanainternationalbank",
+    "tfsloansinadministration",
+    "andrewmarkthomaspage",
+    "hafizbrostravelmoneytransfer",
+    "lcctranssending",
+    "equifax",
+    "adminvestorservicesinternational",
+    "bastioncapitallondon",
+    "alrayanbank",
+    "guarantytrustbankgtbank",
+    "andrssebk",
+    "barclays",
+    "macquariebanklondonbranch",
+    "kristokrmann",
+    "volkswagenfinancialservices",
+    "starlingbank",
+    "pricewaterhousecoopers",
+    "forextb",
+    "stevenharbindersinghsahota",
+    "cbpayments",
+    "jameswilliamedwardlewis",
+    "inspirationalfinancialmanagementinadministration",
+    "nationwidebuildingsociety",
+    "monzobank",
+    "londonmetalexchangerie",
+    "makofinancialmarketspartnership",
+    "infinoxcapital",
+    "arianfinancial"
   ],
   "skipped": [
     {
@@ -782,6 +831,106 @@
     {
       "firm": "Eric Ka Chi Siu",
       "reason": "no confident Companies House match"
+    },
+    {
+      "firm": "Charles Schwab UK Limited",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "LJ Financial Planning Ltd",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "TFS-ICAP Limited",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "Moneybarn Limited",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "Hall and Hanley Limited (HHL)",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "National Westminster Bank Plc",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "Sunrise Brokers LLP",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "Crosfill and Archer Claims Limited",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "Sapien Capital Limited",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "TSB Bank Plc",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "Metro Bank Plc",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "Pembrokeshire Mortgage Centre Limited",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "Gatehouse Bank plc",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "Sigma Broking Limited",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "Citigroup Global Markets Limited",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "The TJM Partnership Limited (Formerly known as Neovision Global Capital Limited) (In Liquidation)",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "TFS Loans Limited (in administration)",
+      "reason": "no confident Companies House match"
+    },
+    {
+      "firm": "Andrew Mark Thomas Page",
+      "reason": "no confident Companies House match"
+    },
+    {
+      "firm": "András Sebők",
+      "reason": "no confident Companies House match"
+    },
+    {
+      "firm": "Macquarie Bank Limited - London Branch",
+      "reason": "no confident Companies House match"
+    },
+    {
+      "firm": "Forex TB Limited",
+      "reason": "no confident Companies House match"
+    },
+    {
+      "firm": "The London Metal Exchange (RIE)",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "Mako Financial Markets Partnership LLP",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "Infinox Capital Limited",
+      "reason": "error: 429 rate limit"
+    },
+    {
+      "firm": "Arian Financial LLP",
+      "reason": "error: 429 rate limit"
     }
   ],
   "results": [
@@ -7807,6 +7956,3498 @@
               "number": "SC143950",
               "name": "SIG 1 HOLDINGS LIMITED",
               "incorporated_on": null,
+              "status": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "firm": "Linear Investments Limited",
+      "fineDate": "2019-04-29",
+      "amount": 409300,
+      "fineEvents": [
+        {
+          "date": "2019-04-29",
+          "amount": 409300,
+          "reason": "This final notice refers to breaches of PRIN 3 related to market protection and market abuse in the trading firm sector. We imposed a fine.",
+          "noticeUrl": "https://www.fca.org.uk/news/press-releases/fca-publishes-decision-notice-linear-investments-limited"
+        }
+      ],
+      "companyNumber": "07330725",
+      "matchedName": "LINEAR INVESTMENTS LIMITED",
+      "directors": [
+        {
+          "name": "KELLY, Paul Jason",
+          "officerId": "wSCEcvJq34U4z1EAdTR-9fMJC9k",
+          "risk": 87,
+          "riskFactors": [
+            {
+              "key": "gap",
+              "label": "Rapid re-incorporation after collapse",
+              "points": 17,
+              "detail": "SAFFRON FINANCIAL LIMITED (12527667) was incorporated 2020-03-20, 11 months after LINEAR INVESTMENTS LIMITED's fine (2019-04-29)."
+            },
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "LINEAR INVESTMENT PARTNERS LIMITED (07073455) is registered at the same address as LINEAR INVESTMENTS LIMITED: 135 Park Street, London, SE1 9EA."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "LINEAR WEALTH LIMITED (17198049) shares SIC code 64999 with LINEAR INVESTMENTS LIMITED."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "7 linked companies also share another LINEAR INVESTMENTS LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "10 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "17252150",
+              "name": "PERENNIAL CAPITAL (UK) LIMITED",
+              "incorporated_on": "2026-06-01",
+              "status": "active"
+            },
+            {
+              "number": "17198049",
+              "name": "LINEAR WEALTH LIMITED",
+              "incorporated_on": "2026-05-05",
+              "status": "active"
+            },
+            {
+              "number": "12527667",
+              "name": "SAFFRON FINANCIAL LIMITED",
+              "incorporated_on": "2020-03-20",
+              "status": "active"
+            },
+            {
+              "number": "05653209",
+              "name": "SAFFRON ASSET FINANCE LTD",
+              "incorporated_on": "2005-12-13",
+              "status": "active"
+            },
+            {
+              "number": "13486449",
+              "name": "LINEAR INVESTMENTS NOMINEES LIMITED",
+              "incorporated_on": "2021-06-30",
+              "status": "active"
+            },
+            {
+              "number": "13016435",
+              "name": "STRATTA COMMUNICATIONS LIMITED",
+              "incorporated_on": "2020-11-13",
+              "status": "active"
+            },
+            {
+              "number": "10897525",
+              "name": "INFINITY DEVELOPMENT GROUP LIMITED",
+              "incorporated_on": "2017-08-03",
+              "status": "active"
+            },
+            {
+              "number": "07073455",
+              "name": "LINEAR INVESTMENT PARTNERS LIMITED",
+              "incorporated_on": "2009-11-11",
+              "status": "active"
+            },
+            {
+              "number": "09904431",
+              "name": "MGM FINANCE LTD",
+              "incorporated_on": "2015-12-07",
+              "status": "active"
+            },
+            {
+              "number": "09702142",
+              "name": "COMPLYMATIC LIMITED",
+              "incorporated_on": "2015-07-24",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "LEES, Jeremy",
+          "officerId": "6k3TMd-9b0HplUv938QFiKRe4AE",
+          "risk": 70,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "LINEAR INVESTMENT PARTNERS LIMITED (07073455) is registered at the same address as LINEAR INVESTMENTS LIMITED: 135 Park Street, London, SE1 9EA."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "LINEAR INVESTMENT PARTNERS LIMITED (07073455) shares SIC code 64999 with LINEAR INVESTMENTS LIMITED."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "8 linked companies also share another LINEAR INVESTMENTS LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "4 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "07063447",
+              "name": "SPECTRUM HC LIMITED",
+              "incorporated_on": "2009-11-02",
+              "status": "active"
+            },
+            {
+              "number": "13698966",
+              "name": "2021 D LTD",
+              "incorporated_on": "2021-10-22",
+              "status": "active"
+            },
+            {
+              "number": "07073455",
+              "name": "LINEAR INVESTMENT PARTNERS LIMITED",
+              "incorporated_on": "2009-11-11",
+              "status": "active"
+            },
+            {
+              "number": "09702142",
+              "name": "COMPLYMATIC LIMITED",
+              "incorporated_on": "2015-07-24",
+              "status": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "firm": "Standard Chartered Bank",
+      "fineDate": "2019-04-09",
+      "amount": 102163200,
+      "fineEvents": [
+        {
+          "date": "2019-04-09",
+          "amount": 102163200,
+          "reason": "This decision notice refers to breaches of the Money Laundering Regulations 2007 related to financial crime in the investment and retail bank sector. We imposed a fine.",
+          "noticeUrl": "https://www.fca.org.uk/news/press-releases/fca-fines-standard-chartered-bank-102-2-million-poor-aml-controls"
+        }
+      ],
+      "companyNumber": "ZC000018",
+      "matchedName": "STANDARD CHARTERED BANK",
+      "directors": [
+        {
+          "name": "WINTERS, William Thomas",
+          "officerId": "AqBS-96Bh1421hYrS28MQdjuRsU",
+          "risk": 55,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "STANDARD CHARTERED HOLDINGS LIMITED (02426156) is registered at the same address as STANDARD CHARTERED BANK: 1 Basinghall Avenue, London, EC2V 5DD."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "2 linked companies also share another STANDARD CHARTERED BANK director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "3 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "02426156",
+              "name": "STANDARD CHARTERED HOLDINGS LIMITED",
+              "incorporated_on": "1989-09-25",
+              "status": "active"
+            },
+            {
+              "number": "00966425",
+              "name": "STANDARD CHARTERED PLC",
+              "incorporated_on": "1969-11-18",
+              "status": "active"
+            },
+            {
+              "number": "03458056",
+              "name": "INTERNATIONAL RESCUE COMMITTEE, U.K.",
+              "incorporated_on": "1997-10-30",
+              "status": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "firm": "Goldman Sachs International",
+      "fineDate": "2019-03-28",
+      "amount": 82653100,
+      "fineEvents": [
+        {
+          "date": "2019-03-28",
+          "amount": 34344700,
+          "reason": "This final notice refers to breaches of SUP 17, SUP 15 and PRIN 3 related to transaction reporting failures in the investment bank sector. We imposed a fine.",
+          "noticeUrl": "https://www.fca.org.uk/news/press-releases/fca-fines-goldman-sachs-international-transaction-reporting-failures"
+        },
+        {
+          "date": "2020-10-22",
+          "amount": 48308400,
+          "reason": "This Final Notice refers to breaches of PRIN 2 and PRIN 3 related to wholesale conduct in the investment bank sector. We imposed a fine.",
+          "noticeUrl": "https://www.fca.org.uk/news/press-releases/fca-pra-fine-goldman-sachs-international-risk-management-failures-1mdb"
+        }
+      ],
+      "companyNumber": "02263951",
+      "matchedName": "GOLDMAN SACHS INTERNATIONAL",
+      "directors": [
+        {
+          "name": "HARMAN, Nigel",
+          "officerId": "QY5cLI-V5arDJTMz9jwo67sfFL0",
+          "risk": 45,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "GOLDMAN SACHS INTERNATIONAL BANK (01122503) is registered at the same address as GOLDMAN SACHS INTERNATIONAL: Plumtree Court, 25 Shoe Lane, London, EC4A 4AU."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another GOLDMAN SACHS INTERNATIONAL director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "01122503",
+              "name": "GOLDMAN SACHS INTERNATIONAL BANK",
+              "incorporated_on": "1973-07-12",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "MILLER, Therese Lynn, Ms.",
+          "officerId": "evMNGier1ETnQtVlxIwtE3GDTxo",
+          "risk": 70,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "GOLDMAN SACHS INTERNATIONAL BANK (01122503) is registered at the same address as GOLDMAN SACHS INTERNATIONAL: Plumtree Court, 25 Shoe Lane, London, EC4A 4AU."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "GOLDMAN SACHS SECURITIES (NOMINEES) LIMITED (02163916) shares SIC code 64999 with GOLDMAN SACHS INTERNATIONAL."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "3 linked companies also share another GOLDMAN SACHS INTERNATIONAL director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "6 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "01122503",
+              "name": "GOLDMAN SACHS INTERNATIONAL BANK",
+              "incorporated_on": "1973-07-12",
+              "status": "active"
+            },
+            {
+              "number": "FC017145",
+              "name": "GOLDMAN SACHS (U.K.) L.L.C.",
+              "incorporated_on": "1993-01-01",
+              "status": "active"
+            },
+            {
+              "number": "03769030",
+              "name": "GOLDMAN SACHS GROUP HOLDINGS (U.K.) LIMITED",
+              "incorporated_on": "1999-05-07",
+              "status": "active"
+            },
+            {
+              "number": "03635229",
+              "name": "ICAP GLOBAL DERIVATIVES LIMITED",
+              "incorporated_on": "1998-09-21",
+              "status": "active"
+            },
+            {
+              "number": "02163916",
+              "name": "GOLDMAN SACHS SECURITIES (NOMINEES) LIMITED",
+              "incorporated_on": "1987-09-14",
+              "status": "active"
+            },
+            {
+              "number": "02474901",
+              "name": "GOLDMAN SACHS ASSET MANAGEMENT INTERNATIONAL",
+              "incorporated_on": "1990-02-27",
+              "status": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "firm": "Hargreave Hale Limited",
+      "fineDate": "2019-02-21",
+      "amount": 306300,
+      "fineEvents": [
+        {
+          "date": "2019-02-21",
+          "amount": 306300,
+          "reason": "The FCA has issued a decision for this asset management firm for breaches of competition law.",
+          "noticeUrl": "https://www.fca.org.uk/publications/notices-and-decisions/anti-competitive-conduct-asset-management-sector-fca-decisions-under-competition-act-1998"
+        }
+      ],
+      "companyNumber": "06372571",
+      "matchedName": "HARGREAVE HALE HOLDINGS LIMITED",
+      "directors": [
+        {
+          "name": "BROOKES, Stuart Neville",
+          "officerId": "bcNUTrQeTxfTFWMh3caJiEPQhoE",
+          "risk": 70,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "PROGRESS NOMINEES LIMITED (01583152) is registered at the same address as HARGREAVE HALE HOLDINGS LIMITED: Talisman House, Boardmans Way, Blackpool, FY4 5FY."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "PROGRESS NOMINEES LIMITED (01583152) shares SIC code 64205 with HARGREAVE HALE HOLDINGS LIMITED."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "6 linked companies also share another HARGREAVE HALE HOLDINGS LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "5 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "05908530",
+              "name": "RECKLESS VENTURES LIMITED",
+              "incorporated_on": "2006-08-16",
+              "status": "active"
+            },
+            {
+              "number": "01583152",
+              "name": "PROGRESS NOMINEES LIMITED",
+              "incorporated_on": "1981-08-28",
+              "status": "active"
+            },
+            {
+              "number": "05206425",
+              "name": "HARGREAVE HALE AIM VCT PLC",
+              "incorporated_on": "2004-08-16",
+              "status": "active"
+            },
+            {
+              "number": "03146580",
+              "name": "CANACCORD GENUITY ASSET MANAGEMENT LIMITED",
+              "incorporated_on": "1996-01-16",
+              "status": "active"
+            },
+            {
+              "number": "02439714",
+              "name": "HARGREAVE HALE NOMINEES LIMITED",
+              "incorporated_on": "1989-11-03",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "CLUEIT, David William",
+          "officerId": "eP2ObAtanYankhDRzK_sJQFWivk",
+          "risk": 70,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "PROGRESS NOMINEES LIMITED (01583152) is registered at the same address as HARGREAVE HALE HOLDINGS LIMITED: Talisman House, Boardmans Way, Blackpool, FY4 5FY."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "PROGRESS NOMINEES LIMITED (01583152) shares SIC code 64205 with HARGREAVE HALE HOLDINGS LIMITED."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "6 linked companies also share another HARGREAVE HALE HOLDINGS LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "3 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "01583152",
+              "name": "PROGRESS NOMINEES LIMITED",
+              "incorporated_on": "1981-08-28",
+              "status": "active"
+            },
+            {
+              "number": "02439714",
+              "name": "HARGREAVE HALE NOMINEES LIMITED",
+              "incorporated_on": "1989-11-03",
+              "status": "active"
+            },
+            {
+              "number": "03146580",
+              "name": "CANACCORD GENUITY ASSET MANAGEMENT LIMITED",
+              "incorporated_on": "1996-01-16",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "GULLIVER, John Richard",
+          "officerId": "XQRAn4Jg6fdaSQYe3dXnj0dK_ho",
+          "risk": 70,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "HARGREAVE HALE NOMINEES LIMITED (02439714) is registered at the same address as HARGREAVE HALE HOLDINGS LIMITED: Talisman House, Boardmans Way, Blackpool, FY4 5FY."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "PROGRESS NOMINEES LIMITED (01583152) shares SIC code 64205 with HARGREAVE HALE HOLDINGS LIMITED."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "10 linked companies also share another HARGREAVE HALE HOLDINGS LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "8 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "02439714",
+              "name": "HARGREAVE HALE NOMINEES LIMITED",
+              "incorporated_on": "1989-11-03",
+              "status": "active"
+            },
+            {
+              "number": "01583152",
+              "name": "PROGRESS NOMINEES LIMITED",
+              "incorporated_on": "1981-08-28",
+              "status": "active"
+            },
+            {
+              "number": "03146580",
+              "name": "CANACCORD GENUITY ASSET MANAGEMENT LIMITED",
+              "incorporated_on": "1996-01-16",
+              "status": "active"
+            },
+            {
+              "number": "09057852",
+              "name": "CGWL NOMINEES LIMITED",
+              "incorporated_on": "2014-05-27",
+              "status": "active"
+            },
+            {
+              "number": "09057870",
+              "name": "CGWL FD NOMINEES LIMITED",
+              "incorporated_on": "2014-05-27",
+              "status": "active"
+            },
+            {
+              "number": "03739694",
+              "name": "CANACCORD GENUITY WEALTH LIMITED",
+              "incorporated_on": "1999-03-24",
+              "status": "active"
+            },
+            {
+              "number": "05346642",
+              "name": "CANACCORD GENUITY WEALTH GROUP LIMITED",
+              "incorporated_on": "2005-01-28",
+              "status": "active"
+            },
+            {
+              "number": "03530382",
+              "name": "DLJ UK PROPERTIES LIMITED",
+              "incorporated_on": "1998-03-13",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "HALL, Peter Graham",
+          "officerId": "FEqbzXZGBAO9FJSEpoge14PV6wE",
+          "risk": 70,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "PROGRESS NOMINEES LIMITED (01583152) is registered at the same address as HARGREAVE HALE HOLDINGS LIMITED: Talisman House, Boardmans Way, Blackpool, FY4 5FY."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "CANACCORD GENUITY WEALTH GROUP LIMITED (05346642) shares SIC code 64205 with HARGREAVE HALE HOLDINGS LIMITED."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "10 linked companies also share another HARGREAVE HALE HOLDINGS LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "10 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "05346642",
+              "name": "CANACCORD GENUITY WEALTH GROUP LIMITED",
+              "incorporated_on": "2005-01-28",
+              "status": "active"
+            },
+            {
+              "number": "05374633",
+              "name": "PUNTER SOUTHALL WEALTH LIMITED",
+              "incorporated_on": "2005-02-24",
+              "status": "active"
+            },
+            {
+              "number": "03739694",
+              "name": "CANACCORD GENUITY WEALTH LIMITED",
+              "incorporated_on": "1999-03-24",
+              "status": "active"
+            },
+            {
+              "number": "09057852",
+              "name": "CGWL NOMINEES LIMITED",
+              "incorporated_on": "2014-05-27",
+              "status": "active"
+            },
+            {
+              "number": "09057870",
+              "name": "CGWL FD NOMINEES LIMITED",
+              "incorporated_on": "2014-05-27",
+              "status": "active"
+            },
+            {
+              "number": "01583152",
+              "name": "PROGRESS NOMINEES LIMITED",
+              "incorporated_on": "1981-08-28",
+              "status": "active"
+            },
+            {
+              "number": "02439714",
+              "name": "HARGREAVE HALE NOMINEES LIMITED",
+              "incorporated_on": "1989-11-03",
+              "status": "active"
+            },
+            {
+              "number": "07586307",
+              "name": "PKH PROPERTIES LIMITED",
+              "incorporated_on": "2011-03-31",
+              "status": "active"
+            },
+            {
+              "number": "03146580",
+              "name": "CANACCORD GENUITY ASSET MANAGEMENT LIMITED",
+              "incorporated_on": "1996-01-16",
+              "status": "active"
+            },
+            {
+              "number": "01774003",
+              "name": "CANACCORD GENUITY LIMITED",
+              "incorporated_on": "1983-11-30",
+              "status": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "firm": "Equifax Limited",
+      "fineDate": "2023-10-13",
+      "amount": 11164400,
+      "fineEvents": [
+        {
+          "date": "2023-10-13",
+          "amount": 11164400,
+          "reason": "This Final Notice relates to the outsourcing of data processing to an intragroup entity which experienced a data breach. The Final Notice refers to risk management failings (PRIN 3) and failings in relation to treating customers fairly and communicating information in a way which is clear, fair and not misleading following a data breach. We imposed a financial penalty.",
+          "noticeUrl": "https://www.fca.org.uk/publication/final-notices/equifax-limited-2023.pdf"
+        }
+      ],
+      "companyNumber": "02425920",
+      "matchedName": "EQUIFAX LIMITED",
+      "directors": [
+        {
+          "name": "HEYWOOD, Paul",
+          "officerId": "YqvdJkf2Bf3Ncbnk_EVUEq3fDoQ",
+          "risk": 60,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "TDX GROUP LIMITED (05059906) is registered at the same address as EQUIFAX LIMITED: 1 Angel Court, London, EC2R 7HJ."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "TDX GROUP LIMITED (05059906) shares SIC code 82990 with EQUIFAX LIMITED."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another EQUIFAX LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "05059906",
+              "name": "TDX GROUP LIMITED",
+              "incorporated_on": "2004-03-02",
+              "status": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "firm": "ADM Investor Services International Limited",
+      "fineDate": "2023-10-02",
+      "amount": 6470600,
+      "fineEvents": [
+        {
+          "date": "2023-10-02",
+          "amount": 6470600,
+          "reason": "This Final Notice refers to breaches of PRIN 3 of the FCA’s Principles for Business related to serious financial crime control failings in the Wholesale Intermediaries and Brokers sector. We imposed a financial penalty.",
+          "noticeUrl": "https://www.fca.org.uk/publication/final-notices/adm-investor-services-international-limited-2023.pdf"
+        }
+      ],
+      "companyNumber": "02547805",
+      "matchedName": "ADM INVESTOR SERVICES INTERNATIONAL LIMITED",
+      "directors": [
+        {
+          "name": "JACKSON, Stuart Patrick",
+          "officerId": "2GQxZbyXSBrCRz_56MCY9raZvjA",
+          "risk": 45,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "ISI NOMINEES LIMITED (03924330) is registered at the same address as ADM INVESTOR SERVICES INTERNATIONAL LIMITED: The Minster Building 3rd Floor, 21 Mincing Lane, London, EC3R 7AG."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "2 linked companies also share another ADM INVESTOR SERVICES INTERNATIONAL LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "03924330",
+              "name": "ISI NOMINEES LIMITED",
+              "incorporated_on": "2000-02-08",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "O'HEGARTY, Diarmuid Conor",
+          "officerId": "MBzDq_j-0MFC7A7-0t5f8RhuDKo",
+          "risk": 55,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "ISI NOMINEES LIMITED (03924330) is registered at the same address as ADM INVESTOR SERVICES INTERNATIONAL LIMITED: The Minster Building 3rd Floor, 21 Mincing Lane, London, EC3R 7AG."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another ADM INVESTOR SERVICES INTERNATIONAL LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "4 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "14700904",
+              "name": "24 UPPER PARK ROAD LIMITED",
+              "incorporated_on": "2023-03-02",
+              "status": "active"
+            },
+            {
+              "number": "12855296",
+              "name": "48 CANFIELD GARDENS LIMITED",
+              "incorporated_on": "2020-09-03",
+              "status": "active"
+            },
+            {
+              "number": "03924330",
+              "name": "ISI NOMINEES LIMITED",
+              "incorporated_on": "2000-02-08",
+              "status": "active"
+            },
+            {
+              "number": "02789040",
+              "name": "REVISION LIMITED",
+              "incorporated_on": "1993-02-11",
+              "status": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "firm": "Al Rayan Bank PLC",
+      "fineDate": "2023-01-11",
+      "amount": 4023600,
+      "fineEvents": [
+        {
+          "date": "2023-01-11",
+          "amount": 4023600,
+          "reason": "This Final Notice refers to breaches of PRIN 3 related to Financial Crime in the Retail Bank sector. We imposed a Financial Penalty.",
+          "noticeUrl": "https://www.fca.org.uk/publication/final-notices/al-rayan-bank-plc-2023.pdf"
+        }
+      ],
+      "companyNumber": "04483430",
+      "matchedName": "ALRAYAN BANK LIMITED",
+      "directors": [
+        {
+          "name": "CUNNINGHAM, Giles Hullah",
+          "officerId": "5fUdJxFSVAIQvu96iOX4bVze2sw",
+          "risk": 63,
+          "riskFactors": [
+            {
+              "key": "gap",
+              "label": "Rapid re-incorporation after collapse",
+              "points": 18,
+              "detail": "BEST FAMILY PROPERTIES LTD (15224087) was incorporated 2023-10-20, 9 months after ALRAYAN BANK LIMITED's fine (2023-01-11)."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "BANK OF LONDON AND THE MIDDLE EAST PLC (05897786) shares SIC code 64191 with ALRAYAN BANK LIMITED."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "3 linked companies also share another ALRAYAN BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "4 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "15224087",
+              "name": "BEST FAMILY PROPERTIES LTD",
+              "incorporated_on": "2023-10-20",
+              "status": "active"
+            },
+            {
+              "number": "11792589",
+              "name": "WALBROOK ASSET FINANCE LIMITED",
+              "incorporated_on": "2019-01-28",
+              "status": "active"
+            },
+            {
+              "number": "08503102",
+              "name": "BLME HOLDINGS LIMITED",
+              "incorporated_on": "2013-04-24",
+              "status": "active"
+            },
+            {
+              "number": "05897786",
+              "name": "BANK OF LONDON AND THE MIDDLE EAST PLC",
+              "incorporated_on": "2006-08-07",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "WILLIAMS, Michael Howard",
+          "officerId": "HmQoZXeZ6yRyRIt9WiCEAxXrk4w",
+          "risk": 45,
+          "riskFactors": [
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "BANK OF LONDON AND THE MIDDLE EAST PLC (05897786) shares SIC code 64191 with ALRAYAN BANK LIMITED."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "3 linked companies also share another ALRAYAN BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "10 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "06672572",
+              "name": "CANCELADA CONSULTANTS LTD",
+              "incorporated_on": "2008-08-13",
+              "status": "active"
+            },
+            {
+              "number": "06823997",
+              "name": "140-144 CLAPHAM MANOR STREET MANAGEMENT COMPANY LIMITED",
+              "incorporated_on": "2009-02-19",
+              "status": "active"
+            },
+            {
+              "number": "11792589",
+              "name": "WALBROOK ASSET FINANCE LIMITED",
+              "incorporated_on": "2019-01-28",
+              "status": "active"
+            },
+            {
+              "number": "09019700",
+              "name": "WALBROOK CONSTRUCTION EQUIPMENT FINANCE LIMITED",
+              "incorporated_on": "2014-05-01",
+              "status": "active"
+            },
+            {
+              "number": "08503102",
+              "name": "BLME HOLDINGS LIMITED",
+              "incorporated_on": "2013-04-24",
+              "status": "active"
+            },
+            {
+              "number": "05897786",
+              "name": "BANK OF LONDON AND THE MIDDLE EAST PLC",
+              "incorporated_on": "2006-08-07",
+              "status": "active"
+            },
+            {
+              "number": "05378813",
+              "name": "FINANCIAL ADVICE NETWORK LTD",
+              "incorporated_on": "2005-03-01",
+              "status": "active"
+            },
+            {
+              "number": "03767396",
+              "name": "SOVEREIGN HOUSE MANAGEMENT COMPANY LIMITED",
+              "incorporated_on": "1999-05-10",
+              "status": "active"
+            },
+            {
+              "number": "03774013",
+              "name": "KING REGENT'S PLACE MANAGEMENT COMPANY LIMITED",
+              "incorporated_on": "1999-05-19",
+              "status": "active"
+            },
+            {
+              "number": "01981122",
+              "name": "NOMURA BANK INTERNATIONAL PLC.",
+              "incorporated_on": "1986-01-22",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "BROOKES, Malcolm James",
+          "officerId": "uNDQ9uQdgO9io-86TjTLq2BCdKg",
+          "risk": 28,
+          "riskFactors": [
+            {
+              "key": "gap",
+              "label": "Rapid re-incorporation after collapse",
+              "points": 13,
+              "detail": "FINITY MANAGEMENT LTD (15557668) was incorporated 2024-03-12, 14 months after ALRAYAN BANK LIMITED's fine (2023-01-11)."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "8 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "01022690",
+              "name": "S.E.B. INTERNATIONAL LIMITED",
+              "incorporated_on": "1971-08-31",
+              "status": "active"
+            },
+            {
+              "number": "02422872",
+              "name": "ASTON REINVESTMENT GUARANTEE COMPANY LTD",
+              "incorporated_on": "1989-09-14",
+              "status": "active"
+            },
+            {
+              "number": "12026907",
+              "name": "CORSTORPHINE & WRIGHT EBT TRUSTEE LIMITED",
+              "incorporated_on": "2019-05-31",
+              "status": "active"
+            },
+            {
+              "number": "17168117",
+              "name": "KINGSWEAR FINANCIAL LTD",
+              "incorporated_on": "2026-04-20",
+              "status": "active"
+            },
+            {
+              "number": "10471786",
+              "name": "MEADOW PARK FOOTBALL CLUB LIMITED",
+              "incorporated_on": "2016-11-09",
+              "status": "active"
+            },
+            {
+              "number": "15557668",
+              "name": "FINITY MANAGEMENT LTD",
+              "incorporated_on": "2024-03-12",
+              "status": "active"
+            },
+            {
+              "number": "09412181",
+              "name": "QUICKSTEP CONTRACTING SERVICES LIMITED",
+              "incorporated_on": "2015-01-29",
+              "status": "active"
+            },
+            {
+              "number": "09712169",
+              "name": "IMPACT CONTRACTING SOLUTIONS LIMITED",
+              "incorporated_on": "2015-07-31",
+              "status": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "firm": "Guaranty Trust Bank (UK) Limited (GT Bank)",
+      "fineDate": "2023-01-10",
+      "amount": 7671800,
+      "fineEvents": [
+        {
+          "date": "2023-01-10",
+          "amount": 7671800,
+          "reason": "This Final Notice refers to breaches of PRIN 3 related to the risk of financial crime in the wholesale banking sector. We imposed a financial penalty.",
+          "noticeUrl": "https://www.fca.org.uk/publication/final-notices/guaranty-trust-bank-uk-limited-2023.pdf"
+        }
+      ],
+      "companyNumber": "05969821",
+      "matchedName": "GUARANTY TRUST BANK (UK) LIMITED",
+      "directors": [
+        {
+          "name": "WILD, Robert John",
+          "officerId": "SbHrrlaeXiLJZe6ysfKeANtSwE8",
+          "risk": 40,
+          "riskFactors": [
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "UNITED NATIONAL BANK LIMITED (04146820) shares SIC code 64191 with GUARANTY TRUST BANK (UK) LIMITED."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another GUARANTY TRUST BANK (UK) LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 10,
+              "detail": "2 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "01607633",
+              "name": "CRANLEIGH ARTS CENTRE LIMITED(THE)",
+              "incorporated_on": "1982-01-14",
+              "status": "active"
+            },
+            {
+              "number": "04146820",
+              "name": "UNITED NATIONAL BANK LIMITED",
+              "incorporated_on": "2001-01-24",
+              "status": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "firm": "Barclays plc",
+      "fineDate": "2024-11-25",
+      "amount": 30000000,
+      "fineEvents": [
+        {
+          "date": "2024-11-25",
+          "amount": 30000000,
+          "reason": "This Final Notice refers to breaches of listing rules relating to failure to disclose information in the issuer sector. We imposed a financial penalty.",
+          "noticeUrl": "https://www.fca.org.uk/publication/final-notices/barclays-plc-2024.pdf"
+        }
+      ],
+      "companyNumber": "00048839",
+      "matchedName": "BARCLAYS PLC",
+      "directors": [
+        {
+          "name": "BERRY, Robert",
+          "officerId": "5YHPSQz57V-AgaZYEy7DE8PwvnQ",
+          "risk": 65,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "BARCLAYS CAPITAL SECURITIES LIMITED (01929333) is registered at the same address as BARCLAYS PLC: 1 Churchill Place, London, E14 5HP."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "BARCLAYS BANK PLC (01026167) shares SIC code 64191 with BARCLAYS PLC."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "2 linked companies also share another BARCLAYS PLC director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 10,
+              "detail": "2 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "01929333",
+              "name": "BARCLAYS CAPITAL SECURITIES LIMITED",
+              "incorporated_on": "1985-07-09",
+              "status": "active"
+            },
+            {
+              "number": "01026167",
+              "name": "BARCLAYS BANK PLC",
+              "incorporated_on": "1971-10-04",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "CROSS, Angela Anna",
+          "officerId": "GE0R5FokbQF1MhVHtrcI-ic36v8",
+          "risk": 60,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "BARCLAYS BANK PLC (01026167) is registered at the same address as BARCLAYS PLC: 1 Churchill Place, London, E14 5HP."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "BARCLAYS BANK PLC (01026167) shares SIC code 64191 with BARCLAYS PLC."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another BARCLAYS PLC director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "01026167",
+              "name": "BARCLAYS BANK PLC",
+              "incorporated_on": "1971-10-04",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "FITZPATRICK, Dawn",
+          "officerId": "o73EXqBmd8wVANFKetrH0zsKloo",
+          "risk": 65,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "BARCLAYS CAPITAL SECURITIES LIMITED (01929333) is registered at the same address as BARCLAYS PLC: 1 Churchill Place, London, E14 5HP."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "BARCLAYS BANK PLC (01026167) shares SIC code 64191 with BARCLAYS PLC."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "2 linked companies also share another BARCLAYS PLC director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 10,
+              "detail": "2 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "01929333",
+              "name": "BARCLAYS CAPITAL SECURITIES LIMITED",
+              "incorporated_on": "1985-07-09",
+              "status": "active"
+            },
+            {
+              "number": "01026167",
+              "name": "BARCLAYS BANK PLC",
+              "incorporated_on": "1971-10-04",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "HIGGINS, Nigel Paul",
+          "officerId": "WfRuoXgowLlyYzRO9cqoSeOarS8",
+          "risk": 60,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "BARCLAYS BANK PLC (01026167) is registered at the same address as BARCLAYS PLC: 1 Churchill Place, London, E14 5HP."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "BARCLAYS BANK PLC (01026167) shares SIC code 64191 with BARCLAYS PLC."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another BARCLAYS PLC director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "01026167",
+              "name": "BARCLAYS BANK PLC",
+              "incorporated_on": "1971-10-04",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "KINGMAN, John Oliver Frank, Sir",
+          "officerId": "4nonXXVEZTrh6sVMWvDQ7u4kcLw",
+          "risk": 45,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "BARCLAYS BANK UK PLC (09740322) is registered at the same address as BARCLAYS PLC: 1 Churchill Place, London, E14 5HP."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "BARCLAYS BANK UK PLC (09740322) shares SIC code 64191 with BARCLAYS PLC."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "09740322",
+              "name": "BARCLAYS BANK UK PLC",
+              "incorporated_on": "2015-08-19",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "MOSES, Menasey Marc",
+          "officerId": "edzXn9p6dTOlQJl9bCr2hbC246s",
+          "risk": 65,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "BARCLAYS CAPITAL SECURITIES LIMITED (01929333) is registered at the same address as BARCLAYS PLC: 1 Churchill Place, London, E14 5HP."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "BARCLAYS BANK PLC (01026167) shares SIC code 64191 with BARCLAYS PLC."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "2 linked companies also share another BARCLAYS PLC director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 10,
+              "detail": "2 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "01929333",
+              "name": "BARCLAYS CAPITAL SECURITIES LIMITED",
+              "incorporated_on": "1985-07-09",
+              "status": "active"
+            },
+            {
+              "number": "01026167",
+              "name": "BARCLAYS BANK PLC",
+              "incorporated_on": "1971-10-04",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "SHEA, Brian Thomas",
+          "officerId": "YpdShlx-oId3oDPgn1V47X9aN60",
+          "risk": 65,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "BARCLAYS BANK PLC (01026167) is registered at the same address as BARCLAYS PLC: 1 Churchill Place, London, E14 5HP."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "BARCLAYS BANK PLC (01026167) shares SIC code 64191 with BARCLAYS PLC."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another BARCLAYS PLC director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 10,
+              "detail": "2 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "01026167",
+              "name": "BARCLAYS BANK PLC",
+              "incorporated_on": "1971-10-04",
+              "status": "active"
+            },
+            {
+              "number": "01767980",
+              "name": "BARCLAYS EXECUTION SERVICES LIMITED",
+              "incorporated_on": "1983-11-07",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "VENKATAKRISHNAN, Coimbatore Sundararajan",
+          "officerId": "z06A45QhFlB0JaZm2VIEIgV1TSU",
+          "risk": 60,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "BARCLAYS BANK PLC (01026167) is registered at the same address as BARCLAYS PLC: 1 Churchill Place, London, E14 5HP."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "BARCLAYS BANK PLC (01026167) shares SIC code 64191 with BARCLAYS PLC."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another BARCLAYS PLC director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "01026167",
+              "name": "BARCLAYS BANK PLC",
+              "incorporated_on": "1971-10-04",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "WILSON, Julia Susan",
+          "officerId": "zX7q-Qr7vxaQAr4ewP2oqH6f68k",
+          "risk": 87,
+          "riskFactors": [
+            {
+              "key": "gap",
+              "label": "Rapid re-incorporation after collapse",
+              "points": 17,
+              "detail": "SAPPHIREPEARL (16771957) was incorporated 2025-10-08, 10 months after BARCLAYS PLC's fine (2024-11-25)."
+            },
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "BARCLAYS BANK PLC (01026167) is registered at the same address as BARCLAYS PLC: 1 Churchill Place, London, E14 5HP."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "BARCLAYS BANK PLC (01026167) shares SIC code 64191 with BARCLAYS PLC."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "2 linked companies also share another BARCLAYS PLC director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "9 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "16771957",
+              "name": "SAPPHIREPEARL",
+              "incorporated_on": "2025-10-08",
+              "status": "active"
+            },
+            {
+              "number": "00358948",
+              "name": "BUNZL PUBLIC LIMITED COMPANY",
+              "incorporated_on": "1940-01-22",
+              "status": "active"
+            },
+            {
+              "number": "01026167",
+              "name": "BARCLAYS BANK PLC",
+              "incorporated_on": "1971-10-04",
+              "status": "active"
+            },
+            {
+              "number": "01929333",
+              "name": "BARCLAYS CAPITAL SECURITIES LIMITED",
+              "incorporated_on": "1985-07-09",
+              "status": "active"
+            },
+            {
+              "number": "01142830",
+              "name": "3I GROUP PLC",
+              "incorporated_on": "1973-11-01",
+              "status": "active"
+            },
+            {
+              "number": "00397156",
+              "name": "3I PLC",
+              "incorporated_on": "1945-07-21",
+              "status": "active"
+            },
+            {
+              "number": "02591431",
+              "name": "3I HOLDINGS PLC",
+              "incorporated_on": "1991-03-08",
+              "status": "active"
+            },
+            {
+              "number": "03975789",
+              "name": "3I INVESTMENTS PLC",
+              "incorporated_on": "2000-04-13",
+              "status": "active"
+            },
+            {
+              "number": "06100576",
+              "name": "3I OSPREY GP LIMITED",
+              "incorporated_on": "2007-02-13",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "BREEDON, Timothy James",
+          "officerId": "FFpmJ-Pqm7fbd_WmxNtg-RTOO1s",
+          "risk": 65,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "BARCLAYS BANK PLC (01026167) is registered at the same address as BARCLAYS PLC: 1 Churchill Place, London, E14 5HP."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "BARCLAYS BANK PLC (01026167) shares SIC code 64191 with BARCLAYS PLC."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "2 linked companies also share another BARCLAYS PLC director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 10,
+              "detail": "2 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "01026167",
+              "name": "BARCLAYS BANK PLC",
+              "incorporated_on": "1971-10-04",
+              "status": "active"
+            },
+            {
+              "number": "01929333",
+              "name": "BARCLAYS CAPITAL SECURITIES LIMITED",
+              "incorporated_on": "1985-07-09",
+              "status": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "firm": "Volkswagen Financial Services (UK) Limited",
+      "fineDate": "2024-10-21",
+      "amount": 5397600,
+      "fineEvents": [
+        {
+          "date": "2024-10-21",
+          "amount": 5397600,
+          "reason": "This Final Notice refers to breaches of PRIN 3, 6, 7, CONC and DISP, all of which related to the treatment of customers in financial difficulty in the consumer credit sector. We imposed a financial penalty of £5,397,600.",
+          "noticeUrl": "https://www.fca.org.uk/news/press-releases/fca-fines-volkswagen-finance-over-treatment-customers-financial-difficulty"
+        }
+      ],
+      "companyNumber": "02835230",
+      "matchedName": "VOLKSWAGEN FINANCIAL SERVICES (UK) LIMITED",
+      "directors": [
+        {
+          "name": "SMITH, Jean Michelle",
+          "officerId": "ljOFFSPFRBNwUz75vk-iu53Lkmk",
+          "risk": 78,
+          "riskFactors": [
+            {
+              "key": "gap",
+              "label": "Rapid re-incorporation after collapse",
+              "points": 23,
+              "detail": "VOLKSWAGEN FINANCIAL SERVICES DS (UK) LIMITED (16386196) was incorporated 2025-04-14, 6 months after VOLKSWAGEN FINANCIAL SERVICES (UK) LIMITED's fine (2024-10-21)."
+            },
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "VOLKSWAGEN INSURANCE SERVICE (GREAT BRITAIN) LIMITED (00715189) is registered at the same address as VOLKSWAGEN FINANCIAL SERVICES (UK) LIMITED: Brunswick Court Yeomans Drive, Blakelands, Milton Keynes, MK14 5LR."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "4 linked companies also share another VOLKSWAGEN FINANCIAL SERVICES (UK) LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "3 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "16386196",
+              "name": "VOLKSWAGEN FINANCIAL SERVICES DS (UK) LIMITED",
+              "incorporated_on": "2025-04-14",
+              "status": "active"
+            },
+            {
+              "number": "00715189",
+              "name": "VOLKSWAGEN INSURANCE SERVICE (GREAT BRITAIN) LIMITED",
+              "incorporated_on": "1962-02-13",
+              "status": "active"
+            },
+            {
+              "number": "04850729",
+              "name": "VOLKSWAGEN GROUP PENSION SCHEME TRUSTEE LIMITED",
+              "incorporated_on": "2003-07-30",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "TODD, Michael John",
+          "officerId": "QmjnbA_LAoUNHLgEv2TkFmrfdjM",
+          "risk": 73,
+          "riskFactors": [
+            {
+              "key": "gap",
+              "label": "Rapid re-incorporation after collapse",
+              "points": 23,
+              "detail": "VOLKSWAGEN FINANCIAL SERVICES DS (UK) LIMITED (16386196) was incorporated 2025-04-14, 6 months after VOLKSWAGEN FINANCIAL SERVICES (UK) LIMITED's fine (2024-10-21)."
+            },
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "VOLKSWAGEN INSURANCE SERVICE (GREAT BRITAIN) LIMITED (00715189) is registered at the same address as VOLKSWAGEN FINANCIAL SERVICES (UK) LIMITED: Brunswick Court Yeomans Drive, Blakelands, Milton Keynes, MK14 5LR."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "3 linked companies also share another VOLKSWAGEN FINANCIAL SERVICES (UK) LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 10,
+              "detail": "2 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "16386196",
+              "name": "VOLKSWAGEN FINANCIAL SERVICES DS (UK) LIMITED",
+              "incorporated_on": "2025-04-14",
+              "status": "active"
+            },
+            {
+              "number": "00715189",
+              "name": "VOLKSWAGEN INSURANCE SERVICE (GREAT BRITAIN) LIMITED",
+              "incorporated_on": "1962-02-13",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "LEGENBAUER, Jens",
+          "officerId": "Oc0RoGkKP6V_DEOvWlLFK9aMYKs",
+          "risk": 45,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "VOLKSWAGEN INSURANCE SERVICE (GREAT BRITAIN) LIMITED (00715189) is registered at the same address as VOLKSWAGEN FINANCIAL SERVICES (UK) LIMITED: Brunswick Court Yeomans Drive, Blakelands, Milton Keynes, MK14 5LR."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another VOLKSWAGEN FINANCIAL SERVICES (UK) LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "00715189",
+              "name": "VOLKSWAGEN INSURANCE SERVICE (GREAT BRITAIN) LIMITED",
+              "incorporated_on": "1962-02-13",
+              "status": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "firm": "Starling Bank Limited",
+      "fineDate": "2024-09-27",
+      "amount": 28959426,
+      "fineEvents": [
+        {
+          "date": "2024-09-27",
+          "amount": 28959426,
+          "reason": "This Final Notice refers to breaches of Principle 3 and s.204A of FSMA relating to financial crime and breaching the conditions of a Voluntary Requirement (VREQ) in the retail banks sector. We imposed a financial penalty.",
+          "noticeUrl": "https://www.fca.org.uk/news/press-releases/fca-fines-starling-bank-failings-financial-crime-systems-and-controls"
+        }
+      ],
+      "companyNumber": "09092149",
+      "matchedName": "STARLING BANK LIMITED",
+      "directors": [
+        {
+          "name": "BHATIA, Raman",
+          "officerId": "SVJMuYouG6kwYuyO0uA4gJp5chQ",
+          "risk": 79,
+          "riskFactors": [
+            {
+              "key": "gap",
+              "label": "Rapid re-incorporation after collapse",
+              "points": 24,
+              "detail": "STARLING INTERMEDIATE HOLDINGS LIMITED (16240204) was incorporated 2025-02-10, 4 months after STARLING BANK LIMITED's fine (2024-09-27)."
+            },
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "STARLING INTERMEDIATE HOLDINGS LIMITED (16240204) is registered at the same address as STARLING BANK LIMITED: 5th Floor London Fruit And Wool Exchange, 1 Duval Square, London, E1 6PW."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "3 linked companies also share another STARLING BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "3 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "16240204",
+              "name": "STARLING INTERMEDIATE HOLDINGS LIMITED",
+              "incorporated_on": "2025-02-10",
+              "status": "active"
+            },
+            {
+              "number": "13871603",
+              "name": "STARLING GROUP HOLDINGS LIMITED",
+              "incorporated_on": "2022-01-25",
+              "status": "active"
+            },
+            {
+              "number": "13925405",
+              "name": "ENGINE BY STARLING LIMITED",
+              "incorporated_on": "2022-02-18",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "CHAKRAVERTY, Julie",
+          "officerId": "j3V_cdjv-kUF-Gz3n3IsLV0skF8",
+          "risk": 45,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "STARLING GROUP HOLDINGS LIMITED (13871603) is registered at the same address as STARLING BANK LIMITED: 5th Floor London Fruit And Wool Exchange, 1 Duval Square, London, E1 6PW."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another STARLING BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "13871603",
+              "name": "STARLING GROUP HOLDINGS LIMITED",
+              "incorporated_on": "2022-01-25",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "FERGUSON, Declan",
+          "officerId": "UkLMaCCZ-Mj0xRgZGtJHo0ZPjpw",
+          "risk": 79,
+          "riskFactors": [
+            {
+              "key": "gap",
+              "label": "Rapid re-incorporation after collapse",
+              "points": 24,
+              "detail": "STARLING INTERMEDIATE HOLDINGS LIMITED (16240204) was incorporated 2025-02-10, 4 months after STARLING BANK LIMITED's fine (2024-09-27)."
+            },
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "EMBER BY STARLING LIMITED (11822163) is registered at the same address as STARLING BANK LIMITED: 5th Floor, London Fruit And Wool Exchange, 1 Duval Square, London, E1   6PW."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "5 linked companies also share another STARLING BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "7 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "11822163",
+              "name": "EMBER BY STARLING LIMITED",
+              "incorporated_on": "2019-02-12",
+              "status": "active"
+            },
+            {
+              "number": "13925405",
+              "name": "ENGINE BY STARLING LIMITED",
+              "incorporated_on": "2022-02-18",
+              "status": "active"
+            },
+            {
+              "number": "16240204",
+              "name": "STARLING INTERMEDIATE HOLDINGS LIMITED",
+              "incorporated_on": "2025-02-10",
+              "status": "active"
+            },
+            {
+              "number": "14999160",
+              "name": "MURMUR FINANCIAL SERVICES LIMITED",
+              "incorporated_on": "2023-07-12",
+              "status": "active"
+            },
+            {
+              "number": "13871603",
+              "name": "STARLING GROUP HOLDINGS LIMITED",
+              "incorporated_on": "2022-01-25",
+              "status": "active"
+            },
+            {
+              "number": "10091094",
+              "name": "STARLING FS SERVICES LIMITED",
+              "incorporated_on": "2016-03-30",
+              "status": "active"
+            },
+            {
+              "number": "08663979",
+              "name": "FLEET MORTGAGES LIMITED",
+              "incorporated_on": "2013-08-27",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "BODEN, Anne Elizabeth",
+          "officerId": "hE0wcYUNlHgf-VJD8QRt4JI6MuE",
+          "risk": 55,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "ENGINE BY STARLING LIMITED (13925405) is registered at the same address as STARLING BANK LIMITED: 5th Floor London Fruit And Wool Exchange, 1 Duval Square, London, E1 6PW."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "4 linked companies also share another STARLING BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "6 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "13925405",
+              "name": "ENGINE BY STARLING LIMITED",
+              "incorporated_on": "2022-02-18",
+              "status": "active"
+            },
+            {
+              "number": "13871603",
+              "name": "STARLING GROUP HOLDINGS LIMITED",
+              "incorporated_on": "2022-01-25",
+              "status": "active"
+            },
+            {
+              "number": "08663979",
+              "name": "FLEET MORTGAGES LIMITED",
+              "incorporated_on": "2013-08-27",
+              "status": "active"
+            },
+            {
+              "number": "10091094",
+              "name": "STARLING FS SERVICES LIMITED",
+              "incorporated_on": "2016-03-30",
+              "status": "active"
+            },
+            {
+              "number": "10250295",
+              "name": "UK FINANCE LIMITED",
+              "incorporated_on": "2016-06-24",
+              "status": "active"
+            },
+            {
+              "number": "02398246",
+              "name": "AON UK GROUP LIMITED",
+              "incorporated_on": "1989-06-26",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "CAMPOS, Lazaro",
+          "officerId": "uELbVTa1eXkM3IIWIP5Suq-YP-A",
+          "risk": 45,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "STARLING GROUP HOLDINGS LIMITED (13871603) is registered at the same address as STARLING BANK LIMITED: 5th Floor London Fruit And Wool Exchange, 1 Duval Square, London, E1 6PW."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another STARLING BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "13871603",
+              "name": "STARLING GROUP HOLDINGS LIMITED",
+              "incorporated_on": "2022-01-25",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "CLARKE, Carolyn",
+          "officerId": "LVYnXlt-fUHJsGhA1qR3rZgtlnc",
+          "risk": 45,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "STARLING GROUP HOLDINGS LIMITED (13871603) is registered at the same address as STARLING BANK LIMITED: 5th Floor London Fruit And Wool Exchange, 1 Duval Square, London, E1 6PW."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another STARLING BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "13871603",
+              "name": "STARLING GROUP HOLDINGS LIMITED",
+              "incorporated_on": "2022-01-25",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "CLARKE, Tracy Jayne",
+          "officerId": "1y_nYdRzJZPSczm0n3HQ7iLc_D4",
+          "risk": 70,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "STARLING GROUP HOLDINGS LIMITED (13871603) is registered at the same address as STARLING BANK LIMITED: 5th Floor London Fruit And Wool Exchange, 1 Duval Square, London, E1 6PW."
+            },
+            {
+              "key": "same_sic",
+              "label": "Same industry classification (SIC)",
+              "points": 15,
+              "detail": "STANDARD CHARTERED BANK (ZC000018) shares SIC code 64191 with STARLING BANK LIMITED."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another STARLING BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "15 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "00609782",
+              "name": "INCHCAPE PLC",
+              "incorporated_on": "1958-08-15",
+              "status": "active"
+            },
+            {
+              "number": "15050370",
+              "name": "OFFICIATE LTD",
+              "incorporated_on": "2023-08-04",
+              "status": "active"
+            },
+            {
+              "number": "13691224",
+              "name": "HALEON PLC",
+              "incorporated_on": "2021-10-20",
+              "status": "active"
+            },
+            {
+              "number": "08861959",
+              "name": "SCHOOL REVIEWER LIMITED",
+              "incorporated_on": "2014-01-27",
+              "status": "active"
+            },
+            {
+              "number": "13871603",
+              "name": "STARLING GROUP HOLDINGS LIMITED",
+              "incorporated_on": "2022-01-25",
+              "status": "active"
+            },
+            {
+              "number": "08632362",
+              "name": "ACIN LIMITED",
+              "incorporated_on": "2013-07-31",
+              "status": "active"
+            },
+            {
+              "number": "05807599",
+              "name": "TP ICAP FINANCE PLC",
+              "incorporated_on": "2006-05-05",
+              "status": "active"
+            },
+            {
+              "number": "07088009",
+              "name": "THECITYUK",
+              "incorporated_on": "2009-11-26",
+              "status": "active"
+            },
+            {
+              "number": "02426156",
+              "name": "STANDARD CHARTERED HOLDINGS LIMITED",
+              "incorporated_on": "1989-09-25",
+              "status": "active"
+            },
+            {
+              "number": "ZC000018",
+              "name": "STANDARD CHARTERED BANK",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "12418687",
+              "name": "ZODIA CUSTODY LIMITED",
+              "incorporated_on": "2020-01-22",
+              "status": "active"
+            },
+            {
+              "number": "12407639",
+              "name": "ZODIA HOLDINGS LIMITED",
+              "incorporated_on": "2020-01-16",
+              "status": "active"
+            },
+            {
+              "number": "04886072",
+              "name": "INMARSAT GROUP HOLDINGS LIMITED",
+              "incorporated_on": "2003-09-03",
+              "status": "active"
+            },
+            {
+              "number": "02247735",
+              "name": "SKY LIMITED",
+              "incorporated_on": "1988-04-25",
+              "status": "active"
+            },
+            {
+              "number": "06291886",
+              "name": "CHINA - BRITAIN BUSINESS COUNCIL",
+              "incorporated_on": "2007-06-25",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "GALARIA, Faisal",
+          "officerId": "xOtEYqeMmwIoLGb58UPINRA4uuw",
+          "risk": 55,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "STARLING GROUP HOLDINGS LIMITED (13871603) is registered at the same address as STARLING BANK LIMITED: 5th Floor London Fruit And Wool Exchange, 1 Duval Square, London, E1 6PW."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "2 linked companies also share another STARLING BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "6 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "14645205",
+              "name": "ALCAZABA LTD",
+              "incorporated_on": "2023-02-07",
+              "status": "active"
+            },
+            {
+              "number": "13871603",
+              "name": "STARLING GROUP HOLDINGS LIMITED",
+              "incorporated_on": "2022-01-25",
+              "status": "active"
+            },
+            {
+              "number": "13925405",
+              "name": "ENGINE BY STARLING LIMITED",
+              "incorporated_on": "2022-02-18",
+              "status": "active"
+            },
+            {
+              "number": "11787934",
+              "name": "BLIPPAR LIMITED",
+              "incorporated_on": "2019-01-25",
+              "status": "active"
+            },
+            {
+              "number": "11784657",
+              "name": "BLIPPAR GROUP LIMITED",
+              "incorporated_on": "2019-01-23",
+              "status": "active"
+            },
+            {
+              "number": "07063562",
+              "name": "SUPERDRY LIMITED",
+              "incorporated_on": "2009-11-02",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "JENKINS, Ian Simon",
+          "officerId": "9_-kkECGtBLrHeNJmoIf9L5hzVA",
+          "risk": 85,
+          "riskFactors": [
+            {
+              "key": "gap",
+              "label": "Rapid re-incorporation after collapse",
+              "points": 30,
+              "detail": "FNZ FIAT PREFCO LIMITED (15958917) was incorporated 2024-09-16, 0 months after STARLING BANK LIMITED's fine (2024-09-27)."
+            },
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "STARLING GROUP HOLDINGS LIMITED (13871603) is registered at the same address as STARLING BANK LIMITED: 5th Floor London Fruit And Wool Exchange, 1 Duval Square, London, E1 6PW."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another STARLING BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "7 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "15958917",
+              "name": "FNZ FIAT PREFCO LIMITED",
+              "incorporated_on": "2024-09-16",
+              "status": "active"
+            },
+            {
+              "number": "05435760",
+              "name": "FNZ (UK) LTD",
+              "incorporated_on": "2005-04-26",
+              "status": "active"
+            },
+            {
+              "number": "13871603",
+              "name": "STARLING GROUP HOLDINGS LIMITED",
+              "incorporated_on": "2022-01-25",
+              "status": "active"
+            },
+            {
+              "number": "SC123321",
+              "name": "ABRDN INVESTMENT MANAGEMENT LIMITED",
+              "incorporated_on": "1990-02-27",
+              "status": "active"
+            },
+            {
+              "number": "SC108419",
+              "name": "ABRDN INVESTMENTS LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "04752535",
+              "name": "INTERACTIVE INVESTOR LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "SC359190",
+              "name": "ABRDN PORTFOLIO INVESTMENTS LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "MARTIN, Marian Macdonald",
+          "officerId": "0fXf78jgH19EMKy-YqQwZ5Q5iHs",
+          "risk": 45,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "STARLING GROUP HOLDINGS LIMITED (13871603) is registered at the same address as STARLING BANK LIMITED: 5th Floor London Fruit And Wool Exchange, 1 Duval Square, London, E1 6PW."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another STARLING BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "13871603",
+              "name": "STARLING GROUP HOLDINGS LIMITED",
+              "incorporated_on": "2022-01-25",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "TRAILL, Marcus John",
+          "officerId": "6VJ4bgnvttcXqyuFOro5LUgei6s",
+          "risk": 45,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "STARLING GROUP HOLDINGS LIMITED (13871603) is registered at the same address as STARLING BANK LIMITED: 5th Floor London Fruit And Wool Exchange, 1 Duval Square, London, E1 6PW."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another STARLING BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "13871603",
+              "name": "STARLING GROUP HOLDINGS LIMITED",
+              "incorporated_on": "2022-01-25",
+              "status": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "firm": "PricewaterhouseCoopers LLP",
+      "fineDate": "2024-08-16",
+      "amount": 15000000,
+      "fineEvents": [
+        {
+          "date": "2024-08-16",
+          "amount": 15000000,
+          "reason": "This Final Notice refers to the breach of Regulation 2 of the Financial Services and Markets Act 2000 (Communications by Auditors) Regulations 2001 (SI 2001/2587) related to failing to act on information appropriately in the audit sector. We imposed a financial penalty.",
+          "noticeUrl": "https://www.fca.org.uk/news/press-releases/pwc-fined-failing-alert-fca-suspected-fraudulent-activity-london-capital-finance-plc"
+        }
+      ],
+      "companyNumber": "OC303525",
+      "matchedName": "PRICEWATERHOUSECOOPERS LLP",
+      "directors": [
+        {
+          "name": "AMITRANO, Marco",
+          "officerId": "EEaJjq09PfhFa68ycZ2BSR5TBlw",
+          "risk": 55,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "THE PWC FOUNDATION (07601963) is registered at the same address as PRICEWATERHOUSECOOPERS LLP: 1 Embankment Place, London, WC2N 6RH."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "4 linked companies also share another PRICEWATERHOUSECOOPERS LLP director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "6 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 0.8,
+          "unknownFactors": [
+            "same_sic"
+          ],
+          "activeCompanies": [
+            {
+              "number": "07601963",
+              "name": "THE PWC FOUNDATION",
+              "incorporated_on": "2011-04-12",
+              "status": "active"
+            },
+            {
+              "number": "09732210",
+              "name": "PWC EMEA LIMITED",
+              "incorporated_on": "2015-08-13",
+              "status": "active"
+            },
+            {
+              "number": "12886828",
+              "name": "PRICEWATERHOUSECOOPERS BUSINESS SERVICES LIMITED",
+              "incorporated_on": "2020-09-17",
+              "status": "active"
+            },
+            {
+              "number": "09146932",
+              "name": "PWC HOLDINGS (UK) LIMITED",
+              "incorporated_on": "2014-07-24",
+              "status": "active"
+            },
+            {
+              "number": "00728502",
+              "name": "PRICEWATERHOUSECOOPERS SERVICES LIMITED",
+              "incorporated_on": "1962-06-29",
+              "status": "active"
+            },
+            {
+              "number": "02319585",
+              "name": "PRICEWATERHOUSECOOPERS CONSULTING SERVICES UK LIMITED",
+              "incorporated_on": "1988-11-21",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "HUNT, Simon David",
+          "officerId": "CjusFVrvmd_p3OwFl81090rNvdY",
+          "risk": 55,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "PRICEWATERHOUSECOOPERS BUSINESS SERVICES LIMITED (12886828) is registered at the same address as PRICEWATERHOUSECOOPERS LLP: 1 Embankment Place, London, WC2N 6RH."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "5 linked companies also share another PRICEWATERHOUSECOOPERS LLP director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "29 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 0.8,
+          "unknownFactors": [
+            "same_sic"
+          ],
+          "activeCompanies": [
+            {
+              "number": "12886828",
+              "name": "PRICEWATERHOUSECOOPERS BUSINESS SERVICES LIMITED",
+              "incorporated_on": "2020-09-17",
+              "status": "active"
+            },
+            {
+              "number": "03212142",
+              "name": "PWSP LIMITED",
+              "incorporated_on": "1996-06-10",
+              "status": "active"
+            },
+            {
+              "number": "03575038",
+              "name": "AIMS HOLDINGS NO. 1 LIMITED",
+              "incorporated_on": "1998-05-29",
+              "status": "active"
+            },
+            {
+              "number": "04926931",
+              "name": "SUSTAINABLE FINANCE LIMITED",
+              "incorporated_on": "2003-10-09",
+              "status": "active"
+            },
+            {
+              "number": "03580575",
+              "name": "AIMS HOLDINGS NO. 2 LIMITED",
+              "incorporated_on": "1998-06-09",
+              "status": "active"
+            },
+            {
+              "number": "13074271",
+              "name": "PRICEWATERHOUSECOOPERS (UK) ADVISORY SERVICES (KU) LIMITED",
+              "incorporated_on": "2020-12-09",
+              "status": "active"
+            },
+            {
+              "number": "03575515",
+              "name": "PRICEWATERHOUSECOOPERS OVERSEAS LIMITED",
+              "incorporated_on": "1998-05-29",
+              "status": "active"
+            },
+            {
+              "number": "03580655",
+              "name": "PRICEWATERHOUSECOOPERS ADVISORY SERVICES LIMITED",
+              "incorporated_on": "1998-06-09",
+              "status": "active"
+            },
+            {
+              "number": "08922267",
+              "name": "PRICEWATERHOUSECOOPERS CORPORATE BUSINESS SERVICES LIMITED",
+              "incorporated_on": "2014-03-04",
+              "status": "active"
+            },
+            {
+              "number": "01446825",
+              "name": "PRICE WATERHOUSE LIMITED",
+              "incorporated_on": "1979-09-05",
+              "status": "active"
+            },
+            {
+              "number": "00705101",
+              "name": "COOPER BROTHERS & CO. LIMITED",
+              "incorporated_on": "1961-10-06",
+              "status": "active"
+            },
+            {
+              "number": "06670334",
+              "name": "PWC PERFORMANCE SOLUTIONS LIMITED",
+              "incorporated_on": "2008-08-12",
+              "status": "active"
+            },
+            {
+              "number": "01945704",
+              "name": "COOPERS & LYBRAND LIMITED",
+              "incorporated_on": "1985-09-09",
+              "status": "active"
+            },
+            {
+              "number": "14812151",
+              "name": "PRICEWATERHOUSECOOPERS (UK) ADVISORY SERVICES (FI) LIMITED",
+              "incorporated_on": "2023-04-18",
+              "status": "active"
+            },
+            {
+              "number": "13495646",
+              "name": "PRICEWATERHOUSECOOPERS (UK) ADVISORY SERVICES (IE) LIMITED",
+              "incorporated_on": "2021-07-06",
+              "status": "active"
+            },
+            {
+              "number": "05608050",
+              "name": "PRICEWATERHOUSECOOPERS ASM LIMITED",
+              "incorporated_on": "2005-10-31",
+              "status": "active"
+            },
+            {
+              "number": "04731689",
+              "name": "PRICEWATERHOUSECOOPERS CFR LIMITED",
+              "incorporated_on": "2003-04-11",
+              "status": "active"
+            },
+            {
+              "number": "02319585",
+              "name": "PRICEWATERHOUSECOOPERS CONSULTING SERVICES UK LIMITED",
+              "incorporated_on": "1988-11-21",
+              "status": "active"
+            },
+            {
+              "number": "00728502",
+              "name": "PRICEWATERHOUSECOOPERS SERVICES LIMITED",
+              "incorporated_on": "1962-06-29",
+              "status": "active"
+            },
+            {
+              "number": "08966493",
+              "name": "PWC BUSINESS CONSULTING SERVICES LIMITED",
+              "incorporated_on": "2014-03-28",
+              "status": "active"
+            },
+            {
+              "number": "08840983",
+              "name": "PWC CHANGE MANAGEMENT HOLDINGS LIMITED",
+              "incorporated_on": "2014-01-10",
+              "status": "active"
+            },
+            {
+              "number": "08726026",
+              "name": "PWC CHANGE MANAGEMENT LIMITED",
+              "incorporated_on": "2013-10-10",
+              "status": "active"
+            },
+            {
+              "number": "13042314",
+              "name": "PWC CUSTOMS INTERMEDIARY SERVICES LIMITED",
+              "incorporated_on": "2020-11-25",
+              "status": "active"
+            },
+            {
+              "number": "12240817",
+              "name": "PWC DIGITAL TECHNOLOGY SERVICES LIMITED",
+              "incorporated_on": "2019-10-03",
+              "status": "active"
+            },
+            {
+              "number": "06920804",
+              "name": "PWC DIGITAL SERVICES (UK) LIMITED",
+              "incorporated_on": "2009-06-01",
+              "status": "active"
+            },
+            {
+              "number": "09146932",
+              "name": "PWC HOLDINGS (UK) LIMITED",
+              "incorporated_on": "2014-07-24",
+              "status": "active"
+            },
+            {
+              "number": "03194148",
+              "name": "PWC LONDON BRIDGE LIMITED",
+              "incorporated_on": "1996-04-29",
+              "status": "active"
+            },
+            {
+              "number": "01601493",
+              "name": "PWC STRATEGY& (UK) LTD.",
+              "incorporated_on": "1981-12-02",
+              "status": "active"
+            },
+            {
+              "number": "07543890",
+              "name": "BEYOND FOOD COMMUNITY INTEREST COMPANY",
+              "incorporated_on": null,
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "AKUFFO, Frederick Appiah",
+          "officerId": "muZOO8lge-J7bEmNGqHL3MATwTo",
+          "risk": 55,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "PWC BUSINESS CONSULTING SERVICES LIMITED (08966493) is registered at the same address as PRICEWATERHOUSECOOPERS LLP: 1 Embankment Place, London, WC2N 6RH."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another PRICEWATERHOUSECOOPERS LLP director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "3 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 0.8,
+          "unknownFactors": [
+            "same_sic"
+          ],
+          "activeCompanies": [
+            {
+              "number": "04727938",
+              "name": "AGGRECIAL LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "08966493",
+              "name": "PWC BUSINESS CONSULTING SERVICES LIMITED",
+              "incorporated_on": "2014-03-28",
+              "status": "active"
+            },
+            {
+              "number": "08238438",
+              "name": "75 VALETTA ROAD MANAGEMENT COMPANY LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "firm": "Monzo Bank Limited",
+      "fineDate": "2025-07-08",
+      "amount": 21091300,
+      "fineEvents": [
+        {
+          "date": "2025-07-08",
+          "amount": 21091300,
+          "reason": "This Final Notice refers to breaches of PRIN 3 and s.55L of FSMA related to conduct in the retail banks sector. We imposed a financial penalty.",
+          "noticeUrl": "https://www.fca.org.uk/publication/final-notices/monzo-bank-limited.pdf"
+        }
+      ],
+      "companyNumber": "09446231",
+      "matchedName": "MONZO BANK LIMITED",
+      "directors": [
+        {
+          "name": "ARROYO, Delfin Rueda",
+          "officerId": "mBZbJ2iI7PbRpV9s1lUEFbtOY1c",
+          "risk": 45,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "MONZO BANK HOLDING GROUP LIMITED (14785367) is registered at the same address as MONZO BANK LIMITED: Broadwalk House, 5, Appold Street, London, EC2A 2AG."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another MONZO BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "14785367",
+              "name": "MONZO BANK HOLDING GROUP LIMITED",
+              "incorporated_on": "2023-04-06",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "BURBIDGE, Eileen",
+          "officerId": "ssSVue1XDlQnQSitrtOoyTIe5s0",
+          "risk": 82,
+          "riskFactors": [
+            {
+              "key": "gap",
+              "label": "Rapid re-incorporation after collapse",
+              "points": 27,
+              "detail": "NFG ADVISORY LIMITED (16737005) was incorporated 2025-09-23, 3 months after MONZO BANK LIMITED's fine (2025-07-08)."
+            },
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "MONZO BANK HOLDING GROUP LIMITED (14785367) is registered at the same address as MONZO BANK LIMITED: Broadwalk House, 5, Appold Street, London, EC2A 2AG."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "2 linked companies also share another MONZO BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "20 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "17344200",
+              "name": "NFG ADMINISTRATIVE SERVICES LIMITED",
+              "incorporated_on": "2026-07-16",
+              "status": "active"
+            },
+            {
+              "number": "OC461176",
+              "name": "NFG I FOUNDER LLP",
+              "incorporated_on": "2026-07-16",
+              "status": "active"
+            },
+            {
+              "number": "16737005",
+              "name": "NFG ADVISORY LIMITED",
+              "incorporated_on": "2025-09-23",
+              "status": "active"
+            },
+            {
+              "number": "14785367",
+              "name": "MONZO BANK HOLDING GROUP LIMITED",
+              "incorporated_on": "2023-04-06",
+              "status": "active"
+            },
+            {
+              "number": "OC437038",
+              "name": "PASSION CAPITAL SPV (FP) LLP",
+              "incorporated_on": "2021-04-23",
+              "status": "active"
+            },
+            {
+              "number": "OC437039",
+              "name": "PASSION CAPITAL SPV (GP) LLP",
+              "incorporated_on": "2021-04-23",
+              "status": "active"
+            },
+            {
+              "number": "12151532",
+              "name": "FERTIFA LIMITED",
+              "incorporated_on": "2019-08-12",
+              "status": "active"
+            },
+            {
+              "number": "01917818",
+              "name": "33 TALBOT ROAD MANAGEMENT COMPANY LIMITED",
+              "incorporated_on": "1985-05-30",
+              "status": "active"
+            },
+            {
+              "number": "OC399205",
+              "name": "PASSION CAPITAL II (FP) LLP",
+              "incorporated_on": "2015-04-07",
+              "status": "active"
+            },
+            {
+              "number": "OC399026",
+              "name": "PASSION CAPITAL FS (GP) LLP",
+              "incorporated_on": "2015-03-25",
+              "status": "active"
+            },
+            {
+              "number": "OC399025",
+              "name": "PASSION CAPITAL FS (FP) LLP",
+              "incorporated_on": "2015-03-24",
+              "status": "active"
+            },
+            {
+              "number": "07505920",
+              "name": "PASSION CAPITAL (GP) LTD",
+              "incorporated_on": "2011-01-26",
+              "status": "active"
+            },
+            {
+              "number": "OC361157",
+              "name": "PASSION CAPITAL INVESTMENTS LLP",
+              "incorporated_on": "2011-01-25",
+              "status": "active"
+            },
+            {
+              "number": "OC361158",
+              "name": "PASSION CAPITAL (FP) LLP",
+              "incorporated_on": "2011-01-25",
+              "status": "active"
+            },
+            {
+              "number": "07105905",
+              "name": "CURRYS PLC",
+              "incorporated_on": "2009-12-15",
+              "status": "active"
+            },
+            {
+              "number": "12593554",
+              "name": "WE ARE MIND LABS LTD",
+              "incorporated_on": "2020-05-11",
+              "status": "active"
+            },
+            {
+              "number": "06940215",
+              "name": "WBY SPACE LIMITED",
+              "incorporated_on": "2009-06-22",
+              "status": "active"
+            },
+            {
+              "number": "12728703",
+              "name": "DAYBRIDGE SOFTWARE LIMITED",
+              "incorporated_on": "2020-07-08",
+              "status": "active"
+            },
+            {
+              "number": "08843778",
+              "name": "TECH NATION GROUP LIMITED",
+              "incorporated_on": "2014-01-14",
+              "status": "active"
+            },
+            {
+              "number": "06457679",
+              "name": "TREATWELL LIMITED",
+              "incorporated_on": "2007-12-19",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "DIAS, Valerie Michelle",
+          "officerId": "EkthAQVfOSXFsB2z9kgZV8WprAs",
+          "risk": 55,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "HEY HABITO LTD (09384953) is registered at the same address as MONZO BANK LIMITED: Broadwalk House, 5 Appold Street, London, EC2A 2AG."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "4 linked companies also share another MONZO BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "11 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "00361703",
+              "name": "WESTMINSTER ROMAN CATHOLIC DIOCESE TRUSTEE(THE)",
+              "incorporated_on": "1940-06-07",
+              "status": "active"
+            },
+            {
+              "number": "11762508",
+              "name": "SEIDS",
+              "incorporated_on": "2019-01-11",
+              "status": "active"
+            },
+            {
+              "number": "09384953",
+              "name": "HEY HABITO LTD",
+              "incorporated_on": "2015-01-12",
+              "status": "active"
+            },
+            {
+              "number": "12844527",
+              "name": "HABITO CONVEYANCING LTD",
+              "incorporated_on": "2020-08-28",
+              "status": "active"
+            },
+            {
+              "number": "15546755",
+              "name": "HABITO TECH LTD",
+              "incorporated_on": "2024-03-07",
+              "status": "active"
+            },
+            {
+              "number": "14785367",
+              "name": "MONZO BANK HOLDING GROUP LIMITED",
+              "incorporated_on": "2023-04-06",
+              "status": "active"
+            },
+            {
+              "number": "FC027535",
+              "name": "U.S. BANK EUROPE DAC",
+              "incorporated_on": "2007-05-14",
+              "status": "active"
+            },
+            {
+              "number": "03116518",
+              "name": "HASTINGS INSURANCE SERVICES LIMITED",
+              "incorporated_on": "1995-10-20",
+              "status": "active"
+            },
+            {
+              "number": "03658378",
+              "name": "UFI VOCTECH TRUST",
+              "incorporated_on": "1998-10-23",
+              "status": "active"
+            },
+            {
+              "number": "09918839",
+              "name": "441 TRUST COMPANY LIMITED",
+              "incorporated_on": "2015-12-16",
+              "status": "active"
+            },
+            {
+              "number": "01675552",
+              "name": "WORLD VISION UK",
+              "incorporated_on": "1982-11-03",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "MCBAIN, Fiona Catherine",
+          "officerId": "voAIFJL73yv-xBEtBajJ7_Vqu24",
+          "risk": 55,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "MONZO BANK HOLDING GROUP LIMITED (14785367) is registered at the same address as MONZO BANK LIMITED: Broadwalk House, 5, Appold Street, London, EC2A 2AG."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "2 linked companies also share another MONZO BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "6 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "14785367",
+              "name": "MONZO BANK HOLDING GROUP LIMITED",
+              "incorporated_on": "2023-04-06",
+              "status": "active"
+            },
+            {
+              "number": "01179980",
+              "name": "U K INSURANCE LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "02258947",
+              "name": "CHURCHILL INSURANCE COMPANY LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "02280426",
+              "name": "DIRECT LINE INSURANCE GROUP LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "07105905",
+              "name": "CURRYS PLC",
+              "incorporated_on": "2009-12-15",
+              "status": "active"
+            },
+            {
+              "number": "00178159",
+              "name": "SAVE THE CHILDREN FUND",
+              "incorporated_on": null,
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "NEWBERY, Mark",
+          "officerId": "vIsyWIn9Sdd_259CV-CHwZJbvzM",
+          "risk": 55,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "HEY HABITO LTD (09384953) is registered at the same address as MONZO BANK LIMITED: Broadwalk House, 5 Appold Street, London, EC2A 2AG."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "4 linked companies also share another MONZO BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "7 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "09384953",
+              "name": "HEY HABITO LTD",
+              "incorporated_on": "2015-01-12",
+              "status": "active"
+            },
+            {
+              "number": "12844527",
+              "name": "HABITO CONVEYANCING LTD",
+              "incorporated_on": "2020-08-28",
+              "status": "active"
+            },
+            {
+              "number": "15546755",
+              "name": "HABITO TECH LTD",
+              "incorporated_on": "2024-03-07",
+              "status": "active"
+            },
+            {
+              "number": "14785367",
+              "name": "MONZO BANK HOLDING GROUP LIMITED",
+              "incorporated_on": "2023-04-06",
+              "status": "active"
+            },
+            {
+              "number": "02752982",
+              "name": "BARCLAYS INVESTMENT SOLUTIONS LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "06991560",
+              "name": "BARCLAYS ASSET MANAGEMENT LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "02901725",
+              "name": "CLYDESDALE FINANCIAL SERVICES LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "RUNHAM, Elizabeth Frances",
+          "officerId": "XsvHRboH3-ecZHd3WFkQeadZB5Q",
+          "risk": 50,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "MONZO BANK HOLDING GROUP LIMITED (14785367) is registered at the same address as MONZO BANK LIMITED: Broadwalk House, 5, Appold Street, London, EC2A 2AG."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another MONZO BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 10,
+              "detail": "2 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "14785367",
+              "name": "MONZO BANK HOLDING GROUP LIMITED",
+              "incorporated_on": "2023-04-06",
+              "status": "active"
+            },
+            {
+              "number": "06740655",
+              "name": "SPEAKERS TRUST LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "WICKER-MIURIN, Jane Fields",
+          "officerId": "1zgOPReBcH6qh-9jDyPdBwY5qVI",
+          "risk": 50,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "MONZO BANK HOLDING GROUP LIMITED (14785367) is registered at the same address as MONZO BANK LIMITED: Broadwalk House, 5, Appold Street, London, EC2A 2AG."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another MONZO BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 10,
+              "detail": "2 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "14785367",
+              "name": "MONZO BANK HOLDING GROUP LIMITED",
+              "incorporated_on": "2023-04-06",
+              "status": "active"
+            },
+            {
+              "number": "07909192",
+              "name": "AQUIS EXCHANGE LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "DAVIES, James Russell",
+          "officerId": "B-Qin6kaOrR5TnascqSwAq7wQBg",
+          "risk": 55,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "MONZO BANK HOLDING GROUP LIMITED (14785367) is registered at the same address as MONZO BANK LIMITED: Broadwalk House, 5, Appold Street, London, EC2A 2AG."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another MONZO BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "8 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "16147561",
+              "name": "KALUZA HOLDINGS 2 LTD",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "16145351",
+              "name": "KALUZA HOLDINGS 1 LTD",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "06752915",
+              "name": "OVO GAS LTD",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "06858121",
+              "name": "OVO ELECTRICITY LTD",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "10722770",
+              "name": "OVO GROUP LTD",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "06890795",
+              "name": "OVO ENERGY LTD",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "06890468",
+              "name": "OVO BRAND LTD",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "14785367",
+              "name": "MONZO BANK HOLDING GROUP LIMITED",
+              "incorporated_on": "2023-04-06",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "KIRK, Amy Jayne",
+          "officerId": "uk3XZVfXfgFL1NB4rRJuNU5-ujI",
+          "risk": 55,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "HEY HABITO LTD (09384953) is registered at the same address as MONZO BANK LIMITED: Broadwalk House, 5 Appold Street, London, EC2A 2AG."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "4 linked companies also share another MONZO BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 15,
+              "detail": "7 active companies are linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "07706156",
+              "name": "ALLICA BANK LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "09384953",
+              "name": "HEY HABITO LTD",
+              "incorporated_on": "2015-01-12",
+              "status": "active"
+            },
+            {
+              "number": "12844527",
+              "name": "HABITO CONVEYANCING LTD",
+              "incorporated_on": "2020-08-28",
+              "status": "active"
+            },
+            {
+              "number": "15546755",
+              "name": "HABITO TECH LTD",
+              "incorporated_on": "2024-03-07",
+              "status": "active"
+            },
+            {
+              "number": "10842931",
+              "name": "GRIFFIN BANK LTD",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "06621225",
+              "name": "FCMB BANK (UK) LIMITED",
+              "incorporated_on": null,
+              "status": "active"
+            },
+            {
+              "number": "14785367",
+              "name": "MONZO BANK HOLDING GROUP LIMITED",
+              "incorporated_on": "2023-04-06",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "name": "TUMMALAPALLI, Anil Sai",
+          "officerId": "BfbgT-ElG9mWS_LpCN-hVXiX_zE",
+          "risk": 45,
+          "riskFactors": [
+            {
+              "key": "same_address",
+              "label": "Shares registered address with fined firm",
+              "points": 25,
+              "detail": "MONZO BANK HOLDING GROUP LIMITED (14785367) is registered at the same address as MONZO BANK LIMITED: Broadwalk House, 5, Appold Street, London, EC2A 2AG."
+            },
+            {
+              "key": "co_director",
+              "label": "Co-director overlap with fined firm",
+              "points": 15,
+              "detail": "1 linked company also shares another MONZO BANK LIMITED director."
+            },
+            {
+              "key": "active_count",
+              "label": "Multiple active linked companies",
+              "points": 5,
+              "detail": "1 active company is linked to this director."
+            }
+          ],
+          "dataCompleteness": 1,
+          "unknownFactors": [],
+          "activeCompanies": [
+            {
+              "number": "14785367",
+              "name": "MONZO BANK HOLDING GROUP LIMITED",
+              "incorporated_on": "2023-04-06",
               "status": "active"
             }
           ]

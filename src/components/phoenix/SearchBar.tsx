@@ -72,7 +72,43 @@ export default function SearchBar({
     onSelect(r.company_number, r.title);
   };
 
+  // Immediate search (Search button / Enter) — no debounce wait.
+  const searchNow = async () => {
+    const term = q.trim();
+    if (term.length < 2) return;
+    abortRef.current?.abort();
+    const ac = new AbortController();
+    abortRef.current = ac;
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await fetch(`/api/ch/search?q=${encodeURIComponent(term)}`, { signal: ac.signal });
+      if (!res.ok) throw new Error(`Search unavailable (${res.status})`);
+      const data = await res.json();
+      const items: CHResult[] = Array.isArray(data.items) ? data.items.slice(0, 8) : [];
+      setResults(items);
+      setOpen(true);
+      setActive(-1);
+      if (items.length === 1) choose(items[0]);
+      if (items.length === 0) setError(`No Companies House match for “${term}”.`);
+    } catch (e) {
+      if ((e as Error).name !== "AbortError") setError((e as Error).message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const submit = () => {
+    if (results.length > 0) choose(results[active >= 0 ? active : 0]);
+    else searchNow();
+  };
+
   const onKey = (e: React.KeyboardEvent) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      submit();
+      return;
+    }
     if (!open || results.length === 0) return;
     if (e.key === "ArrowDown") {
       e.preventDefault();
@@ -80,9 +116,6 @@ export default function SearchBar({
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
       setActive((a) => Math.max(0, a - 1));
-    } else if (e.key === "Enter" && active >= 0) {
-      e.preventDefault();
-      choose(results[active]);
     } else if (e.key === "Escape") {
       setOpen(false);
     }
@@ -101,9 +134,14 @@ export default function SearchBar({
             aria-label="Search Companies House"
             className="w-full border border-[#d2d2d4] border-r-0 bg-white px-3 py-2 text-[14px] text-[#3f3f3f] placeholder:text-[#9a9a9d] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6c1d45]"
           />
-          <span className="flex items-center border border-[#6c1d45] bg-[#6c1d45] px-3 text-[13px] font-bold text-white">
+          <button
+            type="button"
+            onClick={submit}
+            aria-label="Search Companies House"
+            className="flex items-center border border-[#6c1d45] bg-[#6c1d45] px-3 text-[13px] font-bold text-white hover:bg-[#59183a]"
+          >
             {loading || busy ? "…" : "Search"}
-          </span>
+          </button>
         </div>
 
         {open && (results.length > 0 || error) ? (

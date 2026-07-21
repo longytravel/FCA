@@ -116,15 +116,16 @@ export default function SweepTable({
 
   return (
     <section className="border border-[#d2d2d4] bg-white">
-      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#d2d2d4] bg-[#f0f0f1] px-4 py-2">
+      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#d2d2d4] bg-[#6c1d45] px-4 py-2">
         <div>
-          <h3 className="text-sm font-bold text-[#6c1d45]">Sweep league table</h3>
-          <p className="text-[12px] text-[#75767a]">
-            Directors of fined firms who have resurfaced on active companies.
+          <h3 className="text-sm font-bold text-white">The sweep — every fined firm, rechecked</h3>
+          <p className="text-[12px] text-white/75">
+            Directors of fined firms now running active companies. Click a row to load that firm
+            into the map.
           </p>
         </div>
         {state === "ready" && payload?.generatedAt ? (
-          <span className="text-[11px] text-[#75767a]">
+          <span className="text-[11px] text-white/75">
             Swept {new Date(payload.generatedAt).toLocaleDateString("en-GB")}
           </span>
         ) : null}

@@ -29,7 +29,7 @@ export function Wordmark({ className = "" }: { className?: string }) {
   );
 }
 
-export type ActivePage = "home" | "how-it-works" | "method" | "phoenix-watch";
+export type ActivePage = "home" | "how-it-works" | "method" | "phoenix-watch" | "intro";
 
 type NavLink = { href: string; label: string; page: string; highlight?: boolean };
 
@@ -38,6 +38,7 @@ export const NAV_LINKS: NavLink[] = [
   { href: "/#choose", label: "What we build", page: "build" },
   { href: "/method", label: "Method", page: "method" },
   { href: "/how-it-works", label: "How it works", page: "how-it-works" },
+  { href: "/phoenix-watch/intro", label: "▶ The film", page: "intro" },
   { href: "/phoenix-watch", label: "Phoenix Watch", page: "phoenix-watch", highlight: true },
 ];
 

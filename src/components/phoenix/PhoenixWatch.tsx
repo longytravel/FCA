@@ -45,6 +45,10 @@ export default function PhoenixWatch() {
     if (searchParams.get("present") === "1") setPresent(true);
   }, [searchParams]);
 
+  // Auto-open Case 1 once the fixture has painted, so a first-time visitor lands
+  // on a working investigation (live resolve + streaming briefing), not an empty tool.
+  const autoLoaded = useRef(false);
+
   // load instant-paint fixture (agent C copies it to public/phoenix-graph.json)
   useEffect(() => {
     let cancelled = false;
@@ -65,6 +69,18 @@ export default function PhoenixWatch() {
       cancelled = true;
     };
   }, []);
+
+  // Kick off Case 1 automatically on first visit (after the fixture paints).
+  useEffect(() => {
+    if (autoLoaded.current) return;
+    if (fixtureState !== "ready" && fixtureState !== "empty") return;
+    autoLoaded.current = true;
+    if (!focusFirm) {
+      const c = CASES[0];
+      if (c) resolveFirm(c.number, c.name);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [fixtureState]);
 
   const { min: tlMin, max: tlMax } = useMemo(() => computeAppearance(graph), [graph]);
   useEffect(() => {
@@ -118,7 +134,14 @@ export default function PhoenixWatch() {
         const res = await fetch(`/api/phoenix/resolve?company=${encodeURIComponent(companyNumber)}`, {
           signal: ac.signal,
         });
-        if (!res.ok) throw new Error(`Resolve failed (${res.status})`);
+        if (!res.ok) {
+          let msg = `Companies House lookup failed (${res.status})`;
+          try {
+            const j = await res.json();
+            if (j?.error) msg = j.error;
+          } catch {}
+          throw new Error(msg);
+        }
         const data = await res.json();
         const incoming: PhoenixGraph = data.graph ?? { nodes: [], edges: [] };
         setGraph((g) => mergeGraph(g, incoming));
@@ -186,8 +209,10 @@ export default function PhoenixWatch() {
         }`}
       >
         {resolving
-          ? `Resolving ${focusFirm?.name ?? "firm"} from Companies House…`
-          : `Could not resolve: ${resolveError}`}
+          ? `Pulling ${focusFirm?.name ?? "firm"}'s records live from Companies House…`
+          : graph.nodes.some((n) => n.id === focusFirm?.id)
+            ? `Live refresh unavailable (${resolveError}) — showing the records we already hold.`
+            : `Could not load this firm: ${resolveError}`}
       </div>
     ) : null;
 
@@ -274,9 +299,11 @@ export default function PhoenixWatch() {
               </a>
               <button
                 onClick={() => setPresent(true)}
-                className="border border-[#6c1d45] bg-white px-3 py-2 text-[13px] font-bold text-[#6c1d45] hover:bg-[#6c1d45] hover:text-white"
+                title="Full-screen map for a projector. Keys 1, 2, 3 jump between the cases; Esc returns here."
+                className="border border-[#6c1d45] bg-white px-3 py-2 text-left text-[13px] font-bold leading-tight text-[#6c1d45] hover:bg-[#6c1d45] hover:text-white"
               >
-                Presenter mode
+                Big-screen mode
+                <span className="block text-[10px] font-normal opacity-75">for projectors · Esc exits</span>
               </button>
             </div>
           </div>
@@ -361,10 +388,18 @@ export default function PhoenixWatch() {
           </div>
 
           <div className="flex flex-col gap-4">
-            <div className="h-[360px] border border-[#d2d2d4] bg-white">
-              <NodeDetailPanel node={selectedNode} onClose={() => setSelectedNode(null)} onDossier={setDossierNode} />
-            </div>
             <BriefingPanel graph={graph} focusId={focusFirm?.id ?? null} focusName={focusFirm?.name ?? null} />
+            {selectedNode ? (
+              <div className="max-h-[480px] overflow-auto border border-[#d2d2d4] bg-white">
+                <NodeDetailPanel node={selectedNode} onClose={() => setSelectedNode(null)} onDossier={setDossierNode} />
+              </div>
+            ) : (
+              <p className="border border-dashed border-[#d2d2d4] bg-white px-3 py-3 text-[13px] text-[#75767a]">
+                <b className="text-[#3f3f3f]">Tip:</b> click any square (company) or circle
+                (director) in the map — its Companies House record and the working behind its risk
+                score appear here.
+              </p>
+            )}
           </div>
         </div>
 

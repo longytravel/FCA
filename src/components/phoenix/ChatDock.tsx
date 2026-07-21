@@ -78,10 +78,11 @@ export default function ChatDock({
 
   return (
     <section className="flex h-full flex-col border border-[#d2d2d4] bg-white">
-      <div className="border-b border-[#d2d2d4] bg-[#f0f0f1] px-4 py-2">
-        <h3 className="text-sm font-bold text-[#6c1d45]">Ask this network</h3>
-        <p className="text-[12px] text-[#75767a]">
-          Agentic — Claude queries Companies House live and grows the graph as it finds entities.
+      <div className="border-b border-[#d2d2d4] bg-[#6c1d45] px-4 py-2">
+        <h3 className="text-sm font-bold text-white">Ask this network</h3>
+        <p className="text-[12px] text-white/75">
+          Ask a question in plain English — Claude checks Companies House live and adds what it
+          finds to the map above.
         </p>
       </div>
 
