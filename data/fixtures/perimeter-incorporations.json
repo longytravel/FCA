@@ -1,0 +1,6085 @@
+{
+ "generated": "2026-07-21",
+ "source": "Companies House Advanced Search API (advanced-search/companies)",
+ "window": "2025-06-01..2025-07-15",
+ "sic_legend": {
+  "64110": "Central banking",
+  "64191": "Banks",
+  "64922": "Other credit granting",
+  "64929": "Credit granting nec",
+  "64999": "Financial services nec",
+  "66190": "Aux to financial services",
+  "66220": "Insurance/pension broking",
+  "66300": "Fund management"
+ },
+ "note": "Finance-flavoured NEW incorporations cross-checked against FCA authorisation (perimeter watch). fcaAuthorised=false + regulated-activity SIC = firms operating finance-adjacent without FCA authorisation.",
+ "counts": {
+  "total": 472,
+  "nameFlagged": 115,
+  "highRisk": 59,
+  "authorised": 0
+ },
+ "companies": [
+  {
+   "name": "BRUCE-CLIFTON PROPERTY HOLDINGS LTD",
+   "number": "16583933",
+   "incorporated": "2025-07-15",
+   "sic_codes": [
+    "64306",
+    "64922",
+    "68310"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "TS FINANCE LIMITED",
+   "number": "16584062",
+   "incorporated": "2025-07-15",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Leicester",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "CASINT LTD",
+   "number": "16584080",
+   "incorporated": "2025-07-15",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "Reading",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AMGE UK LTD",
+   "number": "16583983",
+   "incorporated": "2025-07-15",
+   "sic_codes": [
+    "64209",
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MILLER FINSERV LTD",
+   "number": "16583309",
+   "incorporated": "2025-07-15",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Darlington",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SALAMAAT LIMITED",
+   "number": "16584710",
+   "incorporated": "2025-07-15",
+   "sic_codes": [
+    "62012",
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CRESCENTE BROKERS LTD",
+   "number": "16582928",
+   "incorporated": "2025-07-15",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Manchester",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "NEXUS LAWYERS LIMITED",
+   "number": "16584446",
+   "incorporated": "2025-07-15",
+   "sic_codes": [
+    "64921",
+    "66220",
+    "69102",
+    "69109"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ASSICURIAMO. CI LTD",
+   "number": "16583182",
+   "incorporated": "2025-07-15",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LLOYD & CO CORPORATE PENSIONS LTD",
+   "number": "16583815",
+   "incorporated": "2025-07-15",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Southport",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TREASURE FINANCIAL SERVICES LIMITED",
+   "number": "16581499",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TRIDENT MORTGAGES & PROTECTION LTD",
+   "number": "16581255",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "64922",
+    "64999",
+    "66220"
+   ],
+   "address": "Cullompton",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ASK SAM MORTGAGES LTD",
+   "number": "16580144",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Sleaford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SPEYSIDE FINANCE GROUP LTD",
+   "number": "SC855524",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "64922",
+    "66220"
+   ],
+   "address": "Keith",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "VIZION FINANCE LTD",
+   "number": "16579820",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "64910",
+    "64929",
+    "66220"
+   ],
+   "address": "Salford",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "FINTERN FINANCE COZ6 LTD",
+   "number": "16578757",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "STADRITE SERVICES LTD",
+   "number": "16579014",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "64999",
+    "70221",
+    "82190",
+    "82990"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MAXMILA GROUP LTD",
+   "number": "16580426",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "62020",
+    "64999",
+    "70229",
+    "73110"
+   ],
+   "address": "Attleborough",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FINANCE MY VAT LIMITED",
+   "number": "16580392",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Chester",
+   "nameFlagged": true,
+   "fcaAuthorised": true,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": "AJL Finance Limited (Postcode: CH3 5HH)"
+  },
+  {
+   "name": "THINKN LTD",
+   "number": "16581058",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "62012",
+    "62090",
+    "63120",
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AJMAL SEKA LIMITED",
+   "number": "16578737",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "45112",
+    "66220",
+    "70229"
+   ],
+   "address": "Ruislip,",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GROW MONEY GROUP LIMITED",
+   "number": "16578730",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "65120",
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "KEITH GEOFFREY INVESTMENTS",
+   "number": "16579475",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Milton Keynes",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "RIGEL MARKETS LTD",
+   "number": "16581200",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "64991",
+    "66110",
+    "66120",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "JARDIN SIROCCO FOUNDATION",
+   "number": "16579376",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "66300",
+    "74990",
+    "94990"
+   ],
+   "address": "Ipswich",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MY BLOCKCHAIN LTD",
+   "number": "16579602",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "62090",
+    "66110",
+    "66190",
+    "66300"
+   ],
+   "address": "Braintree",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "16PHD LTD",
+   "number": "16581590",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Cambridge",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "3SW LAND INVESTMENTS LIMITED",
+   "number": "16581496",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "41100",
+    "41202",
+    "66300",
+    "68100"
+   ],
+   "address": "Tadworth",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AURUM HEAVEN HOLDING LTD",
+   "number": "16580999",
+   "incorporated": "2025-07-14",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ROACHE ADVISORY LIMITED",
+   "number": "16578289",
+   "incorporated": "2025-07-13",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "HA CAPITAL FINANCE LIMITED",
+   "number": "16578213",
+   "incorporated": "2025-07-13",
+   "sic_codes": [
+    "66190",
+    "68100",
+    "70221",
+    "96090"
+   ],
+   "address": "Reading",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "COVER MOTION LIMITED",
+   "number": "16578404",
+   "incorporated": "2025-07-13",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Horsham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MARROWGATE HOLDINGS LTD",
+   "number": "16578590",
+   "incorporated": "2025-07-13",
+   "sic_codes": [
+    "64209",
+    "64303",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "NORTHWOOD ESSEX FINANCIAL LTD",
+   "number": "16577987",
+   "incorporated": "2025-07-12",
+   "sic_codes": [
+    "64922",
+    "64999",
+    "66220"
+   ],
+   "address": "Chelmsford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SOLENT FINANCIAL LTD",
+   "number": "16578182",
+   "incorporated": "2025-07-12",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Southampton",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ADVISE MY MORTGAGE & PROTECTION LTD",
+   "number": "SC855287",
+   "incorporated": "2025-07-11",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Dunfermline",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LK FINANCIAL SOLUTIONS LTD",
+   "number": "NI731355",
+   "incorporated": "2025-07-11",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Carrickfergus",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "OXA CAPITAL LIMITED",
+   "number": "16575876",
+   "incorporated": "2025-07-11",
+   "sic_codes": [
+    "64304",
+    "64991",
+    "64999"
+   ],
+   "address": "Essex",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "STRIVE FINANCIAL PLANNING LTD",
+   "number": "16577051",
+   "incorporated": "2025-07-11",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Hebden Bridge",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "XRGL LTD",
+   "number": "16575997",
+   "incorporated": "2025-07-11",
+   "sic_codes": [
+    "62012",
+    "66190",
+    "74909",
+    "82990"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SEAFORT GLOBAL TECHNOLOGY LTD",
+   "number": "16576309",
+   "incorporated": "2025-07-11",
+   "sic_codes": [
+    "62012",
+    "62020",
+    "63110",
+    "66190"
+   ],
+   "address": "Stockton-On-Tees",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CARDAN (PFP) LTD",
+   "number": "16576969",
+   "incorporated": "2025-07-11",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Worcester",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CORPORATE ASSET RISK MANAGEMENT LTD",
+   "number": "16576727",
+   "incorporated": "2025-07-11",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Sutton",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "AYA ASSET MANAGEMENT LTD",
+   "number": "16576113",
+   "incorporated": "2025-07-11",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Farringdon",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "LEADWOOD PARTNERS LIMITED",
+   "number": "16577048",
+   "incorporated": "2025-07-11",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "IYRIA FINANCIAL SERVICES LTD",
+   "number": "16575526",
+   "incorporated": "2025-07-10",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Surbiton",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MATTHEWS ASSET MANAGEMENT LTD",
+   "number": "16572758",
+   "incorporated": "2025-07-10",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": true,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": "Warner Matthews Limited (Postcode: GL50 1NW)"
+  },
+  {
+   "name": "AKKA FINANCIAL TECHNOLOGIES LTD",
+   "number": "16573115",
+   "incorporated": "2025-07-10",
+   "sic_codes": [
+    "64999",
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "INTERNATIONAL WARRANTY GROUP LIMITED",
+   "number": "16573880",
+   "incorporated": "2025-07-10",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Seaford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "APOLLU CAPITAL LIMITED",
+   "number": "16574031",
+   "incorporated": "2025-07-10",
+   "sic_codes": [
+    "64209",
+    "64303",
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "OPTIMAL PARAPLANNING LTD",
+   "number": "16573700",
+   "incorporated": "2025-07-10",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Stourbridge",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FUNDING BY LTD",
+   "number": "16574520",
+   "incorporated": "2025-07-10",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "WEALTHVECTOR LIMITED",
+   "number": "16573038",
+   "incorporated": "2025-07-10",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AEGIS CAPITAL PARTNERS LIMITED",
+   "number": "16574468",
+   "incorporated": "2025-07-10",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Cambridge",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "VIE LEGAL RISK SOLUTIONS LTD",
+   "number": "16574354",
+   "incorporated": "2025-07-10",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "INSURE SAVVY LIMITED",
+   "number": "16573528",
+   "incorporated": "2025-07-10",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Knutsford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ATRAM WEALTH LTD",
+   "number": "16573212",
+   "incorporated": "2025-07-10",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "ULS FINANCE LTD",
+   "number": "16574990",
+   "incorporated": "2025-07-10",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "HAUPT & CO LTD",
+   "number": "16572615",
+   "incorporated": "2025-07-09",
+   "sic_codes": [
+    "64922",
+    "65110",
+    "66220"
+   ],
+   "address": "Winscombe",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MORTGAGE AID CIC",
+   "number": "SC855013",
+   "incorporated": "2025-07-09",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Glasgow",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SAPPHIRE MORTGAGES LIMITED",
+   "number": "16570396",
+   "incorporated": "2025-07-09",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Rochford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "NIFTIER BRIDGING LTD",
+   "number": "16571274",
+   "incorporated": "2025-07-09",
+   "sic_codes": [
+    "64929",
+    "82990"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "NOT PRIVATE EQUITY LIMITED",
+   "number": "16571020",
+   "incorporated": "2025-07-09",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Sevenoaks",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "PAYMASTER ITALIA LTD",
+   "number": "16571181",
+   "incorporated": "2025-07-09",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GUARDIAN MORTGAGES AND RISK SOLUTIONS LTD",
+   "number": "16572084",
+   "incorporated": "2025-07-09",
+   "sic_codes": [
+    "66190",
+    "66220"
+   ],
+   "address": "Brentford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TORQUE FX CAPITAL LTD",
+   "number": "16571940",
+   "incorporated": "2025-07-09",
+   "sic_codes": [
+    "64205",
+    "64301",
+    "66110",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "MOTUS MORTGAGE LIMITED",
+   "number": "16568537",
+   "incorporated": "2025-07-08",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Widnes",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CMF 2025-1 PLC",
+   "number": "16569428",
+   "incorporated": "2025-07-08",
+   "sic_codes": [
+    "64922",
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "THAMES STREET WB LIMITED",
+   "number": "16569918",
+   "incorporated": "2025-07-08",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ARKMOR CAPITAL LTD",
+   "number": "16569231",
+   "incorporated": "2025-07-08",
+   "sic_codes": [
+    "66190",
+    "82110"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "PAYTRUEQR LIMITED",
+   "number": "16567595",
+   "incorporated": "2025-07-08",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SKP SOLUTIONS LTD",
+   "number": "16568084",
+   "incorporated": "2025-07-08",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Sale",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ATHENA RE (UK) LIMITED",
+   "number": "16566335",
+   "incorporated": "2025-07-08",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "DRIIVA LTD.",
+   "number": "16567531",
+   "incorporated": "2025-07-08",
+   "sic_codes": [
+    "62012",
+    "62090",
+    "66220",
+    "66290"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GLOBAL INTERNATIONAL HOLDING LTD",
+   "number": "16567055",
+   "incorporated": "2025-07-08",
+   "sic_codes": [
+    "64999",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BELGRAVE PENDLETON LTD",
+   "number": "16563785",
+   "incorporated": "2025-07-07",
+   "sic_codes": [
+    "64922",
+    "66190",
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "B H PROPERTY FINANCE LIMITED",
+   "number": "16564107",
+   "incorporated": "2025-07-07",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Norwich",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "PAVILLION MORTGAGES 2026-1 PLC",
+   "number": "16563249",
+   "incorporated": "2025-07-07",
+   "sic_codes": [
+    "64922",
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MORRIS ADVISORY GROUP LIMITED",
+   "number": "16564053",
+   "incorporated": "2025-07-07",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Rugby",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "HARMICK HOMES LIMITED",
+   "number": "16563710",
+   "incorporated": "2025-07-07",
+   "sic_codes": [
+    "41100",
+    "66190",
+    "68100"
+   ],
+   "address": "Taunton",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BLUEQUARTZ CONSULTING LTD",
+   "number": "16566100",
+   "incorporated": "2025-07-07",
+   "sic_codes": [
+    "62012",
+    "66190",
+    "70229",
+    "74100"
+   ],
+   "address": "Sandy",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MOTOLEND LTD",
+   "number": "16564707",
+   "incorporated": "2025-07-07",
+   "sic_codes": [
+    "64999",
+    "66190"
+   ],
+   "address": "Ilford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "HARMONY PROTECTED LTD",
+   "number": "16563597",
+   "incorporated": "2025-07-07",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Houghton Le Spring",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AUTUMN MONEY LTD",
+   "number": "16565622",
+   "incorporated": "2025-07-07",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Potters Bar",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TIME ZONE SYNCPULSE LIMITED",
+   "number": "16563984",
+   "incorporated": "2025-07-07",
+   "sic_codes": [
+    "46180",
+    "66220",
+    "73110"
+   ],
+   "address": "Kington",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "DG HOME SOLUTIONS LTD",
+   "number": "16565187",
+   "incorporated": "2025-07-07",
+   "sic_codes": [
+    "64999",
+    "66190",
+    "66220"
+   ],
+   "address": "Feltham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AXIMORA CORP LTD",
+   "number": "16562588",
+   "incorporated": "2025-07-07",
+   "sic_codes": [
+    "66110",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CC CAPITAL LONDON LTD",
+   "number": "16565608",
+   "incorporated": "2025-07-07",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "CASPIAN CAPITAL MANAGEMENT LTD",
+   "number": "16564280",
+   "incorporated": "2025-07-07",
+   "sic_codes": [
+    "66300",
+    "68209"
+   ],
+   "address": "Eastbourne",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "MORTGAGE INTEL LTD",
+   "number": "16562298",
+   "incorporated": "2025-07-06",
+   "sic_codes": [
+    "64922",
+    "64999"
+   ],
+   "address": "Birmingham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FAST BINARYS LTD",
+   "number": "16562292",
+   "incorporated": "2025-07-06",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "JODIE HENSON MORTGAGE & PROTECTION LTD",
+   "number": "16558613",
+   "incorporated": "2025-07-03",
+   "sic_codes": [
+    "64922",
+    "66220"
+   ],
+   "address": "Nottingham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TFP ARBOR LTD",
+   "number": "16558667",
+   "incorporated": "2025-07-03",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SPOT TRADE LTD",
+   "number": "16559857",
+   "incorporated": "2025-07-03",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Ilford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ASH MORTGAGE SERVICES LTD",
+   "number": "16560079",
+   "incorporated": "2025-07-03",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Gloucester",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ECI 12 SPECIAL PURPOSE MIDCO 2 LIMITED",
+   "number": "16559406",
+   "incorporated": "2025-07-03",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Watford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AMPLITUDE MIDCO LIMITED",
+   "number": "16558793",
+   "incorporated": "2025-07-03",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Swindon",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "STORM CAPITAL GROWTH LTD",
+   "number": "SC854523",
+   "incorporated": "2025-07-03",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Dalmellington",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "ECI 12 SPECIAL PURPOSE MIDCO 1 LIMITED",
+   "number": "16559346",
+   "incorporated": "2025-07-03",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Watford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "D HARBRIDGE LTD",
+   "number": "16559026",
+   "incorporated": "2025-07-03",
+   "sic_codes": [
+    "66300",
+    "85590",
+    "96090"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "EQUITURN EMEA LTD",
+   "number": "16560763",
+   "incorporated": "2025-07-03",
+   "sic_codes": [
+    "64205",
+    "64303",
+    "64999",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AMPLITUDE BIDCO LIMITED",
+   "number": "16559860",
+   "incorporated": "2025-07-03",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Swindon",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "WOODMAN PRIVATE EQUITY UK LTD",
+   "number": "16559931",
+   "incorporated": "2025-07-03",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "KD MORTGAGES LIMITED",
+   "number": "16558336",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Middlesbrough",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FINE FINANCE AND PROTECTION LTD",
+   "number": "16558038",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "64922",
+    "64999",
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": true,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": "Muhammad Sajid Siddique Sheikh (Postcode: NG8 4HR)"
+  },
+  {
+   "name": "BARRINGTON EXCHANGE LTD",
+   "number": "16556357",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "VERTEX FINANCIAL LIMITED",
+   "number": "16557701",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "66190",
+    "66220"
+   ],
+   "address": "Sheffield",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SUMMIT TAX EXPERTS LTD",
+   "number": "16556636",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "66110",
+    "66190",
+    "69102",
+    "69203"
+   ],
+   "address": "Brighton & Hove",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ORORO GROUP LTD",
+   "number": "16558291",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FOREVERSURE LIMITED",
+   "number": "16556920",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Altrincham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "HOLMEAD COMMODITIES LIMITED",
+   "number": "16555840",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "66120",
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FSAFE SERVICES LIMITED",
+   "number": "16557220",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Whyteleafe",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SLOWIK & HARDING LTD",
+   "number": "16556941",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "OVERSHIELD LTD",
+   "number": "16556528",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Brimstage Road",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AJYAD REAL ESTATE UK LTD",
+   "number": "16556598",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "64205",
+    "66220",
+    "68100",
+    "70221"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ADBLU LTD",
+   "number": "16557684",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Caterham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SIRIUS X GLOBAL APP LTD",
+   "number": "16556156",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Cardiff",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MY GOLD NET LTD",
+   "number": "16555168",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Cardiff",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "METSU CAPITAL LIMITED",
+   "number": "16556149",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Nailsworth",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "PEAK VEGA CAPITAL LIMITED",
+   "number": "16557966",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "AMPLITUDE TOPCO LIMITED",
+   "number": "16556499",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Swindon",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "NEXUREON LTD",
+   "number": "16556749",
+   "incorporated": "2025-07-02",
+   "sic_codes": [
+    "62020",
+    "64991",
+    "66300"
+   ],
+   "address": "Kington",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "HARMONY COMMERCIAL LIMITED",
+   "number": "16552750",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Worcester",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "NT JUST MORTGAGES LTD",
+   "number": "16553309",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "64922",
+    "64999",
+    "66220"
+   ],
+   "address": "Bradford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "KRD COMMERCIAL LTD",
+   "number": "SC854237",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "64910",
+    "64922",
+    "64999"
+   ],
+   "address": "Wishaw",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ROYALE MORTGAGES LTD",
+   "number": "16553530",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "64922",
+    "66220",
+    "68100",
+    "68209"
+   ],
+   "address": "Southall",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "NESTPIP MARKETS LIMITED",
+   "number": "16553347",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "64922",
+    "66190",
+    "66220",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "VG CAPITAL MARKETS SERVICES (UK) LIMITED",
+   "number": "16553162",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Guildford",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "XU EXCHANGE LIMITED",
+   "number": "16551916",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "RED CUBE INVESTMENTS LTD",
+   "number": "16552333",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "62012",
+    "62020",
+    "64999",
+    "70229"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "IYABO LTD",
+   "number": "16554153",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "64999",
+    "70229",
+    "82990"
+   ],
+   "address": "Chester Le Street",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MERIDIAN FUNDING 2025-1 PLC",
+   "number": "16554540",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MINTED GROUP LTD",
+   "number": "16554684",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Brentwood",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "M SVN CAPITAL LTD",
+   "number": "16553599",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Doncaster",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "RWAEX LTD",
+   "number": "16554526",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "64303",
+    "64304",
+    "66120",
+    "66190"
+   ],
+   "address": "Cambridge",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "INSAFEHANDS INTERNATIONAL LTD",
+   "number": "16552994",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "66190",
+    "82990"
+   ],
+   "address": "Birmingham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BONFORD LTD",
+   "number": "16552020",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AUTO CRUISING LTD",
+   "number": "16551894",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Godalming",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ARVE GLOBAL GROUP LTD",
+   "number": "16553600",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "COMMUNITY HEAT (SIB) LIMITED",
+   "number": "16553267",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "XAU TRADING SOLUTIONS LTD",
+   "number": "SC854198",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Glasgow",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "HILTER REAL ESTATE TECHNOLOGIES LTD",
+   "number": "16553434",
+   "incorporated": "2025-07-01",
+   "sic_codes": [
+    "62020",
+    "66300"
+   ],
+   "address": "Cardiff",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FIRST TIME BUYER MORTGAGES LTD",
+   "number": "NI730959",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Belfast",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "G HUNTER LIMITED",
+   "number": "SC854043",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Glasgow",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ROCKMERE FINANCE LTD",
+   "number": "16551568",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "64922",
+    "66220"
+   ],
+   "address": "West Drayton",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "MW PROTECTION LIMITED",
+   "number": "16549963",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Middlesbrough",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GEOLA MORTGAGE ADVICE LIMITED",
+   "number": "16550250",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CHESHIRE 2025-1 PLC",
+   "number": "16551042",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MARKET PRICES LTD",
+   "number": "16549786",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "64999",
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BANTICO LTD",
+   "number": "16551033",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "62012",
+    "63110",
+    "64999",
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BEST CHANGE GLOBAL LTD",
+   "number": "16551222",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "64999",
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SCEPTOR LTD",
+   "number": "16550081",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "64999",
+    "66190"
+   ],
+   "address": "Cardiff",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "A.I. STRATEGY LTD",
+   "number": "16549034",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "HIMALAYA CAPITAL MANAGEMENT (UK) LIMITED",
+   "number": "16549045",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": null
+  },
+  {
+   "name": "ANTIMATTER AI LABS LTD",
+   "number": "16550406",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "64304",
+    "66300",
+    "68100",
+    "68209"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LSKL LTD",
+   "number": "16549988",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LEESIDE GROUP LIMITED",
+   "number": "16549614",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "HEDGE TRADE PRIVATE LIMITED",
+   "number": "16551719",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "64301",
+    "66300",
+    "70221",
+    "94200"
+   ],
+   "address": "Cardiff",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GOLDEN LION LTD",
+   "number": "16549764",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "66300",
+    "70229"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "DUFOUR CAPITAL LIMITED",
+   "number": "16551611",
+   "incorporated": "2025-06-30",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": true,
+   "perimeterRisk": "high",
+   "fcaRegisterMatch": "DUFOUR CAPITAL LIMITED (Postcode: SW1X 7LY)"
+  },
+  {
+   "name": "VELMARA LIMITED",
+   "number": "16548594",
+   "incorporated": "2025-06-29",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Swansea",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "STONECOLD VENTURES LTD",
+   "number": "16548317",
+   "incorporated": "2025-06-28",
+   "sic_codes": [
+    "64301",
+    "64999"
+   ],
+   "address": "Southampton",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "WLS MORTGAGE ADVICE LIMITED",
+   "number": "16548309",
+   "incorporated": "2025-06-28",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Neath",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SWM MORTGAGES LTD",
+   "number": "16547687",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "64922",
+    "66220"
+   ],
+   "address": "Margate",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "THE LEGACY NEST LTD",
+   "number": "16546049",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "64922",
+    "65110",
+    "65120",
+    "66290"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "VALE AND VALLEY MORTGAGES LTD",
+   "number": "16545700",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "64922",
+    "66220"
+   ],
+   "address": "Swansea",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "WOLF STREET MIDDLE EAST TRADING AND CONSULTANCY LTD",
+   "number": "16545732",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "64999",
+    "66190",
+    "70221",
+    "70229"
+   ],
+   "address": "Morden",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "ACF ADVISORY LIMITED",
+   "number": "16547077",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Burton Waters",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BARNES RURAL FINANCE LTD",
+   "number": "16546935",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Norwich",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "SHEPHERD FINANCIAL RESEARCH LIMITED",
+   "number": "16547659",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "New Milton",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "NG MORTGAGES LIMITED",
+   "number": "16547844",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Wirral",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "WE HELP YOU LTD",
+   "number": "SC853880",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Larkhall",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BTD FINANCIAL ADVICE LTD",
+   "number": "16545831",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Fareham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "HOUNDS4POUNDS LTD",
+   "number": "16546411",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "63120",
+    "66220",
+    "82990",
+    "96090"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CUTRONAS COMPLIANCE CONSULTANCY LIMITED",
+   "number": "16545669",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Wigan",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "OAK BRIDGE LEGAL LIMITED",
+   "number": "16545702",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Manchester",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GLOBAL DIGITAL ASSET MANAGEMENT LTD",
+   "number": "16546316",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Watford",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "WORLDONE CAPITAL LIMITED",
+   "number": "16547720",
+   "incorporated": "2025-06-27",
+   "sic_codes": [
+    "64205",
+    "64301",
+    "64910",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "LADD MORTGAGES LIMITED",
+   "number": "16544746",
+   "incorporated": "2025-06-26",
+   "sic_codes": [
+    "64922",
+    "66220"
+   ],
+   "address": "Plymouth",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ASD MORTGAGE AND PROTECTION LTD",
+   "number": "16543327",
+   "incorporated": "2025-06-26",
+   "sic_codes": [
+    "64922",
+    "66220"
+   ],
+   "address": "Huddersfield",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ORVIA WEALTH LTD",
+   "number": "16543053",
+   "incorporated": "2025-06-26",
+   "sic_codes": [
+    "64205",
+    "64305",
+    "64910",
+    "64929"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "ASTUTE COMMERCIAL FINANCE LIMITED",
+   "number": "16544774",
+   "incorporated": "2025-06-26",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Waterlooville",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "BANGLA STORE NOTTINGHAM LIMITED",
+   "number": "16544652",
+   "incorporated": "2025-06-26",
+   "sic_codes": [
+    "47210",
+    "47230",
+    "56102",
+    "64999"
+   ],
+   "address": "Nottingham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FLUR TECHNOLOGIES LTD",
+   "number": "16544393",
+   "incorporated": "2025-06-26",
+   "sic_codes": [
+    "62012",
+    "62090",
+    "63110",
+    "64999"
+   ],
+   "address": "Cardiff",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "PAYMORE LIMITED",
+   "number": "16544853",
+   "incorporated": "2025-06-26",
+   "sic_codes": [
+    "47410",
+    "62012",
+    "62090",
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "128 ASSETS LTD",
+   "number": "16543223",
+   "incorporated": "2025-06-26",
+   "sic_codes": [
+    "66190",
+    "74990"
+   ],
+   "address": "Liverpool",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CATAPULT BUSINESS FINANCE LIMITED",
+   "number": "16543575",
+   "incorporated": "2025-06-26",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Ossett",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "WORK ASSURED LIMITED",
+   "number": "SC853672",
+   "incorporated": "2025-06-26",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Denny",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ENHARDT GROUP HOLDINGS LTD",
+   "number": "16543261",
+   "incorporated": "2025-06-26",
+   "sic_codes": [
+    "66120",
+    "66300",
+    "68100",
+    "68320"
+   ],
+   "address": "Hereford",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "PIPZOMARKET LIMITED",
+   "number": "16544224",
+   "incorporated": "2025-06-26",
+   "sic_codes": [
+    "64209",
+    "64303",
+    "66220",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "OXENTIX CORP LTD",
+   "number": "16544349",
+   "incorporated": "2025-06-26",
+   "sic_codes": [
+    "66110",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LANGFORD PRIVATE CAPITAL LTD",
+   "number": "16541696",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "Lechlade",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "RAPIDUS LTD",
+   "number": "16540340",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "64999",
+    "66190"
+   ],
+   "address": "Hull",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "APERIO FINANCIAL PLANNERS LIMITED",
+   "number": "16540813",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Knutsford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GROVE FX LTD",
+   "number": "16542559",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Bridgwater",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "PEARSON MORTGAGES LTD",
+   "number": "SC853526",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Kinross",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AUREUM PRIVATE FINANCE LIMITED",
+   "number": "16542599",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Kettering",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "FRESH BUSINESS FINANCE LTD",
+   "number": "16542313",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Exeter",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "TOWPATH HOLDINGS LIMITED",
+   "number": "16540606",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "UKMM LIMITED",
+   "number": "16541342",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Derby",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SIGNATURE ONE MORTGAGES LTD",
+   "number": "16541833",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "South Shields",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "JONAS GLOBAL LTD",
+   "number": "16541318",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "PARQUE FINANCE LTD",
+   "number": "16542308",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "66220",
+    "82990"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "MARGOT & JUDE LOSS ADJUSTERS LTD",
+   "number": "16541159",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Knowle, Solihull",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TANFOX LIMITED",
+   "number": "16542260",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "65110",
+    "65120",
+    "66220",
+    "96030"
+   ],
+   "address": "Harlow",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "PARI GROUP LTD",
+   "number": "16541133",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "66220",
+    "70229",
+    "79110",
+    "79120"
+   ],
+   "address": "Stanmore",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CLAIMSERV LIMITED",
+   "number": "16540131",
+   "incorporated": "2025-06-25",
+   "sic_codes": [
+    "66220",
+    "74902"
+   ],
+   "address": "Bedford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "HYPOTHEKEN LIMITED",
+   "number": "16539749",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Altrincham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "JK PROPERTY FINANCE LTD",
+   "number": "16539531",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "AMANDA JAMIESON FINANCIAL SERVICES LTD",
+   "number": "SC853405",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Glasgow",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SWIFTLEND LIMITED",
+   "number": "16539591",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "64929",
+    "64999",
+    "66190"
+   ],
+   "address": "Northampton",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "DIGIWEALTH LTD",
+   "number": "16538636",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Pinner",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ADVISER CIRCLE LIMITED",
+   "number": "16538222",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Chatham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "REL LENDCO 4 LIMITED",
+   "number": "16539079",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GROW MORE PROPERTIES MORTGAGES LTD",
+   "number": "16538016",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Bushey",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "DB COMMERCIAL ADVICE CO LIMITED",
+   "number": "16538502",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Swansea",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GBE LONDON SUPPORT LIMITED",
+   "number": "16539420",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "DKRYPT LIMITED",
+   "number": "16538320",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MUONTRADER LIMITED",
+   "number": "16538127",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "62012",
+    "63110",
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ELEMCAZA LIMITED",
+   "number": "16538263",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Leyland",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LUMIERE ADVISORY PARTNERS LTD",
+   "number": "16538999",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Leyland",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LEGACY COVER LTD",
+   "number": "16538252",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "65110",
+    "65120",
+    "66220"
+   ],
+   "address": "Bournemouth",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ASSET PORTFOLIO GROUP LTD",
+   "number": "16538115",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "HASLIBERG 2005 LIMITED",
+   "number": "16538586",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Neston",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CAPIMAX FINTECH,BLOCKCHAIN LIMITED",
+   "number": "16538119",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "62090",
+    "64205",
+    "64999",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GEOMETRIC ADVISORS UK LIMITED",
+   "number": "16537314",
+   "incorporated": "2025-06-24",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Winchester",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "PV FINANCIAL SERVICES LIMITED",
+   "number": "16534709",
+   "incorporated": "2025-06-23",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Corby",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "DL MORTGAGE & PROTECTION SERVICES LIMITED",
+   "number": "16536757",
+   "incorporated": "2025-06-23",
+   "sic_codes": [
+    "64922",
+    "65110"
+   ],
+   "address": "Fareham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TREKA CAPITAL LTD",
+   "number": "16534536",
+   "incorporated": "2025-06-23",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "Bury St. Edmunds",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "CLOVE GROUP LIMITED",
+   "number": "16536239",
+   "incorporated": "2025-06-23",
+   "sic_codes": [
+    "58290",
+    "64999",
+    "66190"
+   ],
+   "address": "Altrincham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AFII CAPITAL PARTNERS LIMITED",
+   "number": "16535500",
+   "incorporated": "2025-06-23",
+   "sic_codes": [
+    "64205",
+    "64209",
+    "66190",
+    "70229"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "ELLITEFX LIMITED",
+   "number": "16536089",
+   "incorporated": "2025-06-23",
+   "sic_codes": [
+    "64910",
+    "64999",
+    "66220",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MITOFF.AI LTD",
+   "number": "16535787",
+   "incorporated": "2025-06-23",
+   "sic_codes": [
+    "66300",
+    "70221"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ASSET BRIDGE LTD",
+   "number": "16534348",
+   "incorporated": "2025-06-23",
+   "sic_codes": [
+    "64301",
+    "66300",
+    "96090"
+   ],
+   "address": "Peterborough",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "EXCBOT TRADE LTD",
+   "number": "16536303",
+   "incorporated": "2025-06-23",
+   "sic_codes": [
+    "64205",
+    "66300"
+   ],
+   "address": "Cardiff",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "OOF MORTGAGES LTD",
+   "number": "16533993",
+   "incorporated": "2025-06-22",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Lewes",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "VINE MORTGAGES LTD",
+   "number": "16533428",
+   "incorporated": "2025-06-21",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Poole",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TOM JOHNS FINANCIAL LIMITED",
+   "number": "16532242",
+   "incorporated": "2025-06-20",
+   "sic_codes": [
+    "64922",
+    "64999",
+    "66220"
+   ],
+   "address": "Northampton",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LLAMREI",
+   "number": "16531724",
+   "incorporated": "2025-06-20",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BID IV EUROPE (UK) LIMITED",
+   "number": "16532596",
+   "incorporated": "2025-06-20",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BTCPAYOFF LTD",
+   "number": "16533063",
+   "incorporated": "2025-06-20",
+   "sic_codes": [
+    "62012",
+    "62020",
+    "62090",
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "WRENSTONE CAPITAL LTD",
+   "number": "16532125",
+   "incorporated": "2025-06-20",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Romford",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "MAAA INTERNATIONALS LIMITED",
+   "number": "16532413",
+   "incorporated": "2025-06-20",
+   "sic_codes": [
+    "52242",
+    "66190",
+    "79110"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LTA FX LTD",
+   "number": "16531027",
+   "incorporated": "2025-06-20",
+   "sic_codes": [
+    "66190",
+    "66220",
+    "70221"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "VESTA FINANCIAL SOLUTIONS LIMITED",
+   "number": "16532842",
+   "incorporated": "2025-06-20",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Henley-On-Thames",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BROOKES PRIVATE CREDIT LIMITED",
+   "number": "16533010",
+   "incorporated": "2025-06-20",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Henley-On-Thames",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "ROKSTONE SURETY LIMITED",
+   "number": "16530982",
+   "incorporated": "2025-06-20",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CJF MORTGAGE SERVICES LIMITED",
+   "number": "16530420",
+   "incorporated": "2025-06-19",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Accrington",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LILLA PROPERTY LTD",
+   "number": "16528656",
+   "incorporated": "2025-06-19",
+   "sic_codes": [
+    "64929",
+    "68100"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ORBIAN FINANCIAL SERVICES LXV LIMITED",
+   "number": "16529737",
+   "incorporated": "2025-06-19",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MYSTICMAP LIMITED",
+   "number": "SC852863",
+   "incorporated": "2025-06-19",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Wishaw",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FLOWEEPAY LTD",
+   "number": "16528909",
+   "incorporated": "2025-06-19",
+   "sic_codes": [
+    "64999",
+    "66190"
+   ],
+   "address": "Northampton",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TIDY CORPORATION LTD",
+   "number": "16530001",
+   "incorporated": "2025-06-19",
+   "sic_codes": [
+    "62012",
+    "62020",
+    "63110",
+    "66190"
+   ],
+   "address": "Ruislip,",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ECHO INTELLIGENCE LTD",
+   "number": "16530330",
+   "incorporated": "2025-06-19",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Nottingham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AGENTIC RISK MANAGEMENT LTD",
+   "number": "16528191",
+   "incorporated": "2025-06-19",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MASMAK INTERNATIONAL LTD",
+   "number": "16529348",
+   "incorporated": "2025-06-19",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "COCK AND BULL CREATIVE LTD",
+   "number": "16529637",
+   "incorporated": "2025-06-19",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Milton Keynes",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LCU FINANCE LTD",
+   "number": "SC852910",
+   "incorporated": "2025-06-19",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Glasgow",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "IKAROS LTD",
+   "number": "16529272",
+   "incorporated": "2025-06-19",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Bungay",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MIG FINANCE LIMITED",
+   "number": "16528360",
+   "incorporated": "2025-06-19",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "YHUK HOLDING 1 LTD",
+   "number": "16526677",
+   "incorporated": "2025-06-18",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Richmond",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ND WEALTH MANAGEMENT LTD",
+   "number": "16527436",
+   "incorporated": "2025-06-18",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Stoke-On-Trent",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "YHUK HOLDING 2 LTD",
+   "number": "16526732",
+   "incorporated": "2025-06-18",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Richmond",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BIN SMARTER LTD",
+   "number": "16527604",
+   "incorporated": "2025-06-18",
+   "sic_codes": [
+    "38110",
+    "66220",
+    "82990"
+   ],
+   "address": "Wigan",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "C V MORTGAGE SOLUTIONS LTD",
+   "number": "16526148",
+   "incorporated": "2025-06-18",
+   "sic_codes": [
+    "66190",
+    "66220"
+   ],
+   "address": "Cannock",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TRADING HOUSE CLUB LIMITED",
+   "number": "16526665",
+   "incorporated": "2025-06-18",
+   "sic_codes": [
+    "66120",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "PNWG LTD",
+   "number": "16524570",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "64922",
+    "82110"
+   ],
+   "address": "King's Lynn",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "OMNI FS LTD",
+   "number": "SC852527",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Loanhead",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CHR FINANCIAL SOLUTIONS LIMITED",
+   "number": "16522709",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Newcastle Upon Tyne",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "KERSWORTHY MORTGAGE SERVICES LIMITED",
+   "number": "16524980",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "64922",
+    "70221"
+   ],
+   "address": "Wadebridge",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CINNABAR 2025 DIRECT LENDING, LIMITED",
+   "number": "16524830",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SPARKES PARAPLANNING LTD",
+   "number": "16525293",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "64999",
+    "66190",
+    "66290"
+   ],
+   "address": "Horsham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TANGILEX LIMITED",
+   "number": "16523107",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "62090",
+    "64999",
+    "66110",
+    "68209"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SL INVESTCO LIMITED",
+   "number": "16523695",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AXIFY LIMITED",
+   "number": "16522970",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Nottingham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SIOBHAN ROWLAND WEALTH MANAGEMENT LTD",
+   "number": "16523218",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "64999",
+    "66290"
+   ],
+   "address": "Warwick",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "HAWASLI HOLDINGS LIMITED",
+   "number": "16524357",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "TIERRA CAPITAL ADVISORS LTD",
+   "number": "16522938",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "THE TAX PLANNING SERVICE LIMITED",
+   "number": "16524754",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Dunmow",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TREBURNE FINANCIAL SERVICES LTD",
+   "number": "16522685",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Norwich",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ALABRO LTD",
+   "number": "16525085",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Carshalton",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MY HEALTH FIRST LTD",
+   "number": "16525215",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Swindon",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "RENTELLIGENCE LIMITED",
+   "number": "16522288",
+   "incorporated": "2025-06-17",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "KLAS FINANCIAL LIMITED",
+   "number": "16519085",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Billericay",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LYCON MORTGAGES LIMITED",
+   "number": "16521770",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Dunstable",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "OKUUK CAPITAL LIMITED",
+   "number": "16520037",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "64929",
+    "68100"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "DWELVE LTD",
+   "number": "16520346",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "41201",
+    "64929",
+    "68320",
+    "74901"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ASD CAPITAL LTD",
+   "number": "16520811",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "BRIDGEPOINT PRIVATE EQUITY (SPAIN) FP SGP LIMITED",
+   "number": "SC852382",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Edinburgh",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "ALMA NOOR LTD",
+   "number": "16519226",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "64209",
+    "64304",
+    "64999",
+    "68100"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ASSETENCE LIMITED",
+   "number": "16519487",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "62012",
+    "62090",
+    "63110",
+    "64999"
+   ],
+   "address": "Buckhurst Hill",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FREEDOM FINANCIAL GROUP UK LTD",
+   "number": "16521423",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Wilmslow",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "C J S MORTGAGE CONSULTANT LTD",
+   "number": "16520151",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Crawley",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TRADETRUST FX LTD",
+   "number": "16519673",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "63990",
+    "66190"
+   ],
+   "address": "Barking",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "ESH VISION VENTURES LIMITED",
+   "number": "16521033",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "62020",
+    "66190",
+    "70229",
+    "73120"
+   ],
+   "address": "Solihull",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ALLIANCE FINANCIAL LTD",
+   "number": "SC852350",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Glasgow",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FEDAROBROKERS LTD",
+   "number": "16521017",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "REPEAT VC LIMITED",
+   "number": "16520628",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ARXNOVA HOLDINGS LIMITED",
+   "number": "16520018",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "ECI 12 SPECIAL PURPOSE NOMINEES LIMITED",
+   "number": "16521304",
+   "incorporated": "2025-06-16",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "HOMEWISE MORTGAGES LIMITED",
+   "number": "SC852258",
+   "incorporated": "2025-06-15",
+   "sic_codes": [
+    "64922",
+    "66220"
+   ],
+   "address": "Peterhead",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ARCASUN LIMITED",
+   "number": "16518671",
+   "incorporated": "2025-06-15",
+   "sic_codes": [
+    "46690",
+    "46900",
+    "66190",
+    "82990"
+   ],
+   "address": "Romford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "24 WEALTH LIMITED",
+   "number": "16518805",
+   "incorporated": "2025-06-15",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Bognor Regis",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "SM PROTECTION LTD",
+   "number": "16518933",
+   "incorporated": "2025-06-15",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Bolton",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "COMPURSE LIMITED",
+   "number": "16518706",
+   "incorporated": "2025-06-15",
+   "sic_codes": [
+    "66300",
+    "70221"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "STP PAY LTD",
+   "number": "NI730467",
+   "incorporated": "2025-06-14",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Belfast",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "UNSHARED OWNERSHIP LIMITED",
+   "number": "16518557",
+   "incorporated": "2025-06-14",
+   "sic_codes": [
+    "62090",
+    "63120",
+    "66190",
+    "96090"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "OG BARKER MORTGAGES LIMITED",
+   "number": "16517594",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ALEXANDER JACOB FINANCIAL LIMITED",
+   "number": "16517817",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Retford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CYAN FINANCIAL SERVICES LTD",
+   "number": "16517534",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "64922",
+    "66220"
+   ],
+   "address": "Kenilworth",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TIP TOP FINANCE LIMITED",
+   "number": "16516581",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "64205",
+    "64922"
+   ],
+   "address": "Nantwich",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "NEXUS REAL ESTATE FINANCE LTD",
+   "number": "16516053",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "GIFFON CREDIT LTD",
+   "number": "16517474",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "64303",
+    "64929",
+    "74990"
+   ],
+   "address": "East Grinstead",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "CAVAN ASSET MANAGEMENT (UK) LIMITED",
+   "number": "16517941",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "64209",
+    "64999",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "HAZE PAYROLL LTD",
+   "number": "NI730461",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Ballynahinch",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "DLC PTE (UK) LTD",
+   "number": "SC852190",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Glasgow",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GOLDEN CHASE SAP LTD",
+   "number": "16516229",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "66110",
+    "66190",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LANDOWNERS CAPITAL LIMITED",
+   "number": "16517410",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Moreton In Marsh",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "ORWELL WEALTH MANAGEMENT LTD",
+   "number": "16517281",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Needham Market",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "HEET FINANCE LIMITED",
+   "number": "16516456",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Brackley",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "EDGEX SOLUTIONS LTD",
+   "number": "16516010",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "64192",
+    "65120",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CAPITOL ASSETS LTD",
+   "number": "16515875",
+   "incorporated": "2025-06-13",
+   "sic_codes": [
+    "66300",
+    "68100",
+    "68209"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "JT PROPERTY FINANCE LTD",
+   "number": "16513967",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Birmingham",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "VEP FINANCE LTD",
+   "number": "16514146",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Lingfield",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "CROMWELL FINANCIAL SERVICES LIMITED",
+   "number": "16513576",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "64922",
+    "66220"
+   ],
+   "address": "Camberley",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SATUCA LIMITED",
+   "number": "16514350",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "64922",
+    "66110",
+    "70221"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "DB MORTGAGE SOLUTIONS LTD",
+   "number": "16512964",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Cardiff",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "THE MORTGAGE COLLAB LTD",
+   "number": "16515256",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Basingstoke",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "RICH LIVING GLOBAL (RLG) LTD",
+   "number": "16514069",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "47910",
+    "61900",
+    "64999",
+    "79909"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "WORLD FINANCIAL HOLDING LTD",
+   "number": "16514571",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "THATGAL UNLIMITED",
+   "number": "16515218",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SIDNELL FINANCIAL LIMITED",
+   "number": "16514643",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "64999",
+    "66190",
+    "66220"
+   ],
+   "address": "Chippenham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "METEOR MEDIA LTD",
+   "number": "16514434",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "62020",
+    "66220",
+    "90010",
+    "96090"
+   ],
+   "address": "Kington",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BRANTHAM COURT INVESTMENTS LIMITED",
+   "number": "16514199",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "64205",
+    "64999",
+    "66110",
+    "66300"
+   ],
+   "address": "Mildenhall",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BITAZZA TRADE LTD",
+   "number": "16513904",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "KLINE HILL PARTNERS (UK) LIMITED",
+   "number": "16514693",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FRIENDS OF NOCTON SCHOOL CIC",
+   "number": "16513657",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "66300",
+    "85600"
+   ],
+   "address": "Lincoln",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FALXION CAPITAL VENTURES LTD",
+   "number": "16514968",
+   "incorporated": "2025-06-12",
+   "sic_codes": [
+    "64304",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "NEST VALE ADVISORY & MANAGEMENT LTD",
+   "number": "16511954",
+   "incorporated": "2025-06-11",
+   "sic_codes": [
+    "64922",
+    "66220",
+    "68310",
+    "68320"
+   ],
+   "address": "Cambridge",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "DMS MORTGAGE & PROTECTION LTD",
+   "number": "16510063",
+   "incorporated": "2025-06-11",
+   "sic_codes": [
+    "64922",
+    "66220"
+   ],
+   "address": "Manchester",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "HNL MORTGAGES LIMITED",
+   "number": "16510798",
+   "incorporated": "2025-06-11",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Harrow",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "WQ ADVISORY SERVICES LTD",
+   "number": "16510502",
+   "incorporated": "2025-06-11",
+   "sic_codes": [
+    "64205",
+    "64922",
+    "66190",
+    "70221"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GD100 LIMITED",
+   "number": "16511540",
+   "incorporated": "2025-06-11",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Ascot",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "DPS CONSULTANCY LTD",
+   "number": "16510697",
+   "incorporated": "2025-06-11",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Clitheroe",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "COLLINS HERITAGE MORTGAGES LIMITED",
+   "number": "16510983",
+   "incorporated": "2025-06-11",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "NEXORA CAPITAL LIMITED",
+   "number": "16512803",
+   "incorporated": "2025-06-11",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Cardiff",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "PIPELINEPRIME LIMITED",
+   "number": "16512528",
+   "incorporated": "2025-06-11",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Dudley",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "NOVA LEGACY LTD",
+   "number": "16511000",
+   "incorporated": "2025-06-11",
+   "sic_codes": [
+    "66300",
+    "85590",
+    "86900",
+    "88990"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ELMSTONE CAPITAL LTD",
+   "number": "16511730",
+   "incorporated": "2025-06-11",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "RAJENDRAN INVESTMENTS LTD",
+   "number": "16512617",
+   "incorporated": "2025-06-11",
+   "sic_codes": [
+    "62012",
+    "64991",
+    "66300",
+    "68100"
+   ],
+   "address": "Cardiff",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "DIRECT CHOICE MORTGAGES LIMITED",
+   "number": "16507884",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Whitley Bay",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FORGE COMMERCIAL SOLUTIONS LTD",
+   "number": "16509676",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "64910",
+    "64922",
+    "66220"
+   ],
+   "address": "Scunthorpe",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SM0 CAPITAL & SECURITY LIMITED",
+   "number": "16508160",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "Altrincham",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "SM4 CAPITAL & SECURITY LIMITED",
+   "number": "16508221",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "Altrincham",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "SM5 CAPITAL & SECURITY LIMITED",
+   "number": "16508249",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "Altrincham",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "SM6 CAPITAL & SECURITY LIMITED",
+   "number": "16508338",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "Altrincham",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "SM3 CAPITAL & SECURITY LIMITED",
+   "number": "16508218",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "Altrincham",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "AGENT PAY LTD",
+   "number": "16507537",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AQUISITA CAPITAL PARTNERS LIMITED",
+   "number": "16508983",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "64205",
+    "64304",
+    "64999",
+    "66110"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "HPS FINANCIAL ASSETS LTD",
+   "number": "16507237",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "JONES & PURSLOW LIMITED",
+   "number": "16508146",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "66190",
+    "66290",
+    "70221"
+   ],
+   "address": "Bridgend",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MONOMICT LIMITED",
+   "number": "16507068",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "41100",
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SBF FIVE LTD",
+   "number": "16509957",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Liverpool",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "OTWAY VENTURES LTD",
+   "number": "16507726",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "66190",
+    "70229",
+    "74909"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CHARLIE DEWEY CONSULTING LTD",
+   "number": "16507693",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Leicestershire",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "TRANSEDGE TECHNOLOGIES LTD",
+   "number": "16508073",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Doncaster",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ARENITE SPECIALTY LIMITED",
+   "number": "16507175",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BLUE INDEMNITY BROKERS LIMITED",
+   "number": "16508351",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Birmingham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ONDA SERVICES LIMITED",
+   "number": "16507994",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ABHIVIO LTD",
+   "number": "16507107",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ANCIENT GENUS LTD",
+   "number": "16509911",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Sidcup",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "STARK TECHNOLOGY PVT LTD",
+   "number": "16508811",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FANG LTD",
+   "number": "16507810",
+   "incorporated": "2025-06-10",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "JEECO LTD",
+   "number": "16505788",
+   "incorporated": "2025-06-09",
+   "sic_codes": [
+    "64209",
+    "64922",
+    "70229",
+    "85600"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ALLIANCE CAPITAL SBUK LTD",
+   "number": "16506281",
+   "incorporated": "2025-06-09",
+   "sic_codes": [
+    "64921",
+    "64929",
+    "64999",
+    "82990"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "CANARY ACQUISITIONS LIMITED",
+   "number": "16505978",
+   "incorporated": "2025-06-09",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Kington",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GROVIA VENTURES LIMITED",
+   "number": "16504868",
+   "incorporated": "2025-06-09",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Borehamwood",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CASTILLON ADVISORY LTD",
+   "number": "16506573",
+   "incorporated": "2025-06-09",
+   "sic_codes": [
+    "64999",
+    "70221",
+    "70229"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CIRCLE-8-LEDGER LIMITED",
+   "number": "16505012",
+   "incorporated": "2025-06-09",
+   "sic_codes": [
+    "63990",
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LE PETIT FROMAGE UNLIMITED",
+   "number": "16504852",
+   "incorporated": "2025-06-09",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Leeds",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LE GRAND FROMAGE UNLIMITED",
+   "number": "16504685",
+   "incorporated": "2025-06-09",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Leeds",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "WILDX LIMITED",
+   "number": "16505785",
+   "incorporated": "2025-06-09",
+   "sic_codes": [
+    "62090",
+    "64999",
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ICE PROTECTION LTD",
+   "number": "16505345",
+   "incorporated": "2025-06-09",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Wetherby",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LOCKHART ESTATES LTD",
+   "number": "16506066",
+   "incorporated": "2025-06-09",
+   "sic_codes": [
+    "66220",
+    "68100",
+    "68209",
+    "68320"
+   ],
+   "address": "Nelson",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "WHITEOAK PARTNERSHIP LIMITED",
+   "number": "16506169",
+   "incorporated": "2025-06-09",
+   "sic_codes": [
+    "64209",
+    "64304",
+    "66300",
+    "82990"
+   ],
+   "address": "Macclesfield",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BOYD FINANCIAL SOLUTIONS LTD",
+   "number": "SC851473",
+   "incorporated": "2025-06-08",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Dalkeith",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ECOVIA FINANCIAL SOLUTIONS LTD",
+   "number": "16503413",
+   "incorporated": "2025-06-08",
+   "sic_codes": [
+    "64910",
+    "66220",
+    "70221"
+   ],
+   "address": "Huddersfield",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "YOUR LIFE EXPERT LIMITED",
+   "number": "16503038",
+   "incorporated": "2025-06-08",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Manchester",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "PINNACLE FINANCE ASSOCIATES LIMITED",
+   "number": "SC851439",
+   "incorporated": "2025-06-07",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Glasgow",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "WILLIAMS GROUP FINANCE LTD",
+   "number": "16502819",
+   "incorporated": "2025-06-07",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Wolverhampton",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "LIVE ASSURED LIMITED",
+   "number": "SC851430",
+   "incorporated": "2025-06-07",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Denny",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "HARPTREE MORTGAGES LIMITED",
+   "number": "16501624",
+   "incorporated": "2025-06-06",
+   "sic_codes": [
+    "64922",
+    "65110"
+   ],
+   "address": "Harpenden",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "A PLUS CAPITAL PARTNERS LTD",
+   "number": "16501610",
+   "incorporated": "2025-06-06",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Stevenage",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "HOUSE MARTIN MORTGAGES LTD",
+   "number": "16502329",
+   "incorporated": "2025-06-06",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Plymouth",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "A PLUS GROUP HOLDINGS LTD",
+   "number": "16501260",
+   "incorporated": "2025-06-06",
+   "sic_codes": [
+    "64205",
+    "64209",
+    "64929",
+    "68209"
+   ],
+   "address": "Stevenage",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "SHAMZ FINANCE LIMITED",
+   "number": "16502395",
+   "incorporated": "2025-06-06",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "Leeds",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "UK DEBT HELP GROUP LTD",
+   "number": "SC851413",
+   "incorporated": "2025-06-06",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Glasgow",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FENYX F1 LIMITED",
+   "number": "16500302",
+   "incorporated": "2025-06-06",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FENUTC LIMITED",
+   "number": "16500421",
+   "incorporated": "2025-06-06",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FENYX F3 LIMITED",
+   "number": "16500375",
+   "incorporated": "2025-06-06",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FINFLY MARKETS LIMITED",
+   "number": "16501889",
+   "incorporated": "2025-06-06",
+   "sic_codes": [
+    "64910",
+    "64999",
+    "66190",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CONSUMER SAVINGS GROUP LTD",
+   "number": "16502299",
+   "incorporated": "2025-06-06",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Liverpool",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GOLDEN TREE FINANCIAL ADVISERS LTD",
+   "number": "16501052",
+   "incorporated": "2025-06-06",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Croydon",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AETNA INVESTMENTS MANAGEMENT LIMITED",
+   "number": "16502228",
+   "incorporated": "2025-06-06",
+   "sic_codes": [
+    "66300",
+    "78300",
+    "82990"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "OXLEY MORTGAGE SOLUTIONS LTD",
+   "number": "16497554",
+   "incorporated": "2025-06-05",
+   "sic_codes": [
+    "64922",
+    "64999"
+   ],
+   "address": "Chesterfield",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "UK DEVELOPMENT FINANCING LTD",
+   "number": "16499284",
+   "incorporated": "2025-06-05",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Sheffield",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "RAIN LEND CO LIMITED",
+   "number": "16499559",
+   "incorporated": "2025-06-05",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Wigan",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "WEALTH DECISIONS LIMITED",
+   "number": "16498848",
+   "incorporated": "2025-06-05",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Eastleigh",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "DH MORTGAGES AND PROTECTION LTD",
+   "number": "16498292",
+   "incorporated": "2025-06-05",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Towcester",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MOLOSSUS BTL 2025-1 PLC",
+   "number": "16498685",
+   "incorporated": "2025-06-05",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FENYX CAPITAL LIMITED",
+   "number": "16499967",
+   "incorporated": "2025-06-05",
+   "sic_codes": [
+    "66190",
+    "70229"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "VN INTERNATIONAL LTD",
+   "number": "16498306",
+   "incorporated": "2025-06-05",
+   "sic_codes": [
+    "62012",
+    "66120",
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LIFE PLAN PARTNERS LIMITED",
+   "number": "16498190",
+   "incorporated": "2025-06-05",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Wetherby",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ROKSTONE COMMERCIAL LIMITED",
+   "number": "16498388",
+   "incorporated": "2025-06-05",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "HAPPILY INSURED LTD",
+   "number": "16497425",
+   "incorporated": "2025-06-05",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "St. Agnes",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "MADDISON CAPITAL LTD",
+   "number": "16498485",
+   "incorporated": "2025-06-05",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Ruislip,",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "PRELUDE ADVISERS UK LIMITED",
+   "number": "16498819",
+   "incorporated": "2025-06-05",
+   "sic_codes": [
+    "66300",
+    "70229"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CROWN FINANCIAL GROUP LTD",
+   "number": "16494791",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "63110",
+    "64922"
+   ],
+   "address": "Wolverhampton",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CHAMELEON FINANCE LTD",
+   "number": "16495894",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Manchester",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "DP7 LTD",
+   "number": "16495254",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "STERLING STREET CAPITAL LIMITED",
+   "number": "16496739",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "64922",
+    "66220"
+   ],
+   "address": "Southend-On-Sea",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "LOAN4HOME LTD",
+   "number": "16497408",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "64922",
+    "64999",
+    "65110",
+    "66220"
+   ],
+   "address": "Manchester",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "JWT CAPITAL LTD",
+   "number": "16496444",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "Bristol",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "REGENTS3 LTD",
+   "number": "16495932",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "CRESTLINE CAPITAL LTD",
+   "number": "16495896",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "64999",
+    "66190"
+   ],
+   "address": "Sidcup",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "AP LIFE SOLUTIONS LTD",
+   "number": "NI730101",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Dungannon",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LINCOLN GLOBAL MULTI SERVICES LTD",
+   "number": "16496103",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "49410",
+    "62020",
+    "64999",
+    "68209"
+   ],
+   "address": "Abbots Langley",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "JM GLOBALMARKETS HOLDINGS LTD",
+   "number": "16496418",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "64209",
+    "64999",
+    "66300",
+    "70229"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "HAEL GLOBAL LIMITED",
+   "number": "16497076",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "62012",
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GROVE GREEN CAPITAL LTD",
+   "number": "16495610",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "64205",
+    "64999",
+    "70229"
+   ],
+   "address": "Leigh-On-Sea",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "NAS MONEY TRANSFER LIMITED",
+   "number": "16496028",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Slough",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GWS FINANCIAL PLANNING LIMITED",
+   "number": "16494820",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "York",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "GATEWYN CAPITAL LTD",
+   "number": "16495187",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "SAFECOVER LIMITED",
+   "number": "16497083",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "JP KINDOM LIMITED",
+   "number": "16497142",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Walsall",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "R L FINANCIAL GROUP LIMITED",
+   "number": "16495558",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "42220",
+    "64201",
+    "64301",
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SPEED FINANCE CONSULTING LTD.",
+   "number": "16495655",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "46190",
+    "66300",
+    "70221",
+    "70229"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "ALIMITA 3 LIMITED",
+   "number": "16495825",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Walsall",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ALIMITA 4 LIMITED",
+   "number": "16496237",
+   "incorporated": "2025-06-04",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Walsall",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "WASEE LTD",
+   "number": "16493137",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "64191"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "YOUSIF MORTGAGE DECISIONS LIMITED",
+   "number": "16494167",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Houghton Le Spring",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "HAPPY LIVING MORTGAGES LTD",
+   "number": "16492472",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Anstey",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AMBER FINANCIAL SOLUTIONS LIMITED",
+   "number": "16493425",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "64922",
+    "66220"
+   ],
+   "address": "Rotherham",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ASTUTE COMMERCIAL LTD",
+   "number": "16492727",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "60200",
+    "64929",
+    "73110"
+   ],
+   "address": "Manchester",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "VEHICLE FINANCE SPECIALISTS LTD",
+   "number": "16492342",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Ampthill",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "NETTPAGE LIMITED",
+   "number": "16492157",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "64999",
+    "73110"
+   ],
+   "address": "Salford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "EIGENS LANE LIMITED",
+   "number": "16493344",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "FINANCE 4 EVERYTHING LIMITED",
+   "number": "16491744",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Paignton",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "DRAGTEN CAPITAL SOLUTIONS LTD",
+   "number": "16491801",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "BIRD FINANCE LTD",
+   "number": "16494068",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "DIGITAL ENERGY VENTURES LTD",
+   "number": "16492427",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Woking",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "ALIMITA 2 LIMITED",
+   "number": "16493335",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "Walsall",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "RGP MARKETING LTD",
+   "number": "16492473",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "59112",
+    "66300",
+    "78300",
+    "84130"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "JERPOINT CAPITAL (UK) HOLDINGS LTD",
+   "number": "16493238",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "JERPOINT CAPITAL (UK) MANAGEMENT HOLDINGS LTD",
+   "number": "16493454",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "JERPOINT CAPITAL (UK) MANAGEMENT LTD",
+   "number": "16493932",
+   "incorporated": "2025-06-03",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "SCOTT RUSCOE FINANCIAL GOALS LTD",
+   "number": "16489188",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "64922"
+   ],
+   "address": "Oswestry",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "STOCK CAPITAL LTD",
+   "number": "16487966",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "64929"
+   ],
+   "address": "London",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "APEX FINANCIAL HOLDINGS LTD",
+   "number": "16488682",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "64209",
+    "64999",
+    "70229",
+    "96090"
+   ],
+   "address": "Cardiff",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "888 CAPITAL LTD",
+   "number": "16488052",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Manchester",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "EAZY TRANS GLOBAL LTD",
+   "number": "16488170",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "64999"
+   ],
+   "address": "Milton Keynes",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "OMNIA FINANCE LTD",
+   "number": "16489758",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "64999",
+    "82990"
+   ],
+   "address": "Northwood",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "high"
+  },
+  {
+   "name": "BALGORES COMMERCIAL FINANCE LIMITED",
+   "number": "16489884",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Wickford",
+   "nameFlagged": true,
+   "fcaAuthorised": false,
+   "perimeterRisk": "medium"
+  },
+  {
+   "name": "TMATHEMATICS LTD",
+   "number": "16490005",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Greater Manchester",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "BECKY EDWARDS LTD",
+   "number": "16487828",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Leicester",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SAVEZONE LTD",
+   "number": "16488103",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "66190"
+   ],
+   "address": "Manchester",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "OUTIS INSURE LTD",
+   "number": "16487700",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "66220"
+   ],
+   "address": "Cardiff",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "SEEDCAMP VI INVESTMENTS LTD",
+   "number": "16490193",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "PATRITALIA PLC",
+   "number": "16487947",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "64209",
+    "64304",
+    "66300",
+    "70229"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "LINGOTTO INTERSECTION UK LTD",
+   "number": "16489717",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "66300"
+   ],
+   "address": "London",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "AITRADE500 COMPANY LTD",
+   "number": "16489125",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "66300",
+    "70229"
+   ],
+   "address": "Cardiff",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  },
+  {
+   "name": "JMU CONSULTANCY LTD",
+   "number": "16491108",
+   "incorporated": "2025-06-02",
+   "sic_codes": [
+    "66300",
+    "70229"
+   ],
+   "address": "Romford",
+   "nameFlagged": false,
+   "fcaAuthorised": false,
+   "perimeterRisk": "low"
+  }
+ ],
+ "crossCheck": {
+  "method": "FCA Register API V0.1 Search live",
+  "sampleChecked": 20,
+  "foundAuthorised": 4,
+  "note": "Sample of high-risk new incorporations checked live against FCA Register — confirmed NOT authorised = genuine perimeter firms."
+ }
+}

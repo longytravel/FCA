@@ -85,8 +85,9 @@ export function SiteFooter() {
             <p className="text-ink-secondary text-sm leading-relaxed">
               A live demonstration for the Financial Conduct Authority. Every tool
               shown is built from{" "}
-              <strong className="text-ink font-semibold">100% public FCA data</strong>{" "}
-              &mdash; nothing touches internal systems.
+              <strong className="text-ink font-semibold">100% public data</strong> &mdash;
+              company records, regulator publications and more &mdash; nothing touches
+              anyone&apos;s internal systems.
             </p>
             <p className="text-ink-muted text-xs mt-3 leading-relaxed">
               Not affiliated with, or endorsed by, the FCA. No FCA logos, fonts or

@@ -20,7 +20,7 @@ const newsreader = Newsreader({
 export const metadata: Metadata = {
   title: "Vibe Coding at the FCA | Live-Built Regtech Demos",
   description:
-    "A hands-on demonstration: working regulatory tools built live in hours, entirely from public FCA data. You choose what we build.",
+    "A hands-on demonstration: working tools built live in hours from the UK's public data — joined to create insight nobody has. You choose what we build.",
 };
 
 export default function RootLayout({

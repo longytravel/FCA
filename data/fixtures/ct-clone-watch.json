@@ -1,0 +1,1106 @@
+{
+ "generated": "2026-07-21",
+ "source_primary": "crt.sh Certificate Transparency substring search (q=%brand%) — FREE, no key. STATUS 2026-07-21: crt.sh returning HTTP 502 (known instability) -> demo runs on this baked fixture.",
+ "source_live": "api.certspotter.com/v1/issuances — FREE, VERIFIED LIVE this session (HTTP 200). Domain-scoped issuance timeline; proves the CT pipeline runs live.",
+ "concept": "Newly-issued TLS certificates for lookalike/clone domains of UK banks & the FCA are visible in public CT logs the MOMENT a scammer provisions HTTPS — days/weeks BEFORE the domain appears on the FCA Warning List. Data the FCA does not systematically ingest.",
+ "disclaimer": "cloneWatch entries are ILLUSTRATIVE typo/combo-squat patterns for the demo UI (crt.sh unavailable to enumerate real hits live). liveSample entries are REAL certspotter data.",
+ "counts": {
+  "brands": 7,
+  "cloneCandidates": 49,
+  "liveBrandsFetched": 7
+ },
+ "liveSample": [
+  {
+   "brand": "Monzo",
+   "domain": "monzo.com",
+   "total_certs": 72,
+   "recent": [
+    {
+     "dns": [
+      "login.internal.monzo.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-07-10T22:57:26Z"
+    },
+    {
+     "dns": [
+      "email.research.monzo.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-07-11T03:26:00Z"
+    },
+    {
+     "dns": [
+      "*.monzo.com",
+      "monzo.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-07-14T02:12:33Z"
+    },
+    {
+     "dns": [
+      "*.monzo.com",
+      "monzo.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-07-14T02:12:25Z"
+    },
+    {
+     "dns": [
+      "*.monzo.com",
+      "monzo.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-07-14T02:25:08Z"
+    },
+    {
+     "dns": [
+      "*.monzo.com",
+      "monzo.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-07-14T02:25:39Z"
+    },
+    {
+     "dns": [
+      "law-enforcement.monzo.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-07-14T00:00:00Z"
+    },
+    {
+     "dns": [
+      "mailgun-clicks.email.monzo.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-07-14T19:41:22Z"
+    }
+   ]
+  },
+  {
+   "brand": "Revolut",
+   "domain": "revolut.com",
+   "total_certs": 100,
+   "recent": [
+    {
+     "dns": [
+      "get.revolut.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-07-11T08:37:18Z"
+    },
+    {
+     "dns": [
+      "get.revolut.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-07-11T08:37:25Z"
+    },
+    {
+     "dns": [
+      "revolut.com"
+     ],
+     "issuer": "C=NL",
+     "not_before": "2026-07-14T00:00:00Z"
+    },
+    {
+     "dns": [
+      "brand.revolut.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-07-15T13:34:05Z"
+    },
+    {
+     "dns": [
+      "data-portal.revolut.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-07-16T05:27:30Z"
+    },
+    {
+     "dns": [
+      "revolut.com"
+     ],
+     "issuer": "C=NL",
+     "not_before": "2026-07-16T00:00:00Z"
+    },
+    {
+     "dns": [
+      "revolut.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-07-17T15:00:48Z"
+    },
+    {
+     "dns": [
+      "revolut.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-07-17T15:00:19Z"
+    }
+   ]
+  },
+  {
+   "brand": "Barclays",
+   "domain": "barclays.co.uk",
+   "total_certs": 100,
+   "recent": [
+    {
+     "dns": [
+      "bi-b2b-corpsipc.my.salesforce-dr.barclays.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-14T00:00:00Z"
+    },
+    {
+     "dns": [
+      "click.email.barclays.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-14T00:00:00Z"
+    },
+    {
+     "dns": [
+      "cfp.bank.barclays.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-14T00:00:00Z"
+    },
+    {
+     "dns": [
+      "cloudit.bank.barclays.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-14T00:00:00Z"
+    },
+    {
+     "dns": [
+      "decisionmetrics-client.barclays.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-14T00:00:00Z"
+    },
+    {
+     "dns": [
+      "featuresstore.barclays.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-14T00:00:00Z"
+    },
+    {
+     "dns": [
+      "replay.barclays.co.uk",
+      "www.replay.barclays.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-14T00:00:00Z"
+    },
+    {
+     "dns": [
+      "search-solr74.barclays.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-14T00:00:00Z"
+    }
+   ]
+  },
+  {
+   "brand": "HSBC",
+   "domain": "hsbc.co.uk",
+   "total_certs": 100,
+   "recent": [
+    {
+     "dns": [
+      "cdgapi-dev.online-banking.business.hsbc.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-07T00:00:00Z"
+    },
+    {
+     "dns": [
+      "cdgapi-dev.online-banking.business.hsbc.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-08T00:00:00Z"
+    },
+    {
+     "dns": [
+      "cdgapi-dev.online-banking.business.hsbc.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-08T00:00:00Z"
+    },
+    {
+     "dns": [
+      "cdgapi-dev.online-banking.business.hsbc.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-08T00:00:00Z"
+    },
+    {
+     "dns": [
+      "cdgapi-dev.online-banking.business.hsbc.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-08T00:00:00Z"
+    },
+    {
+     "dns": [
+      "customer-ingress-miv00.prod.eu-west-1.ob.cloud1.vv1865.com",
+      "ob.mivision.hsbc.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-08T00:00:00Z"
+    },
+    {
+     "dns": [
+      "api.ob.mivision.hsbc.co.uk",
+      "tpp-ingress-miv00.prod.eu-west-1.ob.cloud1.vv1865.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-08T00:00:00Z"
+    },
+    {
+     "dns": [
+      "cdgapi-sit.online-banking.business.hsbc.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-08T00:00:00Z"
+    }
+   ]
+  },
+  {
+   "brand": "Lloyds",
+   "domain": "lloydsbank.com",
+   "total_certs": 100,
+   "recent": [
+    {
+     "dns": [
+      "link.bankofscotland.co.uk",
+      "link.emails.lloydsbanking.com",
+      "link.halifax.co.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-10-07T00:00:00Z"
+    },
+    {
+     "dns": [
+      "sca-cbo-prod-02.lloydsbanking.com",
+      "sca-fov-r-mock-prod-cbonline.bankofscotland.co.uk",
+      "sca-fov-r-mock-prod-cbonline.lloydsbank.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-10-07T00:00:00Z"
+    },
+    {
+     "dns": [
+      "api.businessfinanceassistant.bankofscotland.co.uk",
+      "api.businessfinanceassistant.lloydsbank.com",
+      "bcs-prod-01.lloydsbanking.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-10-15T00:00:00Z"
+    },
+    {
+     "dns": [
+      "test-pirai.lloydsbank.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-10-20T00:00:00Z"
+    },
+    {
+     "dns": [
+      "carfinanceplusquote.lloydsbank.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-11-07T00:00:00Z"
+    },
+    {
+     "dns": [
+      "falconfrmc.lloydsbank.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-11-10T00:00:00Z"
+    },
+    {
+     "dns": [
+      "mycarfinance.bankofscotland.co.uk",
+      "mycarfinance.halifax.co.uk",
+      "mycarfinance.lloydsbank.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-11-10T00:00:00Z"
+    },
+    {
+     "dns": [
+      "secure.privatebanking.lloydsbank.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-11-10T00:00:00Z"
+    }
+   ]
+  },
+  {
+   "brand": "NatWest",
+   "domain": "natwest.com",
+   "total_certs": 100,
+   "recent": [
+    {
+     "dns": [
+      "stubtest.contentrails-np.natwest.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-07T00:00:00Z"
+    },
+    {
+     "dns": [
+      "sage.cbcpt.prd.syncstatus.natwest.com",
+      "www.sage.cbcpt.prd.syncstatus.natwest.com"
+     ],
+     "issuer": "C=GB",
+     "not_before": "2025-08-07T00:00:00Z"
+    },
+    {
+     "dns": [
+      "ztcpvoca.gsstest.natwest.com",
+      "ztcpvoca.gsstest.rbs.co.uk"
+     ],
+     "issuer": "C=GB",
+     "not_before": "2025-08-07T00:00:00Z"
+    },
+    {
+     "dns": [
+      "423.onboarding.preprod.transport.natwest.com",
+      "www.423.onboarding.preprod.transport.natwest.com"
+     ],
+     "issuer": "C=GB",
+     "not_before": "2025-08-07T00:00:00Z"
+    },
+    {
+     "dns": [
+      "423.onboarding.preprod.signing.natwest.com",
+      "www.423.onboarding.preprod.signing.natwest.com"
+     ],
+     "issuer": "C=GB",
+     "not_before": "2025-08-07T00:00:00Z"
+    },
+    {
+     "dns": [
+      "*.internal.digiecotest.natwest.com",
+      "internal.digiecotest.natwest.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-07T00:00:00Z"
+    },
+    {
+     "dns": [
+      "*.internal.digiecotest.natwest.com",
+      "internal.digiecotest.natwest.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-08T00:00:00Z"
+    },
+    {
+     "dns": [
+      "*.internal.digiecotest.natwest.com",
+      "internal.digiecotest.natwest.com"
+     ],
+     "issuer": "C=US",
+     "not_before": "2025-08-08T00:00:00Z"
+    }
+   ]
+  },
+  {
+   "brand": "FCA",
+   "domain": "fca.org.uk",
+   "total_certs": 100,
+   "recent": [
+    {
+     "dns": [
+      "handbook.fca.org.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-02-23T00:00:00Z"
+    },
+    {
+     "dns": [
+      "api-handbook.fca.org.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-02-23T00:00:00Z"
+    },
+    {
+     "dns": [
+      "admin-handbook.fca.org.uk"
+     ],
+     "issuer": "C=US",
+     "not_before": "2026-02-25T00:00:00Z"
+    },
+    {
+     "dns": [
+      "portal.ite.mdp.fca.org.uk"
+     ],
+     "issuer": "C=BE",
+     "not_before": "2026-03-03T12:31:10Z"
+    },
+    {
+     "dns": [
+      "reports.mdp.fca.org.uk",
+      "www.reports.mdp.fca.org.uk"
+     ],
+     "issuer": "C=BE",
+     "not_before": "2026-03-03T14:21:16Z"
+    },
+    {
+     "dns": [
+      "ops.mdp.fca.org.uk",
+      "www.ops.mdp.fca.org.uk"
+     ],
+     "issuer": "C=BE",
+     "not_before": "2026-03-03T14:26:11Z"
+    },
+    {
+     "dns": [
+      "portal.mdp.fca.org.uk",
+      "www.portal.mdp.fca.org.uk"
+     ],
+     "issuer": "C=BE",
+     "not_before": "2026-03-03T14:26:40Z"
+    },
+    {
+     "dns": [
+      "ops.ite.mdp.fca.org.uk",
+      "www.ops.ite.mdp.fca.org.uk"
+     ],
+     "issuer": "C=BE",
+     "not_before": "2026-03-03T14:31:16Z"
+    }
+   ]
+  }
+ ],
+ "cloneWatch": [
+  {
+   "brand": "Monzo",
+   "candidates": [
+    {
+     "domain": "monzo-refund.com",
+     "issued": "2026-07-18",
+     "issuer": "Let's Encrypt",
+     "age_days": 3,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "monzo-secure.com",
+     "issued": "2026-07-11",
+     "issuer": "Let's Encrypt",
+     "age_days": 10,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "monzo-verify.app",
+     "issued": "2026-07-04",
+     "issuer": "Let's Encrypt",
+     "age_days": 17,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "monzo-support.net",
+     "issued": "2026-06-27",
+     "issuer": "Let's Encrypt",
+     "age_days": 24,
+     "risk": "medium",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "secure-monzo.com",
+     "issued": "2026-06-20",
+     "issuer": "Let's Encrypt",
+     "age_days": 31,
+     "risk": "medium",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "monzo-app-login.com",
+     "issued": "2026-06-13",
+     "issuer": "Let's Encrypt",
+     "age_days": 38,
+     "risk": "low",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "monzo-account.co",
+     "issued": "2026-06-06",
+     "issuer": "Let's Encrypt",
+     "age_days": 45,
+     "risk": "low",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "Revolut",
+   "candidates": [
+    {
+     "domain": "revolut-refund.com",
+     "issued": "2026-07-18",
+     "issuer": "Let's Encrypt",
+     "age_days": 3,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "revolut-secure.com",
+     "issued": "2026-07-11",
+     "issuer": "Let's Encrypt",
+     "age_days": 10,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "revolut-verify.app",
+     "issued": "2026-07-04",
+     "issuer": "Let's Encrypt",
+     "age_days": 17,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "revolut-support.net",
+     "issued": "2026-06-27",
+     "issuer": "Let's Encrypt",
+     "age_days": 24,
+     "risk": "medium",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "secure-revolut.com",
+     "issued": "2026-06-20",
+     "issuer": "Let's Encrypt",
+     "age_days": 31,
+     "risk": "medium",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "revolut-app-login.com",
+     "issued": "2026-06-13",
+     "issuer": "Let's Encrypt",
+     "age_days": 38,
+     "risk": "low",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "revolut-account.co",
+     "issued": "2026-06-06",
+     "issuer": "Let's Encrypt",
+     "age_days": 45,
+     "risk": "low",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "Barclays",
+   "candidates": [
+    {
+     "domain": "barclays-refund.com",
+     "issued": "2026-07-18",
+     "issuer": "Let's Encrypt",
+     "age_days": 3,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "barclays-secure.com",
+     "issued": "2026-07-11",
+     "issuer": "Let's Encrypt",
+     "age_days": 10,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "barclays-verify.app",
+     "issued": "2026-07-04",
+     "issuer": "Let's Encrypt",
+     "age_days": 17,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "barclays-support.net",
+     "issued": "2026-06-27",
+     "issuer": "Let's Encrypt",
+     "age_days": 24,
+     "risk": "medium",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "secure-barclays.com",
+     "issued": "2026-06-20",
+     "issuer": "Let's Encrypt",
+     "age_days": 31,
+     "risk": "medium",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "barclays-app-login.com",
+     "issued": "2026-06-13",
+     "issuer": "Let's Encrypt",
+     "age_days": 38,
+     "risk": "low",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "barclays-account.co",
+     "issued": "2026-06-06",
+     "issuer": "Let's Encrypt",
+     "age_days": 45,
+     "risk": "low",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "HSBC",
+   "candidates": [
+    {
+     "domain": "hsbc-refund.com",
+     "issued": "2026-07-18",
+     "issuer": "Let's Encrypt",
+     "age_days": 3,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "hsbc-secure.com",
+     "issued": "2026-07-11",
+     "issuer": "Let's Encrypt",
+     "age_days": 10,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "hsbc-verify.app",
+     "issued": "2026-07-04",
+     "issuer": "Let's Encrypt",
+     "age_days": 17,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "hsbc-support.net",
+     "issued": "2026-06-27",
+     "issuer": "Let's Encrypt",
+     "age_days": 24,
+     "risk": "medium",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "secure-hsbc.com",
+     "issued": "2026-06-20",
+     "issuer": "Let's Encrypt",
+     "age_days": 31,
+     "risk": "medium",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "hsbc-app-login.com",
+     "issued": "2026-06-13",
+     "issuer": "Let's Encrypt",
+     "age_days": 38,
+     "risk": "low",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "hsbc-account.co",
+     "issued": "2026-06-06",
+     "issuer": "Let's Encrypt",
+     "age_days": 45,
+     "risk": "low",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "Lloyds",
+   "candidates": [
+    {
+     "domain": "lloyds-refund.com",
+     "issued": "2026-07-18",
+     "issuer": "Let's Encrypt",
+     "age_days": 3,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "lloyds-secure.com",
+     "issued": "2026-07-11",
+     "issuer": "Let's Encrypt",
+     "age_days": 10,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "lloyds-verify.app",
+     "issued": "2026-07-04",
+     "issuer": "Let's Encrypt",
+     "age_days": 17,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "lloyds-support.net",
+     "issued": "2026-06-27",
+     "issuer": "Let's Encrypt",
+     "age_days": 24,
+     "risk": "medium",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "secure-lloyds.com",
+     "issued": "2026-06-20",
+     "issuer": "Let's Encrypt",
+     "age_days": 31,
+     "risk": "medium",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "lloyds-app-login.com",
+     "issued": "2026-06-13",
+     "issuer": "Let's Encrypt",
+     "age_days": 38,
+     "risk": "low",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "lloyds-account.co",
+     "issued": "2026-06-06",
+     "issuer": "Let's Encrypt",
+     "age_days": 45,
+     "risk": "low",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "NatWest",
+   "candidates": [
+    {
+     "domain": "natwest-refund.com",
+     "issued": "2026-07-18",
+     "issuer": "Let's Encrypt",
+     "age_days": 3,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "natwest-secure.com",
+     "issued": "2026-07-11",
+     "issuer": "Let's Encrypt",
+     "age_days": 10,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "natwest-verify.app",
+     "issued": "2026-07-04",
+     "issuer": "Let's Encrypt",
+     "age_days": 17,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "natwest-support.net",
+     "issued": "2026-06-27",
+     "issuer": "Let's Encrypt",
+     "age_days": 24,
+     "risk": "medium",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "secure-natwest.com",
+     "issued": "2026-06-20",
+     "issuer": "Let's Encrypt",
+     "age_days": 31,
+     "risk": "medium",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "natwest-app-login.com",
+     "issued": "2026-06-13",
+     "issuer": "Let's Encrypt",
+     "age_days": 38,
+     "risk": "low",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "natwest-account.co",
+     "issued": "2026-06-06",
+     "issuer": "Let's Encrypt",
+     "age_days": 45,
+     "risk": "low",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "FCA",
+   "candidates": [
+    {
+     "domain": "fca-refund.com",
+     "issued": "2026-07-18",
+     "issuer": "Let's Encrypt",
+     "age_days": 3,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "fca-secure.com",
+     "issued": "2026-07-11",
+     "issuer": "Let's Encrypt",
+     "age_days": 10,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "fca-verify.app",
+     "issued": "2026-07-04",
+     "issuer": "Let's Encrypt",
+     "age_days": 17,
+     "risk": "high",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "fca-support.net",
+     "issued": "2026-06-27",
+     "issuer": "Let's Encrypt",
+     "age_days": 24,
+     "risk": "medium",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "secure-fca.com",
+     "issued": "2026-06-20",
+     "issuer": "Let's Encrypt",
+     "age_days": 31,
+     "risk": "medium",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    },
+    {
+     "domain": "fca-app-login.com",
+     "issued": "2026-06-13",
+     "issuer": "Let's Encrypt",
+     "age_days": 38,
+     "risk": "low",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "homoglyph/keyword"
+     ]
+    },
+    {
+     "domain": "fca-account.co",
+     "issued": "2026-06-06",
+     "issuer": "Let's Encrypt",
+     "age_days": 45,
+     "risk": "low",
+     "flags": [
+      "issued-in-last-30d",
+      "free-DV-cert",
+      "brand-in-subdomain"
+     ]
+    }
+   ]
+  }
+ ]
+}

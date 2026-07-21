@@ -5,6 +5,14 @@ import { GlowField, SiteNav, SiteFooter } from "@/src/components/ui";
  * Adding a new option = append one object here. The card styling is uniform and
  * editorial — no per-card accent colours.
  */
+/**
+ * Which tier of the #choose section a card belongs to. Drives grouping + badge:
+ *  - "cross" — FCA data joined with an external public source (novel insight)
+ *  - "novel" — a signal the FCA doesn't systematically hold at all
+ *  - "own"   — built on a single public FCA dataset (quick wins)
+ */
+type Tier = "cross" | "novel" | "own";
+
 type Demo = {
   number: number;
   title: string;
@@ -12,13 +20,18 @@ type Demo = {
   description: string;
   stats: { value: string; label: string }[];
   feature?: string;
-  /**
-   * Set on cards that join FCA data with an external public source. Presence of
-   * this field floats the card into the "Cross-data" group at the top of the
-   * #choose section — a new 11-/12- plan just needs this field to appear there.
-   */
+  /** External source(s) named in the badge, for "cross" and "novel" tiers. */
   crossData?: { sources: string[] };
+  /**
+   * Tier override. If omitted it is derived from the plan number (07-12 cross,
+   * 13-16 novel, else own), so a new card lands in the right tier by convention
+   * — set this explicitly to override.
+   */
+  tier?: Tier;
 };
+
+const tierOf = (d: Demo): Tier =>
+  d.tier ?? (d.number >= 13 ? "novel" : d.number >= 7 ? "cross" : "own");
 
 const demos: Demo[] = [
   {
@@ -173,20 +186,94 @@ const demos: Demo[] = [
     ],
     crossData: { sources: ["The Gazette insolvency notices"] },
   },
+  {
+    number: 13,
+    title: "Perimeter Watch",
+    hook: "Which finance-shaped firms are forming that the FCA never authorised?",
+    description:
+      "Filters Companies House's daily new-incorporation feed to financial SIC codes and cross-checks each name live against the FCA Register — surfacing companies set up to do finance-shaped business the regulator has never authorised. The FCA sees firms only when they apply; this watches the perimeter it doesn't systematically ingest, scored by risk in near-real-time.",
+    stats: [
+      { value: "472", label: "new finance-SIC firms" },
+      { value: "115", label: "finance-name flagged" },
+      { value: "16 / 20", label: "sampled, unauthorised" },
+    ],
+    tier: "novel",
+    crossData: { sources: ["Companies House + FCA Register cross-check"] },
+  },
+  {
+    number: 14,
+    title: "Clone-Cert Radar",
+    hook: "Can we catch a clone-bank site the moment its HTTPS goes live?",
+    description:
+      "Watches public Certificate Transparency logs — where every TLS certificate is published the instant it's issued — for freshly-minted domains impersonating UK banks and the FCA itself, often days to weeks before they reach the Warning List. The FCA doesn't monitor these logs; this turns the firehose into a clone-domain early-warning radar that fires before the blocklist does.",
+    stats: [
+      { value: "7 brands", label: "live cert feeds" },
+      { value: "49", label: "clone candidates tracked" },
+      { value: "Pre-blocklist", label: "early warning" },
+    ],
+    tier: "novel",
+    crossData: { sources: ["Certificate Transparency logs"] },
+  },
+  {
+    number: 15,
+    title: "App Store Distress Radar",
+    hook: "What are consumers raging about hours after an app breaks?",
+    description:
+      "Reads live Google Play reviews for regulated firms and lets an AI read between the stars — classifying each 1–2★ review into FCA harm categories and flagging per-firm sentiment spikes. A supervisory nowcast that surfaces harm hours after a failure, not the months a complaint takes to reach the Ombudsman, built entirely on public consumer voice the regulator has never ingested.",
+    stats: [
+      { value: "360", label: "real Play reviews" },
+      { value: "6 firms", label: "across 3 segments" },
+      { value: "Spike", label: "pre-complaint signal" },
+    ],
+    tier: "novel",
+    crossData: { sources: ["Google Play reviews"] },
+  },
+  {
+    number: 16,
+    title: "Constituency Grievance Map",
+    hook: "Where does national financial anger physically concentrate?",
+    description:
+      "Turns UK Parliament petition data — every signature broken down by constituency with ONS codes — into a map of where financial grievance clusters, with an AI separating genuine financial-harm petitions from political noise and reading the geography. A consumer-harm heatmap the FCA could join straight onto its own firm and postcode data, from democratic signal it has never touched.",
+    stats: [
+      { value: "161,788", label: "signatures, top petition" },
+      { value: "650", label: "constituencies mapped" },
+      { value: "AI-filtered", label: "finance-harm classifier" },
+    ],
+    tier: "novel",
+    crossData: { sources: ["UK Parliament petitions"] },
+  },
 ];
 
 const twoDigit = (n: number) => n.toString().padStart(2, "0");
 
 function DemoCard({ demo }: { demo: Demo }) {
+  const tier = tierOf(demo);
   return (
     <article className="group flex flex-col bg-card border border-rule rounded-[2px] p-7 transition-[border-color,transform] duration-150 hover:border-accent hover:-translate-y-px">
-      {demo.crossData && (
-        <div className="mb-5 -mt-1 border-l-2 border-highlight bg-highlight-tint rounded-r-[2px] pl-3 pr-4 py-2.5">
-          <p className="eyebrow text-highlight mb-1">
-            Cross-data &mdash; joins external sources for novel insight
+      {demo.crossData && tier === "novel" && (
+        <div
+          className="mb-5 -mt-1 border-l-2 border-accent rounded-r-[2px] pl-3 pr-4 py-2.5"
+          style={{ backgroundColor: "rgba(23,59,77,0.06)" }}
+        >
+          <p className="eyebrow text-accent mb-1">
+            Signal nobody is watching
           </p>
           <p className="text-ink-secondary text-xs leading-snug">
-            FCA data joined with{" "}
+            Primary source:{" "}
+            <strong className="text-ink font-semibold">
+              {demo.crossData.sources.join(" · ")}
+            </strong>
+            .
+          </p>
+        </div>
+      )}
+      {demo.crossData && tier === "cross" && (
+        <div className="mb-5 -mt-1 border-l-2 border-highlight bg-highlight-tint rounded-r-[2px] pl-3 pr-4 py-2.5">
+          <p className="eyebrow text-highlight mb-1">
+            Joined-up public data &mdash; insight neither source holds alone
+          </p>
+          <p className="text-ink-secondary text-xs leading-snug">
+            Joins FCA records with{" "}
             <strong className="text-ink font-semibold">
               {demo.crossData.sources.join(" · ")}
             </strong>
@@ -234,6 +321,31 @@ function DemoCard({ demo }: { demo: Demo }) {
   );
 }
 
+function TierHeader({
+  index,
+  title,
+  note,
+  intro,
+}: {
+  index: string;
+  title: string;
+  note: string;
+  intro: string;
+}) {
+  return (
+    <div className="mb-8">
+      <div className="pb-3 border-b border-rule-strong flex items-baseline justify-between gap-4 flex-wrap">
+        <h3 className="font-display text-2xl font-medium text-ink">
+          <span className="text-ink-muted tnum mr-3">{index}</span>
+          {title}
+        </h3>
+        <p className="eyebrow text-ink-muted">{note}</p>
+      </div>
+      <p className="text-ink-secondary text-sm leading-relaxed mt-4 max-w-3xl">{intro}</p>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-paper">
@@ -256,10 +368,11 @@ export default function Home() {
           <p className="text-lg md:text-xl text-ink-secondary leading-relaxed mb-10 max-w-[62ch] animate-fade-in delay-2">
             <strong className="text-ink font-semibold">Vibe coding</strong> is a new way
             to build software: describe what you need in plain English and an AI builds it
-            &mdash; live, on screen. No procurement. No vendor lock-in. Today, everything is
-            built from{" "}
-            <strong className="text-ink font-semibold">100% public FCA data</strong> &mdash;
-            nothing touches internal systems.
+            &mdash; live, on screen. No procurement. No vendor lock-in. Today we build it from
+            the UK&apos;s{" "}
+            <strong className="text-ink font-semibold">public data</strong> &mdash; company
+            records, certificate logs, app stores, Parliament, ONS, the Bank of England,
+            published regulator data and more &mdash; joined to create insight nobody has yet.
           </p>
 
           <div className="flex flex-wrap gap-4 animate-fade-in delay-3">
@@ -337,9 +450,10 @@ export default function Home() {
               A hands-on demonstration, not a sales pitch.
             </h2>
             <p className="text-ink-secondary text-lg leading-relaxed">
-              We&apos;ve already gathered real public FCA data &mdash; the register, warning
-              lists, enforcement notices, complaints returns and the news feed &mdash; and
-              verified every source this morning.
+              We&apos;ve already gathered real public data from across the UK &mdash; company
+              formations, warning lists, certificate logs, app-store reviews, parliamentary
+              petitions, enforcement notices and more &mdash; and verified every source this
+              morning.
             </p>
           </div>
 
@@ -370,37 +484,59 @@ export default function Home() {
               What shall we build?
             </h2>
             <p className="text-ink-secondary text-lg leading-relaxed">
-              Every option is backed by real, publicly available data we&apos;ve already
-              gathered and verified &mdash; and the strongest ideas go{" "}
-              <strong className="text-ink font-semibold">beyond the FCA&apos;s own tables</strong>,
-              joining them with other public sources like Companies House, OFSI, ONS, the Bank
-              of England, RDAP and The Gazette. That cross-referencing is where the novel
-              insight comes from. Each is buildable live in about two hours &mdash; pick the one
+              The UK publishes an extraordinary amount of open data &mdash; and almost nobody
+              joins it up. Every option below is backed by real public sources we&apos;ve already
+              gathered and verified, grouped by where the insight comes from. The wow is in the
+              first two tiers:{" "}
+              <strong className="text-ink font-semibold">joining public datasets that no one
+              has connected</strong>, and{" "}
+              <strong className="text-ink font-semibold">turning public data into a signal
+              nobody is watching</strong>. The last tier is fast, high-value work on published
+              regulatory data. Each is buildable live in about two hours &mdash; pick the one
               most useful to your team, or suggest something different.
             </p>
           </div>
 
-          {/* Cross-data ideas lead */}
-          <div className="mb-8 pb-3 border-b border-rule-strong flex items-baseline justify-between gap-4 flex-wrap">
-            <h3 className="font-display text-2xl font-medium text-ink">Cross-data ideas</h3>
-            <p className="eyebrow text-highlight">FCA data joined with external public sources</p>
-          </div>
+          {/* Tier 1 — Cross-data ideas */}
+          <TierHeader
+            index="01"
+            title="Joined-up public data"
+            note="Separate public sources, connected"
+            intro="Each of these takes two or more public datasets — Companies House, the FCA Register, OFSI, ONS, the Bank of England, RDAP, The Gazette — and joins them to produce an insight neither source holds alone."
+          />
           <div className="grid md:grid-cols-2 gap-6 mb-20">
             {demos
-              .filter((d) => d.crossData)
+              .filter((d) => tierOf(d) === "cross")
               .map((demo) => (
                 <DemoCard key={demo.number} demo={demo} />
               ))}
           </div>
 
-          {/* Single-source FCA tools */}
-          <div className="mb-8 pb-3 border-b border-rule-strong flex items-baseline justify-between gap-4 flex-wrap">
-            <h3 className="font-display text-2xl font-medium text-ink">Single-source FCA tools</h3>
-            <p className="eyebrow text-ink-muted">Built on one FCA public dataset</p>
+          {/* Tier 2 — Data the FCA doesn't hold */}
+          <TierHeader
+            index="02"
+            title="Signals nobody is watching"
+            note="Public data no one has turned into a signal"
+            intro="These lead with public data that no one systematically watches — company formations, TLS certificates, app-store reviews, parliamentary petitions — turned into early-warning signals. This is where the genuine novelty is."
+          />
+          <div className="grid md:grid-cols-2 gap-6 mb-20">
+            {demos
+              .filter((d) => tierOf(d) === "novel")
+              .map((demo) => (
+                <DemoCard key={demo.number} demo={demo} />
+              ))}
           </div>
+
+          {/* Tier 3 — The FCA's own data */}
+          <TierHeader
+            index="03"
+            title="Quick wins with published regulatory data"
+            note="Sharper tools on a single published dataset"
+            intro="Regulators already do a great deal with their own data — so these are the quick wins: each turns one published regulatory dataset into a sharper, more usable tool, buildable in a single sitting."
+          />
           <div className="grid md:grid-cols-2 gap-6">
             {demos
-              .filter((d) => !d.crossData)
+              .filter((d) => tierOf(d) === "own")
               .map((demo) => (
                 <DemoCard key={demo.number} demo={demo} />
               ))}
