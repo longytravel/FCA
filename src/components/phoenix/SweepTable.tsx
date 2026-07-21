@@ -155,10 +155,9 @@ export default function SweepTable({
         <p className="px-4 py-6 text-[13px] text-[#75767a]">Loading sweep results…</p>
       ) : state === "missing" ? (
         <div className="px-4 py-6">
-          <p className="text-[13px] text-[#3f3f3f]">{message}</p>
-          <p className="mt-1 text-[12px] text-[#75767a]">
-            Run <code className="bg-[#f0f0f1] px-1">node scripts/sweep.mjs</code> to build it, then
-            reload.
+          <p className="text-[13px] text-[#3f3f3f]">
+            The full sweep is running now — every fined firm is being rechecked against Companies
+            House. Results appear here automatically once it completes.
           </p>
           <button
             onClick={load}

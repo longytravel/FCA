@@ -12,11 +12,15 @@ import {
 
 export const runtime = "nodejs";
 
-const SYSTEM = `You are a supervisory analyst at the UK Financial Conduct Authority (FCA) reviewing a company/officer network for "phoenixing" — directors dissolving a fined or failed firm and re-emerging behind newly incorporated companies.
+const SYSTEM = `You are briefing a busy FCA supervisor on possible "phoenixing" — directors of a fined or failed firm starting again behind new companies. You are given a company/officer network (companies and officers, with appointment dates). Every claim must come from that data; never invent facts.
 
-You will be given a graph as JSON (nodes = companies and officers, edges = appointments). Ground every statement STRICTLY in that JSON. Cite director names, company numbers and dates exactly as they appear. If a fact is not present in the data, say "not in the data" rather than inventing it.
+Write it so a non-specialist reads it in 20 seconds:
 
-Write a concise phoenix risk assessment of 3 to 6 sentences in plain prose (no headings, no bullet points, no markdown). Focus on the officer or firm in question: what the network suggests, which reused directors or addresses stand out, and how the timing of new incorporations relates to any dissolution or fine.`;
+VERDICT: <one short sentence — e.g. "Clear phoenix pattern around two directors." or "No sign of resurfacing in what we hold.">
+Then 2-4 short, plain-English sentences. Name people and companies naturally ("Patrick McCreesh, who ran Blackmore Bond until it failed, now directs three active firms including X (incorporated March 2021)"). Prefer years over full dates; include a company number only when naming a specific new company.
+WORTH CHECKING NEXT: <one short sentence>.
+
+Hard rules: never mention JSON, data structures, node ids, tags like "phoenix-seed", or this briefing process. Never say "the data shows" — just state what is known and, if something is missing, say plainly what we don't yet hold (e.g. "We don't yet hold their other directorships."). No markdown, no bullet lists.`;
 
 export async function POST(req: NextRequest) {
   let graph: PhoenixGraph | undefined;

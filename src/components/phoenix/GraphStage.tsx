@@ -171,16 +171,27 @@ export default function GraphStage({
       }
     }
 
-    // Labels: seeds always; others when zoomed in or highlighted.
+    // Labels: screen-constant size (divide by scale, never clamp up) so zooming
+    // in can't fill the canvas with giant text. Seeds/selection always labelled;
+    // everything else only at deep zoom, where there's room.
     const seed = node.tags?.some((t) => t === "phoenix-seed" || t === "fined-seed");
-    if (seed || isSel || isHot || scale > 2.2) {
-      const label = node.name.length > 34 ? node.name.slice(0, 33) + "…" : node.name;
-      const fontSize = Math.max(9, 11 / scale);
-      ctx.font = `${seed ? "bold " : ""}${fontSize}px Arial, sans-serif`;
+    const phoenix = node.tags?.includes("phoenix") || nodeColor(node) === FCA.coral;
+    if (seed || isSel || isHot || phoenix || scale > 3.4) {
+      let raw = node.name;
+      // Officers render as "SURNAME, First" — surname alone is enough until selected.
+      if (node.type === "officer" && !isSel && !isHot) raw = raw.split(",")[0];
+      const label = raw.length > 26 ? raw.slice(0, 25) + "…" : raw;
+      const fontSize = (seed || isSel || isHot ? 12 : 9.5) / scale;
+      ctx.font = `${seed || isSel ? "bold " : ""}${fontSize}px Arial, sans-serif`;
       ctx.textAlign = "center";
       ctx.textBaseline = "top";
-      ctx.fillStyle = seed ? FCA.mulberry : FCA.body;
-      ctx.fillText(label, x, y + (node.type === "officer" ? officerRadius(node) : 5) + 1.5);
+      const ty = y + (node.type === "officer" ? officerRadius(node) : 5) + 1.5;
+      // White halo so labels stay readable over edges.
+      const w = ctx.measureText(label).width;
+      ctx.fillStyle = "rgba(255,255,255,0.82)";
+      ctx.fillRect(x - w / 2 - 1.5, ty - 0.5, w + 3, fontSize + 1.5);
+      ctx.fillStyle = seed ? FCA.mulberry : phoenix ? FCA.coral : FCA.body;
+      ctx.fillText(label, x, ty);
     }
   };
 

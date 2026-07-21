@@ -86,6 +86,26 @@ export default function PhoenixWatch() {
     return marks;
   }, [graph]);
 
+  // Headline stats for the focused case — the one-line story above the graph.
+  const caseStats = useMemo(() => {
+    const id = focusFirm?.id;
+    if (!id) return null;
+    const officerIds = new Set<string>();
+    for (const e of graph.edges) {
+      if (e.source === id) officerIds.add(e.target);
+      if (e.target === id) officerIds.add(e.source);
+    }
+    const officers = graph.nodes.filter((n) => n.type === "officer" && officerIds.has(n.id));
+    const linked = new Set<string>();
+    for (const e of graph.edges) {
+      if (officerIds.has(e.source) && e.target !== id) linked.add(e.target);
+      if (officerIds.has(e.target) && e.source !== id) linked.add(e.source);
+    }
+    const linkedNodes = graph.nodes.filter((n) => n.type === "company" && linked.has(n.id));
+    const active = linkedNodes.filter((n) => (n.status ?? "").toLowerCase().includes("active")).length;
+    return { directors: officers.length, linked: linkedNodes.length, active };
+  }, [graph, focusFirm]);
+
   const resolveFirm = useCallback(
     async (companyNumber: string, name: string) => {
       resolveAbort.current?.abort();
@@ -240,21 +260,44 @@ export default function PhoenixWatch() {
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
               <h1 className="text-2xl font-bold text-[#6c1d45]">Phoenix Watch</h1>
-              <p className="mt-1 max-w-2xl text-[14px] text-[#3f3f3f]">
-                Trace directors of failed and fined firms into the active companies they rose again
-                behind — live Companies House data, transparent risk scoring, and Claude briefings.
+              <p className="mt-1 max-w-2xl text-[15px] leading-relaxed text-[#3f3f3f]">
+                The FCA fines a firm. The firm quietly dissolves. Its directors start again behind
+                brand-new companies. Phoenix Watch finds them — using nothing but public records.
               </p>
             </div>
-            <button
-              onClick={() => setPresent(true)}
-              className="border border-[#6c1d45] bg-white px-3 py-2 text-[13px] font-bold text-[#6c1d45] hover:bg-[#6c1d45] hover:text-white"
-            >
-              ▶ Presenter mode
-            </button>
+            <div className="flex gap-2">
+              <a
+                href="/phoenix-watch/intro"
+                className="border border-[#6c1d45] bg-[#6c1d45] px-3 py-2 text-[13px] font-bold text-white hover:bg-[#59183a]"
+              >
+                ▶ Watch the intro
+              </a>
+              <button
+                onClick={() => setPresent(true)}
+                className="border border-[#6c1d45] bg-white px-3 py-2 text-[13px] font-bold text-[#6c1d45] hover:bg-[#6c1d45] hover:text-white"
+              >
+                Presenter mode
+              </button>
+            </div>
           </div>
           <div className="mt-4 max-w-2xl">
             <SearchBar onSelect={resolveFirm} busy={resolving} />
           </div>
+          {/* How to read it — a real sequence, so the numbering carries meaning */}
+          <ol className="mt-4 grid max-w-4xl grid-cols-1 gap-2 text-[13px] text-[#3f3f3f] sm:grid-cols-3">
+            {[
+              ["Pick a case", "or search any UK firm — we pull its records live from Companies House."],
+              ["Read the map", "each square is a company, each circle a director. Red squares are new companies a director started after the failure — still trading today."],
+              ["Interrogate", "click anything for the evidence, ask Claude questions, or generate a case dossier."],
+            ].map(([t, d], i) => (
+              <li key={t} className="border border-[#d2d2d4] bg-white px-3 py-2">
+                <span className="font-bold text-[#6c1d45]">
+                  {i + 1}. {t}
+                </span>{" "}
+                <span className="text-[#75767a]">{d}</span>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
@@ -266,11 +309,25 @@ export default function PhoenixWatch() {
           </p>
         ) : null}
 
+        {/* Case banner — the story in one line */}
+        {focusFirm && caseStats ? (
+          <div className="mb-4 flex flex-wrap items-baseline gap-x-6 gap-y-1 border border-[#d2d2d4] border-l-4 border-l-[#6c1d45] bg-white px-4 py-3 text-[14px]">
+            <span className="text-[16px] font-bold text-[#6c1d45]">{focusFirm.name}</span>
+            <span>
+              <b>{caseStats.directors}</b> directors traced
+            </span>
+            <span>
+              <b>{caseStats.linked}</b> other companies where they reappear
+            </span>
+            <span className="font-bold text-[#ff585d]">{caseStats.active} still active today</span>
+          </div>
+        ) : null}
+
         {/* Graph + detail */}
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1fr_360px]">
           <div className="flex flex-col border border-[#d2d2d4] bg-white">
             <div className="flex items-center justify-between border-b border-[#d2d2d4] bg-[#f0f0f1] px-4 py-2">
-              <h2 className="text-sm font-bold text-[#6c1d45]">Network</h2>
+              <h2 className="text-sm font-bold text-[#6c1d45]">The network — who rose again</h2>
               <Legend />
             </div>
             <div className="relative h-[540px]">
@@ -328,9 +385,9 @@ export default function PhoenixWatch() {
 function Legend() {
   const items: [string, string, "sq" | "ci"][] = [
     ["#6c1d45", "Company", "sq"],
-    ["#ff585d", "Phoenix signal", "sq"],
+    ["#ff585d", "Started after the failure — still active", "sq"],
     ["#75767a", "Dissolved", "sq"],
-    ["#003c71", "Officer", "ci"],
+    ["#003c71", "Director", "ci"],
   ];
   return (
     <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-[#75767a]">

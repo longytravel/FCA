@@ -50,10 +50,15 @@ export function serializeGraph(
   if (!focusId) {
     return capGraphJson({ nodes: graph.nodes, edges }, maxBytes);
   }
+  // Two hops: firm → its officers → the officers' OTHER companies. One hop
+  // loses the resurfaced companies, which are the whole phoenix story.
   const keep = new Set<string>([focusId]);
-  for (const e of edges) {
-    if (e.source === focusId) keep.add(e.target);
-    if (e.target === focusId) keep.add(e.source);
+  for (let hop = 0; hop < 2; hop++) {
+    const frontier = new Set(keep);
+    for (const e of edges) {
+      if (frontier.has(e.source)) keep.add(e.target);
+      if (frontier.has(e.target)) keep.add(e.source);
+    }
   }
   const nodes = graph.nodes.filter((n: PNode) => keep.has(n.id));
   const subEdges = edges.filter(

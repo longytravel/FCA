@@ -41,25 +41,39 @@ export default function BriefingPanel({
 
   return (
     <section className="border border-[#d2d2d4] bg-white">
-      <div className="flex items-center justify-between border-b border-[#d2d2d4] bg-[#f0f0f1] px-4 py-2">
-        <h3 className="text-sm font-bold text-[#6c1d45]">AI risk briefing</h3>
-        {loading ? <span className="text-[12px] text-[#75767a]">Claude is writing…</span> : null}
+      <div className="flex items-center justify-between gap-2 border-b border-[#d2d2d4] bg-[#f0f0f1] px-4 py-2">
+        <h3 className="truncate text-sm font-bold text-[#6c1d45]">
+          Claude&apos;s assessment{focusName ? ` — ${focusName}` : ""}
+        </h3>
+        {loading ? <span className="shrink-0 text-[12px] text-[#75767a]">writing…</span> : null}
       </div>
       <div className="px-4 py-3 text-[14px] leading-relaxed text-[#3f3f3f]">
         {!focusId ? (
           <p className="text-[13px] text-[#75767a]">
-            Select a firm to stream a live Claude briefing grounded in the resolved network —
-            citing company numbers and dates, never inventing.
+            Pick a case above — Claude reads the network and writes a plain-English assessment
+            here, live.
           </p>
         ) : error ? (
           <p className="text-[13px] text-[#ff585d]">
             Briefing unavailable: {error}. The AI service may be busy — try another firm or retry.
           </p>
         ) : text ? (
-          <p className="whitespace-pre-wrap">
-            {text}
+          <div className="whitespace-pre-wrap">
+            {text.split("\n").map((line, i) => {
+              const m = line.match(/^(VERDICT:|WORTH CHECKING NEXT:)(.*)$/);
+              return m ? (
+                <p key={i} className={i > 0 ? "mt-2" : ""}>
+                  <b className="text-[#6c1d45]">{m[1]}</b>
+                  {m[2]}
+                </p>
+              ) : (
+                <p key={i} className={line.trim() === "" ? "h-2" : i > 0 ? "mt-1" : ""}>
+                  {line}
+                </p>
+              );
+            })}
             {loading ? <span className="ml-[1px] inline-block h-4 w-[2px] animate-pulse bg-[#6c1d45] align-middle" /> : null}
-          </p>
+          </div>
         ) : (
           <p className="text-[13px] text-[#75767a]">
             Preparing briefing for <span className="font-bold text-[#6c1d45]">{focusName ?? focusId}</span>…
