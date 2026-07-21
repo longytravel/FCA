@@ -195,8 +195,8 @@ export default function SweepTable({
                 {([
                   ["firm", "Fined firm"],
                   ["amount", "Fine"],
-                  ["risk", "Top risk"],
-                  ["active", "Active cos"],
+                  ["risk", "Risk score /100"],
+                  ["active", "Companies they run now"],
                 ] as [SortKey, string][]).map(([k, label]) => (
                   <th key={k} className="border-b border-[#d2d2d4] px-3 py-2">
                     <button onClick={() => setSortKey(k)} className="font-bold text-[#6c1d45] hover:underline">

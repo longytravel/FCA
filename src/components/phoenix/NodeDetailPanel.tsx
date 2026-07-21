@@ -48,7 +48,7 @@ function RiskBars({ node }: { node: PNode }) {
       </div>
       {factors.length === 0 ? (
         <p className="mt-2 text-[13px] text-[#75767a]">
-          No scored risk factors yet. Resolve this firm to compute the breakdown from live
+          No score yet for this one. Pick its firm from a case card or search to build it from live
           Companies House data.
         </p>
       ) : (
@@ -139,7 +139,7 @@ export default function NodeDetailPanel({
           ) : null}
           {node.sic_codes?.length ? (
             <>
-              <dt className="text-[#75767a]">SIC</dt>
+              <dt className="text-[#75767a]">Line of business (SIC)</dt>
               <dd className="text-[#3f3f3f]">{node.sic_codes.join(", ")}</dd>
             </>
           ) : null}
