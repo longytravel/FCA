@@ -1,20 +1,28 @@
 #!/usr/bin/env node
 // scripts/sweep.mjs  (owner: C) — standalone Node ESM, no deps.
 //
-// Sweeps all 300 fined firms in data/fines.json against live Companies House:
-//   fine → best-match company → officers → each director's appointments →
-//   active linked companies → transparent risk score. Keeps only directors with
-//   >=1 active linked company incorporated AFTER the fine date, OR risk >= 40.
+// Sweeps the FCA enforcement actions in data/fines.json against live Companies House.
+//   entity → best-match company → officers → each director's appointments →
+//   active linked companies → transparent risk score with confidence.
 //
-// RESUMABLE: reloads data/fixtures/sweep-results.json and skips firms already
-// processed (tracked in processedFirms). Writes incrementally every 10 firms so a
-// crash loses little. Throttled ~150ms/request. Progress to stdout every 10 firms.
+// INPUT HYGIENE (data/fines.json rows are enforcement actions, not clean companies):
+//   - repeat actions against the same firm are merged into one entity (all fine events kept);
+//   - rows that look like named individuals are skipped;
+//   - rows that bundle multiple firms are skipped;
+//   - every skip/no-match is recorded in output.skipped[] so coverage is honest.
+//
+// RISK ATTRIBUTION: only human director-type officers who were present during the firm's
+// fine window are scored; others are ignored. Scores carry dataCompleteness + unknownFactors
+// so missing evidence never reads as low risk.
+//
+// RESUMABLE: reloads data/fixtures/sweep-results.json and skips entities already processed.
+// Writes incrementally every 10 entities. Throttled ~150ms/request. Progress every 10.
 //
 // Env: parses .env.local itself for COMPANIES_HOUSE_API_KEY (no dotenv dependency).
-// Optional SWEEP_LIMIT=N processes only the first N fines (for smoke testing).
+// Optional SWEEP_LIMIT=N processes only the first N entities (for smoke testing).
 //
-// The risk logic here mirrors src/lib/phoenix/risk.ts — kept in sync by hand because
-// this script runs under plain `node` and cannot import the TypeScript module.
+// The risk + role logic here mirrors src/lib/phoenix/{risk,graph}.ts — kept in sync by hand
+// because this script runs under plain `node` and cannot import the TypeScript modules.
 
 import fs from "node:fs";
 import path from "node:path";
@@ -73,12 +81,55 @@ async function chGet(p) {
   }
 }
 
-// ---------- helpers ----------
-function parseFineDate(ddmmyyyy) {
-  // "DD/MM/YYYY" -> ISO "YYYY-MM-DD"
-  const m = (ddmmyyyy || "").match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
-  return m ? `${m[3]}-${m[2]}-${m[1]}` : null;
+// ---------- date parsing (tolerant) ----------
+const MONTHS = {
+  january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7,
+  august: 8, september: 9, october: 10, november: 11, december: 12,
+  jan: 1, feb: 2, mar: 3, apr: 4, jun: 6, jul: 7, aug: 8, sep: 9, sept: 9, oct: 10, nov: 11, dec: 12,
+};
+function parseFineDate(raw, yearFallback) {
+  const s = (raw || "").trim();
+  let m;
+  if ((m = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/))) {
+    return `${m[3]}-${m[2].padStart(2, "0")}-${m[1].padStart(2, "0")}`; // DD/MM/YYYY
+  }
+  if ((m = s.match(/^(\d{4})-(\d{2})-(\d{2})/))) return `${m[1]}-${m[2]}-${m[3]}`; // YYYY-MM-DD
+  if ((m = s.match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/))) {
+    const mo = MONTHS[m[2].toLowerCase()];
+    if (mo) return `${m[3]}-${String(mo).padStart(2, "0")}-${m[1].padStart(2, "0")}`; // "D Month YYYY"
+  }
+  if (s) {
+    const d = new Date(s);
+    if (!isNaN(d.getTime())) return d.toISOString().slice(0, 10);
+  }
+  if (yearFallback) return `${yearFallback}-01-01`; // fall back to the year column
+  return null;
 }
+
+// ---------- input hygiene ----------
+const CORP_TOKENS =
+  /\b(ltd|limited|plc|llp|llc|inc|lp|bank|group|holdings|capital|securities|insurance|assurance|asset|management|partners|partnership|financial|finance|investments?|advisers?|advisors?|mortgages?|trading|markets|funds?|services|international|nominees|trustees|corporation|corp|company|society|union|associates|brokers?|wealth|pensions?|life|credit|solutions|payments?|exchange|global)\b/i;
+const TITLE_PREFIX = /^(mr|mrs|ms|miss|dr|sir|lord|lady|prof)\.?\s+/i;
+
+function stripTitles(s) {
+  let out = s.trim();
+  while (TITLE_PREFIX.test(out)) out = out.replace(TITLE_PREFIX, "");
+  return out;
+}
+function looksLikeIndividual(firm) {
+  const s = stripTitles(firm);
+  if (CORP_TOKENS.test(s)) return false;
+  // 2-3 words, purely alphabetic (allowing hyphen/apostrophe), no digits → likely a person
+  const words = s.split(/\s+/).filter(Boolean);
+  if (words.length < 2 || words.length > 3) return false;
+  return words.every((w) => /^[A-Za-z][A-Za-z'’-]*$/.test(w));
+}
+function looksLikeMultiFirm(firm) {
+  if (/\band others\b|\bet al\b/i.test(firm)) return true;
+  const corpCount = (firm.match(new RegExp(CORP_TOKENS.source, "gi")) || []).length;
+  return corpCount >= 2 && /(\band\b|&|,|\/|\+)/i.test(firm);
+}
+
 function core(s) {
   return (s || "")
     .toLowerCase()
@@ -104,6 +155,8 @@ function bestMatch(firm, items) {
   }
   return bestScore >= 0.7 ? best : null;
 }
+
+// ---------- CH helpers ----------
 function flattenAddress(a) {
   if (!a || typeof a !== "object") return undefined;
   return [a.premises, a.address_line_1, a.address_line_2, a.locality, a.region, a.postal_code]
@@ -119,7 +172,38 @@ function officerId(o) {
   return null;
 }
 
+// ---------- role / overlap (mirror of src/lib/phoenix/graph.ts) ----------
+const CORP_NAME_RE = /\b(LIMITED|LTD|PLC|LLP|LLC|INC|GMBH|HOLDINGS|GROUP|NOMINEES|SECRETARIES|SERVICES|CORP|COMPANY|TRUSTEES)\b/i;
+function looksLikeCompany(name) {
+  return CORP_NAME_RE.test(name || "");
+}
+function isHumanDirectorRole(role, name) {
+  const r = (role || "").toLowerCase();
+  if (r.includes("secretary")) return false;
+  if (r.includes("corporate")) return false;
+  const directorish = r.includes("director") || r.includes("member") || r.includes("partner");
+  if (!directorish) return false;
+  if (looksLikeCompany(name)) return false;
+  return true;
+}
+const OVERLAP_GRACE_MS = 365 * 24 * 3600 * 1000;
+function overlappedWindow(appointed, resigned, refDate) {
+  if (!refDate) return true;
+  const ref = new Date(refDate).getTime();
+  if (isNaN(ref)) return true;
+  if (appointed) {
+    const a = new Date(appointed).getTime();
+    if (!isNaN(a) && a > ref) return false;
+  }
+  if (resigned) {
+    const res = new Date(resigned).getTime();
+    if (!isNaN(res) && res < ref - OVERLAP_GRACE_MS) return false;
+  }
+  return true;
+}
+
 // ---------- risk (mirror of src/lib/phoenix/risk.ts) ----------
+const ALL_FACTOR_KEYS = ["gap", "same_address", "same_sic", "co_director", "active_count"];
 const YEAR_MS = 365.25 * 24 * 3600 * 1000;
 const ONE_MONTH_MS = 30 * 24 * 3600 * 1000;
 const parseD = (s) => {
@@ -135,9 +219,19 @@ function scoreOfficer({ seedName, seedCollapseDate, seedAddress, seedSic, linked
   const active = linked.filter((c) => isActive(c.status));
   const collapse = parseD(seedCollapseDate);
 
+  const hasUnresolvedLinked = linked.some((c) => c.status === undefined);
+  const seedHasAddr = !!normAddr(seedAddress);
+  const seedHasSic = (seedSic || []).length > 0;
+  const hadData = {
+    gap: !!collapse && !hasUnresolvedLinked,
+    same_address: seedHasAddr && !hasUnresolvedLinked,
+    same_sic: seedHasSic && !hasUnresolvedLinked,
+    co_director: coDirectorCompanies !== undefined,
+    active_count: !hasUnresolvedLinked,
+  };
+
   if (collapse) {
-    const after = linked
-      .filter((c) => isActive(c.status))
+    const after = active
       .map((c) => ({ c, inc: parseD(c.incorporated_on) }))
       .filter((x) => x.inc && x.inc.getTime() >= collapse.getTime() - ONE_MONTH_MS)
       .sort((a, b) => a.inc.getTime() - b.inc.getTime());
@@ -203,54 +297,79 @@ function scoreOfficer({ seedName, seedCollapseDate, seedAddress, seedSic, linked
   }
 
   const score = Math.min(100, factors.reduce((s, f) => s + f.points, 0));
-  return { score, factors };
+  const unknownFactors = ALL_FACTOR_KEYS.filter((k) => !hadData[k]);
+  const dataCompleteness = (ALL_FACTOR_KEYS.length - unknownFactors.length) / ALL_FACTOR_KEYS.length;
+  return { score, factors, dataCompleteness, unknownFactors };
 }
 
-// ---------- output state ----------
-function loadState() {
-  if (fs.existsSync(OUT_FILE)) {
-    try {
-      const j = JSON.parse(fs.readFileSync(OUT_FILE, "utf8"));
-      return {
-        results: Array.isArray(j.results) ? j.results : [],
-        processedFirms: Array.isArray(j.processedFirms) ? j.processedFirms : [],
-      };
-    } catch {
-      /* corrupt/partial — start fresh */
+// ---------- entity building (dedupe + merge repeat actions) ----------
+function buildEntities(fines) {
+  const skipped = [];
+  const byKey = new Map();
+  for (const row of fines) {
+    const firm = String(row.firm || "").trim();
+    if (!firm) {
+      skipped.push({ firm: "(blank)", reason: "empty firm name" });
+      continue;
     }
+    if (looksLikeIndividual(firm)) {
+      skipped.push({ firm, reason: "looks like a named individual, not a company" });
+      continue;
+    }
+    if (looksLikeMultiFirm(firm)) {
+      skipped.push({ firm, reason: "action bundles multiple firms" });
+      continue;
+    }
+    const key = core(firm);
+    if (!key) {
+      skipped.push({ firm, reason: "unrecognisable firm name" });
+      continue;
+    }
+    const event = {
+      date: parseFineDate(row.date, row.year),
+      amount: typeof row.amount === "number" ? row.amount : null,
+      reason: row.reason || null,
+      ...(row.noticeUrl ? { noticeUrl: row.noticeUrl } : {}), // noticeUrl optional
+    };
+    if (!byKey.has(key)) byKey.set(key, { firm, fineEvents: [] });
+    byKey.get(key).fineEvents.push(event);
   }
-  return { results: [], processedFirms: [] };
-}
-function save(state) {
-  const payload = {
-    generatedAt: new Date().toISOString(),
-    processedFirms: state.processedFirms,
-    results: state.results,
-  };
-  fs.writeFileSync(OUT_FILE, JSON.stringify(payload, null, 2));
+  const entities = [];
+  for (const ent of byKey.values()) {
+    const dated = ent.fineEvents.filter((e) => e.date).sort((a, b) => a.date.localeCompare(b.date));
+    const earliest = dated.length ? dated[0].date : null;
+    const totalAmount = ent.fineEvents.reduce((s, e) => s + (e.amount || 0), 0);
+    entities.push({
+      firm: ent.firm,
+      key: core(ent.firm),
+      fineDate: earliest,
+      amount: totalAmount,
+      fineEvents: ent.fineEvents,
+    });
+  }
+  return { entities, skipped };
 }
 
+// ---------- per-entity resolution ----------
 const APPTS_PER_DIRECTOR = 40;
-const PROFILE_BUDGET_PER_FIRM = 30;
+const PROFILE_BUDGET_PER_ENTITY = 30;
 
-async function processFine(fine) {
-  const fineDate = parseFineDate(fine.date);
-  const search = await chGet(`/search/companies?q=${encodeURIComponent(fine.firm)}&items_per_page=10`);
-  const match = bestMatch(fine.firm, search?.items ?? []);
-  if (!match) return { skipped: true };
+async function processEntity(entity) {
+  const search = await chGet(`/search/companies?q=${encodeURIComponent(entity.firm)}&items_per_page=10`);
+  const match = bestMatch(entity.firm, search?.items ?? []);
+  if (!match) return { skipReason: "no confident Companies House match" };
 
   const companyNumber = match.company_number;
   const profile = await chGet(`/company/${companyNumber}`);
-  if (!profile) return { skipped: true };
+  if (!profile) return { skipReason: "matched company profile unavailable" };
 
   const seedAddress = flattenAddress(profile.registered_office_address);
   const seedSic = profile.sic_codes || [];
   const seedName = profile.company_name || match.title;
+  const fineDate = entity.fineDate; // trouble window = earliest fine
 
   const officersBody = await chGet(`/company/${companyNumber}/officers?items_per_page=35`);
-  const directors = (officersBody?.items ?? []).filter((o) =>
-    String(o.officer_role || "").toLowerCase().includes("director"),
-  );
+  const directors = (officersBody?.items ?? []).filter((o) => isHumanDirectorRole(o.officer_role, o.name));
 
   // gather each director's appointments first (for co-director overlap)
   const gathered = [];
@@ -258,7 +377,13 @@ async function processFine(fine) {
     const id = officerId(d);
     if (!id) continue;
     const apptsBody = await chGet(`/officers/${id}/appointments?items_per_page=50`);
-    gathered.push({ name: d.name, id, appts: (apptsBody?.items ?? []).slice(0, APPTS_PER_DIRECTOR) });
+    gathered.push({
+      name: d.name,
+      id,
+      appointed_on: d.appointed_on,
+      resigned_on: d.resigned_on,
+      appts: (apptsBody?.items ?? []).slice(0, APPTS_PER_DIRECTOR),
+    });
   }
 
   const companyOfficers = new Map();
@@ -272,7 +397,7 @@ async function processFine(fine) {
   }
 
   const profileCache = new Map();
-  let budget = PROFILE_BUDGET_PER_FIRM;
+  let budget = PROFILE_BUDGET_PER_ENTITY;
   async function linkedProfile(cn) {
     if (profileCache.has(cn)) return profileCache.get(cn);
     if (budget <= 0) return null;
@@ -284,6 +409,9 @@ async function processFine(fine) {
 
   const keptDirectors = [];
   for (const g of gathered) {
+    // risk attribution: only directors present during the fine window
+    if (!overlappedWindow(g.appointed_on, g.resigned_on, fineDate)) continue;
+
     const linked = [];
     let coDirectorCompanies = 0;
     const seen = new Set();
@@ -293,7 +421,6 @@ async function processFine(fine) {
       seen.add(cn);
       const shared = companyOfficers.get(cn);
       if (shared && shared.size > 1) coDirectorCompanies++;
-      // only spend a profile fetch on companies that could be active
       const preStatus = a?.appointed_to?.company_status;
       if (preStatus && !isActive(preStatus)) {
         linked.push({ number: cn, name: a?.appointed_to?.company_name || cn, status: preStatus });
@@ -310,11 +437,12 @@ async function processFine(fine) {
           sic_codes: p.sic_codes || [],
         });
       } else {
+        // status stays undefined → scoreOfficer marks affected factors unknown
         linked.push({ number: cn, name: a?.appointed_to?.company_name || cn, status: preStatus });
       }
     }
 
-    const { score, factors } = scoreOfficer({
+    const { score, factors, dataCompleteness, unknownFactors } = scoreOfficer({
       seedName,
       seedCollapseDate: fineDate,
       seedAddress,
@@ -337,6 +465,8 @@ async function processFine(fine) {
         officerId: g.id,
         risk: score,
         riskFactors: factors,
+        dataCompleteness,
+        unknownFactors,
         activeCompanies: linked
           .filter((c) => isActive(c.status))
           .map((c) => ({
@@ -349,13 +479,14 @@ async function processFine(fine) {
     }
   }
 
-  if (!keptDirectors.length) return { skipped: false, result: null };
+  if (!keptDirectors.length) return { skipReason: null, result: null };
   return {
-    skipped: false,
+    skipReason: null,
     result: {
-      firm: fine.firm,
+      firm: entity.firm,
       fineDate,
-      amount: fine.amount,
+      amount: entity.amount,
+      fineEvents: entity.fineEvents,
       companyNumber,
       matchedName: seedName,
       directors: keptDirectors,
@@ -363,49 +494,92 @@ async function processFine(fine) {
   };
 }
 
+// ---------- output state ----------
+function loadState() {
+  if (fs.existsSync(OUT_FILE)) {
+    try {
+      const j = JSON.parse(fs.readFileSync(OUT_FILE, "utf8"));
+      return {
+        results: Array.isArray(j.results) ? j.results : [],
+        skipped: Array.isArray(j.skipped) ? j.skipped : [],
+        processedFirms: Array.isArray(j.processedFirms) ? j.processedFirms : [],
+      };
+    } catch {
+      /* corrupt/partial — start fresh */
+    }
+  }
+  return { results: [], skipped: [], processedFirms: [] };
+}
+function save(state) {
+  fs.writeFileSync(
+    OUT_FILE,
+    JSON.stringify(
+      {
+        generatedAt: new Date().toISOString(),
+        processedFirms: state.processedFirms,
+        skipped: state.skipped,
+        results: state.results,
+      },
+      null,
+      2,
+    ),
+  );
+}
+
 // ---------- main ----------
 async function main() {
   const fines = JSON.parse(fs.readFileSync(FINES_FILE, "utf8"));
-  const rows = (LIMIT > 0 ? fines.slice(0, LIMIT) : fines);
+  const { entities, skipped: inputSkips } = buildEntities(fines);
+  const rows = LIMIT > 0 ? entities.slice(0, LIMIT) : entities;
+
   const state = loadState();
   const done = new Set(state.processedFirms);
 
-  console.log(`Sweep starting: ${rows.length} fines (${done.size} already processed)`);
+  // seed input-hygiene skips (dedupe against what's already recorded)
+  const recordedSkips = new Set(state.skipped.map((s) => `${s.firm}|${s.reason}`));
+  for (const s of inputSkips) {
+    const k = `${s.firm}|${s.reason}`;
+    if (!recordedSkips.has(k)) {
+      state.skipped.push(s);
+      recordedSkips.add(k);
+    }
+  }
+
+  console.log(
+    `Sweep starting: ${fines.length} enforcement rows → ${entities.length} company entities ` +
+      `(${inputSkips.length} rows skipped as individuals/multi-firm; ${done.size} entities already done)`,
+  );
+
   let processed = 0;
-  let skipped = 0;
-  let kept = 0;
+  let noMatch = 0;
 
-  for (let i = 0; i < rows.length; i++) {
-    const fine = rows[i];
-    const firmKey = `${fine.firm}|${fine.date}`;
-    if (done.has(firmKey)) continue;
-
+  for (const entity of rows) {
+    if (done.has(entity.key)) continue;
     try {
-      const out = await processFine(fine);
-      if (out.skipped) {
-        skipped++;
+      const out = await processEntity(entity);
+      if (out.skipReason) {
+        state.skipped.push({ firm: entity.firm, reason: out.skipReason });
+        noMatch++;
       } else if (out.result) {
         state.results.push(out.result);
-        kept++;
       }
     } catch (e) {
-      console.log(`  ! ${fine.firm}: ${e.message}`);
+      console.log(`  ! ${entity.firm}: ${e.message}`);
+      state.skipped.push({ firm: entity.firm, reason: `error: ${e.message}` });
     }
-    done.add(firmKey);
-    state.processedFirms.push(firmKey);
+    done.add(entity.key);
+    state.processedFirms.push(entity.key);
     processed++;
 
     if (processed % 10 === 0) {
       save(state);
-      console.log(
-        `  ...${processed} processed this run (${state.results.length} firms with hits, ${skipped} weak-match skips)`,
-      );
+      console.log(`  ...${processed} entities processed this run (${state.results.length} with hits, ${noMatch} unmatched)`);
     }
   }
 
   save(state);
   console.log(
-    `Sweep done. ${processed} processed this run, ${state.results.length} firms with resurfaced directors, ${skipped} weak-match skips.`,
+    `Sweep done. ${processed} entities processed this run; ${state.results.length} firms with resurfaced directors; ${state.skipped.length} total skipped/unmatched recorded.`,
   );
   console.log(`Written: ${OUT_FILE}`);
 }

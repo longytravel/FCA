@@ -12,6 +12,10 @@ export type PNode = {
   sic_codes?: string[];
   risk?: number; // 0-100, officers only
   riskFactors?: RiskFactor[];
+  // Confidence signals (officers only) — additive, optional. Missing evidence must not
+  // read as low risk: a low `risk` with low `dataCompleteness` means "unknown", not "clean".
+  dataCompleteness?: number; // 0-1: fraction of the 5 risk factors we had data to evaluate
+  unknownFactors?: RiskFactor["key"][]; // factor keys that could not be evaluated
 };
 
 export type PEdge = {

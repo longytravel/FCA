@@ -4,7 +4,16 @@
 // backed by an in-memory TTL cache per server instance. The API key never leaves the server.
 
 import type { PhoenixGraph, PNode, PEdge } from "./types";
-import { companyNode, stubCompanyNode, officerNode, officerIdFromLinks, mergeGraph, emptyGraph } from "./graph";
+import {
+  companyNode,
+  stubCompanyNode,
+  officerNode,
+  officerIdFromLinks,
+  mergeGraph,
+  emptyGraph,
+  isHumanDirectorRole,
+  overlappedWindow,
+} from "./graph";
 import { scoreOfficer, type LinkedCo } from "./risk";
 
 const BASE = "https://api.company-information.service.gov.uk";
@@ -111,8 +120,27 @@ export async function resolvePhoenixGraph(companyNumber: string): Promise<Phoeni
   const seedAddress = seedNode.address;
   const seedSic = seedNode.sic_codes;
   const seedCollapse = seedNode.dissolved_on || seedNode.incorporated_on || undefined;
+  // Trouble window for risk attribution: the firm's dissolution if known. When the firm is
+  // still live (no dissolution date, e.g. an active investigation) we don't time-gate.
+  const troubleDate = seedNode.dissolved_on || undefined;
 
   const officers = await getOfficers(num);
+
+  // Officers that aren't human directors (secretaries, corporate officers) stay in the graph
+  // but are never risk-scored, and we don't spend calls fetching their appointments.
+  for (const o of officers) {
+    if (isHumanDirectorRole(o.officer_role, o.name)) continue;
+    const id = officerIdFromLinks(o);
+    if (!id) continue;
+    nodes.push(officerNode(id, String(o.name ?? id)));
+    edges.push({
+      source: id,
+      target: num,
+      role: String(o.officer_role ?? "officer"),
+      appointed_on: o.appointed_on,
+      resigned_on: o.resigned_on,
+    });
+  }
 
   type OffData = {
     id: string;
@@ -124,6 +152,7 @@ export async function resolvePhoenixGraph(companyNumber: string): Promise<Phoeni
   };
   const offs: OffData[] = [];
   for (const o of officers) {
+    if (!isHumanDirectorRole(o.officer_role, o.name)) continue;
     const id = officerIdFromLinks(o);
     if (!id) continue;
     const appts = (await getAppointments(id)).slice(0, APPTS_PER_OFFICER);
@@ -205,15 +234,21 @@ export async function resolvePhoenixGraph(companyNumber: string): Promise<Phoeni
       }
     }
 
-    const { score, factors } = scoreOfficer({
-      seedName: seedNode.name,
-      seedCollapseDate: seedCollapse,
-      seedAddress,
-      seedSic,
-      linked: linkedForRisk,
-      coDirectorCompanies,
-    });
-    nodes.push(officerNode(off.id, off.name, score, factors));
+    // Only attribute risk to directors who were present during the trouble window; others
+    // remain in the graph (with their linked companies) but carry no risk score.
+    if (overlappedWindow(off.appointed_on, off.resigned_on, troubleDate)) {
+      const { score, factors, dataCompleteness, unknownFactors } = scoreOfficer({
+        seedName: seedNode.name,
+        seedCollapseDate: seedCollapse,
+        seedAddress,
+        seedSic,
+        linked: linkedForRisk,
+        coDirectorCompanies,
+      });
+      nodes.push(officerNode(off.id, off.name, { risk: score, riskFactors: factors, dataCompleteness, unknownFactors }));
+    } else {
+      nodes.push(officerNode(off.id, off.name));
+    }
   }
 
   // mergeGraph dedupes companies linked by multiple officers and unions their tags.

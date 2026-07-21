@@ -163,6 +163,9 @@ export function computeAppearance(graph: PhoenixGraph): {
 
   if (!Number.isFinite(min)) min = Date.UTC(2000, 0, 1);
   if (!Number.isFinite(max)) max = Date.now();
+  // Century-old incorporations (fined banks) crush the interesting 2013+ range —
+  // clamp the scrubber to 2005; anything earlier is simply visible from the start.
+  min = Math.max(min, Date.UTC(2005, 0, 1));
   return { nodeAppear, edgeAppear, min, max };
 }
 

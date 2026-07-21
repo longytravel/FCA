@@ -50,8 +50,63 @@ export function stubCompanyNode(number: string, name: string, tags: string[]): P
   return { id: number, type: "company", name: name || number, tags };
 }
 
-export function officerNode(id: string, name: string, risk: number, riskFactors: RiskFactor[]): PNode {
-  return { id, type: "officer", name, tags: [], risk, riskFactors };
+export type OfficerScoring = {
+  risk: number;
+  riskFactors: RiskFactor[];
+  dataCompleteness: number;
+  unknownFactors: RiskFactor["key"][];
+};
+
+/** Officer node. Pass `scoring` only for officers we actually risk-scored; unscored
+ *  officers (wrong role, or not present during the trouble window) stay in the graph
+ *  with no risk attached. */
+export function officerNode(id: string, name: string, scoring?: OfficerScoring): PNode {
+  const node: PNode = { id, type: "officer", name, tags: [] };
+  if (scoring) {
+    node.risk = scoring.risk;
+    node.riskFactors = scoring.riskFactors;
+    node.dataCompleteness = scoring.dataCompleteness;
+    node.unknownFactors = scoring.unknownFactors;
+  }
+  return node;
+}
+
+const CORP_NAME_RE = /\b(LIMITED|LTD|PLC|LLP|LLC|INC|GMBH|HOLDINGS|GROUP|NOMINEES|SECRETARIES|SERVICES|CORP|COMPANY|TRUSTEES)\b/i;
+
+/** A name that looks like a corporate body rather than a human. */
+export function looksLikeCompany(name?: string): boolean {
+  return CORP_NAME_RE.test(name || "");
+}
+
+/** Only human director-type officers get risk-scored: exclude secretaries, corporate
+ *  officers, and company-named entities. Includes directors and LLP/partnership members. */
+export function isHumanDirectorRole(role?: string, name?: string): boolean {
+  const r = (role || "").toLowerCase();
+  if (r.includes("secretary")) return false;
+  if (r.includes("corporate")) return false;
+  const directorish = r.includes("director") || r.includes("member") || r.includes("partner");
+  if (!directorish) return false;
+  if (looksLikeCompany(name)) return false;
+  return true;
+}
+
+const OVERLAP_GRACE_MS = 365 * 24 * 3600 * 1000; // ~12 months
+
+/** Did this appointment overlap the firm's trouble window? Appointed on/before the reference
+ *  date and not resigned more than ~12 months before it. No reference date → don't exclude. */
+export function overlappedWindow(appointed_on?: string, resigned_on?: string, refDate?: string): boolean {
+  if (!refDate) return true;
+  const ref = new Date(refDate).getTime();
+  if (isNaN(ref)) return true;
+  if (appointed_on) {
+    const a = new Date(appointed_on).getTime();
+    if (!isNaN(a) && a > ref) return false; // appointed after the trouble date
+  }
+  if (resigned_on) {
+    const res = new Date(resigned_on).getTime();
+    if (!isNaN(res) && res < ref - OVERLAP_GRACE_MS) return false; // long gone before it
+  }
+  return true;
 }
 
 const edgeKey = (e: PEdge) => `${e.source}->${e.target}:${e.role}`;

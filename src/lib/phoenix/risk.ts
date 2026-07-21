@@ -11,6 +11,8 @@
 
 import type { RiskFactor } from "./types";
 
+const ALL_FACTOR_KEYS: RiskFactor["key"][] = ["gap", "same_address", "same_sic", "co_director", "active_count"];
+
 export type LinkedCo = {
   number: string;
   name: string;
@@ -32,7 +34,14 @@ export type RiskInput = {
   coDirectorCompanies?: number;
 };
 
-export type RiskResult = { score: number; factors: RiskFactor[] };
+export type RiskResult = {
+  score: number;
+  factors: RiskFactor[];
+  /** Fraction (0-1) of the 5 factors we had enough data to evaluate (score or clear-negative). */
+  dataCompleteness: number;
+  /** Factor keys we could not evaluate — usually because linked-company profiles were unavailable. */
+  unknownFactors: RiskFactor["key"][];
+};
 
 const YEAR_MS = 365.25 * 24 * 3600 * 1000;
 const ONE_MONTH_MS = 30 * 24 * 3600 * 1000;
@@ -55,6 +64,21 @@ export function scoreOfficer(input: RiskInput): RiskResult {
   const factors: RiskFactor[] = [];
   const active = input.linked.filter((c) => isActive(c.status));
   const collapse = parseDate(input.seedCollapseDate);
+
+  // Evaluability: a factor "has data" when we had the seed-side input AND no linked company
+  // was left unresolved (unknown status) — an unresolved linked company could hide a positive,
+  // so we mark the comparison factors unknown rather than silently scoring them zero.
+  const hasUnresolvedLinked = input.linked.some((c) => c.status === undefined);
+  const seedHasAddr = !!normAddress(input.seedAddress);
+  const seedHasSic = (input.seedSic || []).length > 0;
+  const haveCollapse = !!collapse;
+  const hadData: Record<RiskFactor["key"], boolean> = {
+    gap: haveCollapse && !hasUnresolvedLinked,
+    same_address: seedHasAddr && !hasUnresolvedLinked,
+    same_sic: seedHasSic && !hasUnresolvedLinked,
+    co_director: input.coDirectorCompanies !== undefined,
+    active_count: !hasUnresolvedLinked,
+  };
 
   // 1. gap — nearest active company incorporated on/after the collapse, within 2 years
   if (collapse) {
@@ -130,5 +154,7 @@ export function scoreOfficer(input: RiskInput): RiskResult {
   }
 
   const score = Math.min(100, factors.reduce((s, f) => s + f.points, 0));
-  return { score, factors };
+  const unknownFactors = ALL_FACTOR_KEYS.filter((k) => !hadData[k]);
+  const dataCompleteness = (ALL_FACTOR_KEYS.length - unknownFactors.length) / ALL_FACTOR_KEYS.length;
+  return { score, factors, dataCompleteness, unknownFactors };
 }
