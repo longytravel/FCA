@@ -15,6 +15,11 @@ export const FCA = {
   rule: "#d2d2d4",
   muted: "#75767a",
   white: "#ffffff",
+  /** Bold, high-contrast node palette — each role unmistakable at a glance. */
+  phoenix: "#e4002b",
+  company: "#007fae",
+  dissolved: "#b6b8ba",
+  officer: "#ffc72c",
 } as const;
 
 /** The three headline cases (presenter keys 1/2/3, hero chips). */
@@ -47,12 +52,12 @@ export function isPhoenixSignal(node: PNode): boolean {
 }
 
 export function nodeColor(node: PNode): string {
-  if (node.type === "officer") return FCA.navy;
+  if (node.type === "officer") return FCA.officer;
   if (node.tags?.includes("phoenix-seed") || node.tags?.includes("fined-seed"))
     return FCA.mulberry;
-  if (isPhoenixSignal(node)) return FCA.coral;
-  if (isDissolvedStatus(node.status)) return FCA.muted;
-  return FCA.mulberry;
+  if (isPhoenixSignal(node)) return FCA.phoenix;
+  if (isDissolvedStatus(node.status)) return FCA.dissolved;
+  return FCA.company;
 }
 
 /** Officer canvas radius from risk (0-100). Companies drawn as squares elsewhere. */

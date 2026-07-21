@@ -239,6 +239,7 @@ export async function resolvePhoenixGraph(companyNumber: string): Promise<Phoeni
     if (overlappedWindow(off.appointed_on, off.resigned_on, troubleDate)) {
       const { score, factors, dataCompleteness, unknownFactors } = scoreOfficer({
         seedName: seedNode.name,
+        seedStatus: seedNode.status,
         seedCollapseDate: seedCollapse,
         seedAddress,
         seedSic,

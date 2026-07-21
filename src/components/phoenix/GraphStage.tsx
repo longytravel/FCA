@@ -155,11 +155,10 @@ export default function GraphStage({
       ctx.arc(x, y, r, 0, 2 * Math.PI);
       ctx.fillStyle = color;
       ctx.fill();
-      if (isSel || isHot) {
-        ctx.lineWidth = 2 / scale;
-        ctx.strokeStyle = FCA.yellow;
-        ctx.stroke();
-      }
+      // Gold circles need a dark rim to read on a white canvas.
+      ctx.lineWidth = (isSel || isHot ? 2.5 : 1.2) / scale;
+      ctx.strokeStyle = isSel || isHot ? FCA.mulberry : FCA.navy;
+      ctx.stroke();
     } else {
       const s = 8;
       ctx.fillStyle = color;
@@ -175,7 +174,7 @@ export default function GraphStage({
     // in can't fill the canvas with giant text. Seeds/selection always labelled;
     // everything else only at deep zoom, where there's room.
     const seed = node.tags?.some((t) => t === "phoenix-seed" || t === "fined-seed");
-    const phoenix = node.tags?.includes("phoenix") || nodeColor(node) === FCA.coral;
+    const phoenix = node.tags?.includes("phoenix") || nodeColor(node) === FCA.phoenix;
     if (seed || isSel || isHot || phoenix || scale > 3.4) {
       let raw = node.name;
       // Officers render as "SURNAME, First" — surname alone is enough until selected.
@@ -190,7 +189,7 @@ export default function GraphStage({
       const w = ctx.measureText(label).width;
       ctx.fillStyle = "rgba(255,255,255,0.82)";
       ctx.fillRect(x - w / 2 - 1.5, ty - 0.5, w + 3, fontSize + 1.5);
-      ctx.fillStyle = seed ? FCA.mulberry : phoenix ? FCA.coral : FCA.body;
+      ctx.fillStyle = seed ? FCA.mulberry : phoenix ? FCA.phoenix : FCA.body;
       ctx.fillText(label, x, ty);
     }
   };

@@ -32,6 +32,8 @@ export type RiskInput = {
   linked: LinkedCo[];
   /** Count of this officer's linked companies that also share another director with the seed. */
   coDirectorCompanies?: number;
+  /** Companies House status of the fined/seed firm itself. */
+  seedStatus?: string;
 };
 
 export type RiskResult = {
@@ -72,7 +74,7 @@ export function scoreOfficer(input: RiskInput): RiskResult {
   const seedHasAddr = !!normAddress(input.seedAddress);
   const seedHasSic = (input.seedSic || []).length > 0;
   const haveCollapse = !!collapse;
-  const hadData: Record<RiskFactor["key"], boolean> = {
+  const hadData: Partial<Record<RiskFactor["key"], boolean>> = {
     gap: haveCollapse && !hasUnresolvedLinked,
     same_address: seedHasAddr && !hasUnresolvedLinked,
     same_sic: seedHasSic && !hasUnresolvedLinked,
@@ -153,7 +155,21 @@ export function scoreOfficer(input: RiskInput): RiskResult {
     });
   }
 
-  const score = Math.min(100, factors.reduce((s, f) => s + f.points, 0));
+  let score = Math.min(100, factors.reduce((s, f) => s + f.points, 0));
+
+  // A phoenix needs a dead firm. If the fined firm is still trading, shared
+  // addresses/SICs/directors are ordinary group structure, not resurrection —
+  // cap the score so living corporate groups can't top the league.
+  if (isActive(input.seedStatus) && score > 35) {
+    factors.push({
+      key: "still_trading",
+      label: "Fined firm is still trading — score capped",
+      points: 0,
+      detail: `${input.seedName} is still active at Companies House. Directors cannot have risen from a firm that never died, so the mechanical score is capped at 35 — read the overlaps above as group structure, not phoenixing.`,
+    });
+    score = 35;
+  }
+
   const unknownFactors = ALL_FACTOR_KEYS.filter((k) => !hadData[k]);
   const dataCompleteness = (ALL_FACTOR_KEYS.length - unknownFactors.length) / ALL_FACTOR_KEYS.length;
   return { score, factors, dataCompleteness, unknownFactors };

@@ -508,10 +508,11 @@ export default function PhoenixWatch() {
 
 function Legend() {
   const items: [string, string, "sq" | "ci"][] = [
-    ["#6c1d45", "Company", "sq"],
-    ["#ff585d", "Started after the failure — still active", "sq"],
-    ["#75767a", "Dissolved", "sq"],
-    ["#003c71", "Director", "ci"],
+    ["#6c1d45", "The investigated firm", "sq"],
+    ["#e4002b", "Started after the failure — still active", "sq"],
+    ["#007fae", "Other company", "sq"],
+    ["#b6b8ba", "Dissolved", "sq"],
+    ["#ffc72c", "Director", "ci"],
   ];
   return (
     <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-[#75767a]">

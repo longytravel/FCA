@@ -29,7 +29,7 @@ export type PEdge = {
 export type PhoenixGraph = { nodes: PNode[]; edges: PEdge[] };
 
 export type RiskFactor = {
-  key: "gap" | "same_address" | "same_sic" | "co_director" | "active_count";
+  key: "gap" | "same_address" | "same_sic" | "co_director" | "active_count" | "still_trading";
   label: string;
   points: number;
   detail: string;

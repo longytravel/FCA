@@ -214,7 +214,7 @@ const parseD = (s) => {
 const normAddr = (s) => (s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 const isActive = (s) => (s || "").toLowerCase() === "active";
 
-function scoreOfficer({ seedName, seedCollapseDate, seedAddress, seedSic, linked, coDirectorCompanies }) {
+function scoreOfficer({ seedName, seedCollapseDate, seedAddress, seedSic, linked, coDirectorCompanies, seedStatus }) {
   const factors = [];
   const active = linked.filter((c) => isActive(c.status));
   const collapse = parseD(seedCollapseDate);
@@ -296,7 +296,18 @@ function scoreOfficer({ seedName, seedCollapseDate, seedAddress, seedSic, linked
     });
   }
 
-  const score = Math.min(100, factors.reduce((s, f) => s + f.points, 0));
+  let score = Math.min(100, factors.reduce((s, f) => s + f.points, 0));
+  // A phoenix needs a dead firm — if the fined firm is still trading, the overlaps
+  // are ordinary group structure. Cap so living groups can't top the league.
+  if (isActive(seedStatus) && score > 35) {
+    factors.push({
+      key: "still_trading",
+      label: "Fined firm is still trading — score capped",
+      points: 0,
+      detail: `${seedName} is still active at Companies House. Directors cannot have risen from a firm that never died, so the mechanical score is capped at 35 — read the overlaps above as group structure, not phoenixing.`,
+    });
+    score = 35;
+  }
   const unknownFactors = ALL_FACTOR_KEYS.filter((k) => !hadData[k]);
   const dataCompleteness = (ALL_FACTOR_KEYS.length - unknownFactors.length) / ALL_FACTOR_KEYS.length;
   return { score, factors, dataCompleteness, unknownFactors };
@@ -449,6 +460,7 @@ async function processEntity(entity) {
       seedSic,
       linked,
       coDirectorCompanies,
+      seedStatus: profile.company_status,
     });
 
     const activeAfterFine = linked.filter(
