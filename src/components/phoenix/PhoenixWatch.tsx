@@ -258,6 +258,15 @@ export default function PhoenixWatch() {
             </button>
           </div>
         </div>
+        {/* Key + one-line explainer, always on screen for the audience */}
+        <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 border-b border-[#d2d2d4] bg-white px-4 py-1.5">
+          <Legend />
+          <span className="text-[12px] text-[#75767a]">
+            The FCA fined the mulberry firm. It died. Its directors (gold, bigger = higher risk)
+            now run the <b className="text-[#e4002b]">red</b> companies — started after the
+            failure, still trading. Drag to untangle · click anything for its record.
+          </span>
+        </div>
         <div className="relative flex-1">
           {resolveBanner}
           <GraphStage

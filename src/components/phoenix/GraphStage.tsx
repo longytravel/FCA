@@ -160,7 +160,9 @@ export default function GraphStage({
       ctx.strokeStyle = isSel || isHot ? FCA.mulberry : FCA.navy;
       ctx.stroke();
     } else {
-      const s = 8;
+      const seed = node.tags?.some((t) => t === "phoenix-seed" || t === "fined-seed");
+      const phoenix = color === FCA.phoenix;
+      const s = seed ? 13 : phoenix ? 10 : 8;
       ctx.fillStyle = color;
       ctx.fillRect(x - s / 2, y - s / 2, s, s);
       if (isSel || isHot) {
@@ -169,28 +171,60 @@ export default function GraphStage({
         ctx.strokeRect(x - s / 2 - 1, y - s / 2 - 1, s + 2, s + 2);
       }
     }
+    // Labels are painted in a separate post-frame pass (paintLabels) so they can
+    // be prioritised and collision-culled — two labels never overlap.
+  };
 
-    // Labels: screen-constant size (divide by scale, never clamp up) so zooming
-    // in can't fill the canvas with giant text. Seeds/selection always labelled;
-    // everything else only at deep zoom, where there's room.
-    const seed = node.tags?.some((t) => t === "phoenix-seed" || t === "fined-seed");
-    const phoenix = node.tags?.includes("phoenix") || nodeColor(node) === FCA.phoenix;
-    if (seed || isSel || isHot || phoenix || scale > 3.4) {
-      let raw = node.name;
-      // Officers render as "SURNAME, First" — surname alone is enough until selected.
-      if (node.type === "officer" && !isSel && !isHot) raw = raw.split(",")[0];
-      const label = raw.length > 26 ? raw.slice(0, 25) + "…" : raw;
-      const fontSize = (seed || isSel || isHot ? 12 : 9.5) / scale;
-      ctx.font = `${seed || isSel ? "bold " : ""}${fontSize}px Arial, sans-serif`;
-      ctx.textAlign = "center";
-      ctx.textBaseline = "top";
-      const ty = y + (node.type === "officer" ? officerRadius(node) : 5) + 1.5;
-      // White halo so labels stay readable over edges.
+  // ---- Label pass: priority order + collision culling ----------------------
+  // The investigated firm and selection always win; during timeline replay the
+  // just-appeared companies get their names shown ("names coming up"); phoenix
+  // companies next; everything else only when zoomed in far enough for room.
+  const RECENT_MS = 548 * 24 * 3600 * 1000; // ~18 months of replay time
+  const paintLabels = (ctx: CanvasRenderingContext2D, scale: number) => {
+    const seedOf = (n: FNode) => n.tags?.some((t) => t === "phoenix-seed" || t === "fined-seed");
+    const cand: { n: FNode; pri: number }[] = [];
+    for (const n of graphData.nodes as FNode[]) {
+      if (typeof n.x !== "number" || typeof n.y !== "number") continue;
+      if (!nodeVisible(n)) continue;
+      const isSel = n.id === selectedId || n.id === activeId;
+      const seed = seedOf(n);
+      const phx = nodeColor(n) === FCA.phoenix;
+      const appear = nodeAppear.get(n.id) ?? 0;
+      const recent = timelineDate != null && appear > 0 && appear >= timelineDate - RECENT_MS;
+      let pri = -1;
+      if (seed || isSel) pri = 0;
+      else if (recent) pri = 1;
+      else if (phx) pri = 2;
+      else if (n.type === "officer") pri = 3; // directors always try — culling keeps it tidy
+      else if (scale > 2.8) pri = 4;
+      if (pri >= 0) cand.push({ n, pri });
+    }
+    cand.sort((a, b) => a.pri - b.pri);
+    const rects: [number, number, number, number][] = [];
+    const overlaps = (r: [number, number, number, number]) =>
+      rects.some((o) => r[0] < o[2] && r[2] > o[0] && r[1] < o[3] && r[3] > o[1]);
+    ctx.textAlign = "center";
+    ctx.textBaseline = "top";
+    for (const { n, pri } of cand) {
+      const isSel = n.id === selectedId || n.id === activeId;
+      const seed = seedOf(n);
+      const phx = nodeColor(n) === FCA.phoenix;
+      let raw = n.name;
+      if (n.type === "officer" && !isSel && pri >= 3) raw = raw.split(",")[0];
+      const label = raw.length > 28 ? raw.slice(0, 27) + "…" : raw;
+      const fpx = (seed || isSel ? 13.5 : pri <= 2 ? 11.5 : 10) / scale;
+      ctx.font = `${seed || isSel || phx ? "bold " : ""}${fpx}px Arial, sans-serif`;
       const w = ctx.measureText(label).width;
-      ctx.fillStyle = "rgba(255,255,255,0.82)";
-      ctx.fillRect(x - w / 2 - 1.5, ty - 0.5, w + 3, fontSize + 1.5);
-      ctx.fillStyle = seed ? FCA.mulberry : phoenix ? FCA.phoenix : FCA.body;
+      const x = n.x as number;
+      const ty = (n.y as number) + (n.type === "officer" ? officerRadius(n) : 7) + 2 / scale;
+      const pad = 2.5 / scale;
+      const rect: [number, number, number, number] = [x - w / 2 - pad, ty - pad, x + w / 2 + pad, ty + fpx + pad];
+      if (pri > 0 && overlaps(rect)) continue; // the firm + selection always draw
+      ctx.fillStyle = "rgba(255,255,255,0.93)";
+      ctx.fillRect(rect[0], rect[1], rect[2] - rect[0], rect[3] - rect[1]);
+      ctx.fillStyle = seed ? FCA.mulberry : phx ? FCA.phoenix : n.type === "officer" ? FCA.navy : FCA.body;
       ctx.fillText(label, x, ty);
+      rects.push(rect);
     }
   };
 
@@ -251,6 +285,7 @@ export default function GraphStage({
         linkLabel={(l: FLink) => l.role}
         nodeCanvasObject={paintNode as never}
         nodePointerAreaPaint={paintPointerArea as never}
+        onRenderFramePost={paintLabels as never}
         linkCanvasObjectMode={() => "after"}
         linkCanvasObject={paintLinkLabel as never}
         linkColor={(l: FLink) => {

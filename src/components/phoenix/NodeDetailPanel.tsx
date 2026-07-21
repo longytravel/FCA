@@ -36,7 +36,12 @@ function RiskBars({ node }: { node: PNode }) {
   return (
     <div className="mt-4">
       <div className="flex items-baseline justify-between border-b border-[#d2d2d4] pb-1">
-        <h4 className="text-sm font-bold text-[#3f3f3f]">Phoenix risk score</h4>
+        <h4 className="text-sm font-bold text-[#3f3f3f]">
+          Phoenix risk score
+          <span className="block text-[11px] font-normal text-[#75767a]">
+            0–100 &ldquo;look here first&rdquo; indicator — every point explained below
+          </span>
+        </h4>
         <span className="text-lg font-bold" style={{ color: risk != null && risk >= 60 ? FCA.coral : FCA.mulberry }}>
           {risk != null ? `${risk}/100` : "—"}
         </span>

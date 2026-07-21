@@ -180,7 +180,15 @@ export default function SweepTable({
       ) : rows.length === 0 ? (
         <p className="px-4 py-6 text-[13px] text-[#75767a]">No resurfaced directors in the sweep output.</p>
       ) : (
-        <div className="max-h-[420px] overflow-auto">
+        <>
+          <p className="border-b border-[#d2d2d4] bg-white px-4 py-2 text-[12px] leading-relaxed text-[#75767a]">
+            <b className="text-[#3f3f3f]">How to read this:</b> each row is a firm the FCA fined →
+            its highest-risk director → how many companies that director runs today. Risk is a
+            0–100 &ldquo;look here first&rdquo; indicator (capped at 35 when the fined firm is
+            still trading — a phoenix needs a dead firm). Click a column heading to sort, click a
+            row to open that firm&apos;s network in the map.
+          </p>
+          <div className="max-h-[420px] overflow-auto">
           <table className="w-full border-collapse text-[13px]">
             <thead className="sticky top-0 bg-[#f0f0f1]">
               <tr className="text-left">
@@ -197,7 +205,7 @@ export default function SweepTable({
                     </button>
                   </th>
                 ))}
-                <th className="border-b border-[#d2d2d4] px-3 py-2 font-bold text-[#6c1d45]">Director</th>
+                <th className="border-b border-[#d2d2d4] px-3 py-2 font-bold text-[#6c1d45]">Highest-risk director</th>
               </tr>
             </thead>
             <tbody>
@@ -239,7 +247,8 @@ export default function SweepTable({
               })}
             </tbody>
           </table>
-        </div>
+          </div>
+        </>
       )}
     </section>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FCA, fmtMs } from "./graph-utils";
 
 export type FineMark = { ms: number; label: string };
@@ -28,15 +28,17 @@ export default function TimelineScrubber({
 }) {
   const raf = useRef<number | null>(null);
   const last = useRef<number>(0);
+  // Playback speed: 1 = full span in ~12s. Slow is the stage-friendly setting.
+  const [speed, setSpeed] = useState(1);
 
-  // Advance the scrubber while playing (~ full span in 12s).
+  // Advance the scrubber while playing (~ full span in 12s at normal speed).
   useEffect(() => {
     if (!playing) {
       if (raf.current) cancelAnimationFrame(raf.current);
       return;
     }
     const span = Math.max(1, max - min);
-    const step = span / (12 * 60); // per frame at 60fps
+    const step = (span / (12 * 60)) * speed; // per frame at 60fps
     const tick = (t: number) => {
       if (!last.current) last.current = t;
       last.current = t;
@@ -78,8 +80,26 @@ export default function TimelineScrubber({
         >
           {playing ? "❚❚ Pause" : "▶ Play"}
         </button>
+        <span className="flex items-stretch border border-[#d2d2d4]" role="group" aria-label="Playback speed">
+          {([["Slow", 0.35], ["Normal", 1], ["Fast", 2]] as [string, number][]).map(([label, s]) => (
+            <button
+              key={label}
+              onClick={() => setSpeed(s)}
+              disabled={!active}
+              className={`px-2 py-1 text-[11px] font-bold disabled:cursor-not-allowed disabled:text-[#b6b8ba] ${
+                speed === s && active ? "bg-[#6c1d45] text-white" : "bg-white text-[#6c1d45] hover:bg-[#f0f0f1]"
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </span>
         <span className="tabular-nums text-[13px] font-bold text-[#6c1d45]">
           {active ? fmtMs(value) : "All time"}
+        </span>
+        <span className="hidden text-[12px] text-[#75767a] sm:inline">
+          — tick the box and press Play to watch the companies appear in date order. The{" "}
+          <b className="text-[#ff585d]">red marks</b> are FCA fines (hover them).
         </span>
       </div>
 

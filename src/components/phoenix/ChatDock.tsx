@@ -154,6 +154,11 @@ export default function ChatDock({
           Send
         </button>
       </form>
+      <p className="border-t border-[#d2d2d4] bg-[#f0f0f1] px-3 py-1.5 text-[11px] leading-relaxed text-[#75767a]">
+        <b className="text-[#3f3f3f]">Live:</b> your question goes to Claude with the map&apos;s
+        records attached. When Claude needs more, it calls the Companies House API itself — you
+        see each lookup appear as a chip, and its findings drop into the map above in real time.
+      </p>
     </section>
   );
 }

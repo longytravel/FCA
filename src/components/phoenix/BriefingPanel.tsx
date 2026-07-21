@@ -80,6 +80,13 @@ export default function BriefingPanel({
           </p>
         )}
       </div>
+      <div className="border-t border-[#d2d2d4] bg-[#f0f0f1] px-4 py-2 text-[12px] leading-relaxed text-[#75767a]">
+        <b className="text-[#3f3f3f]">What&apos;s happening here:</b> the network on the left —
+        every company, director and date, {graph.nodes.length} records fresh from Companies House —
+        is sent to Claude (Anthropic&apos;s AI) over its live API. The words stream in as Claude
+        writes them, right now. Nothing is scripted, cached or pre-written, and Claude may only
+        cite what&apos;s in those records.
+      </div>
     </section>
   );
 }
